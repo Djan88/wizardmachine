@@ -244,6 +244,25 @@ function bones_fonts() {
 
 add_action('wp_enqueue_scripts ', 'bones_fonts');
 
+/* Отключаем админ панель для всех, кроме администраторов. */
+if (!current_user_can('administrator')):
+  show_admin_bar(false);
+endif;
 
+
+/* редирект с login на /wp-login.php  и с admin на /wp-admin */
+add_action('template_redirect', 'kama_login_redirect');
+function kama_login_redirect(){
+    if(!is_user_logged_in()){
+	if( strpos($_SERVER['REQUEST_URI'], '/')!==false )
+		$loc = '/wp-login.php';
+	elseif( strpos($_SERVER['REQUEST_URI'], 'admin')!==false )
+		$loc = '/wp-admin/';
+	if( $loc ){
+		header( 'Location: '.get_option('site_url').$loc, true, 303 );
+		exit;
+	}
+    }
+}
 
 /* DON'T DELETE THIS CLOSING TAG */ ?>
