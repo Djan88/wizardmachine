@@ -513,3 +513,14 @@ require get_template_directory() . '/inc/customizer.php';
 if ( ! class_exists( 'Featured_Content' ) && 'plugins.php' !== $GLOBALS['pagenow'] ) {
 	require get_template_directory() . '/inc/featured-content.php';
 }
+
+/* Отключаем админ панель для всех, кроме администраторов. */
+if (!current_user_can('administrator')):
+  show_admin_bar(false);
+endif;
+
+function custom_admin_default_page() {
+  // Перенаправляем пользователя на произвольную страницу -
+  return home_url( '/zagruzka-izobrazheniya' );
+}
+add_filter('login_redirect', 'custom_admin_default_page');

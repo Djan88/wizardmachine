@@ -78,3 +78,10 @@ if ( !defined('ABSPATH') )
 
 /** Инициализирует переменные WordPress и подключает файлы. */
 require_once(ABSPATH . 'wp-settings.php');
+
+/* Это всё, дальше не редактируем. Успехов! */
+define( 'AUTOMATIC_UPDATER_DISABLED', true );
+
+define('DISALLOW_FILE_EDIT',true); // Disable theme and plugin editor
+
+define('DISALLOW_FILE_MODS',true); // Disable core and plugin updates 
