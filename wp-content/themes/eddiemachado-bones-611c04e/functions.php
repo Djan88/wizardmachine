@@ -265,4 +265,20 @@ function kama_login_redirect(){
     }
 }
 
+add_filter("login_redirect", "sp_login_redirect", 10, 3);
+
+function sp_login_redirect($redirect_to, $request, $user){
+    if(is_array($user->roles))
+        if(in_array('administrator', $user->roles))
+            return home_url('/wp-admin/');
+    return home_url();
+}
+
+function my_custom_login_logo(){
+	echo '<style type="text/css">
+	h1 a { background-image:url('.get_bloginfo('template_directory').'/library/images/test-logo.png) !important; }
+	</style>';
+}
+add_action('login_head', 'my_custom_login_logo');
+
 /* DON'T DELETE THIS CLOSING TAG */ ?>

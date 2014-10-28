@@ -219,6 +219,11 @@ function bones_theme_support() {
 	);
 } /* end bones theme support */
 
+function my_admin_theme_style() {
+    wp_enqueue_style('my-admin-style', get_stylesheet_directory_uri() . '/library/css/admin_style.css');
+    wp_enqueue_script( 'admin-script', get_stylesheet_directory_uri() . '/library/js/admin_script.js');
+}
+add_action('login_head', 'my_admin_theme_style');
 
 /*********************
 RELATED POSTS FUNCTION
