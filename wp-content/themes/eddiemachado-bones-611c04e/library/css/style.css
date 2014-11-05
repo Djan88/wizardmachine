@@ -2117,3 +2117,13 @@ be set to display none.
   nav {
     display: none; } }
 
+.home-page-content
+{
+    min-height: 300px;
+}
+
+.home-page-content p
+{
+    text-align: center;
+}
+
