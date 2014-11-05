@@ -254,7 +254,7 @@ endif;
 add_action('template_redirect', 'kama_login_redirect');
 function kama_login_redirect(){
     if(!is_user_logged_in()){
-	if( strpos($_SERVER['REQUEST_URI'], '/')!==false )
+	if( strpos($_SERVER['REQUEST_URI'], 'login')!==false )
 		$loc = '/wp-login.php';
 	elseif( strpos($_SERVER['REQUEST_URI'], 'admin')!==false )
 		$loc = '/wp-admin/';
