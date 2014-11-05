@@ -258,6 +258,8 @@ function kama_login_redirect(){
 		$loc = '/wp-login.php';
 	elseif( strpos($_SERVER['REQUEST_URI'], 'admin')!==false )
 		$loc = '/wp-admin/';
+        elseif( strpos($_SERVER['REQUEST_URI'], 'registration')!==false )
+		$loc = 'wp-login.php?action=register';
 	if( $loc ){
 		header( 'Location: '.get_option('site_url').$loc, true, 303 );
 		exit;

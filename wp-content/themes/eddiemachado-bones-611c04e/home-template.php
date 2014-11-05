@@ -10,9 +10,27 @@
 
     <div id="inner-content" class="wrap cf">
 
-        <div id="main" class="m-all t-2of3 d-5of7 cf" role="main">
+        <div id="main" class="m-all t-2of3 cf" role="main">
 
-            <div class="">
+            <div class="home-page-content">
+                
+                <?php if(is_user_logged_in()){ ?>
+                    
+                    <?php if(current_user_can('subscriber')){ ?>
+                
+                        
+                
+                    <?php } elseif(current_user_can('contributor') || current_user_can('administrator')) { ?>
+                
+                            
+                            
+                    <?php } ?>
+                
+                <?php } else { ?>
+                
+                <p>Пожалуйста <a href="/registration">Зарегестрируйтесь</a> сайте или <a href="/admin">Авторизуйтесь</a></p>
+                    
+                <?php } ?>
                 
             </div>
 
