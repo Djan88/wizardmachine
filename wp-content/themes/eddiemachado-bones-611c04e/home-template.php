@@ -28,7 +28,7 @@
                 
                 <?php } else { ?>
                 <div class="login-area">
-                   <p>Пожалуйста <a href="/registration">Зарегестрируйтесь</a>на сайте</br> или <a href="/admin">Авторизуйтесь</a></p> 
+                   <p>Пожалуйста <a href="/registration">Зарегестрируйтесь</a> на сайте</br> или <a href="/admin">Авторизуйтесь</a></p> 
                 </div>
                     
                 <?php } ?>
