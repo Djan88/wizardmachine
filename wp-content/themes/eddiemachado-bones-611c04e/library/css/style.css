@@ -1250,8 +1250,8 @@ body {
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 100%;
   line-height: 1.5;
-  color: #5c6b80;
-  background-color: #eaedf2;
+  color: #000;
+  background: url(../images/bg_pattern.png);
   -webkit-font-smoothing: antialiased; }
 
 /********************
@@ -1358,12 +1358,22 @@ h5, .h5 {
 HEADER STYLES
 *********************/
 .header {
-  background-color: #323944; }
+  background: url(../images/topbar_bg.png) 0 0/100% no-repeat; 
+  height: 95px;
+  -webkit-box-shadow: 0 1px 8px #d3cec7;
+  -moz-box-shadow: 0 1px 8px #d3cec7;
+  -ms-box-shadow: 0 1px 8px #d3cec7;
+  -o-box-shadow: 0 1px 8px #d3cec7;
+  box-shadow: 0 1px 8px #d3cec7;
+}
 
-#logo {
-  margin: 0.75em 0; }
+#logo 
+{
+  margin: 10px 0;
+  float: left;
+}
   #logo a {
-    color: white; }
+    color: #eb592a; }
 
 /*********************
 NAVIGATION STYLES
@@ -1393,8 +1403,7 @@ and more scalable.
       display: block;
       color: white;
       text-decoration: none;
-      padding: 0.75em;
-      /*
+      padding: 0.6em 0.75em;      /*
       remember this is for mobile ONLY, so there's no need
       to even declare hover styles here, you can do it in
       the style.scss file where it's relevant. We want to
@@ -1409,13 +1418,23 @@ and more scalable.
 POSTS & CONTENT STYLES
 *********************/
 #content {
-  margin-top: 1.5em; }
+  /*padding-top: 1.5em; */
+}
 
-.hentry {
+.hentry, .sidebar
+{
   background-color: white;
   border-radius: 3px;
   margin-bottom: 1.5em;
-  border: 1px solid #cccccc; }
+  /*border: 1px solid #cccccc; */
+  margin-top: 60px;
+  position: relative;
+  -webkit-box-shadow: 0 1px 8px #d3cec7;
+  -moz-box-shadow: 0 1px 8px #d3cec7;
+  -ms-box-shadow: 0 1px 8px #d3cec7;
+  -o-box-shadow: 0 1px 8px #d3cec7;
+  box-shadow: 0 1px 8px #d3cec7;
+}
   .hentry header {
     border-bottom: 1px solid #f8f9fa;
     padding: 1.5em; }
@@ -1879,13 +1898,25 @@ you can add resource intensive styles.
       /* showing sub-menus */ }
       .nav li a {
         border-bottom: 0;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 600;
+        border: 1px solid;
+        border-radius: 5px;
+        margin-right: 5px;
+        background: #333;
+        -webkit-transition: all 0.2s ease-in;
+           -moz-transition: all 0.2s ease-in;
+                transition: all 0.2s ease-in;
         /*
         you can use hover styles here even though this size
         has the possibility of being a mobile device.
         */ }
         .nav li a:hover, .nav li a:focus {
-          color: white;
-          text-decoration: underline; }
+          color: #fff;
+          background: #eb592a;
+          /*text-decoration: underline; */
+        }
       .nav li ul.sub-menu,
       .nav li ul.children {
         margin-top: 0;
@@ -1925,7 +1956,8 @@ you can add resource intensive styles.
   SIDEBARS & ASIDES
   *********************/
   .sidebar {
-    margin-top: 2.2em; }
+    margin-top: 55px; 
+  }
 
   .widgettitle {
     border-bottom: 2px solid #444;
@@ -1986,7 +2018,14 @@ you can add resource intensive styles.
   
   ******************************************************************/
   .wrap {
-    width: 1040px; } }
+    width: 1040px; 
+    padding: 10px 10px 0;
+    } }
+
+  #inner-header.wrap, #inner-footer.wrap
+  {
+    border: none;
+  }
 /*********************
 LARGE VIEWING SIZE
 This is for the larger monitors and possibly full screen viewers.
@@ -2120,10 +2159,68 @@ be set to display none.
 .home-page-content
 {
     min-height: 300px;
+    background: #fff;
+    padding: 20px;
+    margin-top: 60px;
+    position: relative;
+    -webkit-box-shadow: 0 1px 8px #d3cec7;
+    -moz-box-shadow: 0 1px 8px #d3cec7;
+    -ms-box-shadow: 0 1px 8px #d3cec7;
+    -o-box-shadow: 0 1px 8px #d3cec7;
+    box-shadow: 0 1px 8px #d3cec7;
 }
-
+.home-page-content:before, .hentry:before, .sidebar:before
+{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: -10px;
+  left: 0;
+  background: url(../images/block_bg.png) 0 0/100% no-repeat;
+  height: 10px;
+}
+.sidebar:before
+{
+  background: url(../images/block_bg.png) 0 0/200% no-repeat;
+  top: -5px;
+}
 .home-page-content p
 {
-    text-align: center;
+    /*text-align: center;*/
 }
-
+#inner-header 
+{
+  position: relative;
+}
+#menu-the-main-menu 
+{
+  text-align: right;
+  position: absolute;
+  right: 0;
+  top: 20px;
+}
+.home-content iframe
+{
+  display: block;
+  margin: auto;
+}
+.home-content 
+{
+  /*margin-top: 60px;*/
+  font-size: 18px;
+}
+.login-area 
+{
+  padding: 20px;
+  text-align: center;
+  background: #dc7037;
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.login-area a
+{
+  color: #fff;
+}

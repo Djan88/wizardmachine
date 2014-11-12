@@ -27,10 +27,21 @@
                     <?php } ?>
                 
                 <?php } else { ?>
-                
-                <p>Пожалуйста <a href="/registration">Зарегестрируйтесь</a> сайте или <a href="/admin">Авторизуйтесь</a></p>
+                <div class="login-area">
+                   <p>Пожалуйста <a href="/registration">Зарегестрируйтесь</a> сайте</br> или <a href="/admin">Авторизуйтесь</a></p> 
+                </div>
                     
                 <?php } ?>
+
+                <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+
+                <div class="home-content">
+                    <?php the_content(); ?>
+                </div>
+
+                <?php endwhile; ?>
+
+                <?php endif; ?>
                 
             </div>
 

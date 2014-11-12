@@ -94,7 +94,7 @@ input {
     display: inline-block;
 }
 input[type=submit] {
-    background: #e3e3e3;
+    /*background: #e3e3e3;
     border: 1px solid #bbb;
     border-radius: 3px;
     -webkit-box-shadow: inset 0 0 1px 1px #f6f6f6;
@@ -104,18 +104,32 @@ input[type=submit] {
     padding: 8px 0 9px;
     text-align: center;
     text-shadow: 0 1px 0 #fff;
-    width: 150px;
+    width: 150px;*/
+    border-bottom: 0;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    border: 1px solid;
+    border-radius: 5px;
+    margin-right: 5px;
+    background: #333;
+    padding: 0.6em 0.75em;
+    -webkit-transition: all 0.2s ease-in;
+       -moz-transition: all 0.2s ease-in;
+            transition: all 0.2s ease-in;
 }
-input[type=submit]:hover {
-    background: #d9d9d9;
+input[type=submit]:hover, input[type=submit]:active {
+    /*background: #d9d9d9;
     -webkit-box-shadow: inset 0 0 1px 1px #eaeaea;
     box-shadow: inset 0 0 1px 1px #eaeaea;
     color: #222;
-    cursor: pointer;
+    cursor: pointer;*/
+    color: #fff;
+    background: #eb592a;
 }
-input[type=submit]:active {
+/*input[type=submit]:active {
     background: #d0d0d0;
     -webkit-box-shadow: inset 0 0 1px 1px #e3e3e3;
     box-shadow: inset 0 0 1px 1px #e3e3e3;
     color: #000;
-}
+}*/

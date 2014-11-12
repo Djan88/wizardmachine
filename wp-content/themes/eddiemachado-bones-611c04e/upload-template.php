@@ -10,7 +10,8 @@
 
     <div id="inner-content" class="wrap cf">
 
-        <div id="main" class="m-all t-2of3 cf" role="main">
+        <div id="main" class="m-all t-2of3 cf home-page-content" role="main">
+        <?php if(is_user_logged_in()){ ?>
 
             <div class="bbody">
 
@@ -41,22 +42,27 @@
 
 
 
-<div id="snaptarget" class="wrapper">
-<ul class="itemlist itemlist-one">
-	<li id="draggable1" class="itemlist_item draggable" style="left: 41px; top: 50px;">1</li>
-	<li id="draggable2" class="itemlist_item draggable" style="left: 247px; top: 23px;">2</li>
-	<li id="draggable3" class="itemlist_item draggable" style="left: 145px; top: 41px;">3</li>
-	<li id="draggable4" class="itemlist_item draggable" style="left: 92px; top: 168px;">4</li>
-	<li id="draggable5" class="itemlist_item draggable" style="left: 207px; top: 139px;">5</li>
-</ul>
-<ul class="itemlist itemlist-two"><!--
-	<li class="itemlist_item">1</li>
-	<li class="itemlist_item">2</li>
-	<li class="itemlist_item">3</li>
-	<li class="itemlist_item">4</li>
-	<li class="itemlist_item">5</li>
---></ul>
-</div>
+            <div id="snaptarget" class="wrapper">
+            <ul class="itemlist itemlist-one">
+                <li id="draggable1" class="itemlist_item draggable" style="left: 41px; top: 50px;">1</li>
+                <li id="draggable2" class="itemlist_item draggable" style="left: 247px; top: 23px;">2</li>
+                <li id="draggable3" class="itemlist_item draggable" style="left: 145px; top: 41px;">3</li>
+                <li id="draggable4" class="itemlist_item draggable" style="left: 92px; top: 168px;">4</li>
+                <li id="draggable5" class="itemlist_item draggable" style="left: 207px; top: 139px;">5</li>
+            </ul>
+            <ul class="itemlist itemlist-two"><!--
+                <li class="itemlist_item">1</li>
+                <li class="itemlist_item">2</li>
+                <li class="itemlist_item">3</li>
+                <li class="itemlist_item">4</li>
+                <li class="itemlist_item">5</li>
+            --></ul>
+            </div>
+        <?php } else { ?>
+            <div class="login-area">
+               <p>Пожалуйста <a href="/registration">Зарегестрируйтесь</a> сайте</br> или <a href="/admin">Авторизуйтесь</a></p> 
+            </div>
+        <?php } ?>
 
         </div>
 
