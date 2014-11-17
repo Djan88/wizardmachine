@@ -56,10 +56,14 @@ li
 }
 .itemlist_item:hover 
 {
-    -webkit-box-shadow: 0 0 10px 10px rgba(234, 0, 11, 0.55);
-    -moz-box-shadow: 0 0 10px 10px rgba(234, 0, 11, 0.55);
-    box-shadow: 0 0 10px 10px rgba(234, 0, 11, 0.55);
+    -webkit-box-shadow: 0 0 10px 2px rgba(234, 0, 11, 0.55);
+    -moz-box-shadow: 0 0 10px 2px rgba(234, 0, 11, 0.55);
+    box-shadow: 0 0 10px 2px rgba(234, 0, 11, 0.55);
     background: #fff;
+}
+h3:focus
+{
+    outline: none;
 }
 
 
