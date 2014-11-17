@@ -26,26 +26,26 @@ li
 .itemlist_item
 {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 15px;
     color: red;
     cursor: pointer;
     z-index: 999;
     border: 2px solid red;
 }
-.itemlist__clear 
+.itemlist_item .itemlist_item__clear
 {
-    height: 34px;
+    height: 28px;
 }
 .item_list__mid
 {
   border-radius: 50%;
-  width: 34px;
+  width: 28px;
   padding-top: 2px;
   padding-left: 3px;
 }
 .itemlist-one
 {
-    background: url(../images/vitruvian_man.gif) center 30px/90% no-repeat;
+    background: url(../images/vitruvian_man.gif) center 30px/100% no-repeat;
 }
 .itemlist-two
 {

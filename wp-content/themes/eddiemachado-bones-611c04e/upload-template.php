@@ -44,21 +44,24 @@
 
             <div id="snaptarget" class="wrapper">
             <ul class="itemlist itemlist-one">
-                <li id="draggable0" class="itemlist_item item_list__mid draggable" style="left: 180px; top: 15px;">V0</li>
-                <li id="draggable1" class="itemlist_item item_list__mid draggable" style="left: 180px; top: 60px;">V1</li>
-                <li id="draggable2" class="itemlist_item item_list__mid draggable" style="left: 180px; top: 120px;">V2</li>
-                <li id="draggable3" class="itemlist_item item_list__mid draggable" style="left: 180px; top: 170px;">V3</li>
-                <li id="draggable4" class="itemlist_item item_list__mid draggable" style="left: 180px; top: 200px;">V4</li>
-                <li id="draggable5" class="itemlist_item item_list__mid draggable" style="left: 180px; top: 235px;">V5</li>
-                <li id="draggableD1" class="itemlist_item item_list__mid draggable" style="left: 135px; top: 80px;">D+</li>
-                <li id="draggableClean" class="itemlist_item item_list__mid itemlist_item__clear draggable" style="left: 45px; top: 215px;"></li>
-                <li id="draggableS2" class="itemlist_item item_list__mid draggable" style="left: 225px; top: 110px;">S2</li>
-                <li id="draggableS2_1" class="itemlist_item item_list__mid draggable" style="left: 220px; top: 110px;">S2</li>
-                <li id="draggableS3" class="itemlist_item item_list__mid draggable" style="left: 215px; top: 110px;">S3</li>
-                <li id="draggableS4" class="itemlist_item item_list__mid draggable" style="left: 215px; top: 110px;">S4</li>
-                <li id="draggableS5" class="itemlist_item item_list__mid draggable" style="left: 205px; top: 135px;">S5</li>
-                <li id="draggableS6" class="itemlist_item item_list__mid draggable" style="left: 230px; top: 400px;">S6</li>
-                <li id="draggableV-" class="itemlist_item item_list__mid draggable" style="left: 180px; top: 470px;">V-</li>
+                <li id="draggable0" class="itemlist_item item_list__mid draggable" style="left: 180px; top: 30px;">V0</li>
+                <li id="draggable1" class="itemlist_item item_list__mid draggable" style="left: 180px; top: 40px;">V1</li>
+                <li id="draggable2" class="itemlist_item item_list__mid draggable" style="left: 180px; top: 75px;">V2</li>
+                <li id="draggable3" class="itemlist_item item_list__mid draggable" style="left: 180px; top: 100px;">V3</li>
+                <li id="draggable4" class="itemlist_item item_list__mid draggable" style="left: 180px; top: 115px;">V4</li>
+                <li id="draggable5" class="itemlist_item item_list__mid draggable" style="left: 180px; top: 140px;">V5</li>
+                <li id="draggableD1" class="itemlist_item item_list__mid draggable" style="left: 135px; top: 90px;">D+</li>
+                <li id="draggableClean" class="itemlist_item item_list__mid itemlist_item__clear draggable" style="left: 35px; top: 80px;"></li>
+                <li id="draggableS2" class="itemlist_item item_list__mid draggable" style="left: 230px; top: -100px;">S2</li>
+                <li id="draggableS2_1" class="itemlist_item item_list__mid draggable" style="left: 227px; top: -75px;">S2</li>
+                <li id="draggableS3" class="itemlist_item item_list__mid draggable" style="left: 217px; top: -50px;">S3</li>
+                <li id="draggableS4" class="itemlist_item item_list__mid draggable" style="left: 215px; top: -139px;">S4</li>
+                <li id="draggableS5" class="itemlist_item item_list__mid draggable" style="left: 215px; top: -20px;">S5</li>
+                <li id="draggableS6" class="itemlist_item item_list__mid draggable" style="left: 240px; top: 95px;">S6</li>
+                <li id="draggableV-" class="itemlist_item item_list__mid draggable" style="left: 180px; top: 135px;">V-</li>
+                <li id="draggableS+" class="itemlist_item item_list__mid draggable" style="left: 229px; top: -312px;">V-</li>
+                <li id="draggableD2" class="itemlist_item item_list__mid draggable" style="left: 129px; top: -270px;">V-</li>
+                <li id="draggableD3" class="itemlist_item item_list__mid draggable" style="left: 145px; top: -180px;">V-</li>
             </ul>
             <ul class="itemlist itemlist-two"><!--
                 <li class="itemlist_item">1</li>
