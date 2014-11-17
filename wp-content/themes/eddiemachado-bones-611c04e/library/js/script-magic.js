@@ -1,6 +1,6 @@
 jQuery(function() {
     jQuery( ".draggable" ).draggable({ snap: false });
-    $( ".select_program" ).accordion({ active: 1 });
+    jQuery( ".select_program" ).accordion({ active: 1 });
 
     // convert bytes into friendly format
     function bytesToSize(bytes) {
