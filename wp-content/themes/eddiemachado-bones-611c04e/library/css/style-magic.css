@@ -31,9 +31,9 @@ li
     cursor: pointer;
     z-index: 999;
     border: 2px solid red;
-    -webkit-transition: all 0.3s cubic-bezier(.67,2,.54,.04);
-       -moz-transition: all 0.3s cubic-bezier(.67,2,.54,.04);
-            transition: all 0.3s cubic-bezier(.67,2,.54,.04);
+    -webkit-transition: box-shadow 0.3s cubic-bezier(.67,2,.54,.04);
+       -moz-transition: box-shadow 0.3s cubic-bezier(.67,2,.54,.04);
+            transition: box-shadow 0.3s cubic-bezier(.67,2,.54,.04);
 }
 .itemlist_item.itemlist_item__clear
 {

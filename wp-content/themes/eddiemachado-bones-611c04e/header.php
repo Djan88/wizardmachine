@@ -36,6 +36,7 @@
 
 		<?php // drop Google Analytics Here ?>
 		<?php // end analytics ?>
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/library/css/jquery-ui.css">
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/library/css/jquery.Jcrop.min.css">
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/library/css/style-magic.css">
 
