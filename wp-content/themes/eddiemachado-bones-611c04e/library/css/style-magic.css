@@ -31,6 +31,9 @@ li
     cursor: pointer;
     z-index: 999;
     border: 2px solid red;
+    -webkit-transition: all 0.3s cubic-bezier(.67,2,.54,.04);
+       -moz-transition: all 0.3s cubic-bezier(.67,2,.54,.04);
+            transition: all 0.3s cubic-bezier(.67,2,.54,.04);
 }
 .itemlist_item.itemlist_item__clear
 {
@@ -51,7 +54,13 @@ li
 {
     /*background: url(../images/man.jpg) 0 0/100% no-repeat;*/
 }
-
+.itemlist_item:hover 
+{
+    -webkit-box-shadow: 0 0 10px 10px rgba(234, 0, 11, 0.55);
+    -moz-box-shadow: 0 0 10px 10px rgba(234, 0, 11, 0.55);
+    box-shadow: 0 0 10px 10px rgba(234, 0, 11, 0.55);
+    background: #fff;
+}
 
 
 
