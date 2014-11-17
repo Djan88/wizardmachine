@@ -1,5 +1,5 @@
 jQuery(function() {
-    jQuery( ".draggable" ).draggable({ snap: true });
+    jQuery( ".draggable" ).draggable({ snap: false });
 
     // convert bytes into friendly format
     function bytesToSize(bytes) {
