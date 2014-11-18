@@ -72,7 +72,7 @@
                 <li id="draggableD2" class="itemlist_item item_list__mid draggable" style="left: 129px; top: -324px;">D2</li>
                 <li id="draggableD3" class="itemlist_item item_list__mid draggable" style="left: 145px; top: -265px;">D3</li>
                 <li id="draggableD5" class="itemlist_item item_list__mid draggable" style="left: 130px; top: -192px;">D5</li>
-                <li id="draggableD4" class="itemlist_item item_list__mid draggable" style="left: 148px; top: -246px;">D4</li>
+                <li id="draggableD4" class="itemlist_item item_list__mid draggable" style="left: 148px; top: -274px;">D4</li>
             </ul>
             <ul class="itemlist itemlist-two"><!--
                 <li class="itemlist_item">1</li>
