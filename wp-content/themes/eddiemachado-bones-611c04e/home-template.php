@@ -36,10 +36,11 @@
                     <?php } ?>
                 
                 <?php } else { ?>
-                <div class="login-area">
-                   <p><a class="btn btn_lg btn_success" href="/registration">Зарегестрируйтесь</a> или <a class="btn btn_lg btn_warning" href="/admin">Войдите на сайт</a></p> 
-                </div>
-                    
+                    <a class="btn btn_lg btn_warning btn_login" href="/admin">Войдите на сайт</a>
+                    <a class="btn btn_lg btn_success btn_sign" href="/registration">Получить<br> доступ</a>
+                    <div class="home-content" style="text-align: center;">
+                        <?php the_content(); ?>
+                    </div>
                 <?php } ?>
 
                 
