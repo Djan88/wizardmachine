@@ -2158,10 +2158,11 @@ be set to display none.
 
 .home-page-content
 {
+    max-width: 650px;
     min-height: 300px;
     background: #fff;
     padding: 20px;
-    margin-top: 60px;
+    margin: 60px auto 30px;
     position: relative;
     -webkit-box-shadow: 0 1px 8px #d3cec7;
     -moz-box-shadow: 0 1px 8px #d3cec7;
@@ -2175,10 +2176,21 @@ be set to display none.
   display: block;
   position: absolute;
   width: 100%;
-  top: -10px;
+  top: -5px;
   left: 0;
   background: url(../images/block_bg.png) 0 0/100% no-repeat;
   height: 10px;
+}
+.home-page-content:after 
+{
+  content: '';
+  display: block;
+  height: 20px;
+  width: 100%;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  background: url(../images/topbar_bg.png) 0 0/100% no-repeat;
 }
 .sidebar:before
 {
