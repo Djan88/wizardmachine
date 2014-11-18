@@ -21,7 +21,16 @@
                           <p>Пожалуйста оплатите данную услугу. Или свяжитесь с администратором если уже оплатили!</p>  
                 
                     <?php } elseif(current_user_can('contributor') || current_user_can('administrator')) { ?>
-                
+                        
+                        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+
+                        <div class="home-content">
+                            <?php the_content(); ?>
+                        </div>
+
+                        <?php endwhile; ?>
+
+                        <?php endif; ?>
                             
                             
                     <?php } ?>
@@ -33,15 +42,6 @@
                     
                 <?php } ?>
 
-                <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-
-                <div class="home-content">
-                    <?php the_content(); ?>
-                </div>
-
-                <?php endwhile; ?>
-
-                <?php endif; ?>
                 
             </div>
 

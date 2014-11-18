@@ -2313,3 +2313,7 @@ be set to display none.
   position: absolute;
   right: 50px;
 }
+.bbody
+{
+  background: none!important;
+}
