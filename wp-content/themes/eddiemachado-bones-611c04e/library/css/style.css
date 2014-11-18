@@ -1257,7 +1257,7 @@ body
 }
 body.home
 {
-  background: url(../images/bg_wizard.jpg) 0 50%/100%;
+  background: url(../images/bg_wizard.jpg) 80% 50%/110%;
 }
 body.home #main
 {
@@ -2181,8 +2181,15 @@ be set to display none.
 }
 .home .home-page-content
 {
-    width: 60%;
+    width: 650px;
     margin: auto;
+    background: none;
+    color: #fff;
+    box-shadow: none;
+}
+.home .home-page-content:before, .home .home-page-content:after
+{
+  display: none;
 }
 .home-page-content:before, .hentry:before, .sidebar:before
 {
@@ -2337,7 +2344,7 @@ be set to display none.
 {
   position: absolute;
   top: -30px;
-  left: 35%;
+  left: 36%;
 }
 .btn_sign
 {
