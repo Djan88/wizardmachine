@@ -31,7 +31,6 @@ li
     cursor: pointer;
     z-index: 999;
     border: 2px solid red;
-    background: #fff;
     /*-webkit-transition: box-shadow 0.3s cubic-bezier(.67,2,.54,.04);*/
        /*-moz-transition: box-shadow 0.3s cubic-bezier(.67,2,.54,.04);*/
             /*transition: box-shadow 0.3s cubic-bezier(.67,2,.54,.04);*/
@@ -55,11 +54,12 @@ li
 {
     /*background: url(../images/man.jpg) 0 0/100% no-repeat;*/
 }
-.itemlist_item:hover 
+.itemlist_item:hover, .itemlist_item:active
 {
     /*-webkit-box-shadow: 0 0 10px 2px rgba(234, 0, 11, 0.55);*/
     /*-moz-box-shadow: 0 0 10px 2px rgba(234, 0, 11, 0.55);*/
     /*box-shadow: 0 0 10px 2px rgba(234, 0, 11, 0.55);*/
+    background: #fff;
 }
 h3:focus
 {
