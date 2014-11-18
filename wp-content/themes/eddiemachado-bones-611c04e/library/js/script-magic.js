@@ -2,6 +2,19 @@ jQuery(function() {
     jQuery( ".draggable" ).draggable({ snap: false });
     jQuery( ".select_program" ).accordion({ active: 1 });
 
+
+    jQuery( ".btn_choice" ).on('click', function(event) {
+        if(jQuery(this).hasClass('btn_choice__choiced')){
+            jQuery(this)
+                .removeClass('btn_choice__choiced')
+                .text('Выбрать');
+        } else {
+            jQuery(this)
+                .addClass('btn_choice__choiced')
+                .text('Выбрано');
+        }
+    });
+
     // convert bytes into friendly format
     function bytesToSize(bytes) {
         var sizes = ['Bytes', 'KB', 'MB'];
