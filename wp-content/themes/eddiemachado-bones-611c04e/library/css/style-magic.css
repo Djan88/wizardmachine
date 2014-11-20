@@ -16,10 +16,10 @@ li
 {
     display: inline-block;
     vertical-align: top;
-    width: 392px;
+    width: 40%;
     margin-left: 65px;
     text-align: center;
-    border: 1px solid black;
+    border: 1px solid #ccc;
     min-height: 600px;
     position: relative;
 }
