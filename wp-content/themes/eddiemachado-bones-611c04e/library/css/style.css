@@ -1261,6 +1261,10 @@ body.home
 }
 body.home #main
 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
   /*height: 40em;*/
 }
