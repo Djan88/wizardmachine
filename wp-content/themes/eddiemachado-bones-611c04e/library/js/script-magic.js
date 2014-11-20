@@ -1,6 +1,18 @@
 jQuery(function() {
+    var count_animation = 1,
+        cur_animation_val = 0,
+        changing;
+
     jQuery( ".draggable" ).draggable({ snap: false });
     jQuery( ".select_program" ).accordion({ active: 1 });
+
+    
+    jQuery('.show_form').on('click', function(event) {
+        console.log('ololo');
+        jQuery('.login__form')
+            .removeClass('hidden')
+            .addClass('animated zoomIn');
+    });
 
 
     jQuery( ".btn_choice" ).on('click', function(event) {
@@ -13,6 +25,20 @@ jQuery(function() {
                 .addClass('btn_choice__choiced')
                 .text('Выбрано');
         }
+    });
+
+    jQuery('.itemlist_item').on('click', function(event) {
+        count_animation = 1;
+        changing = setInterval(function(){
+            // console.log(event.target);
+            if (count_animation >= 60){
+                clearInterval(changing);
+            }
+            cur_animation_val += 6;
+            jQuery(event.target).css('transform', 'rotate(-'+cur_animation_val+'deg)');
+            // jQuery(this).css('top', cur_animation_val+'px');
+            count_animation += 1;
+        }, 1000)
     });
 
     // convert bytes into friendly format

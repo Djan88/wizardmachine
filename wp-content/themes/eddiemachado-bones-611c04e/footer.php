@@ -31,6 +31,7 @@
         <?php // all js scripts are loaded in library/bones.php ?>
         <?php wp_footer(); ?>
         <script src="<?php bloginfo('template_url'); ?>/library/js/jquery-ui.min.js"></script>
+        <script src="<?php bloginfo('template_url'); ?>/library/js/jquery.ui.touch-punch.min.js"></script>
         <script src="<?php bloginfo('template_url'); ?>/library/js/jquery.Jcrop.min.js"></script>
         <script src='<?php bloginfo('template_url'); ?>/library/js/script-magic.js'></script>
         <?php if(is_front_page()) { ?>
