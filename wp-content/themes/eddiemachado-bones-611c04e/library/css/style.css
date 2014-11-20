@@ -1268,6 +1268,14 @@ body.home #main
   display: flex;
   /*height: 40em;*/
 }
+.home .note_small a
+{
+  color: !important;
+}
+.note_small
+{
+  padding: 0 0 10px;
+}
 /********************
 WORDPRESS BODY CLASSES
 style a page via class

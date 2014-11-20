@@ -15,11 +15,13 @@
             <div class="home-page-content">
                 
                 <?php if(is_user_logged_in()){ ?>
-                    
+                    <!-- Если зашел подписчик -->
                     <?php if(current_user_can('subscriber')){ ?>
                 
-                          <p>Пожалуйста оплатите данную услугу. Или свяжитесь с администратором если уже оплатили!</p>  
-                
+                          <div class="home-content">
+                              <?php the_content(); ?>
+                          </div>
+                    <!-- Если зашел участник или администратор -->
                     <?php } elseif(current_user_can('contributor') || current_user_can('administrator')) { ?>
                         
                         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -36,8 +38,6 @@
                     <?php } ?>
                 
                 <?php } else { ?>
-                    <!-- <a class="btn btn_lg btn_warning btn_login" href="/admin">Войдите на сайт</a>
-                    <a class="btn btn_lg btn_success btn_sign" href="/registration">Получить доступ</a> -->
                     <div class="home-content" style="text-align: center;">
                         <?php the_content(); ?>
                         <div class="btn btn_lg btn_trans show_form">Вход для сертифицированных пользователей</div>
@@ -60,8 +60,8 @@
                              */
                             do_action( 'login_form' );
                             ?>
-                            <!-- <p class="note_small">Что бы получить доступ </p> -->
                             <p class="forgetmenot"><label for="rememberme"><input name="rememberme" type="checkbox" id="rememberme" value="forever" <?php checked( $rememberme ); ?> /> <?php esc_attr_e('Remember Me'); ?></label></p>
+                            <p class="note_small">Для получения сертификата пользователя необходимо пройти очное либо дистантное обучение. <a href="mailto:info@bablosstudio.ru" style="color: #fff;">info@bablosstudio.ru</a></p>
                             <p class="submit">
                                 <input type="submit" name="wp-submit" id="wp-submit" class="button button-primary button-large" value="<?php esc_attr_e('Log In'); ?>" />
                         <?php   if ( $interim_login ) { ?>
