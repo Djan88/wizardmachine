@@ -1254,6 +1254,10 @@ body
   color: #000;
   background: url(../images/bg_pattern.png);
   -webkit-font-smoothing: antialiased; 
+  -moz-hyphens: none!important;
+  -ms-hyphens: none!important;
+  -webkit-hyphens: none!important;
+  hyphens: none!important;
 }
 body.home
 {
