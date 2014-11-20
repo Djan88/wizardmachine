@@ -1330,19 +1330,19 @@ LAYOUT & GRID STYLES
 LINK STYLES
 *********************/
 a, a:visited {
-  color: #f01d4f;
+  /*color: #f01d4f;*/
   /* on hover */
   /* on click */
   /* mobile tap color */ }
   a:hover, a:focus, a:visited:hover, a:visited:focus {
     color: #d10e3c; }
-  a:link, a:visited:link {
+  /*a:link, a:visited:link {*/
     /*
     this highlights links on iPhones/iPads.
     so it basically works like the :hover selector
     for mobile devices.
     */
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3); }
+    /*-webkit-tap-highlight-color: rgba(0, 0, 0, 0.3); }*/
 
 /******************************************************************
 H1, H2, H3, H4, H5 STYLES
@@ -1384,15 +1384,20 @@ h5, .h5 {
 HEADER STYLES
 *********************/
 .header {
-  background: url(../images/topbar_bg.png) 0 0/100% no-repeat; 
-  height: 95px;
+  background: url(../images/topbar_bg.png) center -45px/100% no-repeat;
+  height: 50px;
   -webkit-box-shadow: 0 1px 8px #d3cec7;
   -moz-box-shadow: 0 1px 8px #d3cec7;
   -ms-box-shadow: 0 1px 8px #d3cec7;
   -o-box-shadow: 0 1px 8px #d3cec7;
   box-shadow: 0 1px 8px #d3cec7;
 }
-
+.btn.btn_logout 
+{
+  float: right;
+  text-transform: uppercase;
+  font-weight: 600!important;
+}
 #logo 
 {
   margin: 10px 0;
@@ -2187,7 +2192,7 @@ be set to display none.
     min-height: 300px;
     background: #fff;
     padding: 20px;
-    margin: 60px auto 30px;
+    margin: 30px auto 30px;
     position: relative;
     -webkit-box-shadow: 0 1px 8px #d3cec7;
     -moz-box-shadow: 0 1px 8px #d3cec7;
@@ -2381,7 +2386,10 @@ be set to display none.
 .btn_success
 {
     /*background-color: #56C800;*/
-    background: linear-gradient(to bottom, #ACF52D, #68B000);
+    background: #68B000;
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
 }
 .btn_primary
 {
@@ -2411,9 +2419,12 @@ be set to display none.
 {
     background-color: #3071a9;
 }
-.btn_success:active, .btn_success:focus, .btn_success:hover, .btn_choice:hover:after
+.btn_success:active, .btn_success:focus, .btn_success:hover, .btn_choice:hover:after, .btn_choice__choiced, .btn_choice__choiced:after
 {
-    background: linear-gradient(to bottom, #68B000, #ACF52D);
+    /*background: linear-gradient(to bottom, #68B000, #ACF52D);*/
+    -webkit-box-shadow: 0px 0px 10px #68B000;
+       -moz-box-shadow: 0px 0px 10px #68B000;
+            box-shadow: 0px 0px 10px #68B000;
 }
 .btn_warning:active, .btn_warning:focus
 {
@@ -2465,13 +2476,10 @@ be set to display none.
   bottom: -1px;
   font-size: 35px;
   padding-right: 15px;
-  background: linear-gradient(to bottom, #ACF52D, #68B000);
+  background: #68B000;
   border: 1px solid #fff;
   border-left: none;
   border-radius: 6px;
-  -webkit-transition: all 0.2s ease-in;
-  -moz-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
   opacity: 0;

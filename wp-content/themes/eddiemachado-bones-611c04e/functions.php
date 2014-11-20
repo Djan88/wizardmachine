@@ -13,7 +13,7 @@ if (is_user_logged_in() && is_admin())
     global $current_user;
     get_currentuserinfo();
     $user_info = get_userdata($current_user->ID);
-    if ( $user_info->user_level == 0 )
+    if ( $user_info->user_level == 1 )
     {
         wp_redirect(get_bloginfo('home'), 301);;
     }

@@ -77,7 +77,7 @@
                     <li id="draggableD5" class="itemlist_item item_list__mid draggable" style="left: 130px; top: -192px;">D5</li>
                     <li id="draggableD4" class="itemlist_item item_list__mid draggable" style="left: 148px; top: -274px;">D4</li>
                 </ul>
-                <ul class="itemlist itemlist-two cropme" style="width: 392px; height: 600px;">
+                <ul class="itemlist itemlist-two">
                     <script>
                         jQuery('.cropme').simpleCropper();
                     </script>

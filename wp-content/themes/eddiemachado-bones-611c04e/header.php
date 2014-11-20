@@ -53,13 +53,13 @@
                     <div id="inner-header" class="wrap cf">
 
                         <?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
-                        <p id="logo" class="h1"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></p>
+                        <!-- <p id="logo" class="h1"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></p> -->
 
                         <?php // if you'd like to use the site description you can un-comment it below ?>
                         <?php // bloginfo('description'); ?>
 
 
-                        <nav role="navigation">
+                        <!-- <nav role="navigation">
                             <?php wp_nav_menu(array(
                             'container' => false,                           // remove nav container
                             'container_class' => 'menu cf',                 // class of container (should you choose to use it)
@@ -74,7 +74,10 @@
                             'fallback_cb' => ''                             // fallback function (if there is one)
                             )); ?>
 
-                        </nav>
+                        </nav> -->
+                        <?php if(is_user_logged_in()){ ?>
+                            <a class="btn btn_sm btn_warning btn_logout" href="<?php echo home_url(); ?>/wp-login.php?action=logout&amp;_wpnonce=a6cad512ba">Выйти</a>
+                        <?php }?>
 
                     </div>
 
