@@ -1,10 +1,13 @@
 jQuery(function() {
     var count_animation = 1,
         cur_animation_val = 0,
+        cur_screen = 0,
+        nextScreen,
         changing;
 
     jQuery( ".draggable" ).draggable({ snap: false });
     jQuery( ".select_program" ).accordion({ active: 1 });
+
 
     
     jQuery('.show_form').on('click', function(event) {
@@ -14,17 +17,61 @@ jQuery(function() {
             .addClass('animated zoomIn');
     });
 
+    nextScreen = function(){
+        jQuery('.machine_screen')
+            .addClass('hidden')
+            .removeClass('fadeIn')
+            .eq(cur_screen)
+            .removeClass('hidden')
+            .addClass('animated')
+            .addClass('fadeIn')
+    }
 
+// ШАГ 1 (К загрузке фото)
     jQuery( ".btn_choice" ).on('click', function(event) {
         if(jQuery(this).hasClass('btn_choice__choiced')){
             jQuery(this)
                 .removeClass('btn_choice__choiced')
                 .text('Выбрать');
         } else {
+            cur_screen += 1;
+            jQuery(".btn_choice")
+                .removeClass('btn_choice__choiced')
+                .text('Выбрать');
             jQuery(this)
                 .addClass('btn_choice__choiced')
-                .text('Выбрано');
+                .text('Выбрано')
+                .append('<pre> ✓</pre>');
+                nextScreen()
+                jQuery('.step').eq(cur_screen-1).addClass('step_done');
+                jQuery('.step').eq(cur_screen).addClass('step_now');
+                jQuery('.btn_back')
+                    .removeClass('invisible')
+                    .addClass('animated')
+                    .addClass('fadeIn');
         }
+    });
+
+// ШАГ 2 (переход к магии)
+
+// Возврат на предыдущий шаг
+    jQuery('.btn_back').on('click', function(event) {
+        console.log(cur_screen);
+        jQuery('.machine_screen')
+            .addClass('hidden')
+            .removeClass('fadeIn')
+            .eq(cur_screen-1)
+            .removeClass('hidden')
+            .addClass('animated')
+            .addClass('fadeIn')
+        jQuery('.step')
+            .removeClass('step_done')
+            .removeClass('step_now');
+        jQuery('.step').eq(cur_screen-1).addClass('step_now');
+        if(cur_screen >= 2){
+            jQuery('.step').eq(cur_screen-2).addClass('step_done');
+        };
+        cur_screen -= 1;
     });
 
     jQuery('.itemlist_item').on('click', function(event) {
@@ -52,7 +99,7 @@ jQuery(function() {
     // check for selected crop region
     function checkForm() {
         if (parseInt(jQuery('#w').val())) return true;
-        jQuery('.error').html('Please select a crop region and then press Upload').show();
+        jQuery('.error').html('Пожалуйста выделите область').show();
         return false;
     };
 
@@ -86,13 +133,13 @@ jQuery(function() {
         // check for image type (jpg and png are allowed)
         var rFilter = /^(image\/jpeg|image\/png)$/i;
         if (! rFilter.test(oFile.type)) {
-            jQuery('.error').html('Please select a valid image file (jpg and png are allowed)').show();
+            jQuery('.error').html('Доспустимы изображения только в формате ".jpg" и ".png"').show();
             return;
         }
 
         // check for file size
         if (oFile.size > 250 * 1024) {
-            jQuery('.error').html('You have selected too big file, please select a one smaller image file').show();
+            jQuery('.error').html('Вы выбрали слишком большой файл, пожалуйста выберите изображение меньшего размера.').show();
             return;
         }
 

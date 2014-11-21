@@ -2329,7 +2329,11 @@ be set to display none.
 }
 .hidden
 {
-  display: none;
+  display: none!important;
+}
+.invisible
+{
+  visibility: hidden!important;
 }
 .login-area 
 {
@@ -2466,8 +2470,92 @@ be set to display none.
   margin: auto;
   position: relative;
   margin-top: 40px;
+  overflow: hidden;
+  -webkit-transition: width 0.2s linear;
+  -moz-transition: width 0.2s linear;
+  transition: width 0.2s linear;
 }
-.btn_choice:after
+.steps 
+{
+  text-align: justify;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+.steps:after
+{
+  content: "";
+  display: inline-block;
+  width: 99%;
+}
+.steps-center 
+{
+  position: absolute;
+  width: 100%;
+  padding: 0 5%;
+  z-index: -1;
+  top: 27px;
+}
+.step
+{
+  width: 70px;
+  height: 70px;
+  margin: 0 20px;
+  border-radius: 50%;
+  padding-top: 11px;
+  padding-left: 27px;
+  font-size: 30px;
+  display: inline-block;
+  cursor: default;
+  background: #ccc;
+  color: #fff;
+  -webkit-transition: background 0.2s linear;
+  -moz-transition: background 0.2s linear;
+  transition: background 0.2s linear;
+}
+.step_now
+{
+  background: #ec971f;
+}
+.step_done
+{
+  background: #68B000;
+}
+.btn_back 
+{
+  display: block;
+  margin: auto;
+  width: 340px;
+  border: 1px solid #68B000;
+  background: transparent;
+  color: #68B000;
+  text-transform: uppercase;
+  font-weight: 600;
+  position: relative;
+  padding-left: 35px;
+}
+.btn_back:hover
+{
+  color: #68B000!important;
+  -webkit-box-shadow: 0px 0px 10px #68B000;
+     -moz-box-shadow: 0px 0px 10px #68B000;
+          box-shadow: 0px 0px 10px #68B000;
+}
+.btn_back span 
+{
+  position: absolute;
+  left: 10px;
+  font-size: 60px;
+  top: -22px;
+}
+.btn_choice pre
+{
+  font-size: 35px;
+  display: inline;
+  position: absolute;
+  top: 0;
+}
+/*.btn_choice:after
 {
   content: '✓';
   display: block;
@@ -2483,10 +2571,10 @@ be set to display none.
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
   opacity: 0;
-}
+}*/
 .btn_choice__choiced 
 {
-  width: 135px;
+  width: 160px;
 }
 .btn_choice.btn_choice__choiced:after
 {
