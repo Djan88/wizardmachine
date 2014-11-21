@@ -1,4 +1,4 @@
-<?php function uploadImageFile() { // Note: GD library is required for this function
+<?php /*function uploadImageFile() { // Note: GD library is required for this function
 
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $iWidth = $iHeight = 200; // desired image result dimensions
@@ -68,3 +68,4 @@
 
 $sImage = uploadImageFile();
 echo '<img src="'.$sImage.'" />';
+*/

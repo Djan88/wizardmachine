@@ -13,6 +13,17 @@
         <div id="main" class="m-all t-2of3 cf home-page-content" role="main">
         <?php if(is_user_logged_in()){ ?>
 
+
+
+<?php
+    if($_POST['mci_magic']){
+        $sImage = uploadImageFile();
+        echo '<img src="'.$sImage.'" />';
+    }
+?>
+
+
+
             <?php if(current_user_can('contributor') || current_user_can('administrator')) { ?>
 
                 <div class="steps clearfix">
@@ -40,23 +51,23 @@
 
                         <!-- upload form -->
 
-                        <form id="upload_form" action="" enctype="multipart/form-data" method="post"><!-- hidden crop params -->
-                        <input id="x1" name="x1" type="hidden" />
-                        <input id="y1" name="y1" type="hidden" />
-                        <input id="x2" name="x2" type="hidden" />
-                        <input id="y2" name="y2" type="hidden" />
+                        <form id="upload_form" action="/wizard/" enctype="multipart/form-data" method="post"><!-- hidden crop params -->
+                        <input id="x1" name="mci_x1" type="hidden" />
+                        <input id="y1" name="mci_y1" type="hidden" />
+                        <input id="x2" name="mci_x2" type="hidden" />
+                        <input id="y2" name="mci_y2" type="hidden" />
                         <h2>Выберите изображение</h2>
-                        <div><input id="image_file" name="image_file" type="file" /></div>
+                        <div><input id="image_file" name="mci_image_file" type="file" /></div>
                         <div class="error"></div>
                         <div class="step2">
                         <h2>Выделите область для обрезки</h2>
                         <img id="preview" alt="" />
-                        <div class="info"><label>Размер файла</label> <input id="filesize" name="filesize" type="text" />
-                        <label>Тип</label> <input id="filetype" name="filetype" type="text" />
-                        <label>Разрешение изображения</label> <input id="filedim" name="filedim" type="text" />
-                        <label>Ширина</label> <input id="w" name="w" type="text" />
-                        <label>Высота</label> <input id="h" name="h" type="text" /></div>
-                        <input type="submit" value="Загрузить" name="magic" />
+                        <div class="info"><label>Размер файла</label> <input id="filesize" name="mci_filesize" type="text" />
+                        <label>Тип</label> <input id="filetype" name="mci_filetype" type="text" />
+                        <label>Разрешение изображения</label> <input id="filedim" name="mci_filedim" type="text" />
+                        <label>Ширина</label> <input id="w" name="mci_w" type="text" />
+                        <label>Высота</label> <input id="h" name="mci_h" type="text" /></div>
+                        <input type="submit" value="Загрузить" name="mci_magic" />
                         </div>
                         </form>
                     
