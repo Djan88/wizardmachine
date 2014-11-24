@@ -303,14 +303,14 @@ function uploadImageFile() { // Note: GD library is required for this function
         if ($_FILES) {
 
             // if no errors and size less than 250kb
-            if (! $_FILES['image_file']['error'] && $_FILES['image_file']['size'] < 250 * 1024) {
-                if (is_uploaded_file($_FILES['image_file']['tmp_name'])) {
+            if (! $_FILES['mci_image_file']['error'] && $_FILES['mci_image_file']['size'] < 250 * 1024) {
+                if (is_uploaded_file($_FILES['mci_image_file']['tmp_name'])) {
 
                     // new unique filename
-                    $sTempFileName = 'cache/' . md5(time().rand());
+                    $sTempFileName = 'wp-content/uploads/cropped/' . md5(time().rand());
 
                     // move uploaded file into cache folder
-                    move_uploaded_file($_FILES['image_file']['tmp_name'], $sTempFileName);
+                    move_uploaded_file($_FILES['mci_image_file']['tmp_name'], $sTempFileName);
 
                     // change file permission to 644
                     @chmod($sTempFileName, 0644);
@@ -345,7 +345,7 @@ function uploadImageFile() { // Note: GD library is required for this function
                         $vDstImg = @imagecreatetruecolor( $iWidth, $iHeight );
 
                         // copy and resize part of an image with resampling
-                        imagecopyresampled($vDstImg, $vImg, 0, 0, (int)$_POST['x1'], (int)$_POST['y1'], $iWidth, $iHeight, (int)$_POST['w'], (int)$_POST['h']);
+                        imagecopyresampled($vDstImg, $vImg, 0, 0, (int)$_POST['mci_x1'], (int)$_POST['mci_y1'], $iWidth, $iHeight, (int)$_POST['mci_w'], (int)$_POST['mci_h']);
 
                         // define a result image filename
                         $sResultFileName = $sTempFileName . $sExt;
@@ -354,18 +354,12 @@ function uploadImageFile() { // Note: GD library is required for this function
                         imagejpeg($vDstImg, $sResultFileName, $iJpgQuality);
                         @unlink($sTempFileName);
 
-                        return $sResultFileName;
+                        return '/' . $sResultFileName;
                     }
                 }
             }
         }
     }
-}
-
-if($_POST['magic']){
-  var_dump($_POST);
-  $sImage = uploadImageFile();
-  echo '<img src="'.$sImage.'" />';
 }
 
 /* DON'T DELETE THIS CLOSING TAG */ ?>
