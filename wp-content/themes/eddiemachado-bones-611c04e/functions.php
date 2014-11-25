@@ -297,7 +297,9 @@ add_action('login_head', 'my_custom_login_logo');
 function uploadImageFile() { // Note: GD library is required for this function
 
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-        $iWidth = $iHeight = 200; // desired image result dimensions
+        //$iWidth = $iHeight = 200; // desired image result dimensions
+        $iWidth = (int)$_POST['mci_w'];
+        $iHeight = (int)$_POST['mci_h'];
         $iJpgQuality = 90;
 
         if ($_FILES) {
