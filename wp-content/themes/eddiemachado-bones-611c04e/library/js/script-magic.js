@@ -8,6 +8,9 @@ jQuery(function() {
     jQuery( ".draggable" ).draggable({ snap: false });
     jQuery( ".select_program" ).accordion({ active: 1 });
 
+    //поиск картинки
+    jQuery('#main img:first-child').addClass('returned')
+
 
     
     jQuery('.show_form').on('click', function(event) {
