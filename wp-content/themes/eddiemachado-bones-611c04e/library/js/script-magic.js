@@ -38,6 +38,10 @@ jQuery(function() {
         jQuery('.step').eq(cur_screen-2).addClass('step_done');
         jQuery('.step').eq(cur_screen).addClass('step_now');
         nextScreen();
+        jQuery('.btn_back')
+            .removeClass('invisible')
+            .addClass('animated')
+            .addClass('fadeIn');
         croppedImgSrc = croppedImg.getAttribute('src'); 
         console.log('attr= '+croppedImgSrc);
     }
@@ -71,7 +75,7 @@ jQuery(function() {
 
 // Возврат на предыдущий шаг
     jQuery('.btn_back').on('click', function(event) {
-        console.log(cur_screen);
+        // console.log(cur_screen);
         jQuery('.machine_screen')
             .addClass('hidden')
             .removeClass('fadeIn')
