@@ -1,11 +1,26 @@
 jQuery(function() {
+    //Скрываем возможно загруженное изображение
+    jQuery('#main img:first-child').addClass('returned hidden');
     var count_animation = 1,
         cur_animation_val = 0,
         cur_screen = 0,
         nextScreen,
         changing,
         croppedImg,
-        croppedImgSrc;
+        curChoice,
+        supportsStorage = function(){
+            try {
+                return 'localStorage' in window && window['localStorage'] !== null;
+            } catch (e) {
+                return false;
+            }
+        };
+
+    //Получение данных из локального хранилища
+    if(supportsStorage && localStorage.getItem('curChoice')){
+        curChoice = localStorage.getItem('curChoice');
+        jQuery('.step_choice:after').css('content', curChoice);
+    }
 
     jQuery( ".draggable" ).draggable({ snap: false });
     jQuery( ".select_program" ).accordion({ active: 1 });
@@ -28,26 +43,6 @@ jQuery(function() {
             .addClass('fadeIn')
     }
 
-//Если фото уже обрезано
-    jQuery('#main img:first-child').addClass('returned hidden');
-    croppedImg = jQuery('#main').children()[0];
-    if(croppedImg.hasAttribute('src'))
-    {
-        cur_screen = 2;
-        jQuery('.step').eq(cur_screen-1).addClass('step_done');
-        jQuery('.step').eq(cur_screen-2).addClass('step_done');
-        jQuery('.step').eq(cur_screen).addClass('step_now');
-        nextScreen();
-        jQuery('.btn_back')
-            .removeClass('invisible')
-            .addClass('animated')
-            .addClass('fadeIn');
-        croppedImgSrc = croppedImg.getAttribute('src'); 
-        console.log('attr= '+croppedImgSrc);
-        // jQuery('.itemlist-two').append('<img src="'+croppedImgSrc+'" alt="croppedImgSrc" width="390" /> ');
-        jQuery('.itemlist-two').append(croppedImg);
-    }
-
 // ШАГ 1 (К загрузке фото)
     jQuery( ".btn_choice" ).on('click', function(event) {
         if(jQuery(this).hasClass('btn_choice__choiced')){
@@ -55,6 +50,11 @@ jQuery(function() {
                 .removeClass('btn_choice__choiced')
                 .text('Выбрать');
         } else {
+            curChoice = jQuery(this)
+                .closest('h3')
+                .text();
+            localStorage.setItem('curChoice', curChoice);
+            jQuery('.step_choice:after').css('content', curChoice);
             cur_screen += 1;
             jQuery(".btn_choice")
                 .removeClass('btn_choice__choiced')
@@ -64,8 +64,12 @@ jQuery(function() {
                 .text('Выбрано')
                 .append('<pre> ✓</pre>');
                 nextScreen()
-                jQuery('.step').eq(cur_screen-1).addClass('step_done');
-                jQuery('.step').eq(cur_screen).addClass('step_now');
+                jQuery('.step')
+                    .eq(cur_screen-1)
+                    .addClass('step_done');
+                jQuery('.step')
+                    .eq(cur_screen)
+                    .addClass('step_now');
                 jQuery('.btn_back')
                     .removeClass('invisible')
                     .addClass('animated')
@@ -74,6 +78,26 @@ jQuery(function() {
     });
 
 // ШАГ 2 (переход к магии)
+//Если фото уже обрезано
+    jQuery('.step_img:after').css('content', curChoice);
+    croppedImg = jQuery('#main').children()[0];
+    if(croppedImg.hasAttribute('src'))
+    {
+        jQuery('.step_choice:after').css('content', jQuery(this)
+                .closest('h3')
+                .text();
+        );
+        cur_screen = 2;
+        jQuery('.step').eq(cur_screen-1).addClass('step_done');
+        jQuery('.step').eq(cur_screen-2).addClass('step_done');
+        jQuery('.step').eq(cur_screen).addClass('step_now');
+        nextScreen();
+        jQuery('.btn_back')
+            .removeClass('invisible')
+            .addClass('animated')
+            .addClass('fadeIn');
+        jQuery('.itemlist-two').append(croppedImg);
+    }
 
 // Возврат на предыдущий шаг
     jQuery('.btn_back').on('click', function(event) {
@@ -88,9 +112,13 @@ jQuery(function() {
         jQuery('.step')
             .removeClass('step_done')
             .removeClass('step_now');
-        jQuery('.step').eq(cur_screen-1).addClass('step_now');
+        jQuery('.step')
+            .eq(cur_screen-1)
+            .addClass('step_now');
         if(cur_screen >= 2){
-            jQuery('.step').eq(cur_screen-2).addClass('step_done');
+            jQuery('.step')
+                .eq(cur_screen-2)
+                .addClass('step_done');
         };
         cur_screen -= 1;
     });

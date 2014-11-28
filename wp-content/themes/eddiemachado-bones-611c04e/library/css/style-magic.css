@@ -135,6 +135,34 @@ input {
     margin: auto;
     margin-bottom: 15px;
 }
+.itemlist.itemlist-two img 
+{
+    display: inline!important;
+    margin: 10px;
+}
+.steps
+{
+    margin-bottom: 30px;
+}
+.step
+{
+    position: relative;
+}
+.btn_back
+{
+    margin-bottom: 15px;
+}
+.step:after 
+{
+    content: '';
+    display: block;
+    position: absolute;
+    color: #000;
+    font-size: 13px;
+    left: 0;
+    text-align: center;
+    top: 75px;
+}
 .jcrop-holder img 
 {
     border: 1px solid red!important;

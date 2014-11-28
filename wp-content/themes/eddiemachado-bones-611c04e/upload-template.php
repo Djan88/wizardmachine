@@ -28,9 +28,9 @@
 
                 <div class="steps clearfix">
                     <div class="steps-center"><hr></div>
-                    <div class="step step_now">1</div>
-                    <div class="step">2</div>
-                    <div class="step">3</div>
+                    <div class="step step_choice step_now">1</div>
+                    <div class="step step_img">2</div>
+                    <div class="step step_procedure">3</div>
                 </div>
                 <div class="btn btn_lg btn_back invisible"><span>‹</span> Вернуться на шаг назад</div>
 
