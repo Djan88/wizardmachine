@@ -3,13 +3,21 @@ jQuery(function() {
         cur_animation_val = 0,
         cur_screen = 0,
         nextScreen,
-        changing;
+        changing,
+        croppedImg,
+        croppedImgSrc;
 
     jQuery( ".draggable" ).draggable({ snap: false });
     jQuery( ".select_program" ).accordion({ active: 1 });
 
-    //поиск картинки
+    //поиск обрезаной картинки
     jQuery('#main img:first-child').addClass('returned')
+    croppedImg = jQuery('#main').children()[0];
+    if(croppedImg.hasAttribute('src'))
+    {
+       croppedImgSrc = croppedImg.getAttribute('src'); 
+       console.log('attr= '+croppedImgSrc);
+    }
 
 
     
@@ -129,7 +137,7 @@ jQuery(function() {
 
         // get selected file
         var oFile = jQuery('#image_file')[0].files[0];
-        console.log(oFile);
+        // console.log(oFile);
         // hide all errors
         jQuery('.error').hide();
 
@@ -141,7 +149,7 @@ jQuery(function() {
         }
 
         // check for file size
-        if (oFile.size > 250 * 1024) {
+        if (oFile.size > 5000 * 1024) {
             jQuery('.error').html('Вы выбрали слишком большой файл, пожалуйста выберите изображение меньшего размера.').show();
             return;
         }

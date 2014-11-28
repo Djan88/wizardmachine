@@ -98,14 +98,14 @@
                         <li id="draggableD5" class="itemlist_item item_list__mid draggable" style="left: 130px; top: -192px;">D5</li>
                         <li id="draggableD4" class="itemlist_item item_list__mid draggable" style="left: 148px; top: -274px;">D4</li>
                     </ul>
-                    <ul class="itemlist itemlist-two">
+                    <div class="itemlist itemlist-two">
                     <!--
                         <li class="itemlist_item">1</li>
                         <li class="itemlist_item">2</li>
                         <li class="itemlist_item">3</li>
                         <li class="itemlist_item">4</li>
                         <li class="itemlist_item">5</li>
-                    --></ul>
+                    --></div>
                     </div>
                 </div>
             <?php } else { ?>
