@@ -67,7 +67,7 @@
                         <label>Разрешение изображения</label> <input id="filedim" name="mci_filedim" type="text" />
                         <label>Ширина</label> <input id="w" name="mci_w" type="text" />
                         <label>Высота</label> <input id="h" name="mci_h" type="text" /></div>
-                        <input type="submit" value="Загрузить" name="mci_magic" />
+                        <input type="submit" value="Редактировать фото" name="mci_magic" />
                         </div>
                         </form>
                     

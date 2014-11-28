@@ -134,7 +134,11 @@ input {
 }
 .jcrop-holder img 
 {
-    border: 1px solid red;
+    border: 1px solid red!important;
+}
+.info
+{
+    display: none;
 }
 input[type=submit] {
     /*background: #e3e3e3;
