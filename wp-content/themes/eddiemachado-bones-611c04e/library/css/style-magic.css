@@ -139,6 +139,7 @@ input {
 {
     display: inline!important;
     margin: 10px;
+    width: 370px;
 }
 .steps
 {
@@ -167,9 +168,13 @@ input {
 {
     border: 1px solid red!important;
 }
-.info
+#filesize, .info label, #filetype, #filedim, 
 {
     display: none;
+}
+#w + label, #h + label 
+{
+    display: block;
 }
 input[type=submit] {
     /*background: #e3e3e3;
