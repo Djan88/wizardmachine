@@ -10,16 +10,6 @@ jQuery(function() {
     jQuery( ".draggable" ).draggable({ snap: false });
     jQuery( ".select_program" ).accordion({ active: 1 });
 
-    //поиск обрезаной картинки
-    jQuery('#main img:first-child').addClass('returned')
-    croppedImg = jQuery('#main').children()[0];
-    if(croppedImg.hasAttribute('src'))
-    {
-       croppedImgSrc = croppedImg.getAttribute('src'); 
-       console.log('attr= '+croppedImgSrc);
-    }
-
-
     
     jQuery('.show_form').on('click', function(event) {
         console.log('ololo');
@@ -36,6 +26,20 @@ jQuery(function() {
             .removeClass('hidden')
             .addClass('animated')
             .addClass('fadeIn')
+    }
+
+//Если фото уже обрезано
+    jQuery('#main img:first-child').addClass('returned hidden');
+    croppedImg = jQuery('#main').children()[0];
+    if(croppedImg.hasAttribute('src'))
+    {
+        cur_screen = 2;
+        jQuery('.step').eq(cur_screen-1).addClass('step_done');
+        jQuery('.step').eq(cur_screen-2).addClass('step_done');
+        jQuery('.step').eq(cur_screen).addClass('step_now');
+        nextScreen();
+        croppedImgSrc = croppedImg.getAttribute('src'); 
+        console.log('attr= '+croppedImgSrc);
     }
 
 // ШАГ 1 (К загрузке фото)
