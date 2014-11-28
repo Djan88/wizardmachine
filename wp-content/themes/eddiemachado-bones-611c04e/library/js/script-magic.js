@@ -50,11 +50,9 @@ jQuery(function() {
                 .removeClass('btn_choice__choiced')
                 .text('Выбрать');
         } else {
-            curChoice = jQuery(this)
-                .closest('h3')
-                .text();
+            curChoice = jQuery('.ui-state-active').text();
             localStorage.setItem('curChoice', curChoice);
-            jQuery('.step_img div').text(curChoice);
+            jQuery('.step_choice div').text(curChoice);
             cur_screen += 1;
             jQuery(".btn_choice")
                 .removeClass('btn_choice__choiced')
@@ -83,7 +81,7 @@ jQuery(function() {
     croppedImg = jQuery('#main').children()[0];
     if(croppedImg.hasAttribute('src'))
     {
-        jQuery('.step_choice:after').css('content', 'Фото загружено');
+        jQuery('.step_img div').text('Фото загружено');
         cur_screen = 2;
         jQuery('.step').eq(cur_screen-1).addClass('step_done');
         jQuery('.step').eq(cur_screen-2).addClass('step_done');
