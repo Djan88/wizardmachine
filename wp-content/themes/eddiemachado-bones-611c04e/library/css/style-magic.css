@@ -152,7 +152,7 @@ input {
 {
     margin-bottom: 15px;
 }
-.step:after 
+.step div
 {
     content: '';
     display: block;

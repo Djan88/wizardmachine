@@ -19,7 +19,7 @@ jQuery(function() {
     //Получение данных из локального хранилища
     if(supportsStorage && localStorage.getItem('curChoice')){
         curChoice = localStorage.getItem('curChoice');
-        jQuery('.step_choice:after').css('content', curChoice);
+        jQuery('.step_choice div').text(curChoice);
     }
 
     jQuery( ".draggable" ).draggable({ snap: false });
@@ -54,7 +54,7 @@ jQuery(function() {
                 .closest('h3')
                 .text();
             localStorage.setItem('curChoice', curChoice);
-            jQuery('.step_choice:after').css('content', curChoice);
+            jQuery('.step_img div').text(curChoice);
             cur_screen += 1;
             jQuery(".btn_choice")
                 .removeClass('btn_choice__choiced')
