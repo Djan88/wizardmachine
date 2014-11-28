@@ -129,8 +129,11 @@ input {
     padding: 4px 8px;
     text-align: center;
 }
-.jcrop-holder {
-    display: inline-block;
+.jcrop-holder 
+{
+    display: block;
+    margin: auto;
+    margin-bottom: 15px;
 }
 .jcrop-holder img 
 {

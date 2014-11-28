@@ -44,6 +44,8 @@ jQuery(function() {
             .addClass('fadeIn');
         croppedImgSrc = croppedImg.getAttribute('src'); 
         console.log('attr= '+croppedImgSrc);
+        // jQuery('.itemlist-two').append('<img src="'+croppedImgSrc+'" alt="croppedImgSrc" width="390" /> ');
+        jQuery('.itemlist-two').append(croppedImg);
     }
 
 // ШАГ 1 (К загрузке фото)
