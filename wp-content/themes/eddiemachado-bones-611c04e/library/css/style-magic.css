@@ -172,7 +172,7 @@ input {
 {
     display: none;
 }
-#w + label, #h + label 
+#w + label, #filedim + label 
 {
     display: block;
 }
