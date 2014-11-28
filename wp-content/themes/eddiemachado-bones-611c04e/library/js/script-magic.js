@@ -83,10 +83,7 @@ jQuery(function() {
     croppedImg = jQuery('#main').children()[0];
     if(croppedImg.hasAttribute('src'))
     {
-        jQuery('.step_choice:after').css('content', jQuery(this)
-                .closest('h3')
-                .text();
-        );
+        jQuery('.step_choice:after').css('content', 'Фото загружено');
         cur_screen = 2;
         jQuery('.step').eq(cur_screen-1).addClass('step_done');
         jQuery('.step').eq(cur_screen-2).addClass('step_done');
