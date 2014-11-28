@@ -109,7 +109,8 @@ jQuery(function() {
             .removeClass('step_now');
         jQuery('.step')
             .eq(cur_screen-1)
-            .addClass('step_now');
+            .addClass('step_now')
+            .find(jQuery('div')).text(' ');
         if(cur_screen >= 2){
             jQuery('.step')
                 .eq(cur_screen-2)
