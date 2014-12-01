@@ -298,8 +298,6 @@ function uploadImageFile() { // Note: GD library is required for this function
 
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         //$iWidth = $iHeight = 200; // desired image result dimensions
-        $iWidth = (int)$_POST['mci_w'];
-        $iHeight = (int)$_POST['mci_h'];
         $iJpgQuality = 90;
 
         if ($_FILES) {
@@ -350,6 +348,14 @@ function uploadImageFile() { // Note: GD library is required for this function
                         }else{
                             $k = $aSize[0] / 800;
                         }
+
+                        if(!$_POST['mci_x1']) $_POST['mci_x1'] = 0;
+                        if(!$_POST['mci_y1']) $_POST['mci_y1'] = 0;
+                        if(!$_POST['mci_w']) $_POST['mci_w'] = 800;
+                        if(!$_POST['mci_h']) $_POST['mci_h'] = $aSize[1] / $k;
+
+                        $iWidth = (int)$_POST['mci_w'];
+                        $iHeight = (int)$_POST['mci_h'];
 
 
                         // create a new true color image
