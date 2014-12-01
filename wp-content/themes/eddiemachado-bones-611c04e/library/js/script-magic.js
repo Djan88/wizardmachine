@@ -183,7 +183,7 @@ jQuery(function() {
         }
 
         // check for file size
-        if (oFile.size > 250 * 1024) {
+        if (oFile.size > 2500 * 1024) {
             jQuery('.error').html('Вы выбрали слишком большой файл, пожалуйста выберите изображение меньшего размера.').show();
             return;
         }
