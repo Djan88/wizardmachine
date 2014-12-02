@@ -94,6 +94,13 @@ jQuery(function() {
         jQuery('.itemlist-two').append(croppedImg);
     }
 
+//ШАГ 3 (Старт процедуры)
+jQuery( ".btn__wizard" ).on('click', function(event) {
+    jQuery(this)
+        .addClass('btn__wizard_inAction')
+        .text('Выполняется');
+});
+
 // Возврат на предыдущий шаг
     jQuery('.btn_back').on('click', function(event) {
         // console.log(cur_screen);
