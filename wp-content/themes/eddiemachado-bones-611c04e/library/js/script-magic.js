@@ -3,7 +3,6 @@ jQuery(function() {
     jQuery('#main img:first-child').addClass('returned hidden');
     var cur_screen = 0,
         nextScreen,
-        changing,
         croppedImg,
         curChoice,
         protocol,
