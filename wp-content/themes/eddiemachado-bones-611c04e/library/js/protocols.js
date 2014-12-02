@@ -19,19 +19,19 @@
                 jQuery('#draggable2, #draggableS2, #draggableS2_1').css('background', 'transparent');
     //фаза 2
                 cur_animation_val = 0;
-                jQuery('#draggableClean_2').css('left', jQuery('#draggableS2').css('left')+50+'px');
-                jQuery('#draggableClean_3').css('left', jQuery('#draggableS2_1').css('left')+50+'px');
+                jQuery('#draggableClean_2').css('left', parseFloat(jQuery('#draggableS2').css('left'))+50+'px');
+                jQuery('#draggableClean_3').css('left', parseFloat(jQuery('#draggableS2_1').css('left'))+50+'px');
                 jQuery('#draggableClean_2, #draggableClean_3').removeClass('inopaciti');
                 phaseTwo = setInterval(function(){
                     if (count_animation <= 60){
                         cur_animation_val += 6;
-                        jQuery('#draggableClean_2, #draggableClean_2').css('transform', 'rotate(-'+cur_animation_val+'deg)');
+                        jQuery('#draggableClean_2, #draggableClean_3').css('transform', 'rotate(-'+cur_animation_val+'deg)');
                         count_animation += 1;
                     } else {
                         clearInterval(phaseTwo);
                         count_animation = 1;
                         jQuery('#draggableClean_2, #draggableClean_3').addClass('inopaciti');
-                        jQuery('#draggableClean_2, #draggableClean_2').css('background', 'transparent');
+                        jQuery('#draggableClean_2, #draggableClean_3').css('background', 'transparent');
                     }
                 }, 1000);
             }
