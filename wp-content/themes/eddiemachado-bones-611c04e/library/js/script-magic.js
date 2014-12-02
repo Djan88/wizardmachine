@@ -1,13 +1,12 @@
 jQuery(function() {
     //Скрываем возможно загруженное изображение
     jQuery('#main img:first-child').addClass('returned hidden');
-    var count_animation = 1,
-        cur_animation_val = 0,
-        cur_screen = 0,
+    var cur_screen = 0,
         nextScreen,
         changing,
         croppedImg,
         curChoice,
+        protocol,
         supportsStorage = function(){
             try {
                 return 'localStorage' in window && window['localStorage'] !== null;
@@ -53,6 +52,7 @@ jQuery(function() {
             curChoice = jQuery('.ui-state-active').text();
             localStorage.setItem('curChoice', curChoice);
             jQuery('.step_choice div').text(curChoice);
+            protocol = jQuery(this).data('protocol');
             cur_screen += 1;
             jQuery(".btn_choice")
                 .removeClass('btn_choice__choiced')
@@ -99,6 +99,12 @@ jQuery( ".btn__wizard" ).on('click', function(event) {
     jQuery(this)
         .addClass('btn__wizard_inAction')
         .text('Выполняется');
+        if(protocol = 'v2'){
+            v2();
+        } else {
+            console.log('нет протокола с id '+ protocol)
+        }
+
 });
 
 // Возврат на предыдущий шаг
@@ -126,20 +132,7 @@ jQuery( ".btn__wizard" ).on('click', function(event) {
         cur_screen -= 1;
     });
 
-    jQuery('.itemlist_item').on('click', function(event) {
-        count_animation = 1;
-        changing = setInterval(function(){
-            // console.log(event.target);
-            if (count_animation >= 60){
-                clearInterval(changing);
-            }
-            cur_animation_val += 6;
-            jQuery(event.target).css('transform', 'rotate(-'+cur_animation_val+'deg)');
-            // jQuery(this).css('top', cur_animation_val+'px');
-            count_animation += 1;
-        }, 1000)
-    });
-
+//CROPPING SCRIPT
     // convert bytes into friendly format
     function bytesToSize(bytes) {
         var sizes = ['Bytes', 'KB', 'MB'];
