@@ -258,3 +258,7 @@ input[type=submit]:hover, input[type=submit]:active {
     top: -262px;
     left: 12px;
 }
+#preview 
+{
+    display: none!important;
+}
