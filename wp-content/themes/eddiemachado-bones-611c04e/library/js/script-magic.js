@@ -98,6 +98,8 @@ jQuery( ".btn__wizard" ).on('click', function(event) {
     jQuery(this)
         .addClass('btn__wizard_inAction')
         .text('Выполняется');
+        jQuery('.step_procedure div').text('Процедура выполняется');
+        jQuery('.btn_back').addClass('invisible');
         if(protocol = 'v2'){
             v2();
         } else {

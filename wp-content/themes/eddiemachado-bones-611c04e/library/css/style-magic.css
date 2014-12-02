@@ -226,6 +226,7 @@ input[type=submit]:hover, input[type=submit]:active {
     border-color: #f0ad4e;
     color: #f0ad4e;
     text-transform: uppercase;
+    padding-top: 13px;
 }
 .btn_trans_action:hover, .btn_trans_action:focus
 {
