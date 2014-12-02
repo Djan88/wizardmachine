@@ -107,7 +107,9 @@
                             <li class="itemlist_item">5</li>
                         -->
                         </div>
-                        <div class="btn btn_lg btn_warning btn__wizard" >Выбрать</div>
+                        <div class="contentAlignCenter">
+                            <div class="btn btn_lg btn_trans_action btn__wizard" >Выбрать</div>
+                        </div>
                     </div>
                 </div>
             <?php } else { ?>
