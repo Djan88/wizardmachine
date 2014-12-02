@@ -245,7 +245,7 @@ input[type=submit]:hover, input[type=submit]:active {
     width: 500px;
     border-top: 1px solid red;
     top: 12px;
-    left: -250px;
+    left: -262px;
 }
 .ui-draggable-dragging:after
 {
@@ -253,6 +253,6 @@ input[type=submit]:hover, input[type=submit]:active {
     position: absolute;
     height: 500px;
     border-left: 1px solid red;
-    top: -250px;
+    top: -262px;
     left: 12px;
 }

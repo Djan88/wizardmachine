@@ -108,7 +108,7 @@
                         -->
                         </div>
                         <div class="contentAlignCenter">
-                            <div class="btn btn_lg btn_trans_action btn__wizard" >Выбрать</div>
+                            <div class="btn btn_lg btn_trans_action btn__wizard" >Выполнить</div>
                         </div>
                     </div>
                 </div>
