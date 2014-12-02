@@ -1,4 +1,3 @@
-jQuery(function() {
     var count_animation = 1,
         cur_animation_val = 0,
         v2;
@@ -18,4 +17,3 @@ jQuery(function() {
         }, 1000);
 
     }
-});
