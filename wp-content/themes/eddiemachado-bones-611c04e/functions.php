@@ -298,14 +298,12 @@ function uploadImageFile() { // Note: GD library is required for this function
 
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         //$iWidth = $iHeight = 200; // desired image result dimensions
-        $iWidth = (int)$_POST['mci_w'];
-        $iHeight = (int)$_POST['mci_h'];
         $iJpgQuality = 90;
 
         if ($_FILES) {
 
             // if no errors and size less than 250kb
-            if (! $_FILES['mci_image_file']['error'] && $_FILES['mci_image_file']['size'] < 250 * 1024) {
+            if (! $_FILES['mci_image_file']['error'] && $_FILES['mci_image_file']['size'] < 2500 * 1024) {
                 if (is_uploaded_file($_FILES['mci_image_file']['tmp_name'])) {
 
                     // new unique filename
@@ -313,6 +311,8 @@ function uploadImageFile() { // Note: GD library is required for this function
 
                     // move uploaded file into cache folder
                     move_uploaded_file($_FILES['mci_image_file']['tmp_name'], $sTempFileName);
+
+
 
                     // change file permission to 644
                     @chmod($sTempFileName, 0644);
@@ -343,11 +343,26 @@ function uploadImageFile() { // Note: GD library is required for this function
                                 return;
                         }
 
+                        if($aSize[0] <= 800){
+                            $k = 1;
+                        }else{
+                            $k = $aSize[0] / 800;
+                        }
+
+                        if(!$_POST['mci_x1']) $_POST['mci_x1'] = 0;
+                        if(!$_POST['mci_y1']) $_POST['mci_y1'] = 0;
+                        if(!$_POST['mci_w']) $_POST['mci_w'] = 800;
+                        if(!$_POST['mci_h']) $_POST['mci_h'] = $aSize[1] / $k;
+
+                        $iWidth = (int)$_POST['mci_w'];
+                        $iHeight = (int)$_POST['mci_h'];
+
+
                         // create a new true color image
                         $vDstImg = @imagecreatetruecolor( $iWidth, $iHeight );
 
                         // copy and resize part of an image with resampling
-                        imagecopyresampled($vDstImg, $vImg, 0, 0, (int)$_POST['mci_x1'], (int)$_POST['mci_y1'], $iWidth, $iHeight, (int)$_POST['mci_w'], (int)$_POST['mci_h']);
+                        imagecopyresampled($vDstImg, $vImg, 0, 0, (int)($_POST['mci_x1'] * $k), (int)($_POST['mci_y1'] * $k), $iWidth, $iHeight, (int)($_POST['mci_w'] * $k), (int)($_POST['mci_h'] * $k));
 
                         // define a result image filename
                         $sResultFileName = $sTempFileName . $sExt;
