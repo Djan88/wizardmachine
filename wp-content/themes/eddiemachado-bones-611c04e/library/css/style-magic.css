@@ -227,6 +227,7 @@ input[type=submit]:hover, input[type=submit]:active {
     color: #f0ad4e;
     text-transform: uppercase;
     padding-top: 13px;
+    font-weight: 600;
 }
 .btn_trans_action:hover, .btn_trans_action:focus, .btn__wizard_inAction
 {
@@ -251,7 +252,7 @@ input[type=submit]:hover, input[type=submit]:active {
     width: 500px;
     border-top: 1px solid red;
     top: 12px;
-    left: -262px;
+    left: -245px;
 }
 .ui-draggable-dragging:after, .itemlist_item:hover:after
 {
@@ -259,10 +260,18 @@ input[type=submit]:hover, input[type=submit]:active {
     position: absolute;
     height: 500px;
     border-left: 1px solid red;
-    top: -262px;
+    top: -245px;
     left: 12px;
 }
 #preview 
 {
     display: none!important;
+}
+.itemlist_item__clear
+{
+    opacity: 1;
+}
+.itemlist_item__clear.inopaciti
+{
+    opacity: 0;
 }
