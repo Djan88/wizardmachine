@@ -33,7 +33,8 @@
                         left: parseFloat(jQuery('#draggableS2_1').css('left'))+70+'px',
                         top: parseFloat(jQuery('#draggableS2_1').css('top'))-335+'px'
                 });
-                jQuery('#draggableClean_2, #draggableClean_3').css('background', 'url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovec.png) 0 0/100% no-repeat');
+                jQuery('#draggableClean_2, #draggableClean_3, #draggableS+').css('background', 'url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovec.png) 0 0/100% no-repeat');
+                jQuery('#draggableS+').css('color', 'transparent');
                 jQuery('#draggableClean_2, #draggableClean_3').removeClass('inopaciti');
                 phaseTwo = setInterval(function(){
                     if (count_animation <= 30){ //120
@@ -43,8 +44,9 @@
                     } else {
                         clearInterval(phaseTwo);
                         count_animation = 1;
+                        jQuery('#draggableS+').css('color', 'red');
                         jQuery('#draggableClean_2, #draggableClean_3').addClass('inopaciti');
-                        jQuery('#draggableClean_2, #draggableClean_3').css('background', 'transparent');
+                        jQuery('#draggableClean_2, #draggableClean_3, #draggableS+').css('background', 'transparent');
                     }
                 }, 1000);
             }
