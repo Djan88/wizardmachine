@@ -55,7 +55,7 @@
                         cur_animation_val = 0;
                         jQuery('#draggableClean_2').css({
                             left: parseFloat(jQuery('#draggableS4').css('left'))+70+'px',
-                            top: parseFloat(jQuery('#draggableS4').css('top'))-224+'px',
+                            top: parseFloat(jQuery('#draggableS4').css('top'))-250+'px',
                             background: 'url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat'
                         });
                         jQuery('#draggableClean_2').removeClass('inopaciti');
@@ -66,7 +66,7 @@
                                 jQuery('#draggableS4, #draggable4').css('background', 'red');
                                 count_animation += 1;
                             } else {
-                                clearInterval(phaseTwo);
+                                clearInterval(phaseThree);
                                 count_animation = 1;
                                 jQuery('#draggableClean_2').addClass('inopaciti');
                                 jQuery('#draggableClean_2').css({
