@@ -11,7 +11,7 @@
             if (count_animation <= 30){ //120
                 cur_animation_val += 6;
                 jQuery('#draggableClean').css({
-                    transform: 'rotate(-'+cur_animation_val+'deg)',
+                    transform: 'rotate(-'+cur_animation_val+'deg) scale(2)',
                     background: 'url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovec.png) 0 0/100% no-repeat'
                 });
                 jQuery('#draggable2, #draggableS2, #draggableS2_1').css('background', 'red');
@@ -19,7 +19,10 @@
             } else {
                 clearInterval(phaseOne);
                 count_animation = 1;
-                jQuery('#draggable2, #draggableS2, #draggableS2_1, #draggableClean').css('background', 'transparent');
+                jQuery('#draggable2, #draggableS2, #draggableS2_1, #draggableClean').css({
+                    background: 'transparent',
+                    transform: 'scale(1)'
+                });
     //фаза 2
                 cur_animation_val = 0;
                 jQuery('#draggableClean_2').css({
@@ -35,7 +38,7 @@
                 phaseTwo = setInterval(function(){
                     if (count_animation <= 30){ //120
                         cur_animation_val += 6;
-                        jQuery('#draggableClean_2, #draggableClean_3').css('transform', 'rotate(-'+cur_animation_val+'deg)');
+                        jQuery('#draggableClean_2, #draggableClean_3').css('transform', 'rotate(-'+cur_animation_val+'deg) scale(2)');
                         count_animation += 1;
                     } else {
                         clearInterval(phaseTwo);
