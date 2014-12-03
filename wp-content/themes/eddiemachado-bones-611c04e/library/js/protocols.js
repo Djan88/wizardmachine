@@ -64,6 +64,9 @@
                                 cur_animation_val += 6;
                                 jQuery('#draggableClean_2').css('transform', 'rotate(-'+cur_animation_val+'deg) scale(2)');
                                 jQuery('#draggableS4, #draggable4').css('background', 'red');
+                                if (count_animation >= 5 && count_animation <= 10){ //60
+                                    jQuery('#draggableS4, #draggable4').css('background', 'red');
+                                }
                                 count_animation += 1;
                             } else {
                                 clearInterval(phaseThree);
@@ -91,7 +94,6 @@
                                         cur_animation_val += 6;
                                         jQuery('#draggableClean_2, #draggableClean_3').css('transform', 'rotate(-'+cur_animation_val+'deg) scale(2)');
                                         jQuery('#draggable5, #draggableD5').css('background', 'red');
-                                        jQuery('#draggable5, #draggableD5').css('background', 'transparent');
                                         if (count_animation >= 5 && count_animation <= 10){ //60
                                             jQuery('#draggableS5, #draggableS6').css('background', 'red');
                                         }
