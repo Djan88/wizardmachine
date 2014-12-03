@@ -21,11 +21,11 @@
                 cur_animation_val = 0;
                 jQuery('#draggableClean_2').css({
                         left: parseFloat(jQuery('#draggableS2').css('left'))+50+'px',
-                        top: parseFloat(jQuery('#draggableS2').css('top')-337+'px')
+                        top: parseFloat(jQuery('#draggableS2').css('top'))-337+'px'
                 });
                 jQuery('#draggableClean_3').css({
                         left: parseFloat(jQuery('#draggableS2_1').css('left'))+50+'px',
-                        top: parseFloat(jQuery('#draggableS2_1').css('top')-337+'px')
+                        top: parseFloat(jQuery('#draggableS2_1').css('top'))-337+'px'
                 });
                 jQuery('#draggableClean_2, #draggableClean_3').removeClass('inopaciti');
                 phaseTwo = setInterval(function(){
