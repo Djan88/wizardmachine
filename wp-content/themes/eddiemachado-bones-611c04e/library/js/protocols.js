@@ -39,12 +39,15 @@
                 phaseTwo = setInterval(function(){
                     if (count_animation <= 30){ //120
                         cur_animation_val += 6;
-                        jQuery('#draggableClean_2, #draggableClean_3').css('transform', 'rotate(-'+cur_animation_val+'deg) scale(2)');
+                        jQuery('#draggableClean_2, #draggableClean_3, #draggableS1').css('transform', 'rotate(-'+cur_animation_val+'deg) scale(2)');
                         count_animation += 1;
                     } else {
                         clearInterval(phaseTwo);
                         count_animation = 1;
-                        jQuery('#draggableS1').css('color', 'red');
+                        jQuery('#draggableS1').css({
+                            color: 'red',
+                            transform: 'scale(1)'
+                        });
                         jQuery('#draggableClean_2, #draggableClean_3').addClass('inopaciti');
                         jQuery('#draggableClean_2, #draggableClean_3, #draggableS1').css('background', 'transparent');
                     }
