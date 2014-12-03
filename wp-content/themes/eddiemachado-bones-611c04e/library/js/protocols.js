@@ -9,7 +9,7 @@
     //фаза 1
         count_animation = 1;
         phaseOne = setInterval(function(){
-            if (count_animation <= 30){ //120
+            if (count_animation <= 10){ //120
                 cur_animation_val += 6;
                 jQuery('#draggableClean').css({
                     transform: 'rotate(-'+cur_animation_val+'deg) scale(2)',
@@ -38,7 +38,7 @@
                 jQuery('#draggableS1').css('color', 'transparent');
                 jQuery('#draggableClean_2, #draggableClean_3').removeClass('inopaciti');
                 phaseTwo = setInterval(function(){
-                    if (count_animation <= 30){ //120
+                    if (count_animation <= 10){ //120
                         cur_animation_val += 6;
                         jQuery('#draggableClean_2, #draggableClean_3, #draggableS1').css('transform', 'rotate(-'+cur_animation_val+'deg) scale(2)');
                         count_animation += 1;
@@ -54,15 +54,16 @@
     //фаза 3
                         cur_animation_val = 0;
                         jQuery('#draggableClean_2').css({
-                                left: parseFloat(jQuery('#draggableS5').css('left'))+70+'px',
-                                top: parseFloat(jQuery('#draggableS5').css('top'))-224+'px',
-                                background: 'url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat'
+                            left: parseFloat(jQuery('#draggableS4').css('left'))+70+'px',
+                            top: parseFloat(jQuery('#draggableS4').css('top'))-224+'px',
+                            background: 'url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat'
                         });
+                        jQuery('#draggableClean_2').removeClass('inopaciti');
                         phaseThree = setInterval(function(){
-                            if (count_animation <= 30){ //120
+                            if (count_animation <= 10){ //120
                                 cur_animation_val += 6;
                                 jQuery('#draggableClean_2').css('transform', 'rotate(-'+cur_animation_val+'deg) scale(2)');
-                                jQuery('#draggableS5, #draggable4').css('background', 'red');
+                                jQuery('#draggableS4, #draggable4').css('background', 'red');
                                 count_animation += 1;
                             } else {
                                 clearInterval(phaseTwo);
@@ -72,7 +73,7 @@
                                     background: 'transparent',
                                     transform: 'rotate(0deg) scale(1)'
                                 });
-                                jQuery('#draggableS5, #draggable4').css('background', 'transparent');
+                                jQuery('#draggableS4, #draggable4').css('background', 'transparent');
                             }
                         }, 1000);
                     }
