@@ -53,6 +53,7 @@ li
 .itemlist-two
 {
     /*background: url(../images/man.jpg) 0 0/100% no-repeat;*/
+    padding: 20px 0;
 }
 .itemlist_item:hover, .itemlist_item:active
 {
