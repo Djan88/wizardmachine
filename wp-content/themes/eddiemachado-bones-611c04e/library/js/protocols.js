@@ -19,8 +19,14 @@
                 jQuery('#draggable2, #draggableS2, #draggableS2_1').css('background', 'transparent');
     //фаза 2
                 cur_animation_val = 0;
-                jQuery('#draggableClean_2').css('left', parseFloat(jQuery('#draggableS2').css('left'))+50+'px');
-                jQuery('#draggableClean_3').css('left', parseFloat(jQuery('#draggableS2_1').css('left'))+50+'px');
+                jQuery('#draggableClean_2').css({
+                        left: parseFloat(jQuery('#draggableS2').css('left'))+50+'px',
+                        top: jQuery('#draggableS2').css('top')
+                });
+                jQuery('#draggableClean_3').css({
+                        left: parseFloat(jQuery('#draggableS2_1').css('left'))+50+'px',
+                        top: jQuery('#draggableS2').css('top')
+                });
                 jQuery('#draggableClean_2, #draggableClean_3').removeClass('inopaciti');
                 phaseTwo = setInterval(function(){
                     if (count_animation <= 60){
