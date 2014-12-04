@@ -69,12 +69,6 @@ h3:focus
 {
     outline: none;
 }
-
-
-
-
-
-
 .bheader {
     background-color: #DDDDDD;
     border-radius: 10px 10px 0 0;
@@ -123,6 +117,7 @@ h3:focus
     max-width: 800px;
     display: block;
     margin: auto;
+    height: auto!important;
 }
 label {
     margin: 0 5px;
