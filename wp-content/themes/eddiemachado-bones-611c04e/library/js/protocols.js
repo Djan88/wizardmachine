@@ -17,7 +17,10 @@
                 });
                 jQuery('#draggable2').css('background', 'url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/disfunction.jpg) 0 0/100% no-repeat');
                 jQuery('#draggableS2, #draggableS2_1').css('background', 'url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/travma.jpg) 0 0/100% no-repeat');
-                jQuery('#draggable2, #draggableS2').css('color', 'transparent');
+                jQuery('#draggable2, #draggableS2, #draggableS2_1').css({
+                    color: 'transparent',
+                    transform: 'scale(2)'
+                });
                 count_animation += 1;
             } else {
                 clearInterval(phaseOne);
@@ -67,7 +70,10 @@
                                 jQuery('#draggableClean_2').css('transform', 'rotate(-'+cur_animation_val+'deg) scale(2)');
                                 jQuery('#draggableS4').css('background', 'url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/povregdenie_demona.jpg) 0 0/100% no-repeat');
                                 jQuery('#draggable4').css('background', 'url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/disfunction.jpg) 0 0/100% no-repeat');
-                                jQuery('#draggable4, #draggableS4').css('color', 'transparent');
+                                jQuery('#draggable4, #draggableS4').css({
+                                    color: 'transparent',
+                                    transform: 'scale(2)'
+                                });
                                 if (count_animation >= 5 && count_animation <= 5){                               //60
                                     jQuery('#draggableS4').css('background', 'url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/filtr.jpg) 0 0/100% no-repeat');
                                 }
@@ -77,11 +83,11 @@
                                 count_animation = 1;
                                 jQuery('#draggableClean_2').addClass('inopaciti');
                                 jQuery('#draggable4, #draggableS4').css('color', 'red');
-                                jQuery('#draggableClean_2').css({
+                                jQuery('#draggableClean_2, #draggable4, #draggableS4').css({
                                     background: 'transparent',
-                                    transform: 'rotate(0deg) scale(1)'
+                                    transform: 'rotate(0deg) scale(1)',
+                                    color: 'red'
                                 });
-                                jQuery('#draggableS4, #draggable4').css('background', 'transparent');
     //фаза 4
                                 cur_animation_val = 0;
                                 jQuery('#draggableClean_2').css({
@@ -94,6 +100,10 @@
                                 });
                                 jQuery('#draggableClean_2, #draggableClean_3').css('background', 'url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat');
                                 jQuery('#draggableClean_2, #draggableClean_3').removeClass('inopaciti');
+                                jQuery('#draggableClean_2, #draggableClean_3').css({
+                                    transform: 'scale(2)',
+                                    color: 'transparent'
+                                });
                                 phaseThree = setInterval(function(){
                                     if (count_animation <= 10){                                                //120
                                         cur_animation_val += 6;
@@ -115,6 +125,7 @@
                                         });
                                         jQuery('#draggable5, #draggableD5, #draggableS5, #draggableS6').css({
                                             background: 'transparent',
+                                            transform: 'scale(1)',
                                             color: 'red'
                                         });
                                     }
