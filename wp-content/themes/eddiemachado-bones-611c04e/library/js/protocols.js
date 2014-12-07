@@ -133,7 +133,7 @@
     //Фаза 5
                                         cur_animation_val = 0;
                                         count_animation = 1;
-                                        jQuery('#draggable_1').find('svg').removeClass('hidden');
+                                        jQuery('#draggable1').find('svg').removeClass('hidden');
                                         var a = new Vivus('triangle_1', {type: 'delayed', duration: 100});
                                         a.play();
                                     }
