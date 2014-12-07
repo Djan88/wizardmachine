@@ -105,6 +105,9 @@ jQuery( ".btn__wizard" ).on('click', function(event) {
         } else {
             console.log('нет протокола с id '+ protocol)
         }
+    jQuery(this)
+        .removeClass('btn__wizard_inAction')
+        .text('Выполнено')
 });
 
 // Возврат на предыдущий шаг
