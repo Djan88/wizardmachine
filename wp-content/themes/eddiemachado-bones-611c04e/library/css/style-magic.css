@@ -292,3 +292,7 @@ path {
   transform: scale(0.1);
   /*transform: rotateY(180deg);*/
 }
+.hidden
+{
+    display: none;
+}
