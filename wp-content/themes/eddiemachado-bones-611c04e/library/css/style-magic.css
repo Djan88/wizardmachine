@@ -292,7 +292,8 @@ path {
   transform: scale(0.1);
   /*transform: rotateY(180deg);*/
 }
-.hidden
+.transparent
 {
-    display: none;
+    border-color: transparent;
+    color: transparent;
 }
