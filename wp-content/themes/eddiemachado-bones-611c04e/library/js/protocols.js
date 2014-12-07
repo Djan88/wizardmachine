@@ -137,7 +137,7 @@
                                         cur_animation_val = 0;
                                         count_animation = 1;
                                     //анимация против часовой стрелки
-                                        jQuery('.triangle').css('transform', 'rotateY(180deg)');
+                                        jQuery('.triangle').css('transform', 'scale(0.1) rotateY(180deg)');
                                         //анимация первого треугольника
                                         jQuery('#draggable1').addClass('transparent');
                                         firstTriangleAnimation = new Vivus('triangle_1', {type: 'delayed', duration: 150}, function(){
@@ -157,7 +157,7 @@
 
 
                                                                 //анимация по часовой стрелке
-                                                                    jQuery('.triangle').css('transform', 'rotateY(0deg)');
+                                                                    jQuery('.triangle').css('transform', 'scale(0.1) rotateY(0deg)');
                                                                     //анимация первого треугольника
                                                                     jQuery('#draggable1').addClass('transparent');                                                                    
                                                                     firstTriangleAnimation = new Vivus('triangle_1', {type: 'delayed', duration: 150}, function(){
