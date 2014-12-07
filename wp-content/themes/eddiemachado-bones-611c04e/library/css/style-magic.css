@@ -274,3 +274,21 @@ input[type=submit]:hover, input[type=submit]:active {
 {
     opacity: 0;
 }
+path, line, polyline {
+  stroke: #000!important;
+  stroke-width: 15px;
+}
+path {
+  fill: transparent!important;
+}
+#example
+{
+  /*padding: 100px;*/
+  width: 400px;
+  margin: auto;
+  position: absolute;
+  left: -180px;
+  top: -151px;
+  transform: scale(0.1);
+  /*transform: rotateY(180deg);*/
+}
