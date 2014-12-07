@@ -281,7 +281,7 @@ path, line, polyline {
 path {
   fill: transparent!important;
 }
-#example
+.triangle
 {
   /*padding: 100px;*/
   width: 400px;
