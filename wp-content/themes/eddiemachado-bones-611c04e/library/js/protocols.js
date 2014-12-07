@@ -4,6 +4,7 @@
         phaseTwo,
         phaseThree,
         phaseFour,
+        curentTriangleAnimation,
         v2;
 
     v2 = function(){
@@ -134,10 +135,15 @@
                                         cur_animation_val = 0;
                                         count_animation = 1;
                                         jQuery('#draggable1').addClass('transparent');
-                                        var a = new Vivus('triangle_1', {type: 'delayed', duration: 150}, function(){
-                                            jQuery('#draggable1').removeClass('transparent');
+                                        curentTriangleAnimation = new Vivus('triangle_1', {type: 'delayed', duration: 150}, function(){
                                         });
-                                        a.play();
+                                        curentTriangleAnimation.play();
+                                        setTimeout(function(){
+                                            jQuery('#draggable2').addClass('transparent');
+                                            curentTriangleAnimation = new Vivus('triangle_2', {type: 'delayed', duration: 150}, function(){
+                                            });
+                                            curentTriangleAnimation.play();
+                                        }, 250)
                                     }
                                 }, 1000);
                             }
