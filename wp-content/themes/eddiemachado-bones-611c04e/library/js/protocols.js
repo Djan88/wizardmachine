@@ -134,7 +134,9 @@
                                         cur_animation_val = 0;
                                         count_animation = 1;
                                         jQuery('#draggable1').addClass('transparent');
-                                        var a = new Vivus('triangle_1', {type: 'delayed', duration: 100});
+                                        var a = new Vivus('triangle_1', {type: 'delayed', duration: 150}, function(){
+                                            jQuery('#draggable1').removeClass('transparent');
+                                        });
                                         a.play();
                                     }
                                 }, 1000);
