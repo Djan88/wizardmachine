@@ -228,7 +228,7 @@
                                                                                                         cur_animation_val += 3;
                                                                                                         jQuery('#draggable1').css({
                                                                                                             transform: 'rotate(-'+cur_animation_val+'deg) scale(2)',
-                                                                                                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_left.png) 0 0/100% no-repeat',
+                                                                                                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_right.png) 0 0/100% no-repeat',
                                                                                                             color: 'transparent',
                                                                                                             borderWidth: '1px',
                                                                                                             paddingTop: '4px',
@@ -284,7 +284,7 @@
                                                                                                                         cur_animation_val -= 6;
                                                                                                                         jQuery('#draggable2').css({
                                                                                                                             transform: 'rotate('+cur_animation_val+'deg) scale(2)',
-                                                                                                                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_left.png) 0 0/100% no-repeat',
+                                                                                                                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_right.png) 0 0/100% no-repeat',
                                                                                                                             color: 'transparent',
                                                                                                                             borderWidth: '1px',
                                                                                                                             paddingTop: '4px',
@@ -312,7 +312,7 @@
                                                                                                                                 cur_animation_val += 3;
                                                                                                                                 jQuery('#draggable5').css({
                                                                                                                                     transform: 'rotate(-'+cur_animation_val+'deg) scale(2)',
-                                                                                                                                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_left.png) 0 0/100% no-repeat',
+                                                                                                                                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_right.png) 0 0/100% no-repeat',
                                                                                                                                     color: 'transparent',
                                                                                                                                     borderWidth: '1px',
                                                                                                                                     paddingTop: '4px',
