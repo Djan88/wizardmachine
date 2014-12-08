@@ -4,6 +4,7 @@
         phaseTwo,
         phaseThree,
         phaseFour,
+        phaseSeven_one,
         firstTriangleAnimation,
         secondTriangleAnimation,
         thirdTriangleAnimation,
@@ -180,7 +181,28 @@
                                                                                             jQuery('#draggable4').addClass('transparent');
                                                                                             fourthTriangleAnimation = new Vivus('triangle_4', {type: 'delayed', duration: 150}, function(){
                                                                                                 jQuery('.itemlist_item').removeClass('transparent');
-
+    //Фаза 7
+                                                                                                cur_animation_val = 0;
+                                                                                                count_animation = 1;
+                                                                                                phaseSeven_one = setInterval(function(){
+                                                                                                    if (count_animation <= 30){                                                                         //30
+                                                                                                        cur_animation_val += 3;
+                                                                                                        jQuery('#draggable1').css({
+                                                                                                            transform: 'rotate(-'+60+cur_animation_val+'deg) scale(2)',
+                                                                                                            background: 'url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_left.png) 0 0/100% no-repeat',
+                                                                                                            color: 'transparent'
+                                                                                                        });
+                                                                                                        count_animation += 1;
+                                                                                                    } else {
+                                                                                                        clearInterval(phaseSeven_one);
+                                                                                                        count_animation = 1;
+                                                                                                        jQuery('#draggable1').css({
+                                                                                                            transform: 'rotate(-'+0+'deg) scale(1)',
+                                                                                                            background: 'transparent',
+                                                                                                            color: 'transparent'
+                                                                                                        });
+                                                                                                    }
+                                                                                                }, 1000);
                                                                                             });
                                                                                             fourthTriangleAnimation.play();
                                                                                         }, 250)
