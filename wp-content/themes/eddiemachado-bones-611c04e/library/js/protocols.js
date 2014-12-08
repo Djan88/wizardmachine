@@ -227,10 +227,33 @@
                                                                                                                     background: 'transparent',
                                                                                                                     color: 'red'
                                                                                                                 });
+                                                                                    //Этап 7-3
+                                                                                                                cur_animation_val = 90;
+                                                                                                                count_animation = 1;
+                                                                                                                phaseSeven_one = setInterval(function(){
+                                                                                                                    if (count_animation <= 15){                                                                         //15
+                                                                                                                        cur_animation_val -= 6;
+                                                                                                                        jQuery('#draggable2').css({
+                                                                                                                            transform: 'rotate('+cur_animation_val+'deg) scale(2)',
+                                                                                                                            background: 'url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_left.png) 0 0/100% no-repeat',
+                                                                                                                            color: 'transparent'
+                                                                                                                        });
+                                                                                                                        count_animation += 1;
+                                                                                                                    } else if(count_animation <= 20) {                                                         //120
+                                                                                                                        count_animation += 1;
+                                                                                                                    } else {    
+                                                                                                                        clearInterval(phaseSeven_one);
+                                                                                                                        count_animation = 1;
+                                                                                                                        jQuery('#draggable2').css({
+                                                                                                                            transform: 'rotate(-'+0+'deg) scale(1)',
+                                                                                                                            background: 'transparent',
+                                                                                                                            color: 'red'
+                                                                                                                        });
 
+                                                                                                                    }
+                                                                                                                }, 1000);
                                                                                                             }
                                                                                                         }, 1000);
-
                                                                                                     }
                                                                                                 }, 1000);
                                                                                             });
