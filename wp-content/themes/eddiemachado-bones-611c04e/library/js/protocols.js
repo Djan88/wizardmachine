@@ -185,7 +185,7 @@
                                                                                                 cur_animation_val = 60;
                                                                                                 count_animation = 1;
                                                                                                 phaseSeven_one = setInterval(function(){
-                                                                                                    if (count_animation <= 10){                                                                         //30
+                                                                                                    if (count_animation <= 10){                                                                         //10
                                                                                                         cur_animation_val += 3;
                                                                                                         jQuery('#draggable1').css({
                                                                                                             transform: 'rotate(-'+cur_animation_val+'deg) scale(2)',
@@ -193,7 +193,9 @@
                                                                                                             color: 'transparent'
                                                                                                         });
                                                                                                         count_animation += 1;
-                                                                                                    } else {
+                                                                                                    } else if(count_animation <= 120) {                                                         //120
+                                                                                                        count_animation += 1;
+                                                                                                    } else {    
                                                                                                         clearInterval(phaseSeven_one);
                                                                                                         count_animation = 1;
                                                                                                         jQuery('#draggable1').css({
