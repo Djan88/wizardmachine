@@ -21,7 +21,8 @@
                     transform: 'rotate(-'+cur_animation_val+'deg) scale(2)',
                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat',
                     borderWidth: '1px',
-                    paddingTop: '4px'
+                    paddingTop: '4px',
+                    zIndex: '1000'
                 });
                 jQuery('#draggable2').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/disfunction.jpg) 0 0/100% no-repeat');
                 jQuery('#draggableS2, #draggableS2_1').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/travma.jpg) 0 0/100% no-repeat');
@@ -29,7 +30,8 @@
                     color: 'transparent',
                     transform: 'scale(2)',
                     borderWidth: '1px',
-                    paddingTop: '4px'
+                    paddingTop: '4px',
+                    zIndex: '1000'
                 });
                 count_animation += 1;
             } else {
@@ -40,7 +42,8 @@
                     transform: 'scale(1)',
                     color: 'red',
                     borderWidth: '2px',
-                    paddingTop: '2px'
+                    paddingTop: '2px',
+                    zIndex: '1'
                 });
     //фаза 2
                 cur_animation_val = 0;
@@ -61,7 +64,8 @@
                         jQuery('#draggableClean_2, #draggableClean_3, #draggableS1').css({
                             transform: 'rotate(-'+cur_animation_val+'deg) scale(2)',
                             borderWidth: '1px',
-                            paddingTop: '4px'
+                            paddingTop: '4px',
+                            zIndex: '1000'
                         });
                         count_animation += 1;
                     } else {
@@ -73,7 +77,8 @@
                             transform: 'rotate(0deg) scale(1)',
                             color: 'red',
                             borderWidth: '2px',
-                            paddingTop: '2px'
+                            paddingTop: '2px',
+                            zIndex: '1'
                         });
     //фаза 3
                         cur_animation_val = 0;
@@ -89,7 +94,8 @@
                                 jQuery('#draggableClean_2').css({
                                     transform: 'rotate(-'+cur_animation_val+'deg) scale(2)',
                                     borderWidth: '1px',
-                                    paddingTop: '4px'
+                                    paddingTop: '4px',
+                                    zIndex: '1000'
                                 });
                                 jQuery('#draggableS4').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/povregdenie_demona.jpg) 0 0/100% no-repeat');
                                 jQuery('#draggable4').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/disfunction.jpg) 0 0/100% no-repeat');
@@ -97,7 +103,8 @@
                                     color: 'transparent',
                                     transform: 'scale(2)',
                                     borderWidth: '1px',
-                                    paddingTop: '4px'
+                                    paddingTop: '4px',
+                                    zIndex: '1000'
                                 });
                                 if (count_animation >= 5 && count_animation <= 10){                               //60
                                     jQuery('#draggableS4').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/filtr.jpg) 0 0/100% no-repeat');
@@ -113,7 +120,8 @@
                                     transform: 'rotate(0deg) scale(1)',
                                     color: 'red',
                                     borderWidth: '2px',
-                                    paddingTop: '2px'
+                                    paddingTop: '2px',
+                                    zIndex: '1'
                                 });
     //фаза 4
                                 cur_animation_val = 0;
@@ -131,7 +139,8 @@
                                     transform: 'scale(2)',
                                     color: 'transparent',
                                     borderWidth: '1px',
-                                    paddingTop: '4px'
+                                    paddingTop: '4px',
+                                    zIndex: '1000'
                                 });
                                 phaseFour = setInterval(function(){
                                     if (count_animation <= 10){                                                //120
@@ -152,14 +161,16 @@
                                             background: 'transparent',
                                             transform: 'rotate(0deg) scale(1)',
                                             borderWidth: '2px',
-                                            paddingTop: '2px'
+                                            paddingTop: '2px',
+                                            zIndex: '1'
                                         });
                                         jQuery('#draggable5, #draggableD5, #draggableS5, #draggableS6').css({
                                             background: 'transparent',
                                             transform: 'scale(1)',
                                             color: 'red',
                                             borderWidth: '2px',
-                                            paddingTop: '2px'
+                                            paddingTop: '2px',
+                                            zIndex: '1'
                                         });
     //Фаза 5
                                         cur_animation_val = 0;
@@ -220,7 +231,8 @@
                                                                                                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_left.png) 0 0/100% no-repeat',
                                                                                                             color: 'transparent',
                                                                                                             borderWidth: '1px',
-                                                                                                            paddingTop: '4px'
+                                                                                                            paddingTop: '4px',
+                                                                                                            zIndex: '1000'
                                                                                                         });
                                                                                                         count_animation += 1;
                                                                                                     } else if(count_animation <= 20) {                                                         //120
@@ -233,7 +245,8 @@
                                                                                                             background: 'transparent',
                                                                                                             color: 'red',
                                                                                                             borderWidth: '2px',
-                                                                                                            paddingTop: '2px'
+                                                                                                            paddingTop: '2px',
+                                                                                                            zIndex: '1'
                                                                                                         });
                                                                                     //Этап 7-2
                                                                                                         cur_animation_val = 90;
@@ -246,7 +259,8 @@
                                                                                                                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_left.png) 0 0/100% no-repeat',
                                                                                                                     color: 'transparent',
                                                                                                                     borderWidth: '1px',
-                                                                                                                    paddingTop: '4px'
+                                                                                                                    paddingTop: '4px',
+                                                                                                                    zIndex: '1000'
                                                                                                                 });
                                                                                                                 count_animation += 1;
                                                                                                             } else if(count_animation <= 20) {                                                         //120
@@ -259,7 +273,8 @@
                                                                                                                     background: 'transparent',
                                                                                                                     color: 'red',
                                                                                                                     borderWidth: '2px',
-                                                                                                                    paddingTop: '2px'
+                                                                                                                    paddingTop: '2px',
+                                                                                                                    zIndex: '1'
                                                                                                                 });
                                                                                     //Этап 7-3
                                                                                                                 cur_animation_val = 90;
@@ -272,7 +287,8 @@
                                                                                                                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_left.png) 0 0/100% no-repeat',
                                                                                                                             color: 'transparent',
                                                                                                                             borderWidth: '1px',
-                                                                                                                            paddingTop: '4px'
+                                                                                                                            paddingTop: '4px',
+                                                                                                                            zIndex: '1000'
                                                                                                                         });
                                                                                                                         count_animation += 1;
                                                                                                                     } else if(count_animation <= 20) {                                                         //120
@@ -285,7 +301,8 @@
                                                                                                                             background: 'transparent',
                                                                                                                             color: 'red',
                                                                                                                             borderWidth: '2px',
-                                                                                                                            paddingTop: '2px'
+                                                                                                                            paddingTop: '2px',
+                                                                                                                            zIndex: '1'
                                                                                                                         });
                                                                                     //Этап 7-4
                                                                                                                         cur_animation_val = 60;
@@ -298,7 +315,8 @@
                                                                                                                                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_left.png) 0 0/100% no-repeat',
                                                                                                                                     color: 'transparent',
                                                                                                                                     borderWidth: '1px',
-                                                                                                                                    paddingTop: '4px'
+                                                                                                                                    paddingTop: '4px',
+                                                                                                                                    zIndex: '1000'
                                                                                                                                 });
                                                                                                                                 count_animation += 1;
                                                                                                                             } else if(count_animation <= 20) {                                                         //120
@@ -311,7 +329,8 @@
                                                                                                                                     background: 'transparent',
                                                                                                                                     color: 'red',
                                                                                                                                     borderWidth: '2px',
-                                                                                                                                    paddingTop: '2px'
+                                                                                                                                    paddingTop: '2px',
+                                                                                                                                    zIndex: '1'
                                                                                                                                 });
                                                                                     //Этап 7-5
                                                                                                                                 cur_animation_val = 84;
@@ -324,7 +343,8 @@
                                                                                                                                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_left.png) 0 0/100% no-repeat',
                                                                                                                                             color: 'transparent',
                                                                                                                                             borderWidth: '1px',
-                                                                                                                                            paddingTop: '4px'
+                                                                                                                                            paddingTop: '4px',
+                                                                                                                                            zIndex: '1000'
                                                                                                                                         });
                                                                                                                                         count_animation += 1;
                                                                                                                                     } else if(count_animation <= 20) {                                                         //120
@@ -337,7 +357,8 @@
                                                                                                                                             background: 'transparent',
                                                                                                                                             color: 'red',
                                                                                                                                             borderWidth: '2px',
-                                                                                                                                            paddingTop: '2px'
+                                                                                                                                            paddingTop: '2px',
+                                                                                                                                            zIndex: '1'
                                                                                                                                         });
         //Фаза 8
                                                                                                                                         cur_animation_val = 0;
