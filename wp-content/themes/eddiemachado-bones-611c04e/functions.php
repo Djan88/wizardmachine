@@ -303,7 +303,7 @@ function uploadImageFile() { // Note: GD library is required for this function
         if ($_FILES) {
 
             // if no errors and size less than 250kb
-            if (! $_FILES['mci_image_file']['error'] && $_FILES['mci_image_file']['size'] < 2500 * 1024) {
+            if (! $_FILES['mci_image_file']['error'] && $_FILES['mci_image_file']['size'] < 15 * 1024 * 1024) {
                 if (is_uploaded_file($_FILES['mci_image_file']['tmp_name'])) {
 
                     // new unique filename

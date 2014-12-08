@@ -10,3 +10,6 @@ RewriteRule . /machine-magic/index.php [L]
 </IfModule>
 
 # END WordPress
+
+php_value post_max_size 15M
+php_value upload_max_filesize 15M
