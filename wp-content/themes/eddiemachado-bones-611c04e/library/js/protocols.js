@@ -524,7 +524,33 @@
                                                             jQuery('#draggable4').addClass('transparent');
                                                             fourthTriangleAnimation = new Vivus('triangle_4', {type: 'delayed', duration: 150}, function(){
                                                                 jQuery('.itemlist_item').removeClass('transparent');
-                                                                
+    //фаза 2
+                                                                count_animation = 1;
+                                                                phaseOne = setInterval(function(){
+                                                                    if (count_animation <= 10){                                                                         //120
+                                                                        cur_animation_val += 6;
+                                                                        jQuery('#draggable1, #draggable4, #draggable5').css({
+                                                                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/disfunction.jpg) 0 0/100% no-repeat',
+                                                                            color: 'transparent'
+                                                                        });
+                                                                        jQuery('#draggableD1, #draggableD2, #draggableD4, #draggableD5').css({
+                                                                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/drenag.jpg) 0 0/100% no-repeat',
+                                                                            color: 'transparent'
+                                                                        });
+                                                                        jQuery('#draggable3').css({
+                                                                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/rogdenia.jpg) 0 0/100% no-repeat',
+                                                                            color: 'transparent'
+                                                                        });
+                                                                        count_animation += 1;
+                                                                    } else {
+                                                                        clearInterval(phaseOne);
+                                                                        count_animation = 1;
+                                                                        jQuery('#draggable1, #draggable3, #draggable4, #draggable5, #draggableD1, #draggableD2, #draggableD4, #draggableD5').css({
+                                                                            background: 'transparent',
+                                                                            color: 'transparent'
+                                                                        });
+                                                                    }
+                                                                }, 1000);
                                                             });
                                                             fourthTriangleAnimation.play();
                                                         }, 250)
