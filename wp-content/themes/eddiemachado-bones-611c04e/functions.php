@@ -371,7 +371,7 @@ function uploadImageFile() { // Note: GD library is required for this function
                             }
                         }
 
-                        if($aSize[0] <= 800){
+                        if($aSize[0] <= 800 && $_POST['mci_w']){
                             $k = 1;
                         }else{
                             $k = $aSize[0] / 800;
