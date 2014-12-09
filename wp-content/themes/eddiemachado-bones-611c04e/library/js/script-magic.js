@@ -103,11 +103,11 @@ jQuery( ".btn__wizard" ).on('click', function(event) {
         jQuery('.step_procedure div').text('Процедура выполняется');
         jQuery('.btn_back').addClass('invisible');
         console.log(protocol);
-        if(protocol = 'v2'){
-            v2;
-        } else if(protocol = 'v3'){
-            v3;
-        } else if(!protocol) {
+        if(protocol == 'v2'){
+            v2();
+        } else if(protocol == 'v3'){
+            v3();
+        } else{
             console.log('нет протокола с id '+ protocol)
         }
 });
