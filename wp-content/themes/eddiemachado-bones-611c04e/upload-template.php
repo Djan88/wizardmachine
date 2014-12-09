@@ -62,6 +62,7 @@
                         <div class="step2">
                         <h2>Выделите область для обрезки</h2>
                         <img id="preview" alt="" />
+                        <!--<canvas id="preview-canvas" style="border: 3px red solid;/*position: absolute; visibility: hidden; /*left: -20000px*/"></canvas>-->
                         <div class="info"><label>Размер файла</label> <input id="filesize" name="mci_filesize" type="text" />
                         <label>Тип</label> <input id="filetype" name="mci_filetype" type="text" />
                         <label>Разрешение изображения</label> <input id="filedim" name="mci_filedim" type="text" />
