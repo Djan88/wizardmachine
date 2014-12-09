@@ -200,7 +200,7 @@
 
                                                                 //анимация по часовой стрелке
                                                                     jQuery('.triangle').css({
-                                                                        transform: 'scale(0.1) rotateY(0deg)',
+                                                                        transform: 'scale(0.1) rotateY(90deg)',
                                                                         left: '-185px'
                                                                     });
                                                                     //анимация первого треугольника
