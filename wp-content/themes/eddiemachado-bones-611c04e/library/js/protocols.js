@@ -15,7 +15,7 @@
     //фаза 1
         count_animation = 1;
         phaseOne = setInterval(function(){
-            if (count_animation <= 5){                                                                         //120
+            if (count_animation <= 120){                                                                         //120
                 cur_animation_val += 6;
                 jQuery('#draggableClean').css({
                     transform: 'rotate(-'+cur_animation_val+'deg) scale(2)',
@@ -59,7 +59,7 @@
                 jQuery('#draggableS1').css('color', 'transparent');
                 jQuery('#draggableClean_2, #draggableClean_3').removeClass('inopaciti');
                 phaseTwo = setInterval(function(){
-                    if (count_animation <= 5){                                                                 //120
+                    if (count_animation <= 120){                                                                 //120
                         cur_animation_val += 6;
                         jQuery('#draggableClean_2, #draggableClean_3, #draggableS1').css({
                             transform: 'rotate(-'+cur_animation_val+'deg) scale(2)',
@@ -89,7 +89,7 @@
                         });
                         jQuery('#draggableClean_2').removeClass('inopaciti');
                         phaseThree = setInterval(function(){
-                            if (count_animation <= 5){                                                         //120
+                            if (count_animation <= 120){                                                         //120
                                 cur_animation_val += 6;
                                 jQuery('#draggableClean_2').css({
                                     transform: 'rotate(-'+cur_animation_val+'deg) scale(2)',
@@ -106,7 +106,7 @@
                                     paddingTop: '4px',
                                     zIndex: '1000'
                                 });
-                                if (count_animation >= 2 && count_animation <= 5){                               //60
+                                if (count_animation >= 60 && count_animation <= 120){                               //60
                                     jQuery('#draggableS4').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/filtr.jpg) 0 0/100% no-repeat');
                                 }
                                 count_animation += 1;
@@ -143,13 +143,13 @@
                                     zIndex: '1000'
                                 });
                                 phaseFour = setInterval(function(){
-                                    if (count_animation <= 5){                                                //120
+                                    if (count_animation <= 120){                                                //120
                                         cur_animation_val += 6;
                                         jQuery('#draggableClean_2, #draggableClean_3').css('transform', 'rotate(-'+cur_animation_val+'deg) scale(2)');
                                         jQuery('#draggable5, #draggableD5').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/disfunction.jpg) 0 0/100% no-repeat');
                                         jQuery('#draggableS5, #draggableS6').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/povregdenie_demona.jpg) 0 0/100% no-repeat');
                                         jQuery('#draggable5, #draggableD5, #draggableS5, #draggableS6').css('color', 'transparent');
-                                        if (count_animation >= 2 && count_animation <= 5){                      //60
+                                        if (count_animation >= 60 && count_animation <= 120){                      //60
                                             jQuery('#draggableS5, #draggableS6').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/filtr.jpg) 0 0/100% no-repeat');
                                         }
                                         count_animation += 1;
@@ -202,7 +202,7 @@
                                                                 //анимация по часовой стрелке
                                                                     jQuery('.triangle').css({
                                                                         transform: 'scale(0.1) rotateY(0deg)rotateZ(120deg)',
-                                                                        left: '-190px',
+                                                                        left: '-185px',
                                                                         top: '-145px'
                                                                     });
                                                                     //анимация первого треугольника
@@ -237,7 +237,7 @@
                                                                                                             zIndex: '1000'
                                                                                                         });
                                                                                                         count_animation += 1;
-                                                                                                    } else if(count_animation <= 20) {                                                         //130
+                                                                                                    } else if(count_animation <= 130) {                                                         //130
                                                                                                         count_animation += 1;
                                                                                                     } else {    
                                                                                                         clearInterval(phaseSeven_one);
@@ -265,7 +265,7 @@
                                                                                                                     zIndex: '1000'
                                                                                                                 });
                                                                                                                 count_animation += 1;
-                                                                                                            } else if(count_animation <= 20) {                                                         //135
+                                                                                                            } else if(count_animation <= 135) {                                                         //135
                                                                                                                 count_animation += 1;
                                                                                                             } else {    
                                                                                                                 clearInterval(phaseSeven_one);
@@ -293,7 +293,7 @@
                                                                                                                             zIndex: '1000'
                                                                                                                         });
                                                                                                                         count_animation += 1;
-                                                                                                                    } else if(count_animation <= 20) {                                                         //135
+                                                                                                                    } else if(count_animation <= 135) {                                                         //135
                                                                                                                         count_animation += 1;
                                                                                                                     } else {    
                                                                                                                         clearInterval(phaseSeven_one);
@@ -321,7 +321,7 @@
                                                                                                                                     zIndex: '1000'
                                                                                                                                 });
                                                                                                                                 count_animation += 1;
-                                                                                                                            } else if(count_animation <= 20) {                                                         //130
+                                                                                                                            } else if(count_animation <= 130) {                                                         //130
                                                                                                                                 count_animation += 1;
                                                                                                                             } else {    
                                                                                                                                 clearInterval(phaseSeven_one);
@@ -349,7 +349,7 @@
                                                                                                                                             zIndex: '1000'
                                                                                                                                         });
                                                                                                                                         count_animation += 1;
-                                                                                                                                    } else if(count_animation <= 20) {                                                         //134
+                                                                                                                                    } else if(count_animation <= 134) {                                                         //134
                                                                                                                                         count_animation += 1;
                                                                                                                                     } else {    
                                                                                                                                         clearInterval(phaseSeven_one);
@@ -367,8 +367,9 @@
                                                                                                                                         count_animation = 1;
                                                                                                                                     //анимация против часовой стрелки
                                                                                                                                         jQuery('.triangle').css({
-                                                                                                                                            transform: 'scale(0.1) rotateY(180deg)',
-                                                                                                                                            left: '-190px'
+                                                                                                                                            transform: 'scale(0.1) rotateY(180deg)rotateZ(120deg)',
+                                                                                                                                            left: '-190px',
+                                                                                                                                            top: '-145px'
                                                                                                                                         });
                                                                                                                                         //анимация первого треугольника
                                                                                                                                         jQuery('#draggable1').addClass('transparent');
@@ -390,8 +391,9 @@
 
                                                                                                                                                                 //анимация по часовой стрелке
                                                                                                                                                                     jQuery('.triangle').css({
-                                                                                                                                                                        transform: 'scale(0.1) rotateY(0deg)',
-                                                                                                                                                                        left: '-185px'
+                                                                                                                                                                        transform: 'scale(0.1) rotateY(0deg)rotateZ(120deg)',
+                                                                                                                                                                        left: '-185px',
+                                                                                                                                                                        top: '-145px'
                                                                                                                                                                     });
                                                                                                                                                                     //анимация первого треугольника
                                                                                                                                                                     jQuery('#draggable1').addClass('transparent');                                                                    
