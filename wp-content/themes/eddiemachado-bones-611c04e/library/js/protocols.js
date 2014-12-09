@@ -592,6 +592,7 @@
                                                                                 });
     //фаза 4
                                                                                 count_animation = 1;
+                                                                                cur_animation_val = 0;
                                                                                 phaseOne = setInterval(function(){
                                                                                     if (count_animation <= 10){                                                                         //120
                                                                                         cur_animation_val += 6;
@@ -664,7 +665,6 @@
                                                                                                     transform: 'rotate(-'+cur_animation_val+'deg) scale(2)',
                                                                                                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat',
                                                                                                     borderWidth: '1px',
-                                                                                                    transform: 'scale(2)',
                                                                                                     paddingTop: '4px',
                                                                                                     zIndex: '1000',
                                                                                                     color: 'transparent'
@@ -674,7 +674,6 @@
                                                                                                 clearInterval(phaseOne);
                                                                                                 count_animation = 1;
                                                                                                 jQuery('#draggableClean_2, #draggableClean_3, #draggableClean_4').css({
-                                                                                                    transform: 'rotate(-'+cur_animation_val+'deg) scale(2)',
                                                                                                     background: 'transparent',
                                                                                                     borderWidth: '2px',
                                                                                                     transform: 'scale(1)',
