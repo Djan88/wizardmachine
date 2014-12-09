@@ -636,6 +636,7 @@
                                                                                             background: 'transparent',
                                                                                             borderWidth: '2px',
                                                                                             paddingTop: '2px',
+                                                                                            transform: 'scale(1)',
                                                                                             zIndex: '1',
                                                                                             color: 'red'
                                                                                         });
