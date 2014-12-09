@@ -178,7 +178,7 @@
                                     //анимация против часовой стрелки
                                         jQuery('.triangle').css({
                                             transform: 'scale(0.1) rotateY(180deg)rotateZ(120deg)',
-                                            left: '-185px',
+                                            left: '-190px',
                                             top: '-145px'
                                         });
                                         //анимация первого треугольника
@@ -201,8 +201,9 @@
 
                                                                 //анимация по часовой стрелке
                                                                     jQuery('.triangle').css({
-                                                                        transform: 'scale(0.1) rotateY(0deg)',
-                                                                        left: '-185px'
+                                                                        transform: 'scale(0.1) rotateY(0deg)rotateZ(120deg)',
+                                                                        left: '-190px',
+                                                                        top: '-145px'
                                                                     });
                                                                     //анимация первого треугольника
                                                                     jQuery('#draggable1').addClass('transparent');                                                                    
