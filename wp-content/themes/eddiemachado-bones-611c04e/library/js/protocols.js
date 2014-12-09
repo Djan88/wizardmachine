@@ -555,6 +555,39 @@
                                                                             borderWidth: '2px',
                                                                             paddingTop: '2px'
                                                                         });
+    //фаза 3
+                                                                        count_animation = 1;
+                                                                        phaseOne = setInterval(function(){
+                                                                            if (count_animation <= 10){                                                                         //120
+                                                                                cur_animation_val += 6;
+                                                                                jQuery('#draggableD3, #draggable3').css({
+                                                                                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/disfunction.jpg) 0 0/100% no-repeat'
+                                                                                });
+                                                                                jQuery('#draggableS3').css({
+                                                                                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/travma.jpg) 0 0/100% no-repeat'
+                                                                                });
+                                                                                jQuery('#draggable3, #draggableD3, #draggableS3').css({
+                                                                                    color: 'transparent',
+                                                                                    transform: 'scale(2)',
+                                                                                    borderWidth: '1px',
+                                                                                    paddingTop: '4px'
+                                                                                });
+                                                                                if (count_animation >= 5 && count_animation <= 10){                               //60
+                                                                                    jQuery('#draggableS4').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/filtr.jpg) 0 0/100% no-repeat');
+                                                                                }
+                                                                                count_animation += 1;
+                                                                            } else {
+                                                                                clearInterval(phaseOne);
+                                                                                count_animation = 1;
+                                                                                jQuery('#draggable3, #draggableD3, #draggableS3').css({
+                                                                                    background: 'transparent',
+                                                                                    color: 'red',
+                                                                                    transform: 'scale(1)',
+                                                                                    borderWidth: '2px',
+                                                                                    paddingTop: '2px'
+                                                                                });
+                                                                            }
+                                                                        }, 1000);
                                                                     }
                                                                 }, 1000);
                                                             });
