@@ -17,6 +17,7 @@ jQuery(function() {
     //Получение данных из локального хранилища
     if(supportsStorage && localStorage.getItem('curChoice')){
         curChoice = localStorage.getItem('curChoice');
+        protocol = localStorage.getItem('protocol');
         jQuery('.step_choice div').text(curChoice);
     }
 
@@ -44,6 +45,7 @@ jQuery(function() {
 // ШАГ 1 (К загрузке фото)
     jQuery( ".btn_choice" ).on('click', function(event) {
         protocol = jQuery(this).data('protocol');
+        localStorage.setItem('protocol', protocol);
         if(jQuery(this).hasClass('btn_choice__choiced')){
             jQuery(this)
                 .removeClass('btn_choice__choiced')
@@ -105,7 +107,7 @@ jQuery( ".btn__wizard" ).on('click', function(event) {
             v2();
         } else if(protocol = 'v3'){
             v3();
-        } else {
+        } else if(!protocol) {
             console.log('нет протокола с id '+ protocol)
         }
 });
