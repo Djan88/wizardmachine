@@ -530,16 +530,20 @@
                                                                     if (count_animation <= 10){                                                                         //120
                                                                         cur_animation_val += 6;
                                                                         jQuery('#draggable1, #draggable4, #draggable5').css({
-                                                                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/disfunction.jpg) 0 0/100% no-repeat',
-                                                                            color: 'transparent'
+                                                                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/disfunction.jpg) 0 0/100% no-repeat'
                                                                         });
                                                                         jQuery('#draggableD1, #draggableD2, #draggableD4, #draggableD5').css({
-                                                                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/drenag.jpg) 0 0/100% no-repeat',
-                                                                            color: 'transparent'
+                                                                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/drenag.jpg) 0 0/100% no-repeat'
                                                                         });
                                                                         jQuery('#draggable3').css({
+                                                                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/rogdenia.jpg) 0 0/100% no-repeat'
+                                                                        });
+                                                                        jQuery('#draggable1, #draggable3, #draggable4, #draggable5, #draggableD1, #draggableD2, #draggableD4, #draggableD5').css({
                                                                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/rogdenia.jpg) 0 0/100% no-repeat',
-                                                                            color: 'transparent'
+                                                                            color: 'transparent',
+                                                                            transform: 'scale(2)',
+                                                                            borderWidth: '1px',
+                                                                            paddingTop: '4px'
                                                                         });
                                                                         count_animation += 1;
                                                                     } else {
@@ -547,7 +551,10 @@
                                                                         count_animation = 1;
                                                                         jQuery('#draggable1, #draggable3, #draggable4, #draggable5, #draggableD1, #draggableD2, #draggableD4, #draggableD5').css({
                                                                             background: 'transparent',
-                                                                            color: 'transparent'
+                                                                            color: 'transparent',
+                                                                            transform: 'scale(1)',
+                                                                            borderWidth: '2px',
+                                                                            paddingTop: '2px'
                                                                         });
                                                                     }
                                                                 }, 1000);
