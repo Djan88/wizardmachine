@@ -659,7 +659,7 @@
                                                                                         phaseOne = setInterval(function(){
                                                                                             if (count_animation <= 120){                                                                         //120
                                                                                                 cur_animation_val += 6;
-                                                                                                jQuery('#draggableVD').css({
+                                                                                                jQuery('#draggableClean_2, #draggableClean_3, #draggableClean_4').css({
                                                                                                     transform: 'rotate(-'+cur_animation_val+'deg) scale(2)',
                                                                                                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat',
                                                                                                     borderWidth: '1px',
@@ -672,6 +672,15 @@
                                                                                             } else {
                                                                                                 clearInterval(phaseOne);
                                                                                                 count_animation = 1;
+                                                                                                jQuery('#draggableClean_2, #draggableClean_3, #draggableClean_4').css({
+                                                                                                    transform: 'rotate(-'+cur_animation_val+'deg) scale(2)',
+                                                                                                    background: 'transparent',
+                                                                                                    borderWidth: '2px',
+                                                                                                    transform: 'scale(1)',
+                                                                                                    paddingTop: '2px',
+                                                                                                    zIndex: '1',
+                                                                                                    color: 'transparent'
+                                                                                                });
                                                                                                 jQuery('#draggableClean_2, #draggableClean_3, #draggableClean_4').addClass('inopaciti');
                                                                                             }
                                                                                         }, 1000);
