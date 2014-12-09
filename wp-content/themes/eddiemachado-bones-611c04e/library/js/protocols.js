@@ -539,7 +539,6 @@
                                                                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/rogdenia.jpg) 0 0/100% no-repeat'
                                                                         });
                                                                         jQuery('#draggable1, #draggable3, #draggable4, #draggable5, #draggableD1, #draggableD2, #draggableD4, #draggableD5').css({
-                                                                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/rogdenia.jpg) 0 0/100% no-repeat',
                                                                             color: 'transparent',
                                                                             transform: 'scale(2)',
                                                                             borderWidth: '1px',
@@ -551,7 +550,7 @@
                                                                         count_animation = 1;
                                                                         jQuery('#draggable1, #draggable3, #draggable4, #draggable5, #draggableD1, #draggableD2, #draggableD4, #draggableD5').css({
                                                                             background: 'transparent',
-                                                                            color: 'transparent',
+                                                                            color: 'red',
                                                                             transform: 'scale(1)',
                                                                             borderWidth: '2px',
                                                                             paddingTop: '2px'
