@@ -43,6 +43,7 @@ jQuery(function() {
 
 // ШАГ 1 (К загрузке фото)
     jQuery( ".btn_choice" ).on('click', function(event) {
+        protocol = jQuery(this).data('protocol');
         if(jQuery(this).hasClass('btn_choice__choiced')){
             jQuery(this)
                 .removeClass('btn_choice__choiced')
@@ -51,7 +52,6 @@ jQuery(function() {
             curChoice = jQuery('.ui-state-active').text();
             localStorage.setItem('curChoice', curChoice);
             jQuery('.step_choice div').text(curChoice);
-            protocol = jQuery(this).data('protocol');
             cur_screen += 1;
             jQuery(".btn_choice")
                 .removeClass('btn_choice__choiced')
@@ -103,7 +103,8 @@ jQuery( ".btn__wizard" ).on('click', function(event) {
         console.log(protocol);
         if(protocol = 'v2'){
             v2();
-        } else if(protocol = 'v3') {
+        } else if(protocol = 'v3'){
+            v3();
         } else {
             console.log('нет протокола с id '+ protocol)
         }
