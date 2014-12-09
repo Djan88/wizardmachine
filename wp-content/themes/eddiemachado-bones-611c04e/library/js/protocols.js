@@ -573,7 +573,7 @@
                                                                                     paddingTop: '4px'
                                                                                 });
                                                                                 if (count_animation >= 5 && count_animation <= 10){                               //60
-                                                                                    jQuery('#draggableS4').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/filtr.jpg) 0 0/100% no-repeat');
+                                                                                    jQuery('#draggableS3').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/filtr.jpg) 0 0/100% no-repeat');
                                                                                 }
                                                                                 count_animation += 1;
                                                                             } else {
