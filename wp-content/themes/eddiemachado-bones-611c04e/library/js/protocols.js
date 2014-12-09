@@ -643,16 +643,16 @@
     //фаза 5
                                                                                         count_animation = 1;
                                                                                         jQuery('#draggableClean_2').css({
-                                                                                                left: parseFloat(jQuery('#draggableS2').css('left'))+70+'px',
-                                                                                                top: parseFloat(jQuery('#draggableS2').css('top'))-335+'px'
+                                                                                                left: parseFloat(jQuery('#draggableS4').css('left'))+70+'px',
+                                                                                                top: parseFloat(jQuery('#draggableS4').css('top'))-335+'px'
                                                                                         });
                                                                                         jQuery('#draggableClean_3').css({
-                                                                                                left: parseFloat(jQuery('#draggableS2_1').css('left'))+70+'px',
-                                                                                                top: parseFloat(jQuery('#draggableS2_1').css('top'))-335+'px'
+                                                                                                left: parseFloat(jQuery('#draggableS5').css('left'))+70+'px',
+                                                                                                top: parseFloat(jQuery('#draggableS5').css('top'))-335+'px'
                                                                                         });
                                                                                         jQuery('#draggableClean_4').css({
-                                                                                                left: parseFloat(jQuery('#draggableS2_1').css('left'))+70+'px',
-                                                                                                top: parseFloat(jQuery('#draggableS2_1').css('top'))-335+'px'
+                                                                                                left: parseFloat(jQuery('#draggableS6').css('left'))+70+'px',
+                                                                                                top: parseFloat(jQuery('#draggableS6').css('top'))-335+'px'
                                                                                         });
                                                                                         jQuery('#draggableClean_2, #draggableClean_3, #draggableClean_4').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat');
                                                                                         jQuery('#draggableClean_2, #draggableClean_3, #draggableClean_4').removeClass('inopaciti');
