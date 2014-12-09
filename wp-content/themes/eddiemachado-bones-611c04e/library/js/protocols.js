@@ -640,6 +640,41 @@
                                                                                             zIndex: '1',
                                                                                             color: 'red'
                                                                                         });
+    //фаза 5
+                                                                                        count_animation = 1;
+                                                                                        jQuery('#draggableClean_2').css({
+                                                                                                left: parseFloat(jQuery('#draggableS2').css('left'))+70+'px',
+                                                                                                top: parseFloat(jQuery('#draggableS2').css('top'))-335+'px'
+                                                                                        });
+                                                                                        jQuery('#draggableClean_3').css({
+                                                                                                left: parseFloat(jQuery('#draggableS2_1').css('left'))+70+'px',
+                                                                                                top: parseFloat(jQuery('#draggableS2_1').css('top'))-335+'px'
+                                                                                        });
+                                                                                        jQuery('#draggableClean_4').css({
+                                                                                                left: parseFloat(jQuery('#draggableS2_1').css('left'))+70+'px',
+                                                                                                top: parseFloat(jQuery('#draggableS2_1').css('top'))-335+'px'
+                                                                                        });
+                                                                                        jQuery('#draggableClean_2, #draggableClean_3, #draggableClean_4').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat');
+                                                                                        jQuery('#draggableClean_2, #draggableClean_3, #draggableClean_4').removeClass('inopaciti');
+                                                                                        phaseOne = setInterval(function(){
+                                                                                            if (count_animation <= 120){                                                                         //120
+                                                                                                cur_animation_val += 6;
+                                                                                                jQuery('#draggableVD').css({
+                                                                                                    transform: 'rotate(-'+cur_animation_val+'deg) scale(2)',
+                                                                                                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat',
+                                                                                                    borderWidth: '1px',
+                                                                                                    transform: 'scale(2)',
+                                                                                                    paddingTop: '4px',
+                                                                                                    zIndex: '1000',
+                                                                                                    color: 'transparent'
+                                                                                                });
+                                                                                                count_animation += 1;
+                                                                                            } else {
+                                                                                                clearInterval(phaseOne);
+                                                                                                count_animation = 1;
+                                                                                                jQuery('#draggableClean_2, #draggableClean_3, #draggableClean_4').addClass('inopaciti');
+                                                                                            }
+                                                                                        }, 1000);
                                                                                     }
                                                                                 }, 1000);
                                                                             }

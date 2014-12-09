@@ -788,6 +788,7 @@
                             <li id="draggableD4" class="itemlist_item item_list__mid draggable" style="left: 148px; top: -274px;">D4</li>
                             <li id="draggableClean_2" class="itemlist_item item_list__mid itemlist_item__clear draggable inopaciti" style="left: 35px; top: 80px;"></li>
                             <li id="draggableClean_3" class="itemlist_item item_list__mid itemlist_item__clear draggable inopaciti" style="left: 35px; top: 80px;"></li>
+                            <li id="draggableClean_4" class="itemlist_item item_list__mid itemlist_item__clear draggable inopaciti" style="left: 35px; top: 80px;"></li>
                         </ul>
                         <div class="itemlist itemlist-two">
                         <!--
