@@ -642,6 +642,7 @@
                                                                                         });
     //фаза 5
                                                                                         count_animation = 1;
+                                                                                        cur_animation_val = 0;
                                                                                         jQuery('#draggableClean_2').css({
                                                                                                 left: parseFloat(jQuery('#draggableS4').css('left'))+70+'px',
                                                                                                 top: parseFloat(jQuery('#draggableS4').css('top'))-250+'px'
