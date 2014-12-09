@@ -609,7 +609,7 @@
                                                                                         jQuery('#draggableS4, #draggableS5, #draggableS6').css({
                                                                                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/disfunction.jpg) 0 0/100% no-repeat'
                                                                                         });
-                                                                                        jQuery('#draggableS3').css({
+                                                                                        jQuery('#draggableS3, #draggableS4, #draggableS5, #draggableS6').css({
                                                                                             color: 'transparent',
                                                                                             transform: 'scale(2)',
                                                                                             borderWidth: '1px',
