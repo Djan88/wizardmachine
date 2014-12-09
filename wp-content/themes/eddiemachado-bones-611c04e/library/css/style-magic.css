@@ -167,13 +167,9 @@ input {
 {
     border: 1px solid red!important;
 }
-#filesize, .info label, #filetype, #filedim
+#filesize, .info label, #filetype, #filedim, #w, #h
 {
     display: none;
-}
-#w + label, #filedim + label 
-{
-    display: block;
 }
 input[type=submit] {
     /*background: #e3e3e3;
