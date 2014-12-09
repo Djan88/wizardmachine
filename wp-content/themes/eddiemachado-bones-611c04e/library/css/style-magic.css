@@ -271,8 +271,8 @@ input[type=submit]:hover, input[type=submit]:active {
     opacity: 0;
 }
 path, line, polyline {
-  stroke: #000!important;
-  stroke-width: 15px;
+  stroke: #F0B615!important;
+  stroke-width: 20px;
 }
 path {
   fill: transparent!important;
