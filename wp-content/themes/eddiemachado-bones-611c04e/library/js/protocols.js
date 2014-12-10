@@ -892,7 +892,7 @@
                                                                                                                                                                                                     } else if(count_animation <= 60) {                                                         //133
                                                                                                                                                                                                         count_animation += 1
                                                                                                                                                                                                         jQuery('#draggable1').css({
-                                                                                                                                                                                                            transform: 'rotate('+90+'deg) scale(2)';
+                                                                                                                                                                                                            transform: 'rotate('+90+'deg) scale(2)'
                                                                                                                                                                                                         });
                                                                                                                                                                                                     } else {    
                                                                                                                                                                                                         clearInterval(phaseSeven_one);
@@ -906,7 +906,7 @@
                                                                                                                                                                                                             zIndex: '1'
                                                                                                                                                                                                         });
 
-    
+
                                                                                                                                                                                                     }
                                                                                                                                                                                                 }, 1000);
                                                                                                                                                                                             }
