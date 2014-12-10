@@ -763,7 +763,7 @@
                                                                                                                                                                 cur_animation_val = 90;
                                                                                                                                                                 count_animation = 1;
                                                                                                                                                                 phaseSeven_one = setInterval(function(){
-                                                                                                                                                                    if (count_animation <= 15){                                                                         //15
+                                                                                                                                                                    if (count_animation <= 14){                                                                         //14
                                                                                                                                                                         cur_animation_val -= 6;
                                                                                                                                                                         jQuery('#draggable5').css({
                                                                                                                                                                             transform: 'rotate('+cur_animation_val+'deg) scale(2)',
@@ -774,7 +774,7 @@
                                                                                                                                                                             zIndex: '1000'
                                                                                                                                                                         });
                                                                                                                                                                         count_animation += 1;
-                                                                                                                                                                    } else if(count_animation <= 35) {                                                         //166
+                                                                                                                                                                    } else if(count_animation <= 35) {                                                         //134
                                                                                                                                                                         count_animation += 1;
                                                                                                                                                                     } else {    
                                                                                                                                                                         clearInterval(phaseSeven_one);
