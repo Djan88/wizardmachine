@@ -527,7 +527,7 @@
     //фаза 2
                                                                 count_animation = 1;
                                                                 phaseOne = setInterval(function(){
-                                                                    if (count_animation <= 10){                                                                         //120
+                                                                    if (count_animation <= 120){                                                                         //120
                                                                         cur_animation_val += 6;
                                                                         jQuery('#draggable1, #draggable4, #draggable5').css({
                                                                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/disfunction.jpg) 0 0/100% no-repeat'
@@ -560,7 +560,7 @@
     //фаза 3
                                                                         count_animation = 1;
                                                                         phaseOne = setInterval(function(){
-                                                                            if (count_animation <= 10){                                                                         //120
+                                                                            if (count_animation <= 120){                                                                         //120
                                                                                 cur_animation_val += 6;
                                                                                 jQuery('#draggableD3, #draggable3').css({
                                                                                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/disfunction.jpg) 0 0/100% no-repeat'
@@ -575,7 +575,7 @@
                                                                                     paddingTop: '4px',
                                                                                     zIndex: '1000'
                                                                                 });
-                                                                                if (count_animation >= 5 && count_animation <= 10){                               //60
+                                                                                if (count_animation >= 60 && count_animation <= 120){                               //60
                                                                                     jQuery('#draggableS3').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/filtr.jpg) 0 0/100% no-repeat');
                                                                                 }
                                                                                 count_animation += 1;
@@ -594,7 +594,7 @@
                                                                                 count_animation = 1;
                                                                                 cur_animation_val = 0;
                                                                                 phaseOne = setInterval(function(){
-                                                                                    if (count_animation <= 10){                                                                         //120
+                                                                                    if (count_animation <= 120){                                                                         //120
                                                                                         cur_animation_val += 6;
                                                                                         jQuery('#draggableVD').css({
                                                                                             transform: 'rotate(-'+cur_animation_val+'deg) scale(2)',
@@ -617,7 +617,7 @@
                                                                                             paddingTop: '4px',
                                                                                             zIndex: '1000'
                                                                                         });
-                                                                                        if (count_animation >= 5 && count_animation <= 10){                               //60
+                                                                                        if (count_animation >= 60 && count_animation <= 120){                               //60
                                                                                             jQuery('#draggableS3, #draggableS4, #draggableS5, #draggableS6').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/filtr.jpg) 0 0/100% no-repeat');
                                                                                         }
                                                                                         count_animation += 1;
@@ -659,7 +659,7 @@
                                                                                         jQuery('#draggableClean_2, #draggableClean_3, #draggableClean_4').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat');
                                                                                         jQuery('#draggableClean_2, #draggableClean_3, #draggableClean_4').removeClass('inopaciti');
                                                                                         phaseOne = setInterval(function(){
-                                                                                            if (count_animation <= 10){                                                                         //120
+                                                                                            if (count_animation <= 120){                                                                         //120
                                                                                                 cur_animation_val += 6;
                                                                                                 jQuery('#draggableClean_2, #draggableClean_3, #draggableClean_4').css({
                                                                                                     transform: 'rotate(-'+cur_animation_val+'deg) scale(2)',
@@ -746,7 +746,7 @@
                                                                                                                                                                     zIndex: '1000'
                                                                                                                                                                 });
                                                                                                                                                                 count_animation += 1;
-                                                                                                                                                            } else if(count_animation <= 30) {                                                         //122
+                                                                                                                                                            } else if(count_animation <= 138) {                                                         //138
                                                                                                                                                                 count_animation += 1;
                                                                                                                                                             } else {    
                                                                                                                                                                 clearInterval(phaseSeven_one);
@@ -774,7 +774,7 @@
                                                                                                                                                                             zIndex: '1000'
                                                                                                                                                                         });
                                                                                                                                                                         count_animation += 1;
-                                                                                                                                                                    } else if(count_animation <= 35) {                                                         //134
+                                                                                                                                                                    } else if(count_animation <= 134) {                                                         //134
                                                                                                                                                                         count_animation += 1;
                                                                                                                                                                     } else {    
                                                                                                                                                                         clearInterval(phaseSeven_one);
@@ -802,7 +802,7 @@
                                                                                                                                                                                     zIndex: '1000'
                                                                                                                                                                                 });
                                                                                                                                                                                 count_animation += 1;
-                                                                                                                                                                            } else if(count_animation <= 60) {                                                         //133
+                                                                                                                                                                            } else if(count_animation <= 133) {                                                         //133
                                                                                                                                                                                 count_animation += 1;
                                                                                                                                                                                 jQuery('#draggable5').css({
                                                                                                                                                                                     transform: 'rotate('+90+'deg) scale(2)',
@@ -833,7 +833,7 @@
                                                                                                                                                                                             zIndex: '1000'
                                                                                                                                                                                         });
                                                                                                                                                                                         count_animation += 1;
-                                                                                                                                                                                    } else if(count_animation <= 20) {                                                         //135
+                                                                                                                                                                                    } else if(count_animation <= 135) {                                                         //135
                                                                                                                                                                                         count_animation += 1;
                                                                                                                                                                                     } else {    
                                                                                                                                                                                         clearInterval(phaseSeven_one);
@@ -861,7 +861,7 @@
                                                                                                                                                                                                     zIndex: '1000'
                                                                                                                                                                                                 });
                                                                                                                                                                                                 count_animation += 1;
-                                                                                                                                                                                            } else if(count_animation <= 30) {                                                         //122
+                                                                                                                                                                                            } else if(count_animation <= 122) {                                                         //122
                                                                                                                                                                                                 count_animation += 1;
                                                                                                                                                                                             } else {    
                                                                                                                                                                                                 clearInterval(phaseSeven_one);
@@ -889,7 +889,7 @@
                                                                                                                                                                                                             zIndex: '1000'
                                                                                                                                                                                                         });
                                                                                                                                                                                                         count_animation += 1;
-                                                                                                                                                                                                    } else if(count_animation <= 60) {                                                         //133
+                                                                                                                                                                                                    } else if(count_animation <= 133) {                                                         //133
                                                                                                                                                                                                         count_animation += 1
                                                                                                                                                                                                         jQuery('#draggable1').css({
                                                                                                                                                                                                             transform: 'rotate('+90+'deg) scale(2)'
