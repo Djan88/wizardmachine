@@ -737,7 +737,7 @@
                                                                                                                                                         phaseSeven_one = setInterval(function(){
                                                                                                                                                             if (count_animation <= 18){                                                                         //18
                                                                                                                                                                 cur_animation_val += 3;
-                                                                                                                                                                jQuery('#draggable1').css({
+                                                                                                                                                                jQuery('#draggable5').css({
                                                                                                                                                                     transform: 'rotate(-'+cur_animation_val+'deg) scale(2)',
                                                                                                                                                                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_right.png) 0 0/100% no-repeat',
                                                                                                                                                                     color: 'transparent',
@@ -746,7 +746,7 @@
                                                                                                                                                                     zIndex: '1000'
                                                                                                                                                                 });
                                                                                                                                                                 count_animation += 1;
-                                                                                                                                                            } else if(count_animation <= 30) {                                                         //130
+                                                                                                                                                            } else if(count_animation <= 30) {                                                         //122
                                                                                                                                                                 count_animation += 1;
                                                                                                                                                             } else {    
                                                                                                                                                                 clearInterval(phaseSeven_one);
@@ -763,10 +763,10 @@
                                                                                                                                                                 cur_animation_val = 90;
                                                                                                                                                                 count_animation = 1;
                                                                                                                                                                 phaseSeven_one = setInterval(function(){
-                                                                                                                                                                    if (count_animation <= 15){                                                                         //15
+                                                                                                                                                                    if (count_animation <= 14){                                                                         //14
                                                                                                                                                                         cur_animation_val -= 6;
-                                                                                                                                                                        jQuery('#draggable2').css({
-                                                                                                                                                                            transform: 'rotate(-'+cur_animation_val+'deg) scale(2)',
+                                                                                                                                                                        jQuery('#draggable5').css({
+                                                                                                                                                                            transform: 'rotate('+cur_animation_val+'deg) scale(2)',
                                                                                                                                                                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_left.png) 0 0/100% no-repeat',
                                                                                                                                                                             color: 'transparent',
                                                                                                                                                                             borderWidth: '1px',
