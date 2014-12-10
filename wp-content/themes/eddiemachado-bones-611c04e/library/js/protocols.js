@@ -764,9 +764,9 @@
                                                                                                                                                                 count_animation = 1;
                                                                                                                                                                 phaseSeven_one = setInterval(function(){
                                                                                                                                                                     if (count_animation <= 15){                                                                         //15
-                                                                                                                                                                        cur_animation_val += 6;
+                                                                                                                                                                        cur_animation_val -= 6;
                                                                                                                                                                         jQuery('#draggable5').css({
-                                                                                                                                                                            transform: 'rotate(-'+cur_animation_val+'deg) scale(2)',
+                                                                                                                                                                            transform: 'rotate('+cur_animation_val+'deg) scale(2)',
                                                                                                                                                                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_right.png) 0 0/100% no-repeat',
                                                                                                                                                                             color: 'transparent',
                                                                                                                                                                             borderWidth: '1px',
