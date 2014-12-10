@@ -735,7 +735,7 @@
                                                                                                                                                         cur_animation_val = 30;
                                                                                                                                                         count_animation = 1;
                                                                                                                                                         phaseSeven_one = setInterval(function(){
-                                                                                                                                                            if (count_animation <= 12){                                                                         //12
+                                                                                                                                                            if (count_animation <= 11){                                                                         //11
                                                                                                                                                                 cur_animation_val += 3;
                                                                                                                                                                 jQuery('#draggable1').css({
                                                                                                                                                                     transform: 'rotate(-'+cur_animation_val+'deg) scale(2)',
