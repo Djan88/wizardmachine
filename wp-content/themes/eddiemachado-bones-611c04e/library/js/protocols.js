@@ -751,7 +751,7 @@
                                                                                                                                                             } else {    
                                                                                                                                                                 clearInterval(phaseSeven_one);
                                                                                                                                                                 count_animation = 1;
-                                                                                                                                                                jQuery('#draggable1').css({
+                                                                                                                                                                jQuery('#draggable5').css({
                                                                                                                                                                     transform: 'rotate(-'+0+'deg) scale(1)',
                                                                                                                                                                     background: 'transparent',
                                                                                                                                                                     color: 'red',
@@ -763,7 +763,7 @@
                                                                                                                                                                 cur_animation_val = 90;
                                                                                                                                                                 count_animation = 1;
                                                                                                                                                                 phaseSeven_one = setInterval(function(){
-                                                                                                                                                                    if (count_animation <= 60){                                                                         //60
+                                                                                                                                                                    if (count_animation <= 45){                                                                         //45
                                                                                                                                                                         cur_animation_val += 6;
                                                                                                                                                                         jQuery('#draggable5').css({
                                                                                                                                                                             transform: 'rotate('+cur_animation_val+'deg) scale(2)',
@@ -774,12 +774,12 @@
                                                                                                                                                                             zIndex: '1000'
                                                                                                                                                                         });
                                                                                                                                                                         count_animation += 1;
-                                                                                                                                                                    } else if(count_animation <= 20) {                                                         //135
+                                                                                                                                                                    } else if(count_animation <= 55) {                                                         //165
                                                                                                                                                                         count_animation += 1;
                                                                                                                                                                     } else {    
                                                                                                                                                                         clearInterval(phaseSeven_one);
                                                                                                                                                                         count_animation = 1;
-                                                                                                                                                                        jQuery('#draggable2').css({
+                                                                                                                                                                        jQuery('#draggable5').css({
                                                                                                                                                                             transform: 'rotate(-'+0+'deg) scale(1)',
                                                                                                                                                                             background: 'transparent',
                                                                                                                                                                             color: 'red',
