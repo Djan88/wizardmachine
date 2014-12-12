@@ -32,7 +32,7 @@
                     <div class="step step_img">2 <div></div> </div>
                     <div class="step step_procedure">3 <div></div>  </div>
                 </div>
-                <div class="btn btn_lg btn_back invisible"><span>‹</span> Вернуться на шаг назад</div>
+                <div class="btn btn_back invisible"><span>‹</span> Вернуться на шаг назад</div>
 
                 <div class="machine_screen">
                     <div id="accordion" class="select_program">
