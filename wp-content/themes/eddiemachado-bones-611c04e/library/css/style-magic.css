@@ -142,15 +142,11 @@ input {
 }
 .steps
 {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 .step
 {
     position: relative;
-}
-.btn_back
-{
-    margin-bottom: 15px;
 }
 .step div
 {
@@ -160,8 +156,8 @@ input {
     color: #000;
     font-size: 13px;
     left: 0;
-    text-align: center;
-    top: 75px;
+    top: 45px;
+    width: 400px;
 }
 .jcrop-holder img 
 {
