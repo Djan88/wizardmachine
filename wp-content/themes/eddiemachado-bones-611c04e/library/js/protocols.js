@@ -533,10 +533,10 @@
                                                                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/disfunction.jpg) 0 0/100% no-repeat'
                                                                         });
                                                                         jQuery('#draggableD1, #draggableD2, #draggableD4, #draggableD5').css({
-                                                                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/drenag.jpg) 0 0/100% no-repeat'
+                                                                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/drenag.png) 0 0/100% no-repeat'
                                                                         });
                                                                         jQuery('#draggable3').css({
-                                                                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/rogdenia.jpg) 0 0/100% no-repeat'
+                                                                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/rogdenia.png) 0 0/100% no-repeat'
                                                                         });
                                                                         jQuery('#draggable1, #draggable3, #draggable4, #draggable5, #draggableD1, #draggableD2, #draggableD4, #draggableD5').css({
                                                                             color: 'transparent',
