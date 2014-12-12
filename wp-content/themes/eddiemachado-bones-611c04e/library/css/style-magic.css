@@ -161,6 +161,11 @@ input {
     width: 110px;
     margin-left: -30px;
 }
+.step_choice div 
+{
+    width: 200px;
+    margin-left: -80px;
+}
 .jcrop-holder img 
 {
     border: 1px solid red!important;

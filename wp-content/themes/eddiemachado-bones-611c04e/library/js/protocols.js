@@ -748,6 +748,7 @@
                                                                                                                                                                 count_animation += 1;
                                                                                                                                                             } else if(count_animation <= 138) {                                                         //138
                                                                                                                                                                 count_animation += 1;
+                                                                                                                                                                console.log('7-1'+ count_animation+ '/135');
                                                                                                                                                             } else {    
                                                                                                                                                                 clearInterval(phaseSeven_one);
                                                                                                                                                                 count_animation = 1;
@@ -776,6 +777,7 @@
                                                                                                                                                                         count_animation += 1;
                                                                                                                                                                     } else if(count_animation <= 134) {                                                         //134
                                                                                                                                                                         count_animation += 1;
+                                                                                                                                                                        console.log('7-1'+ count_animation+ '/134');
                                                                                                                                                                     } else {    
                                                                                                                                                                         clearInterval(phaseSeven_one);
                                                                                                                                                                         count_animation = 1;
@@ -807,6 +809,7 @@
                                                                                                                                                                                 jQuery('#draggable5').css({
                                                                                                                                                                                     transform: 'rotate('+90+'deg) scale(2)',
                                                                                                                                                                                 });
+                                                                                                                                                                                console.log('7-1'+ count_animation+ '/133');
                                                                                                                                                                             } else {    
                                                                                                                                                                                 clearInterval(phaseSeven_one);
                                                                                                                                                                                 count_animation = 1;
@@ -835,6 +838,7 @@
                                                                                                                                                                                         count_animation += 1;
                                                                                                                                                                                     } else if(count_animation <= 135) {                                                         //135
                                                                                                                                                                                         count_animation += 1;
+                                                                                                                                                                                        console.log('7-1'+ count_animation+ '/135');
                                                                                                                                                                                     } else {    
                                                                                                                                                                                         clearInterval(phaseSeven_one);
                                                                                                                                                                                         count_animation = 1;
@@ -863,6 +867,7 @@
                                                                                                                                                                                                 count_animation += 1;
                                                                                                                                                                                             } else if(count_animation <= 122) {                                                         //122
                                                                                                                                                                                                 count_animation += 1;
+                                                                                                                                                                                                console.log('7-1'+ count_animation+ '/122');
                                                                                                                                                                                             } else {    
                                                                                                                                                                                                 clearInterval(phaseSeven_one);
                                                                                                                                                                                                 count_animation = 1;
@@ -894,6 +899,7 @@
                                                                                                                                                                                                         jQuery('#draggable1').css({
                                                                                                                                                                                                             transform: 'rotate('+90+'deg) scale(2)'
                                                                                                                                                                                                         });
+                                                                                                                                                                                                        console.log('7-1'+ count_animation+ '/133');
                                                                                                                                                                                                     } else {    
                                                                                                                                                                                                         clearInterval(phaseSeven_one);
                                                                                                                                                                                                         count_animation = 1;
