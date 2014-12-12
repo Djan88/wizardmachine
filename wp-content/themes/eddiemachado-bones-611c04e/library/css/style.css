@@ -2478,9 +2478,10 @@ be set to display none.
 .steps 
 {
   text-align: justify;
-  width: 100%;
+  width: 90%;
   position: relative;
   z-index: 2;
+  margin: auto;
 }
 .steps:after
 {

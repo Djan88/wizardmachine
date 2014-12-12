@@ -93,7 +93,7 @@ h3:focus
 }
 #snaptarget 
 {
-    margin-top: 50px;
+    margin-top: 10px;
 }
 .bbody h2, .info, .error {
     margin: 10px 0;
@@ -156,8 +156,10 @@ input {
     color: #000;
     font-size: 13px;
     left: 0;
+    text-align: center;
     top: 45px;
-    width: 400px;
+    width: 110px;
+    margin-left: -30px;
 }
 .jcrop-holder img 
 {
