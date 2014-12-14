@@ -26,11 +26,14 @@ li
 .itemlist_item
 {
     font-weight: 400;
-    font-size: 15px;
+    font-size: 30px;
     color: red;
     cursor: pointer;
     z-index: 999;
     border: 2px solid red;
+    transform: scale(0.5);
+    width: 56px;
+    height: 56px;
     -webkit-transition: opacity 0.2s ease-in;
        -moz-transition: opacity 0.2s ease-in;
             transition: opacity 0.2s ease-in;
@@ -40,12 +43,11 @@ li
 }
 .itemlist_item.itemlist_item__clear
 {
-    height: 28px;
+    height: 56px;
 }
 .item_list__mid
 {
   border-radius: 50%;
-  width: 28px;
   padding-top: 2px;
   padding-left: 3px;
 }
