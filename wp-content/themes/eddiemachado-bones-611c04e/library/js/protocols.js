@@ -69,7 +69,7 @@
                         count_animation += 1;
                         if (count_animation >= 6 && count_animation <= 12){                               //60-120
                             jQuery('#draggableS2, #draggableS2_1').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/povregdenie_demona.jpg) 0 0/100% no-repeat');
-                        } else if (count_animation >= 12 && count_animation <= 15){                               //120-150
+                        } else if (count_animation >= 12 && count_animation <= 16){                               //120-150
                             jQuery('#draggableS2, #draggableS2_1').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/filtr.jpg) 0 0/100% no-repeat');
                         }
                     } else {
@@ -99,7 +99,7 @@
                         });
                         jQuery('#draggableClean_2, #draggableClean_3, #draggableClean_4').removeClass('inopaciti');
                         phaseThree = setInterval(function(){
-                            if (count_animation <= 12){                                                         //120
+                            if (count_animation <= 120){                                                         //120
                                 cur_animation_val += 6;
                                 jQuery('#draggable4, #draggable5, #draggableD4, #draggableD5, #draggableClean_2, #draggableClean_3, #draggableClean_4').css({
                                     borderWidth: '1px',
