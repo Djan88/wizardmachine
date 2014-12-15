@@ -29,7 +29,7 @@
         });
         jQuery('#draggableClean_2, #draggableClean_3, #draggableClean_4').removeClass('inopaciti');
         phaseOne = setInterval(function(){
-            if (count_animation <= 12){                                                                         //120
+            if (count_animation <= 120){                                                                         //120
                 cur_animation_val += 6;
                 jQuery('#draggableClean, #draggableClean_2, #draggableClean_3, #draggableClean_4').css({
                     transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
