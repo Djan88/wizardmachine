@@ -87,15 +87,15 @@
                         cur_animation_val = 0;
                         jQuery('#draggableClean_2').css({
                                 left: parseFloat(jQuery('#draggableS4').css('left'))+70+'px',
-                                top: parseFloat(jQuery('#draggableS4').css('top'))-275+'px'
+                                top: parseFloat(jQuery('#draggableS4').css('top'))-505+'px'
                         });
                         jQuery('#draggableClean_3').css({
                                 left: parseFloat(jQuery('#draggableS5').css('left'))+70+'px',
-                                top: parseFloat(jQuery('#draggableS5').css('top'))-275+'px'
+                                top: parseFloat(jQuery('#draggableS5').css('top'))-505+'px'
                         });
                         jQuery('#draggableClean_4').css({
                                 left: parseFloat(jQuery('#draggableS6').css('left'))+70+'px',
-                                top: parseFloat(jQuery('#draggableS6').css('top'))-275+'px'
+                                top: parseFloat(jQuery('#draggableS6').css('top'))-505+'px'
                         });
                         jQuery('#draggableClean_2, #draggableClean_3, #draggableClean_4').removeClass('inopaciti');
                         phaseThree = setInterval(function(){
