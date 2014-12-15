@@ -50,11 +50,11 @@
                 cur_animation_val = 0;
                 jQuery('#draggableClean_2').css({
                         left: parseFloat(jQuery('#draggableS2').css('left'))+70+'px',
-                        top: parseFloat(jQuery('#draggableS2').css('top'))-335+'px'
+                        top: parseFloat(jQuery('#draggableS2').css('top'))-745+'px'
                 });
                 jQuery('#draggableClean_3').css({
                         left: parseFloat(jQuery('#draggableS2_1').css('left'))+70+'px',
-                        top: parseFloat(jQuery('#draggableS2_1').css('top'))-335+'px'
+                        top: parseFloat(jQuery('#draggableS2_1').css('top'))-745+'px'
                 });
                 jQuery('#draggableClean_2, #draggableClean_3, #draggableS1').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat');
                 jQuery('#draggableS1').css('color', 'transparent');
@@ -85,7 +85,7 @@
                         cur_animation_val = 0;
                         jQuery('#draggableClean_2').css({
                             left: parseFloat(jQuery('#draggableS4').css('left'))+70+'px',
-                            top: parseFloat(jQuery('#draggableS4').css('top'))-250+'px',
+                            top: parseFloat(jQuery('#draggableS4').css('top'))-660+'px',
                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat'
                         });
                         jQuery('#draggableClean_2').removeClass('inopaciti');
@@ -128,11 +128,11 @@
                                 cur_animation_val = 0;
                                 jQuery('#draggableClean_2').css({
                                     left: parseFloat(jQuery('#draggableS5').css('left'))+70+'px',
-                                    top: parseFloat(jQuery('#draggableS5').css('top'))-225+'px'
+                                    top: parseFloat(jQuery('#draggableS5').css('top'))-635+'px'
                                 });
                                 jQuery('#draggableClean_3').css({
                                     left: parseFloat(jQuery('#draggableS6').css('left'))+70+'px',
-                                    top: parseFloat(jQuery('#draggableS6').css('top'))-225+'px'
+                                    top: parseFloat(jQuery('#draggableS6').css('top'))-635+'px'
                                 });
                                 jQuery('#draggableClean_2, #draggableClean_3').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat');
                                 jQuery('#draggableClean_2, #draggableClean_3').removeClass('inopaciti');
@@ -178,7 +178,7 @@
                                         count_animation = 1;
                                     //анимация против часовой стрелки
                                         jQuery('.triangle').css({
-                                            transform: 'scale(0.1) rotateY(180deg)rotateZ(120deg)',
+                                            transform: 'scale(0.2) rotateY(180deg)rotateZ(120deg)',
                                             left: '-170px',
                                             top: '-120px'
                                         });
@@ -202,7 +202,7 @@
 
                                                                 //анимация по часовой стрелке
                                                                     jQuery('.triangle').css({
-                                                                        transform: 'scale(0.1) rotateY(0deg)rotateZ(120deg)',
+                                                                        transform: 'scale(0.2) rotateY(0deg)rotateZ(120deg)',
                                                                         left: '-180px',
                                                                         top: '-120px'
                                                                     });
