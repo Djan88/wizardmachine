@@ -35,6 +35,8 @@
                     zIndex: '1000'
                 });
                 count_animation += 1;
+                                                                                                        console.log(count_animation);
+                
             } else {
                 clearInterval(phaseOne);
                 count_animation = 1;
@@ -69,6 +71,8 @@
                             zIndex: '1000'
                         });
                         count_animation += 1;
+                                                                                                        console.log(count_animation);
+                        
                     } else {
                         clearInterval(phaseTwo);
                         count_animation = 1;
@@ -111,6 +115,8 @@
                                     jQuery('#draggableS4').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/filtr.jpg) 0 0/100% no-repeat');
                                 }
                                 count_animation += 1;
+                                                                                                        console.log(count_animation);
+                                
                             } else {
                                 clearInterval(phaseThree);
                                 count_animation = 1;
@@ -154,6 +160,8 @@
                                             jQuery('#draggableS5, #draggableS6').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/filtr.jpg) 0 0/100% no-repeat');
                                         }
                                         count_animation += 1;
+                                                                                                        console.log(count_animation);
+                                        
                                     } else {
                                         clearInterval(phaseFour);
                                         count_animation = 1;
@@ -238,8 +246,13 @@
                                                                                                             zIndex: '1000'
                                                                                                         });
                                                                                                         count_animation += 1;
+                                                                                                        console.log(count_animation);
+                                                                                                        
+                                                                                                        console.log(count_animation);
                                                                                                     } else if(count_animation <= 130) {                                                         //130
                                                                                                         count_animation += 1;
+                                                                                                        console.log(count_animation);
+                                                                                                        
                                                                                                         console.log('7-1'+ count_animation+ '/130');
                                                                                                     } else {    
                                                                                                         clearInterval(phaseSeven_one);
@@ -267,8 +280,12 @@
                                                                                                                     zIndex: '1000'
                                                                                                                 });
                                                                                                                 count_animation += 1;
+                                                                                                        console.log(count_animation);
+                                                                                                                
                                                                                                             } else if(count_animation <= 135) {                                                         //135
                                                                                                                 count_animation += 1;
+                                                                                                        console.log(count_animation);
+                                                                                                                
                                                                                                                 console.log('7-2'+ count_animation+ '/135');
                                                                                                             } else {    
                                                                                                                 clearInterval(phaseSeven_one);
@@ -296,8 +313,12 @@
                                                                                                                             zIndex: '1000'
                                                                                                                         });
                                                                                                                         count_animation += 1;
+                                                                                                        console.log(count_animation);
+                                                                                                                        
                                                                                                                     } else if(count_animation <= 135) {                                                         //135
                                                                                                                         count_animation += 1;
+                                                                                                        console.log(count_animation);
+                                                                                                                        
                                                                                                                         console.log('7-3'+ count_animation+ '/135');
                                                                                                                     } else {    
                                                                                                                         clearInterval(phaseSeven_one);
@@ -325,8 +346,12 @@
                                                                                                                                     zIndex: '1000'
                                                                                                                                 });
                                                                                                                                 count_animation += 1;
+                                                                                                        console.log(count_animation);
+                                                                                                                                
                                                                                                                             } else if(count_animation <= 130) {                                                         //130
                                                                                                                                 count_animation += 1;
+                                                                                                        console.log(count_animation);
+                                                                                                                                
                                                                                                                                 console.log('7-4'+ count_animation+ '/130');
                                                                                                                             } else {    
                                                                                                                                 clearInterval(phaseSeven_one);
@@ -354,8 +379,12 @@
                                                                                                                                             zIndex: '1000'
                                                                                                                                         });
                                                                                                                                         count_animation += 1;
+                                                                                                        console.log(count_animation);
+                                                                                                                                        
                                                                                                                                     } else if(count_animation <= 134) {                                                         //134
                                                                                                                                         count_animation += 1;
+                                                                                                        console.log(count_animation);
+                                                                                                                                        
                                                                                                                                         console.log('7-5'+ count_animation+ '/134');
                                                                                                                                     } else {    
                                                                                                                                         clearInterval(phaseSeven_one);
@@ -551,6 +580,8 @@
                                                                             zIndex: '1000'
                                                                         });
                                                                         count_animation += 1;
+                                                                                                        console.log(count_animation);
+                                                                        
                                                                     } else {
                                                                         clearInterval(phaseOne);
                                                                         count_animation = 1;
@@ -584,6 +615,8 @@
                                                                                     jQuery('#draggableS3').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/filtr.jpg) 0 0/100% no-repeat');
                                                                                 }
                                                                                 count_animation += 1;
+                                                                                                        console.log(count_animation);
+                                                                                
                                                                             } else {
                                                                                 clearInterval(phaseOne);
                                                                                 count_animation = 1;
@@ -626,6 +659,8 @@
                                                                                             jQuery('#draggableS3, #draggableS4, #draggableS5, #draggableS6').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/filtr.jpg) 0 0/100% no-repeat');
                                                                                         }
                                                                                         count_animation += 1;
+                                                                                                        console.log(count_animation);
+                                                                                        
                                                                                     } else {
                                                                                         clearInterval(phaseOne);
                                                                                         count_animation = 1;
@@ -675,6 +710,8 @@
                                                                                                     color: 'transparent'
                                                                                                 });
                                                                                                 count_animation += 1;
+                                                                                                        console.log(count_animation);
+                                                                                                
                                                                                             } else {
                                                                                                 clearInterval(phaseOne);
                                                                                                 count_animation = 1;
@@ -751,8 +788,12 @@
                                                                                                                                                                     zIndex: '1000'
                                                                                                                                                                 });
                                                                                                                                                                 count_animation += 1;
+                                                                                                        console.log(count_animation);
+                                                                                                                                                                
                                                                                                                                                             } else if(count_animation <= 138) {                                                         //138
                                                                                                                                                                 count_animation += 1;
+                                                                                                        console.log(count_animation);
+                                                                                                                                                                
                                                                                                                                                                 console.log('7-1'+ count_animation+ '/138');
                                                                                                                                                             } else {    
                                                                                                                                                                 clearInterval(phaseSeven_one);
@@ -780,8 +821,12 @@
                                                                                                                                                                             zIndex: '1000'
                                                                                                                                                                         });
                                                                                                                                                                         count_animation += 1;
+                                                                                                        console.log(count_animation);
+                                                                                                                                                                        
                                                                                                                                                                     } else if(count_animation <= 134) {                                                         //134
                                                                                                                                                                         count_animation += 1;
+                                                                                                        console.log(count_animation);
+                                                                                                                                                                        
                                                                                                                                                                         console.log('7-2'+ count_animation+ '/134');
                                                                                                                                                                     } else {    
                                                                                                                                                                         clearInterval(phaseSeven_one);
@@ -809,8 +854,12 @@
                                                                                                                                                                                     zIndex: '1000'
                                                                                                                                                                                 });
                                                                                                                                                                                 count_animation += 1;
+                                                                                                        console.log(count_animation);
+                                                                                                                                                                                
                                                                                                                                                                             } else if(count_animation <= 133) {                                                         //133
                                                                                                                                                                                 count_animation += 1;
+                                                                                                        console.log(count_animation);
+                                                                                                                                                                                
                                                                                                                                                                                 jQuery('#draggable5').css({
                                                                                                                                                                                     transform: 'rotate('+90+'deg) scale(1)',
                                                                                                                                                                                 });
@@ -841,8 +890,12 @@
                                                                                                                                                                                             zIndex: '1000'
                                                                                                                                                                                         });
                                                                                                                                                                                         count_animation += 1;
+                                                                                                        console.log(count_animation);
+                                                                                                                                                                                        
                                                                                                                                                                                     } else if(count_animation <= 135) {                                                         //135
                                                                                                                                                                                         count_animation += 1;
+                                                                                                        console.log(count_animation);
+                                                                                                                                                                                        
                                                                                                                                                                                         console.log('7-4'+ count_animation+ '/135');
                                                                                                                                                                                     } else {    
                                                                                                                                                                                         clearInterval(phaseSeven_one);
@@ -870,8 +923,12 @@
                                                                                                                                                                                                     zIndex: '1000'
                                                                                                                                                                                                 });
                                                                                                                                                                                                 count_animation += 1;
+                                                                                                        console.log(count_animation);
+                                                                                                                                                                                                
                                                                                                                                                                                             } else if(count_animation <= 122) {                                                         //122
                                                                                                                                                                                                 count_animation += 1;
+                                                                                                        console.log(count_animation);
+                                                                                                                                                                                                
                                                                                                                                                                                                 console.log('7-5'+ count_animation+ '/122');
                                                                                                                                                                                             } else {    
                                                                                                                                                                                                 clearInterval(phaseSeven_one);
@@ -899,6 +956,8 @@
                                                                                                                                                                                                             zIndex: '1000'
                                                                                                                                                                                                         });
                                                                                                                                                                                                         count_animation += 1;
+                                                                                                        console.log(count_animation);
+                                                                                                                                                                                                        
                                                                                                                                                                                                     } else if(count_animation <= 133) {                                                         //133
                                                                                                                                                                                                         count_animation += 1
                                                                                                                                                                                                         jQuery('#draggable1').css({

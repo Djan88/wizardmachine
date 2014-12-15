@@ -21,7 +21,6 @@ li
     text-align: center;
     border: 1px solid #ccc;
     min-height: 600px;
-    max-height: 600px;
     position: relative;
 }
 .itemlist_item
@@ -56,6 +55,7 @@ li
 .itemlist-one
 {
     background: url(../images/vitruvian_man.png) center 25px/100% no-repeat;
+    height: 600px;
 }
 .itemlist-two
 {
