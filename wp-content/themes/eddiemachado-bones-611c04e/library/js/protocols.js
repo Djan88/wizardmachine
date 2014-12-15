@@ -16,7 +16,7 @@
     //фаза 1
         count_animation = 1;
         phaseOne = setInterval(function(){
-            if (count_animation <= 120){                                                                         //120
+            if (count_animation <= 12){                                                                         //120
                 cur_animation_val += 6;
                 jQuery('#draggableClean').css({
                     transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
