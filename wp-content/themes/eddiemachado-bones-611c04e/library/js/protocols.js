@@ -179,7 +179,7 @@
                                     //анимация против часовой стрелки
                                         jQuery('.triangle').css({
                                             transform: 'scale(0.2) rotateY(180deg)rotateZ(120deg)',
-                                            left: '-170px',
+                                            left: '-180px',
                                             top: '-120px'
                                         });
                                         //анимация первого треугольника
@@ -203,7 +203,7 @@
                                                                 //анимация по часовой стрелке
                                                                     jQuery('.triangle').css({
                                                                         transform: 'scale(0.2) rotateY(0deg)rotateZ(120deg)',
-                                                                        left: '-180px',
+                                                                        left: '-170px',
                                                                         top: '-120px'
                                                                     });
                                                                     //анимация первого треугольника
@@ -240,6 +240,7 @@
                                                                                                         count_animation += 1;
                                                                                                     } else if(count_animation <= 130) {                                                         //130
                                                                                                         count_animation += 1;
+                                                                                                        console.log('7-1'+ count_animation+ '/130');
                                                                                                     } else {    
                                                                                                         clearInterval(phaseSeven_one);
                                                                                                         count_animation = 1;
@@ -268,6 +269,7 @@
                                                                                                                 count_animation += 1;
                                                                                                             } else if(count_animation <= 135) {                                                         //135
                                                                                                                 count_animation += 1;
+                                                                                                                console.log('7-2'+ count_animation+ '/135');
                                                                                                             } else {    
                                                                                                                 clearInterval(phaseSeven_one);
                                                                                                                 count_animation = 1;
@@ -296,6 +298,7 @@
                                                                                                                         count_animation += 1;
                                                                                                                     } else if(count_animation <= 135) {                                                         //135
                                                                                                                         count_animation += 1;
+                                                                                                                        console.log('7-3'+ count_animation+ '/135');
                                                                                                                     } else {    
                                                                                                                         clearInterval(phaseSeven_one);
                                                                                                                         count_animation = 1;
@@ -324,6 +327,7 @@
                                                                                                                                 count_animation += 1;
                                                                                                                             } else if(count_animation <= 130) {                                                         //130
                                                                                                                                 count_animation += 1;
+                                                                                                                                console.log('7-4'+ count_animation+ '/130');
                                                                                                                             } else {    
                                                                                                                                 clearInterval(phaseSeven_one);
                                                                                                                                 count_animation = 1;
@@ -352,6 +356,7 @@
                                                                                                                                         count_animation += 1;
                                                                                                                                     } else if(count_animation <= 134) {                                                         //134
                                                                                                                                         count_animation += 1;
+                                                                                                                                        console.log('7-5'+ count_animation+ '/134');
                                                                                                                                     } else {    
                                                                                                                                         clearInterval(phaseSeven_one);
                                                                                                                                         count_animation = 1;
