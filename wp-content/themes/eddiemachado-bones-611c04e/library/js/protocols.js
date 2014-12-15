@@ -29,7 +29,7 @@
         });
         jQuery('#draggableClean_2, #draggableClean_3, #draggableClean_4').removeClass('inopaciti');
         phaseOne = setInterval(function(){
-            if (count_animation <= 120){                                                                         //120
+            if (count_animation <= 12){                                                                         //120
                 cur_animation_val += 6;
                 jQuery('#draggableClean, #draggableClean_2, #draggableClean_3, #draggableClean_4').css({
                     transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
@@ -51,36 +51,30 @@
                     paddingTop: '2px',
                     zIndex: '1'
                 });
+                count_animation = 1;
                 jQuery('#draggableClean_2, #draggableClean_3, #draggableClean_4').addClass('inopaciti');
     //фаза 2
                 cur_animation_val = 0;
-                jQuery('#draggableClean_2').css({
-                        left: parseFloat(jQuery('#draggableS2').css('left'))+70+'px',
-                        top: parseFloat(jQuery('#draggableS2').css('top'))-675+'px'
-                });
-                jQuery('#draggableClean_3').css({
-                        left: parseFloat(jQuery('#draggableS2_1').css('left'))+70+'px',
-                        top: parseFloat(jQuery('#draggableS2_1').css('top'))-675+'px'
-                });
-                jQuery('#draggableClean_2, #draggableClean_3, #draggableS1').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat');
-                jQuery('#draggableS1').css('color', 'transparent');
-                jQuery('#draggableClean_2, #draggableClean_3').removeClass('inopaciti');
                 phaseTwo = setInterval(function(){
-                    if (count_animation <= 12){                                                                 //120
+                    if (count_animation <= 15){                                                                 //150
                         cur_animation_val += 6;
-                        jQuery('#draggableClean_2, #draggableClean_3, #draggableS1').css({
-                            transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
+                        jQuery('#draggableD2, #draggableS2').css({
                             borderWidth: '1px',
                             paddingTop: '4px',
                             zIndex: '1000'
                         });
+                        jQuery('#draggableD2, #draggableS2').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/disfunction.jpg) 0 0/100% no-repeat');
+                        jQuery('#draggableS2, #draggableS2_1').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/travma.jpg) 0 0/100% no-repeat');
                         count_animation += 1;
-
+                        if (count_animation >= 6 && count_animation <= 12){                               //60
+                            jQuery('#draggableS2, #draggableS2_1').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/povregdenie_demona.jpg) 0 0/100% no-repeat');
+                        } else if (count_animation >= 12 && count_animation <= 15){                               //60
+                            jQuery('#draggableS2, #draggableS2_1').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/filtr.jpg) 0 0/100% no-repeat');
+                        }
                     } else {
                         clearInterval(phaseTwo);
                         count_animation = 1;
-                        jQuery('#draggableClean_2, #draggableClean_3').addClass('inopaciti');
-                        jQuery('#draggableClean_2, #draggableClean_3, #draggableS1').css({
+                        jQuery('#draggableD2, #draggableS2').css({
                             background: 'transparent',
                             transform: 'rotate(0deg) scale(0.5)',
                             color: 'red',
