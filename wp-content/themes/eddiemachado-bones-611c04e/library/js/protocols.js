@@ -60,7 +60,7 @@
                 jQuery('#draggableS1').css('color', 'transparent');
                 jQuery('#draggableClean_2, #draggableClean_3').removeClass('inopaciti');
                 phaseTwo = setInterval(function(){
-                    if (count_animation <= 120){                                                                 //120
+                    if (count_animation <= 12){                                                                 //120
                         cur_animation_val += 6;
                         jQuery('#draggableClean_2, #draggableClean_3, #draggableS1').css({
                             transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
