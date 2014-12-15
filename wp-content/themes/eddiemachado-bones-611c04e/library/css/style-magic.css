@@ -33,6 +33,7 @@ li
     z-index: 999;
     border: 2px solid red;
     transform: scale(0.5);
+    -webkit-transform: scale(0.5);
     width: 56px;
     height: 56px;
     -webkit-transition: opacity 0.2s ease-in;
