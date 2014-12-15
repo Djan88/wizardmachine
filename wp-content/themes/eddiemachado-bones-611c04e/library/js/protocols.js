@@ -484,7 +484,7 @@
         jQuery('.triangle').css({
             transform: 'scale(0.2) rotateY(0deg) rotateZ(120deg)',
             left: '-170px',
-            top: '-140px'
+            top: '-120px'
         });
         //анимация первого треугольника
         jQuery('#draggable1').addClass('transparent');
@@ -506,7 +506,7 @@
                                     jQuery('.triangle').css({
                                         transform: 'scale(0.2) rotateY(0deg) rotateZ(120deg)',
                                         left: '-170px',
-                                        top: '-140px'
+                                        top: '-120px'
                                     });
                                     //анимация первого треугольника
                                     jQuery('#draggable1').addClass('transparent');                                                                    
