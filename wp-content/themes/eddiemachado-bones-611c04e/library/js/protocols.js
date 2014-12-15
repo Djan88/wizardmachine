@@ -179,8 +179,8 @@
                                     //анимация против часовой стрелки
                                         jQuery('.triangle').css({
                                             transform: 'scale(0.1) rotateY(180deg)rotateZ(120deg)',
-                                            left: '-190px',
-                                            top: '-145px'
+                                            left: '-170px',
+                                            top: '-120px'
                                         });
                                         //анимация первого треугольника
                                         jQuery('#draggable1').addClass('transparent');
@@ -203,8 +203,8 @@
                                                                 //анимация по часовой стрелке
                                                                     jQuery('.triangle').css({
                                                                         transform: 'scale(0.1) rotateY(0deg)rotateZ(120deg)',
-                                                                        left: '-185px',
-                                                                        top: '-145px'
+                                                                        left: '-180px',
+                                                                        top: '-120px'
                                                                     });
                                                                     //анимация первого треугольника
                                                                     jQuery('#draggable1').addClass('transparent');                                                                    
@@ -646,15 +646,15 @@
                                                                                         cur_animation_val = 0;
                                                                                         jQuery('#draggableClean_2').css({
                                                                                                 left: parseFloat(jQuery('#draggableS4').css('left'))+70+'px',
-                                                                                                top: parseFloat(jQuery('#draggableS4').css('top'))-500+'px'
+                                                                                                top: parseFloat(jQuery('#draggableS4').css('top'))-510+'px'
                                                                                         });
                                                                                         jQuery('#draggableClean_3').css({
                                                                                                 left: parseFloat(jQuery('#draggableS5').css('left'))+70+'px',
-                                                                                                top: parseFloat(jQuery('#draggableS5').css('top'))-500+'px'
+                                                                                                top: parseFloat(jQuery('#draggableS5').css('top'))-510+'px'
                                                                                         });
                                                                                         jQuery('#draggableClean_4').css({
                                                                                                 left: parseFloat(jQuery('#draggableS6').css('left'))+70+'px',
-                                                                                                top: parseFloat(jQuery('#draggableS6').css('top'))-500+'px'
+                                                                                                top: parseFloat(jQuery('#draggableS6').css('top'))-510+'px'
                                                                                         });
                                                                                         jQuery('#draggableClean_2, #draggableClean_3, #draggableClean_4').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat');
                                                                                         jQuery('#draggableClean_2, #draggableClean_3, #draggableClean_4').removeClass('inopaciti');
@@ -689,8 +689,8 @@
                                                                                             //анимация против часовой стрелки
                                                                                                 jQuery('.triangle').css({
                                                                                                     transform: 'scale(0.2) rotateY(180deg) rotateZ(120deg)',
-                                                                                                    left: '-180px',
-                                                                                                    top: '-130px'
+                                                                                                    left: '-170px',
+                                                                                                    top: '-120px'
                                                                                                 });
                                                                                                 //анимация первого треугольника
                                                                                                 jQuery('#draggable1').addClass('transparent');
@@ -712,7 +712,7 @@
                                                                                                                             jQuery('.triangle').css({
                                                                                                                                 transform: 'scale(0.2) rotateY(0deg) rotateZ(120deg)',
                                                                                                                                 left: '-170px',
-                                                                                                                                top: '-140px'
+                                                                                                                                top: '-120px'
                                                                                                                             });
                                                                                                                             //анимация первого треугольника
                                                                                                                             jQuery('#draggable1').addClass('transparent');                                                                    
@@ -748,7 +748,7 @@
                                                                                                                                                                 count_animation += 1;
                                                                                                                                                             } else if(count_animation <= 138) {                                                         //138
                                                                                                                                                                 count_animation += 1;
-                                                                                                                                                                console.log('7-1'+ count_animation+ '/135');
+                                                                                                                                                                console.log('7-1'+ count_animation+ '/138');
                                                                                                                                                             } else {    
                                                                                                                                                                 clearInterval(phaseSeven_one);
                                                                                                                                                                 count_animation = 1;
