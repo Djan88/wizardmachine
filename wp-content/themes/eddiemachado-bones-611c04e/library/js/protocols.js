@@ -482,9 +482,9 @@
         count_animation = 1;
     //анимация против часовой стрелки
         jQuery('.triangle').css({
-            transform: 'scale(0.1) rotateY(180deg)rotateZ(120deg)',
-            left: '-190px',
-            top: '-145px'
+            transform: 'scale(0.2) rotateY(0deg) rotateZ(120deg)',
+            left: '-170px',
+            top: '-140px'
         });
         //анимация первого треугольника
         jQuery('#draggable1').addClass('transparent');
@@ -504,9 +504,9 @@
                                     jQuery('.itemlist_item').removeClass('transparent');
                                 //анимация по часовой стрелке
                                     jQuery('.triangle').css({
-                                        transform: 'scale(0.1) rotateY(0deg)rotateZ(120deg)',
-                                        left: '-185px',
-                                        top: '-145px'
+                                        transform: 'scale(0.2) rotateY(0deg) rotateZ(120deg)',
+                                        left: '-170px',
+                                        top: '-140px'
                                     });
                                     //анимация первого треугольника
                                     jQuery('#draggable1').addClass('transparent');                                                                    
