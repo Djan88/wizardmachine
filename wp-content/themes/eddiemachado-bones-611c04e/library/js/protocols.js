@@ -27,6 +27,7 @@
                 left: parseFloat(jQuery('#draggableS2_1').css('left'))+70+'px',
                 top: parseFloat(jQuery('#draggableS2_1').css('top'))-675+'px'
         });
+        jQuery('#draggableClean_2, #draggableClean_3, #draggableClean_4').removeClass('inopaciti');
         phaseOne = setInterval(function(){
             if (count_animation <= 12){                                                                         //120
                 cur_animation_val += 6;
@@ -50,6 +51,7 @@
                     paddingTop: '2px',
                     zIndex: '1'
                 });
+                jQuery('#draggableClean_2, #draggableClean_3, #draggableClean_4').addClass('inopaciti');
     //фаза 2
                 cur_animation_val = 0;
                 jQuery('#draggableClean_2').css({
