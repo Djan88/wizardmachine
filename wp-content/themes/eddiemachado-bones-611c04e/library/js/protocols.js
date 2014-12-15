@@ -19,7 +19,7 @@
             if (count_animation <= 120){                                                                         //120
                 cur_animation_val += 6;
                 jQuery('#draggableClean').css({
-                    transform: 'rotate(-'+cur_animation_val+'deg) scale(2)',
+                    transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat',
                     borderWidth: '1px',
                     paddingTop: '4px',
@@ -29,7 +29,7 @@
                 jQuery('#draggableS2, #draggableS2_1').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/travma.jpg) 0 0/100% no-repeat');
                 jQuery('#draggable2, #draggableS2, #draggableS2_1').css({
                     color: 'transparent',
-                    transform: 'scale(2)',
+                    transform: 'scale(1)',
                     borderWidth: '1px',
                     paddingTop: '4px',
                     zIndex: '1000'
@@ -40,7 +40,7 @@
                 count_animation = 1;
                 jQuery('#draggable2, #draggableS2, #draggableS2_1, #draggableClean').css({
                     background: 'transparent',
-                    transform: 'scale(1)',
+                    transform: 'scale(0.5)',
                     color: 'red',
                     borderWidth: '2px',
                     paddingTop: '2px',
@@ -63,7 +63,7 @@
                     if (count_animation <= 120){                                                                 //120
                         cur_animation_val += 6;
                         jQuery('#draggableClean_2, #draggableClean_3, #draggableS1').css({
-                            transform: 'rotate(-'+cur_animation_val+'deg) scale(2)',
+                            transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
                             borderWidth: '1px',
                             paddingTop: '4px',
                             zIndex: '1000'
@@ -75,7 +75,7 @@
                         jQuery('#draggableClean_2, #draggableClean_3').addClass('inopaciti');
                         jQuery('#draggableClean_2, #draggableClean_3, #draggableS1').css({
                             background: 'transparent',
-                            transform: 'rotate(0deg) scale(1)',
+                            transform: 'rotate(0deg) scale(0.5)',
                             color: 'red',
                             borderWidth: '2px',
                             paddingTop: '2px',
@@ -93,7 +93,7 @@
                             if (count_animation <= 120){                                                         //120
                                 cur_animation_val += 6;
                                 jQuery('#draggableClean_2').css({
-                                    transform: 'rotate(-'+cur_animation_val+'deg) scale(2)',
+                                    transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
                                     borderWidth: '1px',
                                     paddingTop: '4px',
                                     zIndex: '1000'
@@ -102,7 +102,7 @@
                                 jQuery('#draggable4').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/disfunction.jpg) 0 0/100% no-repeat');
                                 jQuery('#draggable4, #draggableS4').css({
                                     color: 'transparent',
-                                    transform: 'scale(2)',
+                                    transform: 'scale(1)',
                                     borderWidth: '1px',
                                     paddingTop: '4px',
                                     zIndex: '1000'
@@ -118,7 +118,7 @@
                                 jQuery('#draggable4, #draggableS4').css('color', 'red');
                                 jQuery('#draggableClean_2, #draggable4, #draggableS4').css({
                                     background: 'transparent',
-                                    transform: 'rotate(0deg) scale(1)',
+                                    transform: 'rotate(0deg) scale(0.5)',
                                     color: 'red',
                                     borderWidth: '2px',
                                     paddingTop: '2px',
@@ -137,7 +137,7 @@
                                 jQuery('#draggableClean_2, #draggableClean_3').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat');
                                 jQuery('#draggableClean_2, #draggableClean_3').removeClass('inopaciti');
                                 jQuery('#draggableClean_2, #draggableClean_3, #draggable5, #draggableD5, #draggableS5, #draggableS6').css({
-                                    transform: 'scale(2)',
+                                    transform: 'scale(1)',
                                     color: 'transparent',
                                     borderWidth: '1px',
                                     paddingTop: '4px',
@@ -146,7 +146,7 @@
                                 phaseFour = setInterval(function(){
                                     if (count_animation <= 120){                                                //120
                                         cur_animation_val += 6;
-                                        jQuery('#draggableClean_2, #draggableClean_3').css('transform', 'rotate(-'+cur_animation_val+'deg) scale(2)');
+                                        jQuery('#draggableClean_2, #draggableClean_3').css('transform', 'rotate(-'+cur_animation_val+'deg) scale(1)');
                                         jQuery('#draggable5, #draggableD5').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/disfunction.jpg) 0 0/100% no-repeat');
                                         jQuery('#draggableS5, #draggableS6').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/povregdenie_demona.jpg) 0 0/100% no-repeat');
                                         jQuery('#draggable5, #draggableD5, #draggableS5, #draggableS6').css('color', 'transparent');
@@ -160,14 +160,14 @@
                                         jQuery('#draggableClean_2, #draggableClean_3').addClass('inopaciti');
                                         jQuery('#draggableClean_2, #draggableClean_3').css({
                                             background: 'transparent',
-                                            transform: 'rotate(0deg) scale(1)',
+                                            transform: 'rotate(0deg) scale(0.5)',
                                             borderWidth: '2px',
                                             paddingTop: '2px',
                                             zIndex: '1'
                                         });
                                         jQuery('#draggable5, #draggableD5, #draggableS5, #draggableS6').css({
                                             background: 'transparent',
-                                            transform: 'scale(1)',
+                                            transform: 'scale(0.5)',
                                             color: 'red',
                                             borderWidth: '2px',
                                             paddingTop: '2px',
@@ -230,7 +230,7 @@
                                                                                                     if (count_animation <= 10){                                                                         //10
                                                                                                         cur_animation_val += 3;
                                                                                                         jQuery('#draggable1').css({
-                                                                                                            transform: 'rotate(-'+cur_animation_val+'deg) scale(2)',
+                                                                                                            transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
                                                                                                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_right.png) 0 0/100% no-repeat',
                                                                                                             color: 'transparent',
                                                                                                             borderWidth: '1px',
@@ -244,7 +244,7 @@
                                                                                                         clearInterval(phaseSeven_one);
                                                                                                         count_animation = 1;
                                                                                                         jQuery('#draggable1').css({
-                                                                                                            transform: 'rotate(-'+0+'deg) scale(1)',
+                                                                                                            transform: 'rotate(-'+0+'deg) scale(0.5)',
                                                                                                             background: 'transparent',
                                                                                                             color: 'red',
                                                                                                             borderWidth: '2px',
@@ -258,7 +258,7 @@
                                                                                                             if (count_animation <= 15){                                                                         //15
                                                                                                                 cur_animation_val -= 6;
                                                                                                                 jQuery('#draggable2').css({
-                                                                                                                    transform: 'rotate(-'+cur_animation_val+'deg) scale(2)',
+                                                                                                                    transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
                                                                                                                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_left.png) 0 0/100% no-repeat',
                                                                                                                     color: 'transparent',
                                                                                                                     borderWidth: '1px',
@@ -272,7 +272,7 @@
                                                                                                                 clearInterval(phaseSeven_one);
                                                                                                                 count_animation = 1;
                                                                                                                 jQuery('#draggable2').css({
-                                                                                                                    transform: 'rotate(-'+0+'deg) scale(1)',
+                                                                                                                    transform: 'rotate(-'+0+'deg) scale(0.5)',
                                                                                                                     background: 'transparent',
                                                                                                                     color: 'red',
                                                                                                                     borderWidth: '2px',
@@ -286,7 +286,7 @@
                                                                                                                     if (count_animation <= 15){                                                                         //15
                                                                                                                         cur_animation_val -= 6;
                                                                                                                         jQuery('#draggable2').css({
-                                                                                                                            transform: 'rotate('+cur_animation_val+'deg) scale(2)',
+                                                                                                                            transform: 'rotate('+cur_animation_val+'deg) scale(1)',
                                                                                                                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_right.png) 0 0/100% no-repeat',
                                                                                                                             color: 'transparent',
                                                                                                                             borderWidth: '1px',
@@ -300,7 +300,7 @@
                                                                                                                         clearInterval(phaseSeven_one);
                                                                                                                         count_animation = 1;
                                                                                                                         jQuery('#draggable2').css({
-                                                                                                                            transform: 'rotate(-'+0+'deg) scale(1)',
+                                                                                                                            transform: 'rotate(-'+0+'deg) scale(0.5)',
                                                                                                                             background: 'transparent',
                                                                                                                             color: 'red',
                                                                                                                             borderWidth: '2px',
@@ -314,7 +314,7 @@
                                                                                                                             if (count_animation <= 10){                                                                         //10
                                                                                                                                 cur_animation_val += 3;
                                                                                                                                 jQuery('#draggable5').css({
-                                                                                                                                    transform: 'rotate(-'+cur_animation_val+'deg) scale(2)',
+                                                                                                                                    transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
                                                                                                                                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_right.png) 0 0/100% no-repeat',
                                                                                                                                     color: 'transparent',
                                                                                                                                     borderWidth: '1px',
@@ -328,7 +328,7 @@
                                                                                                                                 clearInterval(phaseSeven_one);
                                                                                                                                 count_animation = 1;
                                                                                                                                 jQuery('#draggable5').css({
-                                                                                                                                    transform: 'rotate(-'+0+'deg) scale(1)',
+                                                                                                                                    transform: 'rotate(-'+0+'deg) scale(0.5)',
                                                                                                                                     background: 'transparent',
                                                                                                                                     color: 'red',
                                                                                                                                     borderWidth: '2px',
@@ -342,7 +342,7 @@
                                                                                                                                     if (count_animation <= 14){                                                                         //14
                                                                                                                                         cur_animation_val -= 6;
                                                                                                                                         jQuery('#draggable5').css({
-                                                                                                                                            transform: 'rotate(-'+cur_animation_val+'deg) scale(2)',
+                                                                                                                                            transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
                                                                                                                                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_left.png) 0 0/100% no-repeat',
                                                                                                                                             color: 'transparent',
                                                                                                                                             borderWidth: '1px',
@@ -356,7 +356,7 @@
                                                                                                                                         clearInterval(phaseSeven_one);
                                                                                                                                         count_animation = 1;
                                                                                                                                         jQuery('#draggable5').css({
-                                                                                                                                            transform: 'rotate(-'+0+'deg) scale(1)',
+                                                                                                                                            transform: 'rotate(-'+0+'deg) scale(0.5)',
                                                                                                                                             background: 'transparent',
                                                                                                                                             color: 'red',
                                                                                                                                             borderWidth: '2px',
@@ -540,7 +540,7 @@
                                                                         });
                                                                         jQuery('#draggable1, #draggable3, #draggable4, #draggable5, #draggableD1, #draggableD2, #draggableD4, #draggableD5').css({
                                                                             color: 'transparent',
-                                                                            transform: 'scale(2)',
+                                                                            transform: 'scale(1)',
                                                                             borderWidth: '1px',
                                                                             paddingTop: '4px',
                                                                             zIndex: '1000'
@@ -552,7 +552,7 @@
                                                                         jQuery('#draggable1, #draggable3, #draggable4, #draggable5, #draggableD1, #draggableD2, #draggableD4, #draggableD5').css({
                                                                             background: 'transparent',
                                                                             color: 'red',
-                                                                            transform: 'scale(1)',
+                                                                            transform: 'scale(0.5)',
                                                                             borderWidth: '2px',
                                                                             paddingTop: '2px',
                                                                             zIndex: '1'
@@ -570,7 +570,7 @@
                                                                                 });
                                                                                 jQuery('#draggable3, #draggableD3, #draggableS3').css({
                                                                                     color: 'transparent',
-                                                                                    transform: 'scale(2)',
+                                                                                    transform: 'scale(1)',
                                                                                     borderWidth: '1px',
                                                                                     paddingTop: '4px',
                                                                                     zIndex: '1000'
@@ -585,7 +585,7 @@
                                                                                 jQuery('#draggable3, #draggableD3, #draggableS3').css({
                                                                                     background: 'transparent',
                                                                                     color: 'red',
-                                                                                    transform: 'scale(1)',
+                                                                                    transform: 'scale(0.5)',
                                                                                     borderWidth: '2px',
                                                                                     paddingTop: '2px',
                                                                                     zIndex: '1'
@@ -597,7 +597,7 @@
                                                                                     if (count_animation <= 120){                                                                         //120
                                                                                         cur_animation_val += 6;
                                                                                         jQuery('#draggableVD').css({
-                                                                                            transform: 'rotate(-'+cur_animation_val+'deg) scale(2)',
+                                                                                            transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
                                                                                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat',
                                                                                             borderWidth: '1px',
                                                                                             paddingTop: '4px',
@@ -608,11 +608,11 @@
                                                                                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/travma.jpg) 0 0/100% no-repeat'
                                                                                         });
                                                                                         jQuery('#draggableS4, #draggableS5, #draggableS6').css({
-                                                                                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/disfunction.jpg) 0 0/100% no-repeat'
+                                                                                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/povregdenie_demona.jpg) 0 0/100% no-repeat'
                                                                                         });
                                                                                         jQuery('#draggableS3, #draggableS4, #draggableS5, #draggableS6').css({
                                                                                             color: 'transparent',
-                                                                                            transform: 'scale(2)',
+                                                                                            transform: 'scale(1)',
                                                                                             borderWidth: '1px',
                                                                                             paddingTop: '4px',
                                                                                             zIndex: '1000'
@@ -627,17 +627,17 @@
                                                                                         jQuery('#draggableS3, #draggableS4, #draggableS5, #draggableS6').css({
                                                                                             background: 'transparent',
                                                                                             color: 'red',
-                                                                                            transform: 'scale(1)',
+                                                                                            transform: 'scale(0.5)',
                                                                                             borderWidth: '2px',
                                                                                             paddingTop: '2px',
                                                                                             zIndex: '1'
                                                                                         });
                                                                                         jQuery('#draggableVD').css({
-                                                                                            transform: 'rotate(-'+cur_animation_val+'deg) scale(2)',
+                                                                                            transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
                                                                                             background: 'transparent',
                                                                                             borderWidth: '2px',
                                                                                             paddingTop: '2px',
-                                                                                            transform: 'scale(1)',
+                                                                                            transform: 'scale(0.5)',
                                                                                             zIndex: '1',
                                                                                             color: 'red'
                                                                                         });
@@ -662,7 +662,7 @@
                                                                                             if (count_animation <= 120){                                                                         //120
                                                                                                 cur_animation_val += 6;
                                                                                                 jQuery('#draggableClean_2, #draggableClean_3, #draggableClean_4').css({
-                                                                                                    transform: 'rotate(-'+cur_animation_val+'deg) scale(2)',
+                                                                                                    transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
                                                                                                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat',
                                                                                                     borderWidth: '1px',
                                                                                                     paddingTop: '4px',
@@ -676,7 +676,7 @@
                                                                                                 jQuery('#draggableClean_2, #draggableClean_3, #draggableClean_4').css({
                                                                                                     background: 'transparent',
                                                                                                     borderWidth: '2px',
-                                                                                                    transform: 'scale(1)',
+                                                                                                    transform: 'scale(0.5)',
                                                                                                     paddingTop: '2px',
                                                                                                     zIndex: '1',
                                                                                                     color: 'transparent'
@@ -738,7 +738,7 @@
                                                                                                                                                             if (count_animation <= 18){                                                                         //18
                                                                                                                                                                 cur_animation_val += 3;
                                                                                                                                                                 jQuery('#draggable5').css({
-                                                                                                                                                                    transform: 'rotate(-'+cur_animation_val+'deg) scale(2)',
+                                                                                                                                                                    transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
                                                                                                                                                                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_right.png) 0 0/100% no-repeat',
                                                                                                                                                                     color: 'transparent',
                                                                                                                                                                     borderWidth: '1px',
@@ -753,7 +753,7 @@
                                                                                                                                                                 clearInterval(phaseSeven_one);
                                                                                                                                                                 count_animation = 1;
                                                                                                                                                                 jQuery('#draggable5').css({
-                                                                                                                                                                    transform: 'rotate(-'+0+'deg) scale(1)',
+                                                                                                                                                                    transform: 'rotate(-'+0+'deg) scale(0.5)',
                                                                                                                                                                     background: 'transparent',
                                                                                                                                                                     color: 'red',
                                                                                                                                                                     borderWidth: '2px',
@@ -767,7 +767,7 @@
                                                                                                                                                                     if (count_animation <= 14){                                                                         //14
                                                                                                                                                                         cur_animation_val -= 6;
                                                                                                                                                                         jQuery('#draggable5').css({
-                                                                                                                                                                            transform: 'rotate('+cur_animation_val+'deg) scale(2)',
+                                                                                                                                                                            transform: 'rotate('+cur_animation_val+'deg) scale(1)',
                                                                                                                                                                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_right.png) 0 0/100% no-repeat',
                                                                                                                                                                             color: 'transparent',
                                                                                                                                                                             borderWidth: '1px',
@@ -782,7 +782,7 @@
                                                                                                                                                                         clearInterval(phaseSeven_one);
                                                                                                                                                                         count_animation = 1;
                                                                                                                                                                         jQuery('#draggable5').css({
-                                                                                                                                                                            transform: 'rotate(-'+0+'deg) scale(1)',
+                                                                                                                                                                            transform: 'rotate(-'+0+'deg) scale(0.5)',
                                                                                                                                                                             background: 'transparent',
                                                                                                                                                                             color: 'red',
                                                                                                                                                                             borderWidth: '2px',
@@ -796,7 +796,7 @@
                                                                                                                                                                             if (count_animation <= 13){                                                                         //13
                                                                                                                                                                                 cur_animation_val += 6;
                                                                                                                                                                                 jQuery('#draggable5').css({
-                                                                                                                                                                                    transform: 'rotate('+cur_animation_val+'deg) scale(2)',
+                                                                                                                                                                                    transform: 'rotate('+cur_animation_val+'deg) scale(1)',
                                                                                                                                                                                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_left.png) 0 0/100% no-repeat',
                                                                                                                                                                                     color: 'transparent',
                                                                                                                                                                                     borderWidth: '1px',
@@ -807,14 +807,14 @@
                                                                                                                                                                             } else if(count_animation <= 133) {                                                         //133
                                                                                                                                                                                 count_animation += 1;
                                                                                                                                                                                 jQuery('#draggable5').css({
-                                                                                                                                                                                    transform: 'rotate('+90+'deg) scale(2)',
+                                                                                                                                                                                    transform: 'rotate('+90+'deg) scale(1)',
                                                                                                                                                                                 });
                                                                                                                                                                                 console.log('7-1'+ count_animation+ '/133');
                                                                                                                                                                             } else {    
                                                                                                                                                                                 clearInterval(phaseSeven_one);
                                                                                                                                                                                 count_animation = 1;
                                                                                                                                                                                 jQuery('#draggable5').css({
-                                                                                                                                                                                    transform: 'rotate(-'+0+'deg) scale(1)',
+                                                                                                                                                                                    transform: 'rotate(-'+0+'deg) scale(0.5)',
                                                                                                                                                                                     background: 'transparent',
                                                                                                                                                                                     color: 'red',
                                                                                                                                                                                     borderWidth: '2px',
@@ -828,7 +828,7 @@
                                                                                                                                                                                     if (count_animation <= 15){                                                                         //15
                                                                                                                                                                                         cur_animation_val -= 6;
                                                                                                                                                                                         jQuery('#draggable3').css({
-                                                                                                                                                                                            transform: 'rotate(-'+cur_animation_val+'deg) scale(2)',
+                                                                                                                                                                                            transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
                                                                                                                                                                                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_left.png) 0 0/100% no-repeat',
                                                                                                                                                                                             color: 'transparent',
                                                                                                                                                                                             borderWidth: '1px',
@@ -843,7 +843,7 @@
                                                                                                                                                                                         clearInterval(phaseSeven_one);
                                                                                                                                                                                         count_animation = 1;
                                                                                                                                                                                         jQuery('#draggable3').css({
-                                                                                                                                                                                            transform: 'rotate(-'+0+'deg) scale(1)',
+                                                                                                                                                                                            transform: 'rotate(-'+0+'deg) scale(0.5)',
                                                                                                                                                                                             background: 'transparent',
                                                                                                                                                                                             color: 'red',
                                                                                                                                                                                             borderWidth: '2px',
@@ -857,7 +857,7 @@
                                                                                                                                                                                             if (count_animation <= 18){                                                                         //18
                                                                                                                                                                                                 cur_animation_val += 3;
                                                                                                                                                                                                 jQuery('#draggable1').css({
-                                                                                                                                                                                                    transform: 'rotate(-'+cur_animation_val+'deg) scale(2)',
+                                                                                                                                                                                                    transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
                                                                                                                                                                                                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_right.png) 0 0/100% no-repeat',
                                                                                                                                                                                                     color: 'transparent',
                                                                                                                                                                                                     borderWidth: '1px',
@@ -872,7 +872,7 @@
                                                                                                                                                                                                 clearInterval(phaseSeven_one);
                                                                                                                                                                                                 count_animation = 1;
                                                                                                                                                                                                 jQuery('#draggable1').css({
-                                                                                                                                                                                                    transform: 'rotate(-'+0+'deg) scale(1)',
+                                                                                                                                                                                                    transform: 'rotate(-'+0+'deg) scale(0.5)',
                                                                                                                                                                                                     background: 'transparent',
                                                                                                                                                                                                     color: 'red',
                                                                                                                                                                                                     borderWidth: '2px',
@@ -886,7 +886,7 @@
                                                                                                                                                                                                     if (count_animation <= 13){                                                                         //13
                                                                                                                                                                                                         cur_animation_val += 6;
                                                                                                                                                                                                         jQuery('#draggable1').css({
-                                                                                                                                                                                                            transform: 'rotate('+cur_animation_val+'deg) scale(2)',
+                                                                                                                                                                                                            transform: 'rotate('+cur_animation_val+'deg) scale(1)',
                                                                                                                                                                                                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_left.png) 0 0/100% no-repeat',
                                                                                                                                                                                                             color: 'transparent',
                                                                                                                                                                                                             borderWidth: '1px',
@@ -897,14 +897,14 @@
                                                                                                                                                                                                     } else if(count_animation <= 133) {                                                         //133
                                                                                                                                                                                                         count_animation += 1
                                                                                                                                                                                                         jQuery('#draggable1').css({
-                                                                                                                                                                                                            transform: 'rotate('+90+'deg) scale(2)'
+                                                                                                                                                                                                            transform: 'rotate('+90+'deg) scale(1)'
                                                                                                                                                                                                         });
                                                                                                                                                                                                         console.log('7-1'+ count_animation+ '/133');
                                                                                                                                                                                                     } else {    
                                                                                                                                                                                                         clearInterval(phaseSeven_one);
                                                                                                                                                                                                         count_animation = 1;
                                                                                                                                                                                                         jQuery('#draggable1').css({
-                                                                                                                                                                                                            transform: 'rotate(-'+0+'deg) scale(1)',
+                                                                                                                                                                                                            transform: 'rotate(-'+0+'deg) scale(0.5)',
                                                                                                                                                                                                             background: 'transparent',
                                                                                                                                                                                                             color: 'red',
                                                                                                                                                                                                             borderWidth: '2px',
