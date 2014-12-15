@@ -57,11 +57,12 @@
                 cur_animation_val = 0;
                 phaseTwo = setInterval(function(){
                     if (count_animation <= 15){                                                                 //150
-                        cur_animation_val += 6;
-                        jQuery('#draggableD2, #draggableS2').css({
+                        jQuery('#draggableD2, #draggableS2, #draggableS2, #draggableS2_1').css({
                             borderWidth: '1px',
                             paddingTop: '4px',
-                            zIndex: '1000'
+                            zIndex: '1000',
+                            transform: 'scale(0.5)',
+                            color: 'transparent'
                         });
                         jQuery('#draggableD2, #draggableS2').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/disfunction.jpg) 0 0/100% no-repeat');
                         jQuery('#draggableS2, #draggableS2_1').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/travma.jpg) 0 0/100% no-repeat');
@@ -76,7 +77,7 @@
                         count_animation = 1;
                         jQuery('#draggableD2, #draggableS2').css({
                             background: 'transparent',
-                            transform: 'rotate(0deg) scale(0.5)',
+                            transform: 'scale(0.5)',
                             color: 'red',
                             borderWidth: '2px',
                             paddingTop: '2px',
