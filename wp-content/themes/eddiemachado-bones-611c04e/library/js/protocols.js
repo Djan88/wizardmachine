@@ -1049,7 +1049,7 @@
         });
         jQuery('#draggableClean_5').css({
                 left: parseFloat(jQuery('#draggableD1').css('left'))+'px',
-                top: parseFloat(jQuery('#draggableSD1').css('top'))-975+'px'
+                top: parseFloat(jQuery('#draggableD1').css('top'))-975+'px'
         });
         jQuery('#draggableClean_2, #draggableClean_3, #draggableClean_4, #draggableClean_5').removeClass('inopaciti');
         phaseOne = setInterval(function(){
