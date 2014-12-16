@@ -1044,8 +1044,8 @@
                 top: parseFloat(jQuery('#draggableS5').css('top'))-511+'px'
         });
         jQuery('#draggableClean_4').css({
-                left: parseFloat(jQuery('#draggableD1').css('left'))+'px',
-                top: parseFloat(jQuery('#draggableD1').css('top'))-795+'px'
+                left: parseFloat(jQuery('#draggableD1').css('left'))+10+'px',
+                top: parseFloat(jQuery('#draggableD1').css('top'))-895+'px'
         });
         jQuery('#draggableClean_5').css({
                 left: parseFloat(jQuery('#draggableD1').css('left'))+'px',
@@ -1055,7 +1055,7 @@
         phaseOne = setInterval(function(){
             if (count_animation <= 120){                                                                         //120
                 cur_animation_val += 6;
-                jQuery('#draggableClean_2, #draggableClean_3, #draggableClean_4, #draggableClean_5, #draggableD1, #draggable1').css({
+                jQuery('#draggableClean_2, #draggableClean_3, #draggableClean_4, #draggableClean_5, #draggableD1, #draggableD2, #draggable1').css({
                     transform: 'scale(1)',
                     borderWidth: '1px',
                     color: 'transparent',
