@@ -561,20 +561,20 @@
                                                                         });
     //фаза 3
                                                                         count_animation = 1;
+                                                                        jQuery('#draggableClean_2').css({
+                                                                                left: parseFloat(jQuery('#draggableS3').css('left'))+70+'px',
+                                                                                top: parseFloat(jQuery('#draggableS3').css('top'))-561+'px'
+                                                                        });
+                                                                        jQuery('#draggableClean_3').css({
+                                                                                left: parseFloat(jQuery('#draggableS4').css('left'))+70+'px',
+                                                                                top: parseFloat(jQuery('#draggableS4').css('top'))-561+'px'
+                                                                        });
+                                                                        jQuery('#draggableClean_4').css({
+                                                                                left: parseFloat(jQuery('#draggableS5').css('left'))+70+'px',
+                                                                                top: parseFloat(jQuery('#draggableS5').css('top'))-561+'px'
+                                                                        });
+                                                                        jQuery('#draggableClean_2, #draggableClean_3, #draggableClean_4').removeClass('inopaciti');
                                                                         phaseOne = setInterval(function(){
-                                                                            jQuery('#draggableClean_2').css({
-                                                                                    left: parseFloat(jQuery('#draggableS3').css('left'))+70+'px',
-                                                                                    top: parseFloat(jQuery('#draggableS3').css('top'))-605+'px'
-                                                                            });
-                                                                            jQuery('#draggableClean_3').css({
-                                                                                    left: parseFloat(jQuery('#draggableS4').css('left'))+70+'px',
-                                                                                    top: parseFloat(jQuery('#draggableS4').css('top'))-605+'px'
-                                                                            });
-                                                                            jQuery('#draggableClean_4').css({
-                                                                                    left: parseFloat(jQuery('#draggableS5').css('left'))+70+'px',
-                                                                                    top: parseFloat(jQuery('#draggableS5').css('top'))-605+'px'
-                                                                            });
-                                                                            jQuery('#draggableClean_2, #draggableClean_3, #draggableClean_4').removeClass('inopaciti');
                                                                             if (count_animation <= 120){                                                                         //120
                                                                                 cur_animation_val += 6;
                                                                                 jQuery('#draggable3, #draggableD3, #draggableD1, #draggableClean_2, #draggableClean_3, #draggableClean_4, #draggableVD').css({
