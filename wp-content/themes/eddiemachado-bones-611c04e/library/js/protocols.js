@@ -1117,8 +1117,8 @@
                             jQuery('#draggable1').css( 'background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/simvoly.008.jpg) 0 0/100% no-repeat');
                         } else {
                             jQuery('#draggable1').css( 'background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/simvoly.009.jpg) 0 0/100% no-repeat');
-                            count_animation += 1;
                         };
+                        count_animation += 1;
                     } else {
                         clearInterval(phaseOne);
                         count_animation = 1;
