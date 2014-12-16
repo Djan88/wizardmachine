@@ -1131,9 +1131,11 @@
                             zIndex: '1'
                         });
                 //2-2
+                        cur_animation_val = 0;                                                                       //240
                         count_animation = 1;
                         phaseOne = setInterval(function(){
-                            if (count_animation <= 240){                                                                         //240
+                            if (count_animation <= 24){  
+                                cur_animation_val += 6;                                                                       //240
                                 jQuery('#draggable4').css({
                                     transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
                                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat',
