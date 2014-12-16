@@ -131,11 +131,11 @@
                                 phaseFour = setInterval(function(){
                                     if (count_animation <= 15){                                                //150
                                         cur_animation_val += 6;
-                                        jQuery('#draggable0, #draggableVD').css({
+                                        jQuery('#draggable0, #draggableVD, #draggableS4, #draggableS5, #draggableS6').css({
                                             transform: 'scale(1)',
                                             borderWidth: '1px',
                                             paddingTop: '4px',
-                                            color: 'red',
+                                            color: 'transparent',
                                             zIndex: '1000'
                                         });
                                         jQuery('#draggable0, #draggableVD').css({
