@@ -1136,7 +1136,7 @@
                             if (count_animation <= 240){                                                                         //240
                                 jQuery('#draggable4').css({
                                     transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
-                                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat'
+                                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat',
                                     borderWidth: '1px',
                                     color: 'transparent',
                                     paddingTop: '4px',
