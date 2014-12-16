@@ -1130,20 +1130,17 @@
                             paddingTop: '2px',
                             zIndex: '1'
                         });
-                        count_animation = 1;
                 //2-2
+                        count_animation = 1;
                         phaseOne = setInterval(function(){
                             if (count_animation <= 240){                                                                         //240
                                 jQuery('#draggable4').css({
-                                    transform: 'scale(1)',
+                                    transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
+                                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat'
                                     borderWidth: '1px',
                                     color: 'transparent',
                                     paddingTop: '4px',
                                     zIndex: '1000'
-                                });
-                                jQuery('#draggable4').css({
-                                    transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
-                                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat'
                                 });
                                 count_animation += 1;
                             } else {
