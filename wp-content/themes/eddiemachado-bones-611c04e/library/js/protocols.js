@@ -1037,19 +1037,19 @@
         count_animation = 1;
         jQuery('#draggableClean_2').css({
                 left: parseFloat(jQuery('#draggableS4').css('left'))+70+'px',
-                top: parseFloat(jQuery('#draggableS4').css('top'))-561+'px'
+                top: parseFloat(jQuery('#draggableS4').css('top'))-511+'px'
         });
         jQuery('#draggableClean_3').css({
                 left: parseFloat(jQuery('#draggableS5').css('left'))+70+'px',
-                top: parseFloat(jQuery('#draggableS5').css('top'))-561+'px'
+                top: parseFloat(jQuery('#draggableS5').css('top'))-511+'px'
         });
         jQuery('#draggableClean_4').css({
                 left: parseFloat(jQuery('#draggableD1').css('left'))+'px',
-                top: parseFloat(jQuery('#draggableD1').css('top'))-725+'px'
+                top: parseFloat(jQuery('#draggableD1').css('top'))-795+'px'
         });
         jQuery('#draggableClean_5').css({
                 left: parseFloat(jQuery('#draggableD1').css('left'))+'px',
-                top: parseFloat(jQuery('#draggableSD1').css('top'))-755+'px'
+                top: parseFloat(jQuery('#draggableSD1').css('top'))-805+'px'
         });
         jQuery('#draggableClean_2, #draggableClean_3, #draggableClean_4, #draggableClean_5').removeClass('inopaciti');
         phaseOne = setInterval(function(){
@@ -1067,7 +1067,7 @@
                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat'
                 });
                 jQuery('#draggableD2').css({
-                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/drenag.jpg) 0 0/100% no-repeat'
+                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/drenag.png) 0 0/100% no-repeat'
                 });
                 jQuery('#draggable1').css({
                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/disfunction.jpg) 0 0/100% no-repeat'
