@@ -575,7 +575,7 @@
                                                                         });
                                                                         jQuery('#draggableClean_2, #draggableClean_3, #draggableClean_4').removeClass('inopaciti');
                                                                         phaseOne = setInterval(function(){
-                                                                            if (count_animation <= 120){                                                                         //120
+                                                                            if (count_animation <= 12){                                                                         //120
                                                                                 cur_animation_val += 6;
                                                                                 jQuery('#draggable3, #draggableD3, #draggableD1, #draggableClean_2, #draggableClean_3, #draggableClean_4, #draggableVD').css({
                                                                                     color: 'transparent',
@@ -609,10 +609,8 @@
                                                                                 cur_animation_val = 0;
                                                                                 phaseOne = setInterval(function(){
                                                                                     if (count_animation <= 12){                                                                         //120
-                                                                                        cur_animation_val += 6;
-                                                                                        jQuery('#draggableVD').css({
-                                                                                            transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
-                                                                                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat',
+                                                                                        jQuery('#draggableS3, #draggableS4, #draggableS5, #draggableS6').css({
+                                                                                            transform: 'scale(1)',
                                                                                             borderWidth: '1px',
                                                                                             paddingTop: '4px',
                                                                                             zIndex: '1000',
@@ -623,13 +621,6 @@
                                                                                         });
                                                                                         jQuery('#draggableS4, #draggableS5, #draggableS6').css({
                                                                                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/povregdenie_demona.jpg) 0 0/100% no-repeat'
-                                                                                        });
-                                                                                        jQuery('#draggableS3, #draggableS4, #draggableS5, #draggableS6').css({
-                                                                                            color: 'transparent',
-                                                                                            transform: 'scale(1)',
-                                                                                            borderWidth: '1px',
-                                                                                            paddingTop: '4px',
-                                                                                            zIndex: '1000'
                                                                                         });
                                                                                         if (count_animation >= 6 && count_animation <= 12){                               //60
                                                                                             jQuery('#draggableS3, #draggableS4, #draggableS5, #draggableS6').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/filtr.jpg) 0 0/100% no-repeat');
