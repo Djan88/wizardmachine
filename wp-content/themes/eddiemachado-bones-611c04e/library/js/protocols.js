@@ -1034,6 +1034,7 @@
     }
     v4 = function(){
     //фаза 1
+
         count_animation = 1;
         jQuery('#draggableClean_2').css({
                 left: parseFloat(jQuery('#draggableS4').css('left'))+70+'px',
@@ -1049,11 +1050,11 @@
         });
         jQuery('#draggableClean_5').css({
                 left: parseFloat(jQuery('#draggableD1').css('left'))+'px',
-                top: parseFloat(jQuery('#draggableD1').css('top'))-1075+'px'
+                top: parseFloat(jQuery('#draggableD1').css('top'))-1070+'px'
         });
         jQuery('#draggableClean_2, #draggableClean_3, #draggableClean_4, #draggableClean_5').removeClass('inopaciti');
         phaseOne = setInterval(function(){
-            if (count_animation <= 120){                                                                         //120
+            if (count_animation <= 12){                                                                         //120
                 cur_animation_val += 6;
                 jQuery('#draggableClean_2, #draggableClean_3, #draggableClean_4, #draggableClean_5, #draggableD1, #draggableD2, #draggable1').css({
                     transform: 'scale(1)',
@@ -1086,6 +1087,57 @@
                 });
                 count_animation = 1;
                 jQuery('#draggableClean_2, #draggableClean_3, #draggableClean_4, #draggableClean_5').addClass('inopaciti');
+
+    //фаза 2
+                count_animation = 0;
+                cur_animation_val = 0;
+                phaseOne = setInterval(function(){
+                    if (count_animation <= 480){                                                                         //480
+                        jQuery('#draggable1, #draggable4').css({
+                            transform: 'scale(1)',
+                            borderWidth: '1px',
+                            color: 'transparent',
+                            paddingTop: '4px',
+                            zIndex: '1000'
+                        });
+                        if (count_animation <= 1){
+                            jQuery('#draggable1').css( 'background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/simvoly.001.jpg) 0 0/100% no-repeat');
+                        } else if (count_animation > 1 && count_animation <= 1) {
+                            jQuery('#draggable1').css( 'background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/simvoly.002.jpg) 0 0/100% no-repeat');
+                        } else if (count_animation > 2 && count_animation <= 3) {
+                            jQuery('#draggable1').css( 'background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/simvoly.004.jpg) 0 0/100% no-repeat');
+                        } else if (count_animation > 3 && count_animation <= 4) {
+                            jQuery('#draggable1').css( 'background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/simvoly.005.jpg) 0 0/100% no-repeat');
+                        } else if (count_animation > 4 && count_animation <= 5) {
+                            jQuery('#draggable1').css( 'background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/simvoly.006.jpg) 0 0/100% no-repeat');
+                        } else if (count_animation > 5 && count_animation <= 6) {
+                            jQuery('#draggable1').css( 'background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/simvoly.007.jpg) 0 0/100% no-repeat');
+                        } else if (count_animation > 6 && count_animation <= 7) {
+                            jQuery('#draggable1').css( 'background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/simvoly.008.jpg) 0 0/100% no-repeat');
+                        } else if (count_animation > 7 && count_animation <= 8) {
+                            jQuery('#draggable1').css( 'background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/simvoly.009.jpg) 0 0/100% no-repeat');
+                        } else if (count_animation > 8 && count_animation <= 480) {
+                            cur_animation_val += 6;
+                            jQuery('#draggable4').css({
+                                transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
+                                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/simvoly.009.jpg) 0 0/100% no-repeat'
+                            });
+                        }
+                        count_animation += 1;
+                    } else {
+                        clearInterval(phaseOne);
+                        count_animation = 1;
+                        jQuery('#draggable1, #draggable4').css({
+                            background: 'transparent',
+                            transform: 'scale(0.5)',
+                            color: 'red',
+                            borderWidth: '2px',
+                            paddingTop: '2px',
+                            zIndex: '1'
+                        });
+                        count_animation = 1;
+                    }
+                }, 500);
             }
         }, 1000);
     }
