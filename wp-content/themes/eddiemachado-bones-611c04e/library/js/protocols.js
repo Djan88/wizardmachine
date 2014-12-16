@@ -1101,7 +1101,7 @@
                             paddingTop: '4px',
                             zIndex: '1000'
                         });
-                        if (count_animation <= 1){
+                        if (count_animation >= 0 && count_animation <= 1){
                             jQuery('#draggable1').css( 'background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/simvoly.001.jpg) 0 0/100% no-repeat');
                         } else if (count_animation > 1 && count_animation <= 1) {
                             jQuery('#draggable1').css( 'background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/simvoly.002.jpg) 0 0/100% no-repeat');
