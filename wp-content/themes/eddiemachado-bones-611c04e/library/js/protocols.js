@@ -574,6 +574,7 @@
                                                                                     left: parseFloat(jQuery('#draggableS6').css('left'))+70+'px',
                                                                                     top: parseFloat(jQuery('#draggableS6').css('top'))-605+'px'
                                                                             });
+                                                                            jQuery('#draggableClean_2, #draggableClean_3, #draggableClean_4').removeClass('inopaciti');
                                                                             if (count_animation <= 120){                                                                         //120
                                                                                 cur_animation_val += 6;
                                                                                 jQuery('#draggable3, #draggableD3, #draggableD1, #draggableClean_2, #draggableClean_3, #draggableClean_4, #draggableVD').css({
@@ -602,6 +603,7 @@
                                                                                     paddingTop: '2px',
                                                                                     zIndex: '1'
                                                                                 });
+                                                                                jQuery('#draggableClean_2, #draggableClean_3, #draggableClean_4').addClass('inopaciti');
     //фаза 4
                                                                                 count_animation = 1;
                                                                                 cur_animation_val = 0;
