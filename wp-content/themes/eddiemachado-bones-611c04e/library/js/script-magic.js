@@ -107,6 +107,8 @@ jQuery( ".btn__wizard" ).on('click', function(event) {
             v2();
         } else if(protocol == 'v3'){
             v3();
+        } else if(protocol == 'v4'){
+            v4();
         } else{
             console.log('нет протокола с id '+ protocol)
         }
