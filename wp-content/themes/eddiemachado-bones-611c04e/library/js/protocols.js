@@ -1058,7 +1058,7 @@
                 jQuery('#draggableClean_2, #draggableClean_3, #draggableClean_4, #draggableClean_5, #draggableD1, #draggable1').css({
                     transform: 'scale(1)',
                     borderWidth: '1px',
-                    color: 'transparent'
+                    color: 'transparent',
                     paddingTop: '4px',
                     zIndex: '1000'
                 });
