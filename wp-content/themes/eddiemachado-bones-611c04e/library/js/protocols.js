@@ -1044,12 +1044,12 @@
                 top: parseFloat(jQuery('#draggableS5').css('top'))-511+'px'
         });
         jQuery('#draggableClean_4').css({
-                left: parseFloat(jQuery('#draggableD1').css('left'))+10+'px',
-                top: parseFloat(jQuery('#draggableD1').css('top'))-895+'px'
+                left: parseFloat(jQuery('#draggableD1').css('left'))+'px',
+                top: parseFloat(jQuery('#draggableD1').css('top'))-935+'px'
         });
         jQuery('#draggableClean_5').css({
                 left: parseFloat(jQuery('#draggableD1').css('left'))+'px',
-                top: parseFloat(jQuery('#draggableSD1').css('top'))-805+'px'
+                top: parseFloat(jQuery('#draggableSD1').css('top'))-975+'px'
         });
         jQuery('#draggableClean_2, #draggableClean_3, #draggableClean_4, #draggableClean_5').removeClass('inopaciti');
         phaseOne = setInterval(function(){
