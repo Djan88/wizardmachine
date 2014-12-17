@@ -214,8 +214,8 @@
                                                                                                 cur_animation_val = 60;
                                                                                                 count_animation = 1;
                                                                                                 phaseSeven_one = setInterval(function(){
-                                                                                                    if (count_animation <= 10){                                                                         //10
-                                                                                                        cur_animation_val += 3;
+                                                                                                    if (count_animation <= 20){                                                                         //10
+                                                                                                        cur_animation_val += 1.5;
                                                                                                         jQuery('#draggable1').css({
                                                                                                             transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
                                                                                                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_right.png) 0 0/100% no-repeat',
@@ -225,7 +225,7 @@
                                                                                                             zIndex: '1000'
                                                                                                         });
                                                                                                         count_animation += 1;
-                                                                                                    } else if(count_animation <= 130) {                                                         //130
+                                                                                                    } else if(count_animation <= 140) {                                                         //130
                                                                                                         count_animation += 1;
 
                                                                                                         console.log('7-1'+ count_animation+ '/130');
@@ -244,8 +244,8 @@
                                                                                                         cur_animation_val = 90;
                                                                                                         count_animation = 1;
                                                                                                         phaseSeven_one = setInterval(function(){
-                                                                                                            if (count_animation <= 150){                                                                         //15
-                                                                                                                cur_animation_val -= 6;
+                                                                                                            if (count_animation <= 30){                                                                         //15
+                                                                                                                cur_animation_val -= 3;
                                                                                                                 jQuery('#draggable2').css({
                                                                                                                     transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
                                                                                                                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_left.png) 0 0/100% no-repeat',
@@ -256,7 +256,7 @@
                                                                                                                 });
                                                                                                                 count_animation += 1;
 
-                                                                                                            } else if(count_animation <= 135) {                                                         //135
+                                                                                                            } else if(count_animation <= 150) {                                                         //135
                                                                                                                 count_animation += 1;
 
                                                                                                                 console.log('7-2'+ count_animation+ '/135');
@@ -275,8 +275,8 @@
                                                                                                                 cur_animation_val = 90;
                                                                                                                 count_animation = 1;
                                                                                                                 phaseSeven_one = setInterval(function(){
-                                                                                                                    if (count_animation <= 15){                                                                         //15
-                                                                                                                        cur_animation_val -= 6;
+                                                                                                                    if (count_animation <= 30){                                                                         //15
+                                                                                                                        cur_animation_val -= 3;
                                                                                                                         jQuery('#draggable2').css({
                                                                                                                             transform: 'rotate('+cur_animation_val+'deg) scale(1)',
                                                                                                                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_right.png) 0 0/100% no-repeat',
@@ -287,7 +287,7 @@
                                                                                                                         });
                                                                                                                         count_animation += 1;
 
-                                                                                                                    } else if(count_animation <= 135) {                                                         //135
+                                                                                                                    } else if(count_animation <= 150) {                                                         //135
                                                                                                                         count_animation += 1;
 
                                                                                                                         console.log('7-3'+ count_animation+ '/135');
@@ -306,8 +306,8 @@
                                                                                                                         cur_animation_val = 60;
                                                                                                                         count_animation = 1;
                                                                                                                         phaseSeven_one = setInterval(function(){
-                                                                                                                            if (count_animation <= 10){                                                                         //10
-                                                                                                                                cur_animation_val += 3;
+                                                                                                                            if (count_animation <= 20){                                                                         //10
+                                                                                                                                cur_animation_val += 1.5;
                                                                                                                                 jQuery('#draggable5').css({
                                                                                                                                     transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
                                                                                                                                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_right.png) 0 0/100% no-repeat',
@@ -318,7 +318,7 @@
                                                                                                                                 });
                                                                                                                                 count_animation += 1;
 
-                                                                                                                            } else if(count_animation <= 130) {                                                         //130
+                                                                                                                            } else if(count_animation <= 140) {                                                         //130
                                                                                                                                 count_animation += 1;
 
                                                                                                                                 console.log('7-4'+ count_animation+ '/130');
@@ -337,8 +337,8 @@
                                                                                                                                 cur_animation_val = 84;
                                                                                                                                 count_animation = 1;
                                                                                                                                 phaseSeven_one = setInterval(function(){
-                                                                                                                                    if (count_animation <= 14){                                                                         //14
-                                                                                                                                        cur_animation_val -= 6;
+                                                                                                                                    if (count_animation <= 28){                                                                         //14
+                                                                                                                                        cur_animation_val -= 3;
                                                                                                                                         jQuery('#draggable5').css({
                                                                                                                                             transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
                                                                                                                                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_left.png) 0 0/100% no-repeat',
@@ -349,7 +349,7 @@
                                                                                                                                         });
                                                                                                                                         count_animation += 1;
 
-                                                                                                                                    } else if(count_animation <= 134) {                                                         //134
+                                                                                                                                    } else if(count_animation <= 148) {                                                         //134
                                                                                                                                         count_animation += 1;
 
                                                                                                                                         console.log('7-5'+ count_animation+ '/134');
@@ -483,7 +483,7 @@
         count_animation = 1;
     //анимация против часовой стрелки
         jQuery('.triangle').css({
-            transform: 'scale(0.2) rotateY(0deg) rotateZ(120deg)',
+            transform: 'scale(0.2) rotateY(180deg) rotateZ(120deg)',
             left: '-170px',
             top: '-120px'
         });
@@ -708,8 +708,8 @@
                                                                                                                                                         cur_animation_val = 30;
                                                                                                                                                         count_animation = 1;
                                                                                                                                                         phaseSeven_one = setInterval(function(){
-                                                                                                                                                            if (count_animation <= 18){                                                                         //18
-                                                                                                                                                                cur_animation_val += 3;
+                                                                                                                                                            if (count_animation <= 36){                                                                         //18
+                                                                                                                                                                cur_animation_val += 1.5;
                                                                                                                                                                 jQuery('#draggable5').css({
                                                                                                                                                                     transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
                                                                                                                                                                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_right.png) 0 0/100% no-repeat',
@@ -720,7 +720,7 @@
                                                                                                                                                                 });
                                                                                                                                                                 count_animation += 1;
 
-                                                                                                                                                            } else if(count_animation <= 138) {                                                         //138
+                                                                                                                                                            } else if(count_animation <= 156) {                                                         //138
                                                                                                                                                                 count_animation += 1;
 
                                                                                                                                                                 console.log('7-1'+ count_animation+ '/138');
@@ -739,8 +739,8 @@
                                                                                                                                                                 cur_animation_val = 90;
                                                                                                                                                                 count_animation = 1;
                                                                                                                                                                 phaseSeven_one = setInterval(function(){
-                                                                                                                                                                    if (count_animation <= 14){                                                                         //14
-                                                                                                                                                                        cur_animation_val -= 6;
+                                                                                                                                                                    if (count_animation <= 28){                                                                         //14
+                                                                                                                                                                        cur_animation_val -= 3;
                                                                                                                                                                         jQuery('#draggable5').css({
                                                                                                                                                                             transform: 'rotate('+cur_animation_val+'deg) scale(1)',
                                                                                                                                                                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_right.png) 0 0/100% no-repeat',
@@ -751,7 +751,7 @@
                                                                                                                                                                         });
                                                                                                                                                                         count_animation += 1;
 
-                                                                                                                                                                    } else if(count_animation <= 134) {                                                         //134
+                                                                                                                                                                    } else if(count_animation <= 148) {                                                         //134
                                                                                                                                                                         count_animation += 1;
 
                                                                                                                                                                         console.log('7-2'+ count_animation+ '/134');
@@ -770,8 +770,8 @@
                                                                                                                                                                         cur_animation_val = 10;
                                                                                                                                                                         count_animation = 1;
                                                                                                                                                                         phaseSeven_one = setInterval(function(){
-                                                                                                                                                                            if (count_animation <= 13){                                                                         //13
-                                                                                                                                                                                cur_animation_val += 6;
+                                                                                                                                                                            if (count_animation <= 26){                                                                         //13
+                                                                                                                                                                                cur_animation_val += 3;
                                                                                                                                                                                 jQuery('#draggable5').css({
                                                                                                                                                                                     transform: 'rotate('+cur_animation_val+'deg) scale(1)',
                                                                                                                                                                                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_left.png) 0 0/100% no-repeat',
@@ -782,7 +782,7 @@
                                                                                                                                                                                 });
                                                                                                                                                                                 count_animation += 1;
 
-                                                                                                                                                                            } else if(count_animation <= 133) {                                                         //133
+                                                                                                                                                                            } else if(count_animation <= 146) {                                                         //133
                                                                                                                                                                                 count_animation += 1;
 
                                                                                                                                                                                 jQuery('#draggable5').css({
@@ -804,8 +804,8 @@
                                                                                                                                                                                 cur_animation_val = 90;
                                                                                                                                                                                 count_animation = 1;
                                                                                                                                                                                 phaseSeven_one = setInterval(function(){
-                                                                                                                                                                                    if (count_animation <= 15){                                                                         //15
-                                                                                                                                                                                        cur_animation_val -= 6;
+                                                                                                                                                                                    if (count_animation <= 30){                                                                         //15
+                                                                                                                                                                                        cur_animation_val -= 3;
                                                                                                                                                                                         jQuery('#draggable3').css({
                                                                                                                                                                                             transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
                                                                                                                                                                                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_left.png) 0 0/100% no-repeat',
@@ -816,7 +816,7 @@
                                                                                                                                                                                         });
                                                                                                                                                                                         count_animation += 1;
 
-                                                                                                                                                                                    } else if(count_animation <= 135) {                                                         //135
+                                                                                                                                                                                    } else if(count_animation <= 150) {                                                         //135
                                                                                                                                                                                         count_animation += 1;
 
                                                                                                                                                                                         console.log('7-4'+ count_animation+ '/135');
@@ -835,8 +835,8 @@
                                                                                                                                                                                         cur_animation_val = 30;
                                                                                                                                                                                         count_animation = 1;
                                                                                                                                                                                         phaseSeven_one = setInterval(function(){
-                                                                                                                                                                                            if (count_animation <= 18){                                                                         //18
-                                                                                                                                                                                                cur_animation_val += 3;
+                                                                                                                                                                                            if (count_animation <= 36){                                                                         //18
+                                                                                                                                                                                                cur_animation_val += 1.5;
                                                                                                                                                                                                 jQuery('#draggable1').css({
                                                                                                                                                                                                     transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
                                                                                                                                                                                                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_right.png) 0 0/100% no-repeat',
@@ -847,7 +847,7 @@
                                                                                                                                                                                                 });
                                                                                                                                                                                                 count_animation += 1;
 
-                                                                                                                                                                                            } else if(count_animation <= 122) {                                                         //122
+                                                                                                                                                                                            } else if(count_animation <= 156) {                                                         //122
                                                                                                                                                                                                 count_animation += 1;
 
                                                                                                                                                                                                 console.log('7-5'+ count_animation+ '/122');
@@ -866,8 +866,8 @@
                                                                                                                                                                                                 cur_animation_val = 10;
                                                                                                                                                                                                 count_animation = 1;
                                                                                                                                                                                                 phaseSeven_one = setInterval(function(){
-                                                                                                                                                                                                    if (count_animation <= 13){                                                                         //13
-                                                                                                                                                                                                        cur_animation_val += 6;
+                                                                                                                                                                                                    if (count_animation <= 26){                                                                         //13
+                                                                                                                                                                                                        cur_animation_val += 3;
                                                                                                                                                                                                         jQuery('#draggable1').css({
                                                                                                                                                                                                             transform: 'rotate('+cur_animation_val+'deg) scale(1)',
                                                                                                                                                                                                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_left.png) 0 0/100% no-repeat',
@@ -878,7 +878,7 @@
                                                                                                                                                                                                         });
                                                                                                                                                                                                         count_animation += 1;
 
-                                                                                                                                                                                                    } else if(count_animation <= 133) {                                                         //133
+                                                                                                                                                                                                    } else if(count_animation <= 156) {                                                         //133
                                                                                                                                                                                                         count_animation += 1
                                                                                                                                                                                                         jQuery('#draggable1').css({
                                                                                                                                                                                                             transform: 'rotate('+90+'deg) scale(1)'
@@ -900,7 +900,7 @@
                                                                                                                                                                                                         count_animation = 1;
                                                                                                                                                                                                     //анимация против часовой стрелки
                                                                                                                                                                                                         jQuery('.triangle').css({
-                                                                                                                                                                                                            transform: 'scale(0.1) rotateY(180deg)rotateZ(120deg)',
+                                                                                                                                                                                                            transform: 'scale(0.2) rotateY(180deg)rotateZ(120deg)',
                                                                                                                                                                                                             left: '-190px',
                                                                                                                                                                                                             top: '-145px'
                                                                                                                                                                                                         });
@@ -924,7 +924,7 @@
 
                                                                                                                                                                                                                                 //анимация по часовой стрелке
                                                                                                                                                                                                                                     jQuery('.triangle').css({
-                                                                                                                                                                                                                                        transform: 'scale(0.1) rotateY(0deg)rotateZ(120deg)',
+                                                                                                                                                                                                                                        transform: 'scale(0.2) rotateY(0deg)rotateZ(120deg)',
                                                                                                                                                                                                                                         left: '-185px',
                                                                                                                                                                                                                                         top: '-145px'
                                                                                                                                                                                                                                     });
