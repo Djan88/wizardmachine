@@ -528,7 +528,7 @@
     //фаза 2
                                                                 count_animation = 1;
                                                                 phaseOne = setInterval(function(){
-                                                                    if (count_animation <= 12){                                                                         //120
+                                                                    if (count_animation <= 120){                                                                         //120
                                                                         cur_animation_val += 6;
                                                                         jQuery('#draggable1, #draggable4, #draggable5').css({
                                                                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/disfunction.jpg) 0 0/100% no-repeat'
@@ -608,7 +608,7 @@
                                                                                 count_animation = 1;
                                                                                 cur_animation_val = 0;
                                                                                 phaseOne = setInterval(function(){
-                                                                                    if (count_animation <= 12){                                                                         //120
+                                                                                    if (count_animation <= 120){                                                                         //120
                                                                                         jQuery('#draggableS3, #draggableS4, #draggableS5, #draggableS6').css({
                                                                                             transform: 'scale(1)',
                                                                                             borderWidth: '1px',
@@ -651,7 +651,7 @@
                                                                                         count_animation = 1;
                                                                                         cur_animation_val = 0;
                                                                                         phaseOne = setInterval(function(){
-                                                                                            if (count_animation <= 1){                                                                         //120
+                                                                                            if (count_animation <= 1){                                                                         //1
                                                                                                 count_animation += 1;
 
                                                                                             } else {
@@ -720,7 +720,7 @@
                                                                                                                                                                 });
                                                                                                                                                                 count_animation += 1;
 
-                                                                                                                                                            } else if(count_animation <= 156) {                                                         //138
+                                                                                                                                                            } else if(count_animation <= 136) {                                                         //138
                                                                                                                                                                 count_animation += 1;
 
                                                                                                                                                                 console.log('7-1'+ count_animation+ '/138');
@@ -751,7 +751,7 @@
                                                                                                                                                                         });
                                                                                                                                                                         count_animation += 1;
 
-                                                                                                                                                                    } else if(count_animation <= 148) {                                                         //134
+                                                                                                                                                                    } else if(count_animation <= 128) {                                                         //134
                                                                                                                                                                         count_animation += 1;
 
                                                                                                                                                                         console.log('7-2'+ count_animation+ '/134');
@@ -782,7 +782,7 @@
                                                                                                                                                                                 });
                                                                                                                                                                                 count_animation += 1;
 
-                                                                                                                                                                            } else if(count_animation <= 146) {                                                         //133
+                                                                                                                                                                            } else if(count_animation <= 133) {                                                         //133
                                                                                                                                                                                 count_animation += 1;
 
                                                                                                                                                                                 jQuery('#draggable5').css({
@@ -878,7 +878,7 @@
                                                                                                                                                                                                         });
                                                                                                                                                                                                         count_animation += 1;
 
-                                                                                                                                                                                                    } else if(count_animation <= 156) {                                                         //133
+                                                                                                                                                                                                    } else if(count_animation <= 147) {                                                         //133
                                                                                                                                                                                                         count_animation += 1
                                                                                                                                                                                                         jQuery('#draggable1').css({
                                                                                                                                                                                                             transform: 'rotate('+90+'deg) scale(1)'
@@ -901,8 +901,8 @@
                                                                                                                                                                                                     //анимация против часовой стрелки
                                                                                                                                                                                                         jQuery('.triangle').css({
                                                                                                                                                                                                             transform: 'scale(0.2) rotateY(180deg)rotateZ(120deg)',
-                                                                                                                                                                                                            left: '-190px',
-                                                                                                                                                                                                            top: '-145px'
+                                                                                                                                                                                                            left: '-180px',
+                                                                                                                                                                                                            top: '-120px'
                                                                                                                                                                                                         });
                                                                                                                                                                                                         //анимация первого треугольника
                                                                                                                                                                                                         jQuery('#draggable1').addClass('transparent');
@@ -925,8 +925,8 @@
                                                                                                                                                                                                                                 //анимация по часовой стрелке
                                                                                                                                                                                                                                     jQuery('.triangle').css({
                                                                                                                                                                                                                                         transform: 'scale(0.2) rotateY(0deg)rotateZ(120deg)',
-                                                                                                                                                                                                                                        left: '-185px',
-                                                                                                                                                                                                                                        top: '-145px'
+                                                                                                                                                                                                                                        left: '-170px',
+                                                                                                                                                                                                                                        top: '-120px'
                                                                                                                                                                                                                                     });
                                                                                                                                                                                                                                     //анимация первого треугольника
                                                                                                                                                                                                                                     jQuery('#draggable1').addClass('transparent');                                                                    
