@@ -1120,12 +1120,7 @@
                         clearInterval(phaseOne);
                         count_animation = 1;
                         jQuery('#draggable1').css({
-                            background: 'transparent',
-                            transform: 'scale(0.5)',
-                            color: 'red',
-                            borderWidth: '2px',
-                            paddingTop: '2px',
-                            zIndex: '1'
+                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/disfunction.jpg) 0 0/100% no-repeat'
                         });
                 //2-2
                         cur_animation_val = 0;                                                                       
@@ -1136,13 +1131,6 @@
                                 jQuery('#draggable4').css({
                                     transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
                                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat',
-                                    borderWidth: '1px',
-                                    color: 'transparent',
-                                    paddingTop: '4px',
-                                    zIndex: '1000'
-                                });
-                                jQuery('#draggable1').css({
-                                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/disfunction.jpg) 0 0/100% no-repeat',
                                     borderWidth: '1px',
                                     color: 'transparent',
                                     paddingTop: '4px',
