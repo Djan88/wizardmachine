@@ -1102,21 +1102,21 @@
                             zIndex: '1000'
                         });
                         if (count_animation >= 0 && count_animation <= 1){
-                            jQuery('#draggable1').css( 'background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/simvoly.001.jpg) 0 0/100% no-repeat');
+                            jQuery('#draggable1').css( 'background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/simvoly.001.jpg) center center/100% no-repeat');
                         } else if (count_animation > 1 && count_animation <= 1) {
-                            jQuery('#draggable1').css( 'background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/simvoly.002.jpg) 0 0/100% no-repeat');
+                            jQuery('#draggable1').css( 'background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/simvoly.002.jpg) center center/100% no-repeat');
                         } else if (count_animation > 2 && count_animation <= 3) {
-                            jQuery('#draggable1').css( 'background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/simvoly.004.jpg) 0 0/100% no-repeat');
+                            jQuery('#draggable1').css( 'background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/simvoly.004.jpg) center center/100% no-repeat');
                         } else if (count_animation > 3 && count_animation <= 4) {
-                            jQuery('#draggable1').css( 'background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/simvoly.005.jpg) 0 0/100% no-repeat');
+                            jQuery('#draggable1').css( 'background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/simvoly.005.jpg) center center/100% no-repeat');
                         } else if (count_animation > 4 && count_animation <= 5) {
-                            jQuery('#draggable1').css( 'background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/simvoly.006.jpg) 0 0/100% no-repeat');
+                            jQuery('#draggable1').css( 'background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/simvoly.006.jpg) center center/100% no-repeat');
                         } else if (count_animation > 5 && count_animation <= 6) {
-                            jQuery('#draggable1').css( 'background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/simvoly.007.jpg) 0 0/100% no-repeat');
+                            jQuery('#draggable1').css( 'background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/simvoly.007.jpg) center center/100% no-repeat');
                         } else if (count_animation > 6 && count_animation <= 7) {
-                            jQuery('#draggable1').css( 'background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/simvoly.008.jpg) 0 0/100% no-repeat');
+                            jQuery('#draggable1').css( 'background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/simvoly.008.jpg) center center/100% no-repeat');
                         } else {
-                            jQuery('#draggable1').css( 'background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/simvoly.009.jpg) 0 0/100% no-repeat');
+                            jQuery('#draggable1').css( 'background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/simvoly.009.jpg) center center/100% no-repeat');
                         };
                         count_animation += 1;
                     } else {
