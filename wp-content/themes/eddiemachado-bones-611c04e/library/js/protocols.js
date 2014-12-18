@@ -484,7 +484,7 @@
     //анимация против часовой стрелки
         jQuery('.triangle').css({
             transform: 'scale(0.2) rotateY(180deg) rotateZ(120deg)',
-            left: '-170px',
+            left: '-180px',
             top: '-120px'
         });
         //анимация первого треугольника
