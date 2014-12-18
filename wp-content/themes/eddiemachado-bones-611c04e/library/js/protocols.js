@@ -1156,7 +1156,112 @@
                                     paddingTop: '2px',
                                     zIndex: '1'
                                 });
+    //Фаза 3
+                                cur_animation_val = 0;
                                 count_animation = 1;
+                            //анимация против часовой стрелки
+                                jQuery('.triangle').css({
+                                    transform: 'scale(0.2) rotateY(180deg)rotateZ(120deg)',
+                                    left: '-180px',
+                                    top: '-120px'
+                                });
+                                //анимация первого треугольника
+                                jQuery('#draggable1').addClass('transparent');
+                                firstTriangleAnimation = new Vivus('triangle_1', {type: 'delayed', duration: 150}, function(){
+                                //анимация второго треугольника
+                                    setTimeout(function(){
+                                        jQuery('#draggable2').addClass('transparent');
+                                        secondTriangleAnimation = new Vivus('triangle_2', {type: 'delayed', duration: 150}, function(){
+                                //анимация третьего треугольника
+                                            setTimeout(function(){
+                                                jQuery('#draggable3').addClass('transparent');
+                                                thirdTriangleAnimation = new Vivus('triangle_3', {type: 'delayed', duration: 150}, function(){
+                                //анимация четвертого треугольника
+                                                    setTimeout(function(){
+                                                        jQuery('#draggable4').addClass('transparent');
+                                                        fourthTriangleAnimation = new Vivus('triangle_4', {type: 'delayed', duration: 150}, function(){
+                                                            jQuery('.itemlist_item').removeClass('transparent');
+
+
+                                                        //анимация по часовой стрелке
+                                                            jQuery('.triangle').css({
+                                                                transform: 'scale(0.2) rotateY(0deg)rotateZ(120deg)',
+                                                                left: '-170px',
+                                                                top: '-120px'
+                                                            });
+                                                            //анимация первого треугольника
+                                                            jQuery('#draggable1').addClass('transparent');                                                                    
+                                                            firstTriangleAnimation = new Vivus('triangle_1', {type: 'delayed', duration: 150}, function(){
+                                                            //анимация второго треугольника
+                                                                setTimeout(function(){
+                                                                    jQuery('#draggable2').addClass('transparent');
+                                                                    secondTriangleAnimation = new Vivus('triangle_2', {type: 'delayed', duration: 150}, function(){
+                                                            //анимация третьего треугольника
+                                                                        setTimeout(function(){
+                                                                            jQuery('#draggable3').addClass('transparent');
+                                                                            thirdTriangleAnimation = new Vivus('triangle_3', {type: 'delayed', duration: 150}, function(){
+                                                            //анимация четвертого треугольника
+                                                                                setTimeout(function(){
+                                                                                    jQuery('#draggable4').addClass('transparent');
+                                                                                    fourthTriangleAnimation = new Vivus('triangle_4', {type: 'delayed', duration: 150}, function(){
+                                                                                        jQuery('.itemlist_item').removeClass('transparent');
+    // Фаза 4
+                                                                                        count_animation = 1;
+                                                                                        phaseOne = setInterval(function(){
+                                                                                            if (count_animation <= 18){                                                             //180
+                                                                                                jQuery('#draggableD5, #draggableD4, #draggable4, #draggableS4, #draggableS5, #draggableS6').css({
+                                                                                                    transform: 'scale(1)',
+                                                                                                    borderWidth: '1px',
+                                                                                                    color: 'transparent',
+                                                                                                    paddingTop: '4px',
+                                                                                                    zIndex: '1000'
+                                                                                                });
+                                                                                                jQuery('#draggableD5, #draggableD4, #draggable4').css({
+                                                                                                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/disfunction.jpg) 0 0/100% no-repeat'
+                                                                                                });
+                                                                                                jQuery('#draggableS4, #draggableS5, #draggableS6').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/travma.jpg) 0 0/100% no-repeat');
+                                                                                                if (count_animation >= 6 && count_animation <= 12) {                               //60-120
+                                                                                                    jQuery('#draggableS4, #draggableS5, #draggableS6').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/povregdenie_demona.jpg) 0 0/100% no-repeat');
+                                                                                                } else if (count_animation >= 12 && count_animation <= 18) {                               //120-180
+                                                                                                    jQuery('#draggableS4, #draggableS5, #draggableS6').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/filtr.jpg) 0 0/100% no-repeat');
+                                                                                                }
+                                                                                                count_animation += 1;
+                                                                                            } else {
+                                                                                                clearInterval(phaseOne);
+                                                                                                count_animation = 1;
+                                                                                                jQuery('#draggableD5, #draggableD4, #draggable4, #draggableS4, #draggableS5, #draggableS6').css({
+                                                                                                    background: 'transparent',
+                                                                                                    transform: 'scale(0.5)',
+                                                                                                    color: 'red',
+                                                                                                    borderWidth: '2px',
+                                                                                                    paddingTop: '2px',
+                                                                                                    zIndex: '1'
+                                                                                                });
+                                                                                                count_animation = 1;
+                                                                                            }
+                                                                                        }, 1000);
+                                                                                    });
+                                                                                    fourthTriangleAnimation.play();
+                                                                                }, 250)
+                                                                            });
+                                                                            thirdTriangleAnimation.play();
+                                                                        }, 250)
+                                                                    });
+                                                                    secondTriangleAnimation.play();
+                                                                }, 250)
+                                                            });
+                                                            firstTriangleAnimation.play();
+                                                        });
+                                                        fourthTriangleAnimation.play();
+                                                    }, 250)
+                                                });
+                                                thirdTriangleAnimation.play();
+                                            }, 250)
+                                        });
+                                        secondTriangleAnimation.play();
+                                    }, 250)
+                                });
+                                firstTriangleAnimation.play();
                             }
                         }, 1000);
                     }
