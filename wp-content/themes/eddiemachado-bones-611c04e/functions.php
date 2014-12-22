@@ -14,7 +14,7 @@ function users_redirect(){
 
     if(!is_site_admin()){
 
-        wp_redirect(site_url().'/wizard');
+        wp_redirect('/wizard');
 
         die();
 
