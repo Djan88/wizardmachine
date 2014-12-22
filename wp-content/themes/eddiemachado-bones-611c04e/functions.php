@@ -9,11 +9,12 @@ sidebars, comments, ect.
 */
 
 function users_redirect(){
-wp_redirect('/wizard', 301);
+wp_redirect(site_url('/wizard'), 301);
 die();
 }
 if(!current_user_can('manage_options')){
 add_action('admin_init','users_redirect');
+add_filter('login_redirect', 'users_redirect');
 }
 
 // LOAD BONES CORE (if you remove this, the theme will break)
