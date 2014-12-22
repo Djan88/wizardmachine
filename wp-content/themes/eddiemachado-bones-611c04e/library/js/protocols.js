@@ -1538,8 +1538,8 @@ v5 = function(){
 //фаза 1
     count_animation = 1;
     jQuery('#draggableClean_2').css({
-            left: parseFloat(jQuery('#draggable0').css('left'))-54+'px',
-            top: parseFloat(jQuery('#draggable0').css('top'))-1088+'px'
+            left: parseFloat(jQuery('#draggable0').css('left'))-60+'px',
+            top: parseFloat(jQuery('#draggable0').css('top'))-1118+'px'
     });
     jQuery('#draggableClean_3').css({
             left: parseFloat(jQuery('#draggable5').css('left'))+'px',
