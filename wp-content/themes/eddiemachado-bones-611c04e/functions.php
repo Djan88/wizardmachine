@@ -8,18 +8,15 @@ just edit things like thumbnail sizes, header images,
 sidebars, comments, ect.
 */
 
-add_action('admin_init','users_redirect');
-
-function users_redirect(){
-
-    if(!is_site_admin()){
-
-        wp_redirect('/wizard');
-
-        die();
-
+if (is_user_logged_in() && is_admin())
+{
+    global $current_user;
+    get_currentuserinfo();
+    $user_info = get_userdata($current_user->ID);
+    if ( $user_info->user_level == 1 )
+    {
+        wp_redirect(get_bloginfo('home'), 301);
     }
-
 }
 
 // LOAD BONES CORE (if you remove this, the theme will break)
