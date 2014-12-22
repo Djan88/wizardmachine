@@ -304,3 +304,7 @@ path {
 {
     display: block!important;
 }
+#upload_form 
+{
+    padding-bottom: 10px;
+}
