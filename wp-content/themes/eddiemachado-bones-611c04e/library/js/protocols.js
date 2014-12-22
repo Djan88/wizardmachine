@@ -1534,4 +1534,46 @@
             }
         }, 1000);
     }
-
+v5 = function(){
+//фаза 1
+    count_animation = 1;
+    jQuery('#draggableClean_2').css({
+            left: parseFloat(jQuery('#draggable0').css('left'))-70+'px',
+            top: parseFloat(jQuery('#draggable0').css('top'))-0+'px'
+    });
+    jQuery('#draggableClean_3').css({
+            left: parseFloat(jQuery('#draggable5').css('left'))+'px',
+            top: parseFloat(jQuery('#draggable5').css('top'))-0+'px'
+    });
+    jQuery('#draggableClean_2, #draggableClean_3').removeClass('inopaciti');
+    phaseOne = setInterval(function(){
+        if (count_animation <= 120){                                                                         //120
+            cur_animation_val += 6;
+            jQuery('#draggableClean_2, #draggableClean_3, #draggable0, #draggableD1, #draggableVD').css({
+                transform: 'scale(1)',
+                borderWidth: '1px',
+                color: 'transparent',
+                paddingTop: '4px',
+                zIndex: '1000'
+            });
+            jQuery('#draggableClean_2, #draggableClean_3, #draggable0, #draggableD1, #draggableVD').css({
+                transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
+                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat'
+            });
+            count_animation += 1;
+        } else {
+            clearInterval(phaseOne);
+            count_animation = 1;
+            jQuery('#draggableClean_2, #draggableClean_3, #draggable0, #draggableD1, #draggableVD').css({
+                background: 'transparent',
+                transform: 'scale(0.5)',
+                color: 'red',
+                borderWidth: '2px',
+                paddingTop: '2px',
+                zIndex: '1'
+            });
+            count_animation = 1;
+            jQuery('#draggableClean_2, #draggableClean_3').addClass('inopaciti');
+        }
+    }, 1000);
+}
