@@ -1608,8 +1608,8 @@ v5 = function(){
                     jQuery('#draggableVD').css({
                         background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/vig.png) 0 0/100% no-repeat'
                     });
-                    if (count_animation >= 12 && count_animation <= 18){                               //60
-                        jQuery('#draggableS3, #draggableS4, #draggableS5, #draggableS6').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/filtr.jpg) 0 0/100% no-repeat');
+                    if (count_animation >= 12 && count_animation <= 18){                               //120
+                        jQuery('#draggableS4, #draggableS5, #draggableS6').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/filtr.jpg) 0 0/100% no-repeat');
                         jQuery('#draggableClean_2, #draggableClean_3').addClass('inopaciti');
                     }
                     count_animation += 1;
