@@ -8,12 +8,12 @@ just edit things like thumbnail sizes, header images,
 sidebars, comments, ect.
 */
 
-if (is_user_logged_in())
-{
-    if (!is_site_admin())
-    {
-        wp_redirect(get_bloginfo('home'), 301);
-    }
+function users_redirect(){
+wp_redirect(site_url());
+die();
+}
+if(!current_user_can('manage_options')){
+add_action('admin_init','users_redirect');
 }
 
 // LOAD BONES CORE (if you remove this, the theme will break)
