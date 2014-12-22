@@ -8,12 +8,9 @@ just edit things like thumbnail sizes, header images,
 sidebars, comments, ect.
 */
 
-if (is_user_logged_in() && is_admin())
+if (is_user_logged_in())
 {
-    global $current_user;
-    get_currentuserinfo();
-    $user_info = get_userdata($current_user->ID);
-    if ( $user_info->user_level == 1 )
+    if (!is_site_admin())
     {
         wp_redirect(get_bloginfo('home'), 301);
     }
