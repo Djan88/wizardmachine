@@ -9,7 +9,7 @@ sidebars, comments, ect.
 */
 
 function users_redirect(){
-wp_redirect(site_url());
+wp_redirect('/wizard', 301);
 die();
 }
 if(!current_user_can('manage_options')){
