@@ -14,7 +14,7 @@ li
 }
 .itemlist
 {
-    display: inline-block;
+    float: left;
     vertical-align: top;
     width: 392px;
     margin-left: 65px;
@@ -22,6 +22,7 @@ li
     border: 1px solid #ccc;
     min-height: 600px;
     position: relative;
+    margin-bottom: 20px;
 }
 .itemlist_item
 {
@@ -61,13 +62,14 @@ li
 {
     /*background: url(../images/man.jpg) 0 0/100% no-repeat;*/
     padding: 20px 0;
+    float: right;
 }
 .itemlist_item:hover, .itemlist_item:active
 {
     /*-webkit-box-shadow: 0 0 10px 2px rgba(234, 0, 11, 0.55);*/
     /*-moz-box-shadow: 0 0 10px 2px rgba(234, 0, 11, 0.55);*/
     /*box-shadow: 0 0 10px 2px rgba(234, 0, 11, 0.55);*/
-    background: #fff;
+    background: #fff!important;
 }
 h3:focus
 {
@@ -225,19 +227,25 @@ input[type=submit]:hover, input[type=submit]:active {
 }
 .btn_trans_action
 {
-    border-color: #f0ad4e;
-    color: #f0ad4e;
+    border-color: #47AB1B;
+    color: #47AB1B;
     text-transform: uppercase;
     padding-top: 13px;
     font-weight: 600;
+    clear: both;
+    text-align: center;
+    display: block;
+    max-width: 200px;
+    margin: auto;
+    margin-top: 25px;
 }
 .btn_trans_action:hover, .btn_trans_action:focus, .btn__wizard_inAction
 {
-    border-color: #f0ad4e;
-    color: #f0ad4e!important;
-    -webkit-box-shadow: 0px 0px 10px #f0ad4e;
+    color: #fff!important;
+    background: #47AB1B;
+    /*-webkit-box-shadow: 0px 0px 10px #f0ad4e;
        -moz-box-shadow: 0px 0px 10px #f0ad4e;
-            box-shadow: 0px 0px 10px #f0ad4e;
+            box-shadow: 0px 0px 10px #f0ad4e;*/
 }
 .btn__wizard_inAction
 {

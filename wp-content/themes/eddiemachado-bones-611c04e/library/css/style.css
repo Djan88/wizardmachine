@@ -698,9 +698,11 @@ them however you see fit.
     width: 33.33%; }
 
   .t-2of3 {
-    float: left;
+    /*float: left;*/
     padding-right: 0.75em;
-    width: 66.66%; }
+    /*width: 66.66%; */
+    min-width: 830px;
+  }
 
   .t-1of4 {
     float: left;
@@ -1904,7 +1906,9 @@ you can add resource intensive styles.
   LAYOUT & GRID STYLES
   *********************/
   .wrap {
-    width: 760px; }
+    /*width: 760px; */
+    min-width: 860px;
+  }
 
   /*********************
   HEADER STYLES
@@ -2401,7 +2405,8 @@ be set to display none.
 }
 .btn_warning
 {
-    background-color: #f0ad4e;
+    border-color: #f0ad4e;
+    color: #f0ad4e;
 }
 .btn_trans
 {
@@ -2504,7 +2509,7 @@ be set to display none.
   margin: 0 20px;
   border-radius: 50%;
   padding-top: 1px;
-  padding-left: 14px;
+  padding-left: 13px;
   font-size: 25px;
   display: inline-block;
   cursor: default;
@@ -2534,13 +2539,15 @@ be set to display none.
   font-weight: 600;
   position: relative;
   padding-left: 35px;
+  margin-bottom: 15px;
 }
 .btn_back:hover
 {
-  color: #68B000!important;
-  -webkit-box-shadow: 0px 0px 10px #68B000;
-     -moz-box-shadow: 0px 0px 10px #68B000;
-          box-shadow: 0px 0px 10px #68B000;
+  color: #fff!important;
+  background: #68B000;
+  /* -webkit-box-shadow: 0px 0px 10px #68B000; */
+  /*-moz-box-shadow: 0px 0px 10px #68B000;*/
+  /* box-shadow: 0px 0px 10px #68B000; */
 }
 .btn_back span 
 {
