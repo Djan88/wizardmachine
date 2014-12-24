@@ -21,6 +21,7 @@ jQuery(function() {
         jQuery('.step_choice div').text(curChoice);
     }
 
+
     jQuery( ".draggable" ).draggable({ snap: false });
 
     
