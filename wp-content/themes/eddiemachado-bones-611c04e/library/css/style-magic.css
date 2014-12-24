@@ -316,3 +316,74 @@ path {
 {
     padding-bottom: 10px;
 }
+
+
+/* profile edit */
+
+.profile
+{
+    padding: 25px 0;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.profile__group
+{
+    display: inline-block;
+    vertical-align: top;
+    flex-grow: 1;
+    flex-basis: 50%;
+    box-sizing: border-box;
+    padding: 0 10px;
+    min-width: 300px;
+}
+
+.profile__title
+{
+    display: block;
+    font-weight: bold;
+    margin: 0 0 10px;
+}
+
+.profile__field
+{
+    display: block;
+    margin: 0 0 20px;
+}
+
+.profile__field-caption
+{
+    display: inline-block;
+    vertical-align: middle;
+    width: 150px;
+    line-height: 1;
+}
+
+.profile .profile__input
+{
+    display: inline-block;
+    max-width: 300px;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.profile__submit-container
+{
+    margin-top: 15px;
+    flex-basis: 100%;
+    text-align: right;
+}
+
+.profile__submit
+{
+    /*margin: 0 auto;*/
+    /*align-self:flex-end;*/
+}
+
+.profile .avatar
+{
+    display: inline-block !important;
+}
+
+/* /profile edit */
