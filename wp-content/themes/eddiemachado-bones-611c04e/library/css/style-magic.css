@@ -36,6 +36,7 @@ li
     -webkit-transform: scale(0.5);
     width: 56px;
     height: 56px;
+    position: absolute;
     -webkit-transition: opacity 0.2s ease-in;
        -moz-transition: opacity 0.2s ease-in;
             transition: opacity 0.2s ease-in;
