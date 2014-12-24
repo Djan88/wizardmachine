@@ -1547,7 +1547,7 @@ v5 = function(){
     });
     jQuery('#draggableClean_2, #draggableClean_3').removeClass('inopaciti');
     phaseOne = setInterval(function(){
-        if (count_animation <= 12){                                                                         //120
+        if (count_animation <= 120){                                                                         //120
             cur_animation_val += 6;
             jQuery('#draggableClean_2, #draggableClean_3, #draggable0, #draggableD1, #draggableVD').css({
                 transform: 'scale(1)',
@@ -1586,7 +1586,7 @@ v5 = function(){
             });
             jQuery('#draggableClean_2, #draggableClean_3').removeClass('inopaciti');
             phaseOne = setInterval(function(){
-                if (count_animation <= 15){                                                                         //150
+                if (count_animation <= 150){                                                                         //150
                     cur_animation_val += 6;
                     jQuery('#draggableClean_2, #draggableClean_3, #draggableS4, #draggableS5, #draggableS6, #draggableD5, #draggable5, #draggableVD').css({
                         transform: 'scale(1)',
@@ -1608,7 +1608,7 @@ v5 = function(){
                     jQuery('#draggableVD').css({
                         background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/vig.png) 0 0/100% no-repeat'
                     });
-                    if (count_animation >= 12 && count_animation <= 15){                               //150
+                    if (count_animation >= 120 && count_animation <= 150){                               //150
                         jQuery('#draggableS4, #draggableS5, #draggableS6').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/filtr.jpg) 0 0/100% no-repeat');
                         jQuery('#draggableClean_2, #draggableClean_3').addClass('inopaciti');
                     }
@@ -1652,8 +1652,6 @@ v5 = function(){
                                             jQuery('#draggable4').addClass('transparent');
                                             fourthTriangleAnimation = new Vivus('triangle_4', {type: 'delayed', duration: 150}, function(){
                                                 jQuery('.itemlist_item').removeClass('transparent');
-
-
                                             //анимация по часовой стрелке
                                                 jQuery('.triangle').css({
                                                     transform: 'scale(0.2) rotateY(0deg)rotateZ(120deg)',
@@ -1742,8 +1740,8 @@ v5 = function(){
     //фаза 5
                                                                                             cur_animation_val = 0;
                                                                                             phaseTwo = setInterval(function(){
-                                                                                                if (count_animation <= 120){     
-                                                                                                    cur_animation_val += 6;                                                            //150
+                                                                                                if (count_animation <= 120){                                                        //120     
+                                                                                                    cur_animation_val += 6;
                                                                                                     jQuery('#draggableD2, #draggable2, #draggableS1, #draggableS2, #draggableS2_1, #draggableClean').css({
                                                                                                         borderWidth: '1px',
                                                                                                         paddingTop: '4px',
