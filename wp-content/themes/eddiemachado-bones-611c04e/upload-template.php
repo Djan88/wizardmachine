@@ -77,7 +77,7 @@
 
                 <div class="machine_screen hidden">
                     <div id="snaptarget" class="wrapper">
-                        <ul class="itemlist itemlist-one">
+                        <ul class="itemlist itemlist-one" id="itemlist-one">
                             <li id="draggable0" class="itemlist_item item_list__mid draggable" style="left: 168px; top: 16px;">V0</li>
                             <li id="draggable1" class="itemlist_item item_list__mid draggable" style="left: 168px; top: -3px;">V1
                                 <svg id="triangle_1" class="triangle hidden"
@@ -791,7 +791,7 @@
                             <li id="draggableClean_4" class="itemlist_item item_list__mid itemlist_item__clear draggable inopaciti" style="left: 35px; top: 80px;"></li>
                             <li id="draggableClean_5" class="itemlist_item item_list__mid itemlist_item__clear draggable inopaciti" style="left: 35px; top: 80px;"></li>
                         </ul>
-                        <div class="itemlist itemlist-two">
+                        <ul class="itemlist itemlist-two" id="itemlist-two">
                         <!--
                             <li class="itemlist_item">1</li>
                             <li class="itemlist_item">2</li>
@@ -799,7 +799,8 @@
                             <li class="itemlist_item">4</li>
                             <li class="itemlist_item">5</li>
                         -->
-                        </div>
+                        <li class="itemlist-two-li"></li>
+                        </ul>
                         <div class="contentAlignCenter">
                             <div class="btn btn_lg btn_trans_action btn__wizard" >Выполнить</div>
                         </div>

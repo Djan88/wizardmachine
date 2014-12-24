@@ -21,7 +21,10 @@ jQuery(function() {
         jQuery('.step_choice div').text(curChoice);
     }
 
-    jQuery( ".draggable" ).draggable({ snap: false });
+    // jQuery( ".draggable" ).draggable({ snap: false });
+    $( "#itemlist-one, #itemlist-two" ).sortable({
+          connectWith: ".itemlist"
+        }).disableSelection();
     jQuery( ".select_program" ).accordion({ active: 1 });
 
     
@@ -92,7 +95,7 @@ jQuery(function() {
             .removeClass('invisible')
             .addClass('animated')
             .addClass('fadeIn');
-        jQuery('.itemlist-two').append(croppedImg);
+        jQuery('.itemlist-two-li').append(croppedImg);
     }
 
 //ШАГ 3 (Старт процедуры)
