@@ -24,7 +24,7 @@ jQuery(function() {
     // jQuery( ".draggable" ).draggable({ snap: false });
     jQuery( "#itemlist-one, #itemlist-two" ).sortable({
           connectWith: ".itemlist"
-        }).disableSelection();
+    }).disableSelection();
     jQuery( ".select_program" ).accordion({ active: 1 });
 
     
