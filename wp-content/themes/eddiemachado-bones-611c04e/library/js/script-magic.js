@@ -21,13 +21,7 @@ jQuery(function() {
         jQuery('.step_choice div').text(curChoice);
     }
 
-    jQuery( "#itemlist-one, #itemlist-two" ).sortable({
-          revert: true
-        });
-        jQuery( ".draggable" ).draggable({
-          connectToSortable: "#itemlist-one, #itemlist-two"
-        });
-    jQuery( ".select_program" ).accordion({ active: 1 });
+    jQuery( ".draggable" ).draggable({ snap: false });
 
     
     jQuery('.show_form').on('click', function(event) {
