@@ -21,10 +21,15 @@ jQuery(function() {
         jQuery('.step_choice div').text(curChoice);
     }
 
-    jQuery( ".draggable" ).draggable({ snap: false });
     jQuery( "#itemlist-one, #itemlist-two" ).sortable({
-          connectWith: ".itemlist"
-    }).disableSelection();
+          revert: true
+        });
+        jQuery( ".draggable" ).draggable({
+          connectToSortable: "#itemlist-one, #itemlist-two",
+          helper: "clone",
+          revert: "invalid"
+        });
+        jQuery( "ul, li" ).disableSelection();
     jQuery( ".select_program" ).accordion({ active: 1 });
 
     
