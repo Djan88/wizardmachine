@@ -22,7 +22,7 @@ jQuery(function() {
     }
 
     // jQuery( ".draggable" ).draggable({ snap: false });
-    $( "#itemlist-one, #itemlist-two" ).sortable({
+    jQuery( "#itemlist-one, #itemlist-two" ).sortable({
           connectWith: ".itemlist"
         }).disableSelection();
     jQuery( ".select_program" ).accordion({ active: 1 });
