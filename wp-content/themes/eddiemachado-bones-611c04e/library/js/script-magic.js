@@ -27,7 +27,6 @@ jQuery(function() {
         jQuery( ".draggable" ).draggable({
           connectToSortable: "#itemlist-one, #itemlist-two"
         });
-        jQuery( "ul, li" ).disableSelection();
     jQuery( ".select_program" ).accordion({ active: 1 });
 
     
