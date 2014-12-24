@@ -1756,7 +1756,7 @@ v5 = function(){
                                                                                                         background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat'
                                                                                                     });
                                                                                                     jQuery('#draggable2').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/disfunction.jpg) 0 0/100% no-repeat');
-                                                                                                    jQuery('#draggableD2').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/drenag.jpg) 0 0/100% no-repeat');
+                                                                                                    jQuery('#draggableD2').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/drenag.png) 0 0/100% no-repeat');
                                                                                                     jQuery('#draggableS2, #draggableS2_1').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/travma.jpg) 0 0/100% no-repeat');
                                                                                                     if (count_animation >= 60 && count_animation <= 120){                               //60-120
                                                                                                         jQuery('#draggableS2, #draggableS2_1').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/filtr.jpg) 0 0/100% no-repeat');
@@ -1797,7 +1797,7 @@ v5 = function(){
                                                                                                         } else {    
                                                                                                             clearInterval(phaseSeven_one);
                                                                                                             count_animation = 1;
-                                                                                                            jQuery('#draggable4').css({
+                                                                                                            jQuery('#draggable2').css({
                                                                                                                 transform: 'rotate(-'+0+'deg) scale(0.5)',
                                                                                                                 background: 'transparent',
                                                                                                                 color: 'red',
@@ -1811,7 +1811,7 @@ v5 = function(){
                                                                                                             phaseSeven_one = setInterval(function(){
                                                                                                                 if (count_animation <= 36){                                                                         //18
                                                                                                                     cur_animation_val += 1.5;
-                                                                                                                    jQuery('#draggable2').css({
+                                                                                                                    jQuery('#draggable1').css({
                                                                                                                         transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
                                                                                                                         background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_right.png) 0 0/100% no-repeat',
                                                                                                                         color: 'transparent',
