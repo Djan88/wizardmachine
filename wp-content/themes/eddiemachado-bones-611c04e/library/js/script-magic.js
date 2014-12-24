@@ -25,9 +25,7 @@ jQuery(function() {
           revert: true
         });
         jQuery( ".draggable" ).draggable({
-          connectToSortable: "#itemlist-one, #itemlist-two",
-          helper: "clone",
-          revert: true
+          connectToSortable: "#itemlist-one, #itemlist-two"
         });
         jQuery( "ul, li" ).disableSelection();
     jQuery( ".select_program" ).accordion({ active: 1 });
