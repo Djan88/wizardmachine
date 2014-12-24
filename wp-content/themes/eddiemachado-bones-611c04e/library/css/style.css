@@ -1324,9 +1324,12 @@ style a page via class
 /*********************
 LAYOUT & GRID STYLES
 *********************/
-.wrap {
+.wrap 
+{
   width: 96%;
-  margin: 0 auto; }
+  min-width: 860px;
+  margin: 0 auto; 
+}
 
 /*********************
 LINK STYLES
