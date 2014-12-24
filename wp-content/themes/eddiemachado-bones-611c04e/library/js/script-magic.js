@@ -21,7 +21,7 @@ jQuery(function() {
         jQuery('.step_choice div').text(curChoice);
     }
 
-    // jQuery( ".draggable" ).draggable({ snap: false });
+    jQuery( ".draggable" ).draggable({ snap: false });
     jQuery( "#itemlist-one, #itemlist-two" ).sortable({
           connectWith: ".itemlist"
     }).disableSelection();
