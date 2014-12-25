@@ -228,8 +228,8 @@ input[type=submit]:hover, input[type=submit]:active {
 }
 .btn_trans_action
 {
-    border-color: #47AB1B;
-    color: #47AB1B;
+    border-color: #4298ED;
+    color: #4298ED;
     text-transform: uppercase;
     padding-top: 13px;
     font-weight: 600;
@@ -243,7 +243,7 @@ input[type=submit]:hover, input[type=submit]:active {
 .btn_trans_action:hover, .btn_trans_action:focus, .btn__wizard_inAction
 {
     color: #fff!important;
-    background: #47AB1B;
+    background: #4298ED;
     /*-webkit-box-shadow: 0px 0px 10px #f0ad4e;
        -moz-box-shadow: 0px 0px 10px #f0ad4e;
             box-shadow: 0px 0px 10px #f0ad4e;*/
@@ -386,5 +386,9 @@ path {
 {
     display: inline-block !important;
 }
-
+.homelink, .homelink:hover
+{
+    color: #fff;
+    text-decoration: none;
+}
 /* /profile edit */
