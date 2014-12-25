@@ -225,7 +225,7 @@
                                                                                                             zIndex: '1000'
                                                                                                         });
                                                                                                         count_animation += 1;
-                                                                                                    } else if(count_animation <= 140) {                                                         //130
+                                                                                                    } else if(count_animation <= 80) {                                                         //140
                                                                                                         count_animation += 1;
 
                                                                                                         console.log('7-1'+ count_animation+ '/130');
@@ -256,7 +256,7 @@
                                                                                                                 });
                                                                                                                 count_animation += 1;
 
-                                                                                                            } else if(count_animation <= 150) {                                                         //135
+                                                                                                            } else if(count_animation <= 90) {                                                         //150
                                                                                                                 count_animation += 1;
 
                                                                                                                 console.log('7-2'+ count_animation+ '/135');
@@ -287,7 +287,7 @@
                                                                                                                         });
                                                                                                                         count_animation += 1;
 
-                                                                                                                    } else if(count_animation <= 150) {                                                         //135
+                                                                                                                    } else if(count_animation <= 90) {                                                         //150
                                                                                                                         count_animation += 1;
 
                                                                                                                         console.log('7-3'+ count_animation+ '/135');
@@ -318,7 +318,7 @@
                                                                                                                                 });
                                                                                                                                 count_animation += 1;
 
-                                                                                                                            } else if(count_animation <= 140) {                                                         //130
+                                                                                                                            } else if(count_animation <= 80) {                                                         //140
                                                                                                                                 count_animation += 1;
 
                                                                                                                                 console.log('7-4'+ count_animation+ '/130');
@@ -349,7 +349,7 @@
                                                                                                                                         });
                                                                                                                                         count_animation += 1;
 
-                                                                                                                                    } else if(count_animation <= 148) {                                                         //134
+                                                                                                                                    } else if(count_animation <= 88) {                                                         //148
                                                                                                                                         count_animation += 1;
 
                                                                                                                                         console.log('7-5'+ count_animation+ '/134');
@@ -720,7 +720,7 @@
                                                                                                                                                                 });
                                                                                                                                                                 count_animation += 1;
 
-                                                                                                                                                            } else if(count_animation <= 156) {                                                         //138
+                                                                                                                                                            } else if(count_animation <= 96) {                                                         //156
                                                                                                                                                                 count_animation += 1;
 
                                                                                                                                                                 console.log('7-1'+ count_animation+ '/138');
@@ -751,7 +751,7 @@
                                                                                                                                                                         });
                                                                                                                                                                         count_animation += 1;
 
-                                                                                                                                                                    } else if(count_animation <= 148) {                                                         //134
+                                                                                                                                                                    } else if(count_animation <= 88) {                                                         //148
                                                                                                                                                                         count_animation += 1;
 
                                                                                                                                                                         console.log('7-2'+ count_animation+ '/134');
@@ -782,7 +782,7 @@
                                                                                                                                                                                 });
                                                                                                                                                                                 count_animation += 1;
 
-                                                                                                                                                                            } else if(count_animation <= 146) {                                                         //133
+                                                                                                                                                                            } else if(count_animation <= 86) {                                                         //146
                                                                                                                                                                                 count_animation += 1;
 
                                                                                                                                                                                 jQuery('#draggable5').css({
@@ -816,7 +816,7 @@
                                                                                                                                                                                         });
                                                                                                                                                                                         count_animation += 1;
 
-                                                                                                                                                                                    } else if(count_animation <= 150) {                                                         //135
+                                                                                                                                                                                    } else if(count_animation <= 90) {                                                         //150
                                                                                                                                                                                         count_animation += 1;
 
                                                                                                                                                                                         console.log('7-4'+ count_animation+ '/135');
@@ -847,7 +847,7 @@
                                                                                                                                                                                                 });
                                                                                                                                                                                                 count_animation += 1;
 
-                                                                                                                                                                                            } else if(count_animation <= 156) {                                                         //122
+                                                                                                                                                                                            } else if(count_animation <= 96) {                                                         //156
                                                                                                                                                                                                 count_animation += 1;
 
                                                                                                                                                                                                 console.log('7-5'+ count_animation+ '/122');
@@ -878,7 +878,7 @@
                                                                                                                                                                                                         });
                                                                                                                                                                                                         count_animation += 1;
 
-                                                                                                                                                                                                    } else if(count_animation <= 156) {                                                         //133
+                                                                                                                                                                                                    } else if(count_animation <= 96) {                                                         //156
                                                                                                                                                                                                         count_animation += 1
                                                                                                                                                                                                         jQuery('#draggable1').css({
                                                                                                                                                                                                             transform: 'rotate('+90+'deg) scale(1)'
@@ -1246,7 +1246,7 @@
                                                                                                         });
                                                                                                         count_animation += 1;
 
-                                                                                                    } else if(count_animation <= 156) {                                                         //138
+                                                                                                    } else if(count_animation <= 96) {                                                         //156
                                                                                                         count_animation += 1;
 
                                                                                                         console.log('7-1'+ count_animation+ '/138');
@@ -1277,7 +1277,7 @@
                                                                                                                 });
                                                                                                                 count_animation += 1;
 
-                                                                                                            } else if(count_animation <= 146) {                                                         //133
+                                                                                                            } else if(count_animation <= 86) {                                                         //146
                                                                                                                 count_animation += 1;
 
                                                                                                                 jQuery('#draggable4').css({
@@ -1311,7 +1311,7 @@
                                                                                                                         });
                                                                                                                         count_animation += 1;
 
-                                                                                                                    } else if(count_animation <= 150) {                                                         //135
+                                                                                                                    } else if(count_animation <= 90) {                                                         //150
                                                                                                                         count_animation += 1;
 
                                                                                                                         console.log('7-4'+ count_animation+ '/135');
@@ -1342,7 +1342,7 @@
                                                                                                                                 });
                                                                                                                                 count_animation += 1;
 
-                                                                                                                            } else if(count_animation <= 140) {                                                         //134
+                                                                                                                            } else if(count_animation <= 80) {                                                         //140
                                                                                                                                 count_animation += 1;
 
                                                                                                                                 console.log('7-2'+ count_animation+ '/134');
@@ -1373,7 +1373,7 @@
                                                                                                                                         });
                                                                                                                                         count_animation += 1;
 
-                                                                                                                                    } else if(count_animation <= 156) {                                                         //138
+                                                                                                                                    } else if(count_animation <= 96) {                                                         //156
                                                                                                                                         count_animation += 1;
 
                                                                                                                                         console.log('7-1'+ count_animation+ '/138');
@@ -1404,7 +1404,7 @@
                                                                                                                                                 });
                                                                                                                                                 count_animation += 1;
 
-                                                                                                                                            } else if(count_animation <= 148) {                                                         //134
+                                                                                                                                            } else if(count_animation <= 88) {                                                         //148
                                                                                                                                                 count_animation += 1;
 
                                                                                                                                                 console.log('7-2'+ count_animation+ '/134');
@@ -1691,7 +1691,7 @@ v5 = function(){
                                                                                     });
                                                                                     count_animation += 1;
 
-                                                                                } else if(count_animation <= 156) {                                                         //138
+                                                                                } else if(count_animation <= 96) {                                                         //156
                                                                                     count_animation += 1;
 
                                                                                     console.log('7-1'+ count_animation+ '/138');
@@ -1706,7 +1706,7 @@ v5 = function(){
                                                                                         paddingTop: '2px',
                                                                                         zIndex: '1'
                                                                                     });
-                                    //4-2
+                                                    //4-2
                                                                                     cur_animation_val = 90;
                                                                                     count_animation = 1;
                                                                                     phaseSeven_one = setInterval(function(){
@@ -1722,7 +1722,7 @@ v5 = function(){
                                                                                             });
                                                                                             count_animation += 1;
 
-                                                                                        } else if(count_animation <= 140) {                                                         //134
+                                                                                        } else if(count_animation <= 80) {                                                         //140
                                                                                             count_animation += 1;
 
                                                                                             console.log('7-2'+ count_animation+ '/134');
@@ -1788,7 +1788,7 @@ v5 = function(){
                                                                                                             });
                                                                                                             count_animation += 1;
 
-                                                                                                        } else if(count_animation <= 150) {                                                         //135
+                                                                                                        } else if(count_animation <= 90) {                                                         //150
                                                                                                             count_animation += 1;
 
                                                                                                             console.log('7-4'+ count_animation+ '/135');
@@ -1819,7 +1819,7 @@ v5 = function(){
                                                                                                                     });
                                                                                                                     count_animation += 1;
 
-                                                                                                                } else if(count_animation <= 156) {                                                         //138
+                                                                                                                } else if(count_animation <= 96) {                                                         //156
                                                                                                                     count_animation += 1;
 
                                                                                                                     console.log('7-1'+ count_animation+ '/138');
