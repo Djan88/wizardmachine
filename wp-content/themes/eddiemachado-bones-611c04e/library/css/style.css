@@ -1327,7 +1327,7 @@ LAYOUT & GRID STYLES
 .wrap 
 {
   width: 96%;
-  min-width: 860px;
+  min-width: 960px;
   margin: 0 auto; 
 }
 
@@ -1910,7 +1910,7 @@ you can add resource intensive styles.
   *********************/
   .wrap {
     /*width: 760px; */
-    min-width: 860px;
+    min-width: 960px;
   }
 
   /*********************
