@@ -21,8 +21,9 @@ jQuery(function() {
         jQuery('.step_choice div').text(curChoice);
     }
 
-
     jQuery( ".draggable" ).draggable({ snap: false });
+    
+    jQuery( ".select_program" ).accordion({ active: 1 });
 
     
     jQuery('.show_form').on('click', function(event) {
@@ -92,7 +93,7 @@ jQuery(function() {
             .removeClass('invisible')
             .addClass('animated')
             .addClass('fadeIn');
-        jQuery('.itemlist-two-li').append(croppedImg);
+        jQuery('.itemlist-two').append(croppedImg);
     }
 
 //ШАГ 3 (Старт процедуры)
