@@ -29,6 +29,10 @@
                         <div class="home-content">
                             <?php the_content(); ?>
                         </div>
+                        <a href="/wizard" class="button button-primary button-large">Начать</a> или 
+                        <?php if(is_user_logged_in()){ ?>
+                            <a class="button button-primary button-large" href="<?php echo home_url(); ?>/wp-login.php?action=logout&amp;_wpnonce=a6cad512ba">Выйти</a>
+                        <?php }?>
 
                         <?php endwhile; ?>
 

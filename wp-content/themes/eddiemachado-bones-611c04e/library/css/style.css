@@ -2216,7 +2216,7 @@ be set to display none.
     box-shadow: none;
     text-align: center;
 }
-.home .login__form input#wp-submit 
+.home .login__form input#wp-submit, .home a
 {
   color: #fff;
 }
@@ -2311,13 +2311,13 @@ be set to display none.
   background: #eaedf2!important;
   border: 1px solid #ccc;
 }
-.home .login__form input,.home input:-webkit-autofill
+.home .login__form input,.home input:-webkit-autofill, .home a
 {
   margin: auto;
   border: 1px solid #fff;
   background: transparent!important;
 }
-.login__form input#wp-submit
+.login__form input#wp-submit, .home a
 {
   border: 1px solid #ccc;
   color: #000;
@@ -2410,6 +2410,10 @@ be set to display none.
 {
     border-color: #f0ad4e;
     color: #f0ad4e;
+}.btn_neitral
+{
+    border-color: #fff;
+    color: #fff;
 }
 .btn_trans
 {
@@ -2423,7 +2427,7 @@ be set to display none.
 {
   background: rgba(255,255,255, 0.2);
 }
-.btn_warning:hover
+.btn_warning:hover, .btn_neitral:hover
 {
     background-color: #ec971f;
 }

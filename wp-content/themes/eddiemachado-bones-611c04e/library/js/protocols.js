@@ -438,6 +438,9 @@
                                                                                                                                                                                                             paddingTop: '2px',
                                                                                                                                                                                                             zIndex: '1'
                                                                                                                                                                                                         });
+                                                                                                                                                                                                        jQuery( ".btn__wizard" )
+                                                                                                                                                                                                            .text('Выполнить')
+                                                                                                                                                                                                            .removeClass('btn__wizard_inAction');                
                                                                                                                                                                                                     }
                                                                                                                                                                                                 }, 1000);
                                                                                                                                                                                             });
@@ -992,6 +995,9 @@
                                                                                                                                                                                                                                                                             paddingTop: '2px',
                                                                                                                                                                                                                                                                             zIndex: '1'
                                                                                                                                                                                                                                                                         });
+                                                                                                                                                                                                                                                                        jQuery( ".btn__wizard" )
+                                                                                                                                                                                                                                                                            .text('Выполнить')
+                                                                                                                                                                                                                                                                            .removeClass('btn__wizard_inAction');        
                                                                                                                                                                                                                                                                     }
                                                                                                                                                                                                                                                                 }, 1000);
                                                                                                                                                                                                                                                             });
@@ -1083,47 +1089,26 @@
     }
     v4 = function(){
     //фаза 1
-
         count_animation = 1;
-        jQuery('#draggableClean_2').css({
-                left: parseFloat(jQuery('#draggableS4').css('left'))+70+'px',
-                top: parseFloat(jQuery('#draggableS4').css('top'))+'px'
-        });
-        jQuery('#draggableClean_3').css({
-                left: parseFloat(jQuery('#draggableS5').css('left'))+70+'px',
-                top: parseFloat(jQuery('#draggableS5').css('top'))+'px'
-        });
-        jQuery('#draggableClean_4').css({
-                left: parseFloat(jQuery('#draggableD1').css('left'))+'px',
-                top: parseFloat(jQuery('#draggableD1').css('top'))+'px'
-        });
-        jQuery('#draggableClean_5').css({
-                left: parseFloat(jQuery('#draggableD1').css('left'))+'px',
-                top: parseFloat(jQuery('#draggableD1').css('top'))+'px'
-        });
-        jQuery('#draggableClean_2, #draggableClean_3, #draggableClean_4, #draggableClean_5, #draggableClean').removeClass('inopaciti');
         phaseOne = setInterval(function(){
             if (count_animation <= 120){                                                                         //120
                 cur_animation_val += 6;
-                jQuery('#draggableClean_2, #draggableClean_3, #draggableClean_4, #draggableClean_5, #draggableD1, #draggableD2').css({
+                jQuery('#draggableClean, #draggableS1, #draggableS2_1, #draggableS4, #draggableD1, #draggableS5').css({
                     transform: 'scale(1)',
                     borderWidth: '1px',
                     color: 'transparent',
                     paddingTop: '4px',
                     zIndex: '1000'
                 });
-                jQuery('#draggableClean_2, #draggableClean_3, #draggableClean_4, #draggableClean_5, #draggableD1, #draggableClean').css({
+                jQuery('#draggableClean, #draggableS1, #draggableS2_1, #draggableS4, #draggableD1, #draggableS5').css({
                     transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat'
-                });
-                jQuery('#draggableD2').css({
-                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/drenag.png) 0 0/100% no-repeat'
                 });
                 count_animation += 1;
             } else {
                 clearInterval(phaseOne);
                 count_animation = 1;
-                jQuery('#draggableClean_2, #draggableClean_3, #draggableClean_4, #draggableClean_5, #draggableD1, #draggableD2, #draggableClean').css({
+                jQuery('#draggableClean, #draggableS1, #draggableS2_1, #draggableS4, #draggableD1, #draggableS5').css({
                     background: 'transparent',
                     transform: 'scale(0.5)',
                     color: 'red',
@@ -1132,8 +1117,6 @@
                     zIndex: '1'
                 });
                 count_animation = 1;
-                jQuery('#draggableClean_2, #draggableClean_3, #draggableClean_4, #draggableClean_5').addClass('inopaciti');
-
     //фаза 2
                 count_animation = 1;
                 cur_animation_val = 0;
@@ -1175,8 +1158,8 @@
                         cur_animation_val = 0;                                                                       
                         count_animation = 1;
                         phaseOne = setInterval(function(){
-                            if (count_animation <= 240){  
-                                cur_animation_val += 6;                                                                       //240
+                            if (count_animation <= 120){  
+                                cur_animation_val += 6;                                                                       //120
                                 jQuery('#draggable4').css({
                                     transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
                                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat',
@@ -1542,6 +1525,9 @@
                                                                                                                                                                                                                     paddingTop: '2px',
                                                                                                                                                                                                                     zIndex: '1'
                                                                                                                                                                                                                 });
+                                                                                                                                                                                                                jQuery( ".btn__wizard" )
+                                                                                                                                                                                                                    .text('Выполнить')
+                                                                                                                                                                                                                    .removeClass('btn__wizard_inAction');        
                                                                                                                                                                                                             }
                                                                                                                                                                                                         }, 1000);
                                                                                                                                                                                                     });
@@ -1934,6 +1920,9 @@ v5 = function(){
                                                                                                                                 paddingTop: '2px',
                                                                                                                                 zIndex: '1'
                                                                                                                             });
+                                                                                                                            jQuery( ".btn__wizard" )
+                                                                                                                                .text('Выполнить')
+                                                                                                                                .removeClass('btn__wizard_inAction');  
                                                                                                                         }
                                                                                                                     }, 1000);
                                                                                                                 }

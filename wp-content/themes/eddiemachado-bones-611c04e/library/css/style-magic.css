@@ -181,7 +181,8 @@ input {
 {
     display: none;
 }
-input[type=submit] {
+input[type=submit], .home a
+{
     /*background: #e3e3e3;
     border: 1px solid #bbb;
     border-radius: 3px;
@@ -194,6 +195,7 @@ input[type=submit] {
     text-shadow: 0 1px 0 #fff;
     width: 150px;*/
     border-bottom: 0;
+    text-decoration: none;
     color: #fff;
     text-transform: uppercase;
     font-weight: 500;
