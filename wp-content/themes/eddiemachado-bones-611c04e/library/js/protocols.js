@@ -1752,7 +1752,7 @@ v5 = function(){
                                                                                     });
                                                                                     count_animation += 1;
 
-                                                                                } else if(count_animation <= 96) {                                                         //156
+                                                                                } else if(count_animation <= 96) {                                                        //156
                                                                                     count_animation += 1;
 
                                                                                     console.log('7-1'+ count_animation+ '/138');
