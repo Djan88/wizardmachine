@@ -149,7 +149,7 @@ input {
 }
 .steps
 {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .step
 {
@@ -233,14 +233,19 @@ input[type=submit]:hover, input[type=submit]:active {
     border-color: #4298ED;
     color: #4298ED;
     text-transform: uppercase;
-    padding-top: 13px;
+    padding: 10px;
+    /* padding-top: 13px; */
     font-weight: 600;
     clear: both;
     text-align: center;
     display: block;
-    max-width: 200px;
+    max-width: 125px;
     margin: auto;
     margin-top: 25px;
+    position: absolute;
+    left: 44%;
+    font-size: 15px;
+    top: 50%;
 }
 .btn_trans_action:hover, .btn_trans_action:focus, .btn__wizard_inAction
 {

@@ -2538,15 +2538,18 @@ be set to display none.
 {
   display: block;
   margin: auto;
-  width: 265px;
+  width: 120px;
   border: 1px solid #68B000;
   background: transparent;
   color: #68B000;
   text-transform: uppercase;
   font-weight: 600;
-  position: relative;
+  position: absolute;
   padding-left: 35px;
   margin-bottom: 15px;
+  left: 44%;
+  top: 40%;
+  z-index: 10;
 }
 .btn_back:hover
 {
