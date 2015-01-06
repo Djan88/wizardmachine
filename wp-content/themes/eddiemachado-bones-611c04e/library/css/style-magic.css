@@ -12,6 +12,14 @@ li
 {
     list-style: none;
 }
+.bablosadres
+{
+    color: #fff;
+    border: none;
+    text-transform: inherit;
+    margin: 0;
+    padding: 0;
+}
 .itemlist
 {
     float: left;
