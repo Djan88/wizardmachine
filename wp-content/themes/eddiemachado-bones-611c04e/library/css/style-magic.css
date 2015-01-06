@@ -12,14 +12,6 @@ li
 {
     list-style: none;
 }
-.bablosadres
-{
-    color: #fff;
-    border: none;
-    text-transform: inherit;
-    margin: 0;
-    padding: 0;
-}
 .itemlist
 {
     float: left;
@@ -406,4 +398,12 @@ path {
 {
     margin-right: 10px;
     color: #000;
+}
+.note_small a.bablosadres
+{
+    color: #fff;
+    border: none;
+    text-transform: inherit;
+    margin: 0;
+    padding: 0;
 }
