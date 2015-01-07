@@ -75,7 +75,7 @@
                     </div>
                 </div>
 
-                <div class="machine_screen clearfix hidden">
+                <div class="machine_screen work-area clearfix hidden">
                     <div id="snaptarget" class="wrapper">
                         <ul class="itemlist itemlist-one" id="itemlist-one">
                             <li id="draggable0" class="itemlist_item item_list__mid draggable" style="left: 168px; top: 16px;">V0</li>

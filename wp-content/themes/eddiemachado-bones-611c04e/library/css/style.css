@@ -2548,8 +2548,12 @@ be set to display none.
   padding-left: 35px;
   margin-bottom: 15px;
   left: 44%;
-  top: 40%;
+  top: 23%;
   z-index: 10;
+}
+.work-area .btn_back 
+{
+  top: 40%;
 }
 .btn_back:hover
 {
