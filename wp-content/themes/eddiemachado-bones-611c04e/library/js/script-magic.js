@@ -113,7 +113,23 @@ jQuery( ".btn__wizard" ).on('click', function(event) {
     pointsStatus = true;
     checkPoints();
     if(pointsStatus == false){
-        swal("Не все зоны перенесены", "Перед началом процедуры необходимо перенести все зоны", "success")
+        // swal("Не все зоны перенесены", "Перед началом процедуры необходимо перенести все зоны", "info")
+        swal({   
+            title: "Процедура окончена",   
+            text: "Что вы хотите делать дальше?",   
+            type: "success",   
+            showCancelButton: true,   
+            confirmButtonColor: "#DD6B55",   
+            confirmButtonText: "Провести еще одну процедуру",   
+            cancelButtonText: "Вернуться на главную"
+        }, 
+        function(isConfirm){   
+            if (isConfirm) {     
+                jQuery(location).attr('href','/wizard');
+            } else {     
+                jQuery(location).attr('href','/'); 
+            } 
+        });
     } else {
         jQuery(this)
             .addClass('btn__wizard_inAction')

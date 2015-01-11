@@ -9,8 +9,28 @@
         firstTriangleAnimation,
         secondTriangleAnimation,
         thirdTriangleAnimation,
+        onEnd;
         v2,
         v3;
+
+    onEnd = function(){
+        swal({   
+            title: "Процедура окончена",   
+            text: "Что вы хотите делать дальше?",   
+            type: "success",   
+            showCancelButton: true,   
+            confirmButtonColor: "#DD6B55",   
+            confirmButtonText: "Провести еще одну процедуру",   
+            cancelButtonText: "Вернуться на главную"
+        }, 
+        function(isConfirm){   
+            if (isConfirm) {     
+                swal("Deleted!", "Your imaginary file has been deleted.", "success");   
+            } else {     
+                swal("Cancelled", "Your imaginary file is safe :)", "error");   
+            } 
+        });
+    }
 
     v2 = function(){
     //фаза 1
