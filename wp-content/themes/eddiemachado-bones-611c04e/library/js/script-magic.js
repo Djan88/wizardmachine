@@ -111,6 +111,7 @@ jQuery(function() {
 jQuery( ".btn__wizard" ).on('click', function(event) {
     pointsStatus = true;
     checkPoints();
+    console.log('status '+pointsStatus);
     if(pointsStatus == false){
         swal("Не все зоны перенесены", "Перед началом процедуры необходимо перенести все зоны", "warning")
     } else {
