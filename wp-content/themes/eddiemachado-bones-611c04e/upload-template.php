@@ -786,10 +786,10 @@
                             <li id="draggableD3" class="itemlist_item item_list__mid draggable" style="left: 131px; top: 197px;">D3</li>
                             <li id="draggableD5" class="itemlist_item item_list__mid draggable" style="left: 116px; top: 298px;">D5</li>
                             <li id="draggableD4" class="itemlist_item item_list__mid draggable" style="left: 134px; top: 244px;">D4</li>
-                            <li id="draggableClean_2" class="itemlist_item item_list__mid itemlist_item__clear draggable inopaciti" style="left: 35px; top: 80px;"></li>
-                            <li id="draggableClean_3" class="itemlist_item item_list__mid itemlist_item__clear draggable inopaciti" style="left: 35px; top: 80px;"></li>
-                            <li id="draggableClean_4" class="itemlist_item item_list__mid itemlist_item__clear draggable inopaciti" style="left: 35px; top: 80px;"></li>
-                            <li id="draggableClean_5" class="itemlist_item item_list__mid itemlist_item__clear draggable inopaciti" style="left: 35px; top: 80px;"></li>
+                            <li id="draggableClean_2" class="itemlist_item item_list__mid itemlist_item__clear draggable inopaciti" style="left: 535px; top: 80px;"></li>
+                            <li id="draggableClean_3" class="itemlist_item item_list__mid itemlist_item__clear draggable inopaciti" style="left: 535px; top: 80px;"></li>
+                            <li id="draggableClean_4" class="itemlist_item item_list__mid itemlist_item__clear draggable inopaciti" style="left: 535px; top: 80px;"></li>
+                            <li id="draggableClean_5" class="itemlist_item item_list__mid itemlist_item__clear draggable inopaciti" style="left: 535px; top: 80px;"></li>
                         </ul>
                         <ul class="itemlist itemlist-two" id="itemlist-two">
                         <!--
