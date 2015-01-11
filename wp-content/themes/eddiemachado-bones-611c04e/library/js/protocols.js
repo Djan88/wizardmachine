@@ -24,10 +24,12 @@
             cancelButtonText: "Вернуться на главную"
         }, 
         function(isConfirm){   
-            if (isConfirm) {     
-                swal("Deleted!", "Your imaginary file has been deleted.", "success");   
-            } else {     
-                swal("Cancelled", "Your imaginary file is safe :)", "error");   
+            if (isConfirm) {
+                var protocol = undefined;    
+                jQuery(location).attr('href','/wizard');
+            } else {
+                var protocol = undefined;     
+                jQuery(location).attr('href','/'); 
             } 
         });
     }
@@ -458,6 +460,7 @@
                                                                                                                                                                                                             paddingTop: '2px',
                                                                                                                                                                                                             zIndex: '1'
                                                                                                                                                                                                         });
+                                                                                                                                                                                                        onEnd();
                                                                                                                                                                                                         jQuery( ".btn__wizard" )
                                                                                                                                                                                                             .text('Выполнить')
                                                                                                                                                                                                             .removeClass('btn__wizard_inAction');                
@@ -1015,6 +1018,7 @@
                                                                                                                                                                                                                                                                             paddingTop: '2px',
                                                                                                                                                                                                                                                                             zIndex: '1'
                                                                                                                                                                                                                                                                         });
+                                                                                                                                                                                                                                                                        onEnd();
                                                                                                                                                                                                                                                                         jQuery( ".btn__wizard" )
                                                                                                                                                                                                                                                                             .text('Выполнить')
                                                                                                                                                                                                                                                                             .removeClass('btn__wizard_inAction');        
@@ -1545,6 +1549,7 @@
                                                                                                                                                                                                                     paddingTop: '2px',
                                                                                                                                                                                                                     zIndex: '1'
                                                                                                                                                                                                                 });
+                                                                                                                                                                                                                onEnd();
                                                                                                                                                                                                                 jQuery( ".btn__wizard" )
                                                                                                                                                                                                                     .text('Выполнить')
                                                                                                                                                                                                                     .removeClass('btn__wizard_inAction');        
@@ -1940,6 +1945,7 @@ v5 = function(){
                                                                                                                                 paddingTop: '2px',
                                                                                                                                 zIndex: '1'
                                                                                                                             });
+                                                                                                                            onEnd();
                                                                                                                             jQuery( ".btn__wizard" )
                                                                                                                                 .text('Выполнить')
                                                                                                                                 .removeClass('btn__wizard_inAction');  
