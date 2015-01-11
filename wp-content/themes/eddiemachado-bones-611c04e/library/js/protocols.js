@@ -9,7 +9,7 @@
         firstTriangleAnimation,
         secondTriangleAnimation,
         thirdTriangleAnimation,
-        onEnd;
+        onEnd,
         v2,
         v3;
 
