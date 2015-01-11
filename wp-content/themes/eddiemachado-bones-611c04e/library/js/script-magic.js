@@ -6,6 +6,8 @@ jQuery(function() {
         croppedImg,
         curChoice,
         protocol,
+        checkPoints,
+        pointsStatus = true,
         supportsStorage = function(){
             try {
                 return 'localStorage' in window && window['localStorage'] !== null;
@@ -13,6 +15,15 @@ jQuery(function() {
                 return false;
             }
         };
+
+    //Функция проверки положения точек
+    checkPoints = function(){
+        jQuery('.itemlist_item').each(function() {
+            if(jQuery(this).css('left') < 500){
+                pointsStatus = false;
+            }
+        });
+    }
 
     //Получение данных из локального хранилища
     if(supportsStorage && localStorage.getItem('curChoice')){
@@ -98,23 +109,29 @@ jQuery(function() {
 
 //ШАГ 3 (Старт процедуры)
 jQuery( ".btn__wizard" ).on('click', function(event) {
-    jQuery(this)
-        .addClass('btn__wizard_inAction')
-        .text('Выполняется');
-        jQuery('.step_procedure div').text('Процедура выполняется');
-        jQuery('.btn_back').addClass('invisible');
-        console.log(protocol);
-        if(protocol == 'v2'){
-            v2();
-        } else if(protocol == 'v3'){
-            v3();
-        } else if(protocol == 'v4'){
-            v4();
-        } else if(protocol == 'v5'){
-            v5();
-        } else{
-            console.log('нет протокола с id '+ protocol)
-        }
+    pointsStatus = true;
+    checkPoints();
+    if(pointsStatus == false){
+        swal("Не все зоны перенесены", "Перед началом процедуры необходимо перенести все зоны", "warning")
+    } else {
+        jQuery(this)
+            .addClass('btn__wizard_inAction')
+            .text('Выполняется');
+            jQuery('.step_procedure div').text('Процедура выполняется');
+            jQuery('.btn_back').addClass('invisible');
+            console.log(protocol);
+            if(protocol == 'v2'){
+                v2();
+            } else if(protocol == 'v3'){
+                v3();
+            } else if(protocol == 'v4'){
+                v4();
+            } else if(protocol == 'v5'){
+                v5();
+            } else{
+                console.log('нет протокола с id '+ protocol)
+            }
+    }
 });
 
 // Возврат на предыдущий шаг
