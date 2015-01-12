@@ -239,11 +239,11 @@ input[type=submit]:hover, input[type=submit]:active {
     clear: both;
     text-align: center;
     display: block;
-    max-width: 125px;
+    max-width: 142px;
     margin: auto;
     margin-top: 25px;
     position: absolute;
-    left: 44%;
+    left: 43%;
     font-size: 15px;
     top: 50%;
 }
