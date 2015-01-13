@@ -7,6 +7,7 @@ jQuery(function() {
         curChoice,
         protocol,
         checkPoints,
+        main_heading,
         pointsStatus = true,
         supportsStorage = function(){
             try {
@@ -25,7 +26,17 @@ jQuery(function() {
             }
         });
     }
-
+    // Текст заголовка
+    main_heading = function(){
+        console.log(cur_screen);
+        if(cur_screen == 0){
+            jQuery('.heading_dashboard').text('Выберите актуальную зону');
+            jQuery('.btn_back').addClass('hidden');
+        } else if (cur_screen == 1){
+            jQuery('.heading_dashboard').text('Загрузите фото');
+            jQuery('.btn_back').removeClass('hidden');
+        }
+    }
     //Получение данных из локального хранилища
     if(supportsStorage && localStorage.getItem('curChoice')){
         curChoice = localStorage.getItem('curChoice');
@@ -64,9 +75,9 @@ jQuery(function() {
                 .removeClass('btn_choice__choiced')
                 .text('Выбрать');
         } else {
-            curChoice = jQuery('.ui-state-active').text();
-            localStorage.setItem('curChoice', curChoice);
-            jQuery('.step_choice div').text(curChoice);
+            // curChoice = jQuery('.ui-state-active').text();
+            // localStorage.setItem('curChoice', curChoice);
+            // jQuery('.step_choice div').text(curChoice);
             cur_screen += 1;
             jQuery(".btn_choice")
                 .removeClass('btn_choice__choiced')
@@ -87,6 +98,7 @@ jQuery(function() {
                     .addClass('animated')
                     .addClass('fadeIn');
         }
+        main_heading()
     });
 
 // ШАГ 2 (переход к магии)
@@ -95,7 +107,8 @@ jQuery(function() {
     croppedImg = jQuery('#main').children()[0];
     if(croppedImg.hasAttribute('src'))
     {
-        jQuery('.step_img div').text('Фото загружено');
+        // jQuery('.step_img div').text('Фото загружено');
+        jQuery('.heading_dashboard').text('Перенесите зоны с шаблона на фото клиента')
         cur_screen = 2;
         jQuery('.step').eq(cur_screen-1).addClass('step_done');
         jQuery('.step').eq(cur_screen-2).addClass('step_done');
@@ -118,7 +131,8 @@ jQuery( ".btn__wizard" ).on('click', function(event) {
         jQuery(this)
             .addClass('btn__wizard_inAction')
             .text('Выполняется');
-            jQuery('.step_procedure div').text('Процедура выполняется');
+            // jQuery('.step_procedure div').text('Процедура выполняется');
+            jQuery('.heading_dashboard').text('Процедура выполняется')
             jQuery('.btn_back').addClass('invisible');
             console.log(protocol);
             if(protocol == 'v2'){
@@ -133,6 +147,7 @@ jQuery( ".btn__wizard" ).on('click', function(event) {
                 console.log('нет протокола с id '+ protocol)
             }
     }
+    main_heading()
 });
 
 // Возврат на предыдущий шаг
@@ -158,6 +173,7 @@ jQuery( ".btn__wizard" ).on('click', function(event) {
                 .addClass('step_done');
         };
         cur_screen -= 1;
+        main_heading()
     });
 
 //CROPPING SCRIPT

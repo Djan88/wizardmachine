@@ -27,10 +27,11 @@
             <?php if(current_user_can('contributor') || current_user_can('administrator')) { ?>
 
                 <div class="steps clearfix">
-                    <div class="steps-center"><hr></div>
+                    <!-- <div class="steps-center"><hr></div>
                     <div class="step step_choice step_now">1 <div></div> </div>
                     <div class="step step_img">2 <div></div> </div>
-                    <div class="step step_procedure">3 <div></div>  </div>
+                    <div class="step step_procedure">3 <div></div>  </div> -->
+                    <h3 class="heading heading_dashboard">Выберите актуальную зону</h3>
                 </div>
                 <div class="btn btn_back invisible"><span>‹</span> Назад</div>
 
@@ -56,11 +57,11 @@
                         <input id="y1" name="mci_y1" type="hidden" />
                         <input id="x2" name="mci_x2" type="hidden" />
                         <input id="y2" name="mci_y2" type="hidden" />
-                        <h2>Выберите изображение</h2>
+                        <!-- <h2>Выберите изображение</h2> -->
                         <div><input id="image_file" name="mci_image_file" type="file" /></div>
                         <div class="error"></div>
                         <div class="step2">
-                        <h2>Выделите область для обрезки</h2>
+                        <h3>Выделите область для обрезки</h3>
                         <img id="preview" alt="" />
                         <!--<canvas id="preview-canvas" style="border: 3px red solid;/*position: absolute; visibility: hidden; /*left: -20000px*/"></canvas>-->
                         <div class="info"><label>Размер файла</label> <input id="filesize" name="mci_filesize" type="text" />
