@@ -46,7 +46,7 @@ jQuery(function() {
 
     jQuery( ".draggable" ).draggable({ snap: false });
     
-    jQuery( ".select_program" ).accordion({ active: 1 });
+    jQuery( ".select_program" ).accordion({ active: 100 });
 
     
     jQuery('.show_form').on('click', function(event) {
