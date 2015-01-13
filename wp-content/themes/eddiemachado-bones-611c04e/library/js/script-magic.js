@@ -46,7 +46,8 @@ jQuery(function() {
 
     jQuery( ".draggable" ).draggable({ snap: false });
     
-    jQuery( ".select_program" ).accordion({ active: 1 });
+    jQuery( ".select_program" ).accordion();
+    jQuery('ul.select_program ul').hide();
 
     
     jQuery('.show_form').on('click', function(event) {
@@ -75,8 +76,8 @@ jQuery(function() {
                 .removeClass('btn_choice__choiced')
                 .text('Выбрать');
         } else {
-            // curChoice = jQuery('.ui-state-active').text();
-            // localStorage.setItem('curChoice', curChoice);
+            curChoice = jQuery('.ui-state-active').text();
+            localStorage.setItem('curChoice', curChoice);
             // jQuery('.step_choice div').text(curChoice);
             cur_screen += 1;
             jQuery(".btn_choice")
