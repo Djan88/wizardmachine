@@ -1254,7 +1254,7 @@ body
   font-size: 100%;
   line-height: 1.5;
   color: #000;
-  background: url(../images/bg_pattern.png);
+  background: url(../images/point-bgr.png);
   -webkit-font-smoothing: antialiased; 
   -moz-hyphens: none!important;
   -ms-hyphens: none!important;
@@ -1389,7 +1389,8 @@ h5, .h5 {
 HEADER STYLES
 *********************/
 .header {
-  background: url(../images/topbar_bg.png) center -45px/100% no-repeat;
+  /*background: url(../images/topbar_bg.png) center -45px/100% no-repeat;*/
+  background: #F4F4F4;
   height: 50px;
   -webkit-box-shadow: 0 1px 8px #d3cec7;
   -moz-box-shadow: 0 1px 8px #d3cec7;
@@ -2197,7 +2198,7 @@ be set to display none.
 .home-page-content
 {
     min-height: 300px;
-    background: #fff;
+    background: #F4F4F4;
     padding: 20px;
     margin: 10px auto 30px;
     position: relative;
@@ -2236,7 +2237,7 @@ be set to display none.
   width: 100%;
   top: -5px;
   left: 0;
-  background: url(../images/block_bg.png) 0 0/100% no-repeat;
+  /*background: url(../images/block_bg.png) 0 0/100% no-repeat;*/
   height: 10px;
 }
 .home-page-content:after 
@@ -2248,7 +2249,7 @@ be set to display none.
   position: absolute;
   bottom: -15px;
   left: 0;
-  background: url(../images/block_bg_rotate.png) 0 0/100% no-repeat;
+  /*background: url(../images/block_bg_rotate.png) 0 0/100% no-repeat;*/
 }
 .sidebar:before
 {
@@ -2397,7 +2398,7 @@ be set to display none.
 .btn_success
 {
     /*background-color: #56C800;*/
-    background: #68B000;
+    background: #204371;
     -webkit-transition: none;
     -moz-transition: none;
     transition: none;
@@ -2408,8 +2409,8 @@ be set to display none.
 }
 .btn_warning
 {
-    border-color: #f0ad4e;
-    color: #f0ad4e;
+    border-color: #204371;
+    color: #204371;
 }.btn_neitral
 {
     border-color: #fff;
@@ -2429,7 +2430,7 @@ be set to display none.
 }
 .btn_warning:hover, .btn_neitral:hover
 {
-    background-color: #ec971f;
+    background-color: #204371;
 }
 .btn_primary:hover
 {
@@ -2438,9 +2439,9 @@ be set to display none.
 .btn_success:active, .btn_success:focus, .btn_success:hover, .btn_choice:hover:after, .btn_choice__choiced, .btn_choice__choiced:after
 {
     /*background: linear-gradient(to bottom, #68B000, #ACF52D);*/
-    -webkit-box-shadow: 0px 0px 10px #68B000;
-       -moz-box-shadow: 0px 0px 10px #68B000;
-            box-shadow: 0px 0px 10px #68B000;
+    -webkit-box-shadow: 0px 0px 10px #204371;
+       -moz-box-shadow: 0px 0px 10px #204371;
+            box-shadow: 0px 0px 10px #204371;
 }
 .btn_warning:active, .btn_warning:focus
 {
@@ -2483,9 +2484,10 @@ be set to display none.
   position: relative;
   margin-top: 40px;
   overflow: hidden;
+  border: none;
   -webkit-transition: width 0.2s linear;
-  -moz-transition: width 0.2s linear;
-  transition: width 0.2s linear;
+     -moz-transition: width 0.2s linear;
+          transition: width 0.2s linear;
 }
 .steps 
 {
@@ -2546,9 +2548,9 @@ be set to display none.
   display: block;
   margin: auto;
   width: 120px;
-  border: 1px solid #68B000;
+  border: 1px solid #204371;
   background: transparent;
-  color: #68B000;
+  color: #204371;
   text-transform: uppercase;
   font-weight: 600;
   position: absolute;
@@ -2565,7 +2567,7 @@ be set to display none.
 .btn_back:hover
 {
   color: #fff!important;
-  background: #68B000;
+  background: #204371;
   /* -webkit-box-shadow: 0px 0px 10px #68B000; */
   /*-moz-box-shadow: 0px 0px 10px #68B000;*/
   /* box-shadow: 0px 0px 10px #68B000; */
