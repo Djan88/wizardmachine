@@ -47,7 +47,6 @@ jQuery(function() {
     jQuery( ".draggable" ).draggable({ snap: false });
     
     jQuery( ".select_program" ).accordion();
-    jQuery('ul.select_program ul').hide();
 
     
     jQuery('.show_form').on('click', function(event) {
