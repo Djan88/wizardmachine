@@ -77,7 +77,7 @@ jQuery(function() {
         } else {
             curChoice = jQuery('.ui-state-active').text();
             localStorage.setItem('curChoice', curChoice);
-            // jQuery('.step_choice div').text(curChoice);
+            jQuery('.step_choice div').text(curChoice);
             cur_screen += 1;
             jQuery(".btn_choice")
                 .removeClass('btn_choice__choiced')
