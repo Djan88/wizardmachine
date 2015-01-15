@@ -35,7 +35,7 @@ jQuery(function() {
     });
     // Текст заголовка
     main_heading = function(){
-        console.log(cur_screen);
+        // console.log(cur_screen);
         if(cur_screen == 0){
             jQuery('.heading_dashboard').text('Выберите актуальную зону');
             jQuery('.btn_back').addClass('hidden');
@@ -132,7 +132,27 @@ jQuery( ".btn__wizard" ).on('click', function(event) {
     pointsStatus = true;
     checkPoints();
     if(pointsStatus == false){
-        swal("Не все зоны перенесены", "Перед началом процедуры необходимо перенести все зоны", "info")
+        swal({   
+            title: "Процедура окончена",   
+            text: "Что вы хотите делать дальше?",   
+            type: "success",   
+            showCancelButton: true,   
+            confirmButtonColor: "#DD6B55",   
+            confirmButtonText: "Продолжить сессию",   
+            cancelButtonText: "Выйти"
+        }, 
+        function(isConfirm){   
+            if (isConfirm) {
+                var protocol = undefined;     
+                jQuery('.fast-protocol-wrap')
+                    .removeClass('hidden')
+                    .addClass('animated')
+                    .addClass('fadeIn');
+            } else {
+                var protocol = undefined;    
+                jQuery(location).attr('href','/wizard');
+            } 
+        });
     } else {
         jQuery(this)
             .addClass('btn__wizard_inAction')

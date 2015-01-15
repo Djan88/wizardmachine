@@ -25,14 +25,14 @@
         }, 
         function(isConfirm){   
             if (isConfirm) {
-                var protocol = undefined;    
-                jQuery(location).attr('href','/wizard');
-            } else {
                 var protocol = undefined;     
                 jQuery('.fast-protocol-wrap')
                     .removeClass('hidden')
                     .addClass('animated')
                     .addClass('fadeIn');
+            } else {
+                var protocol = undefined;    
+                jQuery(location).attr('href','/wizard');
             } 
         });
     }
@@ -775,7 +775,7 @@
                                                                                                                                                             } else if(count_animation <= 96) {                                                         //156
                                                                                                                                                                 count_animation += 1;
 
-                                                                                                                                                                console.log('7-1'+ count_animation+ '/138');
+                                                                                                                                                                // console.log('7-1'+ count_animation+ '/138');
                                                                                                                                                             } else {    
                                                                                                                                                                 clearInterval(phaseSeven_one);
                                                                                                                                                                 count_animation = 1;
