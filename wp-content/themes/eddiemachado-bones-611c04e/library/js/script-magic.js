@@ -149,6 +149,10 @@ jQuery( ".btn__wizard" ).on('click', function(event) {
                 v4();
             } else if(protocol == 'v5'){
                 v5();
+            } else if(protocol == 'v6'){
+                v6();
+            } else if(protocol == 'v7'){
+                v7();
             } else{
                 console.log('нет протокола с id '+ protocol)
             }

@@ -10,6 +10,7 @@
         secondTriangleAnimation,
         thirdTriangleAnimation,
         onEnd,
+        protocol,
         v2,
         v3;
 
@@ -1990,4 +1991,19 @@ v5 = function(){
             }, 1000);
         }
     }, 1000);
+}
+
+v6 = function(){
+    alert('v6');
+    onEnd();
+    jQuery( ".btn__wizard" )
+        .text('Выполнить')
+        .removeClass('btn__wizard_inAction'); 
+}
+v7 = function(){
+    alert('v7');
+    onEnd();
+    jQuery( ".btn__wizard" )
+        .text('Выполнить')
+        .removeClass('btn__wizard_inAction'); 
 }
