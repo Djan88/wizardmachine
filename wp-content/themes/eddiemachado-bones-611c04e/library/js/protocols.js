@@ -21,7 +21,7 @@
             showCancelButton: true,   
             confirmButtonColor: "#DD6B55",   
             confirmButtonText: "Провести еще одну процедуру",   
-            cancelButtonText: "Вернуться на главную"
+            cancelButtonText: "Выйти"
         }, 
         function(isConfirm){   
             if (isConfirm) {
