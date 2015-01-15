@@ -132,27 +132,7 @@ jQuery( ".btn__wizard" ).on('click', function(event) {
     pointsStatus = true;
     checkPoints();
     if(pointsStatus == false){
-        swal({   
-            title: "Процедура окончена",   
-            text: "Что вы хотите делать дальше?",   
-            type: "success",   
-            showCancelButton: true,   
-            confirmButtonColor: "#DD6B55",   
-            confirmButtonText: "Продолжить сессию",   
-            cancelButtonText: "Выйти"
-        }, 
-        function(isConfirm){   
-            if (isConfirm) {
-                var protocol = undefined;     
-                jQuery('.fast-protocol-wrap')
-                    .removeClass('hidden')
-                    .addClass('animated')
-                    .addClass('fadeIn');
-            } else {
-                var protocol = undefined;    
-                jQuery(location).attr('href','/wizard');
-            } 
-        });
+        swal("Не все зоны перенесены", "Перед началом процедуры необходимо перенести все зоны", "info")
     } else {
         jQuery(this)
             .addClass('btn__wizard_inAction')
