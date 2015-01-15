@@ -28,7 +28,7 @@ jQuery(function() {
     }
     //Быстрая смена протокола
     jQuery('#main').on('click', '.fast-protocol', function() {
-        protocol = jQuery.(this).data('fast');
+        protocol = jQuery(this).data('fast');
         jQuery('.fast-protocol-wrap')
             .addClass('hidden')
             .removeClass('fadeIn');
