@@ -26,6 +26,13 @@ jQuery(function() {
             }
         });
     }
+    //Быстрая смена протокола
+    jQuery('#main').on('click', '.fast-protocol', function() {
+        protocol = jQuery.(this).data('fast');
+        jQuery('.fast-protocol-wrap')
+            .addClass('hidden')
+            .removeClass('fadeIn');
+    });
     // Текст заголовка
     main_heading = function(){
         console.log(cur_screen);
@@ -50,7 +57,6 @@ jQuery(function() {
 
     
     jQuery('.show_form').on('click', function(event) {
-        console.log('ololo');
         jQuery('.login__form')
             .removeClass('hidden')
             .addClass('animated zoomIn');

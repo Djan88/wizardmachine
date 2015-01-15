@@ -20,7 +20,7 @@
             type: "success",   
             showCancelButton: true,   
             confirmButtonColor: "#DD6B55",   
-            confirmButtonText: "Провести еще одну процедуру",   
+            confirmButtonText: "Продолжить сессию",   
             cancelButtonText: "Выйти"
         }, 
         function(isConfirm){   
@@ -29,7 +29,10 @@
                 jQuery(location).attr('href','/wizard');
             } else {
                 var protocol = undefined;     
-                jQuery(location).attr('href','/'); 
+                jQuery('.fast-protocol-wrap')
+                    .removeClass('hidden')
+                    .addClass('animated')
+                    .addClass('fadeIn');
             } 
         });
     }

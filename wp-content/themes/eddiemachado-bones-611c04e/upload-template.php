@@ -25,11 +25,12 @@
 
 
             <?php if(current_user_can('contributor') || current_user_can('administrator')) { ?>
-                <div class="fast-protocol-wrap clearfix">
-                  <div class="btn btn_sm btn_warning" data-fast="V2">V2</div> 
-                  <div class="btn btn_sm btn_warning" data-fast="V3">V3</div> 
-                  <div class="btn btn_sm btn_warning" data-fast="V4">V4</div> 
-                  <div class="btn btn_sm btn_warning" data-fast="V5">V5</div>
+                
+                <div class="fast-protocol-wrap clearfix hidden">
+                  <div class="btn btn_sm btn_warning fast-protocol" data-fast="V2">V2</div> 
+                  <div class="btn btn_sm btn_warning fast-protocol" data-fast="V3">V3</div> 
+                  <div class="btn btn_sm btn_warning fast-protocol" data-fast="V4">V4</div> 
+                  <div class="btn btn_sm btn_warning fast-protocol" data-fast="V5">V5</div>
                 </div>
 
                 <div class="steps clearfix">

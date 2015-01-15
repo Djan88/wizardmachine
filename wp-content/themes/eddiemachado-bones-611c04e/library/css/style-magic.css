@@ -421,3 +421,25 @@ path {
 {
     font-weight: 100;
 }
+.fast-protocol-wrap 
+{
+    text-align: justify;
+    width: 50%;
+    left: 25%;
+    position: absolute;
+    background: #F4F4F4;
+    z-index: 5;
+    height: 40px;
+}
+.fast-protocol-wrap:after 
+{
+    display: inline-block;
+    width: 99%;
+}
+
+.fast-protocol
+{
+    font-weight: 600;
+    padding: 7px 25px;
+    font-size: 15px;
+}
