@@ -62,7 +62,7 @@
                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat',
                     borderWidth: '1px',
                     borderColor: 'transparent',
-                    opacity: 0.8;
+                    opacity: 0.8,
                     paddingTop: '4px',
                     zIndex: '1000'
                 });
@@ -93,7 +93,7 @@
                             zIndex: '1000',
                             color: 'transparent',
                             borderColor: 'transparent',
-                            opacity: 0.8;
+                            opacity: 0.8,
                             transform: 'scale(1)'
                         });
                         jQuery('#draggableD2, #draggable2').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/disfunction.jpg) 0 0/100% no-repeat');
@@ -141,7 +141,7 @@
                                     zIndex: '1000',
                                     color: 'transparent',
                                     borderColor: 'transparent',
-                                    opacity: 0.8;
+                                    opacity: 0.8,
                                     transform: 'scale(1)',
                                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/disfunction.jpg) 0 0/100% no-repeat'
                                 });
@@ -175,7 +175,7 @@
                                             paddingTop: '4px',
                                             color: 'transparent',
                                             borderColor: 'transparent',
-                                            opacity: 0.8;
+                                            opacity: 0.8,
                                             zIndex: '1000'
                                         });
                                         jQuery('#draggable0, #draggableVD').css({
@@ -263,7 +263,7 @@
                                                                                                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_right.png) 0 0/100% no-repeat',
                                                                                                             color: 'transparent',
                                                                                                             borderColor: 'transparent',
-                                                                                                            opacity: 0.8;
+                                                                                                            opacity: 0.8,
                                                                                                             borderWidth: '1px',
                                                                                                             paddingTop: '4px',
                                                                                                             zIndex: '1000'
@@ -297,7 +297,7 @@
                                                                                                                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_left.png) 0 0/100% no-repeat',
                                                                                                                     color: 'transparent',
                                                                                                                     borderColor: 'transparent',
-                                                                                                                    opacity: 0.8;
+                                                                                                                    opacity: 0.8,
                                                                                                                     borderWidth: '1px',
                                                                                                                     paddingTop: '4px',
                                                                                                                     zIndex: '1000'
@@ -332,7 +332,7 @@
                                                                                                                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_right.png) 0 0/100% no-repeat',
                                                                                                                             color: 'transparent',
                                                                                                                             borderColor: 'transparent',
-                                                                                                                            opacity: 0.8;
+                                                                                                                            opacity: 0.8,
                                                                                                                             borderWidth: '1px',
                                                                                                                             paddingTop: '4px',
                                                                                                                             zIndex: '1000'
@@ -367,7 +367,7 @@
                                                                                                                                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_right.png) 0 0/100% no-repeat',
                                                                                                                                     color: 'transparent',
                                                                                                                                     borderColor: 'transparent',
-                                                                                                                                    opacity: 0.8;
+                                                                                                                                    opacity: 0.8,
                                                                                                                                     borderWidth: '1px',
                                                                                                                                     paddingTop: '4px',
                                                                                                                                     zIndex: '1000'
@@ -402,7 +402,7 @@
                                                                                                                                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_left.png) 0 0/100% no-repeat',
                                                                                                                                             color: 'transparent',
                                                                                                                                             borderColor: 'transparent',
-                                                                                                                                            opacity: 0.8;
+                                                                                                                                            opacity: 0.8,
                                                                                                                                             borderWidth: '1px',
                                                                                                                                             paddingTop: '4px',
                                                                                                                                             zIndex: '1000'
@@ -482,7 +482,7 @@
                                                                                                                                                                                                         jQuery('#draggable3').css({
                                                                                                                                                                                                             color: 'transparent',
                                                                                                                                                                                                             borderColor: 'transparent',
-                                                                                                                                                                                                            opacity: 0.8;
+                                                                                                                                                                                                            opacity: 0.8,
                                                                                                                                                                                                             transform: 'scale(1)',
                                                                                                                                                                                                             borderWidth: '1px',
                                                                                                                                                                                                             paddingTop: '4px',
@@ -635,7 +635,7 @@
                                                                         jQuery('#draggable1, #draggable4, #draggable5, #draggableD1, #draggableD2, #draggableD4, #draggableD5').css({
                                                                             color: 'transparent',
                                                                             borderColor: 'transparent',
-                                                                            opacity: 0.8;
+                                                                            opacity: 0.8,
                                                                             transform: 'scale(1)',
                                                                             borderWidth: '1px',
                                                                             paddingTop: '4px',
@@ -677,7 +677,7 @@
                                                                                 jQuery('#draggable3, #draggableD3, #draggableD1, #draggableClean_2, #draggableClean_3, #draggableClean_4, #draggableVD').css({
                                                                                     color: 'transparent',
                                                                                     borderColor: 'transparent',
-                                                                                    opacity: 0.8;
+                                                                                    opacity: 0.8,
                                                                                     transform: 'scale(1)',
                                                                                     borderWidth: '1px',
                                                                                     paddingTop: '4px',
@@ -818,7 +818,7 @@
                                                                                                                                                                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_right.png) 0 0/100% no-repeat',
                                                                                                                                                                     color: 'transparent',
                                                                                                                                                                     borderColor: 'transparent',
-                                                                                                                                                                    opacity: 0.8;
+                                                                                                                                                                    opacity: 0.8,
                                                                                                                                                                     borderWidth: '1px',
                                                                                                                                                                     paddingTop: '4px',
                                                                                                                                                                     zIndex: '1000'
@@ -853,7 +853,7 @@
                                                                                                                                                                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_right.png) 0 0/100% no-repeat',
                                                                                                                                                                             color: 'transparent',
                                                                                                                                                                             borderColor: 'transparent',
-                                                                                                                                                                            opacity: 0.8;
+                                                                                                                                                                            opacity: 0.8,
                                                                                                                                                                             borderWidth: '1px',
                                                                                                                                                                             paddingTop: '4px',
                                                                                                                                                                             zIndex: '1000'
@@ -888,7 +888,7 @@
                                                                                                                                                                                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_left.png) 0 0/100% no-repeat',
                                                                                                                                                                                     color: 'transparent',
                                                                                                                                                                                     borderColor: 'transparent',
-                                                                                                                                                                                    opacity: 0.8;
+                                                                                                                                                                                    opacity: 0.8,
                                                                                                                                                                                     borderWidth: '1px',
                                                                                                                                                                                     paddingTop: '4px',
                                                                                                                                                                                     zIndex: '1000'
@@ -926,7 +926,7 @@
                                                                                                                                                                                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_left.png) 0 0/100% no-repeat',
                                                                                                                                                                                             color: 'transparent',
                                                                                                                                                                                             borderColor: 'transparent',
-                                                                                                                                                                                            opacity: 0.8;
+                                                                                                                                                                                            opacity: 0.8,
                                                                                                                                                                                             borderWidth: '1px',
                                                                                                                                                                                             paddingTop: '4px',
                                                                                                                                                                                             zIndex: '1000'
@@ -961,7 +961,7 @@
                                                                                                                                                                                                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_right.png) 0 0/100% no-repeat',
                                                                                                                                                                                                     color: 'transparent',
                                                                                                                                                                                                     borderColor: 'transparent',
-                                                                                                                                                                                                    opacity: 0.8;
+                                                                                                                                                                                                    opacity: 0.8,
                                                                                                                                                                                                     borderWidth: '1px',
                                                                                                                                                                                                     paddingTop: '4px',
                                                                                                                                                                                                     zIndex: '1000'
@@ -996,7 +996,7 @@
                                                                                                                                                                                                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_left.png) 0 0/100% no-repeat',
                                                                                                                                                                                                             color: 'transparent',
                                                                                                                                                                                                             borderColor: 'transparent',
-                                                                                                                                                                                                            opacity: 0.8;
+                                                                                                                                                                                                            opacity: 0.8,
                                                                                                                                                                                                             borderWidth: '1px',
                                                                                                                                                                                                             paddingTop: '4px',
                                                                                                                                                                                                             zIndex: '1000'
@@ -1078,7 +1078,7 @@
                                                                                                                                                                                                                                                                         jQuery('#draggable3').css({
                                                                                                                                                                                                                                                                             color: 'transparent',
                                                                                                                                                                                                                                                                             borderColor: 'transparent',
-                                                                                                                                                                                                                                                                            opacity: 0.8;
+                                                                                                                                                                                                                                                                            opacity: 0.8,
                                                                                                                                                                                                                                                                             transform: 'scale(1)',
                                                                                                                                                                                                                                                                             borderWidth: '1px',
                                                                                                                                                                                                                                                                             paddingTop: '4px',
@@ -1204,7 +1204,7 @@
                     borderWidth: '1px',
                     color: 'transparent',
                     borderColor: 'transparent',
-                    opacity: 0.8;
+                    opacity: 0.8,
                     paddingTop: '4px',
                     zIndex: '1000'
                 });
@@ -1238,7 +1238,7 @@
                             borderWidth: '1px',
                             color: 'transparent',
                             borderColor: 'transparent',
-                            opacity: 0.8;
+                            opacity: 0.8,
                             paddingTop: '4px',
                             zIndex: '1000'
                         });
@@ -1278,7 +1278,7 @@
                                     borderWidth: '1px',
                                     color: 'transparent',
                                     borderColor: 'transparent',
-                                    opacity: 0.8;
+                                    opacity: 0.8,
                                     paddingTop: '4px',
                                     zIndex: '1000'
                                 });
@@ -1354,7 +1354,7 @@
                                                                                                     borderWidth: '1px',
                                                                                                     color: 'transparent',
                                                                                                     borderColor: 'transparent',
-                                                                                                    opacity: 0.8;
+                                                                                                    opacity: 0.8,
                                                                                                     paddingTop: '4px',
                                                                                                     zIndex: '1000'
                                                                                                 });
@@ -1393,7 +1393,7 @@
                                                                                                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_right.png) 0 0/100% no-repeat',
                                                                                                             color: 'transparent',
                                                                                                             borderColor: 'transparent',
-                                                                                                            opacity: 0.8;
+                                                                                                            opacity: 0.8,
                                                                                                             borderWidth: '1px',
                                                                                                             paddingTop: '4px',
                                                                                                             zIndex: '1000'
@@ -1428,7 +1428,7 @@
                                                                                                                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_left.png) 0 0/100% no-repeat',
                                                                                                                     color: 'transparent',
                                                                                                                     borderColor: 'transparent',
-                                                                                                                    opacity: 0.8;
+                                                                                                                    opacity: 0.8,
                                                                                                                     borderWidth: '1px',
                                                                                                                     paddingTop: '4px',
                                                                                                                     zIndex: '1000'
@@ -1466,7 +1466,7 @@
                                                                                                                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_left.png) 0 0/100% no-repeat',
                                                                                                                             color: 'transparent',
                                                                                                                             borderColor: 'transparent',
-                                                                                                                            opacity: 0.8;
+                                                                                                                            opacity: 0.8,
                                                                                                                             borderWidth: '1px',
                                                                                                                             paddingTop: '4px',
                                                                                                                             zIndex: '1000'
@@ -1501,7 +1501,7 @@
                                                                                                                                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_right.png) 0 0/100% no-repeat',
                                                                                                                                     color: 'transparent',
                                                                                                                                     borderColor: 'transparent',
-                                                                                                                                    opacity: 0.8;
+                                                                                                                                    opacity: 0.8,
                                                                                                                                     borderWidth: '1px',
                                                                                                                                     paddingTop: '4px',
                                                                                                                                     zIndex: '1000'
@@ -1536,7 +1536,7 @@
                                                                                                                                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_right.png) 0 0/100% no-repeat',
                                                                                                                                             color: 'transparent',
                                                                                                                                             borderColor: 'transparent',
-                                                                                                                                            opacity: 0.8;
+                                                                                                                                            opacity: 0.8,
                                                                                                                                             borderWidth: '1px',
                                                                                                                                             paddingTop: '4px',
                                                                                                                                             zIndex: '1000'
@@ -1571,7 +1571,7 @@
                                                                                                                                                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_right.png) 0 0/100% no-repeat',
                                                                                                                                                     color: 'transparent',
                                                                                                                                                     borderColor: 'transparent',
-                                                                                                                                                    opacity: 0.8;
+                                                                                                                                                    opacity: 0.8,
                                                                                                                                                     borderWidth: '1px',
                                                                                                                                                     paddingTop: '4px',
                                                                                                                                                     zIndex: '1000'
@@ -1651,7 +1651,7 @@
                                                                                                                                                                                                                 jQuery('#draggable3').css({
                                                                                                                                                                                                                     color: 'transparent',
                                                                                                                                                                                                                     borderColor: 'transparent',
-                                                                                                                                                                                                                    opacity: 0.8;
+                                                                                                                                                                                                                    opacity: 0.8,
                                                                                                                                                                                                                     transform: 'scale(1)',
                                                                                                                                                                                                                     borderWidth: '1px',
                                                                                                                                                                                                                     paddingTop: '4px',
@@ -1764,7 +1764,7 @@ v5 = function(){
                 borderWidth: '1px',
                 color: 'transparent',
                 borderColor: 'transparent',
-                opacity: 0.8;
+                opacity: 0.8,
                 paddingTop: '4px',
                 zIndex: '1000'
             });
@@ -1807,7 +1807,7 @@ v5 = function(){
                         borderWidth: '1px',
                         color: 'transparent',
                         borderColor: 'transparent',
-                        opacity: 0.8;
+                        opacity: 0.8,
                         paddingTop: '4px',
                         zIndex: '1000'
                     });
@@ -1904,7 +1904,7 @@ v5 = function(){
                                                                                         background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_right.png) 0 0/100% no-repeat',
                                                                                         color: 'transparent',
                                                                                         borderColor: 'transparent',
-                                                                                        opacity: 0.8;
+                                                                                        opacity: 0.8,
                                                                                         borderWidth: '1px',
                                                                                         paddingTop: '4px',
                                                                                         zIndex: '1000'
@@ -1939,7 +1939,7 @@ v5 = function(){
                                                                                                 background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_right.png) 0 0/100% no-repeat',
                                                                                                 color: 'transparent',
                                                                                                 borderColor: 'transparent',
-                                                                                                opacity: 0.8;
+                                                                                                opacity: 0.8,
                                                                                                 borderWidth: '1px',
                                                                                                 paddingTop: '4px',
                                                                                                 zIndex: '1000'
@@ -2011,7 +2011,7 @@ v5 = function(){
                                                                                                                 background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_left.png) 0 0/100% no-repeat',
                                                                                                                 color: 'transparent',
                                                                                                                 borderColor: 'transparent',
-                                                                                                                opacity: 0.8;
+                                                                                                                opacity: 0.8,
                                                                                                                 borderWidth: '1px',
                                                                                                                 paddingTop: '4px',
                                                                                                                 zIndex: '1000'
@@ -2046,7 +2046,7 @@ v5 = function(){
                                                                                                                         background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_right.png) 0 0/100% no-repeat',
                                                                                                                         color: 'transparent',
                                                                                                                         borderColor: 'transparent',
-                                                                                                                        opacity: 0.8;
+                                                                                                                        opacity: 0.8,
                                                                                                                         borderWidth: '1px',
                                                                                                                         paddingTop: '4px',
                                                                                                                         zIndex: '1000'
@@ -2077,7 +2077,7 @@ v5 = function(){
                                                                                                                             jQuery('#draggable3').css({
                                                                                                                                 color: 'transparent',
                                                                                                                                 borderColor: 'transparent',
-                                                                                                                                opacity: 0.8;
+                                                                                                                                opacity: 0.8,
                                                                                                                                 transform: 'scale(1)',
                                                                                                                                 borderWidth: '1px',
                                                                                                                                 paddingTop: '4px',
