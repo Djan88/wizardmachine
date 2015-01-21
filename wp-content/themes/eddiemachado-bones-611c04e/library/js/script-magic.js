@@ -26,13 +26,6 @@ jQuery(function() {
             }
         });
     }
-    //Быстрая смена протокола
-    jQuery('#main').on('click', '.fast-protocol', function() {
-        protocol = jQuery(this).data('fast');
-        jQuery('.fast-protocol-wrap')
-            .addClass('hidden')
-            .removeClass('fadeIn');
-    });
     // Текст заголовка
     main_heading = function(){
         // console.log(cur_screen);
@@ -140,6 +133,7 @@ jQuery( ".btn__wizard" ).on('click', function(event) {
             // jQuery('.step_procedure div').text('Процедура выполняется');
             jQuery('.heading_dashboard').text('Процедура выполняется')
             jQuery('.btn_back').addClass('invisible');
+            protocol = localStorage.getItem('protocol');
             console.log(protocol);
             if(protocol == 'v2'){
                 v2();
@@ -149,11 +143,23 @@ jQuery( ".btn__wizard" ).on('click', function(event) {
                 v4();
             } else if(protocol == 'v5'){
                 v5();
+            } else if(protocol == 'v6'){
+                v6();
+            } else if(protocol == 'v7'){
+                v7();
             } else{
                 console.log('нет протокола с id '+ protocol)
             }
     }
     main_heading()
+});
+//Быстрая смена протокола
+jQuery('#main').on('click', '.fast-protocol', function() {
+    protocol = jQuery(this).data('fast');
+    localStorage.setItem('protocol', protocol);
+    jQuery('.fast-protocol-wrap')
+        .addClass('hidden')
+        .removeClass('fadeIn');
 });
 
 // Возврат на предыдущий шаг
