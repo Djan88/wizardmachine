@@ -72,6 +72,7 @@
                     background: 'transparent',
                     transform: 'scale(0.5)',
                     color: 'red',
+                    borderColor: 'red',
                     borderWidth: '2px',
                     paddingTop: '2px',
                     zIndex: '1'
@@ -86,8 +87,9 @@
                             borderWidth: '1px',
                             paddingTop: '4px',
                             zIndex: '1000',
-                            transform: 'scale(1)',
-                            color: 'transparent'
+                            color: 'transparent',
+                            borderColor: 'transparent',
+                            transform: 'scale(1)'
                         });
                         jQuery('#draggableD2, #draggable2').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/disfunction.jpg) 0 0/100% no-repeat');
                         jQuery('#draggableS2, #draggableS2_1').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/travma.jpg) 0 0/100% no-repeat');
@@ -104,6 +106,7 @@
                             background: 'transparent',
                             transform: 'scale(0.5)',
                             color: 'red',
+                            borderColor: 'red',
                             borderWidth: '2px',
                             paddingTop: '2px',
                             zIndex: '1'
@@ -131,6 +134,7 @@
                                     paddingTop: '4px',
                                     zIndex: '1000',
                                     color: 'transparent',
+                                    borderColor: 'transparent',
                                     transform: 'scale(1)',
                                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/disfunction.jpg) 0 0/100% no-repeat'
                                 });
@@ -147,6 +151,7 @@
                                     background: 'transparent',
                                     transform: 'rotate(0deg) scale(0.5)',
                                     color: 'red',
+                                    borderColor: 'red',
                                     borderWidth: '2px',
                                     paddingTop: '2px',
                                     zIndex: '1'
@@ -161,6 +166,7 @@
                                             borderWidth: '1px',
                                             paddingTop: '4px',
                                             color: 'transparent',
+                                            borderColor: 'transparent',
                                             zIndex: '1000'
                                         });
                                         jQuery('#draggable0, #draggableVD').css({
@@ -183,6 +189,7 @@
                                             borderWidth: '2px',
                                             paddingTop: '2px',
                                             color: 'red',
+                                            borderColor: 'red',
                                             zIndex: '1'
                                         });
     //Фаза 5
@@ -245,6 +252,7 @@
                                                                                                             transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
                                                                                                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_right.png) 0 0/100% no-repeat',
                                                                                                             color: 'transparent',
+                                                                                                            borderColor: 'transparent',
                                                                                                             borderWidth: '1px',
                                                                                                             paddingTop: '4px',
                                                                                                             zIndex: '1000'
@@ -261,6 +269,7 @@
                                                                                                             transform: 'rotate(-'+0+'deg) scale(0.5)',
                                                                                                             background: 'transparent',
                                                                                                             color: 'red',
+                                                                                                            borderColor: 'red',
                                                                                                             borderWidth: '2px',
                                                                                                             paddingTop: '2px',
                                                                                                             zIndex: '1'
@@ -275,6 +284,7 @@
                                                                                                                     transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
                                                                                                                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_left.png) 0 0/100% no-repeat',
                                                                                                                     color: 'transparent',
+                                                                                                                    borderColor: 'transparent',
                                                                                                                     borderWidth: '1px',
                                                                                                                     paddingTop: '4px',
                                                                                                                     zIndex: '1000'
@@ -292,6 +302,7 @@
                                                                                                                     transform: 'rotate(-'+0+'deg) scale(0.5)',
                                                                                                                     background: 'transparent',
                                                                                                                     color: 'red',
+                                                                                                                    borderColor: 'red',
                                                                                                                     borderWidth: '2px',
                                                                                                                     paddingTop: '2px',
                                                                                                                     zIndex: '1'
@@ -306,6 +317,7 @@
                                                                                                                             transform: 'rotate('+cur_animation_val+'deg) scale(1)',
                                                                                                                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_right.png) 0 0/100% no-repeat',
                                                                                                                             color: 'transparent',
+                                                                                                                            borderColor: 'transparent',
                                                                                                                             borderWidth: '1px',
                                                                                                                             paddingTop: '4px',
                                                                                                                             zIndex: '1000'
@@ -323,6 +335,7 @@
                                                                                                                             transform: 'rotate(-'+0+'deg) scale(0.5)',
                                                                                                                             background: 'transparent',
                                                                                                                             color: 'red',
+                                                                                                                            borderColor: 'red',
                                                                                                                             borderWidth: '2px',
                                                                                                                             paddingTop: '2px',
                                                                                                                             zIndex: '1'
@@ -337,6 +350,7 @@
                                                                                                                                     transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
                                                                                                                                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_right.png) 0 0/100% no-repeat',
                                                                                                                                     color: 'transparent',
+                                                                                                                                    borderColor: 'transparent',
                                                                                                                                     borderWidth: '1px',
                                                                                                                                     paddingTop: '4px',
                                                                                                                                     zIndex: '1000'
@@ -354,6 +368,7 @@
                                                                                                                                     transform: 'rotate(-'+0+'deg) scale(0.5)',
                                                                                                                                     background: 'transparent',
                                                                                                                                     color: 'red',
+                                                                                                                                    borderColor: 'red',
                                                                                                                                     borderWidth: '2px',
                                                                                                                                     paddingTop: '2px',
                                                                                                                                     zIndex: '1'
@@ -368,6 +383,7 @@
                                                                                                                                             transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
                                                                                                                                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_left.png) 0 0/100% no-repeat',
                                                                                                                                             color: 'transparent',
+                                                                                                                                            borderColor: 'transparent',
                                                                                                                                             borderWidth: '1px',
                                                                                                                                             paddingTop: '4px',
                                                                                                                                             zIndex: '1000'
@@ -385,6 +401,7 @@
                                                                                                                                             transform: 'rotate(-'+0+'deg) scale(0.5)',
                                                                                                                                             background: 'transparent',
                                                                                                                                             color: 'red',
+                                                                                                                                            borderColor: 'red',
                                                                                                                                             borderWidth: '2px',
                                                                                                                                             paddingTop: '2px',
                                                                                                                                             zIndex: '1'
@@ -444,6 +461,7 @@
                                                                                                                                                                                                     if (count_animation <= 120){                                                                         //120
                                                                                                                                                                                                         jQuery('#draggable3').css({
                                                                                                                                                                                                             color: 'transparent',
+                                                                                                                                                                                                            borderColor: 'transparent',
                                                                                                                                                                                                             transform: 'scale(1)',
                                                                                                                                                                                                             borderWidth: '1px',
                                                                                                                                                                                                             paddingTop: '4px',
@@ -458,6 +476,7 @@
                                                                                                                                                                                                         jQuery('#draggable3').css({
                                                                                                                                                                                                             background: 'transparent',
                                                                                                                                                                                                             color: 'red',
+                                                                                                                                                                                                            borderColor: 'red',
                                                                                                                                                                                                             transform: 'scale(0.5)',
                                                                                                                                                                                                             borderWidth: '2px',
                                                                                                                                                                                                             paddingTop: '2px',
@@ -593,6 +612,7 @@
                                                                         });
                                                                         jQuery('#draggable1, #draggable4, #draggable5, #draggableD1, #draggableD2, #draggableD4, #draggableD5').css({
                                                                             color: 'transparent',
+                                                                            borderColor: 'transparent',
                                                                             transform: 'scale(1)',
                                                                             borderWidth: '1px',
                                                                             paddingTop: '4px',
@@ -606,6 +626,7 @@
                                                                         jQuery('#draggable1, #draggable4, #draggable5, #draggableD1, #draggableD2, #draggableD4, #draggableD5').css({
                                                                             background: 'transparent',
                                                                             color: 'red',
+                                                                            borderColor: 'red',
                                                                             transform: 'scale(0.5)',
                                                                             borderWidth: '2px',
                                                                             paddingTop: '2px',
@@ -631,6 +652,7 @@
                                                                                 cur_animation_val += 6;
                                                                                 jQuery('#draggable3, #draggableD3, #draggableD1, #draggableClean_2, #draggableClean_3, #draggableClean_4, #draggableVD').css({
                                                                                     color: 'transparent',
+                                                                                    borderColor: 'transparent',
                                                                                     transform: 'scale(1)',
                                                                                     borderWidth: '1px',
                                                                                     paddingTop: '4px',
@@ -650,6 +672,7 @@
                                                                                 jQuery('#draggable3, #draggableD3, #draggableS3, #draggableS4, #draggableS5, #draggableVD, #draggableD1').css({
                                                                                     background: 'transparent',
                                                                                     color: 'red',
+                                                                                    borderColor: 'red',
                                                                                     transform: 'scale(0.5)',
                                                                                     borderWidth: '2px',
                                                                                     paddingTop: '2px',
@@ -685,6 +708,7 @@
                                                                                         jQuery('#draggableS3, #draggableS4, #draggableS5, #draggableS6').css({
                                                                                             background: 'transparent',
                                                                                             color: 'red',
+                                                                                            borderColor: 'red',
                                                                                             transform: 'scale(0.5)',
                                                                                             borderWidth: '2px',
                                                                                             paddingTop: '2px',
@@ -766,6 +790,7 @@
                                                                                                                                                                     transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
                                                                                                                                                                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_right.png) 0 0/100% no-repeat',
                                                                                                                                                                     color: 'transparent',
+                                                                                                                                                                    borderColor: 'transparent',
                                                                                                                                                                     borderWidth: '1px',
                                                                                                                                                                     paddingTop: '4px',
                                                                                                                                                                     zIndex: '1000'
@@ -783,6 +808,7 @@
                                                                                                                                                                     transform: 'rotate(-'+0+'deg) scale(0.5)',
                                                                                                                                                                     background: 'transparent',
                                                                                                                                                                     color: 'red',
+                                                                                                                                                                    borderColor: 'red',
                                                                                                                                                                     borderWidth: '2px',
                                                                                                                                                                     paddingTop: '2px',
                                                                                                                                                                     zIndex: '1'
@@ -797,6 +823,7 @@
                                                                                                                                                                             transform: 'rotate('+cur_animation_val+'deg) scale(1)',
                                                                                                                                                                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_right.png) 0 0/100% no-repeat',
                                                                                                                                                                             color: 'transparent',
+                                                                                                                                                                            borderColor: 'transparent',
                                                                                                                                                                             borderWidth: '1px',
                                                                                                                                                                             paddingTop: '4px',
                                                                                                                                                                             zIndex: '1000'
@@ -814,6 +841,7 @@
                                                                                                                                                                             transform: 'rotate(-'+0+'deg) scale(0.5)',
                                                                                                                                                                             background: 'transparent',
                                                                                                                                                                             color: 'red',
+                                                                                                                                                                            borderColor: 'red',
                                                                                                                                                                             borderWidth: '2px',
                                                                                                                                                                             paddingTop: '2px',
                                                                                                                                                                             zIndex: '1'
@@ -828,6 +856,7 @@
                                                                                                                                                                                     transform: 'rotate('+cur_animation_val+'deg) scale(1)',
                                                                                                                                                                                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_left.png) 0 0/100% no-repeat',
                                                                                                                                                                                     color: 'transparent',
+                                                                                                                                                                                    borderColor: 'transparent',
                                                                                                                                                                                     borderWidth: '1px',
                                                                                                                                                                                     paddingTop: '4px',
                                                                                                                                                                                     zIndex: '1000'
@@ -848,6 +877,7 @@
                                                                                                                                                                                     transform: 'rotate(-'+0+'deg) scale(0.5)',
                                                                                                                                                                                     background: 'transparent',
                                                                                                                                                                                     color: 'red',
+                                                                                                                                                                                    borderColor: 'red',
                                                                                                                                                                                     borderWidth: '2px',
                                                                                                                                                                                     paddingTop: '2px',
                                                                                                                                                                                     zIndex: '1'
@@ -862,6 +892,7 @@
                                                                                                                                                                                             transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
                                                                                                                                                                                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_left.png) 0 0/100% no-repeat',
                                                                                                                                                                                             color: 'transparent',
+                                                                                                                                                                                            borderColor: 'transparent',
                                                                                                                                                                                             borderWidth: '1px',
                                                                                                                                                                                             paddingTop: '4px',
                                                                                                                                                                                             zIndex: '1000'
@@ -879,6 +910,7 @@
                                                                                                                                                                                             transform: 'rotate(-'+0+'deg) scale(0.5)',
                                                                                                                                                                                             background: 'transparent',
                                                                                                                                                                                             color: 'red',
+                                                                                                                                                                                            borderColor: 'red',
                                                                                                                                                                                             borderWidth: '2px',
                                                                                                                                                                                             paddingTop: '2px',
                                                                                                                                                                                             zIndex: '1'
@@ -893,6 +925,7 @@
                                                                                                                                                                                                     transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
                                                                                                                                                                                                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_right.png) 0 0/100% no-repeat',
                                                                                                                                                                                                     color: 'transparent',
+                                                                                                                                                                                                    borderColor: 'transparent',
                                                                                                                                                                                                     borderWidth: '1px',
                                                                                                                                                                                                     paddingTop: '4px',
                                                                                                                                                                                                     zIndex: '1000'
@@ -910,6 +943,7 @@
                                                                                                                                                                                                     transform: 'rotate(-'+0+'deg) scale(0.5)',
                                                                                                                                                                                                     background: 'transparent',
                                                                                                                                                                                                     color: 'red',
+                                                                                                                                                                                                    borderColor: 'red',
                                                                                                                                                                                                     borderWidth: '2px',
                                                                                                                                                                                                     paddingTop: '2px',
                                                                                                                                                                                                     zIndex: '1'
@@ -924,6 +958,7 @@
                                                                                                                                                                                                             transform: 'rotate('+cur_animation_val+'deg) scale(1)',
                                                                                                                                                                                                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_left.png) 0 0/100% no-repeat',
                                                                                                                                                                                                             color: 'transparent',
+                                                                                                                                                                                                            borderColor: 'transparent',
                                                                                                                                                                                                             borderWidth: '1px',
                                                                                                                                                                                                             paddingTop: '4px',
                                                                                                                                                                                                             zIndex: '1000'
@@ -943,6 +978,7 @@
                                                                                                                                                                                                             transform: 'rotate(-'+0+'deg) scale(0.5)',
                                                                                                                                                                                                             background: 'transparent',
                                                                                                                                                                                                             color: 'red',
+                                                                                                                                                                                                            borderColor: 'red',
                                                                                                                                                                                                             borderWidth: '2px',
                                                                                                                                                                                                             paddingTop: '2px',
                                                                                                                                                                                                             zIndex: '1'
@@ -1002,6 +1038,7 @@
                                                                                                                                                                                                                                                                     if (count_animation <= 120){                                                                         //120
                                                                                                                                                                                                                                                                         jQuery('#draggable3').css({
                                                                                                                                                                                                                                                                             color: 'transparent',
+                                                                                                                                                                                                                                                                            borderColor: 'transparent',
                                                                                                                                                                                                                                                                             transform: 'scale(1)',
                                                                                                                                                                                                                                                                             borderWidth: '1px',
                                                                                                                                                                                                                                                                             paddingTop: '4px',
@@ -1016,6 +1053,7 @@
                                                                                                                                                                                                                                                                         jQuery('#draggable3').css({
                                                                                                                                                                                                                                                                             background: 'transparent',
                                                                                                                                                                                                                                                                             color: 'red',
+                                                                                                                                                                                                                                                                            borderColor: 'red',
                                                                                                                                                                                                                                                                             transform: 'scale(0.5)',
                                                                                                                                                                                                                                                                             borderWidth: '2px',
                                                                                                                                                                                                                                                                             paddingTop: '2px',
@@ -1124,6 +1162,7 @@
                     transform: 'scale(1)',
                     borderWidth: '1px',
                     color: 'transparent',
+                    borderColor: 'transparent',
                     paddingTop: '4px',
                     zIndex: '1000'
                 });
@@ -1139,6 +1178,7 @@
                     background: 'transparent',
                     transform: 'scale(0.5)',
                     color: 'red',
+                    borderColor: 'red',
                     borderWidth: '2px',
                     paddingTop: '2px',
                     zIndex: '1'
@@ -1154,6 +1194,7 @@
                             transform: 'scale(1)',
                             borderWidth: '1px',
                             color: 'transparent',
+                            borderColor: 'transparent',
                             paddingTop: '4px',
                             zIndex: '1000'
                         });
@@ -1192,6 +1233,7 @@
                                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat',
                                     borderWidth: '1px',
                                     color: 'transparent',
+                                    borderColor: 'transparent',
                                     paddingTop: '4px',
                                     zIndex: '1000'
                                 });
@@ -1203,6 +1245,7 @@
                                     background: 'transparent',
                                     transform: 'scale(0.5)',
                                     color: 'red',
+                                    borderColor: 'red',
                                     borderWidth: '2px',
                                     paddingTop: '2px',
                                     zIndex: '1'
@@ -1264,6 +1307,7 @@
                                                                                                     transform: 'scale(1)',
                                                                                                     borderWidth: '1px',
                                                                                                     color: 'transparent',
+                                                                                                    borderColor: 'transparent',
                                                                                                     paddingTop: '4px',
                                                                                                     zIndex: '1000'
                                                                                                 });
@@ -1284,6 +1328,7 @@
                                                                                                     background: 'transparent',
                                                                                                     transform: 'scale(0.5)',
                                                                                                     color: 'red',
+                                                                                                    borderColor: 'red',
                                                                                                     borderWidth: '2px',
                                                                                                     paddingTop: '2px',
                                                                                                     zIndex: '1'
@@ -1299,6 +1344,7 @@
                                                                                                             transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
                                                                                                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_right.png) 0 0/100% no-repeat',
                                                                                                             color: 'transparent',
+                                                                                                            borderColor: 'transparent',
                                                                                                             borderWidth: '1px',
                                                                                                             paddingTop: '4px',
                                                                                                             zIndex: '1000'
@@ -1316,6 +1362,7 @@
                                                                                                             transform: 'rotate(-'+0+'deg) scale(0.5)',
                                                                                                             background: 'transparent',
                                                                                                             color: 'red',
+                                                                                                            borderColor: 'red',
                                                                                                             borderWidth: '2px',
                                                                                                             paddingTop: '2px',
                                                                                                             zIndex: '1'
@@ -1330,6 +1377,7 @@
                                                                                                                     transform: 'rotate('+cur_animation_val+'deg) scale(1)',
                                                                                                                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_left.png) 0 0/100% no-repeat',
                                                                                                                     color: 'transparent',
+                                                                                                                    borderColor: 'transparent',
                                                                                                                     borderWidth: '1px',
                                                                                                                     paddingTop: '4px',
                                                                                                                     zIndex: '1000'
@@ -1350,6 +1398,7 @@
                                                                                                                     transform: 'rotate(-'+0+'deg) scale(0.5)',
                                                                                                                     background: 'transparent',
                                                                                                                     color: 'red',
+                                                                                                                    borderColor: 'red',
                                                                                                                     borderWidth: '2px',
                                                                                                                     paddingTop: '2px',
                                                                                                                     zIndex: '1'
@@ -1364,6 +1413,7 @@
                                                                                                                             transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
                                                                                                                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_left.png) 0 0/100% no-repeat',
                                                                                                                             color: 'transparent',
+                                                                                                                            borderColor: 'transparent',
                                                                                                                             borderWidth: '1px',
                                                                                                                             paddingTop: '4px',
                                                                                                                             zIndex: '1000'
@@ -1381,6 +1431,7 @@
                                                                                                                             transform: 'rotate(-'+0+'deg) scale(0.5)',
                                                                                                                             background: 'transparent',
                                                                                                                             color: 'red',
+                                                                                                                            borderColor: 'red',
                                                                                                                             borderWidth: '2px',
                                                                                                                             paddingTop: '2px',
                                                                                                                             zIndex: '1'
@@ -1395,6 +1446,7 @@
                                                                                                                                     transform: 'rotate('+cur_animation_val+'deg) scale(1)',
                                                                                                                                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_right.png) 0 0/100% no-repeat',
                                                                                                                                     color: 'transparent',
+                                                                                                                                    borderColor: 'transparent',
                                                                                                                                     borderWidth: '1px',
                                                                                                                                     paddingTop: '4px',
                                                                                                                                     zIndex: '1000'
@@ -1412,6 +1464,7 @@
                                                                                                                                     transform: 'rotate(-'+0+'deg) scale(0.5)',
                                                                                                                                     background: 'transparent',
                                                                                                                                     color: 'red',
+                                                                                                                                    borderColor: 'red',
                                                                                                                                     borderWidth: '2px',
                                                                                                                                     paddingTop: '2px',
                                                                                                                                     zIndex: '1'
@@ -1426,6 +1479,7 @@
                                                                                                                                             transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
                                                                                                                                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_right.png) 0 0/100% no-repeat',
                                                                                                                                             color: 'transparent',
+                                                                                                                                            borderColor: 'transparent',
                                                                                                                                             borderWidth: '1px',
                                                                                                                                             paddingTop: '4px',
                                                                                                                                             zIndex: '1000'
@@ -1443,6 +1497,7 @@
                                                                                                                                             transform: 'rotate(-'+0+'deg) scale(0.5)',
                                                                                                                                             background: 'transparent',
                                                                                                                                             color: 'red',
+                                                                                                                                            borderColor: 'red',
                                                                                                                                             borderWidth: '2px',
                                                                                                                                             paddingTop: '2px',
                                                                                                                                             zIndex: '1'
@@ -1457,6 +1512,7 @@
                                                                                                                                                     transform: 'rotate('+cur_animation_val+'deg) scale(1)',
                                                                                                                                                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_right.png) 0 0/100% no-repeat',
                                                                                                                                                     color: 'transparent',
+                                                                                                                                                    borderColor: 'transparent',
                                                                                                                                                     borderWidth: '1px',
                                                                                                                                                     paddingTop: '4px',
                                                                                                                                                     zIndex: '1000'
@@ -1474,6 +1530,7 @@
                                                                                                                                                     transform: 'rotate(-'+0+'deg) scale(0.5)',
                                                                                                                                                     background: 'transparent',
                                                                                                                                                     color: 'red',
+                                                                                                                                                    borderColor: 'red',
                                                                                                                                                     borderWidth: '2px',
                                                                                                                                                     paddingTop: '2px',
                                                                                                                                                     zIndex: '1'
@@ -1533,6 +1590,7 @@
                                                                                                                                                                                                             if (count_animation <= 120){                                                                         //120
                                                                                                                                                                                                                 jQuery('#draggable3').css({
                                                                                                                                                                                                                     color: 'transparent',
+                                                                                                                                                                                                                    borderColor: 'transparent',
                                                                                                                                                                                                                     transform: 'scale(1)',
                                                                                                                                                                                                                     borderWidth: '1px',
                                                                                                                                                                                                                     paddingTop: '4px',
@@ -1547,6 +1605,7 @@
                                                                                                                                                                                                                 jQuery('#draggable3').css({
                                                                                                                                                                                                                     background: 'transparent',
                                                                                                                                                                                                                     color: 'red',
+                                                                                                                                                                                                                    borderColor: 'red',
                                                                                                                                                                                                                     transform: 'scale(0.5)',
                                                                                                                                                                                                                     borderWidth: '2px',
                                                                                                                                                                                                                     paddingTop: '2px',
@@ -1642,6 +1701,7 @@ v5 = function(){
                 transform: 'scale(1)',
                 borderWidth: '1px',
                 color: 'transparent',
+                borderColor: 'transparent',
                 paddingTop: '4px',
                 zIndex: '1000'
             });
@@ -1657,6 +1717,7 @@ v5 = function(){
                 background: 'transparent',
                 transform: 'scale(0.5)',
                 color: 'red',
+                borderColor: 'red',
                 borderWidth: '2px',
                 paddingTop: '2px',
                 zIndex: '1'
@@ -1681,6 +1742,7 @@ v5 = function(){
                         transform: 'scale(1)',
                         borderWidth: '1px',
                         color: 'transparent',
+                        borderColor: 'transparent',
                         paddingTop: '4px',
                         zIndex: '1000'
                     });
@@ -1709,6 +1771,7 @@ v5 = function(){
                         background: 'transparent',
                         transform: 'scale(0.5)',
                         color: 'red',
+                        borderColor: 'red',
                         borderWidth: '2px',
                         paddingTop: '2px',
                         zIndex: '1'
@@ -1774,6 +1837,7 @@ v5 = function(){
                                                                                         transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
                                                                                         background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_right.png) 0 0/100% no-repeat',
                                                                                         color: 'transparent',
+                                                                                        borderColor: 'transparent',
                                                                                         borderWidth: '1px',
                                                                                         paddingTop: '4px',
                                                                                         zIndex: '1000'
@@ -1791,6 +1855,7 @@ v5 = function(){
                                                                                         transform: 'rotate(-'+0+'deg) scale(0.5)',
                                                                                         background: 'transparent',
                                                                                         color: 'red',
+                                                                                        borderColor: 'red',
                                                                                         borderWidth: '2px',
                                                                                         paddingTop: '2px',
                                                                                         zIndex: '1'
@@ -1805,6 +1870,7 @@ v5 = function(){
                                                                                                 transform: 'rotate('+cur_animation_val+'deg) scale(1)',
                                                                                                 background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_right.png) 0 0/100% no-repeat',
                                                                                                 color: 'transparent',
+                                                                                                borderColor: 'transparent',
                                                                                                 borderWidth: '1px',
                                                                                                 paddingTop: '4px',
                                                                                                 zIndex: '1000'
@@ -1822,6 +1888,7 @@ v5 = function(){
                                                                                                 transform: 'rotate(-'+0+'deg) scale(0.5)',
                                                                                                 background: 'transparent',
                                                                                                 color: 'red',
+                                                                                                borderColor: 'red',
                                                                                                 borderWidth: '2px',
                                                                                                 paddingTop: '2px',
                                                                                                 zIndex: '1'
@@ -1856,6 +1923,7 @@ v5 = function(){
                                                                                                         background: 'transparent',
                                                                                                         transform: 'scale(0.5)',
                                                                                                         color: 'red',
+                                                                                                        borderColor: 'red',
                                                                                                         borderWidth: '2px',
                                                                                                         paddingTop: '2px',
                                                                                                         zIndex: '1'
@@ -1871,6 +1939,7 @@ v5 = function(){
                                                                                                                 transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
                                                                                                                 background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_left.png) 0 0/100% no-repeat',
                                                                                                                 color: 'transparent',
+                                                                                                                borderColor: 'transparent',
                                                                                                                 borderWidth: '1px',
                                                                                                                 paddingTop: '4px',
                                                                                                                 zIndex: '1000'
@@ -1888,6 +1957,7 @@ v5 = function(){
                                                                                                                 transform: 'rotate(-'+0+'deg) scale(0.5)',
                                                                                                                 background: 'transparent',
                                                                                                                 color: 'red',
+                                                                                                                borderColor: 'red',
                                                                                                                 borderWidth: '2px',
                                                                                                                 paddingTop: '2px',
                                                                                                                 zIndex: '1'
@@ -1902,6 +1972,7 @@ v5 = function(){
                                                                                                                         transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
                                                                                                                         background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_right.png) 0 0/100% no-repeat',
                                                                                                                         color: 'transparent',
+                                                                                                                        borderColor: 'transparent',
                                                                                                                         borderWidth: '1px',
                                                                                                                         paddingTop: '4px',
                                                                                                                         zIndex: '1000'
@@ -1919,6 +1990,7 @@ v5 = function(){
                                                                                                                         transform: 'rotate(-'+0+'deg) scale(0.5)',
                                                                                                                         background: 'transparent',
                                                                                                                         color: 'red',
+                                                                                                                        borderColor: 'red',
                                                                                                                         borderWidth: '2px',
                                                                                                                         paddingTop: '2px',
                                                                                                                         zIndex: '1'
@@ -1929,6 +2001,7 @@ v5 = function(){
                                                                                                                         if (count_animation <= 120){                                                                         //120
                                                                                                                             jQuery('#draggable3').css({
                                                                                                                                 color: 'transparent',
+                                                                                                                                borderColor: 'transparent',
                                                                                                                                 transform: 'scale(1)',
                                                                                                                                 borderWidth: '1px',
                                                                                                                                 paddingTop: '4px',
@@ -1943,6 +2016,7 @@ v5 = function(){
                                                                                                                             jQuery('#draggable3').css({
                                                                                                                                 background: 'transparent',
                                                                                                                                 color: 'red',
+                                                                                                                                borderColor: 'red',
                                                                                                                                 transform: 'scale(0.5)',
                                                                                                                                 borderWidth: '2px',
                                                                                                                                 paddingTop: '2px',
