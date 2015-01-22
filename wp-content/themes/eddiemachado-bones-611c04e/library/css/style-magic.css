@@ -295,7 +295,7 @@ input[type=submit]:hover, input[type=submit]:active {
 }
 .itemlist_item__clear.inopaciti
 {
-    opacity: 0;
+    opacity: 0!important;
 }
 path, line, polyline {
   stroke: #F0B615!important;
