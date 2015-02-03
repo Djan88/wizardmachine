@@ -72,7 +72,7 @@
                 clearInterval(phaseOne);
                 count_animation = 1;
                 jQuery('#draggableClean, #draggableClean_2, #draggableClean_3, #draggableClean_4').css({
-                    background: 'transparent',
+                    background: 'rgba(255,255,255, 0.5)',
                     transform: 'scale(0.5)',
                     color: 'red',
                     borderColor: 'red',
@@ -108,7 +108,7 @@
                         clearInterval(phaseTwo);
                         count_animation = 1;
                         jQuery('#draggableD2, #draggable2, #draggableS2, #draggableS2_1').css({
-                            background: 'transparent',
+                            background: 'rgba(255,255,255, 0.5)',
                             transform: 'scale(0.5)',
                             color: 'red',
                             borderColor: 'red',
@@ -155,7 +155,7 @@
                                 count_animation = 1;
                                 jQuery('#draggableClean_2, #draggableClean_3, #draggableClean_4').addClass('inopaciti');
                                 jQuery('#draggable4, #draggable5, #draggableD4, #draggableD5, #draggableClean_2, #draggableClean_3, #draggableClean_4').css({
-                                    background: 'transparent',
+                                    background: 'rgba(255,255,255, 0.5)',
                                     transform: 'rotate(0deg) scale(0.5)',
                                     color: 'red',
                                     borderColor: 'red',
@@ -193,7 +193,7 @@
                                         clearInterval(phaseFour);
                                         count_animation = 1;
                                         jQuery('#draggableS4, #draggableS5, #draggableS6, #draggable0, #draggableVD').css({
-                                            background: 'transparent',
+                                            background: 'rgba(255,255,255, 0.5)',
                                             transform: 'rotate(0deg) scale(0.5)',
                                             borderWidth: '2px',
                                             paddingTop: '2px',
@@ -278,7 +278,7 @@
                                                                                                         count_animation = 1;
                                                                                                         jQuery('#draggable1').css({
                                                                                                             transform: 'rotate(-'+0+'deg) scale(0.5)',
-                                                                                                            background: 'transparent',
+                                                                                                            background: 'rgba(255,255,255, 0.5)',
                                                                                                             color: 'red',
                                                                                                             borderColor: 'red',
                                                                                                             opacity: 1,
@@ -313,7 +313,7 @@
                                                                                                                 count_animation = 1;
                                                                                                                 jQuery('#draggable2').css({
                                                                                                                     transform: 'rotate(-'+0+'deg) scale(0.5)',
-                                                                                                                    background: 'transparent',
+                                                                                                                    background: 'rgba(255,255,255, 0.5)',
                                                                                                                     color: 'red',
                                                                                                                     borderColor: 'red',
                                                                                                                     opacity: 1,
@@ -348,7 +348,7 @@
                                                                                                                         count_animation = 1;
                                                                                                                         jQuery('#draggable2').css({
                                                                                                                             transform: 'rotate(-'+0+'deg) scale(0.5)',
-                                                                                                                            background: 'transparent',
+                                                                                                                            background: 'rgba(255,255,255, 0.5)',
                                                                                                                             color: 'red',
                                                                                                                             borderColor: 'red',
                                                                                                                             opacity: 1,
@@ -383,7 +383,7 @@
                                                                                                                                 count_animation = 1;
                                                                                                                                 jQuery('#draggable5').css({
                                                                                                                                     transform: 'rotate(-'+0+'deg) scale(0.5)',
-                                                                                                                                    background: 'transparent',
+                                                                                                                                    background: 'rgba(255,255,255, 0.5)',
                                                                                                                                     color: 'red',
                                                                                                                                     borderColor: 'red',
                                                                                                                                     opacity: 1,
@@ -418,7 +418,7 @@
                                                                                                                                         count_animation = 1;
                                                                                                                                         jQuery('#draggable5').css({
                                                                                                                                             transform: 'rotate(-'+0+'deg) scale(0.5)',
-                                                                                                                                            background: 'transparent',
+                                                                                                                                            background: 'rgba(255,255,255, 0.5)',
                                                                                                                                             color: 'red',
                                                                                                                                             borderColor: 'red',
                                                                                                                                             opacity: 1,
@@ -495,7 +495,7 @@
                                                                                                                                                                                                         clearInterval(phaseOne);
                                                                                                                                                                                                         count_animation = 1;
                                                                                                                                                                                                         jQuery('#draggable3').css({
-                                                                                                                                                                                                            background: 'transparent',
+                                                                                                                                                                                                            background: 'rgba(255,255,255, 0.5)',
                                                                                                                                                                                                             color: 'red',
                                                                                                                                                                                                             borderColor: 'red',
                                                                                                                                                                                                             opacity: 1,
@@ -647,7 +647,7 @@
                                                                         clearInterval(phaseOne);
                                                                         count_animation = 1;
                                                                         jQuery('#draggable1, #draggable4, #draggable5, #draggableD1, #draggableD2, #draggableD4, #draggableD5').css({
-                                                                            background: 'transparent',
+                                                                            background: 'rgba(255,255,255, 0.5)',
                                                                             color: 'red',
                                                                             borderColor: 'red',
                                                                             opacity: 1,
@@ -695,7 +695,7 @@
                                                                                 clearInterval(phaseOne);
                                                                                 count_animation = 1;
                                                                                 jQuery('#draggable3, #draggableD3, #draggableS3, #draggableS4, #draggableS5, #draggableVD, #draggableD1').css({
-                                                                                    background: 'transparent',
+                                                                                    background: 'rgba(255,255,255, 0.5)',
                                                                                     color: 'red',
                                                                                     borderColor: 'red',
                                                                                     opacity: 1,
@@ -732,7 +732,7 @@
                                                                                         clearInterval(phaseOne);
                                                                                         count_animation = 1;
                                                                                         jQuery('#draggableS3, #draggableS4, #draggableS5, #draggableS6').css({
-                                                                                            background: 'transparent',
+                                                                                            background: 'rgba(255,255,255, 0.5)',
                                                                                             color: 'red',
                                                                                             borderColor: 'red',
                                                                                             opacity: 1,
@@ -743,7 +743,7 @@
                                                                                         });
                                                                                         jQuery('#draggableVD').css({
                                                                                             transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
-                                                                                            background: 'transparent',
+                                                                                            background: 'rgba(255,255,255, 0.5)',
                                                                                             borderWidth: '2px',
                                                                                             paddingTop: '2px',
                                                                                             transform: 'scale(0.5)',
@@ -834,7 +834,7 @@
                                                                                                                                                                 count_animation = 1;
                                                                                                                                                                 jQuery('#draggable5').css({
                                                                                                                                                                     transform: 'rotate(-'+0+'deg) scale(0.5)',
-                                                                                                                                                                    background: 'transparent',
+                                                                                                                                                                    background: 'rgba(255,255,255, 0.5)',
                                                                                                                                                                     color: 'red',
                                                                                                                                                                     borderColor: 'red',
                                                                                                                                                                     opacity: 1,
@@ -869,7 +869,7 @@
                                                                                                                                                                         count_animation = 1;
                                                                                                                                                                         jQuery('#draggable5').css({
                                                                                                                                                                             transform: 'rotate(-'+0+'deg) scale(0.5)',
-                                                                                                                                                                            background: 'transparent',
+                                                                                                                                                                            background: 'rgba(255,255,255, 0.5)',
                                                                                                                                                                             color: 'red',
                                                                                                                                                                             borderColor: 'red',
                                                                                                                                                                             opacity: 1,
@@ -907,7 +907,7 @@
                                                                                                                                                                                 count_animation = 1;
                                                                                                                                                                                 jQuery('#draggable5').css({
                                                                                                                                                                                     transform: 'rotate(-'+0+'deg) scale(0.5)',
-                                                                                                                                                                                    background: 'transparent',
+                                                                                                                                                                                    background: 'rgba(255,255,255, 0.5)',
                                                                                                                                                                                     color: 'red',
                                                                                                                                                                                     borderColor: 'red',
                                                                                                                                                                                     opacity: 1,
@@ -942,7 +942,7 @@
                                                                                                                                                                                         count_animation = 1;
                                                                                                                                                                                         jQuery('#draggable3').css({
                                                                                                                                                                                             transform: 'rotate(-'+0+'deg) scale(0.5)',
-                                                                                                                                                                                            background: 'transparent',
+                                                                                                                                                                                            background: 'rgba(255,255,255, 0.5)',
                                                                                                                                                                                             color: 'red',
                                                                                                                                                                                             borderColor: 'red',
                                                                                                                                                                                             opacity: 1,
@@ -977,7 +977,7 @@
                                                                                                                                                                                                 count_animation = 1;
                                                                                                                                                                                                 jQuery('#draggable1').css({
                                                                                                                                                                                                     transform: 'rotate(-'+0+'deg) scale(0.5)',
-                                                                                                                                                                                                    background: 'transparent',
+                                                                                                                                                                                                    background: 'rgba(255,255,255, 0.5)',
                                                                                                                                                                                                     color: 'red',
                                                                                                                                                                                                     borderColor: 'red',
                                                                                                                                                                                                     opacity: 1,
@@ -1014,7 +1014,7 @@
                                                                                                                                                                                                         count_animation = 1;
                                                                                                                                                                                                         jQuery('#draggable1').css({
                                                                                                                                                                                                             transform: 'rotate(-'+0+'deg) scale(0.5)',
-                                                                                                                                                                                                            background: 'transparent',
+                                                                                                                                                                                                            background: 'rgba(255,255,255, 0.5)',
                                                                                                                                                                                                             color: 'red',
                                                                                                                                                                                                             borderColor: 'red',
                                                                                                                                                                                                             opacity: 1,
@@ -1091,7 +1091,7 @@
                                                                                                                                                                                                                                                                         clearInterval(phaseOne);
                                                                                                                                                                                                                                                                         count_animation = 1;
                                                                                                                                                                                                                                                                         jQuery('#draggable3').css({
-                                                                                                                                                                                                                                                                            background: 'transparent',
+                                                                                                                                                                                                                                                                            background: 'rgba(255,255,255, 0.5)',
                                                                                                                                                                                                                                                                             color: 'red',
                                                                                                                                                                                                                                                                             borderColor: 'red',
                                                                                                                                                                                                                                                                             opacity: 1,
@@ -1217,7 +1217,7 @@
                 clearInterval(phaseOne);
                 count_animation = 1;
                 jQuery('#draggableClean, #draggableS1, #draggableS2_1, #draggableS4, #draggableD1, #draggableS5').css({
-                    background: 'transparent',
+                    background: 'rgba(255,255,255, 0.5)',
                     transform: 'scale(0.5)',
                     color: 'red',
                     borderColor: 'red',
@@ -1287,7 +1287,7 @@
                                 clearInterval(phaseOne);
                                 count_animation = 1;
                                 jQuery('#draggable4, #draggable1').css({
-                                    background: 'transparent',
+                                    background: 'rgba(255,255,255, 0.5)',
                                     transform: 'scale(0.5)',
                                     color: 'red',
                                     borderColor: 'red',
@@ -1372,7 +1372,7 @@
                                                                                                 clearInterval(phaseOne);
                                                                                                 count_animation = 1;
                                                                                                 jQuery('#draggableD5, #draggableD4, #draggable4, #draggableS4, #draggableS5, #draggableS6').css({
-                                                                                                    background: 'transparent',
+                                                                                                    background: 'rgba(255,255,255, 0.5)',
                                                                                                     transform: 'scale(0.5)',
                                                                                                     color: 'red',
                                                                                                     borderColor: 'red',
@@ -1409,7 +1409,7 @@
                                                                                                         count_animation = 1;
                                                                                                         jQuery('#draggable4').css({
                                                                                                             transform: 'rotate(-'+0+'deg) scale(0.5)',
-                                                                                                            background: 'transparent',
+                                                                                                            background: 'rgba(255,255,255, 0.5)',
                                                                                                             color: 'red',
                                                                                                             borderColor: 'red',
                                                                                                             opacity: 1,
@@ -1447,7 +1447,7 @@
                                                                                                                 count_animation = 1;
                                                                                                                 jQuery('#draggable4').css({
                                                                                                                     transform: 'rotate(-'+0+'deg) scale(0.5)',
-                                                                                                                    background: 'transparent',
+                                                                                                                    background: 'rgba(255,255,255, 0.5)',
                                                                                                                     color: 'red',
                                                                                                                     borderColor: 'red',
                                                                                                                     opacity: 1,
@@ -1482,7 +1482,7 @@
                                                                                                                         count_animation = 1;
                                                                                                                         jQuery('#draggable4').css({
                                                                                                                             transform: 'rotate(-'+0+'deg) scale(0.5)',
-                                                                                                                            background: 'transparent',
+                                                                                                                            background: 'rgba(255,255,255, 0.5)',
                                                                                                                             color: 'red',
                                                                                                                             borderColor: 'red',
                                                                                                                             opacity: 1,
@@ -1517,7 +1517,7 @@
                                                                                                                                 count_animation = 1;
                                                                                                                                 jQuery('#draggable4').css({
                                                                                                                                     transform: 'rotate(-'+0+'deg) scale(0.5)',
-                                                                                                                                    background: 'transparent',
+                                                                                                                                    background: 'rgba(255,255,255, 0.5)',
                                                                                                                                     color: 'red',
                                                                                                                                     borderColor: 'red',
                                                                                                                                     opacity: 1,
@@ -1552,7 +1552,7 @@
                                                                                                                                         count_animation = 1;
                                                                                                                                         jQuery('#draggable1').css({
                                                                                                                                             transform: 'rotate(-'+0+'deg) scale(0.5)',
-                                                                                                                                            background: 'transparent',
+                                                                                                                                            background: 'rgba(255,255,255, 0.5)',
                                                                                                                                             color: 'red',
                                                                                                                                             borderColor: 'red',
                                                                                                                                             opacity: 1,
@@ -1587,7 +1587,7 @@
                                                                                                                                                 count_animation = 1;
                                                                                                                                                 jQuery('#draggable4').css({
                                                                                                                                                     transform: 'rotate(-'+0+'deg) scale(0.5)',
-                                                                                                                                                    background: 'transparent',
+                                                                                                                                                    background: 'rgba(255,255,255, 0.5)',
                                                                                                                                                     color: 'red',
                                                                                                                                                     borderColor: 'red',
                                                                                                                                                     opacity: 1,
@@ -1664,7 +1664,7 @@
                                                                                                                                                                                                                 clearInterval(phaseOne);
                                                                                                                                                                                                                 count_animation = 1;
                                                                                                                                                                                                                 jQuery('#draggable3').css({
-                                                                                                                                                                                                                    background: 'transparent',
+                                                                                                                                                                                                                    background: 'rgba(255,255,255, 0.5)',
                                                                                                                                                                                                                     color: 'red',
                                                                                                                                                                                                                     borderColor: 'red',
                                                                                                                                                                                                                     opacity: 1,
@@ -1777,7 +1777,7 @@ v5 = function(){
             clearInterval(phaseOne);
             count_animation = 1;
             jQuery('#draggableClean_2, #draggableClean_3, #draggable0, #draggableD1, #draggableVD').css({
-                background: 'transparent',
+                background: 'rgba(255,255,255, 0.5)',
                 transform: 'scale(0.5)',
                 color: 'red',
                 borderColor: 'red',
@@ -1833,7 +1833,7 @@ v5 = function(){
                     clearInterval(phaseOne);
                     count_animation = 1;
                     jQuery('#draggableClean_2, #draggableClean_3, #draggableS4, #draggableS5, #draggableS6, #draggableD5, #draggable5, #draggableVD').css({
-                        background: 'transparent',
+                        background: 'rgba(255,255,255, 0.5)',
                         transform: 'scale(0.5)',
                         color: 'red',
                         borderColor: 'red',
@@ -1920,7 +1920,7 @@ v5 = function(){
                                                                                     count_animation = 1;
                                                                                     jQuery('#draggable5').css({
                                                                                         transform: 'rotate(-'+0+'deg) scale(0.5)',
-                                                                                        background: 'transparent',
+                                                                                        background: 'rgba(255,255,255, 0.5)',
                                                                                         color: 'red',
                                                                                         borderColor: 'red',
                                                                                         opacity: 1,
@@ -1955,7 +1955,7 @@ v5 = function(){
                                                                                             count_animation = 1;
                                                                                             jQuery('#draggable4').css({
                                                                                                 transform: 'rotate(-'+0+'deg) scale(0.5)',
-                                                                                                background: 'transparent',
+                                                                                                background: 'rgba(255,255,255, 0.5)',
                                                                                                 color: 'red',
                                                                                                 borderColor: 'red',
                                                                                                 opacity: 1,
@@ -1990,7 +1990,7 @@ v5 = function(){
                                                                                                     clearInterval(phaseTwo);
                                                                                                     count_animation = 1;
                                                                                                     jQuery('#draggableD2, #draggable2, #draggableS1, #draggableS2, #draggableS2_1, #draggableClean').css({
-                                                                                                        background: 'transparent',
+                                                                                                        background: 'rgba(255,255,255, 0.5)',
                                                                                                         transform: 'scale(0.5)',
                                                                                                         color: 'red',
                                                                                                         borderColor: 'red',
@@ -2027,7 +2027,7 @@ v5 = function(){
                                                                                                             count_animation = 1;
                                                                                                             jQuery('#draggable2').css({
                                                                                                                 transform: 'rotate(-'+0+'deg) scale(0.5)',
-                                                                                                                background: 'transparent',
+                                                                                                                background: 'rgba(255,255,255, 0.5)',
                                                                                                                 color: 'red',
                                                                                                                 borderColor: 'red',
                                                                                                                 opacity: 1,
@@ -2062,7 +2062,7 @@ v5 = function(){
                                                                                                                     count_animation = 1;
                                                                                                                     jQuery('#draggable1').css({
                                                                                                                         transform: 'rotate(-'+0+'deg) scale(0.5)',
-                                                                                                                        background: 'transparent',
+                                                                                                                        background: 'rgba(255,255,255, 0.5)',
                                                                                                                         color: 'red',
                                                                                                                         borderColor: 'red',
                                                                                                                         opacity: 1,
@@ -2090,7 +2090,7 @@ v5 = function(){
                                                                                                                             clearInterval(phaseOne);
                                                                                                                             count_animation = 1;
                                                                                                                             jQuery('#draggable3').css({
-                                                                                                                                background: 'transparent',
+                                                                                                                                background: 'rgba(255,255,255, 0.5)',
                                                                                                                                 color: 'red',
                                                                                                                                 borderColor: 'red',
                                                                                                                                 opacity: 1,
