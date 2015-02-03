@@ -32,7 +32,7 @@ li
     cursor: pointer;
     background: rgba(255,255,255, 0.5);
     z-index: 999;
-    border: 2px solid crimson;
+    border: 2px solid transparent;
     transform: scale(0.5);
     -webkit-transform: scale(0.5);
     width: 56px;
@@ -52,7 +52,7 @@ li
 .item_list__mid
 {
   border-radius: 50%;
-  padding-top: 2px;
+  padding-top: 4px;
   padding-left: 3px;
 }
 .itemlist-one
