@@ -30,7 +30,7 @@
                             <?php the_content(); ?>
                         </div>
                         <a href="/wizard" class="button button-primary button-large">Начать</a>
-                        <a href="/wizard" target="_blank" class="button button-primary button-large">Руководство</a> 
+                        <a href="/wp-content/uploads/2015/02/Manual_dlya_Wizardmachine.pdf" target="_blank" class="button button-primary button-large">Руководство</a> 
                         <?php if(is_user_logged_in()){ ?>
                             <a class="button button-primary button-large" href="<?php echo home_url(); ?>/wp-login.php?action=logout&amp;_wpnonce=a6cad512ba">Выйти</a>
                         <?php }?>
