@@ -713,6 +713,7 @@
                                                                                         jQuery('#draggableS3, #draggableS4, #draggableS5, #draggableS6').css({
                                                                                             transform: 'scale(1)',
                                                                                             borderWidth: '1px',
+                                                                                            borderColor: 'transparent',
                                                                                             paddingTop: '4px',
                                                                                             zIndex: '1000',
                                                                                             color: 'transparent'
