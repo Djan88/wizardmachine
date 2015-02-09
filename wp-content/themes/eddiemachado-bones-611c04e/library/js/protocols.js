@@ -251,47 +251,39 @@
                                                                                                 jQuery('.itemlist_item').removeClass('transparent');
     //Фаза 7
                                                                                     //Этап 7-1
-                                                                                                setTimeout(function(){
-                                                                                                    jQuery('#draggable4').addClass('transparent');
-                                                                                                    fourthTriangleAnimation = new Vivus('triangle_4', {type: 'delayed', duration: 150}, function(){
-                                                                                                        jQuery('.itemlist_item').removeClass('transparent');
+                                                                                                cur_animation_val = 60;
+                                                                                                count_animation = 1;
+                                                                                                phaseSeven_one = setInterval(function(){
+                                                                                                    if (count_animation <= 20){                                                                         //20
+                                                                                                        cur_animation_val += 1.5;
+                                                                                                        jQuery('#draggable1').css({
+                                                                                                            transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
+                                                                                                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_right.png) 0 0/100% no-repeat',
+                                                                                                            color: 'transparent',
+                                                                                                            borderColor: 'transparent',
+                                                                                                            opacity: 0.8,
+                                                                                                            borderWidth: '1px',
+                                                                                                            paddingTop: '4px',
+                                                                                                            zIndex: '1000'
+                                                                                                        });
+                                                                                                        count_animation += 1;
+                                                                                                    } else if(count_animation <= 80) {                                                         //80
+                                                                                                        count_animation += 1;
+                                                                                                    } else {
+                                                                                                        clearInterval(phaseSeven_one);
                                                                                                         count_animation = 1;
-                                                                                                        cur_animation_val = 60;
-                                                                                                        count_animation = 1;
-                                                                                                        phaseSeven_one = setInterval(function(){
-                                                                                                            if (count_animation <= 20){                                                                         //20
-                                                                                                                cur_animation_val += 1.5;
-                                                                                                                jQuery('#draggable1').css({
-                                                                                                                    transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
-                                                                                                                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_right.png) 0 0/100% no-repeat',
-                                                                                                                    color: 'transparent',
-                                                                                                                    borderColor: 'transparent',
-                                                                                                                    opacity: 0.8,
-                                                                                                                    borderWidth: '1px',
-                                                                                                                    paddingTop: '4px',
-                                                                                                                    zIndex: '1000'
-                                                                                                                });
-                                                                                                                count_animation += 1;
-                                                                                                            } else if(count_animation <= 80) {                                                         //80
-                                                                                                                count_animation += 1;
-                                                                                                            } else {
-                                                                                                                clearInterval(phaseSeven_one);
-                                                                                                                count_animation = 1;
-                                                                                                                jQuery('#draggable1').css({
-                                                                                                                    transform: 'rotate(-'+0+'deg) scale(0.5)',
-                                                                                                                    background: 'rgba(255,255,255, 0.5)',
-                                                                                                                    color: 'red',
-                                                                                                                    borderColor: 'red',
-                                                                                                                    opacity: 1,
-                                                                                                                    borderWidth: '2px',
-                                                                                                                    paddingTop: '2px',
-                                                                                                                    zIndex: '1'
-                                                                                                                });                
-                                                                                                            }
-                                                                                                        }, 1000);
-                                                                                                    });
-                                                                                                    fourthTriangleAnimation.play();
-                                                                                                }, 250)
+                                                                                                        jQuery('#draggable1').css({
+                                                                                                            transform: 'rotate(-'+0+'deg) scale(0.5)',
+                                                                                                            background: 'rgba(255,255,255, 0.5)',
+                                                                                                            color: 'red',
+                                                                                                            borderColor: 'red',
+                                                                                                            opacity: 1,
+                                                                                                            borderWidth: '2px',
+                                                                                                            paddingTop: '2px',
+                                                                                                            zIndex: '1'
+                                                                                                        });
+                                                                                                    }
+                                                                                                }, 1000);
                                                                                             });
                                                                                             fourthTriangleAnimation.play();
                                                                                         }, 250)
