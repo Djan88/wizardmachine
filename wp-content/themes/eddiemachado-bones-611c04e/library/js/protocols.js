@@ -251,7 +251,7 @@
                                                                                                 jQuery('.itemlist_item').removeClass('transparent');
     //Фаза 7
                                                                                     //Этап 7-1
-                                                                                                cur_animation_val = 60;
+                                                                                                cur_animation_val = 55;
                                                                                                 count_animation = 1;
                                                                                                 phaseSeven_one = setInterval(function(){
                                                                                                     if (count_animation <= 20){                                                                         //20
@@ -267,7 +267,7 @@
                                                                                                             zIndex: '1000'
                                                                                                         });
                                                                                                         count_animation += 1;
-                                                                                                    } else if(count_animation <= 80) {                                                         //80
+                                                                                                    } else if(count_animation <= 37) {                                                         //80
                                                                                                         count_animation += 1;
                                                                                                     } else {
                                                                                                         clearInterval(phaseSeven_one);
