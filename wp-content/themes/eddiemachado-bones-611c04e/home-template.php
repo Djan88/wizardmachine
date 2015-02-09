@@ -45,7 +45,10 @@
                 <?php } else { ?>
                     <div class="home-content" style="text-align: center;">
                         <?php the_content(); ?>
-                        <div class="btn btn_lg btn_trans show_form">Вход для сертифицированных пользователей</div>
+                        <div class="btn btn_lg btn_trans show_form">Вход для сертифицированных пользователей</div><br>
+                        <a href="/" target="_blank" class="button button-primary button-large">Видео"</a>
+                        <a href="/" target="_blank" class="button button-primary button-large">Книга "Визард терапия"</a>
+                        <a href="/" target="_blank" class="button button-primary button-large">Книга "Биологическое центрирование"</a>
                     </div>
                     <div class="login__form hidden">
                         <form name="loginform" id="loginform" action="<?php echo esc_url( site_url( 'wp-login.php', 'login_post' ) ); ?>" method="post">
