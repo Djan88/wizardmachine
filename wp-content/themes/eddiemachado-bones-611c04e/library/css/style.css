@@ -2416,7 +2416,7 @@ be set to display none.
     border-color: #fff;
     color: #fff;
 }
-.btn_trans
+.btn_trans, .btn__main
 {
   background: transparent;
   text-transform: uppercase;
@@ -2424,7 +2424,7 @@ be set to display none.
   -moz-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
-.btn_trans:hover
+.btn_trans:hover, .btn__main:hover
 {
   background: rgba(255,255,255, 0.2);
 }

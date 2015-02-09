@@ -446,5 +446,6 @@ path {
 }
 .btn__main 
 {
-    font-size: 14px;
+    font-size: 13px!important;
+    margin: 0 5px!important;
 }
