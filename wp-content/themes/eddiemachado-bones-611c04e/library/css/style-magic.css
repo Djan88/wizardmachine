@@ -468,3 +468,11 @@ path {
   color: #fff!important;
   border-color: #fff!important;
 }
+span.supportlink 
+{
+    float: right;
+    color: #fff!important;
+}
+span.supportlink a {
+color: #fff;
+}

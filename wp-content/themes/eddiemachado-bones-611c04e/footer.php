@@ -19,7 +19,7 @@
                             )); ?>
                         </nav>
 
-                        <p class="source-org copyright">&copy; <?php echo date('Y'); ?> <a href="/" class="homelink"><?php bloginfo( 'name' ); ?></a>. <span class="supportlink"><a href="mailto:wizardmachine@yandex.ru">wizardmachine@yandex.ru</a></span></p>
+                        <p class="source-org copyright">&copy; <?php echo date('Y'); ?> <a href="/" class="homelink"><?php bloginfo( 'name' ); ?></a>. <span class="supportlink">Написать в техподдержку: <a href="mailto:wizardmachine@yandex.ru">wizardmachine@yandex.ru</a></span></p>
 
                     </div>
 
