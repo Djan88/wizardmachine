@@ -2416,18 +2416,6 @@ be set to display none.
     border-color: #fff;
     color: #fff;
 }
-.btn_trans, .btn__main
-{
-  background: transparent;
-  text-transform: uppercase;
-  -webkit-transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
-  transition: all 0.2s linear;
-}
-.btn_trans:hover, .btn__main:hover
-{
-  background: rgba(255,255,255, 0.2);
-}
 .btn_warning:hover, .btn_neitral:hover
 {
     background-color: #204371;

@@ -449,3 +449,15 @@ path {
     font-size: 13px!important;
     margin: 0 5px!important;
 }
+.btn_trans, .btn__main
+{
+  background: transparent;
+  text-transform: uppercase;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.btn_trans:hover, .btn__main:hover
+{
+  background: rgba(255,255,255, 0.2);
+}
