@@ -47,8 +47,8 @@
                         <?php the_content(); ?>
                         <div class="btn btn_lg btn_trans show_form">Вход для сертифицированных пользователей</div><br>
                         <a href="/" target="_blank" class="button button-primary button-large btn__main">Видео"</a>
-                        <a href="/" target="_blank" class="button button-primary button-large btn__main">Книга "Визард терапия"</a>
-                        <a href="/" target="_blank" class="button button-primary button-large btn__main">Книга "Биологическое центрирование"</a>
+                        <a href="/" target="_blank" class="button button-primary button-large btn__main">"Визард терапия"</a>
+                        <a href="/" target="_blank" class="button button-primary button-large btn__main">"Биологическое центрирование"</a>
                     </div>
                     <div class="login__form hidden">
                         <form name="loginform" id="loginform" action="<?php echo esc_url( site_url( 'wp-login.php', 'login_post' ) ); ?>" method="post">
