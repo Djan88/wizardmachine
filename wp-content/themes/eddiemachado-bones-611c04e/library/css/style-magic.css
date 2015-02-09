@@ -449,7 +449,7 @@ path {
     font-size: 13px!important;
     margin: 0 5px!important;
 }
-.btn_trans, .btn__main
+.btn_trans, .button__main
 {
   background: transparent;
   text-transform: uppercase;
@@ -457,7 +457,9 @@ path {
   -moz-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
-.btn_trans:hover, .btn__main:hover
+.btn_trans:hover, .button__main:hover
 {
-  background: rgba(255,255,255, 0.2);
+  background: rgba(255,255,255, 0.2)!important;
+  color: #fff!important;
+  border-color: #fff!important;
 }
