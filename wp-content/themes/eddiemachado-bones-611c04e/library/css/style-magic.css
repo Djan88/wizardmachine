@@ -463,3 +463,8 @@ path {
   color: #fff!important;
   border-color: #fff!important;
 }
+.btn_trans:hover, .button__main:visited , .home .button:visited
+{
+  color: #fff!important;
+  border-color: #fff!important;
+}
