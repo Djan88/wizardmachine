@@ -457,7 +457,7 @@ path {
   -moz-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
-.btn_trans:hover, .button__main:hover
+.btn_trans:hover, .button__main:hover , .home .button:hover
 {
   background: rgba(255,255,255, 0.2)!important;
   color: #fff!important;
