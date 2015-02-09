@@ -46,7 +46,7 @@
                     <div class="home-content" style="text-align: center;">
                         <?php the_content(); ?>
                         <div class="btn btn_lg btn_trans show_form">Вход для сертифицированных пользователей</div><br>
-                        <a href="/" target="_blank" class="button button-primary button-large button__main">Видео"</a>
+                        <a href="/" target="_blank" class="button button-primary button-large button__main">Видео</a>
                         <a href="/" target="_blank" class="button button-primary button-large button__main">"Визард терапия"</a>
                         <a href="/" target="_blank" class="button button-primary button-large button__main">"Биологическое центрирование"</a>
                     </div>
