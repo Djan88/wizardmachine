@@ -2300,7 +2300,8 @@ be set to display none.
 }
 .home .login__form
 {
-  border-color: #fff
+  border-color: #fff;
+  margin-top: 20px;
 }
 .login__form p 
 {
