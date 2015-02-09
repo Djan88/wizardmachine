@@ -1264,6 +1264,7 @@ body
 body.home
 {
   background: url(../images/bg_wizard.jpg) 80% 50%/110%;
+  background-position: cover;
 }
 body.home #main
 {
