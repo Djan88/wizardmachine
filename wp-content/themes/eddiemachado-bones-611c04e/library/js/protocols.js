@@ -283,11 +283,11 @@
                                                                                                             zIndex: '1'
                                                                                                         });
                                                                                     //Этап 7-2
-                                                                                                        cur_animation_val = 30;
+                                                                                                        cur_animation_val = 0;
                                                                                                         count_animation = 1;
                                                                                                         phaseSeven_one = setInterval(function(){
-                                                                                                            if (count_animation <= 20){                                                                         //30
-                                                                                                                cur_animation_val -= 3;
+                                                                                                            if (count_animation <= 40){                                                                         //30
+                                                                                                                cur_animation_val -= 1.5;
                                                                                                                 jQuery('#draggable2').css({
                                                                                                                     transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
                                                                                                                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_left.png) 0 0/100% no-repeat',
@@ -299,9 +299,8 @@
                                                                                                                     zIndex: '1000'
                                                                                                                 });
                                                                                                                 count_animation += 1;
-                                                                                                            } else if(count_animation <= 90) {                                                         //90
+                                                                                                            } else if(count_animation <= 57) {                                                         //90
                                                                                                                 count_animation += 1;
-                                                                                                                console.log('7-2'+ count_animation+ '/135');
                                                                                                             } else {    
                                                                                                                 clearInterval(phaseSeven_one);
                                                                                                                 count_animation = 1;
