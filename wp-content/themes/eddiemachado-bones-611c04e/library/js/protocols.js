@@ -315,10 +315,10 @@
                                                                                                                     zIndex: '1'
                                                                                                                 });
                                                                                     //Этап 7-1-3
-                                                                                                                cur_animation_val = 180;
+                                                                                                                cur_animation_val = 270;
                                                                                                                 count_animation = 1;
                                                                                                                 phaseSeven_one = setInterval(function(){
-                                                                                                                    if (count_animation <= 210){                                                                         //20
+                                                                                                                    if (count_animation <= 300){                                                                         //20
                                                                                                                         cur_animation_val += 1.5;
                                                                                                                         jQuery('#draggable1').css({
                                                                                                                             transform: 'rotate('+cur_animation_val+'deg) scale(1)',
@@ -331,7 +331,7 @@
                                                                                                                             zIndex: '1000'
                                                                                                                         });
                                                                                                                         count_animation += 1;
-                                                                                                                    } else if(count_animation <= 227) {                                                         //80
+                                                                                                                    } else if(count_animation <= 317) {                                                         //80
                                                                                                                         count_animation += 1;
                                                                                                                     } else {
                                                                                                                         clearInterval(phaseSeven_one);
