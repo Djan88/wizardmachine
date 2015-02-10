@@ -283,7 +283,7 @@
                                                                                                             zIndex: '1'
                                                                                                         });
                                                                                     //Этап 7-2
-                                                                                                        cur_animation_val = -10;
+                                                                                                        cur_animation_val = 10;
                                                                                                         count_animation = 1;
                                                                                                         phaseSeven_one = setInterval(function(){
                                                                                                             if (count_animation <= 50){                                                                         //20
