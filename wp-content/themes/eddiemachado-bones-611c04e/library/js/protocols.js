@@ -286,10 +286,10 @@
                                                                                                         cur_animation_val = 0;
                                                                                                         count_animation = 1;
                                                                                                         phaseSeven_one = setInterval(function(){
-                                                                                                            if (count_animation <= 40){                                                                         //30
+                                                                                                            if (count_animation <= 40){                                                                         //20
                                                                                                                 cur_animation_val -= 1.5;
                                                                                                                 jQuery('#draggable2').css({
-                                                                                                                    transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
+                                                                                                                    transform: 'rotate('+cur_animation_val+'deg) scale(1)',
                                                                                                                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_left.png) 0 0/100% no-repeat',
                                                                                                                     color: 'transparent',
                                                                                                                     borderColor: 'transparent',
@@ -299,9 +299,9 @@
                                                                                                                     zIndex: '1000'
                                                                                                                 });
                                                                                                                 count_animation += 1;
-                                                                                                            } else if(count_animation <= 57) {                                                         //90
+                                                                                                            } else if(count_animation <= 57) {                                                         //80
                                                                                                                 count_animation += 1;
-                                                                                                            } else {    
+                                                                                                            } else {
                                                                                                                 clearInterval(phaseSeven_one);
                                                                                                                 count_animation = 1;
                                                                                                                 jQuery('#draggable2').css({
