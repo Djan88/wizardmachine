@@ -287,7 +287,7 @@
                                                                                                         count_animation = 1;
                                                                                                         phaseSeven_one = setInterval(function(){
                                                                                                             if (count_animation <= 40){                                                                         //20
-                                                                                                                cur_animation_val -= 1.5;
+                                                                                                                cur_animation_val += 1.5;
                                                                                                                 jQuery('#draggable2').css({
                                                                                                                     transform: 'rotate('+cur_animation_val+'deg) scale(1)',
                                                                                                                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_left.png) 0 0/100% no-repeat',
