@@ -1778,12 +1778,12 @@
                                                                                                     paddingTop: '2px',
                                                                                                     zIndex: '1'
                                                                                                 });
-    //Фаза 7
-                                                                        //7-1
-                                                                                                cur_animation_val = 30;
+     //Фаза 7
+                                                                                    //Этап 7-1-1
+                                                                                                cur_animation_val = 55;
                                                                                                 count_animation = 1;
                                                                                                 phaseSeven_one = setInterval(function(){
-                                                                                                    if (count_animation <= 36){                                                                         //18
+                                                                                                    if (count_animation <= 22){                                                                         //22
                                                                                                         cur_animation_val += 1.5;
                                                                                                         jQuery('#draggable4').css({
                                                                                                             transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
@@ -1796,12 +1796,9 @@
                                                                                                             zIndex: '1000'
                                                                                                         });
                                                                                                         count_animation += 1;
-
-                                                                                                    } else if(count_animation <= 96) {                                                         //156
+                                                                                                    } else if(count_animation <= 39) {                                                         //39
                                                                                                         count_animation += 1;
-
-                                                                                                        console.log('7-1'+ count_animation+ '/138');
-                                                                                                    } else {    
+                                                                                                    } else {
                                                                                                         clearInterval(phaseSeven_one);
                                                                                                         count_animation = 1;
                                                                                                         jQuery('#draggable4').css({
@@ -1814,12 +1811,12 @@
                                                                                                             paddingTop: '2px',
                                                                                                             zIndex: '1'
                                                                                                         });
-                                                                        //7-2
+                                                                                    //Этап 7-1-2
                                                                                                         cur_animation_val = 10;
                                                                                                         count_animation = 1;
                                                                                                         phaseSeven_one = setInterval(function(){
-                                                                                                            if (count_animation <= 26){                                                                         //13
-                                                                                                                cur_animation_val += 3;
+                                                                                                            if (count_animation <= 53){                                                                         //53
+                                                                                                                cur_animation_val += 1.5;
                                                                                                                 jQuery('#draggable4').css({
                                                                                                                     transform: 'rotate('+cur_animation_val+'deg) scale(1)',
                                                                                                                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_left.png) 0 0/100% no-repeat',
@@ -1831,15 +1828,9 @@
                                                                                                                     zIndex: '1000'
                                                                                                                 });
                                                                                                                 count_animation += 1;
-
-                                                                                                            } else if(count_animation <= 86) {                                                         //146
+                                                                                                            } else if(count_animation <= 70) {                                                         //70
                                                                                                                 count_animation += 1;
-
-                                                                                                                jQuery('#draggable4').css({
-                                                                                                                    transform: 'rotate('+90+'deg) scale(1)',
-                                                                                                                });
-                                                                                                                console.log('7-3'+ count_animation+ '/133');
-                                                                                                            } else {    
+                                                                                                            } else {
                                                                                                                 clearInterval(phaseSeven_one);
                                                                                                                 count_animation = 1;
                                                                                                                 jQuery('#draggable4').css({
@@ -1852,14 +1843,14 @@
                                                                                                                     paddingTop: '2px',
                                                                                                                     zIndex: '1'
                                                                                                                 });
-                                                                        //7-3
-                                                                                                                cur_animation_val = 90;
+                                                                                    //Этап 7-1-3
+                                                                                                                cur_animation_val = 270;
                                                                                                                 count_animation = 1;
                                                                                                                 phaseSeven_one = setInterval(function(){
-                                                                                                                    if (count_animation <= 30){                                                                         //15
-                                                                                                                        cur_animation_val -= 3;
+                                                                                                                    if (count_animation <= 60){                                                                         //60
+                                                                                                                        cur_animation_val += 1.5;
                                                                                                                         jQuery('#draggable4').css({
-                                                                                                                            transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
+                                                                                                                            transform: 'rotate('+cur_animation_val+'deg) scale(1)',
                                                                                                                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_left.png) 0 0/100% no-repeat',
                                                                                                                             color: 'transparent',
                                                                                                                             borderColor: 'transparent',
@@ -1869,12 +1860,9 @@
                                                                                                                             zIndex: '1000'
                                                                                                                         });
                                                                                                                         count_animation += 1;
-
-                                                                                                                    } else if(count_animation <= 90) {                                                         //150
+                                                                                                                    } else if(count_animation <= 77) {                                                         //77
                                                                                                                         count_animation += 1;
-
-                                                                                                                        console.log('7-4'+ count_animation+ '/135');
-                                                                                                                    } else {    
+                                                                                                                    } else {
                                                                                                                         clearInterval(phaseSeven_one);
                                                                                                                         count_animation = 1;
                                                                                                                         jQuery('#draggable4').css({
@@ -1887,14 +1875,14 @@
                                                                                                                             paddingTop: '2px',
                                                                                                                             zIndex: '1'
                                                                                                                         });
-                                                                        //7-4
-                                                                                                                        cur_animation_val = 90;
+                                                                                    //Этап 7-1-4
+                                                                                                                        cur_animation_val = 300;
                                                                                                                         count_animation = 1;
                                                                                                                         phaseSeven_one = setInterval(function(){
-                                                                                                                            if (count_animation <= 28){                                                                         //14
-                                                                                                                                cur_animation_val -= 3;
+                                                                                                                            if (count_animation <= 40){                                                                         //40
+                                                                                                                                cur_animation_val += 1.5;
                                                                                                                                 jQuery('#draggable4').css({
-                                                                                                                                    transform: 'rotate('+cur_animation_val+'deg) scale(1)',
+                                                                                                                                    transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
                                                                                                                                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_right.png) 0 0/100% no-repeat',
                                                                                                                                     color: 'transparent',
                                                                                                                                     borderColor: 'transparent',
@@ -1904,12 +1892,9 @@
                                                                                                                                     zIndex: '1000'
                                                                                                                                 });
                                                                                                                                 count_animation += 1;
-
-                                                                                                                            } else if(count_animation <= 80) {                                                         //140
+                                                                                                                            } else if(count_animation <= 57) {                                                         //57
                                                                                                                                 count_animation += 1;
-
-                                                                                                                                console.log('7-2'+ count_animation+ '/134');
-                                                                                                                            } else {    
+                                                                                                                            } else {
                                                                                                                                 clearInterval(phaseSeven_one);
                                                                                                                                 count_animation = 1;
                                                                                                                                 jQuery('#draggable4').css({
@@ -1922,11 +1907,11 @@
                                                                                                                                     paddingTop: '2px',
                                                                                                                                     zIndex: '1'
                                                                                                                                 });
-                                                                        //7-5
-                                                                                                                                cur_animation_val = 30;
+                                                                                                                    //Этап 7-2-1
+                                                                                                                                cur_animation_val = 55;
                                                                                                                                 count_animation = 1;
                                                                                                                                 phaseSeven_one = setInterval(function(){
-                                                                                                                                    if (count_animation <= 36){                                                                         //18
+                                                                                                                                    if (count_animation <= 22){                                                                         //22
                                                                                                                                         cur_animation_val += 1.5;
                                                                                                                                         jQuery('#draggable1').css({
                                                                                                                                             transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
@@ -1939,12 +1924,9 @@
                                                                                                                                             zIndex: '1000'
                                                                                                                                         });
                                                                                                                                         count_animation += 1;
-
-                                                                                                                                    } else if(count_animation <= 96) {                                                         //156
+                                                                                                                                    } else if(count_animation <= 39) {                                                         //39
                                                                                                                                         count_animation += 1;
-
-                                                                                                                                        console.log('7-1'+ count_animation+ '/138');
-                                                                                                                                    } else {    
+                                                                                                                                    } else {
                                                                                                                                         clearInterval(phaseSeven_one);
                                                                                                                                         count_animation = 1;
                                                                                                                                         jQuery('#draggable1').css({
@@ -1957,15 +1939,15 @@
                                                                                                                                             paddingTop: '2px',
                                                                                                                                             zIndex: '1'
                                                                                                                                         });
-                                                                        //7-6
-                                                                                                                                        cur_animation_val = 90;
+                                                                                                                    //Этап 7-2-2
+                                                                                                                                        cur_animation_val = 10;
                                                                                                                                         count_animation = 1;
                                                                                                                                         phaseSeven_one = setInterval(function(){
-                                                                                                                                            if (count_animation <= 28){                                                                         //14
-                                                                                                                                                cur_animation_val -= 3;
-                                                                                                                                                jQuery('#draggable4').css({
+                                                                                                                                            if (count_animation <= 53){                                                                         //53
+                                                                                                                                                cur_animation_val += 1.5;
+                                                                                                                                                jQuery('#draggable1').css({
                                                                                                                                                     transform: 'rotate('+cur_animation_val+'deg) scale(1)',
-                                                                                                                                                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_right.png) 0 0/100% no-repeat',
+                                                                                                                                                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_left.png) 0 0/100% no-repeat',
                                                                                                                                                     color: 'transparent',
                                                                                                                                                     borderColor: 'transparent',
                                                                                                                                                     opacity: 0.8,
@@ -1974,15 +1956,12 @@
                                                                                                                                                     zIndex: '1000'
                                                                                                                                                 });
                                                                                                                                                 count_animation += 1;
-
-                                                                                                                                            } else if(count_animation <= 88) {                                                         //148
+                                                                                                                                            } else if(count_animation <= 70) {                                                         //70
                                                                                                                                                 count_animation += 1;
-
-                                                                                                                                                console.log('7-2'+ count_animation+ '/134');
-                                                                                                                                            } else {    
+                                                                                                                                            } else {
                                                                                                                                                 clearInterval(phaseSeven_one);
                                                                                                                                                 count_animation = 1;
-                                                                                                                                                jQuery('#draggable4').css({
+                                                                                                                                                jQuery('#draggable1').css({
                                                                                                                                                     transform: 'rotate(-'+0+'deg) scale(0.5)',
                                                                                                                                                     background: 'rgba(255,255,255, 0.5)',
                                                                                                                                                     color: 'red',
@@ -1992,112 +1971,180 @@
                                                                                                                                                     paddingTop: '2px',
                                                                                                                                                     zIndex: '1'
                                                                                                                                                 });
-            //Фаза 6
-                                                                                                                                                cur_animation_val = 0;
+                                                                                                                    //Этап 7-2-3
+                                                                                                                                                cur_animation_val = 270;
                                                                                                                                                 count_animation = 1;
-                                                                                                                                            //анимация против часовой стрелки
-                                                                                                                                                jQuery('.triangle').css({
-                                                                                                                                                    transform: 'scale(0.2) rotateY(180deg)rotateZ(120deg)',
-                                                                                                                                                    left: '-180px',
-                                                                                                                                                    top: '-120px'
-                                                                                                                                                });
-                                                                                                                                                //анимация первого треугольника
-                                                                                                                                                jQuery('#draggable1').addClass('transparent');
-                                                                                                                                                firstTriangleAnimation = new Vivus('triangle_1', {type: 'delayed', duration: 150}, function(){
-                                                                                                                                                //анимация второго треугольника
-                                                                                                                                                    setTimeout(function(){
-                                                                                                                                                        jQuery('#draggable2').addClass('transparent');
-                                                                                                                                                        secondTriangleAnimation = new Vivus('triangle_2', {type: 'delayed', duration: 150}, function(){
-                                                                                                                                                //анимация третьего треугольника
-                                                                                                                                                            setTimeout(function(){
-                                                                                                                                                                jQuery('#draggable3').addClass('transparent');
-                                                                                                                                                                thirdTriangleAnimation = new Vivus('triangle_3', {type: 'delayed', duration: 150}, function(){
-                                                                                                                                                //анимация четвертого треугольника
+                                                                                                                                                phaseSeven_one = setInterval(function(){
+                                                                                                                                                    if (count_animation <= 60){                                                                         //60
+                                                                                                                                                        cur_animation_val += 1.5;
+                                                                                                                                                        jQuery('#draggable1').css({
+                                                                                                                                                            transform: 'rotate('+cur_animation_val+'deg) scale(1)',
+                                                                                                                                                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_left.png) 0 0/100% no-repeat',
+                                                                                                                                                            color: 'transparent',
+                                                                                                                                                            borderColor: 'transparent',
+                                                                                                                                                            opacity: 0.8,
+                                                                                                                                                            borderWidth: '1px',
+                                                                                                                                                            paddingTop: '4px',
+                                                                                                                                                            zIndex: '1000'
+                                                                                                                                                        });
+                                                                                                                                                        count_animation += 1;
+                                                                                                                                                    } else if(count_animation <= 77) {                                                         //77
+                                                                                                                                                        count_animation += 1;
+                                                                                                                                                    } else {
+                                                                                                                                                        clearInterval(phaseSeven_one);
+                                                                                                                                                        count_animation = 1;
+                                                                                                                                                        jQuery('#draggable1').css({
+                                                                                                                                                            transform: 'rotate(-'+0+'deg) scale(0.5)',
+                                                                                                                                                            background: 'rgba(255,255,255, 0.5)',
+                                                                                                                                                            color: 'red',
+                                                                                                                                                            borderColor: 'red',
+                                                                                                                                                            opacity: 1,
+                                                                                                                                                            borderWidth: '2px',
+                                                                                                                                                            paddingTop: '2px',
+                                                                                                                                                            zIndex: '1'
+                                                                                                                                                        });
+                                                                                                                    //Этап 7-2-4
+                                                                                                                                                        cur_animation_val = 300;
+                                                                                                                                                        count_animation = 1;
+                                                                                                                                                        phaseSeven_one = setInterval(function(){
+                                                                                                                                                            if (count_animation <= 40){                                                                         //40
+                                                                                                                                                                cur_animation_val += 1.5;
+                                                                                                                                                                jQuery('#draggable1').css({
+                                                                                                                                                                    transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
+                                                                                                                                                                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_right.png) 0 0/100% no-repeat',
+                                                                                                                                                                    color: 'transparent',
+                                                                                                                                                                    borderColor: 'transparent',
+                                                                                                                                                                    opacity: 0.8,
+                                                                                                                                                                    borderWidth: '1px',
+                                                                                                                                                                    paddingTop: '4px',
+                                                                                                                                                                    zIndex: '1000'
+                                                                                                                                                                });
+                                                                                                                                                                count_animation += 1;
+                                                                                                                                                            } else if(count_animation <= 57) {                                                         //57
+                                                                                                                                                                count_animation += 1;
+                                                                                                                                                            } else {
+                                                                                                                                                                clearInterval(phaseSeven_one);
+                                                                                                                                                                count_animation = 1;
+                                                                                                                                                                jQuery('#draggable1').css({
+                                                                                                                                                                    transform: 'rotate(-'+0+'deg) scale(0.5)',
+                                                                                                                                                                    background: 'rgba(255,255,255, 0.5)',
+                                                                                                                                                                    color: 'red',
+                                                                                                                                                                    borderColor: 'red',
+                                                                                                                                                                    opacity: 1,
+                                                                                                                                                                    borderWidth: '2px',
+                                                                                                                                                                    paddingTop: '2px',
+                                                                                                                                                                    zIndex: '1'
+                                                                                                                                                                });
+                            //Фаза 6
+                                                                                                                                                                cur_animation_val = 0;
+                                                                                                                                                                count_animation = 1;
+                                                                                                                                                            //анимация против часовой стрелки
+                                                                                                                                                                jQuery('.triangle').css({
+                                                                                                                                                                    transform: 'scale(0.2) rotateY(180deg)rotateZ(120deg)',
+                                                                                                                                                                    left: '-180px',
+                                                                                                                                                                    top: '-120px'
+                                                                                                                                                                });
+                                                                                                                                                                //анимация первого треугольника
+                                                                                                                                                                jQuery('#draggable1').addClass('transparent');
+                                                                                                                                                                firstTriangleAnimation = new Vivus('triangle_1', {type: 'delayed', duration: 150}, function(){
+                                                                                                                                                                //анимация второго треугольника
                                                                                                                                                                     setTimeout(function(){
-                                                                                                                                                                        jQuery('#draggable4').addClass('transparent');
-                                                                                                                                                                        fourthTriangleAnimation = new Vivus('triangle_4', {type: 'delayed', duration: 150}, function(){
-                                                                                                                                                                            jQuery('.itemlist_item').removeClass('transparent');
+                                                                                                                                                                        jQuery('#draggable2').addClass('transparent');
+                                                                                                                                                                        secondTriangleAnimation = new Vivus('triangle_2', {type: 'delayed', duration: 150}, function(){
+                                                                                                                                                                //анимация третьего треугольника
+                                                                                                                                                                            setTimeout(function(){
+                                                                                                                                                                                jQuery('#draggable3').addClass('transparent');
+                                                                                                                                                                                thirdTriangleAnimation = new Vivus('triangle_3', {type: 'delayed', duration: 150}, function(){
+                                                                                                                                                                //анимация четвертого треугольника
+                                                                                                                                                                                    setTimeout(function(){
+                                                                                                                                                                                        jQuery('#draggable4').addClass('transparent');
+                                                                                                                                                                                        fourthTriangleAnimation = new Vivus('triangle_4', {type: 'delayed', duration: 150}, function(){
+                                                                                                                                                                                            jQuery('.itemlist_item').removeClass('transparent');
 
 
-                                                                                                                                                                        //анимация по часовой стрелке
-                                                                                                                                                                            jQuery('.triangle').css({
-                                                                                                                                                                                transform: 'scale(0.2) rotateY(0deg)rotateZ(120deg)',
-                                                                                                                                                                                left: '-170px',
-                                                                                                                                                                                top: '-120px'
-                                                                                                                                                                            });
-                                                                                                                                                                            //анимация первого треугольника
-                                                                                                                                                                            jQuery('#draggable1').addClass('transparent');                                                                    
-                                                                                                                                                                            firstTriangleAnimation = new Vivus('triangle_1', {type: 'delayed', duration: 150}, function(){
-                                                                                                                                                                            //анимация второго треугольника
-                                                                                                                                                                                setTimeout(function(){
-                                                                                                                                                                                    jQuery('#draggable2').addClass('transparent');
-                                                                                                                                                                                    secondTriangleAnimation = new Vivus('triangle_2', {type: 'delayed', duration: 150}, function(){
-                                                                                                                                                                            //анимация третьего треугольника
-                                                                                                                                                                                        setTimeout(function(){
-                                                                                                                                                                                            jQuery('#draggable3').addClass('transparent');
-                                                                                                                                                                                            thirdTriangleAnimation = new Vivus('triangle_3', {type: 'delayed', duration: 150}, function(){
-                                                                                                                                                                            //анимация четвертого треугольника
+                                                                                                                                                                                        //анимация по часовой стрелке
+                                                                                                                                                                                            jQuery('.triangle').css({
+                                                                                                                                                                                                transform: 'scale(0.2) rotateY(0deg)rotateZ(120deg)',
+                                                                                                                                                                                                left: '-170px',
+                                                                                                                                                                                                top: '-120px'
+                                                                                                                                                                                            });
+                                                                                                                                                                                            //анимация первого треугольника
+                                                                                                                                                                                            jQuery('#draggable1').addClass('transparent');                                                                    
+                                                                                                                                                                                            firstTriangleAnimation = new Vivus('triangle_1', {type: 'delayed', duration: 150}, function(){
+                                                                                                                                                                                            //анимация второго треугольника
                                                                                                                                                                                                 setTimeout(function(){
-                                                                                                                                                                                                    jQuery('#draggable4').addClass('transparent');
-                                                                                                                                                                                                    fourthTriangleAnimation = new Vivus('triangle_4', {type: 'delayed', duration: 150}, function(){
-                                                                                                                                                                                                        jQuery('.itemlist_item').removeClass('transparent');
-                //фаза 7
-                                                                                                                                                                                                        count_animation = 1;
-                                                                                                                                                                                                        phaseOne = setInterval(function(){
-                                                                                                                                                                                                            if (count_animation <= 120){                                                                         //120
-                                                                                                                                                                                                                jQuery('#draggable3').css({
-                                                                                                                                                                                                                    color: 'transparent',
-                                                                                                                                                                                                                    borderColor: 'transparent',
-                                                                                                                                                                                                                    opacity: 0.8,
-                                                                                                                                                                                                                    transform: 'scale(1)',
-                                                                                                                                                                                                                    borderWidth: '1px',
-                                                                                                                                                                                                                    paddingTop: '4px',
-                                                                                                                                                                                                                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/edinenie_s_tvorcom.jpg) 0 0/100% no-repeat',
-                                                                                                                                                                                                                    zIndex: '1000'
-                                                                                                                                                                                                                });
-                                                                                                                                                                                                                count_animation += 1;
+                                                                                                                                                                                                    jQuery('#draggable2').addClass('transparent');
+                                                                                                                                                                                                    secondTriangleAnimation = new Vivus('triangle_2', {type: 'delayed', duration: 150}, function(){
+                                                                                                                                                                                            //анимация третьего треугольника
+                                                                                                                                                                                                        setTimeout(function(){
+                                                                                                                                                                                                            jQuery('#draggable3').addClass('transparent');
+                                                                                                                                                                                                            thirdTriangleAnimation = new Vivus('triangle_3', {type: 'delayed', duration: 150}, function(){
+                                                                                                                                                                                            //анимация четвертого треугольника
+                                                                                                                                                                                                                setTimeout(function(){
+                                                                                                                                                                                                                    jQuery('#draggable4').addClass('transparent');
+                                                                                                                                                                                                                    fourthTriangleAnimation = new Vivus('triangle_4', {type: 'delayed', duration: 150}, function(){
+                                                                                                                                                                                                                        jQuery('.itemlist_item').removeClass('transparent');
+                                //фаза 7
+                                                                                                                                                                                                                        count_animation = 1;
+                                                                                                                                                                                                                        phaseOne = setInterval(function(){
+                                                                                                                                                                                                                            if (count_animation <= 120){                                                                         //120
+                                                                                                                                                                                                                                jQuery('#draggable3').css({
+                                                                                                                                                                                                                                    color: 'transparent',
+                                                                                                                                                                                                                                    borderColor: 'transparent',
+                                                                                                                                                                                                                                    opacity: 0.8,
+                                                                                                                                                                                                                                    transform: 'scale(1)',
+                                                                                                                                                                                                                                    borderWidth: '1px',
+                                                                                                                                                                                                                                    paddingTop: '4px',
+                                                                                                                                                                                                                                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/edinenie_s_tvorcom.jpg) 0 0/100% no-repeat',
+                                                                                                                                                                                                                                    zIndex: '1000'
+                                                                                                                                                                                                                                });
+                                                                                                                                                                                                                                count_animation += 1;
 
-                                                                                                                                                                                                            } else {
-                                                                                                                                                                                                                clearInterval(phaseOne);
-                                                                                                                                                                                                                count_animation = 1;
-                                                                                                                                                                                                                jQuery('#draggable3').css({
-                                                                                                                                                                                                                    background: 'rgba(255,255,255, 0.5)',
-                                                                                                                                                                                                                    color: 'red',
-                                                                                                                                                                                                                    borderColor: 'red',
-                                                                                                                                                                                                                    opacity: 1,
-                                                                                                                                                                                                                    transform: 'scale(0.5)',
-                                                                                                                                                                                                                    borderWidth: '2px',
-                                                                                                                                                                                                                    paddingTop: '2px',
-                                                                                                                                                                                                                    zIndex: '1'
-                                                                                                                                                                                                                });
-                                                                                                                                                                                                                onEnd();
-                                                                                                                                                                                                                jQuery( ".btn__wizard" )
-                                                                                                                                                                                                                    .text('Выполнить')
-                                                                                                                                                                                                                    .removeClass('btn__wizard_inAction');        
-                                                                                                                                                                                                            }
-                                                                                                                                                                                                        }, 1000);
+                                                                                                                                                                                                                            } else {
+                                                                                                                                                                                                                                clearInterval(phaseOne);
+                                                                                                                                                                                                                                count_animation = 1;
+                                                                                                                                                                                                                                jQuery('#draggable3').css({
+                                                                                                                                                                                                                                    background: 'rgba(255,255,255, 0.5)',
+                                                                                                                                                                                                                                    color: 'red',
+                                                                                                                                                                                                                                    borderColor: 'red',
+                                                                                                                                                                                                                                    opacity: 1,
+                                                                                                                                                                                                                                    transform: 'scale(0.5)',
+                                                                                                                                                                                                                                    borderWidth: '2px',
+                                                                                                                                                                                                                                    paddingTop: '2px',
+                                                                                                                                                                                                                                    zIndex: '1'
+                                                                                                                                                                                                                                });
+                                                                                                                                                                                                                                onEnd();
+                                                                                                                                                                                                                                jQuery( ".btn__wizard" )
+                                                                                                                                                                                                                                    .text('Выполнить')
+                                                                                                                                                                                                                                    .removeClass('btn__wizard_inAction');        
+                                                                                                                                                                                                                            }
+                                                                                                                                                                                                                        }, 1000);
+                                                                                                                                                                                                                    });
+                                                                                                                                                                                                                    fourthTriangleAnimation.play();
+                                                                                                                                                                                                                }, 250)
+                                                                                                                                                                                                            });
+                                                                                                                                                                                                            thirdTriangleAnimation.play();
+                                                                                                                                                                                                        }, 250)
                                                                                                                                                                                                     });
-                                                                                                                                                                                                    fourthTriangleAnimation.play();
+                                                                                                                                                                                                    secondTriangleAnimation.play();
                                                                                                                                                                                                 }, 250)
                                                                                                                                                                                             });
-                                                                                                                                                                                            thirdTriangleAnimation.play();
-                                                                                                                                                                                        }, 250)
-                                                                                                                                                                                    });
-                                                                                                                                                                                    secondTriangleAnimation.play();
-                                                                                                                                                                                }, 250)
-                                                                                                                                                                            });
-                                                                                                                                                                            firstTriangleAnimation.play();
+                                                                                                                                                                                            firstTriangleAnimation.play();
+                                                                                                                                                                                        });
+                                                                                                                                                                                        fourthTriangleAnimation.play();
+                                                                                                                                                                                    }, 250)
+                                                                                                                                                                                });
+                                                                                                                                                                                thirdTriangleAnimation.play();
+                                                                                                                                                                            }, 250)
                                                                                                                                                                         });
-                                                                                                                                                                        fourthTriangleAnimation.play();
+                                                                                                                                                                        secondTriangleAnimation.play();
                                                                                                                                                                     }, 250)
                                                                                                                                                                 });
-                                                                                                                                                                thirdTriangleAnimation.play();
-                                                                                                                                                            }, 250)
-                                                                                                                                                        });
-                                                                                                                                                        secondTriangleAnimation.play();
-                                                                                                                                                    }, 250)
-                                                                                                                                                });
-                                                                                                                                                firstTriangleAnimation.play();
+                                                                                                                                                                firstTriangleAnimation.play();
+                                                                                                                                                            }
+                                                                                                                                                        }, 1000);
+                                                                                                                                                    }
+                                                                                                                                                }, 1000);
                                                                                                                                             }
                                                                                                                                         }, 1000);
                                                                                                                                     }
