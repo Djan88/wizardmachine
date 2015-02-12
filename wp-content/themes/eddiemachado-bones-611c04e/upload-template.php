@@ -40,7 +40,6 @@
                     <div class="step step_procedure">3 <div></div>  </div> -->
                     <h3 class="heading heading_dashboard">Выберите актуальную зону</h3>
                 </div>
-                <!-- <div class="btn btn_back invisible"><span>‹</span> Назад</div> -->
 
                 <div class="machine_screen clearfix">
                     <div id="accordion" class="select_program">
