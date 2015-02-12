@@ -110,18 +110,14 @@ jQuery(function() {
     croppedImg = jQuery('#main').children()[0];
     if(croppedImg.hasAttribute('src'))
     {
-        // jQuery('.step_img div').text('Фото загружено');
+        jQuery('.btn__wizard').removeClass('hidden');
         jQuery('.heading_dashboard').text('Перенесите зоны с шаблона на фото клиента')
         cur_screen = 2;
-        jQuery('.step').eq(cur_screen-1).addClass('step_done');
-        jQuery('.step').eq(cur_screen-2).addClass('step_done');
-        jQuery('.step').eq(cur_screen).addClass('step_now');
         nextScreen();
         jQuery('.btn_back')
             .removeClass('invisible')
             .addClass('animated')
             .addClass('fadeIn');
-        jQuery('.btn__wizard').removeClass('hidden');
         jQuery('.itemlist-two').append(croppedImg);
     }
 
@@ -129,9 +125,9 @@ jQuery(function() {
 jQuery( ".btn__wizard" ).on('click', function(event) {
     pointsStatus = true;
     checkPoints();
-    // if(pointsStatus == false){
-        // swal("Не все зоны перенесены", "Перед началом процедуры необходимо перенести все зоны", "info");
-    // } else {
+    if(pointsStatus == false){
+        swal("Не все зоны перенесены", "Перед началом процедуры необходимо перенести все зоны", "info");
+    } else {
         jQuery(this)
             .addClass('btn__wizard_inAction')
             .text('Выполняется');
@@ -155,7 +151,7 @@ jQuery( ".btn__wizard" ).on('click', function(event) {
             } else{
                 console.log('нет протокола с id '+ protocol)
             }
-    // }
+    }
     main_heading()
 });
 //Быстрая смена протокола
