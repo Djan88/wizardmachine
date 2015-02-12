@@ -494,3 +494,7 @@ header .btn_back
   text-transform: uppercase;
   float: right;
 }
+header .btn 
+{
+    margin-left: 5px;
+}

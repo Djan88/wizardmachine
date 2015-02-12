@@ -121,6 +121,7 @@ jQuery(function() {
             .removeClass('invisible')
             .addClass('animated')
             .addClass('fadeIn');
+        jQuery('.btn__wizard').removeClass('hidden');
         jQuery('.itemlist-two').append(croppedImg);
     }
 
