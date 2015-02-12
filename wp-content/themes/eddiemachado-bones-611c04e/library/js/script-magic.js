@@ -111,7 +111,6 @@ jQuery(function() {
     if(croppedImg.hasAttribute('src'))
     {
         jQuery('.btn__wizard').removeClass('hidden');
-        alert('ololo');
         jQuery('.heading_dashboard').text('Перенесите зоны с шаблона на фото клиента')
         cur_screen = 2;
         nextScreen();
@@ -165,8 +164,8 @@ jQuery('#main').on('click', '.fast-protocol', function() {
 });
 
 // Возврат на предыдущий шаг
-    jQuery('.btn__crop, .btn__wizard').addClass('hidden');
     jQuery('.btn_back').on('click', function(event) {
+        jQuery('.btn__crop, .btn__wizard').addClass('hidden');
         // console.log(cur_screen);
         jQuery('.machine_screen')
             .addClass('hidden')
