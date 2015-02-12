@@ -110,7 +110,8 @@ jQuery(function() {
     croppedImg = jQuery('#main').children()[0];
     if(croppedImg.hasAttribute('src'))
     {
-        jQuery('.header .btn').removeClass('hidden');
+        jQuery('.btn__wizard').removeClass('hidden');
+        alert('ololo');
         jQuery('.heading_dashboard').text('Перенесите зоны с шаблона на фото клиента')
         cur_screen = 2;
         nextScreen();
