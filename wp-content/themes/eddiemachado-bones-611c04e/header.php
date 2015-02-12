@@ -78,6 +78,9 @@
                         </nav> -->
                         <?php if(is_user_logged_in()){ ?>
                             <a class="btn btn_sm btn_warning btn_logout" href="<?php echo home_url(); ?>/wp-login.php?action=logout&amp;_wpnonce=a6cad512ba">Выйти</a>
+                            <div class="btn btn_sm btn_warning btn__wizard hidden" >Выполнить</div>
+                            <div class="btn btn_sm btn_warning btn__crop hidden" >Обрезать фото</div>
+                            <div class="btn btn_sm btn_warning btn_back invisible"><span>‹</span> Назад</div>
                         <?php }?>
 
                     </div>
