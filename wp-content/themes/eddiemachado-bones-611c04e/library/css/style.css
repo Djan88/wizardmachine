@@ -2535,7 +2535,7 @@ be set to display none.
 }
 .btn_back 
 {
-  display: block;
+  /*display: block;
   margin: auto;
   width: 120px;
   border: 1px solid #204371;
@@ -2548,7 +2548,7 @@ be set to display none.
   margin-bottom: 15px;
   left: 44%;
   top: 85px;
-  z-index: 10;
+  z-index: 10;*/
 }
 .work-area .btn_back 
 {
@@ -2567,7 +2567,7 @@ be set to display none.
   position: absolute;
   left: 10px;
   font-size: 60px;
-  top: -35px;
+  top: -38px;
 }
 .btn_choice pre
 {
