@@ -99,9 +99,13 @@ jQuery(function() {
         }
         main_heading()
     });
+    jQuery('.btn__crop').on('click', function(event) {
+        jQuery('.crop_photo').click();
+    });
 
 // ШАГ 2 (переход к магии)
 //Если фото уже обрезано
+
     jQuery('.step_img:after').css('content', curChoice);
     croppedImg = jQuery('#main').children()[0];
     if(croppedImg.hasAttribute('src'))
@@ -163,6 +167,7 @@ jQuery('#main').on('click', '.fast-protocol', function() {
 });
 
 // Возврат на предыдущий шаг
+    jQuery('.btn__crop, .btn__wizard').addClass('hidden');
     jQuery('.btn_back').on('click', function(event) {
         // console.log(cur_screen);
         jQuery('.machine_screen')

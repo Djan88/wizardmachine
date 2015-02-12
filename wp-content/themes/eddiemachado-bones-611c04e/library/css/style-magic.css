@@ -57,15 +57,7 @@ li
 }
 .itemlist-one
 {
-    /*background: url(../images/vitruvian_man.png) center 25px/100% no-repeat;*/header .btn_back {
-width: 90px;
-text-transform: uppercase;
-font-weight: 600;
-position: relative;
-padding-left: 35px;
-float: left;
-margin-left: 0;
-}
+    background: url(../images/vitruvian_man.png) center 25px/100% no-repeat;
     background: url(../images/Depositphotos_7147798_m_1.jpg) center 25px/100% no-repeat;
     height: 600px;
 }
