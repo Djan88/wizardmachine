@@ -808,9 +808,6 @@
                         -->
                         <li class="itemlist-two-li"></li>
                         </ul>
-                        <div class="contentAlignCenter">
-                            <div class="btn btn_lg btn_trans_action btn__wizard" >Выполнить</div>
-                        </div>
                     </div>
                 </div>
             <?php } else { ?>
