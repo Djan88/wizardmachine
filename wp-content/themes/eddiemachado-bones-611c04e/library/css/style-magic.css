@@ -496,3 +496,9 @@ header .btn_back
     float: left;
     margin-left: 0;
 }
+.btn__wizard, .btn__crop 
+{
+  font-weight: 600!important;
+  text-transform: uppercase;
+  float: right;
+}
