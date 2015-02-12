@@ -20,7 +20,7 @@ li
     /*margin-left: 65px;*/
     text-align: center;
     border: 1px solid #ccc;
-    min-height: 600px;
+    min-height: 510px;
     position: relative;
     margin-bottom: 20px;
 }
@@ -57,9 +57,9 @@ li
 }
 .itemlist-one
 {
-    background: url(../images/vitruvian_man.png) center 25px/100% no-repeat;
-    background: url(../images/Depositphotos_7147798_m_1.jpg) center 25px/100% no-repeat;
-    height: 600px;
+    /*background: #fff url(../images/vitruvian_man.png) center 25px/100% no-repeat;*/
+    background: #fff url(../images/Depositphotos_7147798_m_1.jpg) center 25px/100% no-repeat;
+    height: 510px;
 }
 .itemlist-two
 {
