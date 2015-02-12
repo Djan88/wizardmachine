@@ -2550,6 +2550,12 @@ be set to display none.
   top: 85px;
   z-index: 10;*/
 }
+.btn__wizard, .btn__crop 
+{
+  font-weight: 600!important;
+  text-transform: uppercase;
+  float: right;
+}
 .work-area .btn_back 
 {
   top: 40%;
