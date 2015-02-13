@@ -11,6 +11,8 @@
         thirdTriangleAnimation,
         onEnd,
         protocol,
+        resorce,
+        resorceGlobal,
         v2,
         v3;
 
@@ -2985,13 +2987,46 @@ v5 = function(){
     }, 1000);
 }
 
-v6 = function(){
-    alert('v6');
-    onEnd();
-    jQuery( ".btn__wizard" )
-        .text('Выполнить')
-        .removeClass('btn__wizard_inAction'); 
+resource = function(){
+    resorceGlobal = 30;
+    
+    jQuery('body').on('click', 'body', function(e) {
+        resorceGlobal = 30;
+        console.log(e.target.pageX);
+        console.log(e.target.pageY);
+    });
+    phaseOne = setInterval(function(){
+        if (resorceGlobal >= 1){                                                                         //120
+            jQuery('#draggable3').css({
+                color: 'transparent',
+                borderColor: 'transparent',
+                opacity: 0.8,
+                transform: 'scale(1)',
+                borderWidth: '1px',
+                paddingTop: '4px',
+                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/resurs.png) 0 0/100% no-repeat',
+                zIndex: '1000'
+            });
+        } else {
+            clearInterval(phaseOne);
+            jQuery('.itemlist_item').css({
+                background: 'rgba(255,255,255, 0.5)',
+                color: 'red',
+                borderColor: 'red',
+                opacity: 1,
+                transform: 'scale(0.5)',
+                borderWidth: '2px',
+                paddingTop: '2px',
+                zIndex: '1'
+            });
+            onEnd();
+            jQuery( ".btn__wizard" )
+                .text('Выполнить')
+                .removeClass('btn__wizard_inAction'); 
+        }
+    }, 1000); 
 }
+
 v7 = function(){
     alert('v7');
     onEnd();

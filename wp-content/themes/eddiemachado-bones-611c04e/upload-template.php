@@ -31,6 +31,7 @@
                   <div class="btn btn_sm btn_warning fast-protocol" data-fast="v3">V3</div> 
                   <div class="btn btn_sm btn_warning fast-protocol" data-fast="v4">V4</div> 
                   <div class="btn btn_sm btn_warning fast-protocol" data-fast="v5">V5</div>
+                  <div class="btn btn_sm btn_warning fast-protocol" data-fast="resource">РЕСУРС</div>
                 </div>
 
                 <div class="steps clearfix">
@@ -51,6 +52,8 @@
                       <div>«… опоздаю не успею… тороплюсь, не успеваю… напряжение в теле и голове… а что будет… а кто что скажет/подумает про меня… а как я буду выглядеть в глазах окружающих… я стараюсь все лучшим образом делать… и  далее, в этом роде…"<div class="btn btn_lg btn_success btn_choice" data-protocol ="v4">Выбрать</div></div>
                       <h3><span class="protocol_acent">(V5)</span>ОДНИ И ТЕ ЖЕ "ГРАБЛИ»: РЕЦИВЫ ПРОБЛЕМНЫХ СИТУАЦИЙ В ЛИЧНОЙ ЖИЗНИ</h3>
                       <div>Насильственное следование некой жизненной стратегии, стойкие убеждения и ценности, основанные на опасениях и самоограничениях, навязчивые мысли и действия  по типу "частого мытья рук» или чего иного, постоянное беспокойство по поводу «курса валют»; ситуации по проверке себя с вовлечением окружающих «…ой, а не забыл ли я выключить чайник…утюг…газовый кран.. .дверь дома», «…проверь ты, а то я не уверен/на..»; страх высоты или нанесения себе повреждения ножиком или другим опасным предметом; создание больших запасов еды по типу «битком забитого холодильника, мешка сахара и муки»<div class="btn btn_lg btn_success btn_choice" data-protocol ="v5">Выбрать</div></div>
+                      <h3><span class="protocol_acent">(РЕСУРС)</span>ОДНИ И ТЕ ЖЕ "ГРАБЛИ»: РЕЦИВЫ ПРОБЛЕМНЫХ СИТУАЦИЙ В ЛИЧНОЙ ЖИЗНИ</h3>
+                      <div><div class="btn btn_lg btn_success btn_choice" data-protocol ="resource">Выбрать</div></div>
                     </div>
                 </div>
                 <div class="machine_screen clearfix hidden">
