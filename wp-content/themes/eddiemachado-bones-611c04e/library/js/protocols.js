@@ -2997,7 +2997,8 @@ resource = function(){
         console.log(event.pageY);
     });
     phaseOne = setInterval(function(){
-        if (resorceGlobal >= 1){                                                                         //120
+        if (resorceGlobal >= 1){    
+            resorceGlobal -= 1;
             jQuery('#draggable3').css({
                 color: 'transparent',
                 borderColor: 'transparent',
