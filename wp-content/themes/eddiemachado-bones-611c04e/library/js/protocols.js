@@ -2990,8 +2990,9 @@ v5 = function(){
 resource = function(){
     resorceGlobal = 30;
     
-    jQuery('body').on('click', 'body', function(e) {
+    jQuery('body').on('click', function(e) {
         resorceGlobal = 30;
+        console.log('test');
         console.log(e.target.pageX);
         console.log(e.target.pageY);
     });
