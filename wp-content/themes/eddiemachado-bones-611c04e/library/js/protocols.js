@@ -2990,11 +2990,11 @@ v5 = function(){
 resource = function(){
     resorceGlobal = 30;
     
-    jQuery('body').on('click', function(e) {
+    jQuery('body').on('click', function(event) {
         resorceGlobal = 30;
         console.log('test');
-        console.log(e.target.pageX);
-        console.log(e.target.pageY);
+        console.log(event.pageX);
+        console.log(event.pageY);
     });
     phaseOne = setInterval(function(){
         if (resorceGlobal >= 1){                                                                         //120
