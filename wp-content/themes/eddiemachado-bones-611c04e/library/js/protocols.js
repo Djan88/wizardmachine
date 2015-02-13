@@ -2600,6 +2600,8 @@ v5 = function(){
                                                                                                                                                     cur_animation_val += 6;
                                                                                                                                                     jQuery('#draggableD2, #draggable2, #draggableS1, #draggableS2, #draggableS2_1, #draggableClean').css({
                                                                                                                                                         borderWidth: '1px',
+                                                                                                                                                        borderColor: 'transparent',
+                                                                                                                                                        opacity: 0.8,
                                                                                                                                                         paddingTop: '4px',
                                                                                                                                                         zIndex: '1000',
                                                                                                                                                         transform: 'scale(1)',
