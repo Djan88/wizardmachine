@@ -2990,14 +2990,14 @@ v5 = function(){
 resource = function(){
     resorceGlobal = 30;
     
-    jQuery('body').on('click', function(event) {
-        resorceGlobal = 30;
-        console.log('test');
-        console.log(event.pageX);
-        console.log(event.pageY);
-    });
     phaseOne = setInterval(function(){
-        if (resorceGlobal >= 1){    
+        if (resorceGlobal >= 1){
+        jQuery('body').on('click', function(event) {
+            resorceGlobal = 30;
+            console.log('test');
+            console.log(event.pageX);
+            console.log(event.pageY);
+        });
             resorceGlobal -= 1;
             jQuery('#draggable3').css({
                 color: 'transparent',
