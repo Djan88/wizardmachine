@@ -2996,7 +2996,7 @@ v5 = function(){
 resource = function(){
     resorceGlobal = 30;
     resourceActive = true;
-    if(resourceActive === true){
+    if(window.resourceActive === true){
         jQuery('#itemlist-two').on('click', function(e) {
             var v7x = e.offsetX==undefined?e.layerX:e.offsetX;
             var v7y = e.offsetY==undefined?e.layerY:e.offsetY;
