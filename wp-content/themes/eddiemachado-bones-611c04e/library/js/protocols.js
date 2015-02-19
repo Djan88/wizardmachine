@@ -3008,7 +3008,7 @@ resource = function(){
                     resorceGlobalCount
                     jQuery('#draggable3'+resorceGlobalCount).remove();
                 }, 4000);
-                var mySound = new buzz.sound( "../sounds/wizard", {
+                var mySound = new buzz.sound( "/sounds/wizard", {
                     formats: [ "ogg", "mp3" ]
                 });
                 mySound.play()
