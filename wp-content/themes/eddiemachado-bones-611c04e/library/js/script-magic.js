@@ -125,9 +125,9 @@ jQuery(function() {
 jQuery( ".btn__wizard" ).on('click', function(event) {
     pointsStatus = true;
     checkPoints();
-    if(pointsStatus == false){
-        swal("Не все зоны перенесены", "Перед началом процедуры необходимо перенести все зоны", "info");
-    } else {
+    // if(pointsStatus == false){
+        // swal("Не все зоны перенесены", "Перед началом процедуры необходимо перенести все зоны", "info");
+    // } else {
         jQuery(this)
             .addClass('btn__wizard_inAction')
             .text('Выполняется');
@@ -156,17 +156,17 @@ jQuery( ".btn__wizard" ).on('click', function(event) {
                         var v7y = e.offsetY==undefined?e.layerY:e.offsetY;
                         console.log(v7x +'x'+ v7y);
                         v7x= v7x-20;
+                        resorceGlobalCount++;
                         jQuery('#itemlist-two').append('<li id="draggable3'+resorceGlobalCount+'" class="itemlist_item item_list__mid draggable ui-draggable ui-draggable-handle" style="left: '+v7x+'px; top: '+v7y+'px; color: transparent; border-color: transparent; opacity: 0.8; transform: scale(1); border-width: 1px; padding-top: 4px; z-index: 1000; background: url(http://yuchikurov.ru/wp-content/themes/eddiemachado-bones-611c04e/library/images/resurs.png) 0px 0px / 100% no-repeat rgb(255, 255, 255);">V3</li>');
                         setTimeout(function(){
-                            resorceGlobalCount
-                            jQuery('#draggable3'+resorceGlobalCount).delete();
+                            jQuery('#draggable3'+resorceGlobalCount.remove();
                         }, 4000);
                     });
                 };
             } else{
                 console.log('нет протокола с id '+ protocol)
             }
-    }
+    // }
     main_heading()
 });
 //Быстрая смена протокола
