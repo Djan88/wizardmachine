@@ -138,25 +138,29 @@ jQuery( ".btn__wizard" ).on('click', function(event) {
             console.log(protocol);
             if(protocol == 'v2'){
                 v2();
-                window.protocol == 'v2';
             } else if(protocol == 'v3'){
                 v3();
-                window.protocol == 'v3';
             } else if(protocol == 'v4'){
                 v4();
-                window.protocol == 'v4';
             } else if(protocol == 'v5'){
                 v5();
-                window.protocol == 'v5';
             } else if(protocol == 'v6'){
                 v6();
-                window.protocol == 'v6';
             } else if(protocol == 'v7'){
                 v7();
-                window.protocol == 'v7';
             } else if(protocol == 'resource'){
                 resource();
-                window.protocol == 'resource';
+                jQuery('#itemlist-two').on('click', function(e) {
+                    var v7x = e.offsetX==undefined?e.layerX:e.offsetX;
+                    var v7y = e.offsetY==undefined?e.layerY:e.offsetY;
+                    console.log(resourceActive);
+                    v7x= v7x-18;
+                    jQuery('#itemlist-two').append('<li id="draggable3'+resorceGlobalCount+'" class="itemlist_item item_list__mid draggable ui-draggable ui-draggable-handle" style="left: '+v7x+'px; top: '+v7y+'px; color: transparent; border-color: transparent; opacity: 0.8; transform: scale(1); border-width: 1px; padding-top: 4px; z-index: 1000; background: url(http://yuchikurov.ru/wp-content/themes/eddiemachado-bones-611c04e/library/images/resurs.png) 0px 0px / 100% no-repeat rgb(255, 255, 255);">V3</li>');
+                    setTimeout(function(){
+                        resorceGlobalCount
+                        jQuery('#draggable3'+resorceGlobalCount.remove();
+                    }, 4000);
+                });
             } else{
                 console.log('нет протокола с id '+ protocol)
             }
