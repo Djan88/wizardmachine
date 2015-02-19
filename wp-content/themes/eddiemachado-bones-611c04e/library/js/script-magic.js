@@ -138,18 +138,25 @@ jQuery( ".btn__wizard" ).on('click', function(event) {
             console.log(protocol);
             if(protocol == 'v2'){
                 v2();
+                window.protocol == 'v2';
             } else if(protocol == 'v3'){
                 v3();
+                window.protocol == 'v3';
             } else if(protocol == 'v4'){
                 v4();
+                window.protocol == 'v4';
             } else if(protocol == 'v5'){
                 v5();
+                window.protocol == 'v5';
             } else if(protocol == 'v6'){
                 v6();
+                window.protocol == 'v6';
             } else if(protocol == 'v7'){
                 v7();
+                window.protocol == 'v7';
             } else if(protocol == 'resource'){
                 resource();
+                window.protocol == 'resource';
             } else{
                 console.log('нет протокола с id '+ protocol)
             }
