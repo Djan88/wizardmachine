@@ -2998,6 +2998,7 @@ resource = function(){
     phaseOne = setInterval(function(){
         if (resorceGlobal >= 1){
             jQuery('#itemlist-two').on('click', function(e) {
+                resorceGlobal = 30;
                 var v7x = e.offsetX==undefined?e.layerX:e.offsetX;
                 var v7y = e.offsetY==undefined?e.layerY:e.offsetY;
                 console.log(resourceActive);
