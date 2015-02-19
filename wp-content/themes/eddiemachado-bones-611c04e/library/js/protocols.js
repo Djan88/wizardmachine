@@ -12,7 +12,7 @@
         onEnd,
         protocol,
         resorce,
-        dinamicElem,
+        dinamicElem = false,
         resourceActive = false,
         resorceGlobal,
         resorceGlobalCount = 0,
@@ -48,6 +48,7 @@
     }
 
     v2 = function(){
+        dinamicElem = false;
     //фаза 1
         count_animation = 1;
         jQuery('#draggableClean_2').css({
@@ -801,6 +802,7 @@
         }, 1000);
     }
     v3 = function(){
+        dinamicElem = false;
     //фаза 1
         cur_animation_val = 0;
         count_animation = 1;
@@ -1600,6 +1602,7 @@
         firstTriangleAnimation.play();
     }
     v4 = function(){
+        dinamicElem = false;
     //фаза 1
         count_animation = 1;
         phaseOne = setInterval(function(){
@@ -2198,6 +2201,7 @@
         }, 1000);
     }
 v5 = function(){
+    dinamicElem = false;
 //фаза 1
     count_animation = 1;
     jQuery('#draggableClean_2').css({
@@ -2996,25 +3000,25 @@ v5 = function(){
 
 
 resource = function(){
-    dinamicElem = function(){
-        var v7x = e.offsetX==undefined?e.layerX:e.offsetX;
-        var v7y = e.offsetY==undefined?e.layerY:e.offsetY;
-        console.log(resourceActive);
-        v7x= v7x-18;
-        jQuery('#itemlist-two.dinamic').append('<li id="draggable3'+resorceGlobalCount+'" class="itemlist_item item_list__mid draggable ui-draggable ui-draggable-handle" style="left: '+v7x+'px; top: '+v7y+'px; color: transparent; border-color: transparent; opacity: 0.8; transform: scale(1); border-width: 1px; padding-top: 4px; z-index: 1000; background: url(http://yuchikurov.ru/wp-content/themes/eddiemachado-bones-611c04e/library/images/resurs.png) 0px 0px / 100% no-repeat rgb(255, 255, 255);">V3</li>');
-        setTimeout(function(){
-            resorceGlobalCount
-            jQuery('#draggable3'+resorceGlobalCount).remove();
-        }, 4000);
-    };
+    dinamicElem = true;
     resorceGlobal = 30;
     phaseOne = setInterval(function(){
         if (resorceGlobal >= 1){
             jQuery('#itemlist-two').addClass('dinamic');
-            jQuery('#itemlist-two').on('click', function(e) {
-                resorceGlobal = 30;
-                dinamicElem();
-            });
+            if(dinamicElem == true){
+                jQuery('#itemlist-two').on('click', function(e) {
+                    resorceGlobal = 30;
+                    var v7x = e.offsetX==undefined?e.layerX:e.offsetX;
+                    var v7y = e.offsetY==undefined?e.layerY:e.offsetY;
+                    console.log(resourceActive);
+                    v7x= v7x-18;
+                    jQuery('#itemlist-two.dinamic').append('<li id="draggable3'+resorceGlobalCount+'" class="itemlist_item item_list__mid draggable ui-draggable ui-draggable-handle" style="left: '+v7x+'px; top: '+v7y+'px; color: transparent; border-color: transparent; opacity: 0.8; transform: scale(1); border-width: 1px; padding-top: 4px; z-index: 1000; background: url(http://yuchikurov.ru/wp-content/themes/eddiemachado-bones-611c04e/library/images/resurs.png) 0px 0px / 100% no-repeat rgb(255, 255, 255);">V3</li>');
+                    setTimeout(function(){
+                        resorceGlobalCount
+                        jQuery('#draggable3'+resorceGlobalCount).remove();
+                    }, 4000);
+                });
+            }
             resorceGlobal -= 1;
             jQuery('#draggable3').css({
                 color: 'transparent',
@@ -3027,6 +3031,7 @@ resource = function(){
                 zIndex: '1000'
             });
         } else {
+            dinamicElem = false;
             clearInterval(phaseOne);
             jQuery('#itemlist-two').removeClass('dinamic');
             jQuery('.itemlist_item').css({
@@ -3048,6 +3053,7 @@ resource = function(){
 }
 
 v7 = function(){
+    dinamicElem = false;
     alert('v7');
     onEnd();
     jQuery( ".btn__wizard" )
