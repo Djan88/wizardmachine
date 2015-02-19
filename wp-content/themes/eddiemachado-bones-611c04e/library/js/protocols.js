@@ -3035,7 +3035,7 @@ v7 = function(){
     jQuery( ".btn__wizard" )
         .text('Выполнить')
         .removeClass('btn__wizard_inAction'); 
-    jQuery('.itemlist-two').on('click', function(e) {
+    jQuery('#itemlist-two').on('click', function(e) {
         var v7x = e.offsetX==undefined?e.layerX:e.offsetX;
         var v7y = e.offsetY==undefined?e.layerY:e.offsetY;
           console.log(v7x +'x'+ v7y);
