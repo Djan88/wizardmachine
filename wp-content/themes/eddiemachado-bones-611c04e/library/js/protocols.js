@@ -2995,7 +2995,6 @@ v5 = function(){
 
 resource = function(){
     resorceGlobal = 30;
-    resourceActive = true;
     phaseOne = setInterval(function(){
         if (resorceGlobal >= 1){
         jQuery('body').on('click', function(event) {
@@ -3017,7 +3016,6 @@ resource = function(){
             });
         } else {
             clearInterval(phaseOne);
-            resourceActive = false;
             jQuery('.itemlist_item').css({
                 background: 'rgba(255,255,255, 0.5)',
                 color: 'red',
