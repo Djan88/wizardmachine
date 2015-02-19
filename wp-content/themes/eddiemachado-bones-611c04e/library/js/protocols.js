@@ -11,7 +11,7 @@
         thirdTriangleAnimation,
         onEnd,
         protocol,
-        resorce = false,
+        resorce,
         resorceGlobal,
         resorceGlobalCount = 0,
         v2,
@@ -2993,8 +2993,9 @@ v5 = function(){
 }
 
 resource = function(){
-    resorce = true;
-    if(resorce == true){
+    resorceGlobal = 30;
+    
+    if(resorceGlobal == 'resource'){
         jQuery('#itemlist-two').on('click', function(e) {
             var v7x = e.offsetX==undefined?e.layerX:e.offsetX;
             var v7y = e.offsetY==undefined?e.layerY:e.offsetY;
@@ -3028,7 +3029,6 @@ resource = function(){
             });
         } else {
             clearInterval(phaseOne);
-            resorce = false;
             jQuery('.itemlist_item').css({
                 background: 'rgba(255,255,255, 0.5)',
                 color: 'red',
