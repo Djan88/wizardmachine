@@ -12,6 +12,7 @@
         onEnd,
         protocol,
         resorce,
+        resourceActive = false;
         resorceGlobal,
         resorceGlobalCount = 0,
         v2,
@@ -2994,8 +2995,8 @@ v5 = function(){
 
 resource = function(){
     resorceGlobal = 30;
-    
-    if(resorceGlobal == 'resource'){
+    resourceActive = true;
+    if(resourceActive == true){
         jQuery('#itemlist-two').on('click', function(e) {
             var v7x = e.offsetX==undefined?e.layerX:e.offsetX;
             var v7y = e.offsetY==undefined?e.layerY:e.offsetY;
@@ -3029,6 +3030,7 @@ resource = function(){
             });
         } else {
             clearInterval(phaseOne);
+            resourceActive = false;
             jQuery('.itemlist_item').css({
                 background: 'rgba(255,255,255, 0.5)',
                 color: 'red',
