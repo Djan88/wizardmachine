@@ -3002,6 +3002,7 @@ resource = function(){
             console.log('test');
             // console.log(event.pageX);
             // console.log(event.pageY);
+            document.getElementById('itemlist-two').click();
             jQuery('#itemlist-two').on('click', function(e) {
                 var v7x = e.offsetX==undefined?e.layerX:e.offsetX;
                 var v7y = e.offsetY==undefined?e.layerY:e.offsetY;
