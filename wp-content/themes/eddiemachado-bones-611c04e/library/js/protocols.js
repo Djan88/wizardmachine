@@ -2995,8 +2995,13 @@ resource = function(){
         jQuery('body').on('click', function(event) {
             resorceGlobal = 30;
             console.log('test');
-            console.log(event.pageX);
-            console.log(event.pageY);
+            // console.log(event.pageX);
+            // console.log(event.pageY);
+            jQuery('#itemlist-two').on('click', function(e) {
+                var v7x = e.offsetX==undefined?e.layerX:e.offsetX;
+                var v7y = e.offsetY==undefined?e.layerY:e.offsetY;
+                  console.log(v7x +'x'+ v7y);
+            });
         });
             resorceGlobal -= 1;
             jQuery('#draggable3').css({
@@ -3035,9 +3040,4 @@ v7 = function(){
     jQuery( ".btn__wizard" )
         .text('Выполнить')
         .removeClass('btn__wizard_inAction'); 
-    jQuery('#itemlist-two').on('click', function(e) {
-        var v7x = e.offsetX==undefined?e.layerX:e.offsetX;
-        var v7y = e.offsetY==undefined?e.layerY:e.offsetY;
-          console.log(v7x +'x'+ v7y);
-    });
 }
