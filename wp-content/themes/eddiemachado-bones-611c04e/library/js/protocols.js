@@ -18,7 +18,7 @@
         v3;
 
     onEnd = function(){
-        swal({   
+        swal({
             title: "Процедура окончена",   
             text: "Что вы хотите делать дальше?",   
             type: "success",   
@@ -26,7 +26,7 @@
             confirmButtonColor: "#DD6B55",   
             confirmButtonText: "Продолжить сессию",   
             cancelButtonText: "Выйти"
-        }, 
+        },
         function(isConfirm){   
             if (isConfirm) {
                 var protocol = undefined;     
@@ -39,6 +39,11 @@
                 jQuery(location).attr('href','/wizard');
             } 
         });
+        var mySound = new buzz.sound( "../sounds/wizard", {
+            formats: [ "ogg", "mp3", "aac" ]
+        });
+
+        mySound.play()
     }
 
     v2 = function(){
