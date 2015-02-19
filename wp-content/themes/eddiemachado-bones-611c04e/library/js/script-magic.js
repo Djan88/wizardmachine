@@ -158,8 +158,7 @@ jQuery( ".btn__wizard" ).on('click', function(event) {
                     resourceActive += 1;
                     jQuery('#itemlist-two').append('<li id="'+resourceActive+'" class="itemlist_item item_list__mid draggable ui-draggable ui-draggable-handle" style="left: '+v7x+'px; top: '+v7y+'px; color: transparent; border-color: transparent; opacity: 0.8; transform: scale(1); border-width: 1px; padding-top: 4px; z-index: 1000; background: url(http://yuchikurov.ru/wp-content/themes/eddiemachado-bones-611c04e/library/images/resurs.png) 0px 0px / 100% no-repeat rgb(255, 255, 255);">V3</li>');
                     setTimeout(function(){
-                        resorceGlobalCount
-                        jQuery('#'+resourceActive.remove());
+                        jQuery('#'+resourceActive).remove();
                     }, 4000);
                 });
             } else{
