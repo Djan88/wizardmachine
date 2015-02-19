@@ -39,11 +39,6 @@
                 jQuery(location).attr('href','/wizard');
             } 
         });
-        var mySound = new buzz.sound( "../sounds/wizard", {
-            formats: [ "ogg", "mp3" ]
-        });
-
-        mySound.play()
     }
 
     v2 = function(){
@@ -3012,7 +3007,11 @@ resource = function(){
                 setTimeout(function(){
                     resorceGlobalCount
                     jQuery('#draggable3'+resorceGlobalCount).remove();
-                }, 4000)
+                }, 4000);
+                var mySound = new buzz.sound( "../sounds/wizard", {
+                    formats: [ "ogg", "mp3" ]
+                });
+                mySound.play()
             });
         });
             resorceGlobal -= 1;
