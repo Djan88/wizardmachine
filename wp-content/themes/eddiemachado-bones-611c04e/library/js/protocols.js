@@ -40,7 +40,7 @@
             } 
         });
         var mySound = new buzz.sound( "../sounds/wizard", {
-            formats: [ "ogg", "mp3", "aac" ]
+            formats: [ "ogg", "mp3" ]
         });
 
         mySound.play()
