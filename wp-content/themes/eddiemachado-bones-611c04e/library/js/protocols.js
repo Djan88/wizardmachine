@@ -12,7 +12,7 @@
         onEnd,
         protocol,
         resorce,
-        resourceActive = false;
+        resourceActive = false,
         resorceGlobal,
         resorceGlobalCount = 0,
         v2,
