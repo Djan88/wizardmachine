@@ -3001,7 +3001,6 @@ resource = function(){
                 var v7x = e.offsetX==undefined?e.layerX:e.offsetX;
                 var v7y = e.offsetY==undefined?e.layerY:e.offsetY;
                 console.log(v7x +'x'+ v7y);
-                jQuery('#itemlist-two').append('<li id="draggableV7" class="itemlist_item item_list__mid" style="left: 'v7x'px; top: 'v7y'px; color: rgb(255, 0, 0); border-color: red; opacity: 1; transform: scale(0.5); border-width: 2px; padding-top: 2px; z-index: 1; background: url(http://yuchikurov.ru/wp-content/themes/eddiemachado-bones-611c04e/library/images/resurs.png) 0px 0px / 100% no-repeat rgb(255, 255, 255);">V3</li>');
             });
         });
             resorceGlobal -= 1;
