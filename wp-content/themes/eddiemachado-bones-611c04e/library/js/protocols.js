@@ -3023,7 +3023,7 @@ resource = function(){
             clearInterval(phaseOne);
             jQuery('#itemlist-two').on('click', function(e) {
                 return false;
-            }
+            });
             jQuery('.itemlist_item').css({
                 background: 'rgba(255,255,255, 0.5)',
                 color: 'red',
