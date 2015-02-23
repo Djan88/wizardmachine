@@ -41,7 +41,7 @@
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/library/css/style-magic.css">
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/library/css/animate.css">
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/library/css/sweet-alert.css">
-
+        <!--/sprypay.tag.check:54d91f053a839/-->
     </head>
 
     <body <?php body_class(); ?>>
