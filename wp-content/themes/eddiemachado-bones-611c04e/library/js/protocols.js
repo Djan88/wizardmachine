@@ -3011,7 +3011,7 @@ resource = function(){
                     var v7x = e.clientX;
                     var v7y = e.clientY;
                     v7y = v7y-18;
-                    v7x = v7x-18;
+                    v7x = v7x-25;
                     jQuery('body.dinamic').append('<div id="draggable3'+resorceGlobalCount+'" class="itemlist_item item_list__mid draggable ui-draggable ui-draggable-handle" style="left: '+v7x+'px; top: '+v7y+'px; color: transparent; border-color: transparent; opacity: 0.8; transform: scale(1); border-width: 1px; padding-top: 4px; z-index: 1000; background: url(http://yuchikurov.ru/wp-content/themes/eddiemachado-bones-611c04e/library/images/edinenie_s_tvorcom.jpg) 0px 0px / 100% no-repeat rgb(255, 255, 255);">V3</div>');
                     setTimeout(function(){
                         resorceGlobalCount
