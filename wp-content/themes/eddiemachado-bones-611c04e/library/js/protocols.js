@@ -3033,7 +3033,7 @@ resource = function(){
         } else {
             dinamicElem = false;
             clearInterval(phaseOne);
-            jQuery('#itemlist-two').removeClass('dinamic');
+            jQuery('body').removeClass('dinamic');
             jQuery('.itemlist_item').css({
                 background: 'rgba(255,255,255, 0.5)',
                 color: 'red',
