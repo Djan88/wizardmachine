@@ -7,8 +7,10 @@ jQuery(function() {
         curChoice,
         protocol,
         checkPoints,
+        checkV3,
         main_heading,
         pointsStatus = true,
+        v3status = true,
         supportsStorage = function(){
             try {
                 return 'localStorage' in window && window['localStorage'] !== null;
@@ -23,6 +25,14 @@ jQuery(function() {
             if(parseFloat(jQuery(this).css('left')) < 450){
                 pointsStatus = false;
                 console.log('status '+pointsStatus);
+            }
+        });
+    }
+    checkV3 = function(){
+        jQuery('#draggable3').each(function() {
+            if(parseFloat(jQuery(this).css('left')) < 450){
+                v3status = false;
+                console.log('v3status '+v3status);
             }
         });
     }
@@ -124,37 +134,55 @@ jQuery(function() {
 //ШАГ 3 (Старт процедуры)
 jQuery( ".btn__wizard" ).on('click', function(event) {
     pointsStatus = true;
-    checkPoints();
-    if(pointsStatus == false){
-        swal("Не все зоны перенесены", "Перед началом процедуры необходимо перенести все зоны", "info");
+    v3status = true;
+    if(protocol == 'resource'){
+        checkV3();
+        if(pointsStatus == false){
+            swal("Не перенесена зона V3", "Для выполнения процедуры необходимо перенести зону V3", "info");
+        } else {
+            jQuery(this)
+                .addClass('btn__wizard_inAction')
+                .text('Выполняется');
+                jQuery('.heading_dashboard').text('Процедура выполняется')
+                jQuery('.btn_back').addClass('invisible');
+                protocol = localStorage.getItem('protocol');
+                console.log(protocol);
+                if(protocol == 'resource'){
+                    resource();
+                } else {
+                    console.log('нет протокола с id '+ protocol)
+                }
+        } 
     } else {
-        jQuery(this)
-            .addClass('btn__wizard_inAction')
-            .text('Выполняется');
-            // jQuery('.step_procedure div').text('Процедура выполняется');
-            jQuery('.heading_dashboard').text('Процедура выполняется')
-            jQuery('.btn_back').addClass('invisible');
-            protocol = localStorage.getItem('protocol');
-            console.log(protocol);
-            if(protocol == 'v2'){
-                v2();
-            } else if(protocol == 'v3'){
-                v3();
-            } else if(protocol == 'v4'){
-                v4();
-            } else if(protocol == 'v5'){
-                v5();
-            } else if(protocol == 'v6'){
-                v6();
-            } else if(protocol == 'v7'){
-                v7();
-            } else if(protocol == 'resource'){
-                resource();
-            } else{
-                console.log('нет протокола с id '+ protocol)
-            }
+        checkPoints();
+        if(pointsStatus == false){
+            swal("Не все зоны перенесены", "Перед началом процедуры необходимо перенести все зоны", "info");
+        } else {
+            jQuery(this)
+                .addClass('btn__wizard_inAction')
+                .text('Выполняется');
+                jQuery('.heading_dashboard').text('Процедура выполняется')
+                jQuery('.btn_back').addClass('invisible');
+                protocol = localStorage.getItem('protocol');
+                console.log(protocol);
+                if(protocol == 'v2'){
+                    v2();
+                } else if(protocol == 'v3'){
+                    v3();
+                } else if(protocol == 'v4'){
+                    v4();
+                } else if(protocol == 'v5'){
+                    v5();
+                } else if(protocol == 'v6'){
+                    v6();
+                } else if(protocol == 'v7'){
+                    v7();
+                } else{
+                    console.log('нет протокола с id '+ protocol)
+                }
+        }  
     }
-    main_heading()
+    main_heading();
 });
 //Быстрая смена протокола
 jQuery('#main').on('click', '.fast-protocol', function() {
