@@ -3004,7 +3004,7 @@ resource = function(){
     resorceGlobal = 30;
     phaseOne = setInterval(function(){
         if (resorceGlobal >= 1){
-            jQuery('#body').addClass('dinamic');
+            jQuery('body').addClass('dinamic');
             if(dinamicElem == true){
                 jQuery('body').on('click', function(e) {
                     resorceGlobal = 30;
