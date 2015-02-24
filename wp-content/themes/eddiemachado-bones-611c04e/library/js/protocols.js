@@ -3008,8 +3008,8 @@ resource = function(){
             if(dinamicElem == true){
                 jQuery('body').on('click', function(e) {
                     resorceGlobal = 30;
-                    var v7x = e.offsetX==undefined?e.layerX:e.offsetX;
-                    var v7y = e.offsetY==undefined?e.layerY:e.offsetY;
+                    var v7x = e.offsetX;
+                    var v7y = e.offsetY;
                     v7x= v7x-18;
                     jQuery('body.dinamic').append('<div id="draggable3'+resorceGlobalCount+'" class="itemlist_item item_list__mid draggable ui-draggable ui-draggable-handle" style="left: '+v7x+'px; top: '+v7y+'px; color: transparent; border-color: transparent; opacity: 0.8; transform: scale(1); border-width: 1px; padding-top: 4px; z-index: 1000; background: url(http://yuchikurov.ru/wp-content/themes/eddiemachado-bones-611c04e/library/images/edinenie_s_tvorcom.jpg) 0px 0px / 100% no-repeat rgb(255, 255, 255);">V3</div>');
                     setTimeout(function(){
