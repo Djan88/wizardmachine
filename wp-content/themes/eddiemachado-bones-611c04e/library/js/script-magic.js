@@ -137,7 +137,7 @@ jQuery( ".btn__wizard" ).on('click', function(event) {
     v3status = true;
     if(protocol == 'resource'){
         checkV3();
-        if(pointsStatus == false){
+        if(v3status == false){
             swal("Не перенесена зона V3", "Для выполнения процедуры необходимо перенести зону V3", "info");
         } else {
             jQuery(this)
