@@ -17,7 +17,7 @@
         resorceGlobal,
         resorceGlobalCount = 0,
         v2,
-        zZone = '3',
+        zZone = '#draggable3',
         v3;
 
 
@@ -3027,7 +3027,7 @@ resource = function(){
                 });
             }
             resorceGlobal -= 1;
-            jQuery('#draggable3'+zZone).css({
+            jQuery(zZone).css({
                 color: 'transparent',
                 borderColor: 'transparent',
                 opacity: 0.8,
