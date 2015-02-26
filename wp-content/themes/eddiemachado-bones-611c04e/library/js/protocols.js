@@ -20,12 +20,6 @@
         zZone = '#draggable3',
         v3;
 
-
-    //РЕСУРС выбор основной зоны
-    jQuery('.v-zone').on('click', function() {
-        zZone = jQuery(this).val();
-        console.log('zZone '+zZone);
-    });
     onEnd = function(){
         swal({
             title: "Процедура окончена",   
@@ -3009,6 +3003,7 @@ v5 = function(){
 resource = function(){
     dinamicElem = true;
     resorceGlobal = 30;
+    zZone = localStorage.getItem('curVZone');
     phaseOne = setInterval(function(){
         if (resorceGlobal >= 1){
             jQuery('body').addClass('dinamic');
@@ -3065,5 +3060,5 @@ v7 = function(){
     onEnd();
     jQuery( ".btn__wizard" )
         .text('Выполнить')
-        .removeClass('btn__wizard_inAction'); 
+        .removeClass('btn__wizard_inAction');
 }

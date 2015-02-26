@@ -57,7 +57,7 @@
                             <div class="zone-choice_wrap">
                                 <div class="zone-choice_item"><input class="v-zone" type="radio" name="radiobutton" value="#draggable1" id="V1"><label for="V1">V1</label></div>
                                 <div class="zone-choice_item"><input class="v-zone" type="radio" name="radiobutton" value="#draggable2" id="V2"><label for="V2">V2</label></div>
-                                <div class="zone-choice_item"><input class="v-zone" type="radio" name="radiobutton" value="#draggable3" id="V3"><label for="V3">V3</label></div>
+                                <div class="zone-choice_item"><input class="v-zone" type="radio" name="radiobutton" checked="checked" value="#draggable3" id="V3"><label for="V3">V3</label></div>
                                 <div class="zone-choice_item"><input class="v-zone" type="radio" name="radiobutton" value="#draggable4" id="V4"><label for="V4">V4</label></div>
                                 <div class="zone-choice_item"><input class="v-zone" type="radio" name="radiobutton" value="#draggable5" id="V5"><label for="V5">V5</label></div>
                             </div>

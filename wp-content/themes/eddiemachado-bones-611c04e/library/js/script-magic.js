@@ -23,6 +23,7 @@ jQuery(function() {
     //РЕСУРС выбор основной зоны
     jQuery('.v-zone').on('click', function() {
         curVZone = jQuery(this).val();
+        localStorage.setItem('curVZone', curVZone);
         console.log('curVZone '+curVZone);
     });
 
@@ -36,6 +37,9 @@ jQuery(function() {
         });
     }
     checkV3 = function(){
+        if(supportsStorage && localStorage.getItem('curChoice')){
+            curVZone = localStorage.getItem('curVZone');
+        };
         console.log('curVZone= '+curVZone);
         jQuery(curVZone).each(function() {
             console.log(jQuery(curVZone));
