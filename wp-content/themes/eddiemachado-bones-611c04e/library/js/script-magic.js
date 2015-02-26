@@ -11,6 +11,7 @@ jQuery(function() {
         main_heading,
         pointsStatus = true,
         v3status = true,
+        zZone = 'V1',
         supportsStorage = function(){
             try {
                 return 'localStorage' in window && window['localStorage'] !== null;
@@ -47,6 +48,11 @@ jQuery(function() {
             jQuery('.btn_back').removeClass('hidden');
         }
     }
+    //РЕСУРС выбор основной зоны
+    jQuery('.v-zone').on('click', function() {
+        zZone = jQuery(this).val();
+        console.log(zZone);
+    });
     //Получение данных из локального хранилища
     if(supportsStorage && localStorage.getItem('curChoice')){
         curChoice = localStorage.getItem('curChoice');

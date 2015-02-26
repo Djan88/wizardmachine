@@ -495,3 +495,20 @@ header .btn
 {
     margin-left: 5px;
 }
+.zone-choice_wrap 
+{
+    text-align: justify;
+}
+.zone-choice_wrap:after 
+{
+    content: "";
+    display: inline-block;
+    width: 99%;
+}
+.zone-choice_item 
+{
+    display: inline-block;
+    width: 45px;
+    padding-top: 15px;
+    height: 45px;
+}
