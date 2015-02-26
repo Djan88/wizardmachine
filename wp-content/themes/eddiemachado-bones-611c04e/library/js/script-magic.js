@@ -37,6 +37,7 @@ jQuery(function() {
     }
     checkV3 = function(){
         jQuery('#draggable'+curVZone).each(function() {
+            console.log(jQuery('#draggable'+curVZone));
             if(parseFloat(jQuery(this).css('left')) < 450){
                 v3status = false;
                 console.log('v3status '+v3status);
