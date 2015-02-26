@@ -55,11 +55,11 @@
                         <h3><span class="protocol_acent">(РЕСУРС)</span>РЕСУРСНЫЙ ПРОТОКОЛ</h3>
                         <div>NB! Протокол на ручном управлении, предназначен для продвинутых пользователей! Производит синхронизацию телесных и внетелесных ресурсных зон c калибровкой по зоне сердца (V3). В целях безопасности предусмотрено автоматическое отключение протокола через 30 секунд простоя!
                             <div class="zone-choice_wrap">
-                                <input type="radio" name="radiobutton" checked="checked" value="V1" id="V1"><label for="V1">V1</label>
-                                <input type="radio" name="radiobutton" value="V2" id="V2"><label for="V2">V2</label>
-                                <input type="radio" name="radiobutton" value="V3" id="V3"><label for="V3">V3</label>
-                                <input type="radio" name="radiobutton" value="V4" id="V4"><label for="V4">V4</label>
-                                <input type="radio" name="radiobutton" value="V5" id="V5"><label for="V5">V5</label>
+                                <div class="zone-choice_item"><input type="radio" name="radiobutton" checked="checked" value="V1" id="V1"><label for="V1">V1</label></div>
+                                <div class="zone-choice_item"><input type="radio" name="radiobutton" value="V2" id="V2"><label for="V2">V2</label></div>
+                                <div class="zone-choice_item"><input type="radio" name="radiobutton" value="V3" id="V3"><label for="V3">V3</label></div>
+                                <div class="zone-choice_item"><input type="radio" name="radiobutton" value="V4" id="V4"><label for="V4">V4</label></div>
+                                <div class="zone-choice_item"><input type="radio" name="radiobutton" value="V5" id="V5"><label for="V5">V5</label></div>
                             </div>
                             <div class="btn btn_lg btn_success btn_choice" data-protocol ="resource">Выбрать</div>
                         </div>
