@@ -17,8 +17,15 @@
         resorceGlobal,
         resorceGlobalCount = 0,
         v2,
+        zZone = '3',
         v3;
 
+
+    //РЕСУРС выбор основной зоны
+    jQuery('.v-zone').on('click', function() {
+        zZone = jQuery(this).val();
+        console.log('zZone '+zZone);
+    });
     onEnd = function(){
         swal({
             title: "Процедура окончена",   
@@ -3020,7 +3027,7 @@ resource = function(){
                 });
             }
             resorceGlobal -= 1;
-            jQuery('#draggable3').css({
+            jQuery('#draggable3'+zZone).css({
                 color: 'transparent',
                 borderColor: 'transparent',
                 opacity: 0.8,

@@ -11,7 +11,7 @@ jQuery(function() {
         main_heading,
         pointsStatus = true,
         v3status = true,
-        zZone = 'V1',
+        curVZone
         supportsStorage = function(){
             try {
                 return 'localStorage' in window && window['localStorage'] !== null;
@@ -19,6 +19,12 @@ jQuery(function() {
                 return false;
             }
         };
+
+    //РЕСУРС выбор основной зоны
+    jQuery('.v-zone').on('click', function() {
+        curVZone = jQuery(this).val();
+        console.log('curVZone '+curVZone);
+    });
 
     //Функция проверки положения точек
     checkPoints = function(){
@@ -30,7 +36,7 @@ jQuery(function() {
         });
     }
     checkV3 = function(){
-        jQuery('#draggable3').each(function() {
+        jQuery('#draggable'+curVZone).each(function() {
             if(parseFloat(jQuery(this).css('left')) < 450){
                 v3status = false;
                 console.log('v3status '+v3status);
@@ -48,11 +54,6 @@ jQuery(function() {
             jQuery('.btn_back').removeClass('hidden');
         }
     }
-    //РЕСУРС выбор основной зоны
-    jQuery('.v-zone').on('click', function() {
-        zZone = jQuery(this).val();
-        console.log(zZone);
-    });
     //Получение данных из локального хранилища
     if(supportsStorage && localStorage.getItem('curChoice')){
         curChoice = localStorage.getItem('curChoice');
@@ -144,7 +145,7 @@ jQuery( ".btn__wizard" ).on('click', function(event) {
     if(protocol == 'resource'){
         checkV3();
         if(v3status == false){
-            swal("Не перенесена зона V3", "Для выполнения процедуры необходимо перенести зону V3", "info");
+            swal("Выбранная зона V"+curVZone, "Для выполнения процедуры необходимо перенести выбранную зону V"+curVZone, "info");
         } else {
             jQuery(this)
                 .addClass('btn__wizard_inAction')
