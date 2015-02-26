@@ -36,6 +36,7 @@ jQuery(function() {
         });
     }
     checkV3 = function(){
+        console.log('curVZone= '+curVZone);
         jQuery(curVZone).each(function() {
             console.log(jQuery(curVZone));
             if(parseFloat(jQuery(this).css('left')) < 450){
