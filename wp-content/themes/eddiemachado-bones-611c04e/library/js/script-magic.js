@@ -23,7 +23,7 @@ jQuery(function() {
     //РЕСУРС выбор основной зоны
     jQuery('.v-zone').on('click', function() {
         curVZone = jQuery(this).val();
-        console.log(curVZone);
+        console.log('curVZone '+curVZone);
     });
 
     //Функция проверки положения точек
