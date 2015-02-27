@@ -151,6 +151,7 @@ jQuery(function() {
 jQuery( ".btn__wizard" ).on('click', function(event) {
     pointsStatus = true;
     v3status = true;
+    curV = localStorage.getItem('curV');
     if(protocol == 'resource'){
         checkV3();
         if(v3status == false){
