@@ -12,6 +12,7 @@ jQuery(function() {
         pointsStatus = true,
         v3status = true,
         curV = 'V3',
+        actualV,
         curVZone = '#draggable3',
         supportsStorage = function(){
             try {
@@ -29,6 +30,15 @@ jQuery(function() {
         localStorage.setItem('curV', curV);
         console.log('curVZone '+curVZone);
     });
+
+    //Запоминание выбранной зоны V в протоколе РЕСУРС
+    actualV = function(){
+        curV = localStorage.getItem('curV');
+        jQuery('.v-zone').each(function() {
+            jQuery(this).removeAttr('checked');
+            
+        });
+    }();
 
     //Функция проверки положения точек
     checkPoints = function(){
