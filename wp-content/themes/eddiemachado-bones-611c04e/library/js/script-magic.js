@@ -38,7 +38,11 @@ jQuery(function() {
             jQuery(this).removeAttr('checked');
             
         });
-        jQuery('#'+curV).attr('checked', 'checked');
+        if( curV && curV != null){
+            jQuery('#'+curV).attr('checked', 'checked');
+        } else {
+            jQuery('#V3').attr('checked', 'checked');
+        }
     }();
 
     //Функция проверки положения точек
