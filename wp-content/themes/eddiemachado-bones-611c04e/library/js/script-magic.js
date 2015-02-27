@@ -11,6 +11,7 @@ jQuery(function() {
         main_heading,
         pointsStatus = true,
         v3status = true,
+        curV = 'V3',
         curVZone = '#draggable3',
         supportsStorage = function(){
             try {
@@ -23,7 +24,9 @@ jQuery(function() {
     //РЕСУРС выбор основной зоны
     jQuery('.v-zone').on('click', function() {
         curVZone = jQuery(this).val();
+        curV = jQuery(this).attr('id');
         localStorage.setItem('curVZone', curVZone);
+        localStorage.setItem('curV', curV);
         console.log('curVZone '+curVZone);
     });
 
@@ -151,7 +154,7 @@ jQuery( ".btn__wizard" ).on('click', function(event) {
     if(protocol == 'resource'){
         checkV3();
         if(v3status == false){
-            swal("Выбранная зона V не перенесена", "Для выполнения процедуры необходимо перенести выбранную зону V", "info");
+            swal("Зона "+curV+" не перенесена", "Для выполнения процедуры необходимо перенести зону "+curV, "info");
         } else {
             jQuery(this)
                 .addClass('btn__wizard_inAction')
