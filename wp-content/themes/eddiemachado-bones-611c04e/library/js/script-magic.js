@@ -227,6 +227,8 @@ jQuery('#main').on('click', '.fast-protocol', function() {
 });
 jQuery('#main').on('click', '.fast-v', function() {
     curV = jQuery(this).text();
+    curVZone = jQuery(this).data('v');
+    localStorage.setItem('curVZone', curVZone);
     localStorage.setItem('curV', curV);
     jQuery('.fast-protocol-resource')
         .addClass('hidden')
