@@ -38,7 +38,7 @@ jQuery(function() {
             jQuery(this).removeAttr('checked');
             
         });
-        if( curVZone && curVZone != null){
+        if( curVZone !== null){
             jQuery('#'+curV).attr('checked', 'checked');
         } else {
             jQuery('#V3').attr('checked', 'checked');
