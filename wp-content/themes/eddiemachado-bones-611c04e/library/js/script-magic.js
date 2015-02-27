@@ -42,6 +42,7 @@ jQuery(function() {
             jQuery('#'+curV).attr('checked', 'checked');
         } else {
             jQuery('#V3').attr('checked', 'checked');
+            curVZone = '#draggable3';
         }
     }();
 
