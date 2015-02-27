@@ -33,17 +33,16 @@ jQuery(function() {
 
     //Запоминание выбранной зоны V в протоколе РЕСУРС
     actualV = function(){
-        curV = localStorage.getItem('curV');
+        if(supportsStorage && localStorage.getItem('curV')){
+            curV = localStorage.getItem('curV');
+        } else {
+            curV = "V3";
+        };
         jQuery('.v-zone').each(function() {
             jQuery(this).removeAttr('checked');
             
         });
-        if( curVZone !== null){
-            jQuery('#'+curV).attr('checked', 'checked');
-        } else {
-            jQuery('#V3').attr('checked', 'checked');
-            curVZone = '#draggable3';
-        }
+        jQuery('#'+curV).attr('checked', 'checked');
     }();
 
     //Функция проверки положения точек
