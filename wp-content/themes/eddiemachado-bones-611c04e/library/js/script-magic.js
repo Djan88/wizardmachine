@@ -59,7 +59,7 @@ jQuery(function() {
             curVZone = localStorage.getItem('curVZone');
         } else {
             localStorage.setItem('curVZone', '#draggable3');
-            curVZone = localStorage.getItem('curVZone');
+            curVZone = "#draggable3";
         };
         console.log('curVZone= '+curVZone);
         jQuery(curVZone).each(function() {
