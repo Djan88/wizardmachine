@@ -38,6 +38,7 @@ jQuery(function() {
             jQuery(this).removeAttr('checked');
             
         });
+        jQuery('#'+curV).attr('checked', 'checked');
     }();
 
     //Функция проверки положения точек
