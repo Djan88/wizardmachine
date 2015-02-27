@@ -57,6 +57,9 @@ jQuery(function() {
     checkV3 = function(){
         if(supportsStorage && localStorage.getItem('curChoice')){
             curVZone = localStorage.getItem('curVZone');
+        } else {
+            localStorage.setItem('curVZone', '#draggable3');
+            curVZone = localStorage.getItem('curVZone');
         };
         console.log('curVZone= '+curVZone);
         jQuery(curVZone).each(function() {
