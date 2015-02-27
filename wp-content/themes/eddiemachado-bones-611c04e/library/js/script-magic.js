@@ -37,6 +37,7 @@ jQuery(function() {
             curV = localStorage.getItem('curV');
         } else {
             curV = "V3";
+            localStorage.setItem('curVZone', '#draggable3');
         };
         jQuery('.v-zone').each(function() {
             jQuery(this).removeAttr('checked');
