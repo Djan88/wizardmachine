@@ -33,6 +33,12 @@
                   <div class="btn btn_sm btn_warning fast-protocol" data-fast="v5">V5</div>
                   <div class="btn btn_sm btn_warning fast-protocol" data-fast="resource">РЕСУРС</div>
                 </div>
+                <div class="fast-protocol-resource clearfix hidden">
+                  <div class="btn btn_sm btn_warning fast-v">V2</div> 
+                  <div class="btn btn_sm btn_warning fast-v">V3</div> 
+                  <div class="btn btn_sm btn_warning fast-v">V4</div> 
+                  <div class="btn btn_sm btn_warning fast-v">V5</div>
+                </div>
 
                 <div class="steps clearfix">
                     <!-- <div class="steps-center"><hr></div>
@@ -53,7 +59,7 @@
                         <h3><span class="protocol_acent">(V5)</span>ОДНИ И ТЕ ЖЕ "ГРАБЛИ»: РЕЦИВЫ ПРОБЛЕМНЫХ СИТУАЦИЙ В ЛИЧНОЙ ЖИЗНИ</h3>
                         <div>Насильственное следование некой жизненной стратегии, стойкие убеждения и ценности, основанные на опасениях и самоограничениях, навязчивые мысли и действия  по типу "частого мытья рук» или чего иного, постоянное беспокойство по поводу «курса валют»; ситуации по проверке себя с вовлечением окружающих «…ой, а не забыл ли я выключить чайник…утюг…газовый кран.. .дверь дома», «…проверь ты, а то я не уверен/на..»; страх высоты или нанесения себе повреждения ножиком или другим опасным предметом; создание больших запасов еды по типу «битком забитого холодильника, мешка сахара и муки»<div class="btn btn_lg btn_success btn_choice" data-protocol ="v5">Выбрать</div></div>
                         <h3><span class="protocol_acent">(РЕСУРС)</span>РЕСУРСНЫЙ ПРОТОКОЛ</h3>
-                        <div>NB! Протокол на ручном управлении, предназначен для продвинутых пользователей! Производит синхронизацию телесных и внетелесных ресурсных зон c калибровкой по зоне сердца (V3). В целях безопасности предусмотрено автоматическое отключение протокола через 30 секунд простоя!
+                        <div>NB! Протокол на ручном управлении, предназначен для продвинутых пользователей! Проводит синхронизацию телесных и внетелесных ресурсных зон c калибровкой по зонам вентральной оси (V). Начинать терапию следует с актуальной зоны, либо с V3. Выбор ресурсной внетелесной зоны и постановку на ней формулы щелчком мышки компьютера, терапевт производит самостоятельно путем  перцептивного выбора. В целях безопасности предусмотрено автоматическое отключение протокола через 30 секунд простоя!
                             <div class="zone-choice_wrap">
                                 <div class="zone-choice_item"><input class="v-zone" type="radio" name="radiobutton" value="#draggable1" id="V1"><label for="V1">V1</label></div>
                                 <div class="zone-choice_item"><input class="v-zone" type="radio" name="radiobutton" value="#draggable2" id="V2"><label for="V2">V2</label></div>

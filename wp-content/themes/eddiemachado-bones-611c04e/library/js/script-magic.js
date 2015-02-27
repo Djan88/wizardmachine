@@ -219,6 +219,18 @@ jQuery('#main').on('click', '.fast-protocol', function() {
     jQuery('.fast-protocol-wrap')
         .addClass('hidden')
         .removeClass('fadeIn');
+    if(protocol == 'resource'){
+        jQuery('.fast-protocol-resource')
+            .removeClass('hidden')
+            .addClass('fadeIn');
+    }
+});
+jQuery('#main').on('click', '.fast-v', function() {
+    curV = jQuery(this).text();
+    localStorage.setItem('curV', curV);
+    jQuery('.fast-protocol-resource')
+        .addClass('hidden')
+        .removeClass('fadeIn');
 });
 
 // Возврат на предыдущий шаг

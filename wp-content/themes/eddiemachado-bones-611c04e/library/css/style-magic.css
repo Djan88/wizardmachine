@@ -421,7 +421,7 @@ path {
 {
     font-weight: 100;
 }
-.fast-protocol-wrap 
+.fast-protocol-wrap, .fast-protocol-resource 
 {
     text-align: justify;
     width: 50%;
@@ -431,13 +431,13 @@ path {
     z-index: 5;
     height: 40px;
 }
-.fast-protocol-wrap:after 
+.fast-protocol-wrap:after, .fast-protocol-resource:after
 {
     display: inline-block;
     width: 99%;
 }
 
-.fast-protocol
+.fast-protocol, .fast-v
 {
     font-weight: 600;
     padding: 7px 25px;
