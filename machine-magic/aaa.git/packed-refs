@@ -1,0 +1,4 @@
+# pack-refs with: peeled fully-peeled 
+c46e7d70714871262bde0dae8a489aaf9bafdb9e refs/remotes/origin/ivan-magic
+2d1512b3c723409aa4f13484d0c6a633234a29c6 refs/remotes/origin/master
+d8b8bfb42165e3bd6ea4cad754356928731a70e8 refs/remotes/origin/someone

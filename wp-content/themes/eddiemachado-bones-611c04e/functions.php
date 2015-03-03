@@ -8,6 +8,15 @@ just edit things like thumbnail sizes, header images,
 sidebars, comments, ect.
 */
 
+function users_redirect(){
+wp_redirect(site_url('/wizard'));
+die();
+}
+if(!current_user_can('manage_options')){
+add_action('admin_init','users_redirect');
+add_filter('login_redirect', 'users_redirect');
+}
+
 // LOAD BONES CORE (if you remove this, the theme will break)
 require_once( 'library/bones.php' );
 
@@ -286,20 +295,22 @@ add_action('login_head', 'my_custom_login_logo');
 function uploadImageFile() { // Note: GD library is required for this function
 
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-        $iWidth = $iHeight = 200; // desired image result dimensions
+        //$iWidth = $iHeight = 200; // desired image result dimensions
         $iJpgQuality = 90;
 
         if ($_FILES) {
 
             // if no errors and size less than 250kb
-            if (! $_FILES['image_file']['error'] && $_FILES['image_file']['size'] < 250 * 1024) {
-                if (is_uploaded_file($_FILES['image_file']['tmp_name'])) {
+            if (! $_FILES['mci_image_file']['error'] && $_FILES['mci_image_file']['size'] < 15 * 1024 * 1024) {
+                if (is_uploaded_file($_FILES['mci_image_file']['tmp_name'])) {
 
                     // new unique filename
-                    $sTempFileName = 'cache/' . md5(time().rand());
+                    $sTempFileName = 'wp-content/uploads/cropped/' . md5(time().rand());
 
                     // move uploaded file into cache folder
-                    move_uploaded_file($_FILES['image_file']['tmp_name'], $sTempFileName);
+                    move_uploaded_file($_FILES['mci_image_file']['tmp_name'], $sTempFileName);
+
+
 
                     // change file permission to 644
                     @chmod($sTempFileName, 0644);
@@ -330,31 +341,98 @@ function uploadImageFile() { // Note: GD library is required for this function
                                 return;
                         }
 
+                        //exif only supports jpg in our supported file types
+                        if ($sExt == ".jpg") {
+                            $exif = exif_read_data($sTempFileName);
+
+                            //get the orientation
+                            if(isset($exif['Orientation'])) $orientation = $exif['Orientation'];
+                            elseif(isset($exif['COMPUTED']) && isset($exif['COMPUTED']['Orientation'])) $orientation = $exif['COMPUTED']['Orientation'];
+                            elseif(isset($exif['IFD0']) && isset($exif['IFD0']['Orientation'])) $orientation = $exif['IFD0']['Orientation'];
+
+                            switch($orientation){
+                                case 8:
+                                    $vImg = imagerotate($vImg, 90, 0);
+                                    $tmp = $aSize[0];
+                                    $aSize[0] = $aSize[1];
+                                    $aSize[1] = $tmp;
+                                    break;
+                                case 3:
+                                    $vImg = imagerotate($vImg, 180, 0);
+                                    break;
+                                case 6:
+                                    $vImg = imagerotate($vImg, -90, 0);
+                                    $tmp = $aSize[0];
+                                    $aSize[0] = $aSize[1];
+                                    $aSize[1] = $tmp;
+                                    break;
+                            }
+                        }
+
+                        if($aSize[0] <= 800 && $_POST['mci_w']){
+                            $k = 1;
+                        }else{
+                            $k = $aSize[0] / 800;
+                        }
+
+                        if(!$_POST['mci_x1']) $_POST['mci_x1'] = 0;
+                        if(!$_POST['mci_y1']) $_POST['mci_y1'] = 0;
+                        if(!$_POST['mci_w']) $_POST['mci_w'] = 800;
+                        if(!$_POST['mci_h']) $_POST['mci_h'] = $aSize[1] / $k;
+
+                        $iWidth = (int)$_POST['mci_w'];
+                        $iHeight = (int)$_POST['mci_h'];
+
                         // create a new true color image
                         $vDstImg = @imagecreatetruecolor( $iWidth, $iHeight );
 
                         // copy and resize part of an image with resampling
-                        imagecopyresampled($vDstImg, $vImg, 0, 0, (int)$_POST['x1'], (int)$_POST['y1'], $iWidth, $iHeight, (int)$_POST['w'], (int)$_POST['h']);
+                        imagecopyresampled($vDstImg, $vImg, 0, 0, (int)($_POST['mci_x1'] * $k), (int)($_POST['mci_y1'] * $k), $iWidth, $iHeight, (int)($_POST['mci_w'] * $k), (int)($_POST['mci_h'] * $k));
 
                         // define a result image filename
-                        $sResultFileName = $sTempFileName . $sExt;
+                        $sResultFileName = $sTempFileName . '.jpg';
 
                         // output image to file
                         imagejpeg($vDstImg, $sResultFileName, $iJpgQuality);
                         @unlink($sTempFileName);
 
-                        return $sResultFileName;
+                        return '/' . $sResultFileName;
                     }
                 }
             }
         }
     }
 }
-
-if($_POST['magic']){
-  var_dump($_POST);
-  $sImage = uploadImageFile();
-  echo '<img src="'.$sImage.'" />';
-}
+//
+//function image_flip(&$image, $x = 0, $y = 0, $width = null, $height = null) {
+//    if ($width  < 1) $width  = imagesx($image);
+//    if ($height < 1) $height = imagesy($image);
+//
+//    // Truecolor provides better results, if possible.
+//    if (function_exists('imageistruecolor') && imageistruecolor($image)) {
+//        $tmp = imagecreatetruecolor(1, $height);
+//    } else {
+//        $tmp = imagecreate(1, $height);
+//    }
+//
+//    $x2 = $x + $width - 1;
+//
+//    for ($i = (int)floor(($width - 1) / 2); $i >= 0; $i--) {
+//
+//        // Backup right stripe.
+//        imagecopy($tmp, $image, 0, 0, $x2 - $i, $y, 1, $height);
+//
+//        // Copy left stripe to the right.
+//        imagecopy($image, $image, $x2 - $i, $y, $x + $i, $y, 1, $height);
+//
+//        // Copy backuped right stripe to the left.
+//        imagecopy($image, $tmp, $x + $i,  $y, 0, 0, 1, $height);
+//
+//    }
+//
+//    imagedestroy($tmp);
+//
+//    return true;
+//}
 
 /* DON'T DELETE THIS CLOSING TAG */ ?>

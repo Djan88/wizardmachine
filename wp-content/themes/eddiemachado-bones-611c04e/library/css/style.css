@@ -698,9 +698,11 @@ them however you see fit.
     width: 33.33%; }
 
   .t-2of3 {
-    float: left;
+    /*float: left;*/
     padding-right: 0.75em;
-    width: 66.66%; }
+    /*width: 66.66%; */
+    min-width: 830px;
+  }
 
   .t-1of4 {
     float: left;
@@ -1246,14 +1248,41 @@ and will be used across all viewports.
 /*********************
 GENERAL STYLES
 *********************/
-body {
+body 
+{
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 100%;
   line-height: 1.5;
-  color: #5c6b80;
-  background-color: #eaedf2;
-  -webkit-font-smoothing: antialiased; }
-
+  color: #000;
+  background: url(../images/point-bgr.png);
+  -webkit-font-smoothing: antialiased; 
+  -moz-hyphens: none!important;
+  -ms-hyphens: none!important;
+  -webkit-hyphens: none!important;
+  hyphens: none!important;
+}
+body.home
+{
+  background: url(../images/bg_wizard.jpg) 80% 50%/110%;
+  background-size: cover;
+}
+body.home #main
+{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*height: 40em;*/
+}
+/*.home .note_small a
+{
+  color: !important;
+}*/
+.note_small
+{
+  padding: 0 0 10px;
+}
 /********************
 WORDPRESS BODY CLASSES
 style a page via class
@@ -1296,27 +1325,30 @@ style a page via class
 /*********************
 LAYOUT & GRID STYLES
 *********************/
-.wrap {
+.wrap 
+{
   width: 96%;
-  margin: 0 auto; }
+  min-width: 960px;
+  margin: 0 auto; 
+}
 
 /*********************
 LINK STYLES
 *********************/
 a, a:visited {
-  color: #f01d4f;
+  /*color: #f01d4f;*/
   /* on hover */
   /* on click */
   /* mobile tap color */ }
   a:hover, a:focus, a:visited:hover, a:visited:focus {
     color: #d10e3c; }
-  a:link, a:visited:link {
+  /*a:link, a:visited:link {*/
     /*
     this highlights links on iPhones/iPads.
     so it basically works like the :hover selector
     for mobile devices.
     */
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3); }
+    /*-webkit-tap-highlight-color: rgba(0, 0, 0, 0.3); }*/
 
 /******************************************************************
 H1, H2, H3, H4, H5 STYLES
@@ -1358,12 +1390,31 @@ h5, .h5 {
 HEADER STYLES
 *********************/
 .header {
-  background-color: #323944; }
-
-#logo {
-  margin: 0.75em 0; }
+  /*background: url(../images/topbar_bg.png) center -45px/100% no-repeat;*/
+  background: #F4F4F4;
+  height: 50px;
+  -webkit-box-shadow: 0 1px 8px #d3cec7;
+  -moz-box-shadow: 0 1px 8px #d3cec7;
+  -ms-box-shadow: 0 1px 8px #d3cec7;
+  -o-box-shadow: 0 1px 8px #d3cec7;
+  box-shadow: 0 1px 8px #d3cec7;
+  position: fixed;
+  z-index: 4;
+  width: 100%;
+}
+.btn.btn_logout 
+{
+  float: right;
+  text-transform: uppercase;
+  font-weight: 600!important;
+}
+#logo 
+{
+  margin: 10px 0;
+  float: left;
+}
   #logo a {
-    color: white; }
+    color: #eb592a; }
 
 /*********************
 NAVIGATION STYLES
@@ -1393,8 +1444,7 @@ and more scalable.
       display: block;
       color: white;
       text-decoration: none;
-      padding: 0.75em;
-      /*
+      padding: 0.6em 0.75em;      /*
       remember this is for mobile ONLY, so there's no need
       to even declare hover styles here, you can do it in
       the style.scss file where it's relevant. We want to
@@ -1409,13 +1459,23 @@ and more scalable.
 POSTS & CONTENT STYLES
 *********************/
 #content {
-  margin-top: 1.5em; }
+  padding-top: 30px; 
+}
 
-.hentry {
+.hentry, .sidebar
+{
   background-color: white;
   border-radius: 3px;
   margin-bottom: 1.5em;
-  border: 1px solid #cccccc; }
+  /*border: 1px solid #cccccc; */
+  margin-top: 60px;
+  position: relative;
+  -webkit-box-shadow: 0 1px 8px #d3cec7;
+  -moz-box-shadow: 0 1px 8px #d3cec7;
+  -ms-box-shadow: 0 1px 8px #d3cec7;
+  -o-box-shadow: 0 1px 8px #d3cec7;
+  box-shadow: 0 1px 8px #d3cec7;
+}
   .hentry header {
     border-bottom: 1px solid #f8f9fa;
     padding: 1.5em; }
@@ -1854,7 +1914,9 @@ you can add resource intensive styles.
   LAYOUT & GRID STYLES
   *********************/
   .wrap {
-    width: 760px; }
+    /*width: 760px; */
+    min-width: 960px;
+  }
 
   /*********************
   HEADER STYLES
@@ -1879,13 +1941,25 @@ you can add resource intensive styles.
       /* showing sub-menus */ }
       .nav li a {
         border-bottom: 0;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 600;
+        border: 1px solid;
+        border-radius: 5px;
+        margin-right: 5px;
+        background: #333;
+        -webkit-transition: all 0.2s ease-in;
+           -moz-transition: all 0.2s ease-in;
+                transition: all 0.2s ease-in;
         /*
         you can use hover styles here even though this size
         has the possibility of being a mobile device.
         */ }
         .nav li a:hover, .nav li a:focus {
-          color: white;
-          text-decoration: underline; }
+          color: #fff;
+          background: #eb592a;
+          /*text-decoration: underline; */
+        }
       .nav li ul.sub-menu,
       .nav li ul.children {
         margin-top: 0;
@@ -1925,7 +1999,8 @@ you can add resource intensive styles.
   SIDEBARS & ASIDES
   *********************/
   .sidebar {
-    margin-top: 2.2em; }
+    margin-top: 55px; 
+  }
 
   .widgettitle {
     border-bottom: 2px solid #444;
@@ -1986,7 +2061,14 @@ you can add resource intensive styles.
   
   ******************************************************************/
   .wrap {
-    width: 1040px; } }
+    width: 1040px; 
+    padding: 10px 10px 0;
+    } }
+
+  #inner-header.wrap, #inner-footer.wrap
+  {
+    border: none;
+  }
 /*********************
 LARGE VIEWING SIZE
 This is for the larger monitors and possibly full screen viewers.
@@ -2029,9 +2111,9 @@ query for retina AND a certain size if you want. Go Nuts.
   like this:
   
   .icon {
-  	width: 24px;
-  	height: 24px;
-  	background: url(img/test.png) no-repeat;
+    width: 24px;
+    height: 24px;
+    background: url(img/test.png) no-repeat;
   }
   
   For retina screens, we have to make some adjustments, so that image
@@ -2039,8 +2121,8 @@ query for retina AND a certain size if you want. Go Nuts.
   dimensions, this is what we would put in our retina stylesheet:
   
   .icon {
-  	background: url(img/test@2x.png) no-repeat;
-  	background-size: 24px 24px;
+    background: url(img/test@2x.png) no-repeat;
+    background-size: 24px 24px;
   }
   
   So, you would create the same icon, but at double the resolution, meaning 
@@ -2120,10 +2202,433 @@ be set to display none.
 .home-page-content
 {
     min-height: 300px;
+    background: #F4F4F4;
+    padding: 20px;
+    margin: 10px auto 30px;
+    position: relative;
+    -webkit-box-shadow: 0 1px 8px #d3cec7;
+    -moz-box-shadow: 0 1px 8px #d3cec7;
+    -ms-box-shadow: 0 1px 8px #d3cec7;
+    -o-box-shadow: 0 1px 8px #d3cec7;
+    box-shadow: 0 1px 8px #d3cec7;
 }
-
-.home-page-content p
+.home .home-page-content
 {
+    width: 600px;
+    margin: auto;
+    background: none;
+    color: #fff;
+    box-shadow: none;
     text-align: center;
 }
+.home .login__form input#wp-submit, .home a
+{
+  color: #fff;
+}
+.home .home-page-content .home-content
+{
+  font-size: 25px;
+}
+.home .home-page-content:before, .home .home-page-content:after
+{
+  display: none;
+}
+.home-page-content:before, .hentry:before, .sidebar:before
+{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: -5px;
+  left: 0;
+  /*background: url(../images/block_bg.png) 0 0/100% no-repeat;*/
+  height: 10px;
+}
+.home-page-content:after 
+{
+  content: '';
+  display: block;
+  height: 20px;
+  width: 100%;
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  /*background: url(../images/block_bg_rotate.png) 0 0/100% no-repeat;*/
+}
+.sidebar:before
+{
+  background: url(../images/block_bg.png) 0 0/200% no-repeat;
+  top: -5px;
+}
+.home-page-content p
+{
+    /*text-align: center;*/
+}
+#inner-header 
+{
+  position: relative;
+}
+#menu-the-main-menu 
+{
+  text-align: right;
+  position: absolute;
+  right: 0;
+  top: 20px;
+}
+.home-content iframe
+{
+  display: block;
+  margin: auto;
+}
+.home .btn_trans 
+{
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+.home-content 
+{
+  /*margin-top: 60px;*/
+  font-size: 18px;
+}
+.login__form input 
+{
+  margin: auto;
+}
+.login__form 
+{
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  max-width: 560px;
+  margin: auto;
+  text-align: center;
+}
+.home .login__form
+{
+  border-color: #fff;
+  margin-top: 20px;
+}
+.login__form p 
+{
+  margin: 5px;
+}
+.login__form .input, input:-webkit-autofill
+{
+  margin: auto;
+  background: #eaedf2!important;
+  border: 1px solid #ccc;
+}
+.home .login__form input,.home input:-webkit-autofill, .home a
+{
+  margin: auto;
+  border: 1px solid #fff;
+  background: transparent!important;
+}
+.login__form input#wp-submit, .home a
+{
+  border: 1px solid #ccc;
+  color: #000;
+  background: transparent;
+}
+.login__form input#wp-submit:hover
+{
+  background: #eb592a;
+  color: #fff;
+  border-color: transparent;
+}
+.home .login__form input#wp-submit:hover
+{
+  background: rgba(255,255,255, 0.2)!important;
+  border: 1px solid #fff;
+}
+.hidden
+{
+  display: none!important;
+}
+.invisible
+{
+  visibility: hidden!important;
+}
+.login-area 
+{
+  padding: 20px;
+  text-align: center;
+  background: #dc7037;
+  color: #fff;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 500;
+  position: relative;
+}
+.login-area a
+{
+  color: #fff;
+}
+.btn
+{
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    -webkit-transition: all 0.2s ease-in;
+       -moz-transition: all 0.2s ease-in;
+            transition: all 0.2s ease-in;
+}
+.btn:hover
+{
+  color: #fff!important;
+}
+.btn_lg
+{
+    padding: 10px 16px;
+    font-size: 20px;
+    line-height: 1.33;
+    border-radius: 6px;
+}
+.btn_sm
+{
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+}
+.btn_success
+{
+    /*background-color: #56C800;*/
+    background: #204371;
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+}
+.btn_primary
+{
+    background-color: #428bca;
+}
+.btn_warning
+{
+    border-color: #204371;
+    color: #204371;
+}.btn_neitral
+{
+    border-color: #fff;
+    color: #fff;
+}
+.btn_warning:hover, .btn_neitral:hover
+{
+    background-color: #204371;
+}
+.btn_primary:hover
+{
+    background-color: #3071a9;
+}
+.btn_success:active, .btn_success:focus, .btn_success:hover, .btn_choice:hover:after, .btn_choice__choiced, .btn_choice__choiced:after
+{
+    /*background: linear-gradient(to bottom, #68B000, #ACF52D);*/
+    -webkit-box-shadow: 0px 0px 10px #204371;
+       -moz-box-shadow: 0px 0px 10px #204371;
+            box-shadow: 0px 0px 10px #204371;
+}
+.btn_warning:active, .btn_warning:focus
+{
+    background-color: #ec971f;
+    -webkit-box-shadow: 0px 0px 10px #ec971f;
+       -moz-box-shadow: 0px 0px 10px #ec971f;
+            box-shadow: 0px 0px 10px #ec971f;
+}
+.btn_primary:active, .btn_primary:focus
+{
+    background-color: #3071a9;
+    -webkit-box-shadow: 0px 0px 10px #285e8e;
+       -moz-box-shadow: 0px 0px 10px #285e8e;
+            box-shadow: 0px 0px 10px #285e8e;
+}
+.btn_login 
+{
+  position: absolute;
+  top: -30px;
+  left: 36%;
+}
+.btn_sign
+{
+  position: absolute;
+  bottom: -30px;
+  z-index: 2;
+  left: 35.5%;
+}
+.select_program .btn
+{
+  color: #fff;
+}
+.btn_choice
+{
+  display: block;
+  width: 125px;
+  text-align: left;
+  padding-left: 25px;
+  margin: auto;
+  position: relative;
+  margin-top: 40px;
+  overflow: hidden;
+  border: none;
+  -webkit-transition: width 0.2s linear;
+     -moz-transition: width 0.2s linear;
+          transition: width 0.2s linear;
+}
+.steps 
+{
+  text-align: center;
+  width: 90%;
+  position: relative;
+  z-index: 2;
+  margin: auto;
+  height: 30px;
+}
+.steps h3
+{
+  font-weight: 200;
+  margin: 0;
+  text-transform: uppercase;
+}
+.steps:after
+{
+  content: "";
+  display: inline-block;
+  width: 99%;
+}
+.steps-center 
+{
+  position: absolute;
+  width: 100%;
+  padding: 0 5%;
+  z-index: -1;
+  top: 13px;
+}
+.step
+{
+  width: 40px;
+  height: 40px;
+  margin: 0 20px;
+  border-radius: 50%;
+  padding-top: 1px;
+  padding-left: 13px;
+  font-size: 25px;
+  display: inline-block;
+  cursor: default;
+  background: #ccc;
+  color: #fff;
+  -webkit-transition: background 0.2s linear;
+  -moz-transition: background 0.2s linear;
+  transition: background 0.2s linear;
+}
+.step_now
+{
+  background: #ec971f;
+}
+.step_done
+{
+  background: #68B000;
+}
+.btn_back 
+{
+  /*display: block;
+  margin: auto;
+  width: 120px;
+  border: 1px solid #204371;
+  background: transparent;
+  color: #204371;
+  text-transform: uppercase;
+  font-weight: 600;
+  position: absolute;
+  padding-left: 35px;
+  margin-bottom: 15px;
+  left: 44%;
+  top: 85px;
+  z-index: 10;*/
+}
+.work-area .btn_back 
+{
+  top: 40%;
+}
+.btn_back:hover
+{
+  color: #fff!important;
+  background: #204371;
+  /* -webkit-box-shadow: 0px 0px 10px #68B000; */
+  /*-moz-box-shadow: 0px 0px 10px #68B000;*/
+  /* box-shadow: 0px 0px 10px #68B000; */
+}
+.btn_back span 
+{
+  position: absolute;
+  left: 10px;
+  font-size: 60px;
+  top: -38px;
+}
+.btn_choice pre
+{
+  font-size: 35px;
+  display: inline;
+  position: absolute;
+  top: 0;
+}
+/*.btn_choice:after
+{
+  content: '✓';
+  display: block;
+  position: absolute;
+  right: -40px;
+  bottom: -1px;
+  font-size: 35px;
+  padding-right: 15px;
+  background: #68B000;
+  border: 1px solid #fff;
+  border-left: none;
+  border-radius: 6px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  opacity: 0;
+}*/
+.btn_choice__choiced 
+{
+  width: 160px;
+}
+.btn_choice.btn_choice__choiced:after
+{
+  opacity: 1;
+}
+.login-area .btn_success 
+{
+  position: absolute;
+  left: 50px;
+}
+.login-area .btn_warning 
+{
+  position: absolute;
+  right: 50px;
+}
+.bbody
+{
+  background: none!important;
+}
 
+
+.cropme 
+{
+  background-color: #f1f1f1;
+  background-image: url('../images/UploadLight.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.cropme:hover 
+{
+  background-image: url('../images/UploadDark.png');
+}
