@@ -536,3 +536,15 @@ header .btn
 {
     vertical-align: middle;
 }
+.page-template-pay_form-php #inner-content 
+{
+    text-align: center;
+}
+.page-template-pay_form-php h1.page-title 
+{
+    padding-bottom: 20px;
+}
+form.pay-form 
+{
+    display: inline-block;
+}
