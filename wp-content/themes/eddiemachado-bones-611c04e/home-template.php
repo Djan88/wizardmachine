@@ -34,7 +34,7 @@
                         <?php if(is_user_logged_in()){ ?>
                             <a class="button button-primary button-large" href="<?php echo home_url(); ?>/wp-login.php?action=logout&amp;_wpnonce=a6cad512ba">Выйти</a>
                         <?php }?>
-                        <div><a href="http://help.yandex.ru/common/support/screenshot.xml" target="_blank" class="button button-primary button-large button__main">Как сделать "скриншот" экрана</a></div>
+                        <div style="padding-top: 25px;"><a href="http://help.yandex.ru/common/support/screenshot.xml" target="_blank" class="button button-primary button-large button__main">Как сделать "скриншот" экрана</a></div>
 
                         <?php endwhile; ?>
 
