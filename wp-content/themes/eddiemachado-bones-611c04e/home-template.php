@@ -35,6 +35,7 @@
                             <a class="button button-primary button-large" href="<?php echo home_url(); ?>/wp-login.php?action=logout&amp;_wpnonce=a6cad512ba">Выйти</a>
                         <?php }?>
                         <div style="padding-top: 25px;"><a href="http://help.yandex.ru/common/support/screenshot.xml" target="_blank" class="button button-primary button-large button__main">Как сделать "скриншот" экрана</a></div>
+                        <div><a href="/pay/" target="_blank" class="btn btn_lg btn_trans" style="margin-top: 10px; margin-left: 15px;">Оплата доступа</a></div>
 
                         <?php endwhile; ?>
 
