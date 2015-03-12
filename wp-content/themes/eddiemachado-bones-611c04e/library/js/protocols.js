@@ -71,7 +71,8 @@
                     borderColor: 'transparent',
                     opacity: 0.8,
                     paddingTop: '4px',
-                    zIndex: '1000'
+                    zIndex: '1000',
+                    color: 'transparent'
                 });
                 count_animation += 1;
 
