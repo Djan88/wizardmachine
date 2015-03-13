@@ -48,7 +48,7 @@
                     <div class="step step_procedure">3 <div></div>  </div> -->
                     <h3 class="heading heading_dashboard">Выберите актуальную зону</h3>
                 </div>
-                <div class="machine_screen clearfix hidden">
+                <div class="machine_screen clearfix">
                     <div class="bbody">
 
                         <!-- upload form -->
@@ -76,7 +76,7 @@
                     
                     </div>
                 </div>
-                <div class="machine_screen clearfix">
+                <div class="machine_screen clearfix hidden">
                   <div class="knife-wrap">
                     <div class="knife"></div>
                   </div>
@@ -91,7 +91,7 @@
                   <li class="itemlist-two-li"></li>
                   </ul>
                 </div>
-                <div class="machine_screen clearfix">
+                <div class="machine_screen clearfix hidden">
                     <div id="accordion" class="select_program">
                         <h3><span class="protocol_acent">(V2)</span>ЛЮДИ И ОТНОШЕНИЯ. ВЕЩИ, ПРЕДМЕТЫ И ДОСТИЖЕНИЕ ЦЕЛЕЙ</h3>
                         <div>"Забыть ее/его не могу; простить ее/его не могу; только все мысли о нем/ней; хочу ее/его;" "хочу достичь/стать/получить качества и статус"; либо "хочу заработать/купить/продать/выгодную сделку/кредит";<div class="btn btn_lg btn_success btn_choice" data-protocol ="v2">Выбрать</div></div>
