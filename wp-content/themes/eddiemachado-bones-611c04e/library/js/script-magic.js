@@ -91,7 +91,7 @@ jQuery(function() {
 
     jQuery( ".draggable" ).draggable({ snap: false });
     
-    jQuery( ".select_program" ).accordion({ active: 100 });
+    jQuery( ".select_program" ).accordion({ active: 100, heightStyle: "fill" });
 
     
     jQuery('.show_form').on('click', function(event) {
