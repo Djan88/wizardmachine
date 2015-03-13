@@ -159,6 +159,7 @@ jQuery(function() {
         jQuery('.btn__wizard').removeClass('hidden');
         jQuery('.heading_dashboard').text('Перенесите зоны с шаблона на фото клиента')
         cur_screen = 2;
+        console.log(window.location.href);
         nextScreen();
         jQuery('.btn_back')
             .removeClass('invisible')
