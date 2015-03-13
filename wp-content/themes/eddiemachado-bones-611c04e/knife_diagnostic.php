@@ -40,15 +40,10 @@
                   <div class="btn btn_sm btn_warning fast-v" data-v='#draggable4'>V4</div> 
                   <div class="btn btn_sm btn_warning fast-v" data-v='#draggable5'>V5</div>
                 </div>
-
-                <div class="steps clearfix">
-                    <!-- <div class="steps-center"><hr></div>
-                    <div class="step step_choice step_now">1 <div></div> </div>
-                    <div class="step step_img">2 <div></div> </div>
-                    <div class="step step_procedure">3 <div></div>  </div> -->
-                    <h3 class="heading heading_dashboard">Выберите актуальную зону</h3>
-                </div>
                 <div class="machine_screen clearfix">
+                <div class="steps clearfix">
+                    <h3 class="heading heading_dashboard">Загрузите и при необходимости отредактируйте фото</h3>
+                </div>
                     <div class="bbody">
 
                         <!-- upload form -->
@@ -77,6 +72,13 @@
                     </div>
                 </div>
                 <div class="machine_screen clearfix hidden">
+                <div class="steps clearfix">
+                    <!-- <div class="steps-center"><hr></div>
+                    <div class="step step_choice step_now">1 <div></div> </div>
+                    <div class="step step_img">2 <div></div> </div>
+                    <div class="step step_procedure">3 <div></div>  </div> -->
+                    <h3 class="heading heading_dashboard">Определите актуальную зону при помощи ножа</h3>
+                </div>
                   <div class="knife-wrap">
                     <div class="knife"></div>
                   </div>
@@ -92,6 +94,9 @@
                   </ul>
                 </div>
                 <div class="machine_screen clearfix hidden">
+                  <div class="steps clearfix">
+                      <h3 class="heading heading_dashboard">Выберите актуальную зону</h3>
+                  </div>
                     <div id="accordion" class="select_program">
                         <h3><span class="protocol_acent">(V2)</span>ЛЮДИ И ОТНОШЕНИЯ. ВЕЩИ, ПРЕДМЕТЫ И ДОСТИЖЕНИЕ ЦЕЛЕЙ</h3>
                         <div>"Забыть ее/его не могу; простить ее/его не могу; только все мысли о нем/ней; хочу ее/его;" "хочу достичь/стать/получить качества и статус"; либо "хочу заработать/купить/продать/выгодную сделку/кредит";<div class="btn btn_lg btn_success btn_choice" data-protocol ="v2">Выбрать</div></div>
@@ -115,6 +120,9 @@
                     </div>
                 </div>
                 <div class="machine_screen work-area clearfix hidden">
+                  <div class="steps clearfix">
+                      <h3 class="heading heading_dashboard">Перенесите зоны с шаблона на фото клиента</h3>
+                  </div>
                     <div id="snaptarget" class="wrapper">
                         <ul class="itemlist itemlist-one" id="itemlist-one">
                             <li id="draggable0" class="itemlist_item item_list__mid draggable" style="left: 197px; top: -11px;">V0</li>
