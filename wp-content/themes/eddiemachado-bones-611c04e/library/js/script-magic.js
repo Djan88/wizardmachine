@@ -9,7 +9,7 @@ jQuery(function() {
         checkPoints,
         checkV3,
         main_heading,
-        curUrl,
+        curUrl = window.location.pathname,
         pointsStatus = true,
         v3status = true,
         curV = 'V3',
@@ -155,12 +155,12 @@ jQuery(function() {
     croppedImg = jQuery('#main').children()[0];
     if(croppedImg.hasAttribute('src'))
     {
-        jQuery('.btn__wizard').removeClass('hidden');
-        curUrl = window.location.pathname;
         if (curUrl == '/wizard/'){
             cur_screen = 2;
+            jQuery('.btn__wizard').removeClass('hidden');
         } else {
             cur_screen = 1;
+            jQuery('.btn__next').removeClass('hidden');
         };
         nextScreen();
         jQuery('.btn_back')
