@@ -17,6 +17,7 @@
         resorceGlobal,
         resorceGlobalCount = 0,
         v2,
+        zZone = '#draggable3',
         v3;
 
     onEnd = function(){
@@ -55,33 +56,30 @@
                 left: parseFloat(jQuery('#draggableS1').css('left'))+70+'px',
                 top: parseFloat(jQuery('#draggableS1').css('top'))+'px'
         });
-        jQuery('#draggableClean_3').css({
-                left: parseFloat(jQuery('#draggableS2').css('left'))+70+'px',
-                top: parseFloat(jQuery('#draggableS2').css('top'))+'px'
-        });
         jQuery('#draggableClean_4').css({
                 left: parseFloat(jQuery('#draggableS2_1').css('left'))+70+'px',
                 top: parseFloat(jQuery('#draggableS2_1').css('top'))+'px'
         });
-        jQuery('#draggableClean_2, #draggableClean_3, #draggableClean_4').removeClass('inopaciti');
+        jQuery('#draggableClean_2, #draggableClean_4').removeClass('inopaciti');
         phaseOne = setInterval(function(){
             if (count_animation <= 120){                                                                         //120
                 cur_animation_val += 6;
-                jQuery('#draggableClean, #draggableClean_2, #draggableClean_3, #draggableClean_4').css({
+                jQuery('#draggableClean, #draggableClean_2, #draggableSh, #draggableClean_4').css({
                     transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat',
                     borderWidth: '1px',
                     borderColor: 'transparent',
                     opacity: 0.8,
                     paddingTop: '4px',
-                    zIndex: '1000'
+                    zIndex: '1000',
+                    color: 'transparent'
                 });
                 count_animation += 1;
 
             } else {
                 clearInterval(phaseOne);
                 count_animation = 1;
-                jQuery('#draggableClean, #draggableClean_2, #draggableClean_3, #draggableClean_4').css({
+                jQuery('#draggableClean, #draggableClean_2, #draggableSh, #draggableClean_4').css({
                     background: 'rgba(255,255,255, 0.5)',
                     transform: 'scale(0.5)',
                     color: 'red',
@@ -92,12 +90,12 @@
                     zIndex: '1'
                 });
                 count_animation = 1;
-                jQuery('#draggableClean_2, #draggableClean_3, #draggableClean_4').addClass('inopaciti');
+                jQuery('#draggableClean_2, #draggableClean_4').addClass('inopaciti');
     //фаза 2
                 cur_animation_val = 0;
                 phaseTwo = setInterval(function(){
                     if (count_animation <= 150){                                                                 //150
-                        jQuery('#draggableD2, #draggable2, #draggableS2, #draggableS2_1').css({
+                        jQuery('#draggableD2, #draggable2, #draggableS2, #draggableS2_1, #draggableSh').css({
                             borderWidth: '1px',
                             paddingTop: '4px',
                             zIndex: '1000',
@@ -107,6 +105,7 @@
                             transform: 'scale(1)'
                         });
                         jQuery('#draggableD2, #draggable2').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/disfunction.jpg) 0 0/100% no-repeat');
+                        jQuery('#draggableSh').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mandala.png) 0 0/100% no-repeat');
                         jQuery('#draggableS2, #draggableS2_1').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/travma.jpg) 0 0/100% no-repeat');
                         count_animation += 1;
                         if (count_animation >= 1 && count_animation <= 2){                               //60-120
@@ -117,7 +116,7 @@
                     } else {
                         clearInterval(phaseTwo);
                         count_animation = 1;
-                        jQuery('#draggableD2, #draggable2, #draggableS2, #draggableS2_1').css({
+                        jQuery('#draggableD2, #draggable2, #draggableS2, #draggableS2_1, #draggableSh').css({
                             background: 'rgba(255,255,255, 0.5)',
                             transform: 'scale(0.5)',
                             color: 'red',
@@ -133,19 +132,15 @@
                                 left: parseFloat(jQuery('#draggableS4').css('left'))+70+'px',
                                 top: parseFloat(jQuery('#draggableS4').css('top'))+'px'
                         });
-                        jQuery('#draggableClean_3').css({
-                                left: parseFloat(jQuery('#draggableS5').css('left'))+70+'px',
-                                top: parseFloat(jQuery('#draggableS5').css('top'))+'px'
-                        });
                         jQuery('#draggableClean_4').css({
                                 left: parseFloat(jQuery('#draggableS6').css('left'))+70+'px',
                                 top: parseFloat(jQuery('#draggableS6').css('top'))+'px'
                         });
-                        jQuery('#draggableClean_2, #draggableClean_3, #draggableClean_4').removeClass('inopaciti');
+                        jQuery('#draggableClean_2, #draggableClean_4').removeClass('inopaciti');
                         phaseThree = setInterval(function(){
                             if (count_animation <= 120){                                                         //120
                                 cur_animation_val += 6;
-                                jQuery('#draggable4, #draggable5, #draggableD4, #draggableD5, #draggableClean_2, #draggableClean_3, #draggableClean_4').css({
+                                jQuery('#draggable4, #draggable5, #draggableD4, #draggableD5, #draggableClean_2, #draggableSh, #draggableClean_4').css({
                                     borderWidth: '1px',
                                     paddingTop: '4px',
                                     zIndex: '1000',
@@ -155,7 +150,7 @@
                                     transform: 'scale(1)',
                                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/disfunction.jpg) 0 0/100% no-repeat'
                                 });
-                                jQuery('#draggableClean_2, #draggableClean_3, #draggableClean_4').css({
+                                jQuery('#draggableClean_2, #draggableSh, #draggableClean_4').css({
                                     transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
                                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat'
                                 });
@@ -163,8 +158,8 @@
                             } else {
                                 clearInterval(phaseThree);
                                 count_animation = 1;
-                                jQuery('#draggableClean_2, #draggableClean_3, #draggableClean_4').addClass('inopaciti');
-                                jQuery('#draggable4, #draggable5, #draggableD4, #draggableD5, #draggableClean_2, #draggableClean_3, #draggableClean_4').css({
+                                jQuery('#draggableClean_2, #draggableClean_4').addClass('inopaciti');
+                                jQuery('#draggable4, #draggable5, #draggableD4, #draggableD5, #draggableClean_2, #draggableSh, #draggableClean_4').css({
                                     background: 'rgba(255,255,255, 0.5)',
                                     transform: 'rotate(0deg) scale(0.5)',
                                     color: 'red',
@@ -694,7 +689,7 @@
                                                                                                                                                                                                                                                         count_animation = 1;
                                                                                                                                                                                                                                                         phaseOne = setInterval(function(){
                                                                                                                                                                                                                                                             if (count_animation <= 120){                                                                         //120
-                                                                                                                                                                                                                                                                jQuery('#draggable3').css({
+                                                                                                                                                                                                                                                                jQuery('#draggable3, #draggable0').css({
                                                                                                                                                                                                                                                                     color: 'transparent',
                                                                                                                                                                                                                                                                     borderColor: 'transparent',
                                                                                                                                                                                                                                                                     opacity: 0.8,
@@ -708,7 +703,7 @@
                                                                                                                                                                                                                                                             } else {
                                                                                                                                                                                                                                                                 clearInterval(phaseOne);
                                                                                                                                                                                                                                                                 count_animation = 1;
-                                                                                                                                                                                                                                                                jQuery('#draggable3').css({
+                                                                                                                                                                                                                                                                jQuery('#draggable3, #draggable0').css({
                                                                                                                                                                                                                                                                     background: 'rgba(255,255,255, 0.5)',
                                                                                                                                                                                                                                                                     color: 'red',
                                                                                                                                                                                                                                                                     borderColor: 'red',
@@ -834,7 +829,7 @@
                                         left: '-170px',
                                         top: '-120px'
                                     });
-                                    //анимация первого треугольника
+                                    //анимация первого треугольника 
                                     jQuery('#draggable1').addClass('transparent');                                                                    
                                     firstTriangleAnimation = new Vivus('triangle_1', {type: 'delayed', duration: 150}, function(){
                                     //анимация второго треугольника
@@ -891,19 +886,15 @@
                                                                                 left: parseFloat(jQuery('#draggableS3').css('left'))+70+'px',
                                                                                 top: parseFloat(jQuery('#draggableS3').css('top'))-561+'px'
                                                                         });
-                                                                        jQuery('#draggableClean_3').css({
-                                                                                left: parseFloat(jQuery('#draggableS4').css('left'))+70+'px',
-                                                                                top: parseFloat(jQuery('#draggableS4').css('top'))-561+'px'
-                                                                        });
                                                                         jQuery('#draggableClean_4').css({
                                                                                 left: parseFloat(jQuery('#draggableS5').css('left'))+70+'px',
                                                                                 top: parseFloat(jQuery('#draggableS5').css('top'))-561+'px'
                                                                         });
-                                                                        jQuery('#draggableClean_2, #draggableClean_3, #draggableClean_4').removeClass('inopaciti');
+                                                                        jQuery('#draggableClean_2, #draggableClean_4').removeClass('inopaciti');
                                                                         phaseOne = setInterval(function(){
                                                                             if (count_animation <= 120){                                                                         //120
                                                                                 cur_animation_val += 6;
-                                                                                jQuery('#draggable3, #draggableD3, #draggableD1, #draggableClean_2, #draggableClean_3, #draggableClean_4, #draggableVD').css({
+                                                                                jQuery('#draggable3, #draggableD3, #draggableD1, #draggableClean_2, #draggableSh, #draggableClean_4, #draggableVD').css({
                                                                                     color: 'transparent',
                                                                                     borderColor: 'transparent',
                                                                                     opacity: 0.8,
@@ -915,15 +906,18 @@
                                                                                 jQuery('#draggableD3, #draggable3').css({
                                                                                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/disfunction.jpg) 0 0/100% no-repeat'
                                                                                 });
-                                                                                jQuery('#draggableClean_2, #draggableClean_3, #draggableClean_4, #draggableVD, #draggableD1').css({
+                                                                                jQuery('#draggableClean_2, #draggableSh, #draggableClean_4, #draggableVD').css({
                                                                                     transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
                                                                                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat'
+                                                                                });
+                                                                                jQuery('#draggableD1').css({
+                                                                                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat'
                                                                                 });
                                                                                 count_animation += 1;
                                                                             } else {
                                                                                 clearInterval(phaseOne);
                                                                                 count_animation = 1;
-                                                                                jQuery('#draggable3, #draggableD3, #draggableS3, #draggableS4, #draggableS5, #draggableVD, #draggableD1').css({
+                                                                                jQuery('#draggable3, #draggableD3, #draggableS3, #draggableS4, #draggableS5, #draggableVD, #draggableD1, #draggableSh').css({
                                                                                     background: 'rgba(255,255,255, 0.5)',
                                                                                     color: 'red',
                                                                                     borderColor: 'red',
@@ -933,7 +927,7 @@
                                                                                     paddingTop: '2px',
                                                                                     zIndex: '1'
                                                                                 });
-                                                                                jQuery('#draggableClean_2, #draggableClean_3, #draggableClean_4').addClass('inopaciti');
+                                                                                jQuery('#draggableClean_2, #draggableClean_4').addClass('inopaciti');
     //фаза 4
                                                                                 count_animation = 1;
                                                                                 cur_animation_val = 0;
@@ -1472,7 +1466,7 @@
                                                                                                                                                                                                                                                                                                                 count_animation = 1;
                                                                                                                                                                                                                                                                                                                 phaseOne = setInterval(function(){
                                                                                                                                                                                                                                                                                                                     if (count_animation <= 120){                                                                         //120
-                                                                                                                                                                                                                                                                                                                        jQuery('#draggable3').css({
+                                                                                                                                                                                                                                                                                                                        jQuery('#draggable3, #draggable0').css({
                                                                                                                                                                                                                                                                                                                             color: 'transparent',
                                                                                                                                                                                                                                                                                                                             borderColor: 'transparent',
                                                                                                                                                                                                                                                                                                                             opacity: 0.8,
@@ -1486,7 +1480,7 @@
                                                                                                                                                                                                                                                                                                                     } else {
                                                                                                                                                                                                                                                                                                                         clearInterval(phaseOne);
                                                                                                                                                                                                                                                                                                                         count_animation = 1;
-                                                                                                                                                                                                                                                                                                                        jQuery('#draggable3').css({
+                                                                                                                                                                                                                                                                                                                        jQuery('#draggable3, #draggable0').css({
                                                                                                                                                                                                                                                                                                                             background: 'rgba(255,255,255, 0.5)',
                                                                                                                                                                                                                                                                                                                             color: 'red',
                                                                                                                                                                                                                                                                                                                             borderColor: 'red',
@@ -1617,9 +1611,12 @@
                     paddingTop: '4px',
                     zIndex: '1000'
                 });
-                jQuery('#draggableClean, #draggableS1, #draggableS2_1, #draggableS4, #draggableD1, #draggableS5').css({
+                jQuery('#draggableClean, #draggableS1, #draggableS2_1, #draggableS4, #draggableS5').css({
                     transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat'
+                });
+                jQuery('#draggableD1').css({
+                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat'
                 });
                 count_animation += 1;
             } else {
@@ -2100,7 +2097,7 @@
                                                                                                                                                                                                                         count_animation = 1;
                                                                                                                                                                                                                         phaseOne = setInterval(function(){
                                                                                                                                                                                                                             if (count_animation <= 120){                                                                         //120
-                                                                                                                                                                                                                                jQuery('#draggable3').css({
+                                                                                                                                                                                                                                jQuery('#draggable3, #draggable0').css({
                                                                                                                                                                                                                                     color: 'transparent',
                                                                                                                                                                                                                                     borderColor: 'transparent',
                                                                                                                                                                                                                                     opacity: 0.8,
@@ -2115,7 +2112,7 @@
                                                                                                                                                                                                                             } else {
                                                                                                                                                                                                                                 clearInterval(phaseOne);
                                                                                                                                                                                                                                 count_animation = 1;
-                                                                                                                                                                                                                                jQuery('#draggable3').css({
+                                                                                                                                                                                                                                jQuery('#draggable3, #draggable0').css({
                                                                                                                                                                                                                                     background: 'rgba(255,255,255, 0.5)',
                                                                                                                                                                                                                                     color: 'red',
                                                                                                                                                                                                                                     borderColor: 'red',
@@ -2225,9 +2222,12 @@ v5 = function(){
                 paddingTop: '4px',
                 zIndex: '1000'
             });
-            jQuery('#draggableClean_2, #draggableClean_3, #draggable0, #draggableD1, #draggableVD').css({
+            jQuery('#draggableClean_2, #draggableClean_3, #draggable0, #draggableVD').css({
                 transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
                 background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat'
+            });
+            jQuery('#draggableD1').css({
+                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat'
             });
             count_animation += 1;
         } else {
@@ -2611,7 +2611,7 @@ v5 = function(){
                                                                                                                                             phaseTwo = setInterval(function(){
                                                                                                                                                 if (count_animation <= 120){                                                        //120     
                                                                                                                                                     cur_animation_val += 6;
-                                                                                                                                                    jQuery('#draggableD2, #draggable2, #draggableS1, #draggableS2, #draggableS2_1, #draggableClean').css({
+                                                                                                                                                    jQuery('#draggableD2, #draggable2, #draggableS1, #draggableS2, #draggableS2_1, #draggableClean, #draggableSh').css({
                                                                                                                                                         borderWidth: '1px',
                                                                                                                                                         borderColor: 'transparent',
                                                                                                                                                         opacity: 0.8,
@@ -2625,6 +2625,7 @@ v5 = function(){
                                                                                                                                                         background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat'
                                                                                                                                                     });
                                                                                                                                                     jQuery('#draggable2').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/disfunction.jpg) 0 0/100% no-repeat');
+                                                                                                                                                    jQuery('#draggableSh').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mandala.png) 0 0/100% no-repeat');
                                                                                                                                                     jQuery('#draggableD2').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/drenag.png) 0 0/100% no-repeat');
                                                                                                                                                     jQuery('#draggableS2, #draggableS2_1').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/travma.jpg) 0 0/100% no-repeat');
                                                                                                                                                     if (count_animation >= 60 && count_animation <= 120){                               //60-120
@@ -2634,7 +2635,7 @@ v5 = function(){
                                                                                                                                                 } else {
                                                                                                                                                     clearInterval(phaseTwo);
                                                                                                                                                     count_animation = 1;
-                                                                                                                                                    jQuery('#draggableD2, #draggable2, #draggableS1, #draggableS2, #draggableS2_1, #draggableClean').css({
+                                                                                                                                                    jQuery('#draggableD2, #draggable2, #draggableS1, #draggableS2, #draggableS2_1, #draggableClean, #draggableSh').css({
                                                                                                                                                         background: 'rgba(255,255,255, 0.5)',
                                                                                                                                                         transform: 'scale(0.5)',
                                                                                                                                                         color: 'red',
@@ -2905,7 +2906,7 @@ v5 = function(){
                                                                                                                                                                                                                     count_animation = 1;
                                                                                                                                                                                                                     phaseOne = setInterval(function(){
                                                                                                                                                                                                                         if (count_animation <= 120){                                                                         //120
-                                                                                                                                                                                                                            jQuery('#draggable3').css({
+                                                                                                                                                                                                                            jQuery('#draggable3, #draggable0').css({
                                                                                                                                                                                                                                 color: 'transparent',
                                                                                                                                                                                                                                 borderColor: 'transparent',
                                                                                                                                                                                                                                 opacity: 0.8,
@@ -2920,7 +2921,7 @@ v5 = function(){
                                                                                                                                                                                                                         } else {
                                                                                                                                                                                                                             clearInterval(phaseOne);
                                                                                                                                                                                                                             count_animation = 1;
-                                                                                                                                                                                                                            jQuery('#draggable3').css({
+                                                                                                                                                                                                                            jQuery('#draggable3, #draggable0').css({
                                                                                                                                                                                                                                 background: 'rgba(255,255,255, 0.5)',
                                                                                                                                                                                                                                 color: 'red',
                                                                                                                                                                                                                                 borderColor: 'red',
@@ -3002,16 +3003,18 @@ v5 = function(){
 resource = function(){
     dinamicElem = true;
     resorceGlobal = 30;
+    zZone = localStorage.getItem('curVZone');
     phaseOne = setInterval(function(){
         if (resorceGlobal >= 1){
-            jQuery('#itemlist-two').addClass('dinamic');
+            jQuery('body').addClass('dinamic');
             if(dinamicElem == true){
-                jQuery('#itemlist-two').on('click', function(e) {
+                jQuery('body').on('click', function(e) {
                     resorceGlobal = 30;
-                    var v7x = e.offsetX==undefined?e.layerX:e.offsetX;
-                    var v7y = e.offsetY==undefined?e.layerY:e.offsetY;
-                    v7x= v7x-18;
-                    jQuery('#itemlist-two.dinamic').append('<li id="draggable3'+resorceGlobalCount+'" class="itemlist_item item_list__mid draggable ui-draggable ui-draggable-handle" style="left: '+v7x+'px; top: '+v7y+'px; color: transparent; border-color: transparent; opacity: 0.8; transform: scale(1); border-width: 1px; padding-top: 4px; z-index: 1000; background: url(http://yuchikurov.ru/wp-content/themes/eddiemachado-bones-611c04e/library/images/resurs.png) 0px 0px / 100% no-repeat rgb(255, 255, 255);">V3</li>');
+                    var v7x = e.pageX;
+                    var v7y = e.pageY;
+                    v7y = v7y-27;
+                    v7x = v7x-27;
+                    jQuery('body.dinamic').append('<div id="draggable3'+resorceGlobalCount+'" class="itemlist_item item_list__mid draggable ui-draggable ui-draggable-handle" style="left: '+v7x+'px; top: '+v7y+'px; color: transparent; border-color: transparent; opacity: 0.8; -webkit-transform: scale(1); transform: scale(1); border-width: 1px; padding-top: 4px; z-index: 1000; background: url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/edinenie_s_tvorcom.jpg) 0px 0px / 100% no-repeat rgb(255, 255, 255);">V3</div>');
                     setTimeout(function(){
                         resorceGlobalCount
                         jQuery('#draggable3'+resorceGlobalCount).remove();
@@ -3019,20 +3022,20 @@ resource = function(){
                 });
             }
             resorceGlobal -= 1;
-            jQuery('#draggable3').css({
+            jQuery(zZone).css({
                 color: 'transparent',
                 borderColor: 'transparent',
                 opacity: 0.8,
                 transform: 'scale(1)',
                 borderWidth: '1px',
                 paddingTop: '4px',
-                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/resurs.png) 0 0/100% no-repeat',
+                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/edinenie_s_tvorcom.jpg) 0 0/100% no-repeat',
                 zIndex: '1000'
             });
         } else {
             dinamicElem = false;
             clearInterval(phaseOne);
-            jQuery('#itemlist-two').removeClass('dinamic');
+            jQuery('body').removeClass('dinamic');
             jQuery('.itemlist_item').css({
                 background: 'rgba(255,255,255, 0.5)',
                 color: 'red',
@@ -3057,5 +3060,5 @@ v7 = function(){
     onEnd();
     jQuery( ".btn__wizard" )
         .text('Выполнить')
-        .removeClass('btn__wizard_inAction'); 
+        .removeClass('btn__wizard_inAction');
 }

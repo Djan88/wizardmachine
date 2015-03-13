@@ -33,6 +33,13 @@
                   <div class="btn btn_sm btn_warning fast-protocol" data-fast="v5">V5</div>
                   <div class="btn btn_sm btn_warning fast-protocol" data-fast="resource">РЕСУРС</div>
                 </div>
+                <div class="fast-protocol-resource clearfix hidden">
+                  <div class="btn btn_sm btn_warning fast-v" data-v='#draggable1'>V1</div> 
+                  <div class="btn btn_sm btn_warning fast-v" data-v='#draggable2'>V2</div> 
+                  <div class="btn btn_sm btn_warning fast-v" data-v='#draggable3'>V3</div> 
+                  <div class="btn btn_sm btn_warning fast-v" data-v='#draggable4'>V4</div> 
+                  <div class="btn btn_sm btn_warning fast-v" data-v='#draggable5'>V5</div>
+                </div>
 
                 <div class="steps clearfix">
                     <!-- <div class="steps-center"><hr></div>
@@ -44,16 +51,25 @@
 
                 <div class="machine_screen clearfix">
                     <div id="accordion" class="select_program">
-                      <h3><span class="protocol_acent">(V2)</span>ЛЮДИ И ОТНОШЕНИЯ. ВЕЩИ, ПРЕДМЕТЫ И ДОСТИЖЕНИЕ ЦЕЛЕЙ</h3>
-                      <div>"Забыть ее/его не могу; простить ее/его не могу; только все мысли о нем/ней; хочу ее/его;" "хочу достичь/стать/получить качества и статус"; либо "хочу заработать/купить/продать/выгодную сделку/кредит";<div class="btn btn_lg btn_success btn_choice" data-protocol ="v2">Выбрать</div></div>
-                      <h3><span class="protocol_acent">(V3)</span>РАЗДРАЖЕНИЕ И НЕПРИЯТИЕ</h3>
-                      <div>"Не могу с этим смириться/ это все не правильно/ раздражение от чьих-то действий, чаще бытовых,внешнего вида или слов/ грусть-тоска зеленая/ усталость от жизни;"<div class="btn btn_lg btn_success btn_choice" data-protocol ="v3">Выбрать</div></div>
-                      <h3><span class="protocol_acent">(V4)</span>СУЕТА, БЕСПОКОЙСТВО И НАПРЯЖЕНИЕ</h3>
-                      <div>«… опоздаю не успею… тороплюсь, не успеваю… напряжение в теле и голове… а что будет… а кто что скажет/подумает про меня… а как я буду выглядеть в глазах окружающих… я стараюсь все лучшим образом делать… и  далее, в этом роде…"<div class="btn btn_lg btn_success btn_choice" data-protocol ="v4">Выбрать</div></div>
-                      <h3><span class="protocol_acent">(V5)</span>ОДНИ И ТЕ ЖЕ "ГРАБЛИ»: РЕЦИВЫ ПРОБЛЕМНЫХ СИТУАЦИЙ В ЛИЧНОЙ ЖИЗНИ</h3>
-                      <div>Насильственное следование некой жизненной стратегии, стойкие убеждения и ценности, основанные на опасениях и самоограничениях, навязчивые мысли и действия  по типу "частого мытья рук» или чего иного, постоянное беспокойство по поводу «курса валют»; ситуации по проверке себя с вовлечением окружающих «…ой, а не забыл ли я выключить чайник…утюг…газовый кран.. .дверь дома», «…проверь ты, а то я не уверен/на..»; страх высоты или нанесения себе повреждения ножиком или другим опасным предметом; создание больших запасов еды по типу «битком забитого холодильника, мешка сахара и муки»<div class="btn btn_lg btn_success btn_choice" data-protocol ="v5">Выбрать</div></div>
-                      <h3><span class="protocol_acent">(РЕСУРС)</span>РЕСУРСНЫЙ ПРОТОКОЛ</h3>
-                      <div>NB! Протокол на ручном управлении, предназначен для продвинутых пользователей! Производит синхронизацию телесных и внетелесных ресурсных зон c калибровкой по зоне сердца (V3). В целях безопасности предусмотрено автоматическое отключение протокола через 30 секунд простоя!<div class="btn btn_lg btn_success btn_choice" data-protocol ="resource">Выбрать</div></div>
+                        <h3><span class="protocol_acent">(V2)</span>ЛЮДИ И ОТНОШЕНИЯ. ВЕЩИ, ПРЕДМЕТЫ И ДОСТИЖЕНИЕ ЦЕЛЕЙ</h3>
+                        <div>"Забыть ее/его не могу; простить ее/его не могу; только все мысли о нем/ней; хочу ее/его;" "хочу достичь/стать/получить качества и статус"; либо "хочу заработать/купить/продать/выгодную сделку/кредит";<div class="btn btn_lg btn_success btn_choice" data-protocol ="v2">Выбрать</div></div>
+                        <h3><span class="protocol_acent">(V3)</span>РАЗДРАЖЕНИЕ И НЕПРИЯТИЕ</h3>
+                        <div>"Не могу с этим смириться/ это все не правильно/ раздражение от чьих-то действий, чаще бытовых,внешнего вида или слов/ грусть-тоска зеленая/ усталость от жизни;"<div class="btn btn_lg btn_success btn_choice" data-protocol ="v3">Выбрать</div></div>
+                        <h3><span class="protocol_acent">(V4)</span>СУЕТА, БЕСПОКОЙСТВО И НАПРЯЖЕНИЕ</h3>
+                        <div>«… опоздаю не успею… тороплюсь, не успеваю… напряжение в теле и голове… а что будет… а кто что скажет/подумает про меня… а как я буду выглядеть в глазах окружающих… я стараюсь все лучшим образом делать… и  далее, в этом роде…"<div class="btn btn_lg btn_success btn_choice" data-protocol ="v4">Выбрать</div></div>
+                        <h3><span class="protocol_acent">(V5)</span>ОДНИ И ТЕ ЖЕ "ГРАБЛИ»: РЕЦИДИВЫ ПРОБЛЕМНЫХ СИТУАЦИЙ В ЛИЧНОЙ ЖИЗНИ</h3>
+                        <div>Насильственное следование некой жизненной стратегии, стойкие убеждения и ценности, основанные на опасениях и самоограничениях, навязчивые мысли и действия  по типу "частого мытья рук» или чего иного, постоянное беспокойство по поводу «курса валют»; ситуации по проверке себя с вовлечением окружающих «…ой, а не забыл ли я выключить чайник…утюг…газовый кран.. .дверь дома», «…проверь ты, а то я не уверен/на..»; страх высоты или нанесения себе повреждения ножиком или другим опасным предметом; создание больших запасов еды по типу «битком забитого холодильника, мешка сахара и муки»<div class="btn btn_lg btn_success btn_choice" data-protocol ="v5">Выбрать</div></div>
+                        <h3><span class="protocol_acent">(РЕСУРС)</span>РЕСУРСНЫЙ ПРОТОКОЛ</h3>
+                        <div>NB! Протокол на ручном управлении, предназначен для продвинутых пользователей! Проводит синхронизацию телесных и внетелесных ресурсных зон c калибровкой по зонам вентральной оси (V). Начинать терапию следует с актуальной зоны, либо с V3. Выбор ресурсной внетелесной зоны и постановку на ней формулы щелчком мышки компьютера терапевт производит самостоятельно, путем  перцептивного выбора. В целях безопасности предусмотрено автоматическое отключение протокола через 30 секунд простоя!
+                            <div class="zone-choice_wrap">
+                                <div class="zone-choice_item"><input class="v-zone" type="radio" name="radiobutton" value="#draggable1" id="V1"><label for="V1">V1</label></div>
+                                <div class="zone-choice_item"><input class="v-zone" type="radio" name="radiobutton" value="#draggable2" id="V2"><label for="V2">V2</label></div>
+                                <div class="zone-choice_item"><input class="v-zone" type="radio" name="radiobutton" checked="checked" value="#draggable3" id="V3"><label for="V3">V3</label></div>
+                                <div class="zone-choice_item"><input class="v-zone" type="radio" name="radiobutton" value="#draggable4" id="V4"><label for="V4">V4</label></div>
+                                <div class="zone-choice_item"><input class="v-zone" type="radio" name="radiobutton" value="#draggable5" id="V5"><label for="V5">V5</label></div>
+                            </div>
+                            <div class="btn btn_lg btn_success btn_choice" data-protocol ="resource">Выбрать</div>
+                        </div>
                     </div>
                 </div>
                 <div class="machine_screen clearfix hidden">
@@ -786,6 +802,7 @@
                             <li id="draggableClean" class="itemlist_item item_list__mid itemlist_item__clear draggable" style="left: -15px; top: 94px;"></li>
                             <li id="draggableS2" class="itemlist_item item_list__mid draggable" style="left: 241px; top: 76px;">S2</li>
                             <li id="draggableS2_1" class="itemlist_item item_list__mid draggable" style="left: 241px; top: 114px;">S2</li>
+                            <li id="draggableSh" class="itemlist_item item_list__mid draggable" style="left: 299px; top: 98px;">SH</li>
                             <li id="draggableS3" class="itemlist_item item_list__mid draggable" style="left: 235px; top: 150px;">S3</li>
                             <li id="draggableS4" class="itemlist_item item_list__mid draggable" style="left: 235px; top: 190px;">S4</li>
                             <li id="draggableS5" class="itemlist_item item_list__mid draggable" style="left: 235px; top: 250px;">S5</li>

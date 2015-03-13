@@ -7,8 +7,13 @@ jQuery(function() {
         curChoice,
         protocol,
         checkPoints,
+        checkV3,
         main_heading,
         pointsStatus = true,
+        v3status = true,
+        curV = 'V3',
+        actualV,
+        curVZone = '#draggable3',
         supportsStorage = function(){
             try {
                 return 'localStorage' in window && window['localStorage'] !== null;
@@ -17,12 +22,53 @@ jQuery(function() {
             }
         };
 
+    //РЕСУРС выбор основной зоны
+    jQuery('.v-zone').on('click', function() {
+        curVZone = jQuery(this).val();
+        curV = jQuery(this).attr('id');
+        localStorage.setItem('curVZone', curVZone);
+        localStorage.setItem('curV', curV);
+        console.log('curVZone '+curVZone);
+    });
+
+    //Запоминание выбранной зоны V в протоколе РЕСУРС
+    actualV = function(){
+        if(supportsStorage && localStorage.getItem('curV')){
+            curV = localStorage.getItem('curV');
+        } else {
+            curV = "V3";
+            localStorage.setItem('curVZone', '#draggable3');
+            localStorage.setItem('curV', curV);
+        };
+        jQuery('.v-zone').each(function() {
+            jQuery(this).removeAttr('checked');
+            
+        });
+        jQuery('#'+curV).attr('checked', 'checked');
+    }();
+
     //Функция проверки положения точек
     checkPoints = function(){
         jQuery('.itemlist_item').each(function() {
             if(parseFloat(jQuery(this).css('left')) < 450){
                 pointsStatus = false;
                 console.log('status '+pointsStatus);
+            }
+        });
+    }
+    checkV3 = function(){
+        if(supportsStorage && localStorage.getItem('curChoice')){
+            curVZone = localStorage.getItem('curVZone');
+        } else {
+            localStorage.setItem('curVZone', '#draggable3');
+            curVZone = "#draggable3";
+        };
+        console.log('curVZone= '+curVZone);
+        jQuery(curVZone).each(function() {
+            console.log(jQuery(curVZone));
+            if(parseFloat(jQuery(this).css('left')) < 450){
+                v3status = false;
+                console.log('v3status '+v3status);
             }
         });
     }
@@ -124,43 +170,76 @@ jQuery(function() {
 //ШАГ 3 (Старт процедуры)
 jQuery( ".btn__wizard" ).on('click', function(event) {
     pointsStatus = true;
-    checkPoints();
-    if(pointsStatus == false){
-        swal("Не все зоны перенесены", "Перед началом процедуры необходимо перенести все зоны", "info");
+    v3status = true;
+    curV = localStorage.getItem('curV');
+    if(protocol == 'resource'){
+        checkV3();
+        if(v3status == false){
+            swal("Целевая V зона не перенесена", "Для начала выполнения процедуры необходимо перенести зону "+curV, "info");
+        } else {
+            jQuery(this)
+                .addClass('btn__wizard_inAction')
+                .text('Выполняется');
+                jQuery('.heading_dashboard').text('Процедура выполняется')
+                jQuery('.btn_back').addClass('invisible');
+                protocol = localStorage.getItem('protocol');
+                console.log(protocol);
+                if(protocol == 'resource'){
+                    resource();
+                } else {
+                    console.log('нет протокола с id '+ protocol)
+                }
+        } 
     } else {
-        jQuery(this)
-            .addClass('btn__wizard_inAction')
-            .text('Выполняется');
-            // jQuery('.step_procedure div').text('Процедура выполняется');
-            jQuery('.heading_dashboard').text('Процедура выполняется')
-            jQuery('.btn_back').addClass('invisible');
-            protocol = localStorage.getItem('protocol');
-            console.log(protocol);
-            if(protocol == 'v2'){
-                v2();
-            } else if(protocol == 'v3'){
-                v3();
-            } else if(protocol == 'v4'){
-                v4();
-            } else if(protocol == 'v5'){
-                v5();
-            } else if(protocol == 'v6'){
-                v6();
-            } else if(protocol == 'v7'){
-                v7();
-            } else if(protocol == 'resource'){
-                resource();
-            } else{
-                console.log('нет протокола с id '+ protocol)
-            }
+        checkPoints();
+        if(pointsStatus == false){
+            swal("Не все зоны перенесены", "Перед началом процедуры необходимо перенести все зоны", "info");
+        } else {
+            jQuery(this)
+                .addClass('btn__wizard_inAction')
+                .text('Выполняется');
+                jQuery('.heading_dashboard').text('Процедура выполняется')
+                jQuery('.btn_back').addClass('invisible');
+                protocol = localStorage.getItem('protocol');
+                console.log(protocol);
+                if(protocol == 'v2'){
+                    v2();
+                } else if(protocol == 'v3'){
+                    v3();
+                } else if(protocol == 'v4'){
+                    v4();
+                } else if(protocol == 'v5'){
+                    v5();
+                } else if(protocol == 'v6'){
+                    v6();
+                } else if(protocol == 'v7'){
+                    v7();
+                } else{
+                    console.log('нет протокола с id '+ protocol)
+                }
+        }  
     }
-    main_heading()
+    main_heading();
 });
 //Быстрая смена протокола
 jQuery('#main').on('click', '.fast-protocol', function() {
     protocol = jQuery(this).data('fast');
     localStorage.setItem('protocol', protocol);
     jQuery('.fast-protocol-wrap')
+        .addClass('hidden')
+        .removeClass('fadeIn');
+    if(protocol == 'resource'){
+        jQuery('.fast-protocol-resource')
+            .removeClass('hidden')
+            .addClass('fadeIn');
+    }
+});
+jQuery('#main').on('click', '.fast-v', function() {
+    curV = jQuery(this).text();
+    curVZone = jQuery(this).data('v');
+    localStorage.setItem('curVZone', curVZone);
+    localStorage.setItem('curV', curV);
+    jQuery('.fast-protocol-resource')
         .addClass('hidden')
         .removeClass('fadeIn');
 });
