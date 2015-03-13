@@ -485,7 +485,7 @@ header .btn_back
     float: left;
     margin-left: 0;
 }
-.btn__wizard, .btn__crop 
+.btn__wizard, .btn__crop, .btn__next
 {
   font-weight: 600!important;
   text-transform: uppercase;
@@ -548,3 +548,4 @@ form.pay-form
 {
     display: inline-block;
 }
+
