@@ -282,6 +282,8 @@ jQuery('#main').on('click', '.fast-v', function() {
         };
         if (curUrl !== '/wizard/' && cur_screen == 2){
             jQuery('.btn__next').removeClass('hidden');
+        } else {
+            jQuery('.btn__next').addClass('hidden');
         }
         cur_screen -= 1; 
         main_heading()
