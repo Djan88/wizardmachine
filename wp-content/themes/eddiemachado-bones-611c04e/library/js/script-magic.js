@@ -9,6 +9,7 @@ jQuery(function() {
         checkPoints,
         checkV3,
         main_heading,
+        curUrl,
         pointsStatus = true,
         v3status = true,
         curV = 'V3',
@@ -158,8 +159,12 @@ jQuery(function() {
     {
         jQuery('.btn__wizard').removeClass('hidden');
         jQuery('.heading_dashboard').text('Перенесите зоны с шаблона на фото клиента')
-        cur_screen = 2;
-        console.log(window.location.pathname);
+        curUrl = window.location.pathname;
+        if (curUrl == '/wizard/'){
+            cur_screen = 2;
+        } else {
+            cur_screen = 1;
+        };
         nextScreen();
         jQuery('.btn_back')
             .removeClass('invisible')
