@@ -77,10 +77,8 @@ jQuery(function() {
     main_heading = function(){
         // console.log(cur_screen);
         if(cur_screen == 0){
-            jQuery('.heading_dashboard').text('Выберите актуальную зону');
             jQuery('.btn_back').addClass('hidden');
         } else if (cur_screen == 1){
-            jQuery('.heading_dashboard').text('Загрузите фото');
             jQuery('.btn_back').removeClass('hidden');
         }
     }
@@ -158,7 +156,6 @@ jQuery(function() {
     if(croppedImg.hasAttribute('src'))
     {
         jQuery('.btn__wizard').removeClass('hidden');
-        jQuery('.heading_dashboard').text('Перенесите зоны с шаблона на фото клиента')
         curUrl = window.location.pathname;
         if (curUrl == '/wizard/'){
             cur_screen = 2;
