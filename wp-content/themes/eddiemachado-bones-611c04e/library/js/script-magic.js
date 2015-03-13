@@ -123,6 +123,10 @@ jQuery(function() {
             localStorage.setItem('curChoice', curChoice);
             jQuery('.step_choice div').text(curChoice);
             cur_screen += 1;
+            if (curUrl !== '/wizard/'){
+                cur_screen = 2;
+                jQuery('.btn__wizard').removeClass('hidden');
+            }
             jQuery(".btn_choice")
                 .removeClass('btn_choice__choiced')
                 .text('Выбрать');
@@ -169,6 +173,11 @@ jQuery(function() {
             .addClass('fadeIn');
         jQuery('.itemlist-two').append(croppedImg);
     }
+    // Переход с экрана диагноситки ножом
+    jQuery('.btn__next').on('click', function(event) {
+        nextScreen();
+        jQuery('.btn__next').addClass('hidden');
+    });
 
 //ШАГ 3 (Старт процедуры)
 jQuery( ".btn__wizard" ).on('click', function(event) {
