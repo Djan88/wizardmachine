@@ -490,6 +490,18 @@ header .btn_back
   font-weight: 600!important;
   text-transform: uppercase;
   float: right;
+  position: relative;
+}
+.btn__next
+{
+    padding-right: 35px;
+}
+.btn__next span
+{
+  position: absolute;
+  right: 10px;
+  font-size: 60px;
+  top: -38px;
 }
 header .btn 
 {
