@@ -124,7 +124,7 @@ jQuery(function() {
             jQuery('.step_choice div').text(curChoice);
             cur_screen += 1;
             if (curUrl !== '/wizard/'){
-                cur_screen = 2;
+                cur_screen = 3;
                 jQuery('.btn__wizard').removeClass('hidden');
             }
             jQuery(".btn_choice")
