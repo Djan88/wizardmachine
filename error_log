@@ -1,0 +1,2 @@
+[10-Mar-2015 15:09:07 Europe/Simferopol] PHP Warning:  require_once(/home/videochi/public_html/wp-includes/load.php): failed to open stream: No such file or directory in /home/videochi/public_html/wp-load.php on line 41
+[10-Mar-2015 15:09:07 Europe/Simferopol] PHP Fatal error:  require_once(): Failed opening required '/home/videochi/public_html/wp-includes/load.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/videochi/public_html/wp-load.php on line 41
