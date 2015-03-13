@@ -2565,7 +2565,7 @@ be set to display none.
   /*-moz-box-shadow: 0px 0px 10px #68B000;*/
   /* box-shadow: 0px 0px 10px #68B000; */
 }
-.btn_back span, .btn__next span
+.btn_back span
 {
   position: absolute;
   left: 10px;
