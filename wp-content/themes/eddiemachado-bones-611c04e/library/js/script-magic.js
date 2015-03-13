@@ -280,7 +280,7 @@ jQuery('#main').on('click', '.fast-v', function() {
                 .eq(cur_screen-2)
                 .addClass('step_done');
         };
-        if (curUrl !== '/wizard/' && cur_screen == 1){
+        if (curUrl !== '/wizard/' && cur_screen == 2){
             jQuery('.btn__next').removeClass('hidden');
         }
         cur_screen -= 1; 
