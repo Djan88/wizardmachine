@@ -175,6 +175,7 @@ jQuery(function() {
     }
     // Переход с экрана диагноситки ножом
     jQuery('.btn__next').on('click', function(event) {
+        cur_screen += 1;
         nextScreen();
         jQuery('.btn__next').addClass('hidden');
     });
