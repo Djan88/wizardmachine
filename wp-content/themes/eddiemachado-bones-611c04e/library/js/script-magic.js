@@ -1,6 +1,6 @@
 jQuery(function() {
 
-    jQuery('.knife').draggable({containment: '.knife-wrap', axis: 'y' });
+    jQuery('.knife').draggable({containment: '#inner-content', axis: 'y' });
     //Скрываем возможно загруженное изображение
     jQuery('#main img:first-child').addClass('returned hidden');
     var cur_screen = 0,
