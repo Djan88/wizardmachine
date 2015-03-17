@@ -1,4 +1,7 @@
 jQuery(function() {
+
+    jQuery('.knife-wrap').css('height', jQuery('.itemlist-two').height()+'px');
+    jQuery(".knife").draggable({containment: ".knife-wrap", axis: "y" });
     //Скрываем возможно загруженное изображение
     jQuery('#main img:first-child').addClass('returned hidden');
     var cur_screen = 0,
