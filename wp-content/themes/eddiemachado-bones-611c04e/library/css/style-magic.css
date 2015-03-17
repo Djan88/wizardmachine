@@ -573,4 +573,5 @@ form.pay-form
     width: 100%;
     height: 100px;
     background: url(../images/wizard_knife.png) no-repeat;
+    cursor: pointer;
 }
