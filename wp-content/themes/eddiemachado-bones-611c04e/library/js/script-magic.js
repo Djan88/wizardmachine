@@ -174,7 +174,7 @@ jQuery(function() {
             .addClass('animated')
             .addClass('fadeIn');
         jQuery('.itemlist-two').append(croppedImg);
-        jQuery('.knife-wrap').css('height', jQuery('.itemlist-two').height()+'px');
+        jQuery('.knife-wrap').css('height', jQuery('.itemlist-two').height()+20+'px');
     }
     // Переход с экрана диагноситки ножом
     jQuery('.btn__next').on('click', function(event) {
