@@ -1,7 +1,6 @@
 jQuery(function() {
 
-    jQuery('.knife-wrap').css('height', jQuery('.itemlist-two').height()+'px');
-    jQuery(".knife").draggable({containment: ".knife-wrap", axis: "y" });
+    jQuery('.knife').draggable({containment: '.knife-wrap', axis: 'y' });
     //Скрываем возможно загруженное изображение
     jQuery('#main img:first-child').addClass('returned hidden');
     var cur_screen = 0,
@@ -175,6 +174,7 @@ jQuery(function() {
             .addClass('animated')
             .addClass('fadeIn');
         jQuery('.itemlist-two').append(croppedImg);
+        jQuery('.knife-wrap').css('height', jQuery('.itemlist-two').height()+'px');
     }
     // Переход с экрана диагноситки ножом
     jQuery('.btn__next').on('click', function(event) {
