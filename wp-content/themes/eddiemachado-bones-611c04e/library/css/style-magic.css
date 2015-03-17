@@ -266,7 +266,7 @@ input[type=submit]:hover, input[type=submit]:active {
 {
     position: relative;
 }
-.ui-draggable-dragging:before, .itemlist_item:hover:before
+.itemlist_item.ui-draggable-dragging:before, .itemlist_item:hover:before
 {
     content: '';
     position: absolute;
@@ -275,7 +275,7 @@ input[type=submit]:hover, input[type=submit]:active {
     top: 26px;
     left: -475px;
 }
-.ui-draggable-dragging:after, .itemlist_item:hover:after
+.itemlist_item.ui-draggable-dragging:after, .itemlist_item:hover:after
 {
     content: '';
     position: absolute;
