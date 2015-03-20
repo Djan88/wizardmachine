@@ -14,7 +14,7 @@ die();
 }
 if(!current_user_can('manage_options')){
 add_action('admin_init','users_redirect');
-add_filter('login_redirect', 'users_redirect');
+
 }
 
 // LOAD BONES CORE (if you remove this, the theme will break)
