@@ -29,12 +29,16 @@
                         <div class="home-content">
                             <?php the_content(); ?>
                         </div>
-                        <a href="/wizard" class="button button-primary button-large">Начать</a>
+                        <a href="/wizard" class="button button-primary button-large">Выбор протокола</a>
+                        <a href="/knife_diagnostic" class="button button-primary button-large">Диагностика ножом</a>
                         <a href="/wp-content/uploads/2015/02/Manual_dlya_Wizardmachine.pdf" target="_blank" class="button button-primary button-large">Руководство</a> 
                         <?php if(is_user_logged_in()){ ?>
                             <a class="button button-primary button-large" href="<?php echo home_url(); ?>/wp-login.php?action=logout&amp;_wpnonce=a6cad512ba">Выйти</a>
                         <?php }?>
-                        <div style="padding-top: 25px;"><a href="http://help.yandex.ru/common/support/screenshot.xml" target="_blank" class="button button-primary button-large button__main">Как сделать "скриншот" экрана</a></div>
+                        <div style="padding-top: 25px;">
+                            <a href="http://help.yandex.ru/common/support/screenshot.xml" target="_blank" class="button button-primary button-large button__main">Как сделать "скриншот" экрана</a>
+                            <a href="/wp-content/uploads/2015/02/Manual_dlya_Wizardmachine.pdf" target="_blank" class="button button-primary button-large button__main">Руководство пользователя</a> 
+                        </div>
                         <div><a href="/pay/" target="_blank" class="btn btn_lg btn_trans" style="margin-top: 10px; margin-left: 15px;">Оплата доступа</a></div>
                         <div><a href="/consultation/" target="_blank" class="btn btn_lg btn_trans" style="margin-top: 10px; margin-left: 15px;">Оплата консультации</a></div>
 
