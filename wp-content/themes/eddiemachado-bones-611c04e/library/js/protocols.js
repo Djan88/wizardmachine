@@ -108,9 +108,9 @@
                         jQuery('#draggableSh').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mandala.png) 0 0/100% no-repeat');
                         jQuery('#draggableS2, #draggableS2_1').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/travma.jpg) 0 0/100% no-repeat');
                         count_animation += 1;
-                        if (count_animation >= 1 && count_animation <= 2){                               //60-120
+                        if (count_animation >= 60 && count_animation <= 120){                               //60-120
                             jQuery('#draggableS2, #draggableS2_1').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/povregdenie_demona.jpg) 0 0/100% no-repeat');
-                        } else if (count_animation >= 2 && count_animation <= 5){                               //120-151
+                        } else if (count_animation >= 120 && count_animation <= 151){                               //120-151
                             jQuery('#draggableS2, #draggableS2_1').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/filtr.jpg) 0 0/100% no-repeat');
                         }
                     } else {
