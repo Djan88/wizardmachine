@@ -2248,7 +2248,7 @@ v5 = function(){
                 transform: 'scale(1) rotateY(180deg)',
                 paddingTop: '8px'
             });
-            if (count_animation <= 47){
+            if (count_animation <= 120){
                 cur_let = Math.round(Math.random() * (7 - 0))
                 // console.log(letters[cur_let]);
                 jQuery('#draggableD1').text(letters[cur_let]);
