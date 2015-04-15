@@ -18,6 +18,18 @@
         resorceGlobalCount = 0,
         v2,
         zZone = '#draggable3',
+        count_animation_let = 0,
+        cur_let,
+        letters = {
+            0: 'Б',
+            1: 'Т',
+            2: 'Н',
+            3: 'М',
+            4: 'Г',
+            5: 'Р',
+            6: 'В',
+            7: 'Х',
+        },
         v3;
 
     onEnd = function(){
@@ -2231,8 +2243,21 @@ v5 = function(){
                 background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat'
             });
             jQuery('#draggableD1').css({
-                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat'
+                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/oct.png) 0 0/100% no-repeat',
+                color: '#000',
+                transform: 'scale(1) rotateY(180deg)',
+                paddingTop: '8px'
             });
+            if (count_animation <= 47){
+                cur_let = Math.round(Math.random() * (7 - 0))
+                // console.log(letters[cur_let]);
+                jQuery('#draggableD1').text(letters[cur_let]);
+            } else {
+                jQuery('#draggableD1').css({
+                    color: 'transparent',
+                    paddingTop: '4px'
+                });
+            }
             count_animation += 1;
         } else {
             clearInterval(phaseOne);
