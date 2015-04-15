@@ -2272,6 +2272,7 @@ v5 = function(){
                 paddingTop: '2px',
                 zIndex: '1'
             });
+            jQuery('#draggableD1').text('D+');
             count_animation = 1;
             jQuery('#draggableClean_2, #draggableClean_3').addClass('inopaciti');
 //фаза 2
