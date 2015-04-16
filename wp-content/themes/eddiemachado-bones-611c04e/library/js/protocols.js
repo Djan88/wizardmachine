@@ -2243,7 +2243,7 @@ v5 = function(){
                 background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat'
             });
             jQuery('#draggableD1').css({
-                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/oct.png) 0 0/100% no-repeat',
+                background: 'url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/oct.png) 0 0/100% no-repeat',
                 color: '#000',
                 transform: 'scale(1) rotateY(180deg)',
                 paddingTop: '8px'
