@@ -859,14 +859,25 @@
                                                                 jQuery('.itemlist_item').removeClass('transparent');
     //фаза 2
                                                                 count_animation = 1;
+                                                                jQuery('#draggableClean_2').css({
+                                                                        left: parseFloat(jQuery('#draggable0').css('left'))-60+'px',
+                                                                        top: parseFloat(jQuery('#draggable0').css('top'))+'px'
+                                                                });    
+                                                                jQuery('#draggableClean_2').removeClass('inopaciti');
                                                                 phaseOne = setInterval(function(){
-                                                                    if (count_animation <= 120){                                                                         //120
-                                                                        cur_animation_val += 6;
+                                                                    if (count_animation <= 480){                                                                         //120
+                                                                        cur_animation_val += 1.5;
                                                                         jQuery('#draggable1, #draggable4, #draggable5').css({
                                                                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/disfunction.jpg) 0 0/100% no-repeat'
                                                                         });
-                                                                        jQuery('#draggableD1, #draggableD2, #draggableD4, #draggableD5').css({
+                                                                        jQuery('#draggableD2, #draggableD4, #draggableD5').css({
                                                                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/drenag.png) 0 0/100% no-repeat'
+                                                                        });
+                                                                        jQuery('#draggableD1').css({
+                                                                            background: 'url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/oct.png) 0 0/100% no-repeat',
+                                                                            color: '#000',
+                                                                            transform: 'scale(1) rotateY(180deg)',
+                                                                            paddingTop: '8px'
                                                                         });
                                                                         jQuery('#draggable1, #draggable4, #draggable5, #draggableD1, #draggableD2, #draggableD4, #draggableD5').css({
                                                                             color: 'transparent',
@@ -878,10 +889,20 @@
                                                                             zIndex: '1000'
                                                                         });
                                                                         count_animation += 1;
-
+                                                                        if (count_animation <= 480){
+                                                                            cur_let = Math.round(Math.random() * (7 - 0))
+                                                                            // console.log(letters[cur_let]);
+                                                                            jQuery('#draggableD1').text(letters[cur_let]);
+                                                                        } else {
+                                                                            jQuery('#draggableD1').css({
+                                                                                color: 'transparent',
+                                                                                paddingTop: '4px'
+                                                                            });
+                                                                        }
                                                                     } else {
                                                                         clearInterval(phaseOne);
                                                                         count_animation = 1;
+                                                                        jQuery('#draggableClean_2').addClass('inopaciti');
                                                                         jQuery('#draggable1, #draggable4, #draggable5, #draggableD1, #draggableD2, #draggableD4, #draggableD5').css({
                                                                             background: 'rgba(255,255,255, 0.5)',
                                                                             color: 'red',
@@ -1583,7 +1604,7 @@
                                                                             }
                                                                         }, 1000);
                                                                     }
-                                                                }, 1000);
+                                                                }, 250);
                                                             });
                                                             fourthTriangleAnimation.play();
                                                         }, 250)
