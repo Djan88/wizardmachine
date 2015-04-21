@@ -2223,8 +2223,8 @@ v5 = function(){
     });
     jQuery('#draggableClean_2, #draggableClean_3').removeClass('inopaciti');
     phaseOne = setInterval(function(){
-        if (count_animation <= 120){                                                                         //120
-            cur_animation_val += 6;
+        if (count_animation <= 480){                                                                         //120
+            cur_animation_val += 1.5;
             jQuery('#draggableClean_2, #draggableClean_3, #draggable0, #draggableD1, #draggableVD').css({
                 transform: 'scale(1)',
                 borderWidth: '1px',
@@ -2248,7 +2248,7 @@ v5 = function(){
                 transform: 'scale(1) rotateY(180deg)',
                 paddingTop: '8px'
             });
-            if (count_animation <= 120){
+            if (count_animation <= 480){
                 cur_let = Math.round(Math.random() * (7 - 0))
                 // console.log(letters[cur_let]);
                 jQuery('#draggableD1').text(letters[cur_let]);
@@ -3026,7 +3026,7 @@ v5 = function(){
                 }
             }, 1000);
         }
-    }, 1000);
+    }, 250);
 };
 
 
