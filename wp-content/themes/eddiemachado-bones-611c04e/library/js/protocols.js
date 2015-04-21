@@ -879,7 +879,7 @@
                                                                             transform: 'scale(1) rotateY(180deg)',
                                                                             paddingTop: '8px'
                                                                         });
-                                                                        jQuery('#draggable1, #draggable4, #draggable5, #draggableD1, #draggableD2, #draggableD4, #draggableD5').css({
+                                                                        jQuery('#draggableClean_2, #draggable1, #draggable4, #draggable5, #draggableD1, #draggableD2, #draggableD4, #draggableD5').css({
                                                                             color: 'transparent',
                                                                             borderColor: 'transparent',
                                                                             opacity: 0.8,
@@ -887,6 +887,13 @@
                                                                             borderWidth: '1px',
                                                                             paddingTop: '4px',
                                                                             zIndex: '1000'
+                                                                        });
+                                                                        jQuery('#draggableD1').css({
+                                                                            color: '#000'
+                                                                        });
+                                                                        jQuery('#draggableClean_2').css({
+                                                                            transform: 'rotate('+cur_animation_val+'deg) scale(1)',
+                                                                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat'
                                                                         });
                                                                         count_animation += 1;
                                                                         if (count_animation <= 480){
@@ -903,7 +910,7 @@
                                                                         clearInterval(phaseOne);
                                                                         count_animation = 1;
                                                                         jQuery('#draggableClean_2').addClass('inopaciti');
-                                                                        jQuery('#draggable1, #draggable4, #draggable5, #draggableD1, #draggableD2, #draggableD4, #draggableD5').css({
+                                                                        jQuery('#draggableClean_2, #draggable1, #draggable4, #draggable5, #draggableD1, #draggableD2, #draggableD4, #draggableD5').css({
                                                                             background: 'rgba(255,255,255, 0.5)',
                                                                             color: 'red',
                                                                             borderColor: 'red',
