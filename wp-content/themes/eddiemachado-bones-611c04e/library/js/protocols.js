@@ -889,7 +889,10 @@
                                                                             zIndex: '1000'
                                                                         });
                                                                         jQuery('#draggableD1').css({
-                                                                            color: '#000'
+                                                                            background: 'url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/oct.png) 0 0/100% no-repeat',
+                                                                            color: '#000',
+                                                                            transform: 'scale(1) rotateY(180deg)',
+                                                                            paddingTop: '8px'
                                                                         });
                                                                         jQuery('#draggableClean_2').css({
                                                                             transform: 'rotate('+cur_animation_val+'deg) scale(1)',
