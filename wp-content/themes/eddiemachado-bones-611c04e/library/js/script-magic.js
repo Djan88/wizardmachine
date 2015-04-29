@@ -191,7 +191,7 @@ jQuery( ".btn__wizard" ).on('click', function(event) {
     if(protocol == 'resource'){
         checkV3();
         if(v3status == false){
-            swal("Целевая V зона не перенесена", "Для начала выполнения процедуры необходимо перенести зону "+curV, "info");
+            swal("Целевая V зона не перенесена", "Для начала выполнения процедуры необходимо перенести зону "+curV, "info"); 
         } else {
             jQuery(this)
                 .addClass('btn__wizard_inAction')
@@ -209,7 +209,7 @@ jQuery( ".btn__wizard" ).on('click', function(event) {
     } else {
         checkPoints();
         if(pointsStatus == false){
-            swal("Не все зоны перенесены", "Перед началом процедуры необходимо перенести все зоны", "info");
+            swal("Не все зоны перенесены", "Перед началом процедуры необходимо перенести все зоны", "info"); 
         } else {
             jQuery(this)
                 .addClass('btn__wizard_inAction')
