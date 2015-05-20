@@ -111,7 +111,7 @@ jQuery(function() {
             .addClass('animated')
             .addClass('fadeIn')
     };
-
+jQuery('.work-area').find('.returned').draggable();
 // ШАГ 1 (К загрузке фото)
     jQuery( ".btn_choice" ).on('click', function(event) {
         protocol = jQuery(this).data('protocol');
