@@ -111,7 +111,6 @@ jQuery(function() {
             .addClass('animated')
             .addClass('fadeIn')
     };
-jQuery('.work-area').find('.returned').draggable();
 // ШАГ 1 (К загрузке фото)
     jQuery( ".btn_choice" ).on('click', function(event) {
         protocol = jQuery(this).data('protocol');
@@ -174,6 +173,7 @@ jQuery('.work-area').find('.returned').draggable();
             .addClass('animated')
             .addClass('fadeIn');
         jQuery('.itemlist-two').append(croppedImg);
+        jQuery('.work-area').find('.returned').draggable();        
         jQuery('.knife-wrap').css('height', jQuery('.itemlist-two').height()+20+'px');
     }
     // Переход с экрана диагноситки ножом
