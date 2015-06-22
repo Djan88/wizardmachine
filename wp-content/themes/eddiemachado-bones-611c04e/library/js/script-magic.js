@@ -111,7 +111,6 @@ jQuery(function() {
             .addClass('animated')
             .addClass('fadeIn')
     };
-
 // ШАГ 1 (К загрузке фото)
     jQuery( ".btn_choice" ).on('click', function(event) {
         protocol = jQuery(this).data('protocol');
@@ -174,6 +173,7 @@ jQuery(function() {
             .addClass('animated')
             .addClass('fadeIn');
         jQuery('.itemlist-two').append(croppedImg);
+        jQuery('.work-area').find('.returned').draggable();        
         jQuery('.knife-wrap').css('height', jQuery('.itemlist-two').height()+20+'px');
     }
     // Переход с экрана диагноситки ножом
@@ -190,9 +190,9 @@ jQuery( ".btn__wizard" ).on('click', function(event) {
     curV = localStorage.getItem('curV');
     if(protocol == 'resource'){
         checkV3();
-        // if(v3status == false){
-        //     swal("Целевая V зона не перенесена", "Для начала выполнения процедуры необходимо перенести зону "+curV, "info");
-        // } else {
+        if(v3status == false){
+            swal("Целевая V зона не перенесена", "Для начала выполнения процедуры необходимо перенести зону "+curV, "info"); 
+        } else {
             jQuery(this)
                 .addClass('btn__wizard_inAction')
                 .text('Выполняется');
@@ -205,12 +205,12 @@ jQuery( ".btn__wizard" ).on('click', function(event) {
                 } else {
                     console.log('нет протокола с id '+ protocol)
                 }
-        // } 
+        } 
     } else {
         checkPoints();
-        // if(pointsStatus == false){
-        //     swal("Не все зоны перенесены", "Перед началом процедуры необходимо перенести все зоны", "info");
-        // } else {
+        if(pointsStatus == false){
+            swal("Не все зоны перенесены", "Перед началом процедуры необходимо перенести все зоны", "info"); 
+        } else {
             jQuery(this)
                 .addClass('btn__wizard_inAction')
                 .text('Выполняется');
@@ -233,7 +233,7 @@ jQuery( ".btn__wizard" ).on('click', function(event) {
                 } else{
                     console.log('нет протокола с id '+ protocol)
                 }
-        // }  
+        }  
     }
     main_heading();
 });
