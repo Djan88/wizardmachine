@@ -59,7 +59,17 @@
         });
         mySound.play();
     }
-
+jQuery( ".btn__wizard" ).on('click', function(event) {
+    var sound = new Howl({
+      urls: ['/sounds/sound.ogg', '/sounds/sound.aac', '/sounds/sound.mp3'],
+      autoplay: false,
+      loop: false,
+      buffer: true,
+      onend: function() {
+        console.log('Finished!');
+      }
+    });
+})
     v2 = function(){
         dinamicElem = false;
     //фаза 1
@@ -103,6 +113,7 @@
                 });
                 count_animation = 1;
                 jQuery('#draggableClean_2, #draggableClean_4').addClass('inopaciti');
+                sound.play();
     //фаза 2
                 cur_animation_val = 0;
                 phaseTwo = setInterval(function(){
@@ -138,6 +149,7 @@
                             paddingTop: '2px',
                             zIndex: '1'
                         });
+                        sound.play();
     //фаза 3
                         cur_animation_val = 0;
                         jQuery('#draggableClean_2').css({
@@ -181,6 +193,7 @@
                                     paddingTop: '2px',
                                     zIndex: '1'
                                 });
+                                sound.play();
     //фаза 4
                                 cur_animation_val = 0;
                                 phaseFour = setInterval(function(){
@@ -219,6 +232,7 @@
                                             opacity: 1,
                                             zIndex: '1'
                                         });
+                                        sound.play();
     //Фаза 5
                                         cur_animation_val = 0;
                                         count_animation = 1;
@@ -266,6 +280,7 @@
                                                                                             jQuery('#draggable4').addClass('transparent');
                                                                                             fourthTriangleAnimation = new Vivus('triangle_4', {type: 'delayed', duration: 150}, function(){
                                                                                                 jQuery('.itemlist_item').removeClass('transparent');
+                                                                                                sound.play();
                                                                                 //Фаза 7
                                                                                     //Этап 7-1-1
                                                                                                 cur_animation_val = 55;
@@ -299,6 +314,7 @@
                                                                                                             paddingTop: '2px',
                                                                                                             zIndex: '1'
                                                                                                         });
+                                                                                                        sound.play();
                                                                                     //Этап 7-1-2
                                                                                                         cur_animation_val = 10;
                                                                                                         count_animation = 1;
@@ -331,6 +347,7 @@
                                                                                                                     paddingTop: '2px',
                                                                                                                     zIndex: '1'
                                                                                                                 });
+                                                                                                                sound.play();
                                                                                     //Этап 7-1-3
                                                                                                                 cur_animation_val = 270;
                                                                                                                 count_animation = 1;
@@ -363,6 +380,7 @@
                                                                                                                             paddingTop: '2px',
                                                                                                                             zIndex: '1'
                                                                                                                         });
+                                                                                                                        sound.play();
                                                                                     //Этап 7-1-4
                                                                                                                         cur_animation_val = 300;
                                                                                                                         count_animation = 1;
@@ -395,6 +413,7 @@
                                                                                                                                     paddingTop: '2px',
                                                                                                                                     zIndex: '1'
                                                                                                                                 });
+                                                                                                                                sound.play();
                                                                                                                     //Этап 7-2-1
                                                                                                                                 cur_animation_val = 55;
                                                                                                                                 count_animation = 1;
@@ -427,6 +446,7 @@
                                                                                                                                             paddingTop: '2px',
                                                                                                                                             zIndex: '1'
                                                                                                                                         });
+                                                                                                                                        sound.play();
                                                                                                                     //Этап 7-2-2
                                                                                                                                         cur_animation_val = 10;
                                                                                                                                         count_animation = 1;
@@ -459,6 +479,7 @@
                                                                                                                                                     paddingTop: '2px',
                                                                                                                                                     zIndex: '1'
                                                                                                                                                 });
+                                                                                                                                                sound.play();
                                                                                                                     //Этап 7-2-3
                                                                                                                                                 cur_animation_val = 270;
                                                                                                                                                 count_animation = 1;
@@ -491,6 +512,7 @@
                                                                                                                                                             paddingTop: '2px',
                                                                                                                                                             zIndex: '1'
                                                                                                                                                         });
+                                                                                                                                                        sound.play();
                                                                                                                     //Этап 7-2-4
                                                                                                                                                         cur_animation_val = 300;
                                                                                                                                                         count_animation = 1;
@@ -523,6 +545,7 @@
                                                                                                                                                                     paddingTop: '2px',
                                                                                                                                                                     zIndex: '1'
                                                                                                                                                                 });
+                                                                                                                                                                sound.play();
                                                                                                                                                     //Этап 7-3-1
                                                                                                                                                                 cur_animation_val = 55;
                                                                                                                                                                 count_animation = 1;
@@ -555,6 +578,7 @@
                                                                                                                                                                             paddingTop: '2px',
                                                                                                                                                                             zIndex: '1'
                                                                                                                                                                         });
+                                                                                                                                                                        sound.play();
                                                                                                                                                     //Этап 7-3-2
                                                                                                                                                                         cur_animation_val = 10;
                                                                                                                                                                         count_animation = 1;
@@ -587,6 +611,7 @@
                                                                                                                                                                                     paddingTop: '2px',
                                                                                                                                                                                     zIndex: '1'
                                                                                                                                                                                 });
+                                                                                                                                                                                sound.play();
                                                                                                                                                     //Этап 7-3-3
                                                                                                                                                                                 cur_animation_val = 270;
                                                                                                                                                                                 count_animation = 1;
