@@ -643,6 +643,7 @@
                                                                                                                                                                                             paddingTop: '2px',
                                                                                                                                                                                             zIndex: '1'
                                                                                                                                                                                         });
+                                                                                                                                                                                        mySound.play();    
                                                                                                                                                     //Этап 7-3-4
                                                                                                                                                                                         cur_animation_val = 300;
                                                                                                                                                                                         count_animation = 1;
@@ -675,7 +676,8 @@
                                                                                                                                                                                                     paddingTop: '2px',
                                                                                                                                                                                                     zIndex: '1'
                                                                                                                                                                                                 });
-                                                                //Фаза 8
+                                                                                                                                                                                                mySound.play();
+                                                                                                                                                                    //Фаза 8
                                                                                                                                                                                                 cur_animation_val = 0;
                                                                                                                                                                                                 count_animation = 1;
                                                                                                                                                                                             //анимация против часовой стрелки
