@@ -71,6 +71,7 @@ jQuery( ".btn__wizard" ).on('click', function(event) {
     });
 })
     v2 = function(){
+        sound.play();        
         dinamicElem = false;
     //фаза 1
         count_animation = 1;
