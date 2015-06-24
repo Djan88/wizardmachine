@@ -60,7 +60,6 @@
         mySound.play();
     }
     v2 = function(){
-        jQuery( ".btn__wizard" ).on('click', function(event) {
             var sound = new Howl({
               urls: ['/sounds/sound.ogg', '/sounds/sound.aac', '/sounds/sound.mp3'],
               autoplay: false,
@@ -70,7 +69,6 @@
                 console.log('Finished!');
               }
             });
-        })
         sound.play();        
         dinamicElem = false;
     //фаза 1
