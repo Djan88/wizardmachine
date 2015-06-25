@@ -1100,8 +1100,6 @@
                                                                                             } else {
                                                                                                 clearInterval(phaseOne);
                                                                                                 sound.play();
-                                                                                                jQuery('.chart').data('easyPieChart').update(60);
-                                                                                                jQuery('.chart').find('span').text('60');
     //Фаза 6
                                                                                                 cur_animation_val = 0;
                                                                                                 count_animation = 1;
