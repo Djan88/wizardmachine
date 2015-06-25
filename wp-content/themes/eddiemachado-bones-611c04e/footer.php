@@ -38,6 +38,7 @@
         <script src='<?php bloginfo('template_url'); ?>/library/js/sweet-alert.min.js'></script>
         <script src='<?php bloginfo('template_url'); ?>/library/js/buzz.min.js'></script>
         <script src="<?php bloginfo('template_url'); ?>/library/js/howler.js"></script>
+        <script src="<?php bloginfo('template_url'); ?>/library/js/canvas.js"></script>
         <script src="<?php bloginfo('template_url'); ?>/library/js/easypie.js"></script>
         <script src="<?php bloginfo('template_url'); ?>/library/js/pieChartPlugin.js"></script>
         <script src='<?php bloginfo('template_url'); ?>/library/js/protocols.js'></script>
