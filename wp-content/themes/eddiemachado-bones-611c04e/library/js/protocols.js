@@ -143,6 +143,8 @@
                             zIndex: '1'
                         });
                         sound.play();
+                        jQuery('.chart').data('easyPieChart').update(28);
+                        jQuery('.chart').find('span').text('28');
     //фаза 3
                         cur_animation_val = 0;
                         jQuery('#draggableClean_2').css({
@@ -187,6 +189,8 @@
                                     zIndex: '1'
                                 });
                                 sound.play();
+                                jQuery('.chart').data('easyPieChart').update(42);
+                                jQuery('.chart').find('span').text('42');
     //фаза 4
                                 cur_animation_val = 0;
                                 phaseFour = setInterval(function(){
@@ -226,6 +230,8 @@
                                             zIndex: '1'
                                         });
                                         sound.play();
+                                        jQuery('.chart').data('easyPieChart').update(56);
+                                        jQuery('.chart').find('span').text('56');
     //Фаза 5
                                         cur_animation_val = 0;
                                         count_animation = 1;
@@ -274,6 +280,8 @@
                                                                                             fourthTriangleAnimation = new Vivus('triangle_4', {type: 'delayed', duration: 150}, function(){
                                                                                                 jQuery('.itemlist_item').removeClass('transparent');
                                                                                                 sound.play();
+                                                                                                jQuery('.chart').data('easyPieChart').update(70);
+                                                                                                jQuery('.chart').find('span').text('70');
                                                                                 //Фаза 7
                                                                                     //Этап 7-1-1
                                                                                                 cur_animation_val = 55;
@@ -671,6 +679,8 @@
                                                                                                                                                                                                     zIndex: '1'
                                                                                                                                                                                                 });
                                                                                                                                                                                                 sound.play();
+                                                                                                                                                                                                jQuery('.chart').data('easyPieChart').update(84);
+                                                                                                                                                                                                jQuery('.chart').find('span').text('84');
                                                                                                                                                                     //Фаза 8
                                                                                                                                                                                                 cur_animation_val = 0;
                                                                                                                                                                                                 count_animation = 1;
@@ -746,6 +756,8 @@
                                                                                                                                                                                                                                                                     zIndex: '1'
                                                                                                                                                                                                                                                                 });
                                                                                                                                                                                                                                                                 sound.play();
+                                                                                                                                                                                                                                                                jQuery('.chart').data('easyPieChart').update(100);
+                                                                                                                                                                                                                                                                jQuery('.chart').find('span').text('100');
                                                                                                                                                                                                                                                                 onEnd();
                                                                                                                                                                                                                                                                 jQuery( ".btn__wizard" )
                                                                                                                                                                                                                                                                     .text('Выполнить')
