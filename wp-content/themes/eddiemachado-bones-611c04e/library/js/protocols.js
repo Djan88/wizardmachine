@@ -54,10 +54,6 @@
                 jQuery(location).attr('href','/wizard');
             } 
         });
-        var mySound = new buzz.sound( "/sounds/wizard", {
-            formats: [ "ogg", "mp3" ]
-        });
-        mySound.play();
     }
     v2 = function(){
             var sound = new Howl({
@@ -639,7 +635,7 @@
                                                                                                                                                                                             paddingTop: '2px',
                                                                                                                                                                                             zIndex: '1'
                                                                                                                                                                                         });
-                                                                                                                                                                                        mySound.play();    
+                                                                                                                                                                                        sound.play();    
                                                                                                                                                     //Этап 7-3-4
                                                                                                                                                                                         cur_animation_val = 300;
                                                                                                                                                                                         count_animation = 1;
@@ -672,7 +668,7 @@
                                                                                                                                                                                                     paddingTop: '2px',
                                                                                                                                                                                                     zIndex: '1'
                                                                                                                                                                                                 });
-                                                                                                                                                                                                mySound.play();
+                                                                                                                                                                                                sound.play();
                                                                                                                                                                     //Фаза 8
                                                                                                                                                                                                 cur_animation_val = 0;
                                                                                                                                                                                                 count_animation = 1;
@@ -747,7 +743,7 @@
                                                                                                                                                                                                                                                                     paddingTop: '2px',
                                                                                                                                                                                                                                                                     zIndex: '1'
                                                                                                                                                                                                                                                                 });
-                                                                                                                                                                                                                                                                mySound.play();
+                                                                                                                                                                                                                                                                sound.play();
                                                                                                                                                                                                                                                                 onEnd();
                                                                                                                                                                                                                                                                 jQuery( ".btn__wizard" )
                                                                                                                                                                                                                                                                     .text('Выполнить')
@@ -886,7 +882,7 @@
                                                             jQuery('#draggable4').addClass('transparent');
                                                             fourthTriangleAnimation = new Vivus('triangle_4', {type: 'delayed', duration: 150}, function(){
                                                                 jQuery('.itemlist_item').removeClass('transparent');
-                                                                mySound.play();
+                                                                sound.play();
     //фаза 2
                                                                 count_animation = 1;
                                                                 jQuery('#draggableClean_2').css({
@@ -953,7 +949,7 @@
                                                                             paddingTop: '2px',
                                                                             zIndex: '1'
                                                                         });
-                                                                        mySound.play();
+                                                                        sound.play();
     //фаза 3
                                                                         count_animation = 1;
                                                                         jQuery('#draggableClean_2').css({
@@ -1002,7 +998,7 @@
                                                                                     zIndex: '1'
                                                                                 });
                                                                                 jQuery('#draggableClean_2, #draggableClean_4').addClass('inopaciti');
-                                                                                mySound.play();
+                                                                                sound.play();
     //фаза 4
                                                                                 count_animation = 1;
                                                                                 cur_animation_val = 0;
@@ -1049,7 +1045,7 @@
                                                                                             zIndex: '1',
                                                                                             color: 'red'
                                                                                         });
-                                                                                        mySound.play();
+                                                                                        sound.play();
     //фаза 5
                                                                                         count_animation = 1;
                                                                                         cur_animation_val = 0;
@@ -1059,7 +1055,7 @@
 
                                                                                             } else {
                                                                                                 clearInterval(phaseOne);
-                                                                                                mySound.play();
+                                                                                                sound.play();
     //Фаза 6
                                                                                                 cur_animation_val = 0;
                                                                                                 count_animation = 1;
@@ -1107,7 +1103,7 @@
                                                                                                                                                     jQuery('#draggable4').addClass('transparent');
                                                                                                                                                     fourthTriangleAnimation = new Vivus('triangle_4', {type: 'delayed', duration: 150}, function(){
                                                                                                                                                         jQuery('.itemlist_item').removeClass('transparent');
-                                                                                                                                                        mySound.play();
+                                                                                                                                                        sound.play();
     //Фаза 7
                                                                                                                                             //Этап 7-1-1
                                                                                                                                                         cur_animation_val = 55;
@@ -1141,7 +1137,7 @@
                                                                                                                                                                     paddingTop: '2px',
                                                                                                                                                                     zIndex: '1'
                                                                                                                                                                 });
-                                                                                                                                                                mySound.play();
+                                                                                                                                                                sound.play();
                                                                                                                                             //Этап 7-1-2
                                                                                                                                                                 cur_animation_val = 10;
                                                                                                                                                                 count_animation = 1;
@@ -1174,7 +1170,7 @@
                                                                                                                                                                             paddingTop: '2px',
                                                                                                                                                                             zIndex: '1'
                                                                                                                                                                         });
-                                                                                                                                                                        mySound.play();
+                                                                                                                                                                        sound.play();
                                                                                                                                             //Этап 7-1-3
                                                                                                                                                                         cur_animation_val = 270;
                                                                                                                                                                         count_animation = 1;
@@ -1207,7 +1203,7 @@
                                                                                                                                                                                     paddingTop: '2px',
                                                                                                                                                                                     zIndex: '1'
                                                                                                                                                                                 });
-                                                                                                                                                                                mySound.play();
+                                                                                                                                                                                sound.play();
                                                                                                                                             //Этап 7-1-4
                                                                                                                                                                                 cur_animation_val = 300;
                                                                                                                                                                                 count_animation = 1;
@@ -1240,7 +1236,7 @@
                                                                                                                                                                                             paddingTop: '2px',
                                                                                                                                                                                             zIndex: '1'
                                                                                                                                                                                         });
-                                                                                                                                                                                        mySound.play();
+                                                                                                                                                                                        sound.play();
                                                                                                                                                                             //Этап 7-2-1
                                                                                                                                                                                         cur_animation_val = 55;
                                                                                                                                                                                         count_animation = 1;
@@ -1273,7 +1269,7 @@
                                                                                                                                                                                                     paddingTop: '2px',
                                                                                                                                                                                                     zIndex: '1'
                                                                                                                                                                                                 });
-                                                                                                                                                                                                mySound.play();
+                                                                                                                                                                                                sound.play();
                                                                                                                                                                             //Этап 7-2-2
                                                                                                                                                                                                 cur_animation_val = 10;
                                                                                                                                                                                                 count_animation = 1;
@@ -1306,7 +1302,7 @@
                                                                                                                                                                                                             paddingTop: '2px',
                                                                                                                                                                                                             zIndex: '1'
                                                                                                                                                                                                         });
-                                                                                                                                                                                                        mySound.play();
+                                                                                                                                                                                                        sound.play();
                                                                                                                                                                             //Этап 7-2-3
                                                                                                                                                                                                         cur_animation_val = 270;
                                                                                                                                                                                                         count_animation = 1;
@@ -1339,7 +1335,7 @@
                                                                                                                                                                                                                     paddingTop: '2px',
                                                                                                                                                                                                                     zIndex: '1'
                                                                                                                                                                                                                 });
-                                                                                                                                                                                                                mySound.play();
+                                                                                                                                                                                                                sound.play();
                                                                                                                                                                             //Этап 7-2-4
                                                                                                                                                                                                                 cur_animation_val = 300;
                                                                                                                                                                                                                 count_animation = 1;
@@ -1372,7 +1368,7 @@
                                                                                                                                                                                                                             paddingTop: '2px',
                                                                                                                                                                                                                             zIndex: '1'
                                                                                                                                                                                                                         });
-                                                                                                                                                                                                                        mySound.play();
+                                                                                                                                                                                                                        sound.play();
                                                                                                                                                                                                             //Этап 7-3-1
                                                                                                                                                                                                                         cur_animation_val = 55;
                                                                                                                                                                                                                         count_animation = 1;
@@ -1405,7 +1401,7 @@
                                                                                                                                                                                                                                     paddingTop: '2px',
                                                                                                                                                                                                                                     zIndex: '1'
                                                                                                                                                                                                                                 });
-                                                                                                                                                                                                                                mySound.play();
+                                                                                                                                                                                                                                sound.play();
                                                                                                                                                                                                             //Этап 7-3-2
                                                                                                                                                                                                                                 cur_animation_val = 10;
                                                                                                                                                                                                                                 count_animation = 1;
@@ -1438,7 +1434,7 @@
                                                                                                                                                                                                                                             paddingTop: '2px',
                                                                                                                                                                                                                                             zIndex: '1'
                                                                                                                                                                                                                                         });
-                                                                                                                                                                                                                                        mySound.play();
+                                                                                                                                                                                                                                        sound.play();
                                                                                                                                                                                                             //Этап 7-3-3
                                                                                                                                                                                                                                         cur_animation_val = 270;
                                                                                                                                                                                                                                         count_animation = 1;
@@ -1471,7 +1467,7 @@
                                                                                                                                                                                                                                                     paddingTop: '2px',
                                                                                                                                                                                                                                                     zIndex: '1'
                                                                                                                                                                                                                                                 });
-                                                                                                                                                                                                                                                mySound.play();
+                                                                                                                                                                                                                                                sound.play();
                                                                                                                                                                                                             //Этап 7-3-4
                                                                                                                                                                                                                                                 cur_animation_val = 300;
                                                                                                                                                                                                                                                 count_animation = 1;
@@ -1504,7 +1500,7 @@
                                                                                                                                                                                                                                                             paddingTop: '2px',
                                                                                                                                                                                                                                                             zIndex: '1'
                                                                                                                                                                                                                                                         });
-                                                                                                                                                                                                                                                        mySound.play();
+                                                                                                                                                                                                                                                        sound.play();
                                                                                                                                                                                                                                 //Фаза 8
                                                                                                                                                                                                                                                         cur_animation_val = 0;
                                                                                                                                                                                                                                                         count_animation = 1;
@@ -1580,7 +1576,7 @@
                                                                                                                                                                                                                                                                                                                             paddingTop: '2px',
                                                                                                                                                                                                                                                                                                                             zIndex: '1'
                                                                                                                                                                                                                                                                                                                         });
-                                                                                                                                                                                                                                                                                                                        mySound.play();
+                                                                                                                                                                                                                                                                                                                        sound.play();
                                                                                                                                                                                                                                                                                                                         onEnd();
                                                                                                                                                                                                                                                                                                                         jQuery( ".btn__wizard" )
                                                                                                                                                                                                                                                                                                                             .text('Выполнить')
@@ -1730,7 +1726,7 @@
                     zIndex: '1'
                 });
                 count_animation = 1;
-                mySound.play();
+                sound.play();
     //фаза 2
                 count_animation = 1;
                 cur_animation_val = 0;
@@ -1770,7 +1766,7 @@
                         jQuery('#draggable1').css({
                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/disfunction.jpg) 0 0/100% no-repeat'
                         });
-                        mySound.play();
+                        sound.play();
                 //2-2
                         cur_animation_val = 0;                                                                       
                         count_animation = 1;
@@ -1801,7 +1797,7 @@
                                     paddingTop: '2px',
                                     zIndex: '1'
                                 });
-                                mySound.play();
+                                sound.play();
     //Фаза 3
                                 cur_animation_val = 0;
                                 count_animation = 1;
@@ -1851,7 +1847,7 @@
                                                                                     jQuery('#draggable4').addClass('transparent');
                                                                                     fourthTriangleAnimation = new Vivus('triangle_4', {type: 'delayed', duration: 150}, function(){
                                                                                         jQuery('.itemlist_item').removeClass('transparent');
-                                                                                        mySound.play();
+                                                                                        sound.play();
     // Фаза 4
                                                                                         count_animation = 1;
                                                                                         phaseOne = setInterval(function(){
@@ -1888,7 +1884,7 @@
                                                                                                     paddingTop: '2px',
                                                                                                     zIndex: '1'
                                                                                                 });
-                                                                                                mySound.play();
+                                                                                                sound.play();
      //Фаза 7
                                                                                     //Этап 7-1-1
                                                                                                 cur_animation_val = 55;
@@ -1922,7 +1918,7 @@
                                                                                                             paddingTop: '2px',
                                                                                                             zIndex: '1'
                                                                                                         });
-                                                                                                        mySound.play();
+                                                                                                        sound.play();
                                                                                     //Этап 7-1-2
                                                                                                         cur_animation_val = 10;
                                                                                                         count_animation = 1;
@@ -1955,7 +1951,7 @@
                                                                                                                     paddingTop: '2px',
                                                                                                                     zIndex: '1'
                                                                                                                 });
-                                                                                                                mySound.play();
+                                                                                                                sound.play();
                                                                                     //Этап 7-1-3
                                                                                                                 cur_animation_val = 270;
                                                                                                                 count_animation = 1;
@@ -1988,7 +1984,7 @@
                                                                                                                             paddingTop: '2px',
                                                                                                                             zIndex: '1'
                                                                                                                         });
-                                                                                                                        mySound.play();
+                                                                                                                        sound.play();
                                                                                     //Этап 7-1-4
                                                                                                                         cur_animation_val = 300;
                                                                                                                         count_animation = 1;
@@ -2021,7 +2017,7 @@
                                                                                                                                     paddingTop: '2px',
                                                                                                                                     zIndex: '1'
                                                                                                                                 });
-                                                                                                                                mySound.play();
+                                                                                                                                sound.play();
                                                                                                                     //Этап 7-2-1
                                                                                                                                 cur_animation_val = 55;
                                                                                                                                 count_animation = 1;
@@ -2054,7 +2050,7 @@
                                                                                                                                             paddingTop: '2px',
                                                                                                                                             zIndex: '1'
                                                                                                                                         });
-                                                                                                                                        mySound.play();
+                                                                                                                                        sound.play();
                                                                                                                     //Этап 7-2-2
                                                                                                                                         cur_animation_val = 10;
                                                                                                                                         count_animation = 1;
@@ -2087,7 +2083,7 @@
                                                                                                                                                     paddingTop: '2px',
                                                                                                                                                     zIndex: '1'
                                                                                                                                                 });
-                                                                                                                                                mySound.play();
+                                                                                                                                                sound.play();
                                                                                                                     //Этап 7-2-3
                                                                                                                                                 cur_animation_val = 270;
                                                                                                                                                 count_animation = 1;
@@ -2120,7 +2116,7 @@
                                                                                                                                                             paddingTop: '2px',
                                                                                                                                                             zIndex: '1'
                                                                                                                                                         });
-                                                                                                                                                        mySound.play();
+                                                                                                                                                        sound.play();
                                                                                                                     //Этап 7-2-4
                                                                                                                                                         cur_animation_val = 300;
                                                                                                                                                         count_animation = 1;
@@ -2153,7 +2149,7 @@
                                                                                                                                                                     paddingTop: '2px',
                                                                                                                                                                     zIndex: '1'
                                                                                                                                                                 });
-                                                                                                                                                                mySound.play();
+                                                                                                                                                                sound.play();
                             //Фаза 6
                                                                                                                                                                 cur_animation_val = 0;
                                                                                                                                                                 count_animation = 1;
@@ -2203,7 +2199,7 @@
                                                                                                                                                                                                                     jQuery('#draggable4').addClass('transparent');
                                                                                                                                                                                                                     fourthTriangleAnimation = new Vivus('triangle_4', {type: 'delayed', duration: 150}, function(){
                                                                                                                                                                                                                         jQuery('.itemlist_item').removeClass('transparent');
-                                                                                                                                                                                                                        mySound.play();
+                                                                                                                                                                                                                        sound.play();
                                                                                                                                                             //фаза 7
                                                                                                                                                                                                                         count_animation = 1;
                                                                                                                                                                                                                         phaseOne = setInterval(function(){
@@ -2233,7 +2229,7 @@
                                                                                                                                                                                                                                     paddingTop: '2px',
                                                                                                                                                                                                                                     zIndex: '1'
                                                                                                                                                                                                                                 });
-                                                                                                                                                                                                                                mySound.play();
+                                                                                                                                                                                                                                sound.play();
                                                                                                                                                                                                                                 onEnd();
                                                                                                                                                                                                                                 jQuery( ".btn__wizard" )
                                                                                                                                                                                                                                     .text('Выполнить')
@@ -2381,7 +2377,7 @@ v5 = function(){
             jQuery('#draggableD1').text('D+');
             count_animation = 1;
             jQuery('#draggableClean_2, #draggableClean_3').addClass('inopaciti');
-            mySound.play();
+            sound.play();
 //фаза 2
             count_animation = 1;
             jQuery('#draggableClean_2').css({
@@ -2438,7 +2434,7 @@ v5 = function(){
                     });
                     count_animation = 1;
                     jQuery('#draggableClean_2, #draggableClean_3').addClass('inopaciti');
-                    mySound.play();
+                    sound.play();
 //Фаза 3
                     cur_animation_val = 0;
                     count_animation = 1;
@@ -2486,7 +2482,7 @@ v5 = function(){
                                                                         jQuery('#draggable4').addClass('transparent');
                                                                         fourthTriangleAnimation = new Vivus('triangle_4', {type: 'delayed', duration: 150}, function(){
                                                                             jQuery('.itemlist_item').removeClass('transparent');
-                                                                            mySound.play();
+                                                                            sound.play();
     //Фаза 4
                                                                 //Этап 4-1-1
                                                                             cur_animation_val = 55;
@@ -2520,7 +2516,7 @@ v5 = function(){
                                                                                         paddingTop: '2px',
                                                                                         zIndex: '1'
                                                                                     });
-                                                                                    mySound.play();
+                                                                                    sound.play();
                                                                 //Этап 4-1-2
                                                                                     cur_animation_val = 10;
                                                                                     count_animation = 1;
@@ -2553,7 +2549,7 @@ v5 = function(){
                                                                                                 paddingTop: '2px',
                                                                                                 zIndex: '1'
                                                                                             });
-                                                                                            mySound.play();
+                                                                                            sound.play();
                                                                 //Этап 4-1-3
                                                                                             cur_animation_val = 270;
                                                                                             count_animation = 1;
@@ -2586,7 +2582,7 @@ v5 = function(){
                                                                                                         paddingTop: '2px',
                                                                                                         zIndex: '1'
                                                                                                     });
-                                                                                                    mySound.play();
+                                                                                                    sound.play();
                                                                 //Этап 4-1-4
                                                                                                     cur_animation_val = 300;
                                                                                                     count_animation = 1;
@@ -2619,7 +2615,7 @@ v5 = function(){
                                                                                                                 paddingTop: '2px',
                                                                                                                 zIndex: '1'
                                                                                                             });
-                                                                                                            mySound.play();
+                                                                                                            sound.play();
                                                                                                 //Этап 4-2-1
                                                                                                             cur_animation_val = 55;
                                                                                                             count_animation = 1;
@@ -2652,7 +2648,7 @@ v5 = function(){
                                                                                                                         paddingTop: '2px',
                                                                                                                         zIndex: '1'
                                                                                                                     });
-                                                                                                                    mySound.play();
+                                                                                                                    sound.play();
                                                                                                 //Этап 4-2-2
                                                                                                                     cur_animation_val = 10;
                                                                                                                     count_animation = 1;
@@ -2685,7 +2681,7 @@ v5 = function(){
                                                                                                                                 paddingTop: '2px',
                                                                                                                                 zIndex: '1'
                                                                                                                             });
-                                                                                                                            mySound.play();
+                                                                                                                            sound.play();
                                                                                                 //Этап 4-2-3
                                                                                                                             cur_animation_val = 270;
                                                                                                                             count_animation = 1;
@@ -2718,7 +2714,7 @@ v5 = function(){
                                                                                                                                         paddingTop: '2px',
                                                                                                                                         zIndex: '1'
                                                                                                                                     });
-                                                                                                                                    mySound.play();
+                                                                                                                                    sound.play();
                                                                                                 //Этап 4-2-4
                                                                                                                                     cur_animation_val = 300;
                                                                                                                                     count_animation = 1;
@@ -2751,7 +2747,7 @@ v5 = function(){
                                                                                                                                                 paddingTop: '2px',
                                                                                                                                                 zIndex: '1'
                                                                                                                                             });
-                                                                                                                                            mySound.play();
+                                                                                                                                            sound.play();
                                                     //фаза 5
                                                                                                                                             cur_animation_val = 0;
                                                                                                                                             phaseTwo = setInterval(function(){
@@ -2791,7 +2787,7 @@ v5 = function(){
                                                                                                                                                         paddingTop: '2px',
                                                                                                                                                         zIndex: '1'
                                                                                                                                                     });   
-                                                                                                                                                    mySound.play();   
+                                                                                                                                                    sound.play();   
                                                     //Фаза 6
                                                                                                                                         //Этап 6-1-1
                                                                                                                                                     cur_animation_val = 55;
@@ -2825,7 +2821,7 @@ v5 = function(){
                                                                                                                                                                 paddingTop: '2px',
                                                                                                                                                                 zIndex: '1'
                                                                                                                                                             });
-                                                                                                                                                            mySound.play();
+                                                                                                                                                            sound.play();
                                                                                                                                         //Этап 6-1-2
                                                                                                                                                             cur_animation_val = 10;
                                                                                                                                                             count_animation = 1;
@@ -2858,7 +2854,7 @@ v5 = function(){
                                                                                                                                                                         paddingTop: '2px',
                                                                                                                                                                         zIndex: '1'
                                                                                                                                                                     });
-                                                                                                                                                                    mySound.play();
+                                                                                                                                                                    sound.play();
                                                                                                                                         //Этап 6-1-3
                                                                                                                                                                     cur_animation_val = 270;
                                                                                                                                                                     count_animation = 1;
@@ -2891,7 +2887,7 @@ v5 = function(){
                                                                                                                                                                                 paddingTop: '2px',
                                                                                                                                                                                 zIndex: '1'
                                                                                                                                                                             });
-                                                                                                                                                                            mySound.play();
+                                                                                                                                                                            sound.play();
                                                                                                                                         //Этап 6-1-4
                                                                                                                                                                             cur_animation_val = 300;
                                                                                                                                                                             count_animation = 1;
@@ -2924,7 +2920,7 @@ v5 = function(){
                                                                                                                                                                                         paddingTop: '2px',
                                                                                                                                                                                         zIndex: '1'
                                                                                                                                                                                     });
-                                                                                                                                                                                    mySound.play();
+                                                                                                                                                                                    sound.play();
                                                                                                                                                                         //Этап 6-2-1
                                                                                                                                                                                     cur_animation_val = 55;
                                                                                                                                                                                     count_animation = 1;
@@ -2957,7 +2953,7 @@ v5 = function(){
                                                                                                                                                                                                 paddingTop: '2px',
                                                                                                                                                                                                 zIndex: '1'
                                                                                                                                                                                             });
-                                                                                                                                                                                            mySound.play();
+                                                                                                                                                                                            sound.play();
                                                                                                                                                                         //Этап 6-2-2
                                                                                                                                                                                             cur_animation_val = 10;
                                                                                                                                                                                             count_animation = 1;
@@ -2990,7 +2986,7 @@ v5 = function(){
                                                                                                                                                                                                         paddingTop: '2px',
                                                                                                                                                                                                         zIndex: '1'
                                                                                                                                                                                                     });
-                                                                                                                                                                                                    mySound.play();
+                                                                                                                                                                                                    sound.play();
                                                                                                                                                                         //Этап 6-2-3
                                                                                                                                                                                                     cur_animation_val = 270;
                                                                                                                                                                                                     count_animation = 1;
@@ -3023,7 +3019,7 @@ v5 = function(){
                                                                                                                                                                                                                 paddingTop: '2px',
                                                                                                                                                                                                                 zIndex: '1'
                                                                                                                                                                                                             });
-                                                                                                                                                                                                            mySound.play();
+                                                                                                                                                                                                            sound.play();
                                                                                                                                                                         //Этап 6-2-4
                                                                                                                                                                                                             cur_animation_val = 300;
                                                                                                                                                                                                             count_animation = 1;
@@ -3056,7 +3052,7 @@ v5 = function(){
                                                                                                                                                                                                                         paddingTop: '2px',
                                                                                                                                                                                                                         zIndex: '1'
                                                                                                                                                                                                                     });
-                                                                                                                                                                                                                    mySound.play();
+                                                                                                                                                                                                                    sound.play();
                                                                                                 //фаза 7
                                                                                                                                                                                                                     count_animation = 1;
                                                                                                                                                                                                                     phaseOne = setInterval(function(){
@@ -3086,7 +3082,7 @@ v5 = function(){
                                                                                                                                                                                                                                 paddingTop: '2px',
                                                                                                                                                                                                                                 zIndex: '1'
                                                                                                                                                                                                                             });
-                                                                                                                                                                                                                            mySound.play();
+                                                                                                                                                                                                                            sound.play();
                                                                                                                                                                                                                             onEnd();
                                                                                                                                                                                                                             jQuery( ".btn__wizard" )
                                                                                                                                                                                                                                 .text('Выполнить')
@@ -3208,7 +3204,7 @@ resource = function(){
                 paddingTop: '2px',
                 zIndex: '1'
             });
-            mySound.play();
+            sound.play();
             onEnd();
             jQuery( ".btn__wizard" )
                 .text('Выполнить')
