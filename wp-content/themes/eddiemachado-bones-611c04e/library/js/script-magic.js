@@ -456,7 +456,7 @@ jQuery('#main').on('click', '.fast-v', function() {
     }
     jQuery('#image_file').on('change', fileSelectHandler);
     
-    jQuery('.chart').easyPieChart({
+    jQuery('.chart').EasyPieChart({
         //your options goes here
         scaleColor: false,
         trackColor: 'rgba(255,255,255,0.3)',
