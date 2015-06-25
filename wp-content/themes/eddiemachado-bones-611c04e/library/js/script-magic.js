@@ -455,4 +455,14 @@ jQuery('#main').on('click', '.fast-v', function() {
         oReader.readAsDataURL(oFile);
     }
     jQuery('#image_file').on('change', fileSelectHandler);
+    
+    jQuery('.chart').easyPieChart({
+        //your options goes here
+        scaleColor: false,
+        trackColor: 'rgba(255,255,255,0.3)',
+        barColor: '#E7F7F5',
+        lineWidth: 6,
+        lineCap: 'butt',
+        size: 95
+    });
 });
