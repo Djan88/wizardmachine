@@ -316,6 +316,8 @@
                                                                                                             zIndex: '1'
                                                                                                         });
                                                                                                         sound.play();
+                                                                                                        jQuery('.chart').data('easyPieChart').update(71);
+                                                                                                        jQuery('.chart').find('span').text('71');
                                                                                     //Этап 7-1-2
                                                                                                         cur_animation_val = 10;
                                                                                                         count_animation = 1;
@@ -349,6 +351,8 @@
                                                                                                                     zIndex: '1'
                                                                                                                 });
                                                                                                                 sound.play();
+                                                                                                                jQuery('.chart').data('easyPieChart').update(72);
+                                                                                                                jQuery('.chart').find('span').text('72');
                                                                                     //Этап 7-1-3
                                                                                                                 cur_animation_val = 270;
                                                                                                                 count_animation = 1;
@@ -382,6 +386,8 @@
                                                                                                                             zIndex: '1'
                                                                                                                         });
                                                                                                                         sound.play();
+                                                                                                                        jQuery('.chart').data('easyPieChart').update(73);
+                                                                                                                        jQuery('.chart').find('span').text('73');
                                                                                     //Этап 7-1-4
                                                                                                                         cur_animation_val = 300;
                                                                                                                         count_animation = 1;
@@ -415,6 +421,8 @@
                                                                                                                                     zIndex: '1'
                                                                                                                                 });
                                                                                                                                 sound.play();
+                                                                                                                                jQuery('.chart').data('easyPieChart').update(74);
+                                                                                                                                jQuery('.chart').find('span').text('74');
                                                                                                                     //Этап 7-2-1
                                                                                                                                 cur_animation_val = 55;
                                                                                                                                 count_animation = 1;
@@ -448,6 +456,8 @@
                                                                                                                                             zIndex: '1'
                                                                                                                                         });
                                                                                                                                         sound.play();
+                                                                                                                                        jQuery('.chart').data('easyPieChart').update(75);
+                                                                                                                                        jQuery('.chart').find('span').text('75');
                                                                                                                     //Этап 7-2-2
                                                                                                                                         cur_animation_val = 10;
                                                                                                                                         count_animation = 1;
@@ -481,6 +491,8 @@
                                                                                                                                                     zIndex: '1'
                                                                                                                                                 });
                                                                                                                                                 sound.play();
+                                                                                                                                                jQuery('.chart').data('easyPieChart').update(76);
+                                                                                                                                                jQuery('.chart').find('span').text('76');
                                                                                                                     //Этап 7-2-3
                                                                                                                                                 cur_animation_val = 270;
                                                                                                                                                 count_animation = 1;
@@ -514,6 +526,8 @@
                                                                                                                                                             zIndex: '1'
                                                                                                                                                         });
                                                                                                                                                         sound.play();
+                                                                                                                                                        jQuery('.chart').data('easyPieChart').update(77);
+                                                                                                                                                        jQuery('.chart').find('span').text('77');
                                                                                                                     //Этап 7-2-4
                                                                                                                                                         cur_animation_val = 300;
                                                                                                                                                         count_animation = 1;
@@ -547,6 +561,8 @@
                                                                                                                                                                     zIndex: '1'
                                                                                                                                                                 });
                                                                                                                                                                 sound.play();
+                                                                                                                                                                jQuery('.chart').data('easyPieChart').update(78);
+                                                                                                                                                                jQuery('.chart').find('span').text('78');
                                                                                                                                                     //Этап 7-3-1
                                                                                                                                                                 cur_animation_val = 55;
                                                                                                                                                                 count_animation = 1;
@@ -580,6 +596,8 @@
                                                                                                                                                                             zIndex: '1'
                                                                                                                                                                         });
                                                                                                                                                                         sound.play();
+                                                                                                                                                                        jQuery('.chart').data('easyPieChart').update(79);
+                                                                                                                                                                        jQuery('.chart').find('span').text('79');
                                                                                                                                                     //Этап 7-3-2
                                                                                                                                                                         cur_animation_val = 10;
                                                                                                                                                                         count_animation = 1;
@@ -613,6 +631,8 @@
                                                                                                                                                                                     zIndex: '1'
                                                                                                                                                                                 });
                                                                                                                                                                                 sound.play();
+                                                                                                                                                                                jQuery('.chart').data('easyPieChart').update(80);
+                                                                                                                                                                                jQuery('.chart').find('span').text('80');
                                                                                                                                                     //Этап 7-3-3
                                                                                                                                                                                 cur_animation_val = 270;
                                                                                                                                                                                 count_animation = 1;
@@ -645,7 +665,9 @@
                                                                                                                                                                                             paddingTop: '2px',
                                                                                                                                                                                             zIndex: '1'
                                                                                                                                                                                         });
-                                                                                                                                                                                        sound.play();    
+                                                                                                                                                                                        sound.play();
+                                                                                                                                                                                        jQuery('.chart').data('easyPieChart').update(82);
+                                                                                                                                                                                        jQuery('.chart').find('span').text('82');    
                                                                                                                                                     //Этап 7-3-4
                                                                                                                                                                                         cur_animation_val = 300;
                                                                                                                                                                                         count_animation = 1;
@@ -897,6 +919,8 @@
                                                             fourthTriangleAnimation = new Vivus('triangle_4', {type: 'delayed', duration: 150}, function(){
                                                                 jQuery('.itemlist_item').removeClass('transparent');
                                                                 sound.play();
+                                                                jQuery('.chart').data('easyPieChart').update(12);
+                                                                jQuery('.chart').find('span').text('12');
     //фаза 2
                                                                 count_animation = 1;
                                                                 jQuery('#draggableClean_2').css({
@@ -964,6 +988,8 @@
                                                                             zIndex: '1'
                                                                         });
                                                                         sound.play();
+                                                                        jQuery('.chart').data('easyPieChart').update(24);
+                                                                        jQuery('.chart').find('span').text('24');
     //фаза 3
                                                                         count_animation = 1;
                                                                         jQuery('#draggableClean_2').css({
@@ -1013,6 +1039,8 @@
                                                                                 });
                                                                                 jQuery('#draggableClean_2, #draggableClean_4').addClass('inopaciti');
                                                                                 sound.play();
+                                                                                jQuery('.chart').data('easyPieChart').update(36);
+                                                                                jQuery('.chart').find('span').text('36');
     //фаза 4
                                                                                 count_animation = 1;
                                                                                 cur_animation_val = 0;
@@ -1060,6 +1088,8 @@
                                                                                             color: 'red'
                                                                                         });
                                                                                         sound.play();
+                                                                                        jQuery('.chart').data('easyPieChart').update(48);
+                                                                                        jQuery('.chart').find('span').text('48');
     //фаза 5
                                                                                         count_animation = 1;
                                                                                         cur_animation_val = 0;
@@ -1070,6 +1100,8 @@
                                                                                             } else {
                                                                                                 clearInterval(phaseOne);
                                                                                                 sound.play();
+                                                                                                jQuery('.chart').data('easyPieChart').update(60);
+                                                                                                jQuery('.chart').find('span').text('60');
     //Фаза 6
                                                                                                 cur_animation_val = 0;
                                                                                                 count_animation = 1;
@@ -1118,6 +1150,8 @@
                                                                                                                                                     fourthTriangleAnimation = new Vivus('triangle_4', {type: 'delayed', duration: 150}, function(){
                                                                                                                                                         jQuery('.itemlist_item').removeClass('transparent');
                                                                                                                                                         sound.play();
+                                                                                                                                                        jQuery('.chart').data('easyPieChart').update(72);
+                                                                                                                                                        jQuery('.chart').find('span').text('72');
     //Фаза 7
                                                                                                                                             //Этап 7-1-1
                                                                                                                                                         cur_animation_val = 55;
@@ -1152,6 +1186,8 @@
                                                                                                                                                                     zIndex: '1'
                                                                                                                                                                 });
                                                                                                                                                                 sound.play();
+                                                                                                                                                                jQuery('.chart').data('easyPieChart').update(73);
+                                                                                                                                                                jQuery('.chart').find('span').text('73');
                                                                                                                                             //Этап 7-1-2
                                                                                                                                                                 cur_animation_val = 10;
                                                                                                                                                                 count_animation = 1;
@@ -1185,6 +1221,8 @@
                                                                                                                                                                             zIndex: '1'
                                                                                                                                                                         });
                                                                                                                                                                         sound.play();
+                                                                                                                                                                        jQuery('.chart').data('easyPieChart').update(74);
+                                                                                                                                                                        jQuery('.chart').find('span').text('74');
                                                                                                                                             //Этап 7-1-3
                                                                                                                                                                         cur_animation_val = 270;
                                                                                                                                                                         count_animation = 1;
@@ -1218,6 +1256,8 @@
                                                                                                                                                                                     zIndex: '1'
                                                                                                                                                                                 });
                                                                                                                                                                                 sound.play();
+                                                                                                                                                                                jQuery('.chart').data('easyPieChart').update(75);
+                                                                                                                                                                                jQuery('.chart').find('span').text('75');
                                                                                                                                             //Этап 7-1-4
                                                                                                                                                                                 cur_animation_val = 300;
                                                                                                                                                                                 count_animation = 1;
@@ -1251,6 +1291,8 @@
                                                                                                                                                                                             zIndex: '1'
                                                                                                                                                                                         });
                                                                                                                                                                                         sound.play();
+                                                                                                                                                                                        jQuery('.chart').data('easyPieChart').update(76);
+                                                                                                                                                                                        jQuery('.chart').find('span').text('76');
                                                                                                                                                                             //Этап 7-2-1
                                                                                                                                                                                         cur_animation_val = 55;
                                                                                                                                                                                         count_animation = 1;
@@ -1284,6 +1326,8 @@
                                                                                                                                                                                                     zIndex: '1'
                                                                                                                                                                                                 });
                                                                                                                                                                                                 sound.play();
+                                                                                                                                                                                                jQuery('.chart').data('easyPieChart').update(77);
+                                                                                                                                                                                                jQuery('.chart').find('span').text('77');
                                                                                                                                                                             //Этап 7-2-2
                                                                                                                                                                                                 cur_animation_val = 10;
                                                                                                                                                                                                 count_animation = 1;
@@ -1317,6 +1361,8 @@
                                                                                                                                                                                                             zIndex: '1'
                                                                                                                                                                                                         });
                                                                                                                                                                                                         sound.play();
+                                                                                                                                                                                                        jQuery('.chart').data('easyPieChart').update(78);
+                                                                                                                                                                                                        jQuery('.chart').find('span').text('78');
                                                                                                                                                                             //Этап 7-2-3
                                                                                                                                                                                                         cur_animation_val = 270;
                                                                                                                                                                                                         count_animation = 1;
@@ -1350,6 +1396,8 @@
                                                                                                                                                                                                                     zIndex: '1'
                                                                                                                                                                                                                 });
                                                                                                                                                                                                                 sound.play();
+                                                                                                                                                                                                                jQuery('.chart').data('easyPieChart').update(79);
+                                                                                                                                                                                                                jQuery('.chart').find('span').text('79');
                                                                                                                                                                             //Этап 7-2-4
                                                                                                                                                                                                                 cur_animation_val = 300;
                                                                                                                                                                                                                 count_animation = 1;
@@ -1383,6 +1431,8 @@
                                                                                                                                                                                                                             zIndex: '1'
                                                                                                                                                                                                                         });
                                                                                                                                                                                                                         sound.play();
+                                                                                                                                                                                                                        jQuery('.chart').data('easyPieChart').update(80);
+                                                                                                                                                                                                                        jQuery('.chart').find('span').text('80');
                                                                                                                                                                                                             //Этап 7-3-1
                                                                                                                                                                                                                         cur_animation_val = 55;
                                                                                                                                                                                                                         count_animation = 1;
@@ -1416,6 +1466,8 @@
                                                                                                                                                                                                                                     zIndex: '1'
                                                                                                                                                                                                                                 });
                                                                                                                                                                                                                                 sound.play();
+                                                                                                                                                                                                                                jQuery('.chart').data('easyPieChart').update(81);
+                                                                                                                                                                                                                                jQuery('.chart').find('span').text('81');
                                                                                                                                                                                                             //Этап 7-3-2
                                                                                                                                                                                                                                 cur_animation_val = 10;
                                                                                                                                                                                                                                 count_animation = 1;
@@ -1449,6 +1501,8 @@
                                                                                                                                                                                                                                             zIndex: '1'
                                                                                                                                                                                                                                         });
                                                                                                                                                                                                                                         sound.play();
+                                                                                                                                                                                                                                        jQuery('.chart').data('easyPieChart').update(82);
+                                                                                                                                                                                                                                        jQuery('.chart').find('span').text('82');
                                                                                                                                                                                                             //Этап 7-3-3
                                                                                                                                                                                                                                         cur_animation_val = 270;
                                                                                                                                                                                                                                         count_animation = 1;
@@ -1482,6 +1536,8 @@
                                                                                                                                                                                                                                                     zIndex: '1'
                                                                                                                                                                                                                                                 });
                                                                                                                                                                                                                                                 sound.play();
+                                                                                                                                                                                                                                                jQuery('.chart').data('easyPieChart').update(83);
+                                                                                                                                                                                                                                                jQuery('.chart').find('span').text('83');
                                                                                                                                                                                                             //Этап 7-3-4
                                                                                                                                                                                                                                                 cur_animation_val = 300;
                                                                                                                                                                                                                                                 count_animation = 1;
@@ -1515,6 +1571,8 @@
                                                                                                                                                                                                                                                             zIndex: '1'
                                                                                                                                                                                                                                                         });
                                                                                                                                                                                                                                                         sound.play();
+                                                                                                                                                                                                                                                        jQuery('.chart').data('easyPieChart').update(84);
+                                                                                                                                                                                                                                                        jQuery('.chart').find('span').text('84');
                                                                                                                                                                                                                                 //Фаза 8
                                                                                                                                                                                                                                                         cur_animation_val = 0;
                                                                                                                                                                                                                                                         count_animation = 1;
@@ -1591,6 +1649,8 @@
                                                                                                                                                                                                                                                                                                                             zIndex: '1'
                                                                                                                                                                                                                                                                                                                         });
                                                                                                                                                                                                                                                                                                                         sound.play();
+                                                                                                                                                                                                                                                                                                                        jQuery('.chart').data('easyPieChart').update(100);
+                                                                                                                                                                                                                                                                                                                        jQuery('.chart').find('span').text('100');
                                                                                                                                                                                                                                                                                                                         onEnd();
                                                                                                                                                                                                                                                                                                                         jQuery( ".btn__wizard" )
                                                                                                                                                                                                                                                                                                                             .text('Выполнить')
@@ -1741,6 +1801,8 @@
                 });
                 count_animation = 1;
                 sound.play();
+                jQuery('.chart').data('easyPieChart').update(14);
+                jQuery('.chart').find('span').text('14');
     //фаза 2
                 count_animation = 1;
                 cur_animation_val = 0;
@@ -1781,6 +1843,8 @@
                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/disfunction.jpg) 0 0/100% no-repeat'
                         });
                         sound.play();
+                        jQuery('.chart').data('easyPieChart').update(22);
+                        jQuery('.chart').find('span').text('22');
                 //2-2
                         cur_animation_val = 0;                                                                       
                         count_animation = 1;
@@ -1812,6 +1876,8 @@
                                     zIndex: '1'
                                 });
                                 sound.play();
+                                jQuery('.chart').data('easyPieChart').update(28);
+                                jQuery('.chart').find('span').text('28');
     //Фаза 3
                                 cur_animation_val = 0;
                                 count_animation = 1;
@@ -1862,6 +1928,8 @@
                                                                                     fourthTriangleAnimation = new Vivus('triangle_4', {type: 'delayed', duration: 150}, function(){
                                                                                         jQuery('.itemlist_item').removeClass('transparent');
                                                                                         sound.play();
+                                                                                        jQuery('.chart').data('easyPieChart').update(42);
+                                                                                        jQuery('.chart').find('span').text('42');
     // Фаза 4
                                                                                         count_animation = 1;
                                                                                         phaseOne = setInterval(function(){
@@ -1899,6 +1967,8 @@
                                                                                                     zIndex: '1'
                                                                                                 });
                                                                                                 sound.play();
+                                                                                                jQuery('.chart').data('easyPieChart').update(56);
+                                                                                                jQuery('.chart').find('span').text('56');
      //Фаза 7
                                                                                     //Этап 7-1-1
                                                                                                 cur_animation_val = 55;
@@ -1933,6 +2003,8 @@
                                                                                                             zIndex: '1'
                                                                                                         });
                                                                                                         sound.play();
+                                                                                                        jQuery('.chart').data('easyPieChart').update(57);
+                                                                                                        jQuery('.chart').find('span').text('57');
                                                                                     //Этап 7-1-2
                                                                                                         cur_animation_val = 10;
                                                                                                         count_animation = 1;
@@ -1966,6 +2038,8 @@
                                                                                                                     zIndex: '1'
                                                                                                                 });
                                                                                                                 sound.play();
+                                                                                                                jQuery('.chart').data('easyPieChart').update(58);
+                                                                                                                jQuery('.chart').find('span').text('58');
                                                                                     //Этап 7-1-3
                                                                                                                 cur_animation_val = 270;
                                                                                                                 count_animation = 1;
@@ -1999,6 +2073,8 @@
                                                                                                                             zIndex: '1'
                                                                                                                         });
                                                                                                                         sound.play();
+                                                                                                                        jQuery('.chart').data('easyPieChart').update(59);
+                                                                                                                        jQuery('.chart').find('span').text('59');
                                                                                     //Этап 7-1-4
                                                                                                                         cur_animation_val = 300;
                                                                                                                         count_animation = 1;
@@ -2032,6 +2108,8 @@
                                                                                                                                     zIndex: '1'
                                                                                                                                 });
                                                                                                                                 sound.play();
+                                                                                                                                jQuery('.chart').data('easyPieChart').update(62);
+                                                                                                                                jQuery('.chart').find('span').text('62');
                                                                                                                     //Этап 7-2-1
                                                                                                                                 cur_animation_val = 55;
                                                                                                                                 count_animation = 1;
@@ -2065,6 +2143,8 @@
                                                                                                                                             zIndex: '1'
                                                                                                                                         });
                                                                                                                                         sound.play();
+                                                                                                                                        jQuery('.chart').data('easyPieChart').update(64);
+                                                                                                                                        jQuery('.chart').find('span').text('64');
                                                                                                                     //Этап 7-2-2
                                                                                                                                         cur_animation_val = 10;
                                                                                                                                         count_animation = 1;
@@ -2098,6 +2178,8 @@
                                                                                                                                                     zIndex: '1'
                                                                                                                                                 });
                                                                                                                                                 sound.play();
+                                                                                                                                                jQuery('.chart').data('easyPieChart').update(66);
+                                                                                                                                                jQuery('.chart').find('span').text('66');
                                                                                                                     //Этап 7-2-3
                                                                                                                                                 cur_animation_val = 270;
                                                                                                                                                 count_animation = 1;
@@ -2131,6 +2213,8 @@
                                                                                                                                                             zIndex: '1'
                                                                                                                                                         });
                                                                                                                                                         sound.play();
+                                                                                                                                                        jQuery('.chart').data('easyPieChart').update(68);
+                                                                                                                                                        jQuery('.chart').find('span').text('68');
                                                                                                                     //Этап 7-2-4
                                                                                                                                                         cur_animation_val = 300;
                                                                                                                                                         count_animation = 1;
@@ -2164,7 +2248,9 @@
                                                                                                                                                                     zIndex: '1'
                                                                                                                                                                 });
                                                                                                                                                                 sound.play();
-                            //Фаза 6
+                                                                                                                                                                jQuery('.chart').data('easyPieChart').update(70);
+                                                                                                                                                                jQuery('.chart').find('span').text('70');
+                                                                                                                                        //Фаза 6
                                                                                                                                                                 cur_animation_val = 0;
                                                                                                                                                                 count_animation = 1;
                                                                                                                                                             //анимация против часовой стрелки
@@ -2214,6 +2300,8 @@
                                                                                                                                                                                                                     fourthTriangleAnimation = new Vivus('triangle_4', {type: 'delayed', duration: 150}, function(){
                                                                                                                                                                                                                         jQuery('.itemlist_item').removeClass('transparent');
                                                                                                                                                                                                                         sound.play();
+                                                                                                                                                                                                                        jQuery('.chart').data('easyPieChart').update(84);
+                                                                                                                                                                                                                        jQuery('.chart').find('span').text('84');
                                                                                                                                                             //фаза 7
                                                                                                                                                                                                                         count_animation = 1;
                                                                                                                                                                                                                         phaseOne = setInterval(function(){
@@ -2244,6 +2332,8 @@
                                                                                                                                                                                                                                     zIndex: '1'
                                                                                                                                                                                                                                 });
                                                                                                                                                                                                                                 sound.play();
+                                                                                                                                                                                                                                jQuery('.chart').data('easyPieChart').update(100);
+                                                                                                                                                                                                                                jQuery('.chart').find('span').text('100');
                                                                                                                                                                                                                                 onEnd();
                                                                                                                                                                                                                                 jQuery( ".btn__wizard" )
                                                                                                                                                                                                                                     .text('Выполнить')
@@ -2392,6 +2482,8 @@ v5 = function(){
             count_animation = 1;
             jQuery('#draggableClean_2, #draggableClean_3').addClass('inopaciti');
             sound.play();
+            jQuery('.chart').data('easyPieChart').update(14);
+            jQuery('.chart').find('span').text('14');
 //фаза 2
             count_animation = 1;
             jQuery('#draggableClean_2').css({
@@ -2449,6 +2541,8 @@ v5 = function(){
                     count_animation = 1;
                     jQuery('#draggableClean_2, #draggableClean_3').addClass('inopaciti');
                     sound.play();
+                    jQuery('.chart').data('easyPieChart').update(28);
+                    jQuery('.chart').find('span').text('28');
 //Фаза 3
                     cur_animation_val = 0;
                     count_animation = 1;
@@ -2497,6 +2591,8 @@ v5 = function(){
                                                                         fourthTriangleAnimation = new Vivus('triangle_4', {type: 'delayed', duration: 150}, function(){
                                                                             jQuery('.itemlist_item').removeClass('transparent');
                                                                             sound.play();
+                                                                            jQuery('.chart').data('easyPieChart').update(42);
+                                                                            jQuery('.chart').find('span').text('42');
     //Фаза 4
                                                                 //Этап 4-1-1
                                                                             cur_animation_val = 55;
@@ -2531,6 +2627,8 @@ v5 = function(){
                                                                                         zIndex: '1'
                                                                                     });
                                                                                     sound.play();
+                                                                                    jQuery('.chart').data('easyPieChart').update(44);
+                                                                                    jQuery('.chart').find('span').text('44');
                                                                 //Этап 4-1-2
                                                                                     cur_animation_val = 10;
                                                                                     count_animation = 1;
@@ -2564,6 +2662,8 @@ v5 = function(){
                                                                                                 zIndex: '1'
                                                                                             });
                                                                                             sound.play();
+                                                                                            jQuery('.chart').data('easyPieChart').update(46);
+                                                                                            jQuery('.chart').find('span').text('46');
                                                                 //Этап 4-1-3
                                                                                             cur_animation_val = 270;
                                                                                             count_animation = 1;
@@ -2597,6 +2697,8 @@ v5 = function(){
                                                                                                         zIndex: '1'
                                                                                                     });
                                                                                                     sound.play();
+                                                                                                    jQuery('.chart').data('easyPieChart').update(48);
+                                                                                                    jQuery('.chart').find('span').text('48');
                                                                 //Этап 4-1-4
                                                                                                     cur_animation_val = 300;
                                                                                                     count_animation = 1;
@@ -2630,7 +2732,9 @@ v5 = function(){
                                                                                                                 zIndex: '1'
                                                                                                             });
                                                                                                             sound.play();
-                                                                                                //Этап 4-2-1
+                                                                                                            jQuery('.chart').data('easyPieChart').update(50);
+                                                                                                            jQuery('.chart').find('span').text('50');
+                                                                //Этап 4-2-1
                                                                                                             cur_animation_val = 55;
                                                                                                             count_animation = 1;
                                                                                                             phaseSeven_one = setInterval(function(){
@@ -2663,6 +2767,8 @@ v5 = function(){
                                                                                                                         zIndex: '1'
                                                                                                                     });
                                                                                                                     sound.play();
+                                                                                                                    jQuery('.chart').data('easyPieChart').update(52);
+                                                                                                                    jQuery('.chart').find('span').text('52');
                                                                                                 //Этап 4-2-2
                                                                                                                     cur_animation_val = 10;
                                                                                                                     count_animation = 1;
@@ -2696,6 +2802,8 @@ v5 = function(){
                                                                                                                                 zIndex: '1'
                                                                                                                             });
                                                                                                                             sound.play();
+                                                                                                                            jQuery('.chart').data('easyPieChart').update(54);
+                                                                                                                            jQuery('.chart').find('span').text('54');
                                                                                                 //Этап 4-2-3
                                                                                                                             cur_animation_val = 270;
                                                                                                                             count_animation = 1;
@@ -2729,6 +2837,8 @@ v5 = function(){
                                                                                                                                         zIndex: '1'
                                                                                                                                     });
                                                                                                                                     sound.play();
+                                                                                                                                    jQuery('.chart').data('easyPieChart').update(55);
+                                                                                                                                    jQuery('.chart').find('span').text('55');
                                                                                                 //Этап 4-2-4
                                                                                                                                     cur_animation_val = 300;
                                                                                                                                     count_animation = 1;
@@ -2762,6 +2872,8 @@ v5 = function(){
                                                                                                                                                 zIndex: '1'
                                                                                                                                             });
                                                                                                                                             sound.play();
+                                                                                                                                            jQuery('.chart').data('easyPieChart').update(56);
+                                                                                                                                            jQuery('.chart').find('span').text('56');
                                                     //фаза 5
                                                                                                                                             cur_animation_val = 0;
                                                                                                                                             phaseTwo = setInterval(function(){
@@ -2801,7 +2913,9 @@ v5 = function(){
                                                                                                                                                         paddingTop: '2px',
                                                                                                                                                         zIndex: '1'
                                                                                                                                                     });   
-                                                                                                                                                    sound.play();   
+                                                                                                                                                    sound.play();
+                                                                                                                                                    jQuery('.chart').data('easyPieChart').update(70);
+                                                                                                                                                    jQuery('.chart').find('span').text('70');
                                                     //Фаза 6
                                                                                                                                         //Этап 6-1-1
                                                                                                                                                     cur_animation_val = 55;
@@ -2836,6 +2950,8 @@ v5 = function(){
                                                                                                                                                                 zIndex: '1'
                                                                                                                                                             });
                                                                                                                                                             sound.play();
+                                                                                                                                                            jQuery('.chart').data('easyPieChart').update(71);
+                                                                                                                                                            jQuery('.chart').find('span').text('71');
                                                                                                                                         //Этап 6-1-2
                                                                                                                                                             cur_animation_val = 10;
                                                                                                                                                             count_animation = 1;
@@ -2869,6 +2985,8 @@ v5 = function(){
                                                                                                                                                                         zIndex: '1'
                                                                                                                                                                     });
                                                                                                                                                                     sound.play();
+                                                                                                                                                                    jQuery('.chart').data('easyPieChart').update(72);
+                                                                                                                                                                    jQuery('.chart').find('span').text('72');
                                                                                                                                         //Этап 6-1-3
                                                                                                                                                                     cur_animation_val = 270;
                                                                                                                                                                     count_animation = 1;
@@ -2902,6 +3020,8 @@ v5 = function(){
                                                                                                                                                                                 zIndex: '1'
                                                                                                                                                                             });
                                                                                                                                                                             sound.play();
+                                                                                                                                                                            jQuery('.chart').data('easyPieChart').update(74);
+                                                                                                                                                                            jQuery('.chart').find('span').text('74');
                                                                                                                                         //Этап 6-1-4
                                                                                                                                                                             cur_animation_val = 300;
                                                                                                                                                                             count_animation = 1;
@@ -2935,6 +3055,8 @@ v5 = function(){
                                                                                                                                                                                         zIndex: '1'
                                                                                                                                                                                     });
                                                                                                                                                                                     sound.play();
+                                                                                                                                                                                    jQuery('.chart').data('easyPieChart').update(76);
+                                                                                                                                                                                    jQuery('.chart').find('span').text('76');
                                                                                                                                                                         //Этап 6-2-1
                                                                                                                                                                                     cur_animation_val = 55;
                                                                                                                                                                                     count_animation = 1;
@@ -2968,6 +3090,8 @@ v5 = function(){
                                                                                                                                                                                                 zIndex: '1'
                                                                                                                                                                                             });
                                                                                                                                                                                             sound.play();
+                                                                                                                                                                                            jQuery('.chart').data('easyPieChart').update(78);
+                                                                                                                                                                                            jQuery('.chart').find('span').text('78');
                                                                                                                                                                         //Этап 6-2-2
                                                                                                                                                                                             cur_animation_val = 10;
                                                                                                                                                                                             count_animation = 1;
@@ -3001,6 +3125,8 @@ v5 = function(){
                                                                                                                                                                                                         zIndex: '1'
                                                                                                                                                                                                     });
                                                                                                                                                                                                     sound.play();
+                                                                                                                                                                                                    jQuery('.chart').data('easyPieChart').update(80);
+                                                                                                                                                                                                    jQuery('.chart').find('span').text('80');
                                                                                                                                                                         //Этап 6-2-3
                                                                                                                                                                                                     cur_animation_val = 270;
                                                                                                                                                                                                     count_animation = 1;
@@ -3034,6 +3160,8 @@ v5 = function(){
                                                                                                                                                                                                                 zIndex: '1'
                                                                                                                                                                                                             });
                                                                                                                                                                                                             sound.play();
+                                                                                                                                                                                                            jQuery('.chart').data('easyPieChart').update(82);
+                                                                                                                                                                                                            jQuery('.chart').find('span').text('82');
                                                                                                                                                                         //Этап 6-2-4
                                                                                                                                                                                                             cur_animation_val = 300;
                                                                                                                                                                                                             count_animation = 1;
@@ -3067,6 +3195,8 @@ v5 = function(){
                                                                                                                                                                                                                         zIndex: '1'
                                                                                                                                                                                                                     });
                                                                                                                                                                                                                     sound.play();
+                                                                                                                                                                                                                    jQuery('.chart').data('easyPieChart').update(84);
+                                                                                                                                                                                                                    jQuery('.chart').find('span').text('84');
                                                                                                 //фаза 7
                                                                                                                                                                                                                     count_animation = 1;
                                                                                                                                                                                                                     phaseOne = setInterval(function(){
@@ -3097,6 +3227,8 @@ v5 = function(){
                                                                                                                                                                                                                                 zIndex: '1'
                                                                                                                                                                                                                             });
                                                                                                                                                                                                                             sound.play();
+                                                                                                                                                                                                                            jQuery('.chart').data('easyPieChart').update(100);
+                                                                                                                                                                                                                            jQuery('.chart').find('span').text('100');
                                                                                                                                                                                                                             onEnd();
                                                                                                                                                                                                                             jQuery( ".btn__wizard" )
                                                                                                                                                                                                                                 .text('Выполнить')
@@ -3220,6 +3352,8 @@ resource = function(){
             });
             sound.play();
             onEnd();
+            jQuery('.chart').data('easyPieChart').update(100);
+            jQuery('.chart').find('span').text('100');
             jQuery( ".btn__wizard" )
                 .text('Выполнить')
                 .removeClass('btn__wizard_inAction'); 
