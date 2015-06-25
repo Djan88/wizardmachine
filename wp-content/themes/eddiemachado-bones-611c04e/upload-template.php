@@ -97,11 +97,12 @@
                     
                     </div>
                 </div>
-
+                
                 <div class="machine_screen work-area clearfix hidden">
                     <div class="steps clearfix">
                         <h3 class="heading heading_dashboard">Перенесите зоны с шаблона на фото клиента</h3>
                     </div>
+                    <div class="chart" data-percent="0"><span>0</span>%</div>
                     <div id="snaptarget" class="wrapper">
                         <ul class="itemlist itemlist-one" id="itemlist-one">
                             <li id="draggable0" class="itemlist_item item_list__mid draggable" style="left: 197px; top: -11px;">V0</li>
