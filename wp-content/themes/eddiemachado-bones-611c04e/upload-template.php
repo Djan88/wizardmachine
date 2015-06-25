@@ -65,7 +65,6 @@
                             <div class="btn btn_lg btn_success btn_choice" data-protocol ="resource">Выбрать</div>
                         </div>
                     </div>
-                </div>
                 <div class="machine_screen clearfix hidden">
                     <div class="steps clearfix">
                         <h3 class="heading heading_dashboard">Загрузите и при необходимости отредактируйте фото</h3>
