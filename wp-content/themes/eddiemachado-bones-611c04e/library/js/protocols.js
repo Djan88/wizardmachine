@@ -105,6 +105,8 @@
                 count_animation = 1;
                 jQuery('#draggableClean_2, #draggableClean_4').addClass('inopaciti');
                 sound.play();
+                jQuery('.chart').data('easyPieChart').update(14);
+                jQuery('.chart').find('span').text('14');
     //фаза 2
                 cur_animation_val = 0;
                 phaseTwo = setInterval(function(){
