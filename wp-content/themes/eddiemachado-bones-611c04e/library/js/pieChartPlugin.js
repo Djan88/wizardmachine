@@ -1,10 +1,10 @@
-$.fn.easyPieChart = function(options) {
+jQuery.fn.easyPieChart = function(options) {
 	return this.each(function() {
 		var instanceOptions;
 
-		if (!$.data(this, 'easyPieChart')) {
-			instanceOptions = $.extend({}, options, $(this).data());
-			$.data(this, 'easyPieChart', new EasyPieChart(this, instanceOptions));
+		if (!jQuery.data(this, 'easyPieChart')) {
+			instanceOptions = jQuery.extend({}, options, jQuery(this).data());
+			jQuery.data(this, 'easyPieChart', new EasyPieChart(this, instanceOptions));
 		}
 	});
 };
