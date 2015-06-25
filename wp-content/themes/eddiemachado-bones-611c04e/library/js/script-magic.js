@@ -185,6 +185,12 @@ jQuery(function() {
 
 //ШАГ 3 (Старт процедуры)
 jQuery( ".btn__wizard" ).on('click', function(event) {
+    var sound = new Howl({
+        urls: ['/sounds/sound.ogg', '/sounds/sound.aac', '/sounds/sound.mp3'],
+        autoplay: false,
+        loop: false,
+        buffer: true
+    }); 
     pointsStatus = true;
     v3status = true;
     curV = localStorage.getItem('curV');
