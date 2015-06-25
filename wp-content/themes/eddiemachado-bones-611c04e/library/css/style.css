@@ -2641,6 +2641,7 @@ be set to display none.
   position: relative;
  .box-sizing(border-box);
   padding-top: 22px;
+  text-align: center;
 }
 
 .chart span
@@ -2648,6 +2649,7 @@ be set to display none.
   display: block;
   font-size: 2em;
   font-weight: normal;
+  height: 35px;
 }
 
 .chart canvas
