@@ -152,7 +152,7 @@ input {
 }
 .steps
 {
-    margin-bottom: 20px;
+    margin-bottom: 55px;
 }
 .step
 {
@@ -576,4 +576,31 @@ form.pay-form
     background: url(../images/wizard_knife.png) no-repeat center center/100%;
     cursor: pointer;
     /*transform: rotateX(180deg);*/
+}
+.chart{
+  display: inline-block;
+  width: 95px;
+  height: 95px;
+  margin: 0 10px;
+  vertical-align: top;
+  position: absolute;
+  padding-top: 22px;
+  text-align: center;
+  right: 0;
+  top: 5px;
+}
+
+.chart span
+{
+  display: block;
+  font-size: 2em;
+  font-weight: normal;
+  height: 35px;
+}
+
+.chart canvas
+{
+  position: absolute;
+  left: 0;
+  top: 0;
 }
