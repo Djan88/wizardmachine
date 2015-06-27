@@ -1,9 +1,5 @@
 jQuery(function() {
 
-    jQuery('.fast-protocol').on('click', '.selector', function() {
-        jQuery('.chart').data('easyPieChart').update(0);
-        jQuery('.chart').find('span').text('0');
-    });
 
     jQuery('.knife').draggable({containment: '#inner-content', axis: 'y' });
     //Скрываем возможно загруженное изображение
