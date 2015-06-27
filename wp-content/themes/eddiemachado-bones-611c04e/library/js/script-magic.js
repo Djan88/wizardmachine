@@ -246,6 +246,8 @@ jQuery( ".btn__wizard" ).on('click', function(event) {
 });
 //Быстрая смена протокола
 jQuery('#main').on('click', '.fast-protocol', function() {
+    jQuery('.chart').data('easyPieChart').update(0);
+    jQuery('.chart').find('span').text('0'); 
     protocol = jQuery(this).data('fast');
     localStorage.setItem('protocol', protocol);
     jQuery('.fast-protocol-wrap')
