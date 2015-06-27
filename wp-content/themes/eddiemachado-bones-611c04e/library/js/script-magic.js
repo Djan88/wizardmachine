@@ -1,6 +1,6 @@
 jQuery(function() {
 
-    jQuery('.').on('click', '.selector', function() {
+    jQuery('.fast-protocol').on('click', '.selector', function() {
         jQuery('.chart').data('easyPieChart').update(0);
         jQuery('.chart').find('span').text('0');
     });
