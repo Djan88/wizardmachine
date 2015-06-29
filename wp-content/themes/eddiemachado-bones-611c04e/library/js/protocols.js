@@ -206,7 +206,7 @@
                                             zIndex: '1000'
                                         });
                                         jQuery('#draggable0, #draggableVD').css({
-                                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat',
+                                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/vaterfall.jpg) 0 0/100% no-repeat',
                                             transform: 'rotate(-'+cur_animation_val+'deg) scale(1)'
                                         });
                                         jQuery('#draggableS4, #draggableS5, #draggableS6').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/travma.jpg) 0 0/100% no-repeat');
@@ -2438,9 +2438,13 @@ v5 = function(){
                 paddingTop: '4px',
                 zIndex: '1000'
             });
-            jQuery('#draggableClean_3, #draggable0, #draggableVD').css({
+            jQuery('#draggableClean_3, #draggableVD').css({
                 transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
                 background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat'
+            });
+            jQuery('#draggable0').css({
+                transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
+                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/vaterfall.jpg) 0 0/100% no-repeat'
             });
             jQuery('#draggableClean_2').css({
                 transform: 'rotate('+cur_animation_val+'deg) scale(1)',
