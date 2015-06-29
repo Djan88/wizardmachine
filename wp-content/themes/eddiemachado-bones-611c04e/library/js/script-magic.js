@@ -1,5 +1,6 @@
 jQuery(function() {
 
+
     jQuery('.knife').draggable({containment: '#inner-content', axis: 'y' });
     //Скрываем возможно загруженное изображение
     jQuery('#main img:first-child').addClass('returned hidden');
@@ -214,9 +215,9 @@ jQuery( ".btn__wizard" ).on('click', function(event) {
         } 
     } else {
         checkPoints();
-        // if(pointsStatus == false){
-        //     swal("Не все зоны перенесены", "Перед началом процедуры необходимо перенести все зоны", "info"); 
-        // } else {
+        if(pointsStatus == false){
+            swal("Не все зоны перенесены", "Перед началом процедуры необходимо перенести все зоны", "info"); 
+        } else {
             jQuery(this)
                 .addClass('btn__wizard_inAction')
                 .text('Выполняется');
@@ -239,12 +240,14 @@ jQuery( ".btn__wizard" ).on('click', function(event) {
                 } else{
                     console.log('нет протокола с id '+ protocol)
                 }
-        // }  
+        }  
     }
     main_heading();
 });
 //Быстрая смена протокола
 jQuery('#main').on('click', '.fast-protocol', function() {
+    jQuery('.chart').data('easyPieChart').update(0);
+    jQuery('.chart').find('span').text('0'); 
     protocol = jQuery(this).data('fast');
     localStorage.setItem('protocol', protocol);
     jQuery('.fast-protocol-wrap')
