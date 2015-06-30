@@ -1111,7 +1111,7 @@
 
                                                                                             } else {
                                                                                                 clearInterval(phaseOne);
-                                                                                                sound.play();
+                                                                                                // sound.play();
     //Фаза 6
                                                                                                 cur_animation_val = 0;
                                                                                                 count_animation = 1;
