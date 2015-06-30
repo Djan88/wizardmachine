@@ -1009,7 +1009,7 @@
                                                                         phaseOne = setInterval(function(){
                                                                             if (count_animation <= 120){                                                                         //120
                                                                                 cur_animation_val += 6;
-                                                                                jQuery('#draggable0, #draggable3, #draggableD3, #draggableD1, #draggableClean_2, #draggableClean_4, #draggableVD, #draggableS4, #draggableS5, #draggableS6').css({
+                                                                                jQuery('#draggable0, #draggable3, #draggableD3, #draggableClean_2, #draggableClean_4, #draggableVD, #draggableS4, #draggableS5, #draggableS6').css({
                                                                                     color: 'transparent',
                                                                                     borderColor: 'transparent',
                                                                                     opacity: 0.8,
@@ -1035,6 +1035,7 @@
                                                                                 jQuery('#draggableD1').text('D+');
 
                                                                                 jQuery('#draggableVD').css({
+                                                                                    transform: 'rotate('+cur_animation_val+'deg) scale(1)',
                                                                                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/ishtar.png) 0 0/100% no-repeat'
                                                                                 });
                                                                                 count_animation += 1;
