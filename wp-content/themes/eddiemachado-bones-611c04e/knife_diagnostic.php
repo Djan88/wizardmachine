@@ -120,9 +120,9 @@
                     </div>
                 </div>
                 <div class="machine_screen work-area clearfix hidden">
+                  <div class="chart" data-percent="0"><span>0</span>%</div>
                   <div class="steps clearfix">
                       <h3 class="heading heading_dashboard">Перенесите зоны с шаблона на фото клиента</h3>
-                      <div class="chart" data-percent="0"><span>0</span>%</div>
                   </div>
                     <div id="snaptarget" class="wrapper">
                         <ul class="itemlist itemlist-one" id="itemlist-one">
