@@ -2438,7 +2438,7 @@
                     }
                 }, 500);
             }
-        }, 1000);
+        }, 250);
     }
 v5 = function(){
     var sound = new Howl({
