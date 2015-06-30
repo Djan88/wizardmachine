@@ -930,7 +930,7 @@
                                                                 jQuery('#draggableClean_2').css({
                                                                         left: parseFloat(jQuery('#draggable0').css('left'))-60+'px',
                                                                         top: parseFloat(jQuery('#draggable0').css('top'))+'px'
-                                                                });
+                                                                });    
                                                                 jQuery('#draggableClean_2').removeClass('inopaciti');
                                                                 phaseOne = setInterval(function(){
                                                                     if (count_animation <= 480){                                                                         //120
@@ -1771,21 +1771,22 @@
         }); 
         dinamicElem = false;
     //фаза 1
+
         count_animation = 1;
+        jQuery('#draggableClean_2').css({
+                left: parseFloat(jQuery('#draggable0').css('left'))-60+'px',
+                top: parseFloat(jQuery('#draggable0').css('top'))+'px'
+        });    
+        jQuery('#draggableClean_2').removeClass('inopaciti');
         phaseOne = setInterval(function(){
-            if (count_animation <= 120){                                                                         //120
-                cur_animation_val += 6;
-                jQuery('#draggableClean_2').css({
-                        left: parseFloat(jQuery('#draggable0').css('left'))-60+'px',
-                        top: parseFloat(jQuery('#draggable0').css('top'))+'px'
-                });    
-                jQuery('#draggableClean_2').removeClass('inopaciti')
-                jQuery('#draggableClean, #draggableS1, #draggableS2_1, #draggableS4, #draggableD1, #draggableS5').css({
-                    transform: 'scale(1)',
-                    borderWidth: '1px',
+            if (count_animation <= 480){                                                                         //120
+                cur_animation_val += 1.5;
+                jQuery('#draggableClean_2, #draggableD1, #draggableClean, #draggableS1, #draggableS2_1, #draggableS4, #draggableD1, #draggableS5').css({
                     color: 'transparent',
                     borderColor: 'transparent',
                     opacity: 0.8,
+                    transform: 'scale(1)',
+                    borderWidth: '1px',
                     paddingTop: '4px',
                     zIndex: '1000'
                 });
@@ -1818,6 +1819,7 @@
             } else {
                 clearInterval(phaseOne);
                 count_animation = 1;
+                jQuery('#draggableClean_2').addClass('inopaciti');
                 jQuery('#draggableClean, #draggableS1, #draggableS2_1, #draggableS4, #draggableD1, #draggableS5').css({
                     background: 'rgba(255,255,255, 0.5)',
                     transform: 'scale(0.5)',
@@ -1828,7 +1830,6 @@
                     paddingTop: '2px',
                     zIndex: '1'
                 });
-                jQuery('#draggableClean_2').addClass('inopaciti');
                 count_animation = 1;
                 sound.play();
                 jQuery('.chart').data('easyPieChart').update(14);
@@ -1872,7 +1873,7 @@
                         jQuery('#draggable1').css({
                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/disfunction.jpg) 0 0/100% no-repeat'
                         });
-                        sound.play();
+                        // sound.play();
                         jQuery('.chart').data('easyPieChart').update(22);
                         jQuery('.chart').find('span').text('22');
                 //2-2
