@@ -1996,7 +1996,7 @@
                                                                                                 jQuery('#draggableD5, #draggableD4, #draggable4').css({
                                                                                                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/disfunction.jpg) 0 0/100% no-repeat'
                                                                                                 });
-                                                                                                jQuery('#draggableS1').css({
+                                                                                                jQuery('#draggableS1, #draggableClean_2, #draggableClean_3').css({
                                                                                                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/vaterfall.png) 0 0/100% no-repeat'
                                                                                                 });
                                                                                                 jQuery('#draggableS2, #draggableS2_1, #draggableS3').css({
