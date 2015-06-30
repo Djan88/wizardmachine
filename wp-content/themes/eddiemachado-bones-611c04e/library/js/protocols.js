@@ -1873,7 +1873,7 @@
                         jQuery('#draggable1').css({
                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/disfunction.jpg) 0 0/100% no-repeat'
                         });
-                        sound.play();
+                        // sound.play();
                         jQuery('.chart').data('easyPieChart').update(22);
                         jQuery('.chart').find('span').text('22');
                 //2-2
