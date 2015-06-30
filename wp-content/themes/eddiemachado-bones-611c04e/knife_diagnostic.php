@@ -78,6 +78,7 @@
                     <div class="step step_img">2 <div></div> </div>
                     <div class="step step_procedure">3 <div></div>  </div> -->
                     <h3 class="heading heading_dashboard">Определите актуальную зону при помощи ножа</h3>
+                    <div class="chart" data-percent="0"><span>0</span>%</div>
                 </div>
                   <div class="knife-wrap">
                     <div class="knife"></div>
