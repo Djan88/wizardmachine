@@ -1800,7 +1800,7 @@
         phaseOne = setInterval(function(){
             if (count_animation <= 480){                                                                         //120
                 cur_animation_val += 1.5;
-                jQuery('#draggableClean_5, #draggableClean_4, #draggableClean_2, #draggableClean_3, #draggableD1, #draggableS4, #draggableS5').css({
+                jQuery('#draggableClean_5, #draggableClean_4, #draggableClean_2, #draggableClean_3, #draggableS4, #draggableS5').css({
                     color: 'transparent',
                     borderColor: 'transparent',
                     opacity: 0.8,
@@ -1830,17 +1830,6 @@
                     transform: 'scale(1) rotateY(180deg)',
                     paddingTop: '8px'
                 });
-                count_animation += 1;
-                if (count_animation <= 480){
-                    cur_let = Math.round(Math.random() * (7 - 0))
-                    // console.log(letters[cur_let]);
-                    jQuery('#draggableD1').text(letters[cur_let]);
-                } else {
-                    jQuery('#draggableD1').css({
-                        color: 'transparent',
-                        paddingTop: '4px'
-                    });
-                }
                 count_animation += 1;
             } else {
                 clearInterval(phaseOne);
