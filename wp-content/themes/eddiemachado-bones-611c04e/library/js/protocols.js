@@ -1971,11 +1971,11 @@
                                                                                         sound.play();
                                                                                         jQuery('.chart').data('easyPieChart').update(42);
                                                                                         jQuery('.chart').find('span').text('42');
-    // Фаза 4
+                                                                            // Фаза 4
                                                                                         count_animation = 1;
                                                                                         phaseOne = setInterval(function(){
                                                                                             if (count_animation <= 180){                                                             //180
-                                                                                                jQuery('#draggableD5, #draggableD4, #draggable4, #draggableS4, #draggableS5, #draggableS6').css({
+                                                                                                jQuery('#draggableD5, #draggableD4, #draggable4, #draggableS2, #draggableS2_1, #draggableS3').css({
                                                                                                     transform: 'scale(1)',
                                                                                                     borderWidth: '1px',
                                                                                                     color: 'transparent',
@@ -1987,17 +1987,20 @@
                                                                                                 jQuery('#draggableD5, #draggableD4, #draggable4').css({
                                                                                                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/disfunction.jpg) 0 0/100% no-repeat'
                                                                                                 });
+                                                                                                jQuery('#draggableS2, #draggableS2_1, #draggableS3').css({
+                                                                                                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/travma.jpg) 0 0/100% no-repeat'
+                                                                                                });
                                                                                                 // jQuery('#draggableS4, #draggableS5, #draggableS6').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/travma.jpg) 0 0/100% no-repeat');
-                                                                                                if (count_animation >= 0 && count_animation <= 120) {                               //60-120
-                                                                                                    jQuery('#draggableS4, #draggableS5, #draggableS6').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/povregdenie_demona.jpg) 0 0/100% no-repeat');
-                                                                                                } else if (count_animation >= 120 && count_animation <= 180) {                               //120-180
-                                                                                                    jQuery('#draggableS4, #draggableS5, #draggableS6').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/demon-filtr.png) 0 0/100% no-repeat');
-                                                                                                }
+                                                                                                // if (count_animation >= 0 && count_animation <= 120) {                               //60-120
+                                                                                                //     jQuery('#draggableS4, #draggableS5, #draggableS6').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/povregdenie_demona.jpg) 0 0/100% no-repeat');
+                                                                                                // } else if (count_animation >= 120 && count_animation <= 180) {                               //120-180
+                                                                                                //     jQuery('#draggableS4, #draggableS5, #draggableS6').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/demon-filtr.png) 0 0/100% no-repeat');
+                                                                                                // }
                                                                                                 count_animation += 1;
                                                                                             } else {
                                                                                                 clearInterval(phaseOne);
                                                                                                 count_animation = 1;
-                                                                                                jQuery('#draggableD5, #draggableD4, #draggable4, #draggableS4, #draggableS5, #draggableS6').css({
+                                                                                                jQuery('#draggableD5, #draggableD4, #draggable4, #draggableS2, #draggableS2_1, #draggableS3').css({
                                                                                                     background: 'rgba(255,255,255, 0.5)',
                                                                                                     transform: 'scale(0.5)',
                                                                                                     color: 'red',
