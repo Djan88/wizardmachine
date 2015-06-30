@@ -1800,7 +1800,7 @@
         phaseOne = setInterval(function(){
             if (count_animation <= 480){                                                                         //120
                 cur_animation_val += 1.5;
-                jQuery('#draggableClean_5, #draggableClean_4, #draggableClean_2, #draggableClean_3, #draggableS4, #draggableS5').css({
+                jQuery('#draggableClean_5, #draggableClean_4, #draggableClean_2, #draggableClean_3, #draggableS4, #draggableS5, #draggableS6').css({
                     color: 'transparent',
                     borderColor: 'transparent',
                     opacity: 0.8,
@@ -1816,7 +1816,7 @@
                 jQuery('#draggableClean_5, #draggableClean_4, #draggableClean_2, #draggableClean_3').css({
                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/vaterfall.png) 0 0/100% no-repeat'
                 });
-                jQuery('#draggableS4, #draggableS5').css({
+                jQuery('#draggableS4, #draggableS5, #draggableS6').css({
                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/povregdenie_demona.jpg) 0 0/100% no-repeat'
                 });
                 if (count_animation >= 240 && count_animation <= 480){
