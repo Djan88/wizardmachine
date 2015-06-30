@@ -1983,7 +1983,7 @@
                                                                                         });    
                                                                                         jQuery('#draggableClean_2, #draggableClean_3').removeClass('inopaciti');
                                                                                         phaseOne = setInterval(function(){
-                                                                                            if (count_animation <= 180){                                                             //180
+                                                                                            if (count_animation <= 120){                                                             //180
                                                                                                 jQuery('#draggableD5, #draggableD4, #draggable4, #draggableS2, #draggableS2_1, #draggableS3, #draggableS1, #draggableClean_2, #draggableClean_3').css({
                                                                                                     transform: 'scale(1)',
                                                                                                     borderWidth: '1px',
@@ -2013,7 +2013,7 @@
                                                                                                 clearInterval(phaseOne);
                                                                                                 count_animation = 1;
                                                                                                 jQuery('#draggableClean_2, #draggableClean_3').addClass('inopaciti');
-                                                                                                jQuery('#draggableD5, #draggableD4, #draggable4, #draggableS2, #draggableS2_1, #draggableS3, #draggableClean_2, #draggableClean_3').css({
+                                                                                                jQuery('#draggableD5, #draggableD4, #draggable4, #draggableS1, #draggableS2, #draggableS2_1, #draggableS3, #draggableClean_2, #draggableClean_3').css({
                                                                                                     background: 'rgba(255,255,255, 0.5)',
                                                                                                     transform: 'scale(0.5)',
                                                                                                     color: 'red',
