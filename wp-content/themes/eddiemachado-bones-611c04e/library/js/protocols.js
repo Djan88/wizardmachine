@@ -1781,14 +1781,18 @@
 
         count_animation = 1;
         jQuery('#draggableClean_2').css({
-                left: parseFloat(jQuery('#draggable0').css('left'))-60+'px',
-                top: parseFloat(jQuery('#draggable0').css('top'))+'px'
+                left: parseFloat(jQuery('#draggableD3').css('left'))-60+'px',
+                top: parseFloat(jQuery('#draggableD3').css('top'))+'px'
+        });
+        jQuery('#draggableClean_3').css({
+                left: parseFloat(jQuery('#draggableD4').css('left'))-60+'px',
+                top: parseFloat(jQuery('#draggableD4').css('top'))+'px'
         });    
-        jQuery('#draggableClean_2').removeClass('inopaciti');
+        jQuery('#draggableClean_2, #draggableClean_3').removeClass('inopaciti');
         phaseOne = setInterval(function(){
             if (count_animation <= 480){                                                                         //120
                 cur_animation_val += 1.5;
-                jQuery('#draggableClean_2, #draggableD1, #draggableClean, #draggableS1, #draggableS2_1, #draggableS4, #draggableD1, #draggableS5').css({
+                jQuery('#draggableClean_2, #draggableClean_3, #draggableD1, #draggableClean, #draggableS1, #draggableS2_1, #draggableS4, #draggableD1, #draggableS5').css({
                     color: 'transparent',
                     borderColor: 'transparent',
                     opacity: 0.8,
@@ -1800,6 +1804,9 @@
                 jQuery('#draggableClean, #draggableS1, #draggableS2_1').css({
                     transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat'
+                });
+                jQuery('#draggableClean_2, #draggableClean_3').css({
+                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/vaterfall.png) 0 0/100% no-repeat'
                 });
                 jQuery('#draggableS4, #draggableS5').css({
                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/povregdenie_demona.jpg) 0 0/100% no-repeat'
@@ -1834,7 +1841,7 @@
             } else {
                 clearInterval(phaseOne);
                 count_animation = 1;
-                jQuery('#draggableClean_2').addClass('inopaciti');
+                jQuery('#draggableClean_2, #draggableClean_3').addClass('inopaciti');
                 jQuery('#draggableClean, #draggableS1, #draggableS2_1, #draggableS4, #draggableD1, #draggableS5').css({
                     background: 'rgba(255,255,255, 0.5)',
                     transform: 'scale(0.5)',
