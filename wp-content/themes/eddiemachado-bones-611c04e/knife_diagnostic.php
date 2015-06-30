@@ -78,7 +78,6 @@
                     <div class="step step_img">2 <div></div> </div>
                     <div class="step step_procedure">3 <div></div>  </div> -->
                     <h3 class="heading heading_dashboard">Определите актуальную зону при помощи ножа</h3>
-                    <div class="chart" data-percent="0"><span>0</span>%</div>
                 </div>
                   <div class="knife-wrap">
                     <div class="knife"></div>
@@ -123,6 +122,7 @@
                 <div class="machine_screen work-area clearfix hidden">
                   <div class="steps clearfix">
                       <h3 class="heading heading_dashboard">Перенесите зоны с шаблона на фото клиента</h3>
+                      <div class="chart" data-percent="0"><span>0</span>%</div>
                   </div>
                     <div id="snaptarget" class="wrapper">
                         <ul class="itemlist itemlist-one" id="itemlist-one">
