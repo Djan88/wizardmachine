@@ -207,12 +207,12 @@
                                             zIndex: '1000'
                                         });
                                         jQuery('#draggable0').css({
-                                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/vaterfall.png) 0 0/100% no-repeat',
-                                            transform: 'rotate(-'+cur_animation_val+'deg) scale(1)'
+                                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/vaterfall.png) 0 0/100% no-repeat'
+                                            // transform: 'rotate(-'+cur_animation_val+'deg) scale(1)'
                                         });
                                         jQuery('#draggableVD').css({
                                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/ishtar.png) 0 0/100% no-repeat',
-                                            transform: 'rotate(-'+cur_animation_val+'deg) scale(1)'
+                                            transform: 'rotate('+cur_animation_val+'deg) scale(1)'
                                         });
                                         jQuery('#draggableS4, #draggableS5, #draggableS6').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/demon-filtr.png) 0 0/100% no-repeat');
                                         count_animation += 1;
