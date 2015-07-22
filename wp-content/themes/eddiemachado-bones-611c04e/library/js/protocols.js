@@ -991,11 +991,11 @@
                                                                         count_animation = 1;
                                                                         jQuery('#draggableClean_2').css({
                                                                                 left: parseFloat(jQuery('#draggableS6').css('left'))+70+'px',
-                                                                                top: parseFloat(jQuery('#draggableS6').css('top'))-360+'px'
+                                                                                top: parseFloat(jQuery('#draggableS6').css('top'))-210+'px'
                                                                         });
                                                                         jQuery('#draggableClean_4').css({
                                                                                 left: parseFloat(jQuery('#draggableS5').css('left'))+70+'px',
-                                                                                top: parseFloat(jQuery('#draggableS5').css('top'))-360+'px'
+                                                                                top: parseFloat(jQuery('#draggableS5').css('top'))-210+'px'
                                                                         });
                                                                         jQuery('#draggableClean_2, #draggableClean_4').removeClass('inopaciti');
                                                                         phaseOne = setInterval(function(){
