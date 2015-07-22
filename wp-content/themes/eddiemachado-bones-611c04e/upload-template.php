@@ -106,7 +106,7 @@
                     <div id="snaptarget" class="wrapper">
                         <ul class="itemlist itemlist-one" id="itemlist-one">
                             <li id="draggable0" class="itemlist_item item_list__mid draggable" style="left: 197px; top: -11px;">V0</li>
-                            <li id="draggable1" class="itemlist_item item_list__mid draggable" style="left: 197px; top: 27px;">V1
+                            <!-- <li id="draggable1" class="itemlist_item item_list__mid draggable" style="left: 197px; top: 27px;">V1 -->
                                 <svg id="triangle_1" class="triangle hidden"
                                 xmlns:dc="http://purl.org/dc/elements/1.1/"
                                 xmlns:cc="http://creativecommons.org/ns#"
