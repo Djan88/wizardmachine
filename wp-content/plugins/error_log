@@ -1,0 +1,2 @@
+[30-May-2015 06:25:13 Europe/Simferopol] PHP Fatal error:  Call to undefined function add_action() in /home/videochi/public_html/wp-content/plugins/hello.php on line 60
+[31-May-2015 15:31:46 Europe/Simferopol] PHP Fatal error:  Call to undefined function add_action() in /home/videochi/public_html/wp-content/plugins/hello.php on line 60
