@@ -886,7 +886,7 @@
             top: '-120px'
         });
         //анимация первого треугольника
-        jQuery('#draggableD_1').addClass('transparent');
+        jQuery('#draggableS_1').addClass('transparent');
         firstTriangleAnimation = new Vivus('triangle_1', {type: 'delayed', duration: 150}, function(){
         //анимация второго треугольника
             setTimeout(function(){
@@ -936,9 +936,6 @@
                                                                 phaseOne = setInterval(function(){
                                                                     if (count_animation <= 480){                                                                         //120
                                                                         cur_animation_val += 1.5;
-                                                                        jQuery('#draggableD_1, #draggable3').css({
-                                                                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/disfunction.jpg) 0 0/100% no-repeat'
-                                                                        });
                                                                         jQuery('#draggableClean_2, #draggableS_1, #draggable3, #draggableD1').css({
                                                                             color: 'transparent',
                                                                             borderColor: 'transparent',
