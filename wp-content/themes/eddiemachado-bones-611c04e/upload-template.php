@@ -801,7 +801,7 @@
                             <li id="draggable5" class="itemlist_item item_list__mid draggable" style="left: 197px; top: 203px;">V5</li>
                             <li id="draggableD1" class="itemlist_item item_list__mid draggable" style="left: 149px; top: 30px;">D+</li>
                             <li id="draggableD_1" class="itemlist_item item_list__mid draggable" style="left: 186px; top: 25px;">D1</li>
-                            <li id="draggableS_2" class="itemlist_item item_list__mid draggable" style="left: 210px; top: 25px;">S1</li>
+                            <li id="draggableS_1" class="itemlist_item item_list__mid draggable" style="left: 210px; top: 25px;">S1</li>
                             <li id="draggableD_6" class="itemlist_item item_list__mid draggable" style="left: 170px; top: 365px;">D6</li>
                             <li id="draggableClean" class="itemlist_item item_list__mid itemlist_item__clear draggable" style="left: -15px; top: 94px;"></li>
                             <li id="draggableS2" class="itemlist_item item_list__mid draggable" style="left: 241px; top: 76px;">S2</li>
