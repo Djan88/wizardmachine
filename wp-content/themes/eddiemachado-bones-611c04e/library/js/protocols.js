@@ -991,17 +991,17 @@
                                                                         count_animation = 1;
                                                                         jQuery('#draggableClean_2').css({
                                                                                 left: parseFloat(jQuery('#draggableS6').css('left'))+70+'px',
-                                                                                top: parseFloat(jQuery('#draggableS6').css('top'))-561+'px'
+                                                                                top: parseFloat(jQuery('#draggableS6').css('top'))-360+'px'
                                                                         });
                                                                         jQuery('#draggableClean_4').css({
                                                                                 left: parseFloat(jQuery('#draggableS5').css('left'))+70+'px',
-                                                                                top: parseFloat(jQuery('#draggableS5').css('top'))-561+'px'
+                                                                                top: parseFloat(jQuery('#draggableS5').css('top'))-360+'px'
                                                                         });
                                                                         jQuery('#draggableClean_2, #draggableClean_4').removeClass('inopaciti');
                                                                         phaseOne = setInterval(function(){
                                                                             if (count_animation <= 120){                                                                         //120
                                                                                 cur_animation_val += 6;
-                                                                                jQuery('#draggable0, #draggable3, #draggableD3, #draggableClean_2, #draggableClean_4, #draggableVD, #draggableS4, #draggableS5, #draggableS6').css({
+                                                                                jQuery('#draggableClean_2, #draggableClean_4, #draggableS5, #draggableS3, #draggableS6, draggableVD').css({
                                                                                     color: 'transparent',
                                                                                     borderColor: 'transparent',
                                                                                     opacity: 0.8,
@@ -1010,31 +1010,34 @@
                                                                                     paddingTop: '4px',
                                                                                     zIndex: '1000'
                                                                                 });
-                                                                                jQuery('#draggable0').css({
-                                                                                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/vaterfall.png) 0 0/100% no-repeat'
-                                                                                    // transform: 'rotate(-'+cur_animation_val+'deg) scale(1)'
+                                                                                if (count_animation <= 60){
+                                                                                    jQuery('#draggableClean_2, #draggableClean_4').css({
+                                                                                        transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
+                                                                                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat'
+                                                                                    });
+                                                                                } else {
+                                                                                    jQuery('#draggableClean_2, #draggableClean_4').css({
+                                                                                        transform: 'rotate(-'+0+'deg) scale(1)',
+                                                                                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon_adventure.png) 0 0/100% no-repeat'
+                                                                                    });
+                                                                                }
+                                                                                jQuery('#draggableS3').css({
+                                                                                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/travma.jpg) 0 0/100% no-repeat'
                                                                                 });
-                                                                                jQuery('#draggableS4, #draggableS5, #draggableS6').css({
-                                                                                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat'
-                                                                                });
-                                                                                jQuery('#draggableD3, #draggable3').css({
-                                                                                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/disfunction.jpg) 0 0/100% no-repeat'
-                                                                                });
-                                                                                jQuery('#draggableClean_2, #draggableClean_4').css({
-                                                                                    transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
+                                                                                jQuery('#draggableS5, #draggableS6').css({
                                                                                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat'
                                                                                 });
                                                                                 jQuery('#draggableD1').text('D+');
 
                                                                                 jQuery('#draggableVD').css({
-                                                                                    transform: 'rotate('+cur_animation_val+'deg) scale(1)',
-                                                                                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/ishtar.png) 0 0/100% no-repeat'
+                                                                                    transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
+                                                                                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat'
                                                                                 });
                                                                                 count_animation += 1;
                                                                             } else {
                                                                                 clearInterval(phaseOne);
                                                                                 count_animation = 1;
-                                                                                jQuery('#draggable0, #draggable3, #draggableD3, #draggableS3, #draggableS4, #draggableS5, #draggableVD, #draggableD1, #draggableS4, #draggableS5, #draggableS6').css({
+                                                                                jQuery('#draggableClean_2, #draggableClean_4, #draggableS5, #draggableS3, #draggableS6, draggableVD').css({
                                                                                     background: 'rgba(255,255,255, 0.5)',
                                                                                     color: 'red',
                                                                                     borderColor: 'red',
@@ -1048,7 +1051,7 @@
                                                                                 sound.play();
                                                                                 jQuery('.chart').data('easyPieChart').update(36);
                                                                                 jQuery('.chart').find('span').text('36');
-    //фаза 4
+                                                                        //фаза 4
                                                                                 count_animation = 1;
                                                                                 cur_animation_val = 0;
                                                                                 phaseOne = setInterval(function(){
