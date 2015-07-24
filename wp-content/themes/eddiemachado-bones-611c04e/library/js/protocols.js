@@ -432,7 +432,7 @@
                                                                                                                             } else {
                                                                                                                                 clearInterval(phaseSeven_one);
                                                                                                                                 count_animation = 1;
-                                                                                                                                jQuery('#draggable1').css({
+                                                                                                                                jQuery('#draggableD_1').css({
                                                                                                                                     transform: 'rotate(-'+0+'deg) scale(0.5)',
                                                                                                                                     background: 'rgba(255,255,255, 0.5)',
                                                                                                                                     color: 'red',
