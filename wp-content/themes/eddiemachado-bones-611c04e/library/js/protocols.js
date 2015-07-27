@@ -73,30 +73,6 @@
         phaseOne = setInterval(function(){
             if (count_animation <= 120){                                                                         //120
                 cur_animation_val += 6;
-
-
-                jQuery('#draggableD2, #draggable2, #draggableS2').css({
-                    color: 'transparent',
-                    borderColor: 'transparent',
-                    opacity: 0.8,
-                    transform: 'scale(1)',
-                    borderWidth: '1px',
-                    paddingTop: '4px',
-                    zIndex: '1000'
-                });
-                jQuery('#draggableD2').css({
-                    transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
-                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/chisty_vnutri.jpg) 0 0/100% no-repeat'
-                });
-                jQuery('#draggableS2').css({
-                    transform: 'rotate(+'+cur_animation_val+'deg) scale(1)',
-                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/nepreodolymi.jpg) 0 0/100% no-repeat'
-                });
-                jQuery('#draggable2').css({
-                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/maracata.jpg) 0 0/100% no-repeat'
-                });
-
-
                 jQuery('#draggableD1, #draggableSh, #draggableClean_4, #draggableS1').css({
                     borderWidth: '1px',
                     borderColor: 'transparent',
