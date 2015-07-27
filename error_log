@@ -1,0 +1,54 @@
+[28-Apr-2015 11:57:07 UTC] PHP Warning:  strlen() expects parameter 1 to be string, array given in /home/videochi/public_html/wp-includes/query.php on line 1577
+[28-Apr-2015 11:57:07 UTC] PHP Warning:  stripslashes() expects parameter 1 to be string, array given in /home/videochi/public_html/wp-includes/query.php on line 2048
+[28-Apr-2015 11:57:07 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/videochi/public_html/wp-includes/query.php:1577) in /home/videochi/public_html/wp-includes/pluggable.php on line 1175
+[10-May-2015 16:09:56 UTC] PHP Warning:  strlen() expects parameter 1 to be string, array given in /home/videochi/public_html/wp-includes/query.php on line 1577
+[10-May-2015 16:09:56 UTC] PHP Warning:  stripslashes() expects parameter 1 to be string, array given in /home/videochi/public_html/wp-includes/query.php on line 2048
+[10-May-2015 16:09:56 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/videochi/public_html/wp-includes/query.php:1577) in /home/videochi/public_html/wp-content/themes/eddiemachado-bones-611c04e/functions.php on line 273
+[10-May-2015 20:08:53 UTC] PHP Warning:  strlen() expects parameter 1 to be string, array given in /home/videochi/public_html/wp-includes/query.php on line 1577
+[10-May-2015 20:08:53 UTC] PHP Warning:  stripslashes() expects parameter 1 to be string, array given in /home/videochi/public_html/wp-includes/query.php on line 2048
+[10-May-2015 20:08:53 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/videochi/public_html/wp-includes/query.php:1577) in /home/videochi/public_html/wp-content/themes/eddiemachado-bones-611c04e/functions.php on line 273
+[10-May-2015 20:08:58 UTC] PHP Warning:  strlen() expects parameter 1 to be string, array given in /home/videochi/public_html/wp-includes/query.php on line 1577
+[10-May-2015 20:08:58 UTC] PHP Warning:  stripslashes() expects parameter 1 to be string, array given in /home/videochi/public_html/wp-includes/query.php on line 2048
+[10-May-2015 20:08:58 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/videochi/public_html/wp-includes/query.php:1577) in /home/videochi/public_html/wp-content/themes/eddiemachado-bones-611c04e/functions.php on line 273
+[11-May-2015 04:05:33 UTC] PHP Warning:  strlen() expects parameter 1 to be string, array given in /home/videochi/public_html/wp-includes/query.php on line 1577
+[11-May-2015 04:05:33 UTC] PHP Warning:  stripslashes() expects parameter 1 to be string, array given in /home/videochi/public_html/wp-includes/query.php on line 2048
+[11-May-2015 04:05:33 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/videochi/public_html/wp-includes/query.php:1577) in /home/videochi/public_html/wp-content/themes/eddiemachado-bones-611c04e/functions.php on line 273
+[11-May-2015 16:06:39 UTC] PHP Warning:  strlen() expects parameter 1 to be string, array given in /home/videochi/public_html/wp-includes/query.php on line 1577
+[11-May-2015 16:06:39 UTC] PHP Warning:  stripslashes() expects parameter 1 to be string, array given in /home/videochi/public_html/wp-includes/query.php on line 2048
+[11-May-2015 16:06:39 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/videochi/public_html/wp-includes/query.php:1577) in /home/videochi/public_html/wp-content/themes/eddiemachado-bones-611c04e/functions.php on line 273
+[15-May-2015 06:05:14 UTC] PHP Warning:  strlen() expects parameter 1 to be string, array given in /home/videochi/public_html/wp-includes/query.php on line 1577
+[15-May-2015 06:05:14 UTC] PHP Warning:  stripslashes() expects parameter 1 to be string, array given in /home/videochi/public_html/wp-includes/query.php on line 2048
+[15-May-2015 06:05:14 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/videochi/public_html/wp-includes/query.php:1577) in /home/videochi/public_html/wp-content/themes/eddiemachado-bones-611c04e/functions.php on line 273
+[16-May-2015 01:58:07 UTC] PHP Warning:  strlen() expects parameter 1 to be string, array given in /home/videochi/public_html/wp-includes/query.php on line 1577
+[16-May-2015 01:58:07 UTC] PHP Warning:  stripslashes() expects parameter 1 to be string, array given in /home/videochi/public_html/wp-includes/query.php on line 2048
+[16-May-2015 01:58:07 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/videochi/public_html/wp-includes/query.php:1577) in /home/videochi/public_html/wp-includes/pluggable.php on line 1175
+[16-May-2015 04:02:55 UTC] PHP Warning:  strlen() expects parameter 1 to be string, array given in /home/videochi/public_html/wp-includes/query.php on line 1577
+[16-May-2015 04:02:55 UTC] PHP Warning:  stripslashes() expects parameter 1 to be string, array given in /home/videochi/public_html/wp-includes/query.php on line 2048
+[16-May-2015 04:02:55 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/videochi/public_html/wp-includes/query.php:1577) in /home/videochi/public_html/wp-includes/pluggable.php on line 1175
+[17-May-2015 08:05:33 UTC] PHP Warning:  strlen() expects parameter 1 to be string, array given in /home/videochi/public_html/wp-includes/query.php on line 1577
+[17-May-2015 08:05:33 UTC] PHP Warning:  stripslashes() expects parameter 1 to be string, array given in /home/videochi/public_html/wp-includes/query.php on line 2048
+[17-May-2015 08:05:33 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/videochi/public_html/wp-includes/query.php:1577) in /home/videochi/public_html/wp-includes/pluggable.php on line 1175
+[18-May-2015 02:00:15 UTC] PHP Warning:  strlen() expects parameter 1 to be string, array given in /home/videochi/public_html/wp-includes/query.php on line 1577
+[18-May-2015 02:00:15 UTC] PHP Warning:  stripslashes() expects parameter 1 to be string, array given in /home/videochi/public_html/wp-includes/query.php on line 2048
+[18-May-2015 02:00:15 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/videochi/public_html/wp-includes/query.php:1577) in /home/videochi/public_html/wp-includes/pluggable.php on line 1175
+[18-May-2015 08:03:40 UTC] PHP Warning:  strlen() expects parameter 1 to be string, array given in /home/videochi/public_html/wp-includes/query.php on line 1577
+[18-May-2015 08:03:40 UTC] PHP Warning:  stripslashes() expects parameter 1 to be string, array given in /home/videochi/public_html/wp-includes/query.php on line 2048
+[18-May-2015 08:03:40 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/videochi/public_html/wp-includes/query.php:1577) in /home/videochi/public_html/wp-content/themes/eddiemachado-bones-611c04e/functions.php on line 273
+[19-May-2015 09:59:15 UTC] PHP Warning:  strlen() expects parameter 1 to be string, array given in /home/videochi/public_html/wp-includes/query.php on line 1577
+[19-May-2015 09:59:15 UTC] PHP Warning:  stripslashes() expects parameter 1 to be string, array given in /home/videochi/public_html/wp-includes/query.php on line 2048
+[19-May-2015 09:59:15 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/videochi/public_html/wp-includes/query.php:1577) in /home/videochi/public_html/wp-includes/pluggable.php on line 1175
+[19-May-2015 12:05:51 UTC] PHP Warning:  strlen() expects parameter 1 to be string, array given in /home/videochi/public_html/wp-includes/query.php on line 1577
+[19-May-2015 12:05:51 UTC] PHP Warning:  stripslashes() expects parameter 1 to be string, array given in /home/videochi/public_html/wp-includes/query.php on line 2048
+[19-May-2015 12:05:51 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/videochi/public_html/wp-includes/query.php:1577) in /home/videochi/public_html/wp-content/themes/eddiemachado-bones-611c04e/functions.php on line 273
+[20-May-2015 10:02:39 UTC] PHP Warning:  strlen() expects parameter 1 to be string, array given in /home/videochi/public_html/wp-includes/query.php on line 1577
+[20-May-2015 10:02:39 UTC] PHP Warning:  stripslashes() expects parameter 1 to be string, array given in /home/videochi/public_html/wp-includes/query.php on line 2048
+[20-May-2015 10:02:39 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/videochi/public_html/wp-includes/query.php:1577) in /home/videochi/public_html/wp-content/themes/eddiemachado-bones-611c04e/functions.php on line 273
+[21-May-2015 13:59:55 UTC] PHP Warning:  strlen() expects parameter 1 to be string, array given in /home/videochi/public_html/wp-includes/query.php on line 1577
+[21-May-2015 13:59:55 UTC] PHP Warning:  stripslashes() expects parameter 1 to be string, array given in /home/videochi/public_html/wp-includes/query.php on line 2048
+[21-May-2015 13:59:55 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/videochi/public_html/wp-includes/query.php:1577) in /home/videochi/public_html/wp-includes/pluggable.php on line 1175
+[22-May-2015 08:02:31 UTC] PHP Warning:  strlen() expects parameter 1 to be string, array given in /home/videochi/public_html/wp-includes/query.php on line 1577
+[22-May-2015 08:02:31 UTC] PHP Warning:  stripslashes() expects parameter 1 to be string, array given in /home/videochi/public_html/wp-includes/query.php on line 2048
+[22-May-2015 08:02:31 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/videochi/public_html/wp-includes/query.php:1577) in /home/videochi/public_html/wp-includes/pluggable.php on line 1175
+[25-May-2015 16:00:29 UTC] PHP Warning:  strlen() expects parameter 1 to be string, array given in /home/videochi/public_html/wp-includes/query.php on line 1577
+[25-May-2015 16:00:29 UTC] PHP Warning:  stripslashes() expects parameter 1 to be string, array given in /home/videochi/public_html/wp-includes/query.php on line 2048
+[25-May-2015 16:00:29 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/videochi/public_html/wp-includes/query.php:1577) in /home/videochi/public_html/wp-content/themes/eddiemachado-bones-611c04e/functions.php on line 273

@@ -19,7 +19,7 @@
                             )); ?>
                         </nav>
 
-                        <p class="source-org copyright">&copy; <?php echo date('Y'); ?> <a href="/" class="homelink"><?php bloginfo( 'name' ); ?></a>. Версия 1.1.1 <span class="supportlink">Поддержка пользователей: <a href="mailto:wizardmachine@yandex.ru">wizardmachine@yandex.ru</a></span></p>
+                        <p class="source-org copyright">&copy; <?php echo date('Y'); ?> <a href="/" class="homelink"><?php bloginfo( 'name' ); ?></a>. Версия 1.3.1 <span class="supportlink">Поддержка пользователей: <a href="mailto:wizardmachine@yandex.ru">wizardmachine@yandex.ru</a></span></p>
 
                     </div>
 
@@ -37,6 +37,10 @@
         <script src="<?php bloginfo('template_url'); ?>/library/js/vivus.min.js"></script>
         <script src='<?php bloginfo('template_url'); ?>/library/js/sweet-alert.min.js'></script>
         <script src='<?php bloginfo('template_url'); ?>/library/js/buzz.min.js'></script>
+        <script src="<?php bloginfo('template_url'); ?>/library/js/howler.js"></script>
+        <script src="<?php bloginfo('template_url'); ?>/library/js/canvas.js"></script>
+        <script src="<?php bloginfo('template_url'); ?>/library/js/easypie.js"></script>
+        <script src="<?php bloginfo('template_url'); ?>/library/js/pieChartPlugin.js"></script>
         <script src='<?php bloginfo('template_url'); ?>/library/js/protocols.js'></script>
         <script src='<?php bloginfo('template_url'); ?>/library/js/script-magic.js'></script>
         <?php if(is_front_page()) { ?>

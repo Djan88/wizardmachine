@@ -33,30 +33,43 @@
                   <div class="btn btn_sm btn_warning fast-protocol" data-fast="v5">V5</div>
                   <div class="btn btn_sm btn_warning fast-protocol" data-fast="resource">РЕСУРС</div>
                 </div>
-
-                <div class="steps clearfix">
-                    <!-- <div class="steps-center"><hr></div>
-                    <div class="step step_choice step_now">1 <div></div> </div>
-                    <div class="step step_img">2 <div></div> </div>
-                    <div class="step step_procedure">3 <div></div>  </div> -->
-                    <h3 class="heading heading_dashboard">Выберите актуальную зону</h3>
+                <div class="fast-protocol-resource clearfix hidden">
+                  <div class="btn btn_sm btn_warning fast-v" data-v='#draggable1'>V1</div> 
+                  <div class="btn btn_sm btn_warning fast-v" data-v='#draggable2'>V2</div> 
+                  <div class="btn btn_sm btn_warning fast-v" data-v='#draggable3'>V3</div> 
+                  <div class="btn btn_sm btn_warning fast-v" data-v='#draggable4'>V4</div> 
+                  <div class="btn btn_sm btn_warning fast-v" data-v='#draggable5'>V5</div>
                 </div>
-
                 <div class="machine_screen clearfix">
+                    <div class="steps clearfix">
+                        <h3 class="heading heading_dashboard">Выберите актуальную зону</h3>
+                    </div>
                     <div id="accordion" class="select_program">
-                      <h3><span class="protocol_acent">(V2)</span>ЛЮДИ И ОТНОШЕНИЯ. ВЕЩИ, ПРЕДМЕТЫ И ДОСТИЖЕНИЕ ЦЕЛЕЙ</h3>
-                      <div>"Забыть ее/его не могу; простить ее/его не могу; только все мысли о нем/ней; хочу ее/его;" "хочу достичь/стать/получить качества и статус"; либо "хочу заработать/купить/продать/выгодную сделку/кредит";<div class="btn btn_lg btn_success btn_choice" data-protocol ="v2">Выбрать</div></div>
-                      <h3><span class="protocol_acent">(V3)</span>РАЗДРАЖЕНИЕ И НЕПРИЯТИЕ</h3>
-                      <div>"Не могу с этим смириться/ это все не правильно/ раздражение от чьих-то действий, чаще бытовых,внешнего вида или слов/ грусть-тоска зеленая/ усталость от жизни;"<div class="btn btn_lg btn_success btn_choice" data-protocol ="v3">Выбрать</div></div>
-                      <h3><span class="protocol_acent">(V4)</span>СУЕТА, БЕСПОКОЙСТВО И НАПРЯЖЕНИЕ</h3>
-                      <div>«… опоздаю не успею… тороплюсь, не успеваю… напряжение в теле и голове… а что будет… а кто что скажет/подумает про меня… а как я буду выглядеть в глазах окружающих… я стараюсь все лучшим образом делать… и  далее, в этом роде…"<div class="btn btn_lg btn_success btn_choice" data-protocol ="v4">Выбрать</div></div>
-                      <h3><span class="protocol_acent">(V5)</span>ОДНИ И ТЕ ЖЕ "ГРАБЛИ»: РЕЦИВЫ ПРОБЛЕМНЫХ СИТУАЦИЙ В ЛИЧНОЙ ЖИЗНИ</h3>
-                      <div>Насильственное следование некой жизненной стратегии, стойкие убеждения и ценности, основанные на опасениях и самоограничениях, навязчивые мысли и действия  по типу "частого мытья рук» или чего иного, постоянное беспокойство по поводу «курса валют»; ситуации по проверке себя с вовлечением окружающих «…ой, а не забыл ли я выключить чайник…утюг…газовый кран.. .дверь дома», «…проверь ты, а то я не уверен/на..»; страх высоты или нанесения себе повреждения ножиком или другим опасным предметом; создание больших запасов еды по типу «битком забитого холодильника, мешка сахара и муки»<div class="btn btn_lg btn_success btn_choice" data-protocol ="v5">Выбрать</div></div>
-                      <h3><span class="protocol_acent">(РЕСУРС)</span>РЕСУРСНЫЙ ПРОТОКОЛ</h3>
-                      <div>NB! Протокол на ручном управлении, предназначен для продвинутых пользователей! Производит синхронизацию телесных и внетелесных ресурсных зон c калибровкой по зоне сердца (V3). В целях безопасности предусмотрено автоматическое отключение протокола через 30 секунд простоя!<div class="btn btn_lg btn_success btn_choice" data-protocol ="resource">Выбрать</div></div>
+                        <h3><span class="protocol_acent">(V2)</span>ЛЮДИ И ОТНОШЕНИЯ. ВЕЩИ, ПРЕДМЕТЫ И ДОСТИЖЕНИЕ ЦЕЛЕЙ</h3>
+                        <div>«Застрявшие назойливые мысли в голове о людях или предметах, мысленные диалоги, остановленное действие: «сделать или не сделать… поступать так или эдак… купить или не купить… выбрать это или то…»<div class="btn btn_lg btn_success btn_choice" data-protocol ="v2">Выбрать</div></div>
+                        <h3><span class="protocol_acent">(V3)</span>РАЗДРАЖЕНИЕ И НЕПРИЯТИЕ</h3>
+                        <div>«Раздражают и напрягают обстоятельства жизни, события и явления природы и социума, действия и поступки других людей, их внешний вид или слова. Стойкое ощущение собственной правильности и крутизны»<div class="btn btn_lg btn_success btn_choice" data-protocol ="v3">Выбрать</div></div>
+                        <h3><span class="protocol_acent">(V4)</span>СУЕТА, БЕСПОКОЙСТВО И НАПРЯЖЕНИЕ</h3>
+                        <div>«Беспокойство о том, что произойдет, ускорение мышления и действий, недовольство собой и заниженная самооценка:  «… опоздаю, не успею… а вдруг случиться... а что будет…  а кто что скажет/подумает про меня… а как я буду выглядеть в глазах окружающих…  я стараюсь все лучшим образом делать…"  и  далее, в этом роде.»<div class="btn btn_lg btn_success btn_choice" data-protocol ="v4">Выбрать</div></div>
+                        <h3><span class="protocol_acent">(V5)</span>«ИРРАЦИОНАЛЬНОЕ, ВИТАЛЬНАЯ СИЛА»</h3>
+                        <div>«Иррациональное. Ощущение непреодолимой и целиком захватывающей  силы и энергии.Насильственное следование некой жизненной стратегии, витальные страхи.»<div class="btn btn_lg btn_success btn_choice" data-protocol ="v5">Выбрать</div></div>
+                        <h3><span class="protocol_acent">(РЕСУРС)</span>«РЕСУРСНЫЙ ПРОТОКОЛ»</h3>
+                        <div>«Ощущение непреодолимой и целиком захватывающей  силы.Насильственное следование некой жизненной стратегии, повторяющиеся обстоятельства жизни, витальные страхи.NB! Протокол на ручном управлении, предназначен для продвинутых пользователей! Проводит синхронизацию телесных и внетелесных ресурсных зон c калибровкой по зонам вентральной оси (V). Начинать терапию следует с актуальной зоны, либо с V3. Выбор ресурсной внетелесной зоны и постановку на ней формулы щелчком мышки компьютера терапевт производит самостоятельно, путем  перцептивного выбора. В целях безопасности предусмотрено автоматическое отключение протокола через 30 секунд простоя!»
+                            <div class="zone-choice_wrap">
+                                <div class="zone-choice_item"><input class="v-zone" type="radio" name="radiobutton" value="#draggable1" id="V1"><label for="V1">V1</label></div>
+                                <div class="zone-choice_item"><input class="v-zone" type="radio" name="radiobutton" value="#draggable2" id="V2"><label for="V2">V2</label></div>
+                                <div class="zone-choice_item"><input class="v-zone" type="radio" name="radiobutton" checked="checked" value="#draggable3" id="V3"><label for="V3">V3</label></div>
+                                <div class="zone-choice_item"><input class="v-zone" type="radio" name="radiobutton" value="#draggable4" id="V4"><label for="V4">V4</label></div>
+                                <div class="zone-choice_item"><input class="v-zone" type="radio" name="radiobutton" value="#draggable5" id="V5"><label for="V5">V5</label></div>
+                            </div>
+                            <div class="btn btn_lg btn_success btn_choice" data-protocol ="resource">Выбрать</div>
+                        </div>
                     </div>
                 </div>
                 <div class="machine_screen clearfix hidden">
+                    <div class="steps clearfix">
+                        <h3 class="heading heading_dashboard">Загрузите и при необходимости отредактируйте фото</h3>
+                    </div>
                     <div class="bbody">
 
                         <!-- upload form -->
@@ -84,184 +97,16 @@
                     
                     </div>
                 </div>
-
+                
                 <div class="machine_screen work-area clearfix hidden">
+                    <div class="steps clearfix">
+                        <h3 class="heading heading_dashboard">Перенесите зоны с шаблона на фото клиента</h3>
+                    </div>
+                    <div class="chart" data-percent="0"><span>0</span>%</div>
                     <div id="snaptarget" class="wrapper">
                         <ul class="itemlist itemlist-one" id="itemlist-one">
                             <li id="draggable0" class="itemlist_item item_list__mid draggable" style="left: 197px; top: -11px;">V0</li>
-                            <li id="draggable1" class="itemlist_item item_list__mid draggable" style="left: 197px; top: 27px;">V1
-                                <svg id="triangle_1" class="triangle hidden"
-                                xmlns:dc="http://purl.org/dc/elements/1.1/"
-                                xmlns:cc="http://creativecommons.org/ns#"
-                                xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-                                xmlns:svg="http://www.w3.org/2000/svg"
-                                xmlns="http://www.w3.org/2000/svg"
-                                xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-                                xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-                                version="1.1"
-                                width="360.26767"
-                                height="318.20004"
-                                id="svg2816"
-                                xml:space="preserve"
-                                inkscape:version="0.48.4 r9939"
-                                sodipodi:docname="AJAX.svg"><metadata
-                                  id="metadata81"><rdf:RDF><cc:Work
-                                      rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-                                        rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><sodipodi:namedview
-                                  pagecolor="#ffffff"
-                                  bordercolor="#666666"
-                                  borderopacity="1"
-                                  objecttolerance="10"
-                                  gridtolerance="10"
-                                  guidetolerance="10"
-                                  inkscape:pageopacity="0"
-                                  inkscape:pageshadow="2"
-                                  inkscape:window-width="1920"
-                                  inkscape:window-height="1057"
-                                  id="namedview79"
-                                  showgrid="false"
-                                  fit-margin-top="0.1"
-                                  fit-margin-left="0.1"
-                                  fit-margin-right="0.1"
-                                  fit-margin-bottom="0.1"
-                                  inkscape:zoom="1.4142137"
-                                  inkscape:cx="81.708362"
-                                  inkscape:cy="105.66257"
-                                  inkscape:window-x="-8"
-                                  inkscape:window-y="-8"
-                                  inkscape:window-maximized="1"
-                                  inkscape:current-layer="svg2816"
-                                  showguides="true"
-                                  inkscape:guide-bbox="true" /><defs
-                                  id="defs2820"><clipPath
-                                    id="clipPath2832"><path
-                                      d="m -0.24,595.138 317.48,0 0,-595.276 -317.48,0 0,595.276 z"
-                                      id="path2834"
-                                      inkscape:connector-curvature="0" /></clipPath><clipPath
-                                    id="clipPath2840"><path
-                                      d="m 0.03,595.32 317.46,0 0,-595.32 -317.46,0 0,595.32 z"
-                                      id="path2842"
-                                      inkscape:connector-curvature="0" /></clipPath><clipPath
-                                    id="clipPath2858"><path
-                                      d="m -0.24,595.138 317.48,0 0,-595.276 -317.48,0 0,595.276 z"
-                                      id="path2860"
-                                      inkscape:connector-curvature="0" /></clipPath><clipPath
-                                    id="clipPath2864"><path
-                                      d="m 0.03,595.32 317.46,0 0,-595.32 -317.46,0 0,595.32 z"
-                                      id="path2866"
-                                      inkscape:connector-curvature="0" /></clipPath><clipPath
-                                    id="clipPath3306"><path
-                                      d="m 199.238,472.977 0,-29.74 29.744,0 0,29.74"
-                                      id="path3308"
-                                      inkscape:connector-curvature="0" /></clipPath><clipPath
-                                    id="clipPath3322"><path
-                                      d="m -0.24,595.138 317.48,0 0,-595.276 -317.48,0 0,595.276 z"
-                                      id="path3324"
-                                      inkscape:connector-curvature="0" /></clipPath><clipPath
-                                    id="clipPath3330"><path
-                                      d="m 0.03,595.32 317.46,0 0,-595.32 -317.46,0 0,595.32 z"
-                                      id="path3332"
-                                      inkscape:connector-curvature="0" /></clipPath><clipPath
-                                    id="clipPath3344"><path
-                                      d="m 88.233,387.221 0,-28.335 32.08,0 0,28.335"
-                                      id="path3346"
-                                      inkscape:connector-curvature="0" /></clipPath><clipPath
-                                    id="clipPath3462"><path
-                                      d="m -0.24,595.138 317.48,0 0,-595.276 -317.48,0 0,595.276 z"
-                                      id="path3464"
-                                      inkscape:connector-curvature="0" /></clipPath><clipPath
-                                    id="clipPath3470"><path
-                                      d="m 0.03,595.32 317.46,0 0,-595.32 -317.46,0 0,595.32 z"
-                                      id="path3472"
-                                      inkscape:connector-curvature="0" /></clipPath><clipPath
-                                    id="clipPath3490"><path
-                                      d="m -0.24,595.138 317.48,0 0,-595.276 -317.48,0 0,595.276 z"
-                                      id="path3492"
-                                      inkscape:connector-curvature="0" /></clipPath><clipPath
-                                    id="clipPath3496"><path
-                                      d="m 0.03,595.32 317.46,0 0,-595.32 -317.46,0 0,595.32 z"
-                                      id="path3498"
-                                      inkscape:connector-curvature="0" /></clipPath><clipPath
-                                    id="clipPath3520"><path
-                                      d="m 254.788,326.215 0,-28.309 28.326,0 0,28.309"
-                                      id="path3522"
-                                      inkscape:connector-curvature="0" /></clipPath><clipPath
-                                    id="clipPath3544"><path
-                                      d="m 145.049,326.142 0,-28.333 28.342,0 0,28.333"
-                                      id="path3546"
-                                      inkscape:connector-curvature="0" /></clipPath><clipPath
-                                    id="clipPath3682"><path
-                                      d="m -0.24,595.138 317.48,0 0,-595.276 -317.48,0 0,595.276 z"
-                                      id="path3684"
-                                      inkscape:connector-curvature="0" /></clipPath><clipPath
-                                    id="clipPath3690"><path
-                                      d="m 0.03,595.32 317.46,0 0,-595.32 -317.46,0 0,595.32 z"
-                                      id="path3692"
-                                      inkscape:connector-curvature="0" /></clipPath><clipPath
-                                    id="clipPath3980"><path
-                                      d="m -0.24,595.138 317.48,0 0,-595.276 -317.48,0 0,595.276 z"
-                                      id="path3982"
-                                      inkscape:connector-curvature="0" /></clipPath><clipPath
-                                    id="clipPath3988"><path
-                                      d="m 0.03,595.32 317.46,0 0,-595.32 -317.46,0 0,595.32 z"
-                                      id="path3990"
-                                      inkscape:connector-curvature="0" /></clipPath><clipPath
-                                    id="clipPath4010"><path
-                                      d="m -0.24,595.138 317.48,0 0,-595.276 -317.48,0 0,595.276 z"
-                                      id="path4012"
-                                      inkscape:connector-curvature="0" /></clipPath><clipPath
-                                    id="clipPath4016"><path
-                                      d="m 0.03,595.32 317.46,0 0,-595.32 -317.46,0 0,595.32 z"
-                                      id="path4018"
-                                      inkscape:connector-curvature="0" /></clipPath><clipPath
-                                    id="clipPath4062"><path
-                                      d="m 200.163,177.773 0,-28.284 28.283,0 0,28.284"
-                                      id="path4064"
-                                      inkscape:connector-curvature="0" /></clipPath><clipPath
-                                    id="clipPath4090"><path
-                                      d="m 34.886,177.515 0,-51.632 30.367,0 0,51.632"
-                                      id="path4092"
-                                      inkscape:connector-curvature="0" /></clipPath><clipPath
-                                    id="clipPath4106"><path
-                                      d="m 34.886,177.515 0,-51.632 30.367,0 0,51.632"
-                                      id="path4108"
-                                      inkscape:connector-curvature="0" /></clipPath><clipPath
-                                    id="clipPath4272"><path
-                                      d="m 34.886,177.515 0,-51.632 30.367,0 0,51.632"
-                                      id="path4274"
-                                      inkscape:connector-curvature="0" /></clipPath><clipPath
-                                    id="clipPath4304"><path
-                                      d="m 254.653,176.442 0,-48.167 28.317,0 0,48.167"
-                                      id="path4306"
-                                      inkscape:connector-curvature="0" /></clipPath><clipPath
-                                    id="clipPath4310"><path
-                                      d="m 253.565,177.983 31.181,0 0,-49.183 -31.181,0 0,49.183 z"
-                                      id="path4312"
-                                      inkscape:connector-curvature="0" /></clipPath><clipPath
-                                    id="clipPath4316"><path
-                                      d="m -0.24,595.138 317.48,0 0,-595.276 -317.48,0 0,595.276 z"
-                                      id="path4318"
-                                      inkscape:connector-curvature="0" /></clipPath><clipPath
-                                    id="clipPath4322"><path
-                                      d="m 0.03,595.32 317.46,0 0,-595.32 -317.46,0 0,595.32 z"
-                                      id="path4324"
-                                      inkscape:connector-curvature="0" /></clipPath><clipPath
-                                    id="clipPath4456"><path
-                                      d="m -0.24,595.138 317.48,0 0,-595.276 -317.48,0 0,595.276 z"
-                                      id="path4458"
-                                      inkscape:connector-curvature="0" /></clipPath><clipPath
-                                    id="clipPath4464"><path
-                                      d="m 0.03,595.32 317.46,0 0,-595.32 -317.46,0 0,595.32 z"
-                                      id="path4466"
-                                      inkscape:connector-curvature="0" /></clipPath></defs><path
-                                  inkscape:connector-curvature="0"
-                                  sodipodi:nodetypes="scccscscccss" /><path
-                                  inkscape:connector-curvature="0"
-                                  style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none"
-                                  id="path3121"
-                                  d="m 322.51281,286.28317 -284.757805,0 L 180.13391,39.806513 z"
-                                  sodipodi:nodetypes="cccc" /></svg>
-                            </li>
+                            <!-- <li id="draggable1" class="itemlist_item item_list__mid draggable" style="left: 197px; top: 27px;">V1</li> -->
                             <li id="draggable2" class="itemlist_item item_list__mid draggable" style="left: 197px; top: 82px;">V2
                                 <svg id="triangle_2" class="triangle hidden"
                                 xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -783,9 +628,185 @@
                             </li>
                             <li id="draggable5" class="itemlist_item item_list__mid draggable" style="left: 197px; top: 203px;">V5</li>
                             <li id="draggableD1" class="itemlist_item item_list__mid draggable" style="left: 149px; top: 30px;">D+</li>
+                            <li id="draggableD_1" class="itemlist_item item_list__mid draggable" style="left: 186px; top: 25px;">D1</li>
+                            <li id="draggableS_1" class="itemlist_item item_list__mid draggable" style="left: 210px; top: 25px;">S1
+                              <svg id="triangle_1" class="triangle hidden"
+                                xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                xmlns:cc="http://creativecommons.org/ns#"
+                                xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                xmlns:svg="http://www.w3.org/2000/svg"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                                version="1.1"
+                                width="360.26767"
+                                height="318.20004"
+                                id="svg2816"
+                                xml:space="preserve"
+                                inkscape:version="0.48.4 r9939"
+                                sodipodi:docname="AJAX.svg"><metadata
+                                  id="metadata81"><rdf:RDF><cc:Work
+                                      rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+                                        rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><sodipodi:namedview
+                                  pagecolor="#ffffff"
+                                  bordercolor="#666666"
+                                  borderopacity="1"
+                                  objecttolerance="10"
+                                  gridtolerance="10"
+                                  guidetolerance="10"
+                                  inkscape:pageopacity="0"
+                                  inkscape:pageshadow="2"
+                                  inkscape:window-width="1920"
+                                  inkscape:window-height="1057"
+                                  id="namedview79"
+                                  showgrid="false"
+                                  fit-margin-top="0.1"
+                                  fit-margin-left="0.1"
+                                  fit-margin-right="0.1"
+                                  fit-margin-bottom="0.1"
+                                  inkscape:zoom="1.4142137"
+                                  inkscape:cx="81.708362"
+                                  inkscape:cy="105.66257"
+                                  inkscape:window-x="-8"
+                                  inkscape:window-y="-8"
+                                  inkscape:window-maximized="1"
+                                  inkscape:current-layer="svg2816"
+                                  showguides="true"
+                                  inkscape:guide-bbox="true" /><defs
+                                  id="defs2820"><clipPath
+                                    id="clipPath2832"><path
+                                      d="m -0.24,595.138 317.48,0 0,-595.276 -317.48,0 0,595.276 z"
+                                      id="path2834"
+                                      inkscape:connector-curvature="0" /></clipPath><clipPath
+                                    id="clipPath2840"><path
+                                      d="m 0.03,595.32 317.46,0 0,-595.32 -317.46,0 0,595.32 z"
+                                      id="path2842"
+                                      inkscape:connector-curvature="0" /></clipPath><clipPath
+                                    id="clipPath2858"><path
+                                      d="m -0.24,595.138 317.48,0 0,-595.276 -317.48,0 0,595.276 z"
+                                      id="path2860"
+                                      inkscape:connector-curvature="0" /></clipPath><clipPath
+                                    id="clipPath2864"><path
+                                      d="m 0.03,595.32 317.46,0 0,-595.32 -317.46,0 0,595.32 z"
+                                      id="path2866"
+                                      inkscape:connector-curvature="0" /></clipPath><clipPath
+                                    id="clipPath3306"><path
+                                      d="m 199.238,472.977 0,-29.74 29.744,0 0,29.74"
+                                      id="path3308"
+                                      inkscape:connector-curvature="0" /></clipPath><clipPath
+                                    id="clipPath3322"><path
+                                      d="m -0.24,595.138 317.48,0 0,-595.276 -317.48,0 0,595.276 z"
+                                      id="path3324"
+                                      inkscape:connector-curvature="0" /></clipPath><clipPath
+                                    id="clipPath3330"><path
+                                      d="m 0.03,595.32 317.46,0 0,-595.32 -317.46,0 0,595.32 z"
+                                      id="path3332"
+                                      inkscape:connector-curvature="0" /></clipPath><clipPath
+                                    id="clipPath3344"><path
+                                      d="m 88.233,387.221 0,-28.335 32.08,0 0,28.335"
+                                      id="path3346"
+                                      inkscape:connector-curvature="0" /></clipPath><clipPath
+                                    id="clipPath3462"><path
+                                      d="m -0.24,595.138 317.48,0 0,-595.276 -317.48,0 0,595.276 z"
+                                      id="path3464"
+                                      inkscape:connector-curvature="0" /></clipPath><clipPath
+                                    id="clipPath3470"><path
+                                      d="m 0.03,595.32 317.46,0 0,-595.32 -317.46,0 0,595.32 z"
+                                      id="path3472"
+                                      inkscape:connector-curvature="0" /></clipPath><clipPath
+                                    id="clipPath3490"><path
+                                      d="m -0.24,595.138 317.48,0 0,-595.276 -317.48,0 0,595.276 z"
+                                      id="path3492"
+                                      inkscape:connector-curvature="0" /></clipPath><clipPath
+                                    id="clipPath3496"><path
+                                      d="m 0.03,595.32 317.46,0 0,-595.32 -317.46,0 0,595.32 z"
+                                      id="path3498"
+                                      inkscape:connector-curvature="0" /></clipPath><clipPath
+                                    id="clipPath3520"><path
+                                      d="m 254.788,326.215 0,-28.309 28.326,0 0,28.309"
+                                      id="path3522"
+                                      inkscape:connector-curvature="0" /></clipPath><clipPath
+                                    id="clipPath3544"><path
+                                      d="m 145.049,326.142 0,-28.333 28.342,0 0,28.333"
+                                      id="path3546"
+                                      inkscape:connector-curvature="0" /></clipPath><clipPath
+                                    id="clipPath3682"><path
+                                      d="m -0.24,595.138 317.48,0 0,-595.276 -317.48,0 0,595.276 z"
+                                      id="path3684"
+                                      inkscape:connector-curvature="0" /></clipPath><clipPath
+                                    id="clipPath3690"><path
+                                      d="m 0.03,595.32 317.46,0 0,-595.32 -317.46,0 0,595.32 z"
+                                      id="path3692"
+                                      inkscape:connector-curvature="0" /></clipPath><clipPath
+                                    id="clipPath3980"><path
+                                      d="m -0.24,595.138 317.48,0 0,-595.276 -317.48,0 0,595.276 z"
+                                      id="path3982"
+                                      inkscape:connector-curvature="0" /></clipPath><clipPath
+                                    id="clipPath3988"><path
+                                      d="m 0.03,595.32 317.46,0 0,-595.32 -317.46,0 0,595.32 z"
+                                      id="path3990"
+                                      inkscape:connector-curvature="0" /></clipPath><clipPath
+                                    id="clipPath4010"><path
+                                      d="m -0.24,595.138 317.48,0 0,-595.276 -317.48,0 0,595.276 z"
+                                      id="path4012"
+                                      inkscape:connector-curvature="0" /></clipPath><clipPath
+                                    id="clipPath4016"><path
+                                      d="m 0.03,595.32 317.46,0 0,-595.32 -317.46,0 0,595.32 z"
+                                      id="path4018"
+                                      inkscape:connector-curvature="0" /></clipPath><clipPath
+                                    id="clipPath4062"><path
+                                      d="m 200.163,177.773 0,-28.284 28.283,0 0,28.284"
+                                      id="path4064"
+                                      inkscape:connector-curvature="0" /></clipPath><clipPath
+                                    id="clipPath4090"><path
+                                      d="m 34.886,177.515 0,-51.632 30.367,0 0,51.632"
+                                      id="path4092"
+                                      inkscape:connector-curvature="0" /></clipPath><clipPath
+                                    id="clipPath4106"><path
+                                      d="m 34.886,177.515 0,-51.632 30.367,0 0,51.632"
+                                      id="path4108"
+                                      inkscape:connector-curvature="0" /></clipPath><clipPath
+                                    id="clipPath4272"><path
+                                      d="m 34.886,177.515 0,-51.632 30.367,0 0,51.632"
+                                      id="path4274"
+                                      inkscape:connector-curvature="0" /></clipPath><clipPath
+                                    id="clipPath4304"><path
+                                      d="m 254.653,176.442 0,-48.167 28.317,0 0,48.167"
+                                      id="path4306"
+                                      inkscape:connector-curvature="0" /></clipPath><clipPath
+                                    id="clipPath4310"><path
+                                      d="m 253.565,177.983 31.181,0 0,-49.183 -31.181,0 0,49.183 z"
+                                      id="path4312"
+                                      inkscape:connector-curvature="0" /></clipPath><clipPath
+                                    id="clipPath4316"><path
+                                      d="m -0.24,595.138 317.48,0 0,-595.276 -317.48,0 0,595.276 z"
+                                      id="path4318"
+                                      inkscape:connector-curvature="0" /></clipPath><clipPath
+                                    id="clipPath4322"><path
+                                      d="m 0.03,595.32 317.46,0 0,-595.32 -317.46,0 0,595.32 z"
+                                      id="path4324"
+                                      inkscape:connector-curvature="0" /></clipPath><clipPath
+                                    id="clipPath4456"><path
+                                      d="m -0.24,595.138 317.48,0 0,-595.276 -317.48,0 0,595.276 z"
+                                      id="path4458"
+                                      inkscape:connector-curvature="0" /></clipPath><clipPath
+                                    id="clipPath4464"><path
+                                      d="m 0.03,595.32 317.46,0 0,-595.32 -317.46,0 0,595.32 z"
+                                      id="path4466"
+                                      inkscape:connector-curvature="0" /></clipPath></defs><path
+                                  inkscape:connector-curvature="0"
+                                  sodipodi:nodetypes="scccscscccss" /><path
+                                  inkscape:connector-curvature="0"
+                                  style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none"
+                                  id="path3121"
+                                  d="m 322.51281,286.28317 -284.757805,0 L 180.13391,39.806513 z"
+                                  sodipodi:nodetypes="cccc" /></svg>
+                            </li>
+                            <li id="draggableD_6" class="itemlist_item item_list__mid draggable" style="left: 170px; top: 365px;">D6</li>
                             <li id="draggableClean" class="itemlist_item item_list__mid itemlist_item__clear draggable" style="left: -15px; top: 94px;"></li>
                             <li id="draggableS2" class="itemlist_item item_list__mid draggable" style="left: 241px; top: 76px;">S2</li>
                             <li id="draggableS2_1" class="itemlist_item item_list__mid draggable" style="left: 241px; top: 114px;">S2</li>
+                            <li id="draggableSh" class="itemlist_item item_list__mid draggable" style="left: 299px; top: 98px;">SH</li>
                             <li id="draggableS3" class="itemlist_item item_list__mid draggable" style="left: 235px; top: 150px;">S3</li>
                             <li id="draggableS4" class="itemlist_item item_list__mid draggable" style="left: 235px; top: 190px;">S4</li>
                             <li id="draggableS5" class="itemlist_item item_list__mid draggable" style="left: 235px; top: 250px;">S5</li>

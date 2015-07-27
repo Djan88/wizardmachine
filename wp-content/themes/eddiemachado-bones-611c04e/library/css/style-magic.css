@@ -38,9 +38,10 @@ li
     width: 56px;
     height: 56px;
     position: absolute;
-    -webkit-transition: opacity 0.2s ease-in;
-    -moz-transition: opacity 0.2s ease-in;
-    transition: opacity 0.2s ease-in;
+    /*-webkit-transition: opacity 0.2s ease-in;*/
+    /*-moz-transition: opacity 0.2s ease-in;*/
+    /*transition: opacity 0.2s ease-in;*/
+    transition: transform 1s linear;
     /*-webkit-transition: box-shadow 0.3s cubic-bezier(.67,2,.54,.04);
        -moz-transition: box-shadow 0.3s cubic-bezier(.67,2,.54,.04);
             transition: box-shadow 0.3s cubic-bezier(.67,2,.54,.04);*/
@@ -151,7 +152,7 @@ input {
 }
 .steps
 {
-    margin-bottom: 20px;
+    margin-bottom: 55px;
 }
 .step
 {
@@ -266,7 +267,7 @@ input[type=submit]:hover, input[type=submit]:active {
 {
     position: relative;
 }
-.ui-draggable-dragging:before, .itemlist_item:hover:before
+.itemlist_item.ui-draggable-dragging:before, .itemlist_item:hover:before
 {
     content: '';
     position: absolute;
@@ -275,7 +276,7 @@ input[type=submit]:hover, input[type=submit]:active {
     top: 26px;
     left: -475px;
 }
-.ui-draggable-dragging:after, .itemlist_item:hover:after
+.itemlist_item.ui-draggable-dragging:after, .itemlist_item:hover:after
 {
     content: '';
     position: absolute;
@@ -421,7 +422,7 @@ path {
 {
     font-weight: 100;
 }
-.fast-protocol-wrap 
+.fast-protocol-wrap, .fast-protocol-resource 
 {
     text-align: justify;
     width: 50%;
@@ -431,13 +432,13 @@ path {
     z-index: 5;
     height: 40px;
 }
-.fast-protocol-wrap:after 
+.fast-protocol-wrap:after, .fast-protocol-resource:after
 {
     display: inline-block;
     width: 99%;
 }
 
-.fast-protocol
+.fast-protocol, .fast-v
 {
     font-weight: 600;
     padding: 7px 25px;
@@ -485,22 +486,58 @@ header .btn_back
     float: left;
     margin-left: 0;
 }
-.btn__wizard, .btn__crop 
+.btn__wizard, .btn__crop, .btn__next
 {
   font-weight: 600!important;
   text-transform: uppercase;
   float: right;
+  position: relative;
+}
+.btn__next
+{
+    padding-right: 35px;
+}
+.btn__next span
+{
+  position: absolute;
+  right: 10px;
+  font-size: 60px;
+  top: -38px;
 }
 header .btn 
 {
     margin-left: 5px;
 }
-
+.zone-choice_wrap 
+{
+    text-align: justify;
+}
+.zone-choice_wrap:after 
+{
+    content: "";
+    display: inline-block;
+    width: 99%;
+}
+.zone-choice_item 
+{
+    display: inline-block;
+    width: 45px;
+    padding-top: 15px;
+    height: 45px;
+}
+.fast-v 
+{
+    border-radius: 50%;
+    padding: 0;
+    padding-top: 12px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+}
 .pay-form
 {
     text-align: right;
 }
-
 .pay-form__email
 {
     display: inline-block !important;
@@ -511,4 +548,59 @@ header .btn
 .pay-form__submit
 {
     vertical-align: middle;
+}
+.page-template-pay_form-php #inner-content 
+{
+    text-align: center;
+}
+.page-template-pay_form-php h1.page-title 
+{
+    padding-bottom: 20px;
+}
+form.pay-form 
+{
+    display: inline-block;
+}
+
+.knife-wrap 
+{
+    width: 455px;
+    float: left;
+    /*border: 1px solid #ccc;*/
+}
+.knife 
+{
+    display: block;
+    width: 100%;
+    height: 100px;
+    background: url(../images/wizard_knife.png) no-repeat center center/100%;
+    cursor: pointer;
+    /*transform: rotateX(180deg);*/
+}
+.chart{
+  display: inline-block;
+  width: 95px;
+  height: 95px;
+  margin: 0 10px;
+  vertical-align: top;
+  position: absolute;
+  padding-top: 18px;
+  text-align: center;
+  right: 0;
+  top: 5px;
+}
+
+.chart span
+{
+  display: block;
+  font-size: 2em;
+  font-weight: normal;
+  height: 35px;
+}
+
+.chart canvas
+{
+  position: absolute;
+  left: 0;
+  top: 0;
 }
