@@ -971,15 +971,6 @@
                                                                                             paddingTop: '2px',
                                                                                             zIndex: '1'
                                                                                         });
-                                                                                        jQuery('#draggableVD').css({
-                                                                                            transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
-                                                                                            background: 'rgba(255,255,255, 0.5)',
-                                                                                            borderWidth: '2px',
-                                                                                            paddingTop: '2px',
-                                                                                            transform: 'scale(0.5)',
-                                                                                            zIndex: '1',
-                                                                                            color: 'red'
-                                                                                        });
     //фаза 5
                                                                                         count_animation = 1;
                                                                                         cur_animation_val = 0;
