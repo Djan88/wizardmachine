@@ -84,11 +84,9 @@
                     zIndex: '1000'
                 });
                 jQuery('#draggableD2').css({
-                    transform: 'rotate(-'+count_animation_val+'deg) scale(1)',
                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/chisty_vnutri.jpg) 0 0/100% no-repeat'
                 });
                 jQuery('#draggableS2').css({
-                    transform: 'rotate(+'+count_animation_val+'deg) scale(1)',
                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/nepreodolymi.jpg) 0 0/100% no-repeat'
                 });
                 jQuery('#draggable2').css({
