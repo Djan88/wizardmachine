@@ -947,7 +947,7 @@
             top: '-120px'
         });
         //анимация первого треугольника
-        jQuery('#draggableS_1').addClass('transparent');
+        jQuery('#draggableD_1').addClass('transparent');
         firstTriangleAnimation = new Vivus('triangle_1', {type: 'delayed', duration: 150}, function(){
         //анимация второго треугольника
             setTimeout(function(){
@@ -969,7 +969,7 @@
                                         top: '-120px'
                                     });
                                     //анимация первого треугольника 
-                                    jQuery('#draggableS_1').addClass('transparent');                                                                    
+                                    jQuery('#draggableD_1').addClass('transparent');                                                                    
                                     firstTriangleAnimation = new Vivus('triangle_1', {type: 'delayed', duration: 150}, function(){
                                     //анимация второго треугольника
                                         setTimeout(function(){
@@ -997,7 +997,7 @@
                                                                 phaseOne = setInterval(function(){
                                                                     if (count_animation <= 480){                                                                         //120
                                                                         cur_animation_val += 1.5;
-                                                                        jQuery('#draggableClean_2, #draggableS_1, #draggable3, #draggableD1').css({
+                                                                        jQuery('#draggableClean_2, #draggableD_1, #draggable3, #draggableD1').css({
                                                                             color: 'transparent',
                                                                             borderColor: 'transparent',
                                                                             opacity: 0.8,
@@ -1016,7 +1016,7 @@
                                                                             transform: 'rotate('+cur_animation_val+'deg) scale(1)',
                                                                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat'
                                                                         });
-                                                                        jQuery('#draggableS_1, #draggable3').css({
+                                                                        jQuery('#draggableD_1, #draggable3').css({
                                                                             transform: 'rotate('+cur_animation_val+'deg) scale(1)',
                                                                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/superdisfunction.png) 0 0/100% no-repeat'
                                                                         });
@@ -1035,7 +1035,7 @@
                                                                         clearInterval(phaseOne);
                                                                         count_animation = 1;
                                                                         jQuery('#draggableClean_2').addClass('inopaciti');
-                                                                        jQuery('#draggableClean_2, #draggableS_1, #draggable3, #draggableD1').css({
+                                                                        jQuery('#draggableClean_2, #draggableD_1, #draggable3, #draggableD1').css({
                                                                             background: 'rgba(255,255,255, 0.5)',
                                                                             color: 'red',
                                                                             borderColor: 'red',
@@ -1098,7 +1098,7 @@
                                                                             } else {
                                                                                 clearInterval(phaseOne);
                                                                                 count_animation = 1;
-                                                                                jQuery('#draggableClean_2, #draggableClean_4, #draggableS5, #draggableS3, #draggableS6, draggableVD').css({
+                                                                                jQuery('#draggableClean_2, #draggableClean_4, #draggableS5, #draggableS3, #draggableS6, #draggableVD').css({
                                                                                     background: 'rgba(255,255,255, 0.5)',
                                                                                     color: 'red',
                                                                                     borderColor: 'red',
@@ -1141,7 +1141,7 @@
                                                                                                     top: '-120px'
                                                                                                 });
                                                                                                 //анимация первого треугольника
-                                                                                                jQuery('#draggableS_1').addClass('transparent');
+                                                                                                jQuery('#draggableD_1').addClass('transparent');
                                                                                                 firstTriangleAnimation = new Vivus('triangle_1', {type: 'delayed', duration: 150}, function(){
                                                                                                 //анимация второго треугольника
                                                                                                     setTimeout(function(){
@@ -1163,7 +1163,7 @@
                                                                                                                                 top: '-120px'
                                                                                                                             });
                                                                                                                             //анимация первого треугольника
-                                                                                                                            jQuery('#draggableS_1').addClass('transparent');                                                                    
+                                                                                                                            jQuery('#draggableD_1').addClass('transparent');                                                                    
                                                                                                                             firstTriangleAnimation = new Vivus('triangle_1', {type: 'delayed', duration: 150}, function(){
                                                                                                                             //анимация второго треугольника
                                                                                                                                 setTimeout(function(){
