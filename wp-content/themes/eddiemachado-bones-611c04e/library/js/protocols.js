@@ -124,8 +124,7 @@
     //фаза 2
                 cur_animation_val = 0;
                 phaseTwo = setInterval(function(){
-                    if (count_animation <= 150){   
-                        cur_animation_val = 0;                                                              //150
+                    if (count_animation <= 150){                                                               //150
                         jQuery('#draggableD2, #draggable2, #draggableS2, #draggableS2_1, #draggableSh').css({
                             borderWidth: '1px',
                             paddingTop: '4px',
