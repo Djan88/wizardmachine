@@ -3408,7 +3408,6 @@ face = function(){
                 borderColor: 'transparent',
                 opacity: 0.8,
                 paddingTop: '4px',
-                transform: 'scale(1)',
                 zIndex: '1000',
                 color: 'transparent'
             });
@@ -3421,6 +3420,7 @@ face = function(){
                 background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat'
             });
             jQuery('#draggableS_1').css({
+                transform: 'scale(1)',
                 background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/povregdenie_demona.jpg) 0 0/100% no-repeat'
             });
             count_animation += 1;
