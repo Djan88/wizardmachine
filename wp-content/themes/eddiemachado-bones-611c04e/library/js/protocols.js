@@ -3470,10 +3470,17 @@ face = function(){
                         zIndex: '1000',
                         color: 'transparent'
                     });
-                    jQuery('#draggableS1').css({
-                        transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
-                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon_adventure.png) 0 0/100% no-repeat'
-                    });
+                    if (count_animation <= 60){
+                        jQuery('#draggableS1').css({
+                            // transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
+                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon_adventure.png) 0 0/100% no-repeat'
+                        });
+                    } else {
+                        jQuery('#draggableS1').css({
+                            transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
+                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat'
+                        });
+                    }
                     jQuery('#draggableD_1').css({
                         transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
                         background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat'
@@ -3515,7 +3522,7 @@ face = function(){
                                 zIndex: '1000'
                             });
                             jQuery('#draggableD2').css({
-                                transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
+                                transform: 'rotate('+cur_animation_val+'deg) scale(1)',
                                 background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/superdisfunction.png) 0 0/100% no-repeat'
                             });
                             jQuery('#draggableD1, #draggable0').css({
