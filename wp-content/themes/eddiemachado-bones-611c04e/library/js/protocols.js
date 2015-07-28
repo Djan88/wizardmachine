@@ -3426,7 +3426,7 @@ face = function(){
             });
             if (count_animation <= 60){
                 jQuery('#draggableClean_2, #draggableClean_3, #draggableClean_4').css({
-                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon_adventure.jpg) 0 0/100% no-repeat'
+                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon_adventure.png) 0 0/100% no-repeat'
                 });
             } else {
                 jQuery('#draggableClean_2, #draggableClean_3, #draggableClean_4').css({
@@ -3472,7 +3472,7 @@ face = function(){
                     });
                     jQuery('#draggableS1').css({
                         transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
-                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon_adventure.jpg) 0 0/100% no-repeat'
+                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon_adventure.png) 0 0/100% no-repeat'
                     });
                     jQuery('#draggableD_1').css({
                         transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
