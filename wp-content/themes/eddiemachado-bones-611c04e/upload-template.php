@@ -65,7 +65,7 @@
                             </div>
                             <div class="btn btn_lg btn_success btn_choice" data-protocol ="resource">Выбрать</div>
                         </div>
-                        <h3><span class="protocol_acent">(Голова)</span>Краниальный протокол</h3>
+                        <h3><span class="protocol_acent">(Голова)</span>КРАНИАЛЬНЫЙ ПРОТОКОЛ</h3>
                         <div>«Краниальный протокол» - «используется при актуальности зоны головы для коррекции нисходящих влияний»<div class="btn btn_lg btn_success btn_choice" data-protocol ="face">Выбрать</div></div>
                     </div>
                 </div>
