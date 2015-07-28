@@ -47,7 +47,7 @@
                     </div>
                     <div id="accordion" class="select_program">
                         <h3><span class="protocol_acent">(V1)</span>«КРАНИАЛЬНЫЙ ПРОТОКОЛ»</h3>
-                        <div>«Краниальный протокол» - «используется при актуальности зоны головы для коррекции нисходящих влияний»<div class="btn btn_lg btn_success btn_choice" data-protocol ="face">Выбрать</div></div>
+                        <div>«Краниальный протокол» - «используется при актуальности зоны головы, а также для терапевтической дефрагментации ума»<div class="btn btn_lg btn_success btn_choice" data-protocol ="face">Выбрать</div></div>
                         <h3><span class="protocol_acent">(V2)</span>ЛЮДИ И ОТНОШЕНИЯ. ВЕЩИ, ПРЕДМЕТЫ И ДОСТИЖЕНИЕ ЦЕЛЕЙ</h3>
                         <div>«Застрявшие назойливые мысли в голове о людях или предметах, мысленные диалоги, остановленное действие: «сделать или не сделать… поступать так или эдак… купить или не купить… выбрать это или то…»<div class="btn btn_lg btn_success btn_choice" data-protocol ="v2">Выбрать</div></div>
                         <h3><span class="protocol_acent">(V3)</span>РАЗДРАЖЕНИЕ И НЕПРИЯТИЕ</h3>
