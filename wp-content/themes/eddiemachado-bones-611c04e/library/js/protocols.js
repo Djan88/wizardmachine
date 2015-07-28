@@ -73,7 +73,7 @@
         phaseOne = setInterval(function(){
             if (count_animation <= 120){                                                                         //120
                 cur_animation_val += 6;
-                jQuery('#draggableD1, #draggableSh, #draggableClean_4, #draggableS1').css({
+                jQuery('#draggableD1, #draggableSh, #draggableClean_4, #draggableS1, #draggableClean').css({
                     borderWidth: '1px',
                     borderColor: 'transparent',
                     opacity: 0.8,
@@ -88,6 +88,10 @@
                 jQuery('#draggableD1').css({
                     transform: 'rotate('+cur_animation_val+'deg) scale(1)',
                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat'
+                });
+                jQuery('#draggableClean').css({
+                    transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
+                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat'
                 });
                 if (count_animation <= 60){                                                                         //120
                     cur_animation_val += 6;
@@ -105,7 +109,7 @@
             } else {
                 clearInterval(phaseOne);
                 count_animation = 1;
-                jQuery('#draggableD1, #draggableSh, #draggableClean_4, #draggableS1').css({
+                jQuery('#draggableD1, #draggableSh, #draggableClean_4, #draggableS1, #draggableClean').css({
                     background: 'rgba(255,255,255, 0.5)',
                     transform: 'scale(0.5)',
                     color: 'red',
