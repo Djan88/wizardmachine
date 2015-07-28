@@ -3408,6 +3408,7 @@ face = function(){
                 borderColor: 'transparent',
                 opacity: 0.8,
                 paddingTop: '4px',
+                transform: 'scale(1)',
                 zIndex: '1000',
                 color: 'transparent'
             });
