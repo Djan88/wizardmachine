@@ -3412,7 +3412,7 @@ face = function(){
             left: parseFloat(jQuery('#draggableS4').css('left'))+70+'px',
             top: parseFloat(jQuery('#draggableS4').css('top'))+'px'
     });
-    jQuery('#draggableClean_2, #draggableClean_3').removeClass('inopaciti');
+    jQuery('#draggableClean_2, #draggableClean_3, #draggableClean_4').removeClass('inopaciti');
     phaseOne = setInterval(function(){
         if (count_animation <= 120){                                                                         //120
             jQuery('#draggableClean_2, #draggableClean_3, #draggableClean_4, #draggableD5, #draggableD_6').css({
@@ -3436,7 +3436,7 @@ face = function(){
             }
             jQuery('#draggableD5, #draggableD_6').css({
                 transform: 'rotate('+cur_animation_val+'deg) scale(1)',
-                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/superdisfunction.jpg) 0 0/100% no-repeat'
+                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/superdisfunction.png) 0 0/100% no-repeat'
             });
             count_animation += 1;
             cur_animation_val += 6;
@@ -3453,6 +3453,7 @@ face = function(){
                 paddingTop: '2px',
                 zIndex: '1'
             });
+            jQuery('#draggableClean_2, #draggableClean_3, #draggableClean_4').addClass('inopaciti');
             sound.play();
             jQuery('.chart').data('easyPieChart').update(10);
             jQuery('.chart').find('span').text('10');
