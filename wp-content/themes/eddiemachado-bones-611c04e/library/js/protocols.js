@@ -86,13 +86,13 @@
                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/travma.jpg) 0 0/100% no-repeat'
                 });
                 jQuery('#draggableD1').css({
-                    transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
+                    transform: 'rotate('+cur_animation_val+'deg) scale(1)',
                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat'
                 });
                 if (count_animation <= 60){                                                                         //120
                     cur_animation_val += 6;
                     jQuery('#draggableS1, #draggableClean_4').css({
-                        transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
+                        transform: 'scale(1)',
                         background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon_adventure.png) 0 0/100% no-repeat'
                     });
                 } else {
