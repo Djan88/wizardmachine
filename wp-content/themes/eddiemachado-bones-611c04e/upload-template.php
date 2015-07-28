@@ -32,7 +32,7 @@
                   <div class="btn btn_sm btn_warning fast-protocol" data-fast="v4">V4</div> 
                   <div class="btn btn_sm btn_warning fast-protocol" data-fast="v5">V5</div>
                   <div class="btn btn_sm btn_warning fast-protocol" data-fast="resource">РЕСУРС</div>
-                  <div class="btn btn_sm btn_warning fast-protocol" data-fast="face">Голова</div>
+                  <div class="btn btn_sm btn_warning fast-protocol" data-fast="face">ГОЛОВА</div>
                 </div>
                 <div class="fast-protocol-resource clearfix hidden">
                   <div class="btn btn_sm btn_warning fast-v" data-v='#draggable1'>V1</div> 
