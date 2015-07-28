@@ -238,6 +238,8 @@ jQuery( ".btn__wizard" ).on('click', function(event) {
                     v6();
                 } else if(protocol == 'v7'){
                     v7();
+                } else if(protocol == 'face'){
+                    face();
                 } else{
                     console.log('нет протокола с id '+ protocol)
                 }
