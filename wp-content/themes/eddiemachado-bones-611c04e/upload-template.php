@@ -32,6 +32,7 @@
                   <div class="btn btn_sm btn_warning fast-protocol" data-fast="v4">V4</div> 
                   <div class="btn btn_sm btn_warning fast-protocol" data-fast="v5">V5</div>
                   <div class="btn btn_sm btn_warning fast-protocol" data-fast="resource">РЕСУРС</div>
+                  <div class="btn btn_sm btn_warning fast-protocol" data-fast="face">Голова</div>
                 </div>
                 <div class="fast-protocol-resource clearfix hidden">
                   <div class="btn btn_sm btn_warning fast-v" data-v='#draggable1'>V1</div> 
@@ -64,6 +65,8 @@
                             </div>
                             <div class="btn btn_lg btn_success btn_choice" data-protocol ="resource">Выбрать</div>
                         </div>
+                        <h3><span class="protocol_acent">(Голова)</span>Голова</h3>
+                        <div>«Описание протокола Голова»<div class="btn btn_lg btn_success btn_choice" data-protocol ="face">Выбрать</div></div>
                     </div>
                 </div>
                 <div class="machine_screen clearfix hidden">

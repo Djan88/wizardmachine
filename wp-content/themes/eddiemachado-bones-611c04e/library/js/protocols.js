@@ -102,7 +102,6 @@
                     });
                 }
                 count_animation += 1;
-
             } else {
                 clearInterval(phaseOne);
                 count_animation = 1;
@@ -1091,7 +1090,6 @@
                                                                                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/povregdenie_demona.jpg) 0 0/100% no-repeat'
                                                                                 });
                                                                                 jQuery('#draggableD1').text('D+');
-
                                                                                 jQuery('#draggableVD').css({
                                                                                     transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
                                                                                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat'
@@ -1120,7 +1118,6 @@
                                                                                 phaseOne = setInterval(function(){
                                                                                     if (count_animation <= 1){                                                                         //120
                                                                                         count_animation += 1;
-
                                                                                     } else {
                                                                                         clearInterval(phaseOne);
     //фаза 5
@@ -1129,7 +1126,6 @@
                                                                                         phaseOne = setInterval(function(){
                                                                                             if (count_animation <= 1){                                                                         //1
                                                                                                 count_animation += 1;
-
                                                                                             } else {
                                                                                                 clearInterval(phaseOne);
                                                                                                 // sound.play();
@@ -1905,8 +1901,6 @@
                                                         jQuery('#draggable4').addClass('transparent');
                                                         fourthTriangleAnimation = new Vivus('triangle_4', {type: 'delayed', duration: 150}, function(){
                                                             jQuery('.itemlist_item').removeClass('transparent');
-
-
                                                         //анимация по часовой стрелке
                                                             jQuery('.triangle').css({
                                                                 transform: 'scale(0.2) rotateY(0deg)rotateZ(120deg)',
@@ -2304,8 +2298,6 @@
                                                                                                                                                                                         jQuery('#draggable4').addClass('transparent');
                                                                                                                                                                                         fourthTriangleAnimation = new Vivus('triangle_4', {type: 'delayed', duration: 150}, function(){
                                                                                                                                                                                             jQuery('.itemlist_item').removeClass('transparent');
-
-
                                                                                                                                                                                         //анимация по часовой стрелке
                                                                                                                                                                                             jQuery('.triangle').css({
                                                                                                                                                                                                 transform: 'scale(0.2) rotateY(0deg)rotateZ(120deg)',
@@ -2346,7 +2338,6 @@
                                                                                                                                                                                                                                     zIndex: '1000'
                                                                                                                                                                                                                                 });
                                                                                                                                                                                                                                 count_animation += 1;
-
                                                                                                                                                                                                                             } else {
                                                                                                                                                                                                                                 clearInterval(phaseOne);
                                                                                                                                                                                                                                 count_animation = 1;
@@ -3235,7 +3226,7 @@ v5 = function(){
                                                                                                                                                                                                                     sound.play();
                                                                                                                                                                                                                     jQuery('.chart').data('easyPieChart').update(84);
                                                                                                                                                                                                                     jQuery('.chart').find('span').text('84');
-                                                                                                //фаза 7
+                                                                                                                                                                                                            //фаза 7
                                                                                                                                                                                                                     count_animation = 1;
                                                                                                                                                                                                                     phaseOne = setInterval(function(){
                                                                                                                                                                                                                         if (count_animation <= 120){                                                                         //120
@@ -3250,7 +3241,6 @@ v5 = function(){
                                                                                                                                                                                                                                 zIndex: '1000'
                                                                                                                                                                                                                             });
                                                                                                                                                                                                                             count_animation += 1;
-
                                                                                                                                                                                                                         } else {
                                                                                                                                                                                                                             clearInterval(phaseOne);
                                                                                                                                                                                                                             count_animation = 1;
@@ -3398,6 +3388,106 @@ resource = function(){
         }
     }, 1000); 
 }
+
+
+face = function(){
+    var sound = new Howl({
+        urls: ['/sounds/sound.ogg', '/sounds/sound.aac', '/sounds/sound.mp3'],
+        autoplay: false,
+        loop: false,
+        buffer: true
+    });     
+    dinamicElem = false;
+//фаза 1
+    count_animation = 1;
+    phaseOne = setInterval(function(){
+        if (count_animation <= 120){                                                                         //120
+            cur_animation_val += 6;
+            jQuery('#draggableS_1, #draggableD_1, #draggableS1').css({
+                borderWidth: '1px',
+                borderColor: 'transparent',
+                opacity: 0.8,
+                paddingTop: '4px',
+                zIndex: '1000',
+                color: 'transparent'
+            });
+            jQuery('#draggableS1').css({
+                transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
+                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon_adventure.jpg) 0 0/100% no-repeat'
+            });
+            jQuery('#draggableD_1').css({
+                transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
+                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat'
+            });
+            jQuery('#draggableS_1').css({
+                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/povregdenie_demona.jpg) 0 0/100% no-repeat'
+            });
+            count_animation += 1;
+        } else {
+            clearInterval(phaseOne);
+            count_animation = 1;
+            jQuery('#draggableS_1, #draggableD_1, #draggableS1').css({
+                background: 'rgba(255,255,255, 0.5)',
+                transform: 'scale(0.5)',
+                color: 'red',
+                borderColor: 'red',
+                opacity: 1,
+                borderWidth: '2px',
+                paddingTop: '2px',
+                zIndex: '1'
+            });
+            sound.play();
+            jQuery('.chart').data('easyPieChart').update(14);
+            jQuery('.chart').find('span').text('14');
+    //фаза 2
+            count_animation = 1;
+            cur_animation_val = 0;
+            phaseOne = setInterval(function(){
+                if (count_animation <= 120){ 
+                    cur_animation_val += 6;
+                    jQuery('#draggableD2, #draggable0, #draggableD1, #draggable0').css({
+                        color: 'transparent',
+                        borderColor: 'transparent',
+                        opacity: 0.8,
+                        transform: 'scale(1)',
+                        borderWidth: '1px',
+                        paddingTop: '4px',
+                        zIndex: '1000'
+                    });
+                    jQuery('#draggableD2').css({
+                        transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
+                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/superdisfunction.png) 0 0/100% no-repeat'
+                    });
+                    jQuery('#draggableD1, #draggable0').css({
+                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/vaterfall.png) 0 0/100% no-repeat'
+                    });
+                    count_animation += 1;
+                } else {
+                    clearInterval(phaseOne);
+                    count_animation = 1;
+                    jQuery('#draggableD2, #draggable0, #draggableD1, #draggable0').css({
+                        background: 'rgba(255,255,255, 0.5)',
+                        color: 'red',
+                        borderColor: 'red',
+                        opacity: 1,
+                        transform: 'scale(0.5)',
+                        borderWidth: '2px',
+                        paddingTop: '2px',
+                        zIndex: '1'
+                    });
+                    sound.play();
+                    jQuery('.chart').data('easyPieChart').update(100);
+                    jQuery('.chart').find('span').text('100');
+                    onEnd();
+                    jQuery( ".btn__wizard" )
+                        .text('Выполнить')
+                        .removeClass('btn__wizard_inAction');  
+                }
+            }, 1000);
+        }
+    }, 1000); 
+}
+
 
 v7 = function(){
     dinamicElem = false;
