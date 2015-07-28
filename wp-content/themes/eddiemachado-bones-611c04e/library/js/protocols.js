@@ -3479,7 +3479,6 @@ face = function(){
                     sound.play();
                     jQuery('.chart').data('easyPieChart').update(50);
                     jQuery('.chart').find('span').text('50');
-                    onEnd();
                     jQuery( ".btn__wizard" )
                         .text('Выполнить')
                         .removeClass('btn__wizard_inAction');
