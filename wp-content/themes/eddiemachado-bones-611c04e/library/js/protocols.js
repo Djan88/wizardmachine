@@ -3486,8 +3486,8 @@ face = function(){
                         });
                     }
                     jQuery('#draggableD_1').css({
-                        transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
-                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat'
+                        transform: 'rotate('+cur_animation_val+'deg) scale(1)',
+                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/superdisfunction.png) 0 0/100% no-repeat'
                     });
                     count_animation += 1;
                 } else {
