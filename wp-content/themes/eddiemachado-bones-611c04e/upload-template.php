@@ -27,12 +27,12 @@
             <?php if(current_user_can('contributor') || current_user_can('administrator')) { ?>
                 
                 <div class="fast-protocol-wrap clearfix hidden">
+                  <div class="btn btn_sm btn_warning fast-protocol" data-fast="face">V1</div>
                   <div class="btn btn_sm btn_warning fast-protocol" data-fast="v2">V2</div> 
                   <div class="btn btn_sm btn_warning fast-protocol" data-fast="v3">V3</div> 
                   <div class="btn btn_sm btn_warning fast-protocol" data-fast="v4">V4</div> 
                   <div class="btn btn_sm btn_warning fast-protocol" data-fast="v5">V5</div>
                   <div class="btn btn_sm btn_warning fast-protocol" data-fast="resource">РЕСУРС</div>
-                  <div class="btn btn_sm btn_warning fast-protocol" data-fast="face">КРАНИАЛЬНЫЙ ПРОТОКОЛ</div>
                 </div>
                 <div class="fast-protocol-resource clearfix hidden">
                   <div class="btn btn_sm btn_warning fast-v" data-v='#draggable1'>V1</div> 
@@ -46,6 +46,8 @@
                         <h3 class="heading heading_dashboard">Выберите актуальную зону</h3>
                     </div>
                     <div id="accordion" class="select_program">
+                        <h3><span class="protocol_acent">(V1)</span>«КРАНИАЛЬНЫЙ ПРОТОКОЛ»</h3>
+                        <div>«Краниальный протокол» - «используется при актуальности зоны головы для коррекции нисходящих влияний»<div class="btn btn_lg btn_success btn_choice" data-protocol ="face">Выбрать</div></div>
                         <h3><span class="protocol_acent">(V2)</span>ЛЮДИ И ОТНОШЕНИЯ. ВЕЩИ, ПРЕДМЕТЫ И ДОСТИЖЕНИЕ ЦЕЛЕЙ</h3>
                         <div>«Застрявшие назойливые мысли в голове о людях или предметах, мысленные диалоги, остановленное действие: «сделать или не сделать… поступать так или эдак… купить или не купить… выбрать это или то…»<div class="btn btn_lg btn_success btn_choice" data-protocol ="v2">Выбрать</div></div>
                         <h3><span class="protocol_acent">(V3)</span>РАЗДРАЖЕНИЕ И НЕПРИЯТИЕ</h3>
@@ -65,8 +67,6 @@
                             </div>
                             <div class="btn btn_lg btn_success btn_choice" data-protocol ="resource">Выбрать</div>
                         </div>
-                        <h3><span class="protocol_acent">(Голова)</span>КРАНИАЛЬНЫЙ ПРОТОКОЛ</h3>
-                        <div>«Краниальный протокол» - «используется при актуальности зоны головы для коррекции нисходящих влияний»<div class="btn btn_lg btn_success btn_choice" data-protocol ="face">Выбрать</div></div>
                     </div>
                 </div>
                 <div class="machine_screen clearfix hidden">
