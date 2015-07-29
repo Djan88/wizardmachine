@@ -44,7 +44,7 @@
                 <div class="machine_screen clearfix">
                     <div class="steps clearfix">
                         <h3 class="heading heading_dashboard">Выберите актуальную зону</h3>
-                        <h5 class="prot_in_action hidden"></h5>
+                        <!-- <h5 class="prot_in_action hidden"></h5> -->
                     </div>
                     <div id="accordion" class="select_program">
                         <h3><span class="protocol_acent">(V1)</span>«КРАНИАЛЬНЫЙ ПРОТОКОЛ»</h3>
