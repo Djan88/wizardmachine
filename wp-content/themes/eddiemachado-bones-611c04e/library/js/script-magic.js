@@ -10,6 +10,7 @@ jQuery(function() {
         curChoice,
         protocol,
         checkPoints,
+        protocolName,
         checkV3,
         main_heading,
         curUrl = window.location.pathname,
