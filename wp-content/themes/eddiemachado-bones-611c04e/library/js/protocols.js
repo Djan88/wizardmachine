@@ -2151,7 +2151,7 @@
                                                                                                                                 phaseSeven_one = setInterval(function(){
                                                                                                                                     if (count_animation <= 22){                                                                         //22
                                                                                                                                         cur_animation_val += 1.5;
-                                                                                                                                        jQuery('#draggable1').css({
+                                                                                                                                        jQuery('#draggableD_1').css({
                                                                                                                                             transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
                                                                                                                                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_right.png) 0 0/100% no-repeat',
                                                                                                                                             color: 'transparent',
@@ -2167,7 +2167,7 @@
                                                                                                                                     } else {
                                                                                                                                         clearInterval(phaseSeven_one);
                                                                                                                                         count_animation = 1;
-                                                                                                                                        jQuery('#draggable1').css({
+                                                                                                                                        jQuery('#draggableD_1').css({
                                                                                                                                             transform: 'rotate(-'+0+'deg) scale(0.5)',
                                                                                                                                             background: 'rgba(255,255,255, 0.5)',
                                                                                                                                             color: 'red',
@@ -2186,7 +2186,7 @@
                                                                                                                                         phaseSeven_one = setInterval(function(){
                                                                                                                                             if (count_animation <= 53){                                                                         //53
                                                                                                                                                 cur_animation_val += 1.5;
-                                                                                                                                                jQuery('#draggable1').css({
+                                                                                                                                                jQuery('#draggableD_1').css({
                                                                                                                                                     transform: 'rotate('+cur_animation_val+'deg) scale(1)',
                                                                                                                                                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_left.png) 0 0/100% no-repeat',
                                                                                                                                                     color: 'transparent',
@@ -2202,7 +2202,7 @@
                                                                                                                                             } else {
                                                                                                                                                 clearInterval(phaseSeven_one);
                                                                                                                                                 count_animation = 1;
-                                                                                                                                                jQuery('#draggable1').css({
+                                                                                                                                                jQuery('#draggableD_1').css({
                                                                                                                                                     transform: 'rotate(-'+0+'deg) scale(0.5)',
                                                                                                                                                     background: 'rgba(255,255,255, 0.5)',
                                                                                                                                                     color: 'red',
@@ -2221,7 +2221,7 @@
                                                                                                                                                 phaseSeven_one = setInterval(function(){
                                                                                                                                                     if (count_animation <= 60){                                                                         //60
                                                                                                                                                         cur_animation_val += 1.5;
-                                                                                                                                                        jQuery('#draggable1').css({
+                                                                                                                                                        jQuery('#draggableD_1').css({
                                                                                                                                                             transform: 'rotate('+cur_animation_val+'deg) scale(1)',
                                                                                                                                                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_left.png) 0 0/100% no-repeat',
                                                                                                                                                             color: 'transparent',
@@ -2237,7 +2237,7 @@
                                                                                                                                                     } else {
                                                                                                                                                         clearInterval(phaseSeven_one);
                                                                                                                                                         count_animation = 1;
-                                                                                                                                                        jQuery('#draggable1').css({
+                                                                                                                                                        jQuery('#draggableD_1').css({
                                                                                                                                                             transform: 'rotate(-'+0+'deg) scale(0.5)',
                                                                                                                                                             background: 'rgba(255,255,255, 0.5)',
                                                                                                                                                             color: 'red',
@@ -2256,7 +2256,7 @@
                                                                                                                                                         phaseSeven_one = setInterval(function(){
                                                                                                                                                             if (count_animation <= 40){                                                                         //40
                                                                                                                                                                 cur_animation_val += 1.5;
-                                                                                                                                                                jQuery('#draggable1').css({
+                                                                                                                                                                jQuery('#draggableD_1').css({
                                                                                                                                                                     transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
                                                                                                                                                                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/mo_right.png) 0 0/100% no-repeat',
                                                                                                                                                                     color: 'transparent',
@@ -2272,7 +2272,7 @@
                                                                                                                                                             } else {
                                                                                                                                                                 clearInterval(phaseSeven_one);
                                                                                                                                                                 count_animation = 1;
-                                                                                                                                                                jQuery('#draggable1').css({
+                                                                                                                                                                jQuery('#draggableD_1').css({
                                                                                                                                                                     transform: 'rotate(-'+0+'deg) scale(0.5)',
                                                                                                                                                                     background: 'rgba(255,255,255, 0.5)',
                                                                                                                                                                     color: 'red',
@@ -2295,7 +2295,7 @@
                                                                                                                                                                     top: '-120px'
                                                                                                                                                                 });
                                                                                                                                                                 //анимация первого треугольника
-                                                                                                                                                                jQuery('#draggable1').addClass('transparent');
+                                                                                                                                                                jQuery('#draggableS_1').addClass('transparent');
                                                                                                                                                                 firstTriangleAnimation = new Vivus('triangle_1', {type: 'delayed', duration: 150}, function(){
                                                                                                                                                                 //анимация второго треугольника
                                                                                                                                                                     setTimeout(function(){
@@ -2317,7 +2317,7 @@
                                                                                                                                                                                                 top: '-120px'
                                                                                                                                                                                             });
                                                                                                                                                                                             //анимация первого треугольника
-                                                                                                                                                                                            jQuery('#draggable1').addClass('transparent');                                                                    
+                                                                                                                                                                                            jQuery('#draggableS_1').addClass('transparent');                                                                    
                                                                                                                                                                                             firstTriangleAnimation = new Vivus('triangle_1', {type: 'delayed', duration: 150}, function(){
                                                                                                                                                                                             //анимация второго треугольника
                                                                                                                                                                                                 setTimeout(function(){
