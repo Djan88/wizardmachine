@@ -93,6 +93,7 @@ jQuery(function() {
         jQuery('.step_choice div').text(curChoice);
     }
     if(supportsStorage && localStorage.getItem('protocolName')){
+        protocolName = localStorage.getItem('protocolName');
         jQuery('.prot_in_action').removeClass('hidden');
         jQuery('.prot_in_action').text('Активирован протокол '+protocolName);
     }
