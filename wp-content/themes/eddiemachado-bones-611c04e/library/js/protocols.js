@@ -2452,15 +2452,11 @@ v5 = function(){
             left: parseFloat(jQuery('#draggable0').css('left'))-60+'px',
             top: parseFloat(jQuery('#draggable0').css('top'))+'px'
     });
-    jQuery('#draggableClean_3').css({
-            left: parseFloat(jQuery('#draggable5').css('left'))+'px',
-            top: parseFloat(jQuery('#draggable5').css('top'))+30+'px'
-    });
-    jQuery('#draggableClean_2, #draggableClean_3').removeClass('inopaciti');
+    jQuery('#draggableClean_2').removeClass('inopaciti');
     phaseOne = setInterval(function(){
         if (count_animation <= 480){                                                                         //120
             cur_animation_val += 1.5;
-            jQuery('#draggableClean_2, #draggableClean_3, #draggable0, #draggableD1, #draggableVD').css({
+            jQuery('#draggableClean_2, #draggable0, #draggableD1, #draggableVD, #draggableClean').css({
                 transform: 'scale(1)',
                 borderWidth: '1px',
                 color: 'transparent',
@@ -2469,15 +2465,7 @@ v5 = function(){
                 paddingTop: '4px',
                 zIndex: '1000'
             });
-            jQuery('#draggableClean_3').css({
-                transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
-                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat'
-            });
-            jQuery('#draggable0').css({
-                transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
-                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/vaterfall.png) 0 0/100% no-repeat'
-            });
-            jQuery('#draggableVD').css({
+            jQuery('#draggableVD, #draggable0, #draggableClean').css({
                 transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
                 background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/ishtar.png) 0 0/100% no-repeat'
             });
@@ -2505,7 +2493,7 @@ v5 = function(){
         } else {
             clearInterval(phaseOne);
             count_animation = 1;
-            jQuery('#draggableClean_2, #draggableClean_3, #draggable0, #draggableD1, #draggableVD').css({
+            jQuery('#draggableClean_2, #draggable0, #draggableD1, #draggableVD, #draggableClean').css({
                 background: 'rgba(255,255,255, 0.5)',
                 transform: 'scale(0.5)',
                 color: 'red',
