@@ -604,3 +604,9 @@ form.pay-form
   left: 0;
   top: 0;
 }
+.prot_in_action 
+{
+    padding: 0;
+    margin-top: 5px;
+    color: #204371;
+}
