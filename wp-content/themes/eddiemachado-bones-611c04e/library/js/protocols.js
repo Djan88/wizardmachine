@@ -228,7 +228,7 @@
                                 phaseFour = setInterval(function(){
                                     if (count_animation <= 150){                                                //150
                                         cur_animation_val += 6;
-                                        jQuery('#draggableD_1, #draggableS_1').css({
+                                        jQuery('#draggableD_1').css({
                                             transform: 'scale(1)',
                                             borderWidth: '1px',
                                             paddingTop: '4px',
@@ -237,7 +237,7 @@
                                             opacity: 0.8,
                                             zIndex: '1000'
                                         });
-                                        jQuery('#draggableD_1, #draggableS_1').css({
+                                        jQuery('#draggableD_1').css({
                                             transform: 'rotate('+cur_animation_val+'deg) scale(1)',
                                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/superdisfunction.png) 0 0/100% no-repeat'
                                         });
@@ -250,7 +250,7 @@
                                     } else {
                                         clearInterval(phaseFour);
                                         count_animation = 1;
-                                        jQuery('#draggableD_1, #draggableS_1').css({
+                                        jQuery('#draggableD_1').css({
                                             background: 'rgba(255,255,255, 0.5)',
                                             transform: 'rotate(0deg) scale(0.5)',
                                             borderWidth: '2px',
