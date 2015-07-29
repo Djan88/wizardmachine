@@ -2582,7 +2582,7 @@ v5 = function(){
                         top: '-120px'
                     });
                     //анимация первого треугольника
-                    jQuery('#draggable1').addClass('transparent');
+                    jQuery('#draggableD_1').addClass('transparent');
                     firstTriangleAnimation = new Vivus('triangle_1', {type: 'delayed', duration: 150}, function(){
                     //анимация второго треугольника
                         setTimeout(function(){
@@ -2604,7 +2604,7 @@ v5 = function(){
                                                     top: '-120px'
                                                 });
                                                 //анимация первого треугольника
-                                                jQuery('#draggable1').addClass('transparent');                                                                    
+                                                jQuery('#draggableD_1').addClass('transparent');                                                                    
                                                 firstTriangleAnimation = new Vivus('triangle_1', {type: 'delayed', duration: 150}, function(){
                                                 //анимация второго треугольника
                                                     setTimeout(function(){
@@ -2640,7 +2640,7 @@ v5 = function(){
                                                                                     jQuery('#draggableS1').css({
                                                                                         background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon_adventure.png) 0 0/100% no-repeat'
                                                                                     });
-                                                                                    jQuery('#draggableD1, #draggable5').css({
+                                                                                    jQuery('#draggableD_1, #draggable5').css({
                                                                                         transform: 'rotate('+cur_animation_val+'deg) scale(1)',
                                                                                         background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/superdisfunction.png) 0 0/100% no-repeat'
                                                                                     });
