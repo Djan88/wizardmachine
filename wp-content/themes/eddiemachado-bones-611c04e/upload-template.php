@@ -27,12 +27,12 @@
             <?php if(current_user_can('contributor') || current_user_can('administrator')) { ?>
                 
                 <div class="fast-protocol-wrap clearfix hidden">
-                  <div class="btn btn_sm btn_warning fast-protocol" data-fast="face">V1</div>
-                  <div class="btn btn_sm btn_warning fast-protocol" data-fast="v2">V2</div> 
-                  <div class="btn btn_sm btn_warning fast-protocol" data-fast="v3">V3</div> 
-                  <div class="btn btn_sm btn_warning fast-protocol" data-fast="v4">V4</div> 
-                  <div class="btn btn_sm btn_warning fast-protocol" data-fast="v5">V5</div>
-                  <div class="btn btn_sm btn_warning fast-protocol" data-fast="resource">РЕСУРС</div>
+                  <div class="btn btn_sm btn_warning fast-protocol" data-fast="face" data-protocol-name ="V1">V1</div>
+                  <div class="btn btn_sm btn_warning fast-protocol" data-fast="v2" data-protocol-name ="V2">V2</div> 
+                  <div class="btn btn_sm btn_warning fast-protocol" data-fast="v3" data-protocol-name ="V3">V3</div> 
+                  <div class="btn btn_sm btn_warning fast-protocol" data-fast="v4" data-protocol-name ="V4">V4</div> 
+                  <div class="btn btn_sm btn_warning fast-protocol" data-fast="v5" data-protocol-name ="V5">V5</div>
+                  <div class="btn btn_sm btn_warning fast-protocol" data-fast="resource" data-protocol-name ="РЕСУРС">РЕСУРС</div>
                 </div>
                 <div class="fast-protocol-resource clearfix hidden">
                   <div class="btn btn_sm btn_warning fast-v" data-v='#draggable1'>V1</div> 
@@ -44,18 +44,19 @@
                 <div class="machine_screen clearfix">
                     <div class="steps clearfix">
                         <h3 class="heading heading_dashboard">Выберите актуальную зону</h3>
+                        <h5 class="prot_in_action hidden"></h5>
                     </div>
                     <div id="accordion" class="select_program">
                         <h3><span class="protocol_acent">(V1)</span>«КРАНИАЛЬНЫЙ ПРОТОКОЛ»</h3>
-                        <div>«Краниальный протокол» - «используется при актуальности зоны головы, а также для терапевтической дефрагментации ума»<div class="btn btn_lg btn_success btn_choice" data-protocol ="face">Выбрать</div></div>
+                        <div>«Краниальный протокол» - «используется при актуальности зоны головы, а также для терапевтической дефрагментации ума»<div class="btn btn_lg btn_success btn_choice" data-protocol ="face" data-protocol-name ="V1">Выбрать</div></div>
                         <h3><span class="protocol_acent">(V2)</span>ЛЮДИ И ОТНОШЕНИЯ. ВЕЩИ, ПРЕДМЕТЫ И ДОСТИЖЕНИЕ ЦЕЛЕЙ</h3>
-                        <div>«Застрявшие назойливые мысли в голове о людях или предметах, мысленные диалоги, остановленное действие: «сделать или не сделать… поступать так или эдак… купить или не купить… выбрать это или то…»<div class="btn btn_lg btn_success btn_choice" data-protocol ="v2">Выбрать</div></div>
+                        <div>«Застрявшие назойливые мысли в голове о людях или предметах, мысленные диалоги, остановленное действие: «сделать или не сделать… поступать так или эдак… купить или не купить… выбрать это или то…»<div class="btn btn_lg btn_success btn_choice" data-protocol ="v2" data-protocol-name ="V2">Выбрать</div></div>
                         <h3><span class="protocol_acent">(V3)</span>РАЗДРАЖЕНИЕ И НЕПРИЯТИЕ</h3>
-                        <div>«Раздражают и напрягают обстоятельства жизни, события и явления природы и социума, действия и поступки других людей, их внешний вид или слова. Стойкое ощущение собственной правильности и крутизны»<div class="btn btn_lg btn_success btn_choice" data-protocol ="v3">Выбрать</div></div>
+                        <div>«Раздражают и напрягают обстоятельства жизни, события и явления природы и социума, действия и поступки других людей, их внешний вид или слова. Стойкое ощущение собственной правильности и крутизны»<div class="btn btn_lg btn_success btn_choice" data-protocol ="v3" data-protocol-name ="V3">Выбрать</div></div>
                         <h3><span class="protocol_acent">(V4)</span>СУЕТА, БЕСПОКОЙСТВО И НАПРЯЖЕНИЕ</h3>
-                        <div>«Беспокойство о том, что произойдет, ускорение мышления и действий, недовольство собой и заниженная самооценка:  «… опоздаю, не успею… а вдруг случиться... а что будет…  а кто что скажет/подумает про меня… а как я буду выглядеть в глазах окружающих…  я стараюсь все лучшим образом делать…"  и  далее, в этом роде.»<div class="btn btn_lg btn_success btn_choice" data-protocol ="v4">Выбрать</div></div>
+                        <div>«Беспокойство о том, что произойдет, ускорение мышления и действий, недовольство собой и заниженная самооценка:  «… опоздаю, не успею… а вдруг случиться... а что будет…  а кто что скажет/подумает про меня… а как я буду выглядеть в глазах окружающих…  я стараюсь все лучшим образом делать…"  и  далее, в этом роде.»<div class="btn btn_lg btn_success btn_choice" data-protocol ="v4" data-protocol-name ="V4">Выбрать</div></div>
                         <h3><span class="protocol_acent">(V5)</span>«ИРРАЦИОНАЛЬНОЕ, ВИТАЛЬНАЯ СИЛА»</h3>
-                        <div>«Иррациональное. Ощущение непреодолимой и целиком захватывающей  силы и энергии.Насильственное следование некой жизненной стратегии, витальные страхи.»<div class="btn btn_lg btn_success btn_choice" data-protocol ="v5">Выбрать</div></div>
+                        <div>«Иррациональное. Ощущение непреодолимой и целиком захватывающей  силы и энергии.Насильственное следование некой жизненной стратегии, витальные страхи.»<div class="btn btn_lg btn_success btn_choice" data-protocol ="v5" data-protocol-name ="V5">Выбрать</div></div>
                         <h3><span class="protocol_acent">(РЕСУРС)</span>«РЕСУРСНЫЙ ПРОТОКОЛ»</h3>
                         <div>«Ощущение непреодолимой и целиком захватывающей  силы.Насильственное следование некой жизненной стратегии, повторяющиеся обстоятельства жизни, витальные страхи.NB! Протокол на ручном управлении, предназначен для продвинутых пользователей! Проводит синхронизацию телесных и внетелесных ресурсных зон c калибровкой по зонам вентральной оси (V). Начинать терапию следует с актуальной зоны, либо с V3. Выбор ресурсной внетелесной зоны и постановку на ней формулы щелчком мышки компьютера терапевт производит самостоятельно, путем  перцептивного выбора. В целях безопасности предусмотрено автоматическое отключение протокола через 30 секунд простоя!»
                             <div class="zone-choice_wrap">
@@ -65,13 +66,14 @@
                                 <div class="zone-choice_item"><input class="v-zone" type="radio" name="radiobutton" value="#draggable4" id="V4"><label for="V4">V4</label></div>
                                 <div class="zone-choice_item"><input class="v-zone" type="radio" name="radiobutton" value="#draggable5" id="V5"><label for="V5">V5</label></div>
                             </div>
-                            <div class="btn btn_lg btn_success btn_choice" data-protocol ="resource">Выбрать</div>
+                            <div class="btn btn_lg btn_success btn_choice" data-protocol ="resource" data-protocol-name ="РЕСУРС">Выбрать</div>
                         </div>
                     </div>
                 </div>
                 <div class="machine_screen clearfix hidden">
                     <div class="steps clearfix">
                         <h3 class="heading heading_dashboard">Загрузите и при необходимости отредактируйте фото</h3>
+                        <h5 class="prot_in_action hidden"></h5>
                     </div>
                     <div class="bbody">
 
@@ -104,6 +106,7 @@
                 <div class="machine_screen work-area clearfix hidden">
                     <div class="steps clearfix">
                         <h3 class="heading heading_dashboard">Перенесите зоны с шаблона на фото клиента</h3>
+                        <h5 class="prot_in_action hidden"></h5>
                     </div>
                     <div class="chart" data-percent="0"><span>0</span>%</div>
                     <div id="snaptarget" class="wrapper">

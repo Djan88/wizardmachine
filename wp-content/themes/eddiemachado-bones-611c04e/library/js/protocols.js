@@ -52,6 +52,11 @@
             } else {
                 var protocol = undefined;    
                 jQuery(location).attr('href','/wizard');
+                if(supportsStorage && localStorage.getItem('protocolName')){
+                    localStorage.removeItem('protocolName')
+                    jQuery('.data-protocol-name').addClass('hidden');
+                    jQuery('.data-protocol-name').text('');
+                }
             } 
         });
     }

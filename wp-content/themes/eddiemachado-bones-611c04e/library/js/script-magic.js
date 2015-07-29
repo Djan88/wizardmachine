@@ -91,6 +91,10 @@ jQuery(function() {
         protocol = localStorage.getItem('protocol');
         jQuery('.step_choice div').text(curChoice);
     }
+    if(supportsStorage && localStorage.getItem('protocolName')){
+        jQuery('.data-protocol-name').removeClass('hidden');
+        jQuery('.data-protocol-name').text('Активирован протокол '+protocolName);
+    }
 
     jQuery( ".draggable" ).draggable({ snap: false });
     
@@ -116,7 +120,11 @@ jQuery('.work-area').find('.returned').draggable();
 // ШАГ 1 (К загрузке фото)
     jQuery( ".btn_choice" ).on('click', function(event) {
         protocol = jQuery(this).data('protocol');
+        protocolName = jQuery(this).data('protocol-name');
         localStorage.setItem('protocol', protocol);
+        localStorage.setItem('protocolName', protocolName);
+        jQuery('.data-protocol-name').removeClass('hidden');
+        jQuery('.data-protocol-name').text('Активирован протокол '+protocolName);
         if(jQuery(this).hasClass('btn_choice__choiced')){
             jQuery(this)
                 .removeClass('btn_choice__choiced')
@@ -253,6 +261,10 @@ jQuery('#main').on('click', '.fast-protocol', function() {
     jQuery('.chart').find('span').text('0'); 
     protocol = jQuery(this).data('fast');
     localStorage.setItem('protocol', protocol);
+    protocolName = jQuery(this).data('protocol-name');
+    localStorage.setItem('protocolName', protocolName);
+    jQuery('.data-protocol-name').removeClass('hidden');
+    jQuery('.data-protocol-name').text('Активирован протокол '+protocolName);
     jQuery('.fast-protocol-wrap')
         .addClass('hidden')
         .removeClass('fadeIn');
