@@ -60,7 +60,7 @@
                         <h3><span class="protocol_acent">(РЕСУРС)</span>«РЕСУРСНЫЙ ПРОТОКОЛ»</h3>
                         <div>«Ощущение непреодолимой и целиком захватывающей  силы.Насильственное следование некой жизненной стратегии, повторяющиеся обстоятельства жизни, витальные страхи.NB! Протокол на ручном управлении, предназначен для продвинутых пользователей! Проводит синхронизацию телесных и внетелесных ресурсных зон c калибровкой по зонам вентральной оси (V). Начинать терапию следует с актуальной зоны, либо с V3. Выбор ресурсной внетелесной зоны и постановку на ней формулы щелчком мышки компьютера терапевт производит самостоятельно, путем  перцептивного выбора. В целях безопасности предусмотрено автоматическое отключение протокола через 30 секунд простоя!»
                             <div class="zone-choice_wrap">
-                                <div class="zone-choice_item"><input class="v-zone" type="radio" name="radiobutton" value="#draggable1" id="V1"><label for="V1">V1</label></div>
+                                <!-- <div class="zone-choice_item"><input class="v-zone" type="radio" name="radiobutton" value="#draggable1" id="V1"><label for="V1">V1</label></div> -->
                                 <div class="zone-choice_item"><input class="v-zone" type="radio" name="radiobutton" value="#draggable2" id="V2"><label for="V2">V2</label></div>
                                 <div class="zone-choice_item"><input class="v-zone" type="radio" name="radiobutton" checked="checked" value="#draggable3" id="V3"><label for="V3">V3</label></div>
                                 <div class="zone-choice_item"><input class="v-zone" type="radio" name="radiobutton" value="#draggable4" id="V4"><label for="V4">V4</label></div>
