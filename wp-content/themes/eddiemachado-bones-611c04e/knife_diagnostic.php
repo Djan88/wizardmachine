@@ -27,12 +27,12 @@
             <?php if(current_user_can('contributor') || current_user_can('administrator')) { ?>
                 
                 <div class="fast-protocol-wrap clearfix hidden">
-                  <div class="btn btn_sm btn_warning fast-protocol" data-fast="face">V1</div>
-                  <div class="btn btn_sm btn_warning fast-protocol" data-fast="v2">V2</div> 
-                  <div class="btn btn_sm btn_warning fast-protocol" data-fast="v3">V3</div> 
-                  <div class="btn btn_sm btn_warning fast-protocol" data-fast="v4">V4</div> 
-                  <div class="btn btn_sm btn_warning fast-protocol" data-fast="v5">V5</div>
-                  <div class="btn btn_sm btn_warning fast-protocol" data-fast="resource">РЕСУРС</div>
+                  <div class="btn btn_sm btn_warning fast-protocol" data-fast="face" data-protocol-name ="V1">V1</div>
+                  <div class="btn btn_sm btn_warning fast-protocol" data-fast="v2" data-protocol-name ="V2">V2</div> 
+                  <div class="btn btn_sm btn_warning fast-protocol" data-fast="v3" data-protocol-name ="V3">V3</div> 
+                  <div class="btn btn_sm btn_warning fast-protocol" data-fast="v4" data-protocol-name ="V4">V4</div> 
+                  <div class="btn btn_sm btn_warning fast-protocol" data-fast="v5" data-protocol-name ="V5">V5</div>
+                  <div class="btn btn_sm btn_warning fast-protocol" data-fast="resource" data-protocol-name ="РЕСУРС">РЕСУРС</div>
                 </div>
                 <div class="fast-protocol-resource clearfix hidden">
                   <!-- <div class="btn btn_sm btn_warning fast-v" data-v='#draggable1'>V1</div>  -->
