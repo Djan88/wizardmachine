@@ -35,7 +35,7 @@
                   <div class="btn btn_sm btn_warning fast-protocol" data-fast="resource" data-protocol-name ="РЕСУРС">РЕСУРС</div>
                 </div>
                 <div class="fast-protocol-resource clearfix hidden">
-                  <div class="btn btn_sm btn_warning fast-v" data-v='#draggable1'>V1</div> 
+                  <!-- <div class="btn btn_sm btn_warning fast-v" data-v='#draggable1'>V1</div>  -->
                   <div class="btn btn_sm btn_warning fast-v" data-v='#draggable2'>V2</div> 
                   <div class="btn btn_sm btn_warning fast-v" data-v='#draggable3'>V3</div> 
                   <div class="btn btn_sm btn_warning fast-v" data-v='#draggable4'>V4</div> 

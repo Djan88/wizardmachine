@@ -2239,8 +2239,8 @@
                                                                                                                                                             zIndex: '1'
                                                                                                                                                         });
                                                                                                                                                         sound.play();
-                                                                                                                                                        jQuery('.chart').data('easyPieChart').update(70);
-                                                                                                                                                        jQuery('.chart').find('span').text('70');
+                                                                                                                                                        jQuery('.chart').data('easyPieChart').update(80);
+                                                                                                                                                        jQuery('.chart').find('span').text('80');
                                                                                                                                             //фаза 6
                                                                                                                                                         cur_animation_val = 0;
                                                                                                                                                         count_animation = 1;
@@ -2988,8 +2988,8 @@ v5 = function(){
                                                                                                                                                                                         zIndex: '1'
                                                                                                                                                                                     });
                                                                                                                                                                                     sound.play();
-                                                                                                                                                                                    jQuery('.chart').data('easyPieChart').update(72);
-                                                                                                                                                                                    jQuery('.chart').find('span').text('72');
+                                                                                                                                                                                    jQuery('.chart').data('easyPieChart').update(82);
+                                                                                                                                                                                    jQuery('.chart').find('span').text('82');
                                                                                                                                                                         //Фаза 6
                                                                                                                                                                                     cur_animation_val = 0;
                                                                                                                                                                                     count_animation = 1;
