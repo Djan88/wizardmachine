@@ -44,7 +44,7 @@
                 <div class="machine_screen clearfix">
                 <div class="steps clearfix">
                     <h3 class="heading heading_dashboard">Загрузите и при необходимости отредактируйте фото</h3>
-                    <h5 class="prot_in_action hidden"></h5>
+                    <!-- <h5 class="prot_in_action hidden"></h5> -->
                 </div>
                     <div class="bbody">
 
@@ -80,7 +80,7 @@
                     <div class="step step_img">2 <div></div> </div>
                     <div class="step step_procedure">3 <div></div>  </div> -->
                     <h3 class="heading heading_dashboard">Определите актуальную зону при помощи ножа</h3>
-                    <h5 class="prot_in_action hidden"></h5>
+                    <!-- <h5 class="prot_in_action hidden"></h5> -->
                 </div>
                   <div class="knife-wrap">
                     <div class="knife"></div>
@@ -99,7 +99,7 @@
                 <div class="machine_screen clearfix hidden">
                   <div class="steps clearfix">
                       <h3 class="heading heading_dashboard">Выберите актуальную зону</h3>
-                      <h5 class="prot_in_action hidden"></h5>
+                      <!-- <h5 class="prot_in_action hidden"></h5> -->
                   </div>
                     <div id="accordion" class="select_program">
                         <h3><span class="protocol_acent">(V1)</span>«КРАНИАЛЬНЫЙ ПРОТОКОЛ»</h3>
