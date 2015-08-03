@@ -3193,9 +3193,8 @@ resource = function(){
                 zIndex: '1'
             });
             sound.play();
-            jQuery('.chart').data('easyPieChart').update(100);
-            jQuery('.chart').find('span').text('100');
-            onEnd();
+            jQuery('.chart').data('easyPieChart').update(8);
+            jQuery('.chart').find('span').text('8');
             jQuery( ".btn__wizard" )
                 .text('Выполнить')
                 .removeClass('btn__wizard_inAction');
@@ -3232,9 +3231,8 @@ resource = function(){
                         zIndex: '1'
                     });
                     sound.play();
-                    jQuery('.chart').data('easyPieChart').update(100);
-                    jQuery('.chart').find('span').text('100');
-                    onEnd();
+                    jQuery('.chart').data('easyPieChart').update(16);
+                    jQuery('.chart').find('span').text('16');
                     jQuery( ".btn__wizard" )
                         .text('Выполнить')
                         .removeClass('btn__wizard_inAction');
@@ -3275,9 +3273,8 @@ resource = function(){
                                 zIndex: '1'
                             });
                             sound.play();
-                            jQuery('.chart').data('easyPieChart').update(100);
-                            jQuery('.chart').find('span').text('100');
-                            onEnd();
+                            jQuery('.chart').data('easyPieChart').update(24);
+                            jQuery('.chart').find('span').text('24');
                             jQuery( ".btn__wizard" )
                                 .text('Выполнить')
                                 .removeClass('btn__wizard_inAction');
@@ -3318,9 +3315,8 @@ resource = function(){
                                         zIndex: '1'
                                     });
                                     sound.play();
-                                    jQuery('.chart').data('easyPieChart').update(100);
-                                    jQuery('.chart').find('span').text('100');
-                                    onEnd();
+                                    jQuery('.chart').data('easyPieChart').update(32);
+                                    jQuery('.chart').find('span').text('32');
                                     jQuery( ".btn__wizard" )
                                         .text('Выполнить')
                                         .removeClass('btn__wizard_inAction');
@@ -3357,9 +3353,8 @@ resource = function(){
                                                 zIndex: '1'
                                             });
                                             sound.play();
-                                            jQuery('.chart').data('easyPieChart').update(100);
-                                            jQuery('.chart').find('span').text('100');
-                                            onEnd();
+                                            jQuery('.chart').data('easyPieChart').update(40);
+                                            jQuery('.chart').find('span').text('40');
                                             jQuery( ".btn__wizard" )
                                                 .text('Выполнить')
                                                 .removeClass('btn__wizard_inAction');
@@ -3400,9 +3395,8 @@ resource = function(){
                                                         zIndex: '1'
                                                     });
                                                     sound.play();
-                                                    jQuery('.chart').data('easyPieChart').update(100);
-                                                    jQuery('.chart').find('span').text('100');
-                                                    onEnd();
+                                                    jQuery('.chart').data('easyPieChart').update(48);
+                                                    jQuery('.chart').find('span').text('48');
                                                     jQuery( ".btn__wizard" )
                                                         .text('Выполнить')
                                                         .removeClass('btn__wizard_inAction');
@@ -3443,9 +3437,8 @@ resource = function(){
                                                                 zIndex: '1'
                                                             });
                                                             sound.play();
-                                                            jQuery('.chart').data('easyPieChart').update(100);
-                                                            jQuery('.chart').find('span').text('100');
-                                                            onEnd();
+                                                            jQuery('.chart').data('easyPieChart').update(56);
+                                                            jQuery('.chart').find('span').text('56');
                                                             jQuery( ".btn__wizard" )
                                                                 .text('Выполнить')
                                                                 .removeClass('btn__wizard_inAction');
@@ -3482,9 +3475,8 @@ resource = function(){
                                                                         zIndex: '1'
                                                                     });
                                                                     sound.play();
-                                                                    jQuery('.chart').data('easyPieChart').update(100);
-                                                                    jQuery('.chart').find('span').text('100');
-                                                                    onEnd();
+                                                                    jQuery('.chart').data('easyPieChart').update(64);
+                                                                    jQuery('.chart').find('span').text('64');
                                                                     jQuery( ".btn__wizard" )
                                                                         .text('Выполнить')
                                                                         .removeClass('btn__wizard_inAction');
@@ -3525,9 +3517,8 @@ resource = function(){
                                                                                 zIndex: '1'
                                                                             });
                                                                             sound.play();
-                                                                            jQuery('.chart').data('easyPieChart').update(100);
-                                                                            jQuery('.chart').find('span').text('100');
-                                                                            onEnd();
+                                                                            jQuery('.chart').data('easyPieChart').update(72);
+                                                                            jQuery('.chart').find('span').text('72');
                                                                             jQuery( ".btn__wizard" )
                                                                                 .text('Выполнить')
                                                                                 .removeClass('btn__wizard_inAction');
@@ -3568,9 +3559,8 @@ resource = function(){
                                                                                         zIndex: '1'
                                                                                     });
                                                                                     sound.play();
-                                                                                    jQuery('.chart').data('easyPieChart').update(100);
-                                                                                    jQuery('.chart').find('span').text('100');
-                                                                                    onEnd();
+                                                                                    jQuery('.chart').data('easyPieChart').update(80);
+                                                                                    jQuery('.chart').find('span').text('80');
                                                                                     jQuery( ".btn__wizard" )
                                                                                         .text('Выполнить')
                                                                                         .removeClass('btn__wizard_inAction');
@@ -3607,9 +3597,8 @@ resource = function(){
                                                                                                 zIndex: '1'
                                                                                             });
                                                                                             sound.play();
-                                                                                            jQuery('.chart').data('easyPieChart').update(100);
-                                                                                            jQuery('.chart').find('span').text('100');
-                                                                                            onEnd();
+                                                                                            jQuery('.chart').data('easyPieChart').update(90);
+                                                                                            jQuery('.chart').find('span').text('90');
                                                                                             jQuery( ".btn__wizard" )
                                                                                                 .text('Выполнить')
                                                                                                 .removeClass('btn__wizard_inAction');
