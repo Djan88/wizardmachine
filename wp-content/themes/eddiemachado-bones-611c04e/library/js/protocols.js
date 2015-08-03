@@ -3101,42 +3101,88 @@ resource = function(){
         loop: false,
         buffer: true
     }); 
-    dinamicElem = true;
-    resorceGlobal = 30;
-    zZone = localStorage.getItem('curVZone');
+    // dinamicElem = true;
+    // resorceGlobal = 30;
+    // zZone = localStorage.getItem('curVZone');
+    // phaseOne = setInterval(function(){
+    //     if (resorceGlobal >= 1){
+    //         jQuery('body').addClass('dinamic');
+    //         if(dinamicElem == true){
+    //             jQuery('body').on('click', function(e) {
+    //                 resorceGlobal = 30;
+    //                 var v7x = e.pageX;
+    //                 var v7y = e.pageY;
+    //                 v7y = v7y-27;
+    //                 v7x = v7x-27;
+    //                 jQuery('body.dinamic').append('<div id="draggable3'+resorceGlobalCount+'" class="itemlist_item item_list__mid draggable ui-draggable ui-draggable-handle" style="left: '+v7x+'px; top: '+v7y+'px; color: transparent; border-color: transparent; opacity: 0.8; -webkit-transform: scale(1); transform: scale(1); border-width: 1px; padding-top: 4px; z-index: 1000; background: url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0px 0px / 100% no-repeat rgb(255, 255, 255);">V3</div>');
+    //                 setTimeout(function(){
+    //                     resorceGlobalCount
+    //                     jQuery('#draggable3'+resorceGlobalCount).remove();
+    //                 }, 4000);
+    //             });
+    //         }
+    //         resorceGlobal -= 1;
+    //         jQuery(zZone).css({
+    //             color: 'transparent',
+    //             borderColor: 'transparent',
+    //             opacity: 0.8,
+    //             transform: 'scale(1)',
+    //             borderWidth: '1px',
+    //             paddingTop: '4px',
+    //             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/edinenie_s_tvorcom.jpg) 0 0/100% no-repeat',
+    //             zIndex: '1000'
+    //         });
+    //     } else {
+    //         dinamicElem = false;
+    //         clearInterval(phaseOne);
+    //         jQuery('body').removeClass('dinamic');
+    //         jQuery('.itemlist_item').css({
+    //             background: 'rgba(255,255,255, 0.5)',
+    //             color: 'red',
+    //             borderColor: 'red',
+    //             opacity: 1,
+    //             transform: 'scale(0.5)',
+    //             borderWidth: '2px',
+    //             paddingTop: '2px',
+    //             zIndex: '1'
+    //         });
+    //         sound.play();
+    //         onEnd();
+    //         jQuery('.chart').data('easyPieChart').update(100);
+    //         jQuery('.chart').find('span').text('100');
+    //         jQuery( ".btn__wizard" )
+    //             .text('Выполнить')
+    //             .removeClass('btn__wizard_inAction'); 
+    //     }
+    // }, 1000);
+
+//Фаза 1
+    cur_animation_val = 0;
+    count_animation = 1;
     phaseOne = setInterval(function(){
-        if (resorceGlobal >= 1){
-            jQuery('body').addClass('dinamic');
-            if(dinamicElem == true){
-                jQuery('body').on('click', function(e) {
-                    resorceGlobal = 30;
-                    var v7x = e.pageX;
-                    var v7y = e.pageY;
-                    v7y = v7y-27;
-                    v7x = v7x-27;
-                    jQuery('body.dinamic').append('<div id="draggable3'+resorceGlobalCount+'" class="itemlist_item item_list__mid draggable ui-draggable ui-draggable-handle" style="left: '+v7x+'px; top: '+v7y+'px; color: transparent; border-color: transparent; opacity: 0.8; -webkit-transform: scale(1); transform: scale(1); border-width: 1px; padding-top: 4px; z-index: 1000; background: url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0px 0px / 100% no-repeat rgb(255, 255, 255);">V3</div>');
-                    setTimeout(function(){
-                        resorceGlobalCount
-                        jQuery('#draggable3'+resorceGlobalCount).remove();
-                    }, 4000);
-                });
-            }
-            resorceGlobal -= 1;
-            jQuery(zZone).css({
+        if (count_animation <= 120){                                                                         //120
+            jQuery('#draggable3, #draggableD1, #draggableD2, #draggableD3, #draggableD4, #draggableD5, #draggableD_6').css({
                 color: 'transparent',
                 borderColor: 'transparent',
                 opacity: 0.8,
                 transform: 'scale(1)',
                 borderWidth: '1px',
                 paddingTop: '4px',
-                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/edinenie_s_tvorcom.jpg) 0 0/100% no-repeat',
                 zIndex: '1000'
             });
+            jQuery('#draggable3').css({
+                transform: 'scale(1)',
+                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/edinenie_s_tvorcom.jpg) 0 0/100% no-repeat'
+            });
+            jQuery('#draggableD1, #draggableD2, #draggableD3, #draggableD4, #draggableD5, #draggableD_6').css({
+                transform: 'scale(1)',
+                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
+            });
+            count_animation += 1;
         } else {
-            dinamicElem = false;
             clearInterval(phaseOne);
-            jQuery('body').removeClass('dinamic');
-            jQuery('.itemlist_item').css({
+            count_animation = 1;
+            jQuery('#draggable3, #draggableD1, #draggableD2, #draggableD3, #draggableD4, #draggableD5, #draggableD_6').css({
                 background: 'rgba(255,255,255, 0.5)',
                 color: 'red',
                 borderColor: 'red',
@@ -3147,14 +3193,493 @@ resource = function(){
                 zIndex: '1'
             });
             sound.play();
-            onEnd();
             jQuery('.chart').data('easyPieChart').update(100);
             jQuery('.chart').find('span').text('100');
+            onEnd();
             jQuery( ".btn__wizard" )
                 .text('Выполнить')
-                .removeClass('btn__wizard_inAction'); 
+                .removeClass('btn__wizard_inAction');
+//Фаза 2
+            cur_animation_val = 0;
+            count_animation = 1;
+            phaseOne = setInterval(function(){
+                if (count_animation <= 120){                                                                         //120
+                    jQuery('#draggable3, #draggable0, #draggable2, #draggableVD, #draggable4, #draggable5').css({
+                        color: 'transparent',
+                        borderColor: 'transparent',
+                        opacity: 0.8,
+                        transform: 'scale(1)',
+                        borderWidth: '1px',
+                        paddingTop: '4px',
+                        zIndex: '1000'
+                    });
+                    jQuery('#draggable3, #draggable0, #draggable2, #draggableVD, #draggable4, #draggable5').css({
+                        transform: 'scale(1)',
+                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
+                    });
+                    count_animation += 1;
+                } else {
+                    clearInterval(phaseOne);
+                    count_animation = 1;
+                    jQuery('#draggable3, #draggable0, #draggable2, #draggableVD, #draggable4, #draggable5').css({
+                        background: 'rgba(255,255,255, 0.5)',
+                        color: 'red',
+                        borderColor: 'red',
+                        opacity: 1,
+                        transform: 'scale(0.5)',
+                        borderWidth: '2px',
+                        paddingTop: '2px',
+                        zIndex: '1'
+                    });
+                    sound.play();
+                    jQuery('.chart').data('easyPieChart').update(100);
+                    jQuery('.chart').find('span').text('100');
+                    onEnd();
+                    jQuery( ".btn__wizard" )
+                        .text('Выполнить')
+                        .removeClass('btn__wizard_inAction');
+        //Фаза 3
+                    cur_animation_val = 0;
+                    count_animation = 1;
+                    phaseOne = setInterval(function(){
+                        if (count_animation <= 120){                                                                         //120
+                            jQuery('#draggable3, #draggableS1, #draggableS2, #draggableS2_1, #draggableS3, #draggableS4, #draggableS5, #draggableS6').css({
+                                color: 'transparent',
+                                borderColor: 'transparent',
+                                opacity: 0.8,
+                                transform: 'scale(1)',
+                                borderWidth: '1px',
+                                paddingTop: '4px',
+                                zIndex: '1000'
+                            });
+                            jQuery('#draggable3').css({
+                                transform: 'scale(1)',
+                                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/edinenie_s_tvorcom.jpg) 0 0/100% no-repeat'
+                            });
+                            jQuery('#draggableS1, #draggableS2, #draggableS2_1, #draggableS3, #draggableS4, #draggableS5, #draggableS6').css({
+                                transform: 'scale(1)',
+                                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
+                            });
+                            count_animation += 1;
+                        } else {
+                            clearInterval(phaseOne);
+                            count_animation = 1;
+                            jQuery('#draggable3, #draggableS1, #draggableS2, #draggableS2_1, #draggableS3, #draggableS4, #draggableS5, #draggableS6').css({
+                                background: 'rgba(255,255,255, 0.5)',
+                                color: 'red',
+                                borderColor: 'red',
+                                opacity: 1,
+                                transform: 'scale(0.5)',
+                                borderWidth: '2px',
+                                paddingTop: '2px',
+                                zIndex: '1'
+                            });
+                            sound.play();
+                            jQuery('.chart').data('easyPieChart').update(100);
+                            jQuery('.chart').find('span').text('100');
+                            onEnd();
+                            jQuery( ".btn__wizard" )
+                                .text('Выполнить')
+                                .removeClass('btn__wizard_inAction');
+            //Фаза 4
+                            cur_animation_val = 0;
+                            count_animation = 1;
+                            phaseOne = setInterval(function(){
+                                if (count_animation <= 120){                                                                         //120
+                                    jQuery('#draggable3, #draggableD1, #draggableD2, #draggableD3, #draggableD4, #draggableD5, #draggableD_6').css({
+                                        color: 'transparent',
+                                        borderColor: 'transparent',
+                                        opacity: 0.8,
+                                        transform: 'scale(1)',
+                                        borderWidth: '1px',
+                                        paddingTop: '4px',
+                                        zIndex: '1000'
+                                    });
+                                    jQuery('#draggable3').css({
+                                        transform: 'scale(1)',
+                                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/edinenie_s_tvorcom.jpg) 0 0/100% no-repeat'
+                                    });
+                                    jQuery('#draggableD1, #draggableD2, #draggableD3, #draggableD4, #draggableD5, #draggableD_6').css({
+                                        transform: 'scale(1)',
+                                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
+                                    });
+                                    count_animation += 1;
+                                } else {
+                                    clearInterval(phaseOne);
+                                    count_animation = 1;
+                                    jQuery('#draggable3, #draggableD1, #draggableD2, #draggableD3, #draggableD4, #draggableD5, #draggableD_6').css({
+                                        background: 'rgba(255,255,255, 0.5)',
+                                        color: 'red',
+                                        borderColor: 'red',
+                                        opacity: 1,
+                                        transform: 'scale(0.5)',
+                                        borderWidth: '2px',
+                                        paddingTop: '2px',
+                                        zIndex: '1'
+                                    });
+                                    sound.play();
+                                    jQuery('.chart').data('easyPieChart').update(100);
+                                    jQuery('.chart').find('span').text('100');
+                                    onEnd();
+                                    jQuery( ".btn__wizard" )
+                                        .text('Выполнить')
+                                        .removeClass('btn__wizard_inAction');
+            //Фаза 5
+                                    cur_animation_val = 0;
+                                    count_animation = 1;
+                                    phaseOne = setInterval(function(){
+                                        if (count_animation <= 120){                                                                         //120
+                                            jQuery('#draggable3, #draggable0, #draggable2, #draggableVD, #draggable4, #draggable5').css({
+                                                color: 'transparent',
+                                                borderColor: 'transparent',
+                                                opacity: 0.8,
+                                                transform: 'scale(1)',
+                                                borderWidth: '1px',
+                                                paddingTop: '4px',
+                                                zIndex: '1000'
+                                            });
+                                            jQuery('#draggable3, #draggable0, #draggable2, #draggableVD, #draggable4, #draggable5').css({
+                                                transform: 'scale(1)',
+                                                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
+                                            });
+                                            count_animation += 1;
+                                        } else {
+                                            clearInterval(phaseOne);
+                                            count_animation = 1;
+                                            jQuery('#draggable3, #draggable0, #draggable2, #draggableVD, #draggable4, #draggable5').css({
+                                                background: 'rgba(255,255,255, 0.5)',
+                                                color: 'red',
+                                                borderColor: 'red',
+                                                opacity: 1,
+                                                transform: 'scale(0.5)',
+                                                borderWidth: '2px',
+                                                paddingTop: '2px',
+                                                zIndex: '1'
+                                            });
+                                            sound.play();
+                                            jQuery('.chart').data('easyPieChart').update(100);
+                                            jQuery('.chart').find('span').text('100');
+                                            onEnd();
+                                            jQuery( ".btn__wizard" )
+                                                .text('Выполнить')
+                                                .removeClass('btn__wizard_inAction');
+            //Фаза 6
+                                            cur_animation_val = 0;
+                                            count_animation = 1;
+                                            phaseOne = setInterval(function(){
+                                                if (count_animation <= 120){                                                                         //120
+                                                    jQuery('#draggable3, #draggableS1, #draggableS2, #draggableS2_1, #draggableS3, #draggableS4, #draggableS5, #draggableS6').css({
+                                                        color: 'transparent',
+                                                        borderColor: 'transparent',
+                                                        opacity: 0.8,
+                                                        transform: 'scale(1)',
+                                                        borderWidth: '1px',
+                                                        paddingTop: '4px',
+                                                        zIndex: '1000'
+                                                    });
+                                                    jQuery('#draggable3').css({
+                                                        transform: 'scale(1)',
+                                                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/edinenie_s_tvorcom.jpg) 0 0/100% no-repeat'
+                                                    });
+                                                    jQuery('#draggableS1, #draggableS2, #draggableS2_1, #draggableS3, #draggableS4, #draggableS5, #draggableS6').css({
+                                                        transform: 'scale(1)',
+                                                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
+                                                    });
+                                                    count_animation += 1;
+                                                } else {
+                                                    clearInterval(phaseOne);
+                                                    count_animation = 1;
+                                                    jQuery('#draggable3, #draggableS1, #draggableS2, #draggableS2_1, #draggableS3, #draggableS4, #draggableS5, #draggableS6').css({
+                                                        background: 'rgba(255,255,255, 0.5)',
+                                                        color: 'red',
+                                                        borderColor: 'red',
+                                                        opacity: 1,
+                                                        transform: 'scale(0.5)',
+                                                        borderWidth: '2px',
+                                                        paddingTop: '2px',
+                                                        zIndex: '1'
+                                                    });
+                                                    sound.play();
+                                                    jQuery('.chart').data('easyPieChart').update(100);
+                                                    jQuery('.chart').find('span').text('100');
+                                                    onEnd();
+                                                    jQuery( ".btn__wizard" )
+                                                        .text('Выполнить')
+                                                        .removeClass('btn__wizard_inAction');
+                                                //Фаза 7
+                                                    cur_animation_val = 0;
+                                                    count_animation = 1;
+                                                    phaseOne = setInterval(function(){
+                                                        if (count_animation <= 120){                                                                         //120
+                                                            jQuery('#draggable3, #draggableD1, #draggableD2, #draggableD3, #draggableD4, #draggableD5, #draggableD_6').css({
+                                                                color: 'transparent',
+                                                                borderColor: 'transparent',
+                                                                opacity: 0.8,
+                                                                transform: 'scale(1)',
+                                                                borderWidth: '1px',
+                                                                paddingTop: '4px',
+                                                                zIndex: '1000'
+                                                            });
+                                                            jQuery('#draggable3').css({
+                                                                transform: 'scale(1)',
+                                                                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/edinenie_s_tvorcom.jpg) 0 0/100% no-repeat'
+                                                            });
+                                                            jQuery('#draggableD1, #draggableD2, #draggableD3, #draggableD4, #draggableD5, #draggableD_6').css({
+                                                                transform: 'scale(1)',
+                                                                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
+                                                            });
+                                                            count_animation += 1;
+                                                        } else {
+                                                            clearInterval(phaseOne);
+                                                            count_animation = 1;
+                                                            jQuery('#draggable3, #draggableD1, #draggableD2, #draggableD3, #draggableD4, #draggableD5, #draggableD_6').css({
+                                                                background: 'rgba(255,255,255, 0.5)',
+                                                                color: 'red',
+                                                                borderColor: 'red',
+                                                                opacity: 1,
+                                                                transform: 'scale(0.5)',
+                                                                borderWidth: '2px',
+                                                                paddingTop: '2px',
+                                                                zIndex: '1'
+                                                            });
+                                                            sound.play();
+                                                            jQuery('.chart').data('easyPieChart').update(100);
+                                                            jQuery('.chart').find('span').text('100');
+                                                            onEnd();
+                                                            jQuery( ".btn__wizard" )
+                                                                .text('Выполнить')
+                                                                .removeClass('btn__wizard_inAction');
+                                                //Фаза 8
+                                                            cur_animation_val = 0;
+                                                            count_animation = 1;
+                                                            phaseOne = setInterval(function(){
+                                                                if (count_animation <= 120){                                                                         //120
+                                                                    jQuery('#draggable3, #draggable0, #draggable2, #draggableVD, #draggable4, #draggable5').css({
+                                                                        color: 'transparent',
+                                                                        borderColor: 'transparent',
+                                                                        opacity: 0.8,
+                                                                        transform: 'scale(1)',
+                                                                        borderWidth: '1px',
+                                                                        paddingTop: '4px',
+                                                                        zIndex: '1000'
+                                                                    });
+                                                                    jQuery('#draggable3, #draggable0, #draggable2, #draggableVD, #draggable4, #draggable5').css({
+                                                                        transform: 'scale(1)',
+                                                                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
+                                                                    });
+                                                                    count_animation += 1;
+                                                                } else {
+                                                                    clearInterval(phaseOne);
+                                                                    count_animation = 1;
+                                                                    jQuery('#draggable3, #draggable0, #draggable2, #draggableVD, #draggable4, #draggable5').css({
+                                                                        background: 'rgba(255,255,255, 0.5)',
+                                                                        color: 'red',
+                                                                        borderColor: 'red',
+                                                                        opacity: 1,
+                                                                        transform: 'scale(0.5)',
+                                                                        borderWidth: '2px',
+                                                                        paddingTop: '2px',
+                                                                        zIndex: '1'
+                                                                    });
+                                                                    sound.play();
+                                                                    jQuery('.chart').data('easyPieChart').update(100);
+                                                                    jQuery('.chart').find('span').text('100');
+                                                                    onEnd();
+                                                                    jQuery( ".btn__wizard" )
+                                                                        .text('Выполнить')
+                                                                        .removeClass('btn__wizard_inAction');
+                                                        //Фаза 9
+                                                                    cur_animation_val = 0;
+                                                                    count_animation = 1;
+                                                                    phaseOne = setInterval(function(){
+                                                                        if (count_animation <= 120){                                                                         //120
+                                                                            jQuery('#draggable3, #draggableS1, #draggableS2, #draggableS2_1, #draggableS3, #draggableS4, #draggableS5, #draggableS6').css({
+                                                                                color: 'transparent',
+                                                                                borderColor: 'transparent',
+                                                                                opacity: 0.8,
+                                                                                transform: 'scale(1)',
+                                                                                borderWidth: '1px',
+                                                                                paddingTop: '4px',
+                                                                                zIndex: '1000'
+                                                                            });
+                                                                            jQuery('#draggable3').css({
+                                                                                transform: 'scale(1)',
+                                                                                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/edinenie_s_tvorcom.jpg) 0 0/100% no-repeat'
+                                                                            });
+                                                                            jQuery('#draggableS1, #draggableS2, #draggableS2_1, #draggableS3, #draggableS4, #draggableS5, #draggableS6').css({
+                                                                                transform: 'scale(1)',
+                                                                                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
+                                                                            });
+                                                                            count_animation += 1;
+                                                                        } else {
+                                                                            clearInterval(phaseOne);
+                                                                            count_animation = 1;
+                                                                            jQuery('#draggable3, #draggableS1, #draggableS2, #draggableS2_1, #draggableS3, #draggableS4, #draggableS5, #draggableS6').css({
+                                                                                background: 'rgba(255,255,255, 0.5)',
+                                                                                color: 'red',
+                                                                                borderColor: 'red',
+                                                                                opacity: 1,
+                                                                                transform: 'scale(0.5)',
+                                                                                borderWidth: '2px',
+                                                                                paddingTop: '2px',
+                                                                                zIndex: '1'
+                                                                            });
+                                                                            sound.play();
+                                                                            jQuery('.chart').data('easyPieChart').update(100);
+                                                                            jQuery('.chart').find('span').text('100');
+                                                                            onEnd();
+                                                                            jQuery( ".btn__wizard" )
+                                                                                .text('Выполнить')
+                                                                                .removeClass('btn__wizard_inAction');
+                                                                        //Фаза 10
+                                                                            cur_animation_val = 0;
+                                                                            count_animation = 1;
+                                                                            phaseOne = setInterval(function(){
+                                                                                if (count_animation <= 120){                                                                         //120
+                                                                                    jQuery('#draggable3, #draggableD1, #draggableD2, #draggableD3, #draggableD4, #draggableD5, #draggableD_6').css({
+                                                                                        color: 'transparent',
+                                                                                        borderColor: 'transparent',
+                                                                                        opacity: 0.8,
+                                                                                        transform: 'scale(1)',
+                                                                                        borderWidth: '1px',
+                                                                                        paddingTop: '4px',
+                                                                                        zIndex: '1000'
+                                                                                    });
+                                                                                    jQuery('#draggable3').css({
+                                                                                        transform: 'scale(1)',
+                                                                                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/edinenie_s_tvorcom.jpg) 0 0/100% no-repeat'
+                                                                                    });
+                                                                                    jQuery('#draggableD1, #draggableD2, #draggableD3, #draggableD4, #draggableD5, #draggableD_6').css({
+                                                                                        transform: 'scale(1)',
+                                                                                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
+                                                                                    });
+                                                                                    count_animation += 1;
+                                                                                } else {
+                                                                                    clearInterval(phaseOne);
+                                                                                    count_animation = 1;
+                                                                                    jQuery('#draggable3, #draggableD1, #draggableD2, #draggableD3, #draggableD4, #draggableD5, #draggableD_6').css({
+                                                                                        background: 'rgba(255,255,255, 0.5)',
+                                                                                        color: 'red',
+                                                                                        borderColor: 'red',
+                                                                                        opacity: 1,
+                                                                                        transform: 'scale(0.5)',
+                                                                                        borderWidth: '2px',
+                                                                                        paddingTop: '2px',
+                                                                                        zIndex: '1'
+                                                                                    });
+                                                                                    sound.play();
+                                                                                    jQuery('.chart').data('easyPieChart').update(100);
+                                                                                    jQuery('.chart').find('span').text('100');
+                                                                                    onEnd();
+                                                                                    jQuery( ".btn__wizard" )
+                                                                                        .text('Выполнить')
+                                                                                        .removeClass('btn__wizard_inAction');
+                                                                        //Фаза 11
+                                                                                    cur_animation_val = 0;
+                                                                                    count_animation = 1;
+                                                                                    phaseOne = setInterval(function(){
+                                                                                        if (count_animation <= 120){                                                                         //120
+                                                                                            jQuery('#draggable3, #draggable0, #draggable2, #draggableVD, #draggable4, #draggable5').css({
+                                                                                                color: 'transparent',
+                                                                                                borderColor: 'transparent',
+                                                                                                opacity: 0.8,
+                                                                                                transform: 'scale(1)',
+                                                                                                borderWidth: '1px',
+                                                                                                paddingTop: '4px',
+                                                                                                zIndex: '1000'
+                                                                                            });
+                                                                                            jQuery('#draggable3, #draggable0, #draggable2, #draggableVD, #draggable4, #draggable5').css({
+                                                                                                transform: 'scale(1)',
+                                                                                                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
+                                                                                            });
+                                                                                            count_animation += 1;
+                                                                                        } else {
+                                                                                            clearInterval(phaseOne);
+                                                                                            count_animation = 1;
+                                                                                            jQuery('#draggable3, #draggable0, #draggable2, #draggableVD, #draggable4, #draggable5').css({
+                                                                                                background: 'rgba(255,255,255, 0.5)',
+                                                                                                color: 'red',
+                                                                                                borderColor: 'red',
+                                                                                                opacity: 1,
+                                                                                                transform: 'scale(0.5)',
+                                                                                                borderWidth: '2px',
+                                                                                                paddingTop: '2px',
+                                                                                                zIndex: '1'
+                                                                                            });
+                                                                                            sound.play();
+                                                                                            jQuery('.chart').data('easyPieChart').update(100);
+                                                                                            jQuery('.chart').find('span').text('100');
+                                                                                            onEnd();
+                                                                                            jQuery( ".btn__wizard" )
+                                                                                                .text('Выполнить')
+                                                                                                .removeClass('btn__wizard_inAction');
+                                                                                //Фаза 12
+                                                                                            cur_animation_val = 0;
+                                                                                            count_animation = 1;
+                                                                                            phaseOne = setInterval(function(){
+                                                                                                if (count_animation <= 120){                                                                         //120
+                                                                                                    jQuery('#draggable3, #draggableS1, #draggableS2, #draggableS2_1, #draggableS3, #draggableS4, #draggableS5, #draggableS6').css({
+                                                                                                        color: 'transparent',
+                                                                                                        borderColor: 'transparent',
+                                                                                                        opacity: 0.8,
+                                                                                                        transform: 'scale(1)',
+                                                                                                        borderWidth: '1px',
+                                                                                                        paddingTop: '4px',
+                                                                                                        zIndex: '1000'
+                                                                                                    });
+                                                                                                    jQuery('#draggable3').css({
+                                                                                                        transform: 'scale(1)',
+                                                                                                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/edinenie_s_tvorcom.jpg) 0 0/100% no-repeat'
+                                                                                                    });
+                                                                                                    jQuery('#draggableS1, #draggableS2, #draggableS2_1, #draggableS3, #draggableS4, #draggableS5, #draggableS6').css({
+                                                                                                        transform: 'scale(1)',
+                                                                                                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
+                                                                                                    });
+                                                                                                    count_animation += 1;
+                                                                                                } else {
+                                                                                                    clearInterval(phaseOne);
+                                                                                                    count_animation = 1;
+                                                                                                    jQuery('#draggable3, #draggableS1, #draggableS2, #draggableS2_1, #draggableS3, #draggableS4, #draggableS5, #draggableS6').css({
+                                                                                                        background: 'rgba(255,255,255, 0.5)',
+                                                                                                        color: 'red',
+                                                                                                        borderColor: 'red',
+                                                                                                        opacity: 1,
+                                                                                                        transform: 'scale(0.5)',
+                                                                                                        borderWidth: '2px',
+                                                                                                        paddingTop: '2px',
+                                                                                                        zIndex: '1'
+                                                                                                    });
+                                                                                                    sound.play();
+                                                                                                    jQuery('.chart').data('easyPieChart').update(100);
+                                                                                                    jQuery('.chart').find('span').text('100');
+                                                                                                    onEnd();
+                                                                                                    jQuery( ".btn__wizard" )
+                                                                                                        .text('Выполнить')
+                                                                                                        .removeClass('btn__wizard_inAction');
+                                                                                                }
+                                                                                            }, 1000);
+                                                                                        }
+                                                                                    }, 1000);
+                                                                                }
+                                                                            }, 1000);
+                                                                        }
+                                                                    }, 1000);
+                                                                }
+                                                            }, 1000);
+                                                        }
+                                                    }, 1000);
+                                                }
+                                            }, 1000);
+                                        }
+                                    }, 1000);
+                                }
+                            }, 1000);
+                        }
+                    }, 1000);
+                }
+            }, 1000);
         }
-    }, 1000); 
+    }, 1000);
 }
 
 
