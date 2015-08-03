@@ -28,29 +28,29 @@ jQuery(function() {
         };
 
     //РЕСУРС выбор основной зоны
-    jQuery('.v-zone').on('click', function() {
-        curVZone = jQuery(this).val();
-        curV = jQuery(this).attr('id');
-        localStorage.setItem('curVZone', curVZone);
-        localStorage.setItem('curV', curV);
-        console.log('curVZone '+curVZone);
-    });
+    // jQuery('.v-zone').on('click', function() {
+    //     curVZone = jQuery(this).val();
+    //     curV = jQuery(this).attr('id');
+    //     localStorage.setItem('curVZone', curVZone);
+    //     localStorage.setItem('curV', curV);
+    //     console.log('curVZone '+curVZone);
+    // });
 
     //Запоминание выбранной зоны V в протоколе РЕСУРС
-    actualV = function(){
-        if(supportsStorage && localStorage.getItem('curV')){
-            curV = localStorage.getItem('curV');
-        } else {
-            curV = "V3";
-            localStorage.setItem('curVZone', '#draggable3');
-            localStorage.setItem('curV', curV);
-        };
-        jQuery('.v-zone').each(function() {
-            jQuery(this).removeAttr('checked');
+    // actualV = function(){
+    //     if(supportsStorage && localStorage.getItem('curV')){
+    //         curV = localStorage.getItem('curV');
+    //     } else {
+    //         curV = "V3";
+    //         localStorage.setItem('curVZone', '#draggable3');
+    //         localStorage.setItem('curV', curV);
+    //     };
+    //     jQuery('.v-zone').each(function() {
+    //         jQuery(this).removeAttr('checked');
             
-        });
-        jQuery('#'+curV).attr('checked', 'checked');
-    }();
+    //     });
+    //     jQuery('#'+curV).attr('checked', 'checked');
+    // }();
 
     //Функция проверки положения точек
     checkPoints = function(){
@@ -61,22 +61,22 @@ jQuery(function() {
             }
         });
     }
-    checkV3 = function(){
-        if(supportsStorage && localStorage.getItem('curChoice')){
-            curVZone = localStorage.getItem('curVZone');
-        } else {
-            localStorage.setItem('curVZone', '#draggable3');
-            curVZone = "#draggable3";
-        };
-        console.log('curVZone= '+curVZone);
-        jQuery(curVZone).each(function() {
-            console.log(jQuery(curVZone));
-            if(parseFloat(jQuery(this).css('left')) < 450){
-                v3status = false;
-                console.log('v3status '+v3status);
-            }
-        });
-    }
+    // checkV3 = function(){
+    //     if(supportsStorage && localStorage.getItem('curChoice')){
+    //         curVZone = localStorage.getItem('curVZone');
+    //     } else {
+    //         localStorage.setItem('curVZone', '#draggable3');
+    //         curVZone = "#draggable3";
+    //     };
+    //     console.log('curVZone= '+curVZone);
+    //     jQuery(curVZone).each(function() {
+    //         console.log(jQuery(curVZone));
+    //         if(parseFloat(jQuery(this).css('left')) < 450){
+    //             v3status = false;
+    //             console.log('v3status '+v3status);
+    //         }
+    //     });
+    // }
     // Текст заголовка
     main_heading = function(){
         // console.log(cur_screen);
@@ -206,25 +206,25 @@ jQuery( ".btn__wizard" ).on('click', function(event) {
     pointsStatus = true;
     v3status = true;
     curV = localStorage.getItem('curV');
-    if(protocol == 'resource'){
-        checkV3();
-        if(v3status == false){
-            swal("Целевая V зона не перенесена", "Для начала выполнения процедуры необходимо перенести зону "+curV, "info"); 
-        } else {
-            jQuery(this)
-                .addClass('btn__wizard_inAction')
-                .text('Выполняется');
-                jQuery('.heading_dashboard').text('Процедура выполняется')
-                jQuery('.btn_back').addClass('invisible');
-                protocol = localStorage.getItem('protocol');
-                console.log(protocol);
-                if(protocol == 'resource'){
-                    resource();
-                } else {
-                    console.log('нет протокола с id '+ protocol)
-                }
-        }
-    } else {
+    // if(protocol == 'resource'){
+    //     checkV3();
+    //     if(v3status == false){
+    //         swal("Целевая V зона не перенесена", "Для начала выполнения процедуры необходимо перенести зону "+curV, "info"); 
+    //     } else {
+    //         jQuery(this)
+    //             .addClass('btn__wizard_inAction')
+    //             .text('Выполняется');
+    //             jQuery('.heading_dashboard').text('Процедура выполняется')
+    //             jQuery('.btn_back').addClass('invisible');
+    //             protocol = localStorage.getItem('protocol');
+    //             console.log(protocol);
+    //             if(protocol == 'resource'){
+    //                 resource();
+    //             } else {
+    //                 console.log('нет протокола с id '+ protocol)
+    //             }
+    //     }
+    // } else {
         checkPoints();
         if(pointsStatus == false){
             swal("Не все зоны перенесены", "Перед началом процедуры необходимо перенести все зоны", "info"); 
@@ -254,7 +254,7 @@ jQuery( ".btn__wizard" ).on('click', function(event) {
                     console.log('нет протокола с id '+ protocol)
                 }
         }  
-    }
+    // }
     main_heading();
 });
 //Быстрая смена протокола
@@ -270,21 +270,21 @@ jQuery('#main').on('click', '.fast-protocol', function() {
     jQuery('.fast-protocol-wrap')
         .addClass('hidden')
         .removeClass('fadeIn');
-    if(protocol == 'resource'){
-        jQuery('.fast-protocol-resource')
-            .removeClass('hidden')
-            .addClass('fadeIn');
-    }
+    // if(protocol == 'resource'){
+    //     jQuery('.fast-protocol-resource')
+    //         .removeClass('hidden')
+    //         .addClass('fadeIn');
+    // }
 });
-jQuery('#main').on('click', '.fast-v', function() {
-    curV = jQuery(this).text();
-    curVZone = jQuery(this).data('v');
-    localStorage.setItem('curVZone', curVZone);
-    localStorage.setItem('curV', curV);
-    jQuery('.fast-protocol-resource')
-        .addClass('hidden')
-        .removeClass('fadeIn');
-});
+// jQuery('#main').on('click', '.fast-v', function() {
+//     curV = jQuery(this).text();
+//     curVZone = jQuery(this).data('v');
+//     localStorage.setItem('curVZone', curVZone);
+//     localStorage.setItem('curV', curV);
+//     jQuery('.fast-protocol-resource')
+//         .addClass('hidden')
+//         .removeClass('fadeIn');
+// });
 
 // Возврат на предыдущий шаг
     jQuery('.btn_back').on('click', function(event) {
