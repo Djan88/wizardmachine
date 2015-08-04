@@ -3749,7 +3749,7 @@ resource = function(){
                             paddingTop: '2px',
                             zIndex: '1'
                         });
-                        jQuery('#draggable4').css({
+                        jQuery('#draggable5').css({
                             color: 'transparent',
                             borderColor: 'transparent',
                             opacity: 0.8,
@@ -3760,7 +3760,7 @@ resource = function(){
                             zIndex: '1000'
                         });
                     } else if (count_animation > 20 && count_animation <= 25){
-                        jQuery('#draggable4').css({
+                        jQuery('#draggable5').css({
                             background: 'rgba(255,255,255, 0.5)',
                             color: 'red',
                             borderColor: 'red',
@@ -3770,7 +3770,7 @@ resource = function(){
                             paddingTop: '2px',
                             zIndex: '1'
                         });
-                        jQuery('#draggable5').css({
+                        jQuery('#draggableVD').css({
                             color: 'transparent',
                             borderColor: 'transparent',
                             opacity: 0.8,
@@ -3781,7 +3781,7 @@ resource = function(){
                             zIndex: '1000'
                         });
                     } else if (count_animation > 25 && count_animation <= 30){
-                        jQuery('#draggable5').css({
+                        jQuery('#draggableVD').css({
                             background: 'rgba(255,255,255, 0.5)',
                             color: 'red',
                             borderColor: 'red',
@@ -3791,7 +3791,7 @@ resource = function(){
                             paddingTop: '2px',
                             zIndex: '1'
                         });
-                        jQuery('#draggableVD').css({
+                        jQuery('#draggable0').css({
                             color: 'transparent',
                             borderColor: 'transparent',
                             opacity: 0.8,
@@ -3802,7 +3802,7 @@ resource = function(){
                             zIndex: '1000'
                         });
                     } else if (count_animation > 30 && count_animation <= 35){
-                        jQuery('#draggableVD').css({
+                        jQuery('#draggable0').css({
                             background: 'rgba(255,255,255, 0.5)',
                             color: 'red',
                             borderColor: 'red',
@@ -3812,7 +3812,7 @@ resource = function(){
                             paddingTop: '2px',
                             zIndex: '1'
                         });
-                        jQuery('#draggable0').css({
+                        jQuery('#draggable2').css({
                             color: 'transparent',
                             borderColor: 'transparent',
                             opacity: 0.8,
@@ -3823,7 +3823,7 @@ resource = function(){
                             zIndex: '1000'
                         });
                     } else if (count_animation > 35 && count_animation <= 40){
-                        jQuery('#draggable0').css({
+                        jQuery('#draggable2').css({
                             background: 'rgba(255,255,255, 0.5)',
                             color: 'red',
                             borderColor: 'red',
@@ -3833,7 +3833,7 @@ resource = function(){
                             paddingTop: '2px',
                             zIndex: '1'
                         });
-                        jQuery('#draggable2').css({
+                        jQuery('#draggable3').css({
                             color: 'transparent',
                             borderColor: 'transparent',
                             opacity: 0.8,
@@ -3844,7 +3844,7 @@ resource = function(){
                             zIndex: '1000'
                         });
                     } else if (count_animation > 40 && count_animation <= 45){
-                        jQuery('#draggable2').css({
+                        jQuery('#draggable3').css({
                             background: 'rgba(255,255,255, 0.5)',
                             color: 'red',
                             borderColor: 'red',
@@ -3854,7 +3854,7 @@ resource = function(){
                             paddingTop: '2px',
                             zIndex: '1'
                         });
-                        jQuery('#draggable3').css({
+                        jQuery('#draggable5').css({
                             color: 'transparent',
                             borderColor: 'transparent',
                             opacity: 0.8,
@@ -3865,7 +3865,7 @@ resource = function(){
                             zIndex: '1000'
                         });
                     } else if (count_animation > 45 && count_animation <= 50){
-                        jQuery('#draggable3').css({
+                        jQuery('#draggable5').css({
                             background: 'rgba(255,255,255, 0.5)',
                             color: 'red',
                             borderColor: 'red',
@@ -3875,7 +3875,7 @@ resource = function(){
                             paddingTop: '2px',
                             zIndex: '1'
                         });
-                        jQuery('#draggable4').css({
+                        jQuery('#draggableVD').css({
                             color: 'transparent',
                             borderColor: 'transparent',
                             opacity: 0.8,
@@ -3886,7 +3886,7 @@ resource = function(){
                             zIndex: '1000'
                         });
                     } else if (count_animation > 50 && count_animation <= 55){
-                        jQuery('#draggable4').css({
+                        jQuery('#draggableVD').css({
                             background: 'rgba(255,255,255, 0.5)',
                             color: 'red',
                             borderColor: 'red',
@@ -3896,7 +3896,7 @@ resource = function(){
                             paddingTop: '2px',
                             zIndex: '1'
                         });
-                        jQuery('#draggable5').css({
+                        jQuery('#draggable0').css({
                             color: 'transparent',
                             borderColor: 'transparent',
                             opacity: 0.8,
@@ -3907,7 +3907,7 @@ resource = function(){
                             zIndex: '1000'
                         });
                     } else if (count_animation > 55 && count_animation <= 60){
-                        jQuery('#draggable5').css({
+                        jQuery('#draggable0').css({
                             background: 'rgba(255,255,255, 0.5)',
                             color: 'red',
                             borderColor: 'red',
@@ -3917,7 +3917,7 @@ resource = function(){
                             paddingTop: '2px',
                             zIndex: '1'
                         });
-                        jQuery('#draggableVD').css({
+                        jQuery('#draggable2').css({
                             color: 'transparent',
                             borderColor: 'transparent',
                             opacity: 0.8,
@@ -3928,7 +3928,7 @@ resource = function(){
                             zIndex: '1000'
                         });
                     } else if (count_animation > 60 && count_animation <= 65){
-                        jQuery('#draggableVD').css({
+                        jQuery('#draggable2').css({
                             background: 'rgba(255,255,255, 0.5)',
                             color: 'red',
                             borderColor: 'red',
@@ -3938,7 +3938,7 @@ resource = function(){
                             paddingTop: '2px',
                             zIndex: '1'
                         });
-                        jQuery('#draggable0').css({
+                        jQuery('#draggable3').css({
                             color: 'transparent',
                             borderColor: 'transparent',
                             opacity: 0.8,
@@ -3949,7 +3949,7 @@ resource = function(){
                             zIndex: '1000'
                         });
                     } else if (count_animation > 65 && count_animation <= 70){
-                        jQuery('#draggable0').css({
+                        jQuery('#draggable3').css({
                             background: 'rgba(255,255,255, 0.5)',
                             color: 'red',
                             borderColor: 'red',
@@ -3959,7 +3959,7 @@ resource = function(){
                             paddingTop: '2px',
                             zIndex: '1'
                         });
-                        jQuery('#draggable2').css({
+                        jQuery('#draggable5').css({
                             color: 'transparent',
                             borderColor: 'transparent',
                             opacity: 0.8,
@@ -3970,7 +3970,7 @@ resource = function(){
                             zIndex: '1000'
                         });
                     } else if (count_animation > 70 && count_animation <= 75){
-                        jQuery('#draggable2').css({
+                        jQuery('#draggable5').css({
                             background: 'rgba(255,255,255, 0.5)',
                             color: 'red',
                             borderColor: 'red',
@@ -3980,7 +3980,7 @@ resource = function(){
                             paddingTop: '2px',
                             zIndex: '1'
                         });
-                        jQuery('#draggable3').css({
+                        jQuery('#draggableVD').css({
                             color: 'transparent',
                             borderColor: 'transparent',
                             opacity: 0.8,
@@ -3991,7 +3991,7 @@ resource = function(){
                             zIndex: '1000'
                         });
                     } else if (count_animation > 75 && count_animation <= 80){
-                        jQuery('#draggable3').css({
+                        jQuery('#draggableVD').css({
                             background: 'rgba(255,255,255, 0.5)',
                             color: 'red',
                             borderColor: 'red',
@@ -4001,7 +4001,7 @@ resource = function(){
                             paddingTop: '2px',
                             zIndex: '1'
                         });
-                        jQuery('#draggable4').css({
+                        jQuery('#draggable0').css({
                             color: 'transparent',
                             borderColor: 'transparent',
                             opacity: 0.8,
@@ -4012,7 +4012,7 @@ resource = function(){
                             zIndex: '1000'
                         });
                     } else if (count_animation > 80 && count_animation <= 85){
-                        jQuery('#draggable4').css({
+                        jQuery('#draggable0').css({
                             background: 'rgba(255,255,255, 0.5)',
                             color: 'red',
                             borderColor: 'red',
@@ -4022,7 +4022,7 @@ resource = function(){
                             paddingTop: '2px',
                             zIndex: '1'
                         });
-                        jQuery('#draggable5').css({
+                        jQuery('#draggable2').css({
                             color: 'transparent',
                             borderColor: 'transparent',
                             opacity: 0.8,
@@ -4033,7 +4033,7 @@ resource = function(){
                             zIndex: '1000'
                         });
                     } else if (count_animation > 85 && count_animation <= 90){
-                        jQuery('#draggable5').css({
+                        jQuery('#draggable2').css({
                             background: 'rgba(255,255,255, 0.5)',
                             color: 'red',
                             borderColor: 'red',
@@ -4043,7 +4043,7 @@ resource = function(){
                             paddingTop: '2px',
                             zIndex: '1'
                         });
-                        jQuery('#draggableVD').css({
+                        jQuery('#draggable3').css({
                             color: 'transparent',
                             borderColor: 'transparent',
                             opacity: 0.8,
@@ -4054,6 +4054,48 @@ resource = function(){
                             zIndex: '1000'
                         });
                     } else if (count_animation > 90 && count_animation <= 95){
+                        jQuery('#draggable3').css({
+                            background: 'rgba(255,255,255, 0.5)',
+                            color: 'red',
+                            borderColor: 'red',
+                            opacity: 1,
+                            transform: 'scale(0.5)',
+                            borderWidth: '2px',
+                            paddingTop: '2px',
+                            zIndex: '1'
+                        });
+                        jQuery('#draggable5').css({
+                            color: 'transparent',
+                            borderColor: 'transparent',
+                            opacity: 0.8,
+                            transform: 'scale(1)',
+                            borderWidth: '1px',
+                            paddingTop: '4px',
+                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat',
+                            zIndex: '1000'
+                        });
+                    } else if (count_animation > 95 && count_animation <= 100){
+                        jQuery('#draggable5').css({
+                            background: 'rgba(255,255,255, 0.5)',
+                            color: 'red',
+                            borderColor: 'red',
+                            opacity: 1,
+                            transform: 'scale(0.5)',
+                            borderWidth: '2px',
+                            paddingTop: '2px',
+                            zIndex: '1'
+                        });
+                        jQuery('#draggableVD').css({
+                            color: 'transparent',
+                            borderColor: 'transparent',
+                            opacity: 0.8,
+                            transform: 'scale(1)',
+                            borderWidth: '1px',
+                            paddingTop: '4px',
+                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat',
+                            zIndex: '1000'
+                        });
+                    } else if (count_animation > 100 && count_animation <= 105){
                         jQuery('#draggableVD').css({
                             background: 'rgba(255,255,255, 0.5)',
                             color: 'red',
@@ -4074,7 +4116,7 @@ resource = function(){
                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat',
                             zIndex: '1000'
                         });
-                    } else if (count_animation > 95 && count_animation <= 100){
+                    } else if (count_animation > 105 && count_animation <= 110){
                         jQuery('#draggable0').css({
                             background: 'rgba(255,255,255, 0.5)',
                             color: 'red',
@@ -4095,7 +4137,7 @@ resource = function(){
                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat',
                             zIndex: '1000'
                         });
-                    } else if (count_animation > 100 && count_animation <= 105){
+                    } else if (count_animation > 110 && count_animation <= 115){
                         jQuery('#draggable2').css({
                             background: 'rgba(255,255,255, 0.5)',
                             color: 'red',
@@ -4116,50 +4158,8 @@ resource = function(){
                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat',
                             zIndex: '1000'
                         });
-                    } else if (count_animation > 105 && count_animation <= 110){
-                        jQuery('#draggable3').css({
-                            background: 'rgba(255,255,255, 0.5)',
-                            color: 'red',
-                            borderColor: 'red',
-                            opacity: 1,
-                            transform: 'scale(0.5)',
-                            borderWidth: '2px',
-                            paddingTop: '2px',
-                            zIndex: '1'
-                        });
-                        jQuery('#draggable4').css({
-                            color: 'transparent',
-                            borderColor: 'transparent',
-                            opacity: 0.8,
-                            transform: 'scale(1)',
-                            borderWidth: '1px',
-                            paddingTop: '4px',
-                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat',
-                            zIndex: '1000'
-                        });
-                    } else if (count_animation > 110 && count_animation <= 115){
-                        jQuery('#draggable4').css({
-                            background: 'rgba(255,255,255, 0.5)',
-                            color: 'red',
-                            borderColor: 'red',
-                            opacity: 1,
-                            transform: 'scale(0.5)',
-                            borderWidth: '2px',
-                            paddingTop: '2px',
-                            zIndex: '1'
-                        });
-                        jQuery('#draggable5').css({
-                            color: 'transparent',
-                            borderColor: 'transparent',
-                            opacity: 0.8,
-                            transform: 'scale(1)',
-                            borderWidth: '1px',
-                            paddingTop: '4px',
-                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat',
-                            zIndex: '1000'
-                        });
                     } else if (count_animation > 115 && count_animation <= 120){
-                        jQuery('#draggable5').css({
+                        jQuery('#draggable3').css({
                             background: 'rgba(255,255,255, 0.5)',
                             color: 'red',
                             borderColor: 'red',
