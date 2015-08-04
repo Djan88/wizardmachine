@@ -3728,7 +3728,7 @@ resource = function(){
                             paddingTop: '2px',
                             zIndex: '1'
                         });
-                        jQuery('#draggable3').css({
+                        jQuery('#draggable4').css({
                             color: 'transparent',
                             borderColor: 'transparent',
                             opacity: 0.8,
@@ -3739,7 +3739,7 @@ resource = function(){
                             zIndex: '1000'
                         });
                     } else if (count_animation > 15 && count_animation <= 20){
-                        jQuery('#draggable3').css({
+                        jQuery('#draggable4').css({
                             background: 'rgba(255,255,255, 0.5)',
                             color: 'red',
                             borderColor: 'red',
@@ -3833,7 +3833,7 @@ resource = function(){
                             paddingTop: '2px',
                             zIndex: '1'
                         });
-                        jQuery('#draggable3').css({
+                        jQuery('#draggable4').css({
                             color: 'transparent',
                             borderColor: 'transparent',
                             opacity: 0.8,
@@ -3844,7 +3844,7 @@ resource = function(){
                             zIndex: '1000'
                         });
                     } else if (count_animation > 40 && count_animation <= 45){
-                        jQuery('#draggable3').css({
+                        jQuery('#draggable4').css({
                             background: 'rgba(255,255,255, 0.5)',
                             color: 'red',
                             borderColor: 'red',
@@ -3938,7 +3938,7 @@ resource = function(){
                             paddingTop: '2px',
                             zIndex: '1'
                         });
-                        jQuery('#draggable3').css({
+                        jQuery('#draggable4').css({
                             color: 'transparent',
                             borderColor: 'transparent',
                             opacity: 0.8,
@@ -3949,7 +3949,7 @@ resource = function(){
                             zIndex: '1000'
                         });
                     } else if (count_animation > 65 && count_animation <= 70){
-                        jQuery('#draggable3').css({
+                        jQuery('#draggable4').css({
                             background: 'rgba(255,255,255, 0.5)',
                             color: 'red',
                             borderColor: 'red',
@@ -4043,7 +4043,7 @@ resource = function(){
                             paddingTop: '2px',
                             zIndex: '1'
                         });
-                        jQuery('#draggable3').css({
+                        jQuery('#draggable4').css({
                             color: 'transparent',
                             borderColor: 'transparent',
                             opacity: 0.8,
@@ -4054,7 +4054,7 @@ resource = function(){
                             zIndex: '1000'
                         });
                     } else if (count_animation > 90 && count_animation <= 95){
-                        jQuery('#draggable3').css({
+                        jQuery('#draggable4').css({
                             background: 'rgba(255,255,255, 0.5)',
                             color: 'red',
                             borderColor: 'red',
@@ -4148,7 +4148,7 @@ resource = function(){
                             paddingTop: '2px',
                             zIndex: '1'
                         });
-                        jQuery('#draggable3').css({
+                        jQuery('#draggable4').css({
                             color: 'transparent',
                             borderColor: 'transparent',
                             opacity: 0.8,
@@ -4159,7 +4159,7 @@ resource = function(){
                             zIndex: '1000'
                         });
                     } else if (count_animation > 115 && count_animation <= 120){
-                        jQuery('#draggable3').css({
+                        jQuery('#draggable4').css({
                             background: 'rgba(255,255,255, 0.5)',
                             color: 'red',
                             borderColor: 'red',
