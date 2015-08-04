@@ -4238,7 +4238,7 @@ resource = function(){
                                     paddingTop: '2px',
                                     zIndex: '1'
                                 });
-                                jQuery('#draggableS_2').css({
+                                jQuery('#draggableS2_1').css({
                                     color: 'transparent',
                                     borderColor: 'transparent',
                                     opacity: 0.8,
@@ -4249,7 +4249,7 @@ resource = function(){
                                     zIndex: '1000'
                                 });
                             } else if (count_animation > 15 && count_animation <= 20){
-                                jQuery('#draggableS_2').css({
+                                jQuery('#draggableS2_1').css({
                                     background: 'rgba(255,255,255, 0.5)',
                                     color: 'red',
                                     borderColor: 'red',
@@ -4532,7 +4532,7 @@ resource = function(){
                                     paddingTop: '2px',
                                     zIndex: '1'
                                 });
-                                jQuery('#draggableS_2').css({
+                                jQuery('#draggableS2_1').css({
                                     color: 'transparent',
                                     borderColor: 'transparent',
                                     opacity: 0.8,
@@ -4543,7 +4543,7 @@ resource = function(){
                                     zIndex: '1000'
                                 });
                             } else if (count_animation > 85 && count_animation <= 90){
-                                jQuery('#draggableS_2').css({
+                                jQuery('#draggableS2_1').css({
                                     background: 'rgba(255,255,255, 0.5)',
                                     color: 'red',
                                     borderColor: 'red',
@@ -5768,7 +5768,7 @@ resource = function(){
                                                             paddingTop: '2px',
                                                             zIndex: '1'
                                                         });
-                                                        jQuery('#draggableS_2').css({
+                                                        jQuery('#draggableS2_1').css({
                                                             color: 'transparent',
                                                             borderColor: 'transparent',
                                                             opacity: 0.8,
@@ -5779,7 +5779,7 @@ resource = function(){
                                                             zIndex: '1000'
                                                         });
                                                     } else if (count_animation > 15 && count_animation <= 20){
-                                                        jQuery('#draggableS_2').css({
+                                                        jQuery('#draggableS2_1').css({
                                                             background: 'rgba(255,255,255, 0.5)',
                                                             color: 'red',
                                                             borderColor: 'red',
@@ -6062,7 +6062,7 @@ resource = function(){
                                                             paddingTop: '2px',
                                                             zIndex: '1'
                                                         });
-                                                        jQuery('#draggableS_2').css({
+                                                        jQuery('#draggableS2_1').css({
                                                             color: 'transparent',
                                                             borderColor: 'transparent',
                                                             opacity: 0.8,
@@ -6073,7 +6073,7 @@ resource = function(){
                                                             zIndex: '1000'
                                                         });
                                                     } else if (count_animation > 85 && count_animation <= 90){
-                                                        jQuery('#draggableS_2').css({
+                                                        jQuery('#draggableS2_1').css({
                                                             background: 'rgba(255,255,255, 0.5)',
                                                             color: 'red',
                                                             borderColor: 'red',
@@ -7298,7 +7298,7 @@ resource = function(){
                                                                                     paddingTop: '2px',
                                                                                     zIndex: '1'
                                                                                 });
-                                                                                jQuery('#draggableS_2').css({
+                                                                                jQuery('#draggableS2_1').css({
                                                                                     color: 'transparent',
                                                                                     borderColor: 'transparent',
                                                                                     opacity: 0.8,
@@ -7309,7 +7309,7 @@ resource = function(){
                                                                                     zIndex: '1000'
                                                                                 });
                                                                             } else if (count_animation > 15 && count_animation <= 20){
-                                                                                jQuery('#draggableS_2').css({
+                                                                                jQuery('#draggableS2_1').css({
                                                                                     background: 'rgba(255,255,255, 0.5)',
                                                                                     color: 'red',
                                                                                     borderColor: 'red',
@@ -7592,7 +7592,7 @@ resource = function(){
                                                                                     paddingTop: '2px',
                                                                                     zIndex: '1'
                                                                                 });
-                                                                                jQuery('#draggableS_2').css({
+                                                                                jQuery('#draggableS2_1').css({
                                                                                     color: 'transparent',
                                                                                     borderColor: 'transparent',
                                                                                     opacity: 0.8,
@@ -7603,7 +7603,7 @@ resource = function(){
                                                                                     zIndex: '1000'
                                                                                 });
                                                                             } else if (count_animation > 85 && count_animation <= 90){
-                                                                                jQuery('#draggableS_2').css({
+                                                                                jQuery('#draggableS2_1').css({
                                                                                     background: 'rgba(255,255,255, 0.5)',
                                                                                     color: 'red',
                                                                                     borderColor: 'red',
@@ -8828,7 +8828,7 @@ resource = function(){
                                                                                                             paddingTop: '2px',
                                                                                                             zIndex: '1'
                                                                                                         });
-                                                                                                        jQuery('#draggableS_2').css({
+                                                                                                        jQuery('#draggableS2_1').css({
                                                                                                             color: 'transparent',
                                                                                                             borderColor: 'transparent',
                                                                                                             opacity: 0.8,
@@ -8839,7 +8839,7 @@ resource = function(){
                                                                                                             zIndex: '1000'
                                                                                                         });
                                                                                                     } else if (count_animation > 15 && count_animation <= 20){
-                                                                                                        jQuery('#draggableS_2').css({
+                                                                                                        jQuery('#draggableS2_1').css({
                                                                                                             background: 'rgba(255,255,255, 0.5)',
                                                                                                             color: 'red',
                                                                                                             borderColor: 'red',
@@ -9122,7 +9122,7 @@ resource = function(){
                                                                                                             paddingTop: '2px',
                                                                                                             zIndex: '1'
                                                                                                         });
-                                                                                                        jQuery('#draggableS_2').css({
+                                                                                                        jQuery('#draggableS2_1').css({
                                                                                                             color: 'transparent',
                                                                                                             borderColor: 'transparent',
                                                                                                             opacity: 0.8,
@@ -9133,7 +9133,7 @@ resource = function(){
                                                                                                             zIndex: '1000'
                                                                                                         });
                                                                                                     } else if (count_animation > 85 && count_animation <= 90){
-                                                                                                        jQuery('#draggableS_2').css({
+                                                                                                        jQuery('#draggableS2_1').css({
                                                                                                             background: 'rgba(255,255,255, 0.5)',
                                                                                                             color: 'red',
                                                                                                             borderColor: 'red',
