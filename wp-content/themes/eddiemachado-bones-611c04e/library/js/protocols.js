@@ -3168,7 +3168,7 @@ resource = function(){
                 transform: 'scale(1)',
                 borderWidth: '1px',
                 paddingTop: '4px',
-                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
+                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat',
                 zIndex: '1000'
             });
             jQuery('#draggable3').css({
@@ -3178,7 +3178,7 @@ resource = function(){
             if (count_animation > 0 && count_animation <= 5){
                 jQuery('#draggableD_1').css({
                     transform: 'scale(1)',
-                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
+                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat',
                 });
             } else if (count_animation > 5 && count_animation <= 10){
                 jQuery('#draggableD_1').css({
@@ -3198,7 +3198,7 @@ resource = function(){
                     transform: 'scale(1)',
                     borderWidth: '1px',
                     paddingTop: '4px',
-                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
+                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat',
                     zIndex: '1000'
                 });
             } else if (count_animation > 10 && count_animation <= 15){
@@ -3219,7 +3219,7 @@ resource = function(){
                     transform: 'scale(1)',
                     borderWidth: '1px',
                     paddingTop: '4px',
-                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
+                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat',
                     zIndex: '1000'
                 });
             } else if (count_animation > 15 && count_animation <= 20){
@@ -3240,7 +3240,7 @@ resource = function(){
                     transform: 'scale(1)',
                     borderWidth: '1px',
                     paddingTop: '4px',
-                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
+                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat',
                     zIndex: '1000'
                 });
             } else if (count_animation > 20 && count_animation <= 25){
@@ -3261,7 +3261,7 @@ resource = function(){
                     transform: 'scale(1)',
                     borderWidth: '1px',
                     paddingTop: '4px',
-                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
+                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat',
                     zIndex: '1000'
                 });
             } else if (count_animation > 25 && count_animation <= 30){
@@ -3282,7 +3282,7 @@ resource = function(){
                     transform: 'scale(1)',
                     borderWidth: '1px',
                     paddingTop: '4px',
-                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
+                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat',
                     zIndex: '1000'
                 });
             } else if (count_animation > 30 && count_animation <= 35){
@@ -3303,7 +3303,7 @@ resource = function(){
                     transform: 'scale(1)',
                     borderWidth: '1px',
                     paddingTop: '4px',
-                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
+                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat',
                     zIndex: '1000'
                 });
             } else if (count_animation > 35 && count_animation <= 40){
@@ -3324,7 +3324,7 @@ resource = function(){
                     transform: 'scale(1)',
                     borderWidth: '1px',
                     paddingTop: '4px',
-                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
+                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat',
                     zIndex: '1000'
                 });
             } else if (count_animation > 40 && count_animation <= 45){
@@ -3345,7 +3345,7 @@ resource = function(){
                     transform: 'scale(1)',
                     borderWidth: '1px',
                     paddingTop: '4px',
-                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
+                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat',
                     zIndex: '1000'
                 });
             } else if (count_animation > 45 && count_animation <= 50){
@@ -3366,7 +3366,7 @@ resource = function(){
                     transform: 'scale(1)',
                     borderWidth: '1px',
                     paddingTop: '4px',
-                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
+                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat',
                     zIndex: '1000'
                 });
             } else if (count_animation > 50 && count_animation <= 55){
@@ -3387,7 +3387,7 @@ resource = function(){
                     transform: 'scale(1)',
                     borderWidth: '1px',
                     paddingTop: '4px',
-                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
+                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat',
                     zIndex: '1000'
                 });
             } else if (count_animation > 55 && count_animation <= 60){
@@ -3408,7 +3408,7 @@ resource = function(){
                     transform: 'scale(1)',
                     borderWidth: '1px',
                     paddingTop: '4px',
-                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
+                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat',
                     zIndex: '1000'
                 });
             } else if (count_animation > 60 && count_animation <= 65){
@@ -3429,7 +3429,7 @@ resource = function(){
                     transform: 'scale(1)',
                     borderWidth: '1px',
                     paddingTop: '4px',
-                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
+                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat',
                     zIndex: '1000'
                 });
             } else if (count_animation > 65 && count_animation <= 70){
@@ -3450,7 +3450,7 @@ resource = function(){
                     transform: 'scale(1)',
                     borderWidth: '1px',
                     paddingTop: '4px',
-                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
+                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat',
                     zIndex: '1000'
                 });
             } else if (count_animation > 70 && count_animation <= 75){
@@ -3471,7 +3471,7 @@ resource = function(){
                     transform: 'scale(1)',
                     borderWidth: '1px',
                     paddingTop: '4px',
-                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
+                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat',
                     zIndex: '1000'
                 });
             } else if (count_animation > 75 && count_animation <= 80){
@@ -3492,7 +3492,7 @@ resource = function(){
                     transform: 'scale(1)',
                     borderWidth: '1px',
                     paddingTop: '4px',
-                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
+                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat',
                     zIndex: '1000'
                 });
             } else if (count_animation > 80 && count_animation <= 85){
@@ -3513,7 +3513,7 @@ resource = function(){
                     transform: 'scale(1)',
                     borderWidth: '1px',
                     paddingTop: '4px',
-                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
+                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat',
                     zIndex: '1000'
                 });
             } else if (count_animation > 85 && count_animation <= 90){
@@ -3534,7 +3534,7 @@ resource = function(){
                     transform: 'scale(1)',
                     borderWidth: '1px',
                     paddingTop: '4px',
-                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
+                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat',
                     zIndex: '1000'
                 });
             } else if (count_animation > 90 && count_animation <= 95){
@@ -3555,7 +3555,7 @@ resource = function(){
                     transform: 'scale(1)',
                     borderWidth: '1px',
                     paddingTop: '4px',
-                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
+                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat',
                     zIndex: '1000'
                 });
             } else if (count_animation > 95 && count_animation <= 100){
@@ -3576,7 +3576,7 @@ resource = function(){
                     transform: 'scale(1)',
                     borderWidth: '1px',
                     paddingTop: '4px',
-                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
+                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat',
                     zIndex: '1000'
                 });
             } else if (count_animation > 100 && count_animation <= 105){
@@ -3597,7 +3597,7 @@ resource = function(){
                     transform: 'scale(1)',
                     borderWidth: '1px',
                     paddingTop: '4px',
-                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
+                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat',
                     zIndex: '1000'
                 });
             } else if (count_animation > 105 && count_animation <= 110){
@@ -3618,7 +3618,7 @@ resource = function(){
                     transform: 'scale(1)',
                     borderWidth: '1px',
                     paddingTop: '4px',
-                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
+                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat',
                     zIndex: '1000'
                 });
             } else if (count_animation > 110 && count_animation <= 115){
@@ -3639,7 +3639,7 @@ resource = function(){
                     transform: 'scale(1)',
                     borderWidth: '1px',
                     paddingTop: '4px',
-                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
+                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat',
                     zIndex: '1000'
                 });
             } else if (count_animation > 115 && count_animation <= 120){
@@ -3660,7 +3660,7 @@ resource = function(){
                     transform: 'scale(1)',
                     borderWidth: '1px',
                     paddingTop: '4px',
-                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
+                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat',
                     zIndex: '1000'
                 });
             }
