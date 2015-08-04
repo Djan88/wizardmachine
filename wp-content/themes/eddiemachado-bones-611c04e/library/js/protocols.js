@@ -4195,19 +4195,491 @@ resource = function(){
                     count_animation = 1;
                     phaseOne = setInterval(function(){
                         if (count_animation <= 120){                                                                         //120
-                            jQuery('#draggableS_1, #draggableS2, #draggableS2_1, #draggableS3, #draggableS4, #draggableS5, #draggableS6').css({
-                                color: 'transparent',
-                                borderColor: 'transparent',
-                                opacity: 0.8,
-                                transform: 'scale(1)',
-                                borderWidth: '1px',
-                                paddingTop: '4px',
-                                zIndex: '1000'
-                            });
-                            jQuery('#draggableS_1, #draggableS2, #draggableS2_1, #draggableS3, #draggableS4, #draggableS5, #draggableS6').css({
-                                transform: 'scale(1)',
-                                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
-                            });
+                            if (count_animation > 0 && count_animation <= 5){
+                                jQuery('#draggableS_1').css({
+                                    color: 'transparent',
+                                    borderColor: 'transparent',
+                                    opacity: 0.8,
+                                    transform: 'scale(1)',
+                                    borderWidth: '1px',
+                                    paddingTop: '4px',
+                                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat',
+                                    zIndex: '1000'
+                                });
+                            } else if (count_animation > 5 && count_animation <= 10){
+                                jQuery('#draggableS_1').css({
+                                    background: 'rgba(255,255,255, 0.5)',
+                                    color: 'red',
+                                    borderColor: 'red',
+                                    opacity: 1,
+                                    transform: 'scale(0.5)',
+                                    borderWidth: '2px',
+                                    paddingTop: '2px',
+                                    zIndex: '1'
+                                });
+                                jQuery('#draggableS2').css({
+                                    color: 'transparent',
+                                    borderColor: 'transparent',
+                                    opacity: 0.8,
+                                    transform: 'scale(1)',
+                                    borderWidth: '1px',
+                                    paddingTop: '4px',
+                                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat',
+                                    zIndex: '1000'
+                                });
+                            } else if (count_animation > 10 && count_animation <= 15){
+                                jQuery('#draggableS2').css({
+                                    background: 'rgba(255,255,255, 0.5)',
+                                    color: 'red',
+                                    borderColor: 'red',
+                                    opacity: 1,
+                                    transform: 'scale(0.5)',
+                                    borderWidth: '2px',
+                                    paddingTop: '2px',
+                                    zIndex: '1'
+                                });
+                                jQuery('#draggableS_2').css({
+                                    color: 'transparent',
+                                    borderColor: 'transparent',
+                                    opacity: 0.8,
+                                    transform: 'scale(1)',
+                                    borderWidth: '1px',
+                                    paddingTop: '4px',
+                                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat',
+                                    zIndex: '1000'
+                                });
+                            } else if (count_animation > 15 && count_animation <= 20){
+                                jQuery('#draggableS_2').css({
+                                    background: 'rgba(255,255,255, 0.5)',
+                                    color: 'red',
+                                    borderColor: 'red',
+                                    opacity: 1,
+                                    transform: 'scale(0.5)',
+                                    borderWidth: '2px',
+                                    paddingTop: '2px',
+                                    zIndex: '1'
+                                });
+                                jQuery('#draggableS3').css({
+                                    color: 'transparent',
+                                    borderColor: 'transparent',
+                                    opacity: 0.8,
+                                    transform: 'scale(1)',
+                                    borderWidth: '1px',
+                                    paddingTop: '4px',
+                                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat',
+                                    zIndex: '1000'
+                                });
+                            } else if (count_animation > 20 && count_animation <= 25){
+                                jQuery('#draggableS3').css({
+                                    background: 'rgba(255,255,255, 0.5)',
+                                    color: 'red',
+                                    borderColor: 'red',
+                                    opacity: 1,
+                                    transform: 'scale(0.5)',
+                                    borderWidth: '2px',
+                                    paddingTop: '2px',
+                                    zIndex: '1'
+                                });
+                                jQuery('#draggableS4').css({
+                                    color: 'transparent',
+                                    borderColor: 'transparent',
+                                    opacity: 0.8,
+                                    transform: 'scale(1)',
+                                    borderWidth: '1px',
+                                    paddingTop: '4px',
+                                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat',
+                                    zIndex: '1000'
+                                });
+                            } else if (count_animation > 25 && count_animation <= 30){
+                                jQuery('#draggableS4').css({
+                                    background: 'rgba(255,255,255, 0.5)',
+                                    color: 'red',
+                                    borderColor: 'red',
+                                    opacity: 1,
+                                    transform: 'scale(0.5)',
+                                    borderWidth: '2px',
+                                    paddingTop: '2px',
+                                    zIndex: '1'
+                                });
+                                jQuery('#draggableS5').css({
+                                    color: 'transparent',
+                                    borderColor: 'transparent',
+                                    opacity: 0.8,
+                                    transform: 'scale(1)',
+                                    borderWidth: '1px',
+                                    paddingTop: '4px',
+                                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat',
+                                    zIndex: '1000'
+                                });
+                            } else if (count_animation > 30 && count_animation <= 35){
+                                jQuery('#draggableS5').css({
+                                    background: 'rgba(255,255,255, 0.5)',
+                                    color: 'red',
+                                    borderColor: 'red',
+                                    opacity: 1,
+                                    transform: 'scale(0.5)',
+                                    borderWidth: '2px',
+                                    paddingTop: '2px',
+                                    zIndex: '1'
+                                });
+                                jQuery('#draggableS6').css({
+                                    color: 'transparent',
+                                    borderColor: 'transparent',
+                                    opacity: 0.8,
+                                    transform: 'scale(1)',
+                                    borderWidth: '1px',
+                                    paddingTop: '4px',
+                                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat',
+                                    zIndex: '1000'
+                                });
+                            } else if (count_animation > 35 && count_animation <= 40){
+                                jQuery('#draggableS6').css({
+                                    background: 'rgba(255,255,255, 0.5)',
+                                    color: 'red',
+                                    borderColor: 'red',
+                                    opacity: 1,
+                                    transform: 'scale(0.5)',
+                                    borderWidth: '2px',
+                                    paddingTop: '2px',
+                                    zIndex: '1'
+                                });
+                                jQuery('#draggableS_1').css({
+                                    color: 'transparent',
+                                    borderColor: 'transparent',
+                                    opacity: 0.8,
+                                    transform: 'scale(1)',
+                                    borderWidth: '1px',
+                                    paddingTop: '4px',
+                                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat',
+                                    zIndex: '1000'
+                                });
+                            } else if (count_animation > 40 && count_animation <= 45){
+                                jQuery('#draggableS_1').css({
+                                    background: 'rgba(255,255,255, 0.5)',
+                                    color: 'red',
+                                    borderColor: 'red',
+                                    opacity: 1,
+                                    transform: 'scale(0.5)',
+                                    borderWidth: '2px',
+                                    paddingTop: '2px',
+                                    zIndex: '1'
+                                });
+                                jQuery('#draggableS2').css({
+                                    color: 'transparent',
+                                    borderColor: 'transparent',
+                                    opacity: 0.8,
+                                    transform: 'scale(1)',
+                                    borderWidth: '1px',
+                                    paddingTop: '4px',
+                                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat',
+                                    zIndex: '1000'
+                                });
+                            } else if (count_animation > 45 && count_animation <= 50){
+                                jQuery('#draggableS2').css({
+                                    background: 'rgba(255,255,255, 0.5)',
+                                    color: 'red',
+                                    borderColor: 'red',
+                                    opacity: 1,
+                                    transform: 'scale(0.5)',
+                                    borderWidth: '2px',
+                                    paddingTop: '2px',
+                                    zIndex: '1'
+                                });
+                                jQuery('#draggableS2_1').css({
+                                    color: 'transparent',
+                                    borderColor: 'transparent',
+                                    opacity: 0.8,
+                                    transform: 'scale(1)',
+                                    borderWidth: '1px',
+                                    paddingTop: '4px',
+                                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat',
+                                    zIndex: '1000'
+                                });
+                            } else if (count_animation > 50 && count_animation <= 55){
+                                jQuery('#draggableS2_1').css({
+                                    background: 'rgba(255,255,255, 0.5)',
+                                    color: 'red',
+                                    borderColor: 'red',
+                                    opacity: 1,
+                                    transform: 'scale(0.5)',
+                                    borderWidth: '2px',
+                                    paddingTop: '2px',
+                                    zIndex: '1'
+                                });
+                                jQuery('#draggableS3').css({
+                                    color: 'transparent',
+                                    borderColor: 'transparent',
+                                    opacity: 0.8,
+                                    transform: 'scale(1)',
+                                    borderWidth: '1px',
+                                    paddingTop: '4px',
+                                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat',
+                                    zIndex: '1000'
+                                });
+                            } else if (count_animation > 55 && count_animation <= 60){
+                                jQuery('#draggableD3').css({
+                                    background: 'rgba(255,255,255, 0.5)',
+                                    color: 'red',
+                                    borderColor: 'red',
+                                    opacity: 1,
+                                    transform: 'scale(0.5)',
+                                    borderWidth: '2px',
+                                    paddingTop: '2px',
+                                    zIndex: '1'
+                                });
+                                jQuery('#draggableS4').css({
+                                    color: 'transparent',
+                                    borderColor: 'transparent',
+                                    opacity: 0.8,
+                                    transform: 'scale(1)',
+                                    borderWidth: '1px',
+                                    paddingTop: '4px',
+                                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat',
+                                    zIndex: '1000'
+                                });
+                            } else if (count_animation > 60 && count_animation <= 65){
+                                jQuery('#draggableS4').css({
+                                    background: 'rgba(255,255,255, 0.5)',
+                                    color: 'red',
+                                    borderColor: 'red',
+                                    opacity: 1,
+                                    transform: 'scale(0.5)',
+                                    borderWidth: '2px',
+                                    paddingTop: '2px',
+                                    zIndex: '1'
+                                });
+                                jQuery('#draggableS5').css({
+                                    color: 'transparent',
+                                    borderColor: 'transparent',
+                                    opacity: 0.8,
+                                    transform: 'scale(1)',
+                                    borderWidth: '1px',
+                                    paddingTop: '4px',
+                                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat',
+                                    zIndex: '1000'
+                                });
+                            } else if (count_animation > 65 && count_animation <= 70){
+                                jQuery('#draggableS5').css({
+                                    background: 'rgba(255,255,255, 0.5)',
+                                    color: 'red',
+                                    borderColor: 'red',
+                                    opacity: 1,
+                                    transform: 'scale(0.5)',
+                                    borderWidth: '2px',
+                                    paddingTop: '2px',
+                                    zIndex: '1'
+                                });
+                                jQuery('#draggableS6').css({
+                                    color: 'transparent',
+                                    borderColor: 'transparent',
+                                    opacity: 0.8,
+                                    transform: 'scale(1)',
+                                    borderWidth: '1px',
+                                    paddingTop: '4px',
+                                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat',
+                                    zIndex: '1000'
+                                });
+                            } else if (count_animation > 70 && count_animation <= 75){
+                                jQuery('#draggableS6').css({
+                                    background: 'rgba(255,255,255, 0.5)',
+                                    color: 'red',
+                                    borderColor: 'red',
+                                    opacity: 1,
+                                    transform: 'scale(0.5)',
+                                    borderWidth: '2px',
+                                    paddingTop: '2px',
+                                    zIndex: '1'
+                                });
+                                jQuery('#draggableS_1').css({
+                                    color: 'transparent',
+                                    borderColor: 'transparent',
+                                    opacity: 0.8,
+                                    transform: 'scale(1)',
+                                    borderWidth: '1px',
+                                    paddingTop: '4px',
+                                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat',
+                                    zIndex: '1000'
+                                });
+                            } else if (count_animation > 75 && count_animation <= 80){
+                                jQuery('#draggableS_1').css({
+                                    background: 'rgba(255,255,255, 0.5)',
+                                    color: 'red',
+                                    borderColor: 'red',
+                                    opacity: 1,
+                                    transform: 'scale(0.5)',
+                                    borderWidth: '2px',
+                                    paddingTop: '2px',
+                                    zIndex: '1'
+                                });
+                                jQuery('#draggableS2').css({
+                                    color: 'transparent',
+                                    borderColor: 'transparent',
+                                    opacity: 0.8,
+                                    transform: 'scale(1)',
+                                    borderWidth: '1px',
+                                    paddingTop: '4px',
+                                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat',
+                                    zIndex: '1000'
+                                });
+                            } else if (count_animation > 80 && count_animation <= 85){
+                                jQuery('#draggableS2').css({
+                                    background: 'rgba(255,255,255, 0.5)',
+                                    color: 'red',
+                                    borderColor: 'red',
+                                    opacity: 1,
+                                    transform: 'scale(0.5)',
+                                    borderWidth: '2px',
+                                    paddingTop: '2px',
+                                    zIndex: '1'
+                                });
+                                jQuery('#draggableS_2').css({
+                                    color: 'transparent',
+                                    borderColor: 'transparent',
+                                    opacity: 0.8,
+                                    transform: 'scale(1)',
+                                    borderWidth: '1px',
+                                    paddingTop: '4px',
+                                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat',
+                                    zIndex: '1000'
+                                });
+                            } else if (count_animation > 85 && count_animation <= 90){
+                                jQuery('#draggableS_2').css({
+                                    background: 'rgba(255,255,255, 0.5)',
+                                    color: 'red',
+                                    borderColor: 'red',
+                                    opacity: 1,
+                                    transform: 'scale(0.5)',
+                                    borderWidth: '2px',
+                                    paddingTop: '2px',
+                                    zIndex: '1'
+                                });
+                                jQuery('#draggableS3').css({
+                                    color: 'transparent',
+                                    borderColor: 'transparent',
+                                    opacity: 0.8,
+                                    transform: 'scale(1)',
+                                    borderWidth: '1px',
+                                    paddingTop: '4px',
+                                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat',
+                                    zIndex: '1000'
+                                });
+                            } else if (count_animation > 90 && count_animation <= 95){
+                                jQuery('#draggableS3').css({
+                                    background: 'rgba(255,255,255, 0.5)',
+                                    color: 'red',
+                                    borderColor: 'red',
+                                    opacity: 1,
+                                    transform: 'scale(0.5)',
+                                    borderWidth: '2px',
+                                    paddingTop: '2px',
+                                    zIndex: '1'
+                                });
+                                jQuery('#draggableS4').css({
+                                    color: 'transparent',
+                                    borderColor: 'transparent',
+                                    opacity: 0.8,
+                                    transform: 'scale(1)',
+                                    borderWidth: '1px',
+                                    paddingTop: '4px',
+                                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat',
+                                    zIndex: '1000'
+                                });
+                            } else if (count_animation > 95 && count_animation <= 100){
+                                jQuery('#draggableS4').css({
+                                    background: 'rgba(255,255,255, 0.5)',
+                                    color: 'red',
+                                    borderColor: 'red',
+                                    opacity: 1,
+                                    transform: 'scale(0.5)',
+                                    borderWidth: '2px',
+                                    paddingTop: '2px',
+                                    zIndex: '1'
+                                });
+                                jQuery('#draggableS5').css({
+                                    color: 'transparent',
+                                    borderColor: 'transparent',
+                                    opacity: 0.8,
+                                    transform: 'scale(1)',
+                                    borderWidth: '1px',
+                                    paddingTop: '4px',
+                                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat',
+                                    zIndex: '1000'
+                                });
+                            } else if (count_animation > 100 && count_animation <= 105){
+                                jQuery('#draggableS5').css({
+                                    background: 'rgba(255,255,255, 0.5)',
+                                    color: 'red',
+                                    borderColor: 'red',
+                                    opacity: 1,
+                                    transform: 'scale(0.5)',
+                                    borderWidth: '2px',
+                                    paddingTop: '2px',
+                                    zIndex: '1'
+                                });
+                                jQuery('#draggableS6').css({
+                                    color: 'transparent',
+                                    borderColor: 'transparent',
+                                    opacity: 0.8,
+                                    transform: 'scale(1)',
+                                    borderWidth: '1px',
+                                    paddingTop: '4px',
+                                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat',
+                                    zIndex: '1000'
+                                });
+                            } else if (count_animation > 105 && count_animation <= 110){
+                                jQuery('#draggableS6').css({
+                                    background: 'rgba(255,255,255, 0.5)',
+                                    color: 'red',
+                                    borderColor: 'red',
+                                    opacity: 1,
+                                    transform: 'scale(0.5)',
+                                    borderWidth: '2px',
+                                    paddingTop: '2px',
+                                    zIndex: '1'
+                                });
+                                jQuery('#draggableS_1').css({
+                                    color: 'transparent',
+                                    borderColor: 'transparent',
+                                    opacity: 0.8,
+                                    transform: 'scale(1)',
+                                    borderWidth: '1px',
+                                    paddingTop: '4px',
+                                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat',
+                                    zIndex: '1000'
+                                });
+                            } else if (count_animation > 110 && count_animation <= 115){
+                                jQuery('#draggableS_1').css({
+                                    background: 'rgba(255,255,255, 0.5)',
+                                    color: 'red',
+                                    borderColor: 'red',
+                                    opacity: 1,
+                                    transform: 'scale(0.5)',
+                                    borderWidth: '2px',
+                                    paddingTop: '2px',
+                                    zIndex: '1'
+                                });
+                                jQuery('#draggableS2').css({
+                                    color: 'transparent',
+                                    borderColor: 'transparent',
+                                    opacity: 0.8,
+                                    transform: 'scale(1)',
+                                    borderWidth: '1px',
+                                    paddingTop: '4px',
+                                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat',
+                                    zIndex: '1000'
+                                });
+                            } else if (count_animation > 115 && count_animation <= 120){
+                                jQuery('#draggableS2').css({
+                                    background: 'rgba(255,255,255, 0.5)',
+                                    color: 'red',
+                                    borderColor: 'red',
+                                    opacity: 1,
+                                    transform: 'scale(0.5)',
+                                    borderWidth: '2px',
+                                    paddingTop: '2px',
+                                    zIndex: '1'
+                                });
+                            }
                             count_animation += 1;
                         } else {
                             clearInterval(phaseOne);
