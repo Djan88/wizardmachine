@@ -3161,7 +3161,7 @@ resource = function(){
     count_animation = 1;
     phaseOne = setInterval(function(){
         if (count_animation <= 120){                                                                         //120
-            jQuery('#draggable3, #draggableD1, #draggableD2, #draggableD3, #draggableD4, #draggableD5, #draggableD_6').css({
+            jQuery('#draggable3, #draggableD_1, #draggableD2, #draggableD3, #draggableD4, #draggableD5, #draggableD_6').css({
                 color: 'transparent',
                 borderColor: 'transparent',
                 opacity: 0.8,
@@ -3174,7 +3174,7 @@ resource = function(){
                 transform: 'scale(1)',
                 background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/edinenie_s_tvorcom.jpg) 0 0/100% no-repeat'
             });
-            jQuery('#draggableD1, #draggableD2, #draggableD3, #draggableD4, #draggableD5, #draggableD_6').css({
+            jQuery('#draggableD_1, #draggableD2, #draggableD3, #draggableD4, #draggableD5, #draggableD_6').css({
                 transform: 'scale(1)',
                 background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
             });
@@ -3182,7 +3182,7 @@ resource = function(){
         } else {
             clearInterval(phaseOne);
             count_animation = 1;
-            jQuery('#draggableD1, #draggableD2, #draggableD3, #draggableD4, #draggableD5, #draggableD_6').css({
+            jQuery('#draggableD_1, #draggableD2, #draggableD3, #draggableD4, #draggableD5, #draggableD_6').css({
                 background: 'rgba(255,255,255, 0.5)',
                 color: 'red',
                 borderColor: 'red',
@@ -3241,7 +3241,7 @@ resource = function(){
                     count_animation = 1;
                     phaseOne = setInterval(function(){
                         if (count_animation <= 120){                                                                         //120
-                            jQuery('#draggableS1, #draggableS2, #draggableS2_1, #draggableS3, #draggableS4, #draggableS5, #draggableS6').css({
+                            jQuery('#draggableS_1, #draggableS2, #draggableS2_1, #draggableS3, #draggableS4, #draggableS5, #draggableS6').css({
                                 color: 'transparent',
                                 borderColor: 'transparent',
                                 opacity: 0.8,
@@ -3250,7 +3250,7 @@ resource = function(){
                                 paddingTop: '4px',
                                 zIndex: '1000'
                             });
-                            jQuery('#draggableS1, #draggableS2, #draggableS2_1, #draggableS3, #draggableS4, #draggableS5, #draggableS6').css({
+                            jQuery('#draggableS_1, #draggableS2, #draggableS2_1, #draggableS3, #draggableS4, #draggableS5, #draggableS6').css({
                                 transform: 'scale(1)',
                                 background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
                             });
@@ -3258,7 +3258,7 @@ resource = function(){
                         } else {
                             clearInterval(phaseOne);
                             count_animation = 1;
-                            jQuery('#draggableS1, #draggableS2, #draggableS2_1, #draggableS3, #draggableS4, #draggableS5, #draggableS6').css({
+                            jQuery('#draggableS_1, #draggableS2, #draggableS2_1, #draggableS3, #draggableS4, #draggableS5, #draggableS6').css({
                                 background: 'rgba(255,255,255, 0.5)',
                                 color: 'red',
                                 borderColor: 'red',
@@ -3279,7 +3279,7 @@ resource = function(){
                             count_animation = 1;
                             phaseOne = setInterval(function(){
                                 if (count_animation <= 120){                                                                         //120
-                                    jQuery('#draggableD1, #draggableD2, #draggableD3, #draggableD4, #draggableD5, #draggableD_6').css({
+                                    jQuery('#draggableD_1, #draggableD2, #draggableD3, #draggableD4, #draggableD5, #draggableD_6').css({
                                         color: 'transparent',
                                         borderColor: 'transparent',
                                         opacity: 0.8,
@@ -3288,7 +3288,7 @@ resource = function(){
                                         paddingTop: '4px',
                                         zIndex: '1000'
                                     });
-                                    jQuery('#draggableD1, #draggableD2, #draggableD3, #draggableD4, #draggableD5, #draggableD_6').css({
+                                    jQuery('#draggableD_1, #draggableD2, #draggableD3, #draggableD4, #draggableD5, #draggableD_6').css({
                                         transform: 'scale(1)',
                                         background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
                                     });
@@ -3296,7 +3296,7 @@ resource = function(){
                                 } else {
                                     clearInterval(phaseOne);
                                     count_animation = 1;
-                                    jQuery('#draggableD1, #draggableD2, #draggableD3, #draggableD4, #draggableD5, #draggableD_6').css({
+                                    jQuery('#draggableD_1, #draggableD2, #draggableD3, #draggableD4, #draggableD5, #draggableD_6').css({
                                         background: 'rgba(255,255,255, 0.5)',
                                         color: 'red',
                                         borderColor: 'red',
@@ -3355,7 +3355,7 @@ resource = function(){
                                             count_animation = 1;
                                             phaseOne = setInterval(function(){
                                                 if (count_animation <= 120){                                                                         //120
-                                                    jQuery('#draggableS1, #draggableS2, #draggableS2_1, #draggableS3, #draggableS4, #draggableS5, #draggableS6').css({
+                                                    jQuery('#draggableS_1, #draggableS2, #draggableS2_1, #draggableS3, #draggableS4, #draggableS5, #draggableS6').css({
                                                         color: 'transparent',
                                                         borderColor: 'transparent',
                                                         opacity: 0.8,
@@ -3364,7 +3364,7 @@ resource = function(){
                                                         paddingTop: '4px',
                                                         zIndex: '1000'
                                                     });
-                                                    jQuery('#draggableS1, #draggableS2, #draggableS2_1, #draggableS3, #draggableS4, #draggableS5, #draggableS6').css({
+                                                    jQuery('#draggableS_1, #draggableS2, #draggableS2_1, #draggableS3, #draggableS4, #draggableS5, #draggableS6').css({
                                                         transform: 'scale(1)',
                                                         background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
                                                     });
@@ -3372,7 +3372,7 @@ resource = function(){
                                                 } else {
                                                     clearInterval(phaseOne);
                                                     count_animation = 1;
-                                                    jQuery('#draggableS1, #draggableS2, #draggableS2_1, #draggableS3, #draggableS4, #draggableS5, #draggableS6').css({
+                                                    jQuery('#draggableS_1, #draggableS2, #draggableS2_1, #draggableS3, #draggableS4, #draggableS5, #draggableS6').css({
                                                         background: 'rgba(255,255,255, 0.5)',
                                                         color: 'red',
                                                         borderColor: 'red',
@@ -3393,7 +3393,7 @@ resource = function(){
                                                     count_animation = 1;
                                                     phaseOne = setInterval(function(){
                                                         if (count_animation <= 120){                                                                         //120
-                                                            jQuery('#draggableD1, #draggableD2, #draggableD3, #draggableD4, #draggableD5, #draggableD_6').css({
+                                                            jQuery('#draggableD_1, #draggableD2, #draggableD3, #draggableD4, #draggableD5, #draggableD_6').css({
                                                                 color: 'transparent',
                                                                 borderColor: 'transparent',
                                                                 opacity: 0.8,
@@ -3402,7 +3402,7 @@ resource = function(){
                                                                 paddingTop: '4px',
                                                                 zIndex: '1000'
                                                             });
-                                                            jQuery('#draggableD1, #draggableD2, #draggableD3, #draggableD4, #draggableD5, #draggableD_6').css({
+                                                            jQuery('#draggableD_1, #draggableD2, #draggableD3, #draggableD4, #draggableD5, #draggableD_6').css({
                                                                 transform: 'scale(1)',
                                                                 background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
                                                             });
@@ -3410,7 +3410,7 @@ resource = function(){
                                                         } else {
                                                             clearInterval(phaseOne);
                                                             count_animation = 1;
-                                                            jQuery('#draggableD1, #draggableD2, #draggableD3, #draggableD4, #draggableD5, #draggableD_6').css({
+                                                            jQuery('#draggableD_1, #draggableD2, #draggableD3, #draggableD4, #draggableD5, #draggableD_6').css({
                                                                 background: 'rgba(255,255,255, 0.5)',
                                                                 color: 'red',
                                                                 borderColor: 'red',
@@ -3469,7 +3469,7 @@ resource = function(){
                                                                     count_animation = 1;
                                                                     phaseOne = setInterval(function(){
                                                                         if (count_animation <= 120){                                                                         //120
-                                                                            jQuery('#draggableS1, #draggableS2, #draggableS2_1, #draggableS3, #draggableS4, #draggableS5, #draggableS6').css({
+                                                                            jQuery('#draggableS_1, #draggableS2, #draggableS2_1, #draggableS3, #draggableS4, #draggableS5, #draggableS6').css({
                                                                                 color: 'transparent',
                                                                                 borderColor: 'transparent',
                                                                                 opacity: 0.8,
@@ -3478,7 +3478,7 @@ resource = function(){
                                                                                 paddingTop: '4px',
                                                                                 zIndex: '1000'
                                                                             });
-                                                                            jQuery('#draggableS1, #draggableS2, #draggableS2_1, #draggableS3, #draggableS4, #draggableS5, #draggableS6').css({
+                                                                            jQuery('#draggableS_1, #draggableS2, #draggableS2_1, #draggableS3, #draggableS4, #draggableS5, #draggableS6').css({
                                                                                 transform: 'scale(1)',
                                                                                 background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
                                                                             });
@@ -3486,7 +3486,7 @@ resource = function(){
                                                                         } else {
                                                                             clearInterval(phaseOne);
                                                                             count_animation = 1;
-                                                                            jQuery('#draggableS1, #draggableS2, #draggableS2_1, #draggableS3, #draggableS4, #draggableS5, #draggableS6').css({
+                                                                            jQuery('#draggableS_1, #draggableS2, #draggableS2_1, #draggableS3, #draggableS4, #draggableS5, #draggableS6').css({
                                                                                 background: 'rgba(255,255,255, 0.5)',
                                                                                 color: 'red',
                                                                                 borderColor: 'red',
@@ -3507,7 +3507,7 @@ resource = function(){
                                                                             count_animation = 1;
                                                                             phaseOne = setInterval(function(){
                                                                                 if (count_animation <= 120){                                                                         //120
-                                                                                    jQuery('#draggableD1, #draggableD2, #draggableD3, #draggableD4, #draggableD5, #draggableD_6').css({
+                                                                                    jQuery('#draggableD_1, #draggableD2, #draggableD3, #draggableD4, #draggableD5, #draggableD_6').css({
                                                                                         color: 'transparent',
                                                                                         borderColor: 'transparent',
                                                                                         opacity: 0.8,
@@ -3516,7 +3516,7 @@ resource = function(){
                                                                                         paddingTop: '4px',
                                                                                         zIndex: '1000'
                                                                                     });
-                                                                                    jQuery('#draggableD1, #draggableD2, #draggableD3, #draggableD4, #draggableD5, #draggableD_6').css({
+                                                                                    jQuery('#draggableD_1, #draggableD2, #draggableD3, #draggableD4, #draggableD5, #draggableD_6').css({
                                                                                         transform: 'scale(1)',
                                                                                         background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
                                                                                     });
@@ -3524,7 +3524,7 @@ resource = function(){
                                                                                 } else {
                                                                                     clearInterval(phaseOne);
                                                                                     count_animation = 1;
-                                                                                    jQuery('#draggableD1, #draggableD2, #draggableD3, #draggableD4, #draggableD5, #draggableD_6').css({
+                                                                                    jQuery('#draggableD_1, #draggableD2, #draggableD3, #draggableD4, #draggableD5, #draggableD_6').css({
                                                                                         background: 'rgba(255,255,255, 0.5)',
                                                                                         color: 'red',
                                                                                         borderColor: 'red',
@@ -3583,7 +3583,7 @@ resource = function(){
                                                                                             count_animation = 1;
                                                                                             phaseOne = setInterval(function(){
                                                                                                 if (count_animation <= 120){                                                                         //120
-                                                                                                    jQuery('#draggable3, #draggableS1, #draggableS2, #draggableS2_1, #draggableS3, #draggableS4, #draggableS5, #draggableS6').css({
+                                                                                                    jQuery('#draggable3, #draggableS_1, #draggableS2, #draggableS2_1, #draggableS3, #draggableS4, #draggableS5, #draggableS6').css({
                                                                                                         color: 'transparent',
                                                                                                         borderColor: 'transparent',
                                                                                                         opacity: 0.8,
@@ -3592,7 +3592,7 @@ resource = function(){
                                                                                                         paddingTop: '4px',
                                                                                                         zIndex: '1000'
                                                                                                     });
-                                                                                                    jQuery('#draggableS1, #draggableS2, #draggableS2_1, #draggableS3, #draggableS4, #draggableS5, #draggableS6').css({
+                                                                                                    jQuery('#draggableS_1, #draggableS2, #draggableS2_1, #draggableS3, #draggableS4, #draggableS5, #draggableS6').css({
                                                                                                         transform: 'scale(1)',
                                                                                                         background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
                                                                                                     });
@@ -3600,7 +3600,7 @@ resource = function(){
                                                                                                 } else {
                                                                                                     clearInterval(phaseOne);
                                                                                                     count_animation = 1;
-                                                                                                    jQuery('#draggable3, #draggableS1, #draggableS2, #draggableS2_1, #draggableS3, #draggableS4, #draggableS5, #draggableS6').css({
+                                                                                                    jQuery('#draggable3, #draggableS_1, #draggableS2, #draggableS2_1, #draggableS3, #draggableS4, #draggableS5, #draggableS6').css({
                                                                                                         background: 'rgba(255,255,255, 0.5)',
                                                                                                         color: 'red',
                                                                                                         borderColor: 'red',
