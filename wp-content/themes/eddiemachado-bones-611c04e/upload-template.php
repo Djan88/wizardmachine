@@ -57,8 +57,8 @@
                         <div>«Беспокойство о том, что произойдет, ускорение мышления и действий, недовольство собой и заниженная самооценка:  «… опоздаю, не успею… а вдруг случиться... а что будет…  а кто что скажет/подумает про меня… а как я буду выглядеть в глазах окружающих…  я стараюсь все лучшим образом делать…"  и  далее, в этом роде.»<div class="btn btn_lg btn_success btn_choice" data-protocol ="v4" data-protocol-name ="V4">Выбрать</div></div>
                         <h3><span class="protocol_acent">(V5)</span>«ИРРАЦИОНАЛЬНОЕ, ВИТАЛЬНАЯ СИЛА»</h3>
                         <div>«Иррациональное. Ощущение непреодолимой и целиком захватывающей  силы и энергии.Насильственное следование некой жизненной стратегии, витальные страхи.»<div class="btn btn_lg btn_success btn_choice" data-protocol ="v5" data-protocol-name ="V5">Выбрать</div></div>
-                        <h3><span class="protocol_acent">(РЕСУРС)</span>«РЕСУРСНЫЙ ПРОТОКОЛ»</h3>
-                        <div>«Ощущение непреодолимой и целиком захватывающей  силы.Насильственное следование некой жизненной стратегии, повторяющиеся обстоятельства жизни, витальные страхи.NB! Протокол на ручном управлении, предназначен для продвинутых пользователей! Проводит синхронизацию телесных и внетелесных ресурсных зон c калибровкой по зонам вентральной оси (V). Начинать терапию следует с актуальной зоны, либо с V3. Выбор ресурсной внетелесной зоны и постановку на ней формулы щелчком мышки компьютера терапевт производит самостоятельно, путем  перцептивного выбора. В целях безопасности предусмотрено автоматическое отключение протокола через 30 секунд простоя!»
+                        <h3><span class="protocol_acent">(РЕСУРС)</span>«РЕАКТИВАЦИЯ РЕСУРСА»</h3>
+                        <div>«Протокол предназначен для реактивации зон DSV тела ума. Настоятельное рекомендуется проводить в 3-ю четверть Луны - с первого дня убывающей луны (с первого дня, после полнолуния) вплоть до половины убывающей Луны.»
                             <!-- <div class="zone-choice_wrap"> -->
                                 <!-- <div class="zone-choice_item"><input class="v-zone" type="radio" name="radiobutton" value="#draggable1" id="V1"><label for="V1">V1</label></div> -->
                                 <!-- <div class="zone-choice_item"><input class="v-zone" type="radio" name="radiobutton" value="#draggable2" id="V2"><label for="V2">V2</label></div>
@@ -66,7 +66,7 @@
                                 <div class="zone-choice_item"><input class="v-zone" type="radio" name="radiobutton" value="#draggable4" id="V4"><label for="V4">V4</label></div>
                                 <div class="zone-choice_item"><input class="v-zone" type="radio" name="radiobutton" value="#draggable5" id="V5"><label for="V5">V5</label></div>
                             </div> -->
-                            <div class="btn btn_lg btn_success btn_choice" data-protocol ="resource" data-protocol-name ="РЕСУРС">Выбрать</div>
+                            <div class="btn btn_lg btn_success btn_choice" data-protocol ="resource" data-protocol-name ="РЕАКТИВАЦИЯ РЕСУРСА">Выбрать</div>
                         </div>
                     </div>
                 </div>
