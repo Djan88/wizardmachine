@@ -9452,7 +9452,7 @@ face = function(){
                             jQuery('#draggableD2').css({
                                 transform: 'rotate('+cur_animation_val+'deg) scale(1)',
                                 background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/superdisfunction.png) 0 0/100% no-repeat'
-                            });
+                            }); 
                             jQuery('#draggable0').css({
                                 background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
                             });
