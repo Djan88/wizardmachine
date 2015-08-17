@@ -185,11 +185,7 @@ jQuery('.work-area').find('.returned').draggable();
             .addClass('animated')
             .addClass('fadeIn');
         jQuery('.itemlist-two').append(croppedImg);
-        jQuery('.work-area').find('.returned').draggable({
-            stop: function(event, ui){
-                console.log(event);
-            }
-        });        
+        jQuery('.work-area').find('.returned').draggable();        
         jQuery('.knife-wrap').css('height', jQuery('.itemlist-two').height()+20+'px');
     }
     // Переход с экрана диагноситки ножом
