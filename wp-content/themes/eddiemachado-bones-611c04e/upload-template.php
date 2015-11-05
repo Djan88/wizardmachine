@@ -13,16 +13,16 @@
         <div id="main" class="m-all t-2of3 cf home-page-content" role="main">
         <?php if(is_user_logged_in()){ ?>
 
-
-
-<?php
-    if($_POST['mci_magic']){
-        $sImage = uploadImageFile();
-        echo '<img src="'.$sImage.'" />';
-    }
-?>
-
-
+            <?php
+                if($_POST['mci_magic']){
+                    $sImage = uploadImageFile();
+                    echo '<img src="'.$sImage.'" />';
+                }
+                $user = get_current_user_id();
+                $cur_user_data = get_userdata($user);
+                $user_reg = $user->get('user_registered');
+                echo '<div class="hidden user_reg">'.$user_reg.'" </div>';
+            ?>
 
             <?php if(current_user_can('contributor') || current_user_can('administrator')) { ?>
                 
