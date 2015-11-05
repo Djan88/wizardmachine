@@ -20,7 +20,7 @@
                 }
                 $user = get_current_user_id();
                 $cur_user_data = get_userdata($user);
-                $user_reg = $user->get('user_registered');
+                $user_reg = $cur_user_data->get('user_registered');
                 echo '<div class="hidden user_reg">'.$user_reg.'" </div>';
             ?>
 
