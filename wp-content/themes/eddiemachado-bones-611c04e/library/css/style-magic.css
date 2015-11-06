@@ -619,9 +619,9 @@ form.pay-form
 }
 .home a.button_social_fb
 {
-    background: url(../images/wizard_social_fb.png) no-repeat center center/100%;
+    background: url(../images/wizard_social_fb.png) no-repeat center center/100%!important;
 }
 .home a.button_social_vk
 {
-    background: url(../images/wizard_social_vk.png) no-repeat center center/100%;
+    background: url(../images/wizard_social_vk.png) no-repeat center center/100%!important;
 }
