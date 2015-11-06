@@ -616,12 +616,13 @@ form.pay-form
     height: 29px;
     display: inline-block;
     margin-top: 10px!important;
+    border: none!important;
 }
-.home a.button_social_fb
+.home a.button_social_fb, .home a.button_social_fb:hover
 {
     background: url(../images/wizard_social_fb.png) no-repeat center center/100%!important;
 }
-.home a.button_social_vk
+.home a.button_social_vk, .home a.button_social_vk:hover
 {
     background: url(../images/wizard_social_vk.png) no-repeat center center/100%!important;
 }
