@@ -610,18 +610,18 @@ form.pay-form
     margin-top: 15px;
     color: #204371;
 }
-.button_social
+.home a.button_social
 {
     width: 29px;
     height: 29px;
     display: inline-block;
     margin-top: 10px!important;
 }
-.button_social_fb
+.home a.button_social_fb
 {
     background: url(../images/wizard_social_fb.png) no-repeat center center/100%;
 }
-.button_social_vk
+.home a.button_social_vk
 {
     background: url(../images/wizard_social_vk.png) no-repeat center center/100%;
 }
