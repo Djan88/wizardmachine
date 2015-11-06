@@ -56,8 +56,8 @@
                         <a href="/wp-content/uploads/2015/02/Osnovy_biologicheskogo_tsentrirovania.compressed.pdf" target="_blank" class="button button-primary button-large button__main">Книга "Биологическое центрирование"</a>
                         <a href="https://www.youtube.com/watch?v=ZZPjJGX-BM4" target="_blank" class="button button-primary button-large button__main">Видео</a>
                         <a href="http://wizardduos.ru/" target="_blank" class="button button-primary button-large button__main">"Wizard Duos"</a></br>
-                        <a href="https://www.facebook.com/yuchikurov" target="_blank" class="button button-primary button-large button__main"><img src="<?php echo get_template_directory_uri(); ?>/library/images/wizard_social_fb.png" alt="facebook"></a>
-                        <a href="https://vk.com/id139677998" target="_blank" class="button button-primary button-large button__main"><img src="<?php echo get_template_directory_uri(); ?>/library/images/wizard_social_vk.png" alt="vkontakte"></a>
+                        <a href="https://www.facebook.com/yuchikurov" target="_blank" class="button button-primary button-large button__main button_social button_social_fb"><img src="<?php echo get_template_directory_uri(); ?>/library/images/wizard_social_fb.png" alt="facebook"></a>
+                        <a href="https://vk.com/id139677998" target="_blank" class="button button-primary button-large button__main button_social button_social_vk"><img src="<?php echo get_template_directory_uri(); ?>/library/images/wizard_social_vk.png" alt="vkontakte"></a>
                         <!-- <a href="http://help.yandex.ru/common/support/screenshot.xml" target="_blank" class="button button-primary button-large button__main">Как сделать "скриншот" экрана</a> -->
                         <!-- <div><a href="/pay/" target="_blank" class="btn btn_lg btn_trans" style="margin-top: 10px; margin-left: 15px;">Оплата доступа</a></div> -->
                         <!-- <div><a href="/consultation/" target="_blank" class="btn btn_lg btn_trans" style="margin-top: 10px; margin-left: 15px;">Оплата консультации</a></div> -->
