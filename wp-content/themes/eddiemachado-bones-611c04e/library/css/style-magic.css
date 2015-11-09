@@ -616,9 +616,8 @@ form.pay-form
     height: 29px;
     display: inline-block;
     margin-top: 10px!important;
-    border: none!important;
     text-transform: none;
-    font-size: 35px!important;
+    font-size: 19px!important;
     padding: 0;
 }
 .home a.button_social_fb, .home a.button_social_fb:hover
