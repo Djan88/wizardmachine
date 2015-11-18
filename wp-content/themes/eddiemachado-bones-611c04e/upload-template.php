@@ -21,11 +21,7 @@
                 $user = get_current_user_id();
                 $cur_user_data = get_userdata($user);
                 $user_reg = $cur_user_data->get('user_registered');
-                $dt_elements = explode(' ',$user_reg);
                 $year_val = 31622400;
-                $date_elements = explode('/',$dt_elements[0]);
-                $time_elements =  explode(':',$dt_elements[1]);
-                $sorted_reg_data = mktime($time_elements[0], $time_elements[1],$time_elements[2], $date_elements[1],$date_elements[2], $date_elements[0]);
                 $regtime = strtotime($user_reg);
                 $cur_data = time();
                 $ratio = $cur_data - $regtime;
