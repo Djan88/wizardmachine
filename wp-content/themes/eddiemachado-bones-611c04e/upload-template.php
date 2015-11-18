@@ -24,7 +24,7 @@
                 $year_val = 31536000;
                 $regtime = strtotime($user_reg);
                 $cur_data = time();
-                $ratio = $cur_data - $regtime;
+                $ratio = $year_val - ($cur_data - $regtime);
                 echo '<div class="hidden user_reg"> Текущая дата- '.$cur_data.', Дата регистрации- '.$user_reg.', Дата преобразованная регистрации- '.$regtime.'" </div><div class="hidden user_reg"> Разница= '.$ratio.'" </div>';
             ?>
 
