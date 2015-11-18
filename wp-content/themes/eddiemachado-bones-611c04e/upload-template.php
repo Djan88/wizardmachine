@@ -21,7 +21,7 @@
                 $user = get_current_user_id();
                 $cur_user_data = get_userdata($user);
                 $user_reg = $cur_user_data->get('user_registered');
-                $year_val = 31622400;
+                $year_val = 31536000;
                 $regtime = strtotime($user_reg);
                 $cur_data = time();
                 $ratio = $cur_data - $regtime;
