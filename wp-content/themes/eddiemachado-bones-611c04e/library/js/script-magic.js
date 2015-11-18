@@ -256,7 +256,7 @@ jQuery( ".btn__wizard" ).on('click', function(event) {
                     console.log('нет протокола с id '+ protocol)
                 }
         }  
-    }
+    // }
     main_heading();
 });
 //Быстрая смена протокола
