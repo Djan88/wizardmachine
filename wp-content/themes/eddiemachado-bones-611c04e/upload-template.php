@@ -26,9 +26,10 @@
                 $date_elements = explode('/',$dt_elements[0]);
                 $time_elements =  explode(':',$dt_elements[1]);
                 $sorted_reg_data = mktime($time_elements[0], $time_elements[1],$time_elements[2], $date_elements[1],$date_elements[2], $date_elements[0]);
+                $regtime = strtotime($date_elements);
                 $cur_data = time();
                 $ratio = $cur_data - $sorted_reg_data;
-                echo '<div class="hidden user_reg"> Текущая дата- '.$cur_data.', Дата регистрации- '.$user_reg.', Дата преобразованная регистрации- '.$sorted_reg_data.'" </div><div class="hidden user_reg"> Разница= '.$ratio.'" </div>';
+                echo '<div>strtotime '.$regtime.'</div><div class="hidden user_reg"> Текущая дата- '.$cur_data.', Дата регистрации- '.$user_reg.', Дата преобразованная регистрации- '.$sorted_reg_data.'" </div><div class="hidden user_reg"> Разница= '.$ratio.'" </div>';
             ?>
 
             <?php if(current_user_can('contributor') || current_user_can('administrator')) { ?>
