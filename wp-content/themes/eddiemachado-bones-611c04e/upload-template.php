@@ -36,9 +36,11 @@
                     <div class="fancybox-hidden" style="display: none;">
                       <div id="contact_form_pop">
                         <h5 class="heading">Заполните форму</h5>
+                        <hr>
                         <?php echo do_shortcode('[contact-form-7 id="89" title="Заголовок"]'); ?>
                         <h5 class="heading">или позвоните по телефону</h5>
-                        <h3 class="heading">+7 (495) 255-05-61</h3>
+                        <hr>
+                        <h3 class="heading">+7 (495) 255-05-61 — Роман</h3>
                       </div>
                     </div>
                 </div>
