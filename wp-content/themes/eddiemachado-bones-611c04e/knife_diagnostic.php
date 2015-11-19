@@ -69,6 +69,7 @@
                   <div class="btn btn_sm btn_warning fast-protocol" data-fast="v4" data-protocol-name ="V4">V4</div> 
                   <div class="btn btn_sm btn_warning fast-protocol" data-fast="v5" data-protocol-name ="V5">V5</div>
                   <div class="btn btn_sm btn_warning fast-protocol" data-fast="resource" data-protocol-name ="РЕСУРС">РЕСУРС</div>
+                  <div class="btn btn_sm btn_warning fast-protocol" data-fast="solis" data-protocol-name ="SOLIS">SOLIS</div>
                 </div>
                 <!-- <div class="fast-protocol-resource clearfix hidden"> -->
                   <!-- <div class="btn btn_sm btn_warning fast-v" data-v='#draggable1'>V1</div>  -->
@@ -149,16 +150,9 @@
                         <h3><span class="protocol_acent">(V5)</span>«ИРРАЦИОНАЛЬНОЕ, ВИТАЛЬНАЯ СИЛА»</h3>
                         <div>«Иррациональное. Ощущение непреодолимой и целиком захватывающей  силы и энергии.Насильственное следование некой жизненной стратегии, витальные страхи.»<div class="btn btn_lg btn_success btn_choice" data-protocol ="v5" data-protocol-name ="V5">Выбрать</div></div>
                         <h3><span class="protocol_acent">(РЕСУРС)</span>«РЕАКТИВАЦИЯ РЕСУРСА»</h3>
-                        <div>«Протокол предназначен для реактивации зон DSV тела ума. Настоятельное рекомендуется проводить в 3-ю четверть Луны - с первого дня убывающей луны (с первого дня, после полнолуния) вплоть до половины убывающей Луны.»
-                            <!-- <div class="zone-choice_wrap"> -->
-                                <!-- <div class="zone-choice_item"><input class="v-zone" type="radio" name="radiobutton" value="#draggable1" id="V1"><label for="V1">V1</label></div> -->
-                                <!-- <div class="zone-choice_item"><input class="v-zone" type="radio" name="radiobutton" value="#draggable2" id="V2"><label for="V2">V2</label></div>
-                                <div class="zone-choice_item"><input class="v-zone" type="radio" name="radiobutton" checked="checked" value="#draggable3" id="V3"><label for="V3">V3</label></div>
-                                <div class="zone-choice_item"><input class="v-zone" type="radio" name="radiobutton" value="#draggable4" id="V4"><label for="V4">V4</label></div>
-                                <div class="zone-choice_item"><input class="v-zone" type="radio" name="radiobutton" value="#draggable5" id="V5"><label for="V5">V5</label></div>
-                            </div> -->
-                            <div class="btn btn_lg btn_success btn_choice" data-protocol ="resource" data-protocol-name ="РЕАКТИВАЦИЯ РЕСУРСА">Выбрать</div>
-                        </div>
+                        <div>«Протокол предназначен для реактивации зон DSV тела ума. Настоятельное рекомендуется проводить в 3-ю четверть Луны - с первого дня убывающей луны (с первого дня, после полнолуния) вплоть до половины убывающей Луны.»<div class="btn btn_lg btn_success btn_choice" data-protocol ="resource" data-protocol-name ="РЕАКТИВАЦИЯ РЕСУРСА">Выбрать</div></div>
+                        <h3><span class="protocol_acent">(SOLIS)</span>«SOLIS»</h3>
+                        <div>«SOLIS»<div class="btn btn_lg btn_success btn_choice" data-protocol ="solis" data-protocol-name ="SOLIS">Выбрать</div></div>
                     </div>
                 </div>
                 <div class="machine_screen work-area clearfix hidden">

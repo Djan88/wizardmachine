@@ -252,6 +252,8 @@ jQuery( ".btn__wizard" ).on('click', function(event) {
                     face();
                 } else if(protocol == 'resource'){
                     resource();
+                } else if(protocol == 'solis'){
+                    solis();
                 } else{
                     console.log('нет протокола с id '+ protocol)
                 }
