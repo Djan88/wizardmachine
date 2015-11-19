@@ -32,7 +32,7 @@
                 <div class="machine_screen clearfix">
                     <h3 class="heading heading_dashboard">Срок действия вашей лицензии истек</h3>
                     <h4 class="heading">Вы можете продлить лицензию на 1 год со скидкой 50%</h4>
-                    <div class="btn btn_lg btn_success btn_licens fancybox">Продлить</div>
+                    <a href="#contact_form_pop" class="btn btn_lg btn_success btn_licens fancybox">Продлить</a>
                     <div class="fancybox-hidden" style="display: none;">
                       <div id="contact_form_pop"><?php echo do_shortcode('[contact-form-7 id="89" title="Заголовок"]'); ?></div>
                     </div>
