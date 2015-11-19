@@ -21,6 +21,8 @@
                 $user = get_current_user_id();
                 $cur_user_data = get_userdata($user);
                 $user_reg = $cur_user_data->get('user_registered');
+                $user_login = $cur_user_data->get('user_login');
+                $user_email = $cur_user_data->get('user_email');
                 $year_val = 31536000;
                 $regtime = strtotime($user_reg);
                 $cur_data = time();
@@ -31,6 +33,17 @@
             <?php if(current_user_can('contributor') && $ratio > 0) { ?>
                 <div class="machine_screen clearfix" style="text-align:center;">
                     <h2 class="heading heading_dashboard">Срок действия вашей лицензии истек</h2>
+                    <table>
+                      <tr>
+                        <th>Ваш логин</th><td><?php echo $user_login; ?></td>
+                      </tr>
+                      <tr>
+                        <th>Дата активации лицензии</th><td><?php echo $user_reg; ?></td>
+                      </tr>
+                      <tr>
+                        <th>Ваш email </th><td><?php echo $user_mail; ?></td>
+                      </tr>
+                    </table>
                     <h3 class="heading">Вы можете продлить лицензию на 1 год со скидкой 50%</h3>
                     <a href="#contact_form_pop" class="btn btn_lg btn_success btn_licens fancybox">Продлить лицензию</a>
                     <div class="fancybox-hidden" style="display: none;">
