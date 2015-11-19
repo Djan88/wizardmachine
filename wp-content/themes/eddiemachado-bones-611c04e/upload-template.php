@@ -28,7 +28,13 @@
                 echo '<div class="hidden user_reg"> Текущая дата- '.$cur_data.', Дата регистрации- '.$user_reg.', Дата преобразованная регистрации- '.$regtime.'" </div><div class="hidden user_reg"> Разница= '.$ratio.'" </div>';
             ?>
 
-            <?php if(current_user_can('contributor') || current_user_can('administrator')) { ?>
+            <?php if(current_user_can('contributor') && $ratio > 0) { ?>
+                <div class="machine_screen clearfix">
+                    <h3 class="heading heading_dashboard">Срок действия вашей лицензии истек</h3>
+                    <h4 class="heading">Вы можете продлить лицензию на 1 год со скидкой 50%</h4>
+                    <div class="btn btn_lg btn_success btn_licens">Продлить</div>
+                </div>
+            <?php } else if(current_user_can('contributor') || current_user_can('administrator')) { ?>
                 
                 <div class="fast-protocol-wrap clearfix hidden">
                   <div class="btn btn_sm btn_warning fast-protocol" data-fast="face" data-protocol-name ="V1">V1</div>
