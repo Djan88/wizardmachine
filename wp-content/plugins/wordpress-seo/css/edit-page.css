@@ -13,10 +13,6 @@
 }
 
 .wpseo-score-icon.ok {
-	background-color: #ffba00;
-}
-
-.wpseo-score-icon.poor {
 	background-color: #ee7c1b;
 }
 
@@ -33,11 +29,14 @@
 }
 
 th#wpseo-score {
-	width: 60px;
+	width: 63px;
 }
 
 @media screen and ( max-width: 782px ) {
-	.column-wpseo-title, .column-wpseo-score, .column-wpseo-metadesc, .column-wpseo-focuskw {
+	.column-wpseo-title,
+	.column-wpseo-score,
+	.column-wpseo-metadesc,
+	.column-wpseo-focuskw {
 		display: none;
 	}
 }

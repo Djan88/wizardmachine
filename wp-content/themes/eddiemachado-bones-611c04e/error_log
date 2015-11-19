@@ -1,0 +1,2 @@
+[19-Jul-2015 16:07:01 Europe/Simferopol] PHP Fatal error:  Call to undefined function get_header() in /home/machinemagic/public_html/wp-content/themes/eddiemachado-bones-611c04e/404.php on line 1
+[19-Sep-2015 03:03:23 Europe/Simferopol] PHP Fatal error:  Call to undefined function post_password_required() in /home/machinemagic/public_html/wp-content/themes/eddiemachado-bones-611c04e/comments.php on line 7
