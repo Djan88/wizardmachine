@@ -31,10 +31,15 @@
             <?php if(current_user_can('contributor') && $ratio > 0) { ?>
                 <div class="machine_screen clearfix" style="text-align:center;">
                     <h2 class="heading heading_dashboard">Срок действия вашей лицензии истек</h2>
-                    <h4 class="heading">Вы можете продлить лицензию на 1 год со скидкой 50%</h4>
-                    <a href="#contact_form_pop" class="btn btn_lg btn_success btn_licens fancybox">Продлить</a>
+                    <h3 class="heading">Вы можете продлить лицензию на 1 год со скидкой 50%</h3>
+                    <a href="#contact_form_pop" class="btn btn_lg btn_success btn_licens fancybox">Продлить лицензию</a>
                     <div class="fancybox-hidden" style="display: none;">
-                      <div id="contact_form_pop"><?php echo do_shortcode('[contact-form-7 id="89" title="Заголовок"]'); ?></div>
+                      <div id="contact_form_pop">
+                        <h5 class="heading">Заполните форму</h5>
+                        <?php echo do_shortcode('[contact-form-7 id="89" title="Заголовок"]'); ?>
+                        <h5 class="heading">или позвоните по телефону</h5>
+                        <h3 class="heading">+7 (495) 255-05-61</h3>
+                      </div>
                     </div>
                 </div>
             <?php } else if(current_user_can('contributor') || current_user_can('administrator')) { ?>
