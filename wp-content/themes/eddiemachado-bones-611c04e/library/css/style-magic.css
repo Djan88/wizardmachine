@@ -638,4 +638,5 @@ form.pay-form
 {
     border: 1px solid #555;
     border-collapse: collapse;
+    padding: 5px;
 }

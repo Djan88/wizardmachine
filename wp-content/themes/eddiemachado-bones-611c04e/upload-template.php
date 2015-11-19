@@ -33,15 +33,16 @@
             <?php if(current_user_can('contributor') && $ratio > 0) { ?>
                 <div class="machine_screen clearfix" style="text-align:center;">
                     <h2 class="heading heading_dashboard">Срок действия вашей лицензии истек</h2>
+                    <h3 class="heading">Информация по вашему аккаунту</h3>
                     <table class="user_info">
                       <tr>
                         <th>Ваш логин</th><td><?php echo $user_login; ?></td>
                       </tr>
                       <tr>
-                        <th>Дата активации лицензии</th><td><?php echo $user_reg; ?></td>
+                        <th>Ваш email </th><td><?php echo $user_mail; ?></td>
                       </tr>
                       <tr>
-                        <th>Ваш email </th><td><?php echo $user_mail; ?></td>
+                        <th>Дата активации лицензии</th><td><?php echo $user_reg; ?></td>
                       </tr>
                     </table>
                     <h3 class="heading">Вы можете продлить лицензию на 1 год со скидкой 50%</h3>
@@ -49,6 +50,7 @@
                     <div class="fancybox-hidden" style="display: none;">
                       <div id="contact_form_pop">
                         <h5 class="heading">Заполните форму</h5>
+                        <h6 class="heading">Внесите данные по вашему аккаунту из таблицы выше</h6>
                         <hr>
                         <?php echo do_shortcode('[contact-form-7 id="89" title="Заголовок"]'); ?>
                         <h5 class="heading">или позвоните по телефону</h5>
