@@ -152,6 +152,7 @@ input {
 }
 .steps
 {
+    transition: all 1s linear;
     margin-bottom: 55px;
 }
 .step
@@ -639,4 +640,8 @@ form.pay-form
     border: 1px solid #555;
     border-collapse: collapse;
     padding: 5px;
+}
+.steps.solis
+{
+    margin-bottom: 200px;
 }
