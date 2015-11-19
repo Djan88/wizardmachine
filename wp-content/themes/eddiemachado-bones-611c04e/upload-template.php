@@ -29,8 +29,8 @@
             ?>
 
             <?php if(current_user_can('contributor') && $ratio > 0) { ?>
-                <div class="machine_screen clearfix">
-                    <h3 class="heading heading_dashboard">Срок действия вашей лицензии истек</h3>
+                <div class="machine_screen clearfix" style="text-align:center;">
+                    <h2 class="heading heading_dashboard">Срок действия вашей лицензии истек</h2>
                     <h4 class="heading">Вы можете продлить лицензию на 1 год со скидкой 50%</h4>
                     <a href="#contact_form_pop" class="btn btn_lg btn_success btn_licens fancybox">Продлить</a>
                     <div class="fancybox-hidden" style="display: none;">
