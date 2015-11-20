@@ -9873,8 +9873,224 @@ solis = function(){
             });
             count_animation = 1;
             sound.play();
-            jQuery('.chart').data('easyPieChart').update(100);
-            jQuery('.chart').find('span').text('100');
+            jQuery('.chart').data('easyPieChart').update(10);
+            jQuery('.chart').find('span').text('10');
+        //фаза 2
+            count_animation = 1;
+            phaseOne = setInterval(function(){
+                if (count_animation <= 227){                                                                         //120
+                    cur_animation_val += 6;
+                    if (count_animation > 0 && count_animation <= 17){
+                        jQuery('#draggable4').css({
+                            color: 'transparent',
+                            borderColor: 'transparent',
+                            opacity: 0.8,
+                            transform: 'scale(1)',
+                            borderWidth: '1px',
+                            paddingTop: '4px',
+                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat',
+                            zIndex: '1000'
+                        });
+                        sound.play();
+                        jQuery('.chart').data('easyPieChart').update(15);
+                        jQuery('.chart').find('span').text('15');
+                    } else if (count_animation > 17 && count_animation <= 34){
+                        jQuery('#draggable4').css({
+                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter1.png) 0 0/100% no-repeat'
+                        });
+                        jQuery('#draggable3').css({
+                            color: 'transparent',
+                            borderColor: 'transparent',
+                            opacity: 0.8,
+                            transform: 'scale(1)',
+                            borderWidth: '1px',
+                            paddingTop: '4px',
+                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat',
+                            zIndex: '1000'
+                        });
+                        sound.play();
+                        jQuery('.chart').data('easyPieChart').update(20);
+                        jQuery('.chart').find('span').text('20');
+                    } else if (count_animation > 34 && count_animation <= 53){
+                        jQuery('#draggable4').css({
+                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter2.png) 0 0/100% no-repeat'
+                        });
+                        jQuery('#draggable3').css({
+                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter1.png) 0 0/100% no-repeat'
+                        });
+                        jQuery('#draggable2').css({
+                            color: 'transparent',
+                            borderColor: 'transparent',
+                            opacity: 0.8,
+                            transform: 'scale(1)',
+                            borderWidth: '1px',
+                            paddingTop: '4px',
+                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat',
+                            zIndex: '1000'
+                        });
+                        sound.play();
+                        jQuery('.chart').data('easyPieChart').update(25);
+                        jQuery('.chart').find('span').text('25');
+                    } else if (count_animation > 53 && count_animation <= 70){
+                        jQuery('#draggable4').css({
+                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter3.png) 0 0/100% no-repeat'
+                        });
+                        jQuery('#draggable3').css({
+                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter2.png) 0 0/100% no-repeat'
+                        });
+                        jQuery('#draggable2').css({
+                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter1.png) 0 0/100% no-repeat'
+                        });
+                        sound.play();
+                        jQuery('.chart').data('easyPieChart').update(30);
+                        jQuery('.chart').find('span').text('30');
+                    } else if (count_animation > 70 && count_animation <= 87){
+                        jQuery('#draggable4').css({
+                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter4.png) 0 0/100% no-repeat'
+                        });
+                        jQuery('#draggable3').css({
+                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter3.png) 0 0/100% no-repeat'
+                        });
+                        jQuery('#draggable2').css({
+                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter2.png) 0 0/100% no-repeat'
+                        });
+                        sound.play();
+                        jQuery('.chart').data('easyPieChart').update(35);
+                        jQuery('.chart').find('span').text('35');
+                    } else if (count_animation > 87 && count_animation <= 104){
+                        jQuery('#draggable4').css({
+                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter4.png) 0 0/100% no-repeat'
+                        });
+                        jQuery('#draggable3').css({
+                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter3.png) 0 0/100% no-repeat'
+                        });
+                        jQuery('#draggable2').css({
+                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter2.png) 0 0/100% no-repeat'
+                        });
+                        sound.play();
+                        jQuery('.chart').data('easyPieChart').update(40);
+                        jQuery('.chart').find('span').text('40');
+                    } else if (count_animation > 104 && count_animation <= 123){
+                        jQuery('#draggable4').css({
+                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter5.png) 0 0/100% no-repeat'
+                        });
+                        jQuery('#draggable3').css({
+                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter4.png) 0 0/100% no-repeat'
+                        });
+                        jQuery('#draggable2').css({
+                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter3.png) 0 0/100% no-repeat'
+                        });
+                        sound.play();
+                        jQuery('.chart').data('easyPieChart').update(45);
+                        jQuery('.chart').find('span').text('45');
+                    } else if (count_animation > 123 && count_animation <= 140){
+                        jQuery('#draggable4').css({
+                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter6.png) 0 0/100% no-repeat'
+                        });
+                        jQuery('#draggable3').css({
+                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter5.png) 0 0/100% no-repeat'
+                        });
+                        jQuery('#draggable2').css({
+                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter4.png) 0 0/100% no-repeat'
+                        });
+                        sound.play();
+                        jQuery('.chart').data('easyPieChart').update(50);
+                        jQuery('.chart').find('span').text('50');
+                    } else if (count_animation > 140 && count_animation <= 157){
+                        jQuery('#draggable4').css({
+                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter7.png) 0 0/100% no-repeat'
+                        });
+                        jQuery('#draggable3').css({
+                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter6.png) 0 0/100% no-repeat'
+                        });
+                        jQuery('#draggable2').css({
+                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter5.png) 0 0/100% no-repeat'
+                        });
+                        sound.play();
+                        jQuery('.chart').data('easyPieChart').update(55);
+                        jQuery('.chart').find('span').text('55');
+                    } else if (count_animation > 157 && count_animation <= 174){
+                        jQuery('#draggable4').css({
+                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter8.png) 0 0/100% no-repeat'
+                        });
+                        jQuery('#draggable3').css({
+                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter7.png) 0 0/100% no-repeat'
+                        });
+                        jQuery('#draggable2').css({
+                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter6.png) 0 0/100% no-repeat'
+                        });
+                        sound.play();
+                        jQuery('.chart').data('easyPieChart').update(60);
+                        jQuery('.chart').find('span').text('60');
+                    } else if (count_animation > 174 && count_animation <= 193){
+                        jQuery('#draggable4').css({
+                            background: 'rgba(255,255,255, 0.5)',
+                            color: 'red',
+                            borderColor: 'red',
+                            opacity: 1,
+                            transform: 'scale(0.5)',
+                            borderWidth: '2px',
+                            paddingTop: '2px',
+                            zIndex: '1'
+                        });
+                        jQuery('#draggable3').css({
+                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter8.png) 0 0/100% no-repeat'
+                        });
+                        jQuery('#draggable2').css({
+                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter7.png) 0 0/100% no-repeat'
+                        });
+                        sound.play();
+                        jQuery('.chart').data('easyPieChart').update(65);
+                        jQuery('.chart').find('span').text('65');
+                    } else if (count_animation > 193 && count_animation <= 210){
+                        jQuery('#draggable3').css({
+                            background: 'rgba(255,255,255, 0.5)',
+                            color: 'red',
+                            borderColor: 'red',
+                            opacity: 1,
+                            transform: 'scale(0.5)',
+                            borderWidth: '2px',
+                            paddingTop: '2px',
+                            zIndex: '1'
+                        });
+                        jQuery('#draggable2').css({
+                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter8.png) 0 0/100% no-repeat'
+                        });
+                        sound.play();
+                        jQuery('.chart').data('easyPieChart').update(70);
+                        jQuery('.chart').find('span').text('70');
+                    } else {
+                        jQuery('#draggable2').css({
+                            background: 'rgba(255,255,255, 0.5)',
+                            color: 'red',
+                            borderColor: 'red',
+                            opacity: 1,
+                            transform: 'scale(0.5)',
+                            borderWidth: '2px',
+                            paddingTop: '2px',
+                            zIndex: '1'
+                        });
+                    }
+                    count_animation += 1;
+                } else {
+                    clearInterval(phaseOne);
+                    count_animation = 1;
+                    jQuery('#draggable4, #draggable3, #draggable2').css({
+                        background: 'rgba(255,255,255, 0.5)',
+                        transform: 'scale(0.5)',
+                        color: 'red',
+                        borderColor: 'red',
+                        opacity: 1,
+                        borderWidth: '2px',
+                        paddingTop: '2px',
+                        zIndex: '1'
+                    });
+                    count_animation = 1;
+                    sound.play();
+                    jQuery('.chart').data('easyPieChart').update(75);
+                    jQuery('.chart').find('span').text('75');
+                }
+            }, 1000);
         }
     }, 1000);
 }
