@@ -1029,6 +1029,9 @@
                             <li id="draggableClean_3" class="itemlist_item item_list__mid itemlist_item__clear draggable inopaciti" style="left: 535px; top: 80px;"></li>
                             <li id="draggableClean_4" class="itemlist_item item_list__mid itemlist_item__clear draggable inopaciti" style="left: 535px; top: 80px;"></li>
                             <li id="draggableClean_5" class="itemlist_item item_list__mid itemlist_item__clear draggable inopaciti" style="left: 535px; top: 80px;"></li>
+                            <li id="draggableClean_6" class="itemlist_item item_list__mid itemlist_item__clear draggable inopaciti" style="left: 535px; top: 80px;"></li>
+                            <li id="draggableClean_7" class="itemlist_item item_list__mid itemlist_item__clear draggable inopaciti" style="left: 535px; top: 80px;"></li>
+                            <li id="draggableClean_8" class="itemlist_item item_list__mid itemlist_item__clear draggable inopaciti" style="left: 535px; top: 80px;"></li>
                         </ul>
                         <ul class="itemlist itemlist-two" id="itemlist-two">
                         <!--

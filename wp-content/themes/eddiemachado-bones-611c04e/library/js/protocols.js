@@ -9847,7 +9847,7 @@ solis = function(){
     phaseOne = setInterval(function(){
         if (count_animation <= 120){                                                                         //120
             cur_animation_val += 6;
-            jQuery('#draggable5, #draggable4, #draggable3, #draggable2').css({
+            jQuery('#draggable4, #draggable3, #draggable2').css({
                 borderWidth: '1px',
                 borderColor: 'transparent',
                 opacity: 0.8,
@@ -9861,7 +9861,7 @@ solis = function(){
         } else {
             clearInterval(phaseOne);
             count_animation = 1;
-            jQuery('#draggable5, #draggable4, #draggable3, #draggable2').css({
+            jQuery('#draggable4, #draggable3, #draggable2').css({
                 background: 'rgba(255,255,255, 0.5)',
                 transform: 'scale(0.5)',
                 color: 'red',
@@ -10053,6 +10053,99 @@ solis = function(){
                     sound.play();
                     jQuery('.chart').data('easyPieChart').update(65);
                     jQuery('.chart').find('span').text('65');
+                //фаза 3
+                    count_animation = 1;
+                    phaseOne = setInterval(function(){
+                        if (count_animation <= 193){                                                                         //120
+                            cur_animation_val += 6;
+                            jQuery('#draggableD_1, #draggableVD, #draggableClean_1, #draggableV5, #draggableV3, #draggableClean, #draggableD_6, #draggableClean_2, #draggableClean_3, #draggableClean_4, #draggableClean_5, #draggableClean_6, #draggableClean_7, #draggableClean_8').css({
+                                color: 'transparent',
+                                borderColor: 'transparent',
+                                opacity: 0.8,
+                                transform: 'scale(1)',
+                                borderWidth: '1px',
+                                paddingTop: '4px',
+                                zIndex: '1000'
+                            });
+                            jQuery('#draggableD_1').css({
+                                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle.png) 0 0/100% no-repeat'
+                            });
+                            jQuery('#draggableV5').css({
+                                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/maracata.jpg) 0 0/100% no-repeat'
+                            });
+                            jQuery('#draggableD_6').css({
+                                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/disfunction.png) 0 0/100% no-repeat',
+                                transform: 'rotate(-90deg) scale(1)'
+                            });
+                            jQuery('#draggableClean').css({
+                                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/disfunction.png) 0 0/100% no-repeat'
+                            });
+                            jQuery('#draggableV3').css({
+                                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/chisty_vnutri.jpg) 0 0/100% no-repeat'
+                            });
+                            jQuery('#draggableClean_2, #draggableClean_3, #draggableClean_4, #draggableClean_5, #draggableClean_6, #draggableClean_7, #draggableClean_8').css({
+                                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/plod.png) 0 0/100% no-repeat'
+                            });
+                            jQuery('#draggableClean_2').css({
+                                left: parseFloat(jQuery('#draggable0').css('left'))+'px',
+                                top: parseFloat(jQuery('#draggable0').css('top'))+10+'px'
+                            });
+                            jQuery('#draggableClean_3').css({
+                                left: parseFloat(jQuery('#draggableClean_2').css('left'))+'px',
+                                top: parseFloat(jQuery('#draggableClean_2').css('top'))+10+'px'
+                            });
+                            jQuery('#draggableClean_4').css({
+                                left: parseFloat(jQuery('#draggableClean_3').css('left'))+'px',
+                                top: parseFloat(jQuery('#draggableClean_3').css('top'))+10+'px'
+                            });
+                            jQuery('#draggableClean_5').css({
+                                left: parseFloat(jQuery('#draggableClean_4').css('left'))+'px',
+                                top: parseFloat(jQuery('#draggableClean_4').css('top'))+10+'px'
+                            });
+                            jQuery('#draggableClean_6').css({
+                                left: parseFloat(jQuery('#draggableClean_5').css('left'))+'px',
+                                top: parseFloat(jQuery('#draggableClean_5').css('top'))+10+'px'
+                            });
+                            jQuery('#draggableClean_7').css({
+                                left: parseFloat(jQuery('#draggableClean_6').css('left'))+'px',
+                                top: parseFloat(jQuery('#draggableClean_6').css('top'))+10+'px'
+                            });
+                            jQuery('#draggableClean_8').css({
+                                left: parseFloat(jQuery('#draggableClean_7').css('left'))+'px',
+                                top: parseFloat(jQuery('#draggableClean_7').css('top'))+10+'px'
+                            });
+                            jQuery('#draggableVD').css({
+                                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/demon_prihodit.png) 0 0/100% no-repeat',
+                                transform: 'rotate(-90deg) scale(1)'
+                            });
+                            jQuery('#draggableClean_1').css({
+                                left: parseFloat(jQuery('#draggableVD').css('left'))+70+'px',
+                                top: parseFloat(jQuery('#draggableVD').css('top'))+'px',
+                                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/demon_prihodit.png) 0 0/100% no-repeat',
+                                transform: 'rotate(-120deg) scale(1)'
+                            });
+                            jQuery('#draggableClean_1, #draggableClean_2, #draggableClean_3, #draggableClean_4, #draggableClean_5, #draggableClean_6, #draggableClean_7, #draggableClean_8').removeClass('inopaciti');
+                            count_animation += 1;
+                        } else {
+                            clearInterval(phaseOne);
+                            count_animation = 1;
+                            jQuery('#draggableD_1, #draggableVD, #draggableClean_1, #draggableV5, #draggableV3, #draggableClean, #draggableD_6, #draggableClean_2, #draggableClean_3, #draggableClean_4, #draggableClean_5, #draggableClean_6, #draggableClean_7, #draggableClean_8').css({
+                                background: 'rgba(255,255,255, 0.5)',
+                                transform: 'scale(0.5)',
+                                color: 'red',
+                                borderColor: 'red',
+                                opacity: 1,
+                                borderWidth: '2px',
+                                paddingTop: '2px',
+                                zIndex: '1'
+                            });
+                            count_animation = 1;
+                            sound.play();
+                            jQuery('#draggableClean_1, #draggableClean_2, #draggableClean_3, #draggableClean_4, #draggableClean_5, #draggableClean_6, #draggableClean_7, #draggableClean_8').addClass('inopaciti');
+                            jQuery('.chart').data('easyPieChart').update(100);
+                            jQuery('.chart').find('span').text('100');
+                        }
+                    }, 1000);
                 }
             }, 1000);
         }
