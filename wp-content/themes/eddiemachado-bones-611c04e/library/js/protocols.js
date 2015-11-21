@@ -10035,7 +10035,6 @@ solis = function(){
                             zIndex: '1'
                         });
                     }
-                    sound.play();
                     count_animation += 1;
                 } else {
                     clearInterval(phaseOne);
