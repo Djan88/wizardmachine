@@ -10074,11 +10074,11 @@ solis = function(){
                                 background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/maracata.jpg) 0 0/100% no-repeat'
                             });
                             jQuery('#draggableD_6').css({
-                                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/disfunction.png) 0 0/100% no-repeat',
+                                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/disfunction.jpg) 0 0/100% no-repeat',
                                 transform: 'rotate(-90deg) scale(1)'
                             });
                             jQuery('#draggableClean').css({
-                                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/disfunction.png) 0 0/100% no-repeat'
+                                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/disfunction.jpg) 0 0/100% no-repeat'
                             });
                             jQuery('#draggableV3').css({
                                 background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/chisty_vnutri.jpg) 0 0/100% no-repeat'
