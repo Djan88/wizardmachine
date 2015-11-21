@@ -10144,6 +10144,11 @@ solis = function(){
                             jQuery('#draggableClean_1, #draggableClean_2, #draggableClean_3, #draggableClean_4, #draggableClean_5, #draggableClean_6, #draggableClean_7, #draggableClean_8').addClass('inopaciti');
                             jQuery('.chart').data('easyPieChart').update(100);
                             jQuery('.chart').find('span').text('100');
+                            jQuery('.steps').removeClass('solis');
+                            onEnd();
+                            jQuery( ".btn__wizard" )
+                                .text('Выполнить')
+                                .removeClass('btn__wizard_inAction'); 
                         }
                     }, 1000);
                 }
