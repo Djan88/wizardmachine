@@ -10088,31 +10088,31 @@ solis = function(){
                             });
                             jQuery('#draggableClean_2').css({
                                 left: parseFloat(jQuery('#draggable0').css('left'))+'px',
-                                top: parseFloat(jQuery('#draggable0').css('top'))+20+'px'
+                                top: parseFloat(jQuery('#draggable0').css('top'))-20+'px'
                             });
                             jQuery('#draggableClean_3').css({
                                 left: parseFloat(jQuery('#draggableClean_2').css('left'))+'px',
-                                top: parseFloat(jQuery('#draggableClean_2').css('top'))+20+'px'
+                                top: parseFloat(jQuery('#draggableClean_2').css('top'))-20+'px'
                             });
                             jQuery('#draggableClean_4').css({
                                 left: parseFloat(jQuery('#draggableClean_3').css('left'))+'px',
-                                top: parseFloat(jQuery('#draggableClean_3').css('top'))+20+'px'
+                                top: parseFloat(jQuery('#draggableClean_3').css('top'))-20+'px'
                             });
                             jQuery('#draggableClean_5').css({
                                 left: parseFloat(jQuery('#draggableClean_4').css('left'))+'px',
-                                top: parseFloat(jQuery('#draggableClean_4').css('top'))+20+'px'
+                                top: parseFloat(jQuery('#draggableClean_4').css('top'))-20+'px'
                             });
                             jQuery('#draggableClean_6').css({
                                 left: parseFloat(jQuery('#draggableClean_5').css('left'))+'px',
-                                top: parseFloat(jQuery('#draggableClean_5').css('top'))+20+'px'
+                                top: parseFloat(jQuery('#draggableClean_5').css('top'))-20+'px'
                             });
                             jQuery('#draggableClean_7').css({
                                 left: parseFloat(jQuery('#draggableClean_6').css('left'))+'px',
-                                top: parseFloat(jQuery('#draggableClean_6').css('top'))+20+'px'
+                                top: parseFloat(jQuery('#draggableClean_6').css('top'))-20+'px'
                             });
                             jQuery('#draggableClean_8').css({
                                 left: parseFloat(jQuery('#draggableClean_7').css('left'))+'px',
-                                top: parseFloat(jQuery('#draggableClean_7').css('top'))+20+'px'
+                                top: parseFloat(jQuery('#draggableClean_7').css('top'))-20+'px'
                             });
                             jQuery('#draggableVD').css({
                                 background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/demon_prihodit.png) 0 0/100% no-repeat',
