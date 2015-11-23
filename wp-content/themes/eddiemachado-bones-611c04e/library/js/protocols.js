@@ -9888,14 +9888,14 @@ solis = function(){
                             transform: 'scale(1)',
                             borderWidth: '1px',
                             paddingTop: '4px',
-                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/1_zemlya_lev.png) 0 0/100% no-repeat',
+                            background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/1_zemlya_lev.png) 0 0/100% no-repeat',
                             zIndex: '1000'
                         });
                         jQuery('.chart').data('easyPieChart').update(15);
                         jQuery('.chart').find('span').text('15');
                     } else if (count_animation > 17 && count_animation <= 34){
                         jQuery('#draggable4').css({
-                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/2_voda_lev.png) 0 0/100% no-repeat'
+                            background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/2_voda_lev.png) 0 0/100% no-repeat'
                         });
                         jQuery('#draggable3').css({
                             color: 'transparent',
@@ -9904,17 +9904,17 @@ solis = function(){
                             transform: 'scale(1)',
                             borderWidth: '1px',
                             paddingTop: '4px',
-                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/1_zemlya_lev.png) 0 0/100% no-repeat',
+                            background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/1_zemlya_lev.png) 0 0/100% no-repeat',
                             zIndex: '1000'
                         });
                         jQuery('.chart').data('easyPieChart').update(20);
                         jQuery('.chart').find('span').text('20');
                     } else if (count_animation > 34 && count_animation <= 53){
                         jQuery('#draggable4').css({
-                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/3_vozduh_lev.png) 0 0/100% no-repeat'
+                            background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/3_vozduh_lev.png) 0 0/100% no-repeat'
                         });
                         jQuery('#draggable3').css({
-                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/2_voda_lev.png) 0 0/100% no-repeat'
+                            background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/2_voda_lev.png) 0 0/100% no-repeat'
                         });
                         jQuery('#draggable2').css({
                             color: 'transparent',
@@ -9923,68 +9923,68 @@ solis = function(){
                             transform: 'scale(1)',
                             borderWidth: '1px',
                             paddingTop: '4px',
-                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/1_zemlya_lev.png) 0 0/100% no-repeat',
+                            background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/1_zemlya_lev.png) 0 0/100% no-repeat',
                             zIndex: '1000'
                         });
                         jQuery('.chart').data('easyPieChart').update(25);
                         jQuery('.chart').find('span').text('25');
                     } else if (count_animation > 53 && count_animation <= 70){
                         jQuery('#draggable4').css({
-                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/4_ogon_lev.png) 0 0/100% no-repeat'
+                            background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/4_ogon_lev.png) 0 0/100% no-repeat'
                         });
                         jQuery('#draggable3').css({
-                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/3_vozduh_lev.png) 0 0/100% no-repeat'
+                            background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/3_vozduh_lev.png) 0 0/100% no-repeat'
                         });
                         jQuery('#draggable2').css({
-                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/2_voda_lev.png) 0 0/100% no-repeat'
+                            background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/2_voda_lev.png) 0 0/100% no-repeat'
                         });
                         jQuery('.chart').data('easyPieChart').update(30);
                         jQuery('.chart').find('span').text('30');
                     } else if (count_animation > 70 && count_animation <= 87){
                         jQuery('#draggable4').css({
-                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/1_ogon_prav.png) 0 0/100% no-repeat'
+                            background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/1_ogon_prav.png) 0 0/100% no-repeat'
                         });
                         jQuery('#draggable3').css({
-                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/4_ogon_lev.png) 0 0/100% no-repeat'
+                            background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/4_ogon_lev.png) 0 0/100% no-repeat'
                         });
                         jQuery('#draggable2').css({
-                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/3_vozduh_lev.png) 0 0/100% no-repeat'
+                            background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/3_vozduh_lev.png) 0 0/100% no-repeat'
                         });
                         jQuery('.chart').data('easyPieChart').update(35);
                         jQuery('.chart').find('span').text('35');
                     } else if (count_animation > 87 && count_animation <= 104){
                         jQuery('#draggable4').css({
-                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/2_voda_prav.png) 0 0/100% no-repeat'
+                            background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/2_voda_prav.png) 0 0/100% no-repeat'
                         });
                         jQuery('#draggable3').css({
-                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/1_ogon_prav.png) 0 0/100% no-repeat'
+                            background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/1_ogon_prav.png) 0 0/100% no-repeat'
                         });
                         jQuery('#draggable2').css({
-                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/4_ogon_lev.png) 0 0/100% no-repeat'
+                            background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/4_ogon_lev.png) 0 0/100% no-repeat'
                         });
                         jQuery('.chart').data('easyPieChart').update(40);
                         jQuery('.chart').find('span').text('40');
                     } else if (count_animation > 104 && count_animation <= 123){
                         jQuery('#draggable4').css({
-                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/3_vozduh_prav.png) 0 0/100% no-repeat'
+                            background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/3_vozduh_prav.png) 0 0/100% no-repeat'
                         });
                         jQuery('#draggable3').css({
-                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/2_voda_prav.png) 0 0/100% no-repeat'
+                            background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/2_voda_prav.png) 0 0/100% no-repeat'
                         });
                         jQuery('#draggable2').css({
-                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/1_ogon_prav.png) 0 0/100% no-repeat'
+                            background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/1_ogon_prav.png) 0 0/100% no-repeat'
                         });
                         jQuery('.chart').data('easyPieChart').update(45);
                         jQuery('.chart').find('span').text('45');
                     } else if (count_animation > 123 && count_animation <= 140){
                         jQuery('#draggable4').css({
-                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/4_zemlya_prav_lit.png) 0 0/100% no-repeat'
+                            background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/4_zemlya_prav_lit.png) 0 0/100% no-repeat'
                         });
                         jQuery('#draggable3').css({
-                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/3_vozduh_prav.png) 0 0/100% no-repeat'
+                            background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/3_vozduh_prav.png) 0 0/100% no-repeat'
                         });
                         jQuery('#draggable2').css({
-                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/2_voda_prav.png) 0 0/100% no-repeat'
+                            background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/2_voda_prav.png) 0 0/100% no-repeat'
                         });
                         jQuery('.chart').data('easyPieChart').update(50);
                         jQuery('.chart').find('span').text('50');
@@ -10000,10 +10000,10 @@ solis = function(){
                             zIndex: '1'
                         });
                         jQuery('#draggable3').css({
-                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/4_zemlya_prav_lit.png) 0 0/100% no-repeat'
+                            background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/4_zemlya_prav_lit.png) 0 0/100% no-repeat'
                         });
                         jQuery('#draggable2').css({
-                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/3_vozduh_prav.png) 0 0/100% no-repeat'
+                            background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/3_vozduh_prav.png) 0 0/100% no-repeat'
                         });
                         jQuery('.chart').data('easyPieChart').update(55);
                         jQuery('.chart').find('span').text('55');
@@ -10019,7 +10019,7 @@ solis = function(){
                             zIndex: '1'
                         });
                         jQuery('#draggable2').css({
-                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/4_zemlya_prav_lit.png) 0 0/100% no-repeat'
+                            background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/4_zemlya_prav_lit.png) 0 0/100% no-repeat'
                         });
                         jQuery('.chart').data('easyPieChart').update(60);
                         jQuery('.chart').find('span').text('60');
@@ -10068,7 +10068,8 @@ solis = function(){
                                 zIndex: '1000'
                             });
                             jQuery('#draggableD_1').css({
-                                background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle.png) 0 0/100% no-repeat'
+                                background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle.png) 0 0/100% no-repeat',
+                                opacity: 0.8
                             });
                             jQuery('#draggableV5').css({
                                 background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/maracata.jpg) 0 0/100% no-repeat'
