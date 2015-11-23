@@ -10068,7 +10068,7 @@ solis = function(){
                                 zIndex: '1000'
                             });
                             jQuery('#draggableD_1').css({
-                                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle.png) 0 0/100% no-repeat'
+                                background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle.png) 0 0/100% no-repeat'
                             });
                             jQuery('#draggableV5').css({
                                 background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/maracata.jpg) 0 0/100% no-repeat'
