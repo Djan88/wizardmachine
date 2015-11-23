@@ -9895,7 +9895,7 @@ solis = function(){
                         jQuery('.chart').find('span').text('15');
                     } else if (count_animation > 17 && count_animation <= 34){
                         jQuery('#draggable4').css({
-                            background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/2_voda_lev.png) 0 0/100% no-repeat'
+                            background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/2_vozduh_lev.png) 0 0/100% no-repeat'
                         });
                         jQuery('#draggable3').css({
                             color: 'transparent',
@@ -9914,7 +9914,7 @@ solis = function(){
                             background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/3_voda_lev.png) 0 0/100% no-repeat'
                         });
                         jQuery('#draggable3').css({
-                            background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/2_voda_lev.png) 0 0/100% no-repeat'
+                            background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/2_vozduh_lev.png) 0 0/100% no-repeat'
                         });
                         jQuery('#draggable2').css({
                             color: 'transparent',
@@ -9936,7 +9936,7 @@ solis = function(){
                             background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/3_voda_lev.png) 0 0/100% no-repeat'
                         });
                         jQuery('#draggable2').css({
-                            background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/2_voda_lev.png) 0 0/100% no-repeat'
+                            background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/2_vozduh_lev.png) 0 0/100% no-repeat'
                         });
                         jQuery('.chart').data('easyPieChart').update(30);
                         jQuery('.chart').find('span').text('30');
