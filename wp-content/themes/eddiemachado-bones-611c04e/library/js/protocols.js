@@ -9878,7 +9878,7 @@ solis = function(){
         //фаза 2
             count_animation = 1;
             phaseOne = setInterval(function(){
-                if (count_animation <= 193){                                                                         //120
+                if (count_animation <= 174){                                                                         //120
                     cur_animation_val += 6;
                     if (count_animation > 0 && count_animation <= 17){
                         jQuery('#draggable4').css({
@@ -10023,17 +10023,6 @@ solis = function(){
                         });
                         jQuery('.chart').data('easyPieChart').update(60);
                         jQuery('.chart').find('span').text('60');
-                    } else {
-                        jQuery('#draggable2').css({
-                            background: 'rgba(255,255,255, 0.5)',
-                            color: 'red',
-                            borderColor: 'red',
-                            opacity: 1,
-                            transform: 'scale(0.5)',
-                            borderWidth: '2px',
-                            paddingTop: '2px',
-                            zIndex: '1'
-                        });
                     }
                     count_animation += 1;
                 } else {
@@ -10117,8 +10106,8 @@ solis = function(){
                                 top: parseFloat(jQuery('#draggableClean_7').css('top'))-40+'px'
                             });
                             jQuery('#draggableVD').css({
-                                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/demon_prihodit.png) 0 0/100% no-repeat',
-                                transform: 'rotate(-90deg) scale(1)'
+                                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/ishtar.png) 0 0/100% no-repeat',
+                                transform: 'rotate(90deg) scale(1)'
                             });
                             jQuery('#draggableClean_1').css({
                                 left: parseFloat(jQuery('#draggableVD').css('left'))+70+'px',
