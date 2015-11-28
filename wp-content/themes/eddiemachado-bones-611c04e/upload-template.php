@@ -96,9 +96,9 @@
                         <div>«Иррациональное. Ощущение непреодолимой и целиком захватывающей  силы и энергии.Насильственное следование некой жизненной стратегии, витальные страхи.»<div class="btn btn_lg btn_success btn_choice" data-protocol ="v5" data-protocol-name ="V5">Выбрать</div></div>
                         <h3><span class="protocol_acent">(РЕСУРС)</span>«РЕАКТИВАЦИЯ РЕСУРСА»</h3>
                         <div>«Протокол предназначен для реактивации зон DSV тела ума. Настоятельное рекомендуется проводить в 3-ю четверть Луны - с первого дня убывающей луны (с первого дня, после полнолуния) вплоть до половины убывающей Луны.»<div class="btn btn_lg btn_success btn_choice" data-protocol ="resource" data-protocol-name ="РЕАКТИВАЦИЯ РЕСУРСА">Выбрать</div></div>
-                        <h3><span class="protocol_acent">(SOLIS)</span>«Протокол "Solis" предназначен для "гиперресурсных" состояний, которые закономерно возникают после удачных проработок клиента на "wizardmachine", терапевтической дефрагментации, "Tarotmachine", а также после проработки кармических и родовых проблем либо после длительной "отжимке" негативного флюида из физического тела. 
-При калибровке ставьте D1 на центр лба, а зону v3 на нижнюю границу сердца!»</h3>
-                        <div>«SOLIS»<div class="btn btn_lg btn_success btn_choice" data-protocol ="solis" data-protocol-name ="SOLIS">Выбрать</div></div>
+                        <h3><span class="protocol_acent">(SOLIS)</span>«SOLIS»</h3>
+                        <div>«Протокол "Solis" предназначен для "гиперресурсных" состояний, которые закономерно возникают после удачных проработок клиента на "wizardmachine", терапевтической дефрагментации, "Tarotmachine", а также после проработки кармических и родовых проблем либо после длительной "отжимке" негативного флюида из физического тела. 
+При калибровке ставьте D1 на центр лба, а зону v3 на нижнюю границу сердца!»<div class="btn btn_lg btn_success btn_choice" data-protocol ="solis" data-protocol-name ="SOLIS">Выбрать</div></div>
                     </div>
                 </div>
                 <div class="machine_screen clearfix hidden">
