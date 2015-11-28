@@ -10113,7 +10113,7 @@ solis = function(){
                                 left: parseFloat(jQuery('#draggableVD').css('left'))+70+'px',
                                 top: parseFloat(jQuery('#draggableVD').css('top'))+'px',
                                 background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/ishtar.png) 0 0/100% no-repeat',
-                                transform: 'rotate(-120deg) scale(1)'
+                                transform: 'rotate(45deg) scale(1)'
                             });
                             jQuery('#draggableClean_1, #draggableClean_2, #draggableClean_3, #draggableClean_4, #draggableClean_5, #draggableClean_6, #draggableClean_7, #draggableClean_8').removeClass('inopaciti');
                             count_animation += 1;

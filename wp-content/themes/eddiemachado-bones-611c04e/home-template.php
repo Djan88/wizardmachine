@@ -56,7 +56,7 @@
                         <a href="/wp-content/uploads/2015/02/Osnovy_biologicheskogo_tsentrirovania.compressed.pdf" target="_blank" class="button button-primary button-large button__main">Книга "Биологическое центрирование"</a>
                         <a href="https://www.youtube.com/watch?v=ZZPjJGX-BM4" target="_blank" class="button button-primary button-large button__main">Видео</a>
                         <a href="http://wizardduos.ru/" target="_blank" class="button button-primary button-large button__main">"Wizard Duos"</a></br>
-                        <a href="https://www.facebook.com/yuchikurov" target="_blank" class="button button-primary button-large button__main button_social button_social_fb">f</a>
+                        <!-- <a href="https://www.facebook.com/yuchikurov" target="_blank" class="button button-primary button-large button__main button_social button_social_fb">f</a> -->
                         <a href="https://vk.com/id139677998" target="_blank" class="button button-primary button-large button__main button_social button_social_vk">vk</a>
                         <!-- <a href="http://help.yandex.ru/common/support/screenshot.xml" target="_blank" class="button button-primary button-large button__main">Как сделать "скриншот" экрана</a> -->
                         <!-- <div><a href="/pay/" target="_blank" class="btn btn_lg btn_trans" style="margin-top: 10px; margin-left: 15px;">Оплата доступа</a></div> -->
