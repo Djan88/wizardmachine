@@ -27,31 +27,6 @@ jQuery(function() {
             }
         };
 
-    //РЕСУРС выбор основной зоны
-    // jQuery('.v-zone').on('click', function() {
-    //     curVZone = jQuery(this).val();
-    //     curV = jQuery(this).attr('id');
-    //     localStorage.setItem('curVZone', curVZone);
-    //     localStorage.setItem('curV', curV);
-    //     console.log('curVZone '+curVZone);
-    // });
-
-    //Запоминание выбранной зоны V в протоколе РЕСУРС
-    // actualV = function(){
-    //     if(supportsStorage && localStorage.getItem('curV')){
-    //         curV = localStorage.getItem('curV');
-    //     } else {
-    //         curV = "V3";
-    //         localStorage.setItem('curVZone', '#draggable3');
-    //         localStorage.setItem('curV', curV);
-    //     };
-    //     jQuery('.v-zone').each(function() {
-    //         jQuery(this).removeAttr('checked');
-            
-    //     });
-    //     jQuery('#'+curV).attr('checked', 'checked');
-    // }();
-
     //Функция проверки положения точек
     checkPoints = function(){
         jQuery('.itemlist_item').each(function() {
@@ -61,22 +36,7 @@ jQuery(function() {
             }
         });
     }
-    // checkV3 = function(){
-    //     if(supportsStorage && localStorage.getItem('curChoice')){
-    //         curVZone = localStorage.getItem('curVZone');
-    //     } else {
-    //         localStorage.setItem('curVZone', '#draggable3');
-    //         curVZone = "#draggable3";
-    //     };
-    //     console.log('curVZone= '+curVZone);
-    //     jQuery(curVZone).each(function() {
-    //         console.log(jQuery(curVZone));
-    //         if(parseFloat(jQuery(this).css('left')) < 450){
-    //             v3status = false;
-    //             console.log('v3status '+v3status);
-    //         }
-    //     });
-    // }
+    
     // Текст заголовка
     main_heading = function(){
         // console.log(cur_screen);
@@ -207,9 +167,9 @@ jQuery( ".btn__wizard" ).on('click', function(event) {
     v3status = true;
     curV = localStorage.getItem('curV');
         checkPoints();
-        // if(pointsStatus == false){
-        //     swal("Не все зоны перенесены", "Перед началом процедуры необходимо перенести все зоны", "info"); 
-        // } else {
+        if(pointsStatus == false){
+            swal("Не все зоны перенесены", "Перед началом процедуры необходимо перенести все зоны", "info"); 
+        } else {
             jQuery(this)
                 .addClass('btn__wizard_inAction')
                 .text('Выполняется');
@@ -238,7 +198,7 @@ jQuery( ".btn__wizard" ).on('click', function(event) {
                 } else{
                     console.log('нет протокола с id '+ protocol)
                 }
-        // }  
+        }  
     // }
     main_heading();
 });
