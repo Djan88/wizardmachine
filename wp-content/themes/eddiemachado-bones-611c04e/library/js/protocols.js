@@ -848,7 +848,7 @@
                                                                                                                                                                                                                                                                     } else {
                                                                                                                                                                                                                                                                         clearInterval(phaseOne);
                                                                                                                                                                                                                                                                         count_animation = 1;
-                                                                                                                                                                                                                                                                        jQuery('#draggableD2, #draggable2, #draggableS2').css({
+                                                                                                                                                                                                                                                                        jQuery('#draggableD2, #draggable2, #draggable3, #draggableS2').css({
                                                                                                                                                                                                                                                                             background: 'rgba(255,255,255, 0.5)',
                                                                                                                                                                                                                                                                             color: 'red',
                                                                                                                                                                                                                                                                             borderColor: 'red',
@@ -1654,7 +1654,7 @@
                                                                                                                                                                                                                                                             } else {
                                                                                                                                                                                                                                                                 clearInterval(phaseOne);
                                                                                                                                                                                                                                                                 count_animation = 1;
-                                                                                                                                                                                                                                                                jQuery('#draggableD2, #draggable2, #draggableS2, #draggable0').css({
+                                                                                                                                                                                                                                                                jQuery('#draggableD2, #draggable2, #draggable3, #draggableS2, #draggable0').css({
                                                                                                                                                                                                                                                                     background: 'rgba(255,255,255, 0.5)',
                                                                                                                                                                                                                                                                     color: 'red',
                                                                                                                                                                                                                                                                     borderColor: 'red',
@@ -2285,7 +2285,7 @@
                                                                                                                                                             } else {
                                                                                                                                                                 clearInterval(phaseOne);
                                                                                                                                                                 count_animation = 1;
-                                                                                                                                                                jQuery('#draggableD2, #draggable2, #draggableS2, #draggable0').css({
+                                                                                                                                                                jQuery('#draggableD2, #draggable2, #draggable3, #draggableS2, #draggable0').css({
                                                                                                                                                                     background: 'rgba(255,255,255, 0.5)',
                                                                                                                                                                     color: 'red',
                                                                                                                                                                     borderColor: 'red',
@@ -3033,7 +3033,7 @@ v5 = function(){
                                                                                                                                                                                         } else {
                                                                                                                                                                                             clearInterval(phaseOne);
                                                                                                                                                                                             count_animation = 1;
-                                                                                                                                                                                            jQuery('#draggableD2, #draggable2, #draggableS2').css({
+                                                                                                                                                                                            jQuery('#draggableD2, #draggable2, #draggable3, #draggableS2').css({
                                                                                                                                                                                                 background: 'rgba(255,255,255, 0.5)',
                                                                                                                                                                                                 color: 'red',
                                                                                                                                                                                                 borderColor: 'red',
@@ -9806,7 +9806,7 @@ face = function(){
                                                                                                 } else {
                                                                                                     clearInterval(phaseOne);
                                                                                                     count_animation = 1;
-                                                                                                    jQuery('#draggableD2, #draggable2, #draggableS2').css({
+                                                                                                    jQuery('#draggableD2, #draggable2, #draggable3, #draggableS2').css({
                                                                                                         background: 'rgba(255,255,255, 0.5)',
                                                                                                         color: 'red',
                                                                                                         borderColor: 'red',
@@ -10138,7 +10138,7 @@ solis = function(){
                         } else {
                             clearInterval(phaseOne);
                             count_animation = 1;
-                            jQuery('#draggableD_1, #draggableVD, #draggableClean_1, #draggable5, #draggable3, #draggableClean, #draggableD_6, #draggableClean_2, #draggableClean_3, #draggableClean_4, #draggableClean_5, #draggableClean_6, #draggableClean_7, #draggableClean_8').css({
+                            jQuery('#draggableD_1, #draggableVD, #draggableClean_1, #draggable5, #draggable2, #draggable3, #draggableClean, #draggableD_6, #draggableClean_2, #draggableClean_3, #draggableClean_4, #draggableClean_5, #draggableClean_6, #draggableClean_7, #draggableClean_8').css({
                                 background: 'rgba(255,255,255, 0.5)',
                                 transform: 'scale(0.5)',
                                 color: 'red',
