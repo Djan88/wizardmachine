@@ -2370,7 +2370,7 @@ v5 = function(){
             });
             jQuery('#draggable2').css({
                 transform: 'scale(1)',
-                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/nerazd.png) 0 0/100% no-repeat'
+                background: 'url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/nerazd.png) 0 0/100% no-repeat'
             });
             jQuery('#draggableClean_2').css({
                 transform: 'rotate('+cur_animation_val+'deg) scale(1)',
