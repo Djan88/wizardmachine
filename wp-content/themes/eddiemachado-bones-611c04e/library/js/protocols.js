@@ -2355,7 +2355,7 @@ v5 = function(){
     phaseOne = setInterval(function(){
         if (count_animation <= 480){                                                                         //120
             cur_animation_val += 1.5;
-            jQuery('#draggableClean_2, #draggable0, #draggableD1, #draggableVD, #draggableClean').css({
+            jQuery('#draggableClean_2, #draggable2, #draggableD1, #draggableVD, #draggableClean').css({
                 transform: 'scale(1)',
                 borderWidth: '1px',
                 color: 'transparent',
@@ -2368,9 +2368,9 @@ v5 = function(){
                 transform: 'rotate(-'+cur_animation_val+'deg) scale(1)',
                 background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat'
             });
-            jQuery('#draggable0').css({
+            jQuery('#draggable2').css({
                 transform: 'scale(1)',
-                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
+                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/nerazd.png) 0 0/100% no-repeat'
             });
             jQuery('#draggableClean_2').css({
                 transform: 'rotate('+cur_animation_val+'deg) scale(1)',
@@ -2396,7 +2396,7 @@ v5 = function(){
         } else {
             clearInterval(phaseOne);
             count_animation = 1;
-            jQuery('#draggableClean_2, #draggable0, #draggableD1, #draggableVD, #draggableClean').css({
+            jQuery('#draggableClean_2, #draggable2, #draggableD1, #draggableVD, #draggableClean').css({
                 background: 'rgba(255,255,255, 0.5)',
                 transform: 'scale(0.5)',
                 color: 'red',
