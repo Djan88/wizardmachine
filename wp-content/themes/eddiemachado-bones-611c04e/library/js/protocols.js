@@ -10042,7 +10042,7 @@ solis = function(){
                     phaseOne = setInterval(function(){
                         if (count_animation <= 193){                                                                         //120
                             cur_animation_val += 6;
-                            jQuery('#draggableD_1, #draggableVD, #draggableClean_1, #draggable5, #draggable3, #draggable2, #draggableClean, #draggableD_6, #draggableClean_2, #draggableClean_3, #draggableClean_4, #draggableClean_5, #draggableClean_6, #draggableClean_7, #draggableClean_8').css({
+                            jQuery('#draggableD_1, #draggableVD, #draggableClean_1, #draggable5, #draggable3, #draggable2, #draggableClean, #draggableD_6, #draggableClean_2, #draggableClean_3, #draggableClean_4, #draggableClean_5, #draggableClean_6, #draggableClean_7, #draggable0').css({
                                 color: 'transparent',
                                 borderColor: 'transparent',
                                 opacity: 0.8,
@@ -10072,7 +10072,7 @@ solis = function(){
                             jQuery('#draggable2').css({
                                 background: 'url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/nerazd.png) 0 0/100% no-repeat'
                             });
-                            jQuery('#draggableClean_2, #draggableClean_3, #draggableClean_4, #draggableClean_5, #draggableClean_6, #draggableClean_7, #draggableClean_8').css({
+                            jQuery('#draggableClean_2, #draggableClean_3, #draggableClean_4, #draggableClean_5, #draggableClean_6, #draggableClean_7, #draggable0').css({
                                 background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/plod.png) 0 0/100% no-repeat'
                             });
                             jQuery('#draggableClean_2').css({
@@ -10099,10 +10099,6 @@ solis = function(){
                                 left: parseFloat(jQuery('#draggableClean_6').css('left'))+'px',
                                 top: parseFloat(jQuery('#draggableClean_6').css('top'))-40+'px'
                             });
-                            jQuery('#draggableClean_8').css({
-                                left: parseFloat(jQuery('#draggableClean_7').css('left'))+'px',
-                                top: parseFloat(jQuery('#draggableClean_7').css('top'))-40+'px'
-                            });
                             jQuery('#draggableVD').css({
                                 background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/ishtar.png) 0 0/100% no-repeat',
                                 transform: 'rotate(90deg) scale(1)'
@@ -10113,12 +10109,12 @@ solis = function(){
                                 background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/ishtar.png) 0 0/100% no-repeat',
                                 transform: 'rotate(45deg) scale(1)'
                             });
-                            jQuery('#draggableClean_1, #draggableClean_2, #draggableClean_3, #draggableClean_4, #draggableClean_5, #draggableClean_6, #draggableClean_7, #draggableClean_8').removeClass('inopaciti');
+                            jQuery('#draggableClean_1, #draggableClean_2, #draggableClean_3, #draggableClean_4, #draggableClean_5, #draggableClean_6, #draggableClean_7').removeClass('inopaciti');
                             count_animation += 1;
                         } else {
                             clearInterval(phaseOne);
                             count_animation = 1;
-                            jQuery('#draggableD_1, #draggableVD, #draggableClean_1, #draggable5, #draggable2, #draggable3, #draggableClean, #draggableD_6, #draggableClean_2, #draggableClean_3, #draggableClean_4, #draggableClean_5, #draggableClean_6, #draggableClean_7, #draggableClean_8').css({
+                            jQuery('#draggableD_1, #draggableVD, #draggableClean_1, #draggable5, #draggable2, #draggable3, #draggableClean, #draggableD_6, #draggableClean_2, #draggableClean_3, #draggableClean_4, #draggableClean_5, #draggableClean_6, #draggableClean_7, #draggable0').css({
                                 background: 'rgba(255,255,255, 0.5)',
                                 transform: 'scale(0.5)',
                                 color: 'red',
@@ -10130,7 +10126,7 @@ solis = function(){
                             });
                             count_animation = 1;
                             sound.play();
-                            jQuery('#draggableClean_1, #draggableClean_2, #draggableClean_3, #draggableClean_4, #draggableClean_5, #draggableClean_6, #draggableClean_7, #draggableClean_8').addClass('inopaciti');
+                            jQuery('#draggableClean_1, #draggableClean_2, #draggableClean_3, #draggableClean_4, #draggableClean_5, #draggableClean_6, #draggableClean_7').addClass('inopaciti');
                             jQuery('.chart').data('easyPieChart').update(100);
                             jQuery('.chart').find('span').text('100');
                             jQuery('.steps').removeClass('solis');
