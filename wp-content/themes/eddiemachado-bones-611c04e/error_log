@@ -1,2 +1,9 @@
-[19-Jul-2015 16:07:01 Europe/Simferopol] PHP Fatal error:  Call to undefined function get_header() in /home/machinemagic/public_html/wp-content/themes/eddiemachado-bones-611c04e/404.php on line 1
-[19-Sep-2015 03:03:23 Europe/Simferopol] PHP Fatal error:  Call to undefined function post_password_required() in /home/machinemagic/public_html/wp-content/themes/eddiemachado-bones-611c04e/comments.php on line 7
+[01-Mar-2016 12:50:02 Europe/Simferopol] PHP Fatal error:  Call to undefined function language_attributes() in /home/machinemagic/public_html/wp-content/themes/eddiemachado-bones-611c04e/header.php on line 3
+[01-Mar-2016 12:50:03 Europe/Simferopol] PHP Fatal error:  Call to undefined function current_user_can() in /home/machinemagic/public_html/wp-content/themes/eddiemachado-bones-611c04e/functions.php on line 15
+[01-Mar-2016 12:50:03 Europe/Simferopol] PHP Fatal error:  Call to undefined function is_front_page() in /home/machinemagic/public_html/wp-content/themes/eddiemachado-bones-611c04e/footer.php on line 1
+[01-Mar-2016 12:50:04 Europe/Simferopol] PHP Fatal error:  Call to undefined function get_header() in /home/machinemagic/public_html/wp-content/themes/eddiemachado-bones-611c04e/archive.php on line 1
+[01-Mar-2016 12:50:05 Europe/Simferopol] PHP Fatal error:  Call to undefined function get_header() in /home/machinemagic/public_html/wp-content/themes/eddiemachado-bones-611c04e/404.php on line 1
+[01-Mar-2016 12:50:05 Europe/Simferopol] PHP Fatal error:  Call to undefined function get_header() in /home/machinemagic/public_html/wp-content/themes/eddiemachado-bones-611c04e/404.php on line 1
+[13-Mar-2016 04:40:38 Europe/Simferopol] PHP Fatal error:  Call to undefined function current_user_can() in /home/machinemagic/public_html/wp-content/themes/eddiemachado-bones-611c04e/functions.php on line 15
+[13-Mar-2016 04:40:38 Europe/Simferopol] PHP Fatal error:  Call to undefined function get_header() in /home/machinemagic/public_html/wp-content/themes/eddiemachado-bones-611c04e/404.php on line 1
+[13-Mar-2016 04:40:39 Europe/Simferopol] PHP Fatal error:  Call to undefined function is_front_page() in /home/machinemagic/public_html/wp-content/themes/eddiemachado-bones-611c04e/footer.php on line 1
