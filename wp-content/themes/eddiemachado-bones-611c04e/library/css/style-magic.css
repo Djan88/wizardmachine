@@ -662,4 +662,5 @@ form.pay-form
     -webkit-transition: transform 1s linear;
     -moz-transition: transform 1s linear;
     transition: transform 1s linear;
+    z-index: 4;
 }

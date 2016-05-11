@@ -62,6 +62,10 @@ jQuery(function() {
     jQuery( ".draggable, .box_rounded" ).draggable({ 
         snap: false
     });
+    //Изменение размера круга
+    jQuery( ".box_rounded" ).resizable({
+      aspectRatio: 1/ 1
+    });
     
     jQuery( ".select_program" ).accordion({ active: 100, heightStyle: "content" });
 
