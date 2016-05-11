@@ -1,0 +1,8 @@
+[11-May-2016 12:16:15 Europe/Simferopol] PHP Fatal error:  Call to undefined function send_origin_headers() in /home/videochi/public_html/wp-admin/admin-ajax.php on line 25
+[11-May-2016 12:17:01 Europe/Simferopol] PHP Fatal error:  Call to undefined function nocache_headers() in /home/videochi/public_html/wp-admin/admin.php on line 33
+[11-May-2016 12:18:16 Europe/Simferopol] PHP Fatal error:  Call to undefined function send_origin_headers() in /home/videochi/public_html/wp-admin/admin-ajax.php on line 25
+[11-May-2016 12:19:02 Europe/Simferopol] PHP Fatal error:  Call to undefined function nocache_headers() in /home/videochi/public_html/wp-admin/admin.php on line 33
+[11-May-2016 12:19:03 Europe/Simferopol] PHP Fatal error:  Call to undefined function nocache_headers() in /home/videochi/public_html/wp-admin/admin.php on line 33
+[11-May-2016 12:19:04 Europe/Simferopol] PHP Fatal error:  Call to undefined function nocache_headers() in /home/videochi/public_html/wp-admin/admin.php on line 33
+[11-May-2016 12:20:24 Europe/Simferopol] PHP Fatal error:  Call to undefined function send_origin_headers() in /home/videochi/public_html/wp-admin/admin-ajax.php on line 25
+[11-May-2016 12:22:25 Europe/Simferopol] PHP Fatal error:  Call to undefined function send_origin_headers() in /home/videochi/public_html/wp-admin/admin-ajax.php on line 25
