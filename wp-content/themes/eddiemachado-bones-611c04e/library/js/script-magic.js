@@ -58,7 +58,10 @@ jQuery(function() {
         jQuery('.prot_in_action').text('Активирован протокол '+protocolName);
     }
 
-    jQuery( ".draggable" ).draggable({ snap: false });
+    //Перетягивание элементов
+    jQuery( ".draggable, .box_rounded" ).draggable({ 
+        snap: false
+    });
     
     jQuery( ".select_program" ).accordion({ active: 100, heightStyle: "content" });
 
