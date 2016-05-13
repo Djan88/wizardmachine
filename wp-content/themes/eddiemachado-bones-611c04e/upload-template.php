@@ -1036,7 +1036,7 @@
                             <li id="draggableClean_8" class="itemlist_item item_list__mid itemlist_item__clear draggable inopaciti" style="left: 535px; top: 80px;"></li>
                         </ul>
                         <ul class="itemlist itemlist-two" id="itemlist-two">
-                        <div class="box_rounded">
+                        <div class="box_rounded hidden">
                             <li id="draggableD12" class="itemlist_item item_list__mid draggable hidden" style="left: 45%; top: 5px;"></li>
                         </div>
                         <!--

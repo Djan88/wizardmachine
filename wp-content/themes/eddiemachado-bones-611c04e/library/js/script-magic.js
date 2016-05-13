@@ -154,6 +154,21 @@ jQuery('.work-area').find('.returned').draggable();
         jQuery('.itemlist-two').append(croppedImg);
         jQuery('.work-area').find('.returned').draggable();        
         jQuery('.knife-wrap').css('height', jQuery('.itemlist-two').height()+20+'px');
+        if(protocol == 'v2'){
+            jQuery('.box_rounded').removeClass('hidden');
+        } else if(protocol == 'v3'){
+            jQuery('.box_rounded').removeClass('hidden');
+        } else if(protocol == 'v4'){
+            jQuery('.box_rounded').removeClass('hidden');
+        } else if(protocol == 'v5'){
+            jQuery('.box_rounded').removeClass('hidden');
+        } else if(protocol == 'v6'){
+            jQuery('.box_rounded').removeClass('hidden');
+        } else if(protocol == 'v7'){
+            jQuery('.box_rounded').removeClass('hidden');
+        } else {
+            jQuery('.box_rounded').addClass('hidden');
+        }
     }
     // Переход с экрана диагноситки ножом
     jQuery('.btn__next').on('click', function(event) {
@@ -222,6 +237,21 @@ jQuery('#main').on('click', '.fast-protocol', function() {
     jQuery('.fast-protocol-wrap')
         .addClass('hidden')
         .removeClass('fadeIn');
+    if(protocol == 'v2'){
+        jQuery('.box_rounded').removeClass('hidden');
+    } else if(protocol == 'v3'){
+        jQuery('.box_rounded').removeClass('hidden');
+    } else if(protocol == 'v4'){
+        jQuery('.box_rounded').removeClass('hidden');
+    } else if(protocol == 'v5'){
+        jQuery('.box_rounded').removeClass('hidden');
+    } else if(protocol == 'v6'){
+        jQuery('.box_rounded').removeClass('hidden');
+    } else if(protocol == 'v7'){
+        jQuery('.box_rounded').removeClass('hidden');
+    } else {
+        jQuery('.box_rounded').addClass('hidden');
+    }
     // if(protocol == 'resource'){
     //     jQuery('.fast-protocol-resource')
     //         .removeClass('hidden')
