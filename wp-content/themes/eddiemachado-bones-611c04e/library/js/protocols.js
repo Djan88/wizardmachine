@@ -1955,7 +1955,7 @@
                                     });
                                     jQuery('#triangle_4').css({
                                         transform: 'scale(0.2) rotateY(180deg)rotateZ(60deg)',
-                                        left: '-180px'
+                                        left: '-160px'
                                     });
                                     //анимация первого треугольника
                                     jQuery('#draggableS_1').addClass('transparent');
@@ -1981,7 +1981,7 @@
                                                                 });
                                                                 jQuery('#triangle_4').css({
                                                                     transform: 'scale(0.2) rotateY(0deg)rotateZ(60deg)',
-                                                                    left: '-180px'
+                                                                    left: '-160px'
                                                                 });
                                                                 //анимация первого треугольника
                                                                 jQuery('#draggableS_1').addClass('transparent');                                                                    
