@@ -1785,6 +1785,7 @@
                         transform: 'scale(1)',
                         background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat',
                         transform: 'rotate(-'+d12Val+'deg)',
+                        borderWidth: '1px',
                         borderColor: '#555'
                     });
                 count_animation += 1;
