@@ -1953,8 +1953,11 @@
                                         left: '-180px',
                                         top: '-120px'
                                     });
+                                    jQuery('#triangle_4').css({
+                                        transform: 'scale(0.2) rotateY(180deg)'
+                                    });
                                     //анимация первого треугольника
-                                    jQuery('#draggableD_1').addClass('transparent');
+                                    jQuery('#draggableS_1').addClass('transparent');
                                     firstTriangleAnimation = new Vivus('triangle_1', {type: 'delayed', duration: 150}, function(){
                                     //анимация второго треугольника
                                         setTimeout(function(){
@@ -1976,7 +1979,7 @@
                                                                     top: '-120px'
                                                                 });
                                                                 //анимация первого треугольника
-                                                                jQuery('#draggableD_1').addClass('transparent');                                                                    
+                                                                jQuery('#draggableS_1').addClass('transparent');                                                                    
                                                                 firstTriangleAnimation = new Vivus('triangle_1', {type: 'delayed', duration: 150}, function(){
                                                                 //анимация второго треугольника
                                                                     setTimeout(function(){
