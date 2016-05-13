@@ -2127,7 +2127,6 @@
                                                         paddingTop: '2px',
                                                         zIndex: '1'
                                                     });
-                                                    sound.play();
                                                     jQuery('.chart').data('easyPieChart').update(61);
                                                     jQuery('.chart').find('span').text('61');
                                 //Этап 5-1-2
@@ -2162,7 +2161,6 @@
                                                                 paddingTop: '2px',
                                                                 zIndex: '1'
                                                             });
-                                                            sound.play();
                                                             jQuery('.chart').data('easyPieChart').update(62);
                                                             jQuery('.chart').find('span').text('62');
                                 //Этап 5-1-3
@@ -2232,7 +2230,6 @@
                                                                                 paddingTop: '2px',
                                                                                 zIndex: '1'
                                                                             });
-                                                                            sound.play();
                                                                             jQuery('.chart').data('easyPieChart').update(64);
                                                                             jQuery('.chart').find('span').text('64');
                                                         //Этап 5-2-1
@@ -2267,7 +2264,6 @@
                                                                                         paddingTop: '2px',
                                                                                         zIndex: '1'
                                                                                     });
-                                                                                    sound.play();
                                                                                     jQuery('.chart').data('easyPieChart').update(65);
                                                                                     jQuery('.chart').find('span').text('65');
                                                                 //Этап 5-2-2
@@ -2302,7 +2298,6 @@
                                                                                                 paddingTop: '2px',
                                                                                                 zIndex: '1'
                                                                                             });
-                                                                                            sound.play();
                                                                                             jQuery('.chart').data('easyPieChart').update(66);
                                                                                             jQuery('.chart').find('span').text('66');
                                                                 //Этап 5-2-3
@@ -2337,7 +2332,6 @@
                                                                                                         paddingTop: '2px',
                                                                                                         zIndex: '1'
                                                                                                     });
-                                                                                                    sound.play();
                                                                                                     jQuery('.chart').data('easyPieChart').update(67);
                                                                                                     jQuery('.chart').find('span').text('67');
                                                                 //Этап 5-2-4
@@ -2372,7 +2366,6 @@
                                                                                                                 paddingTop: '2px',
                                                                                                                 zIndex: '1'
                                                                                                             });
-                                                                                                            sound.play();
                                                                                                             jQuery('.chart').data('easyPieChart').update(68);
                                                                                                             jQuery('.chart').find('span').text('68');
                                                                                         //Этап 5-3-1
@@ -2407,7 +2400,6 @@
                                                                                                                         paddingTop: '2px',
                                                                                                                         zIndex: '1'
                                                                                                                     });
-                                                                                                                    sound.play();
                                                                                                                     jQuery('.chart').data('easyPieChart').update(69);
                                                                                                                     jQuery('.chart').find('span').text('69');
                                                                                                 //Этап 5-3-2
@@ -2442,7 +2434,6 @@
                                                                                                                                 paddingTop: '2px',
                                                                                                                                 zIndex: '1'
                                                                                                                             });
-                                                                                                                            sound.play();
                                                                                                                             jQuery('.chart').data('easyPieChart').update(70);
                                                                                                                             jQuery('.chart').find('span').text('70');
                                                                                                 //Этап 5-3-3
@@ -2477,7 +2468,6 @@
                                                                                                                                         paddingTop: '2px',
                                                                                                                                         zIndex: '1'
                                                                                                                                     });
-                                                                                                                                    sound.play();
                                                                                                                                     jQuery('.chart').data('easyPieChart').update(71);
                                                                                                                                     jQuery('.chart').find('span').text('71');
                                                                                                 //Этап 5-3-4
@@ -2512,7 +2502,6 @@
                                                                                                                                                 paddingTop: '2px',
                                                                                                                                                 zIndex: '1'
                                                                                                                                             });
-                                                                                                                                            sound.play();
                                                                                                                                             jQuery('.chart').data('easyPieChart').update(82);
                                                                                                                                             jQuery('.chart').find('span').text('82');
                                                                                                                                 
