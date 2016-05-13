@@ -1770,8 +1770,13 @@
                     transform: 'scale(1)',
                     borderWidth: '1px',
                     paddingTop: '4px',
-                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/disfunction.jpg) 0 0/100% no-repeat',
                     zIndex: '1000'
+                });
+                jQuery('#draggableS4, #draggableS5, #draggableS6').css({
+                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/povregdenie_demona.jpg) 0 0/100% no-repeat'
+                });
+                jQuery('#draggableS_1, #draggableS2, #draggableS2_1, #draggableS3, #draggableSh').css({
+                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/travma.jpg) 0 0/100% no-repeat'
                 });
                 jQuery('#draggableD12')
                     .removeClass('hidden')
