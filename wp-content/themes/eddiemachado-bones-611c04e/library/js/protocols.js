@@ -1765,7 +1765,7 @@
                 tickSound.play();
                 jQuery('#draggableS_1, #draggableS2, #draggableS2_1, #draggableS3, #draggableS4, #draggableS5, #draggableS6, #draggableSh').css({
                     color: 'transparent',
-                    borderColor: 'transparent',
+                    borderColor: '#555',
                     opacity: 0.8,
                     transform: 'scale(1)',
                     borderWidth: '1px',
