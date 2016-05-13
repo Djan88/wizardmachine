@@ -1864,7 +1864,7 @@
                             borderWidth: '1px',
                             paddingTop: '4px',
                             transform: 'rotate('+rotateVal+'deg) scale(1)',
-                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/povregdenie_demona.jpg) 0 0/100% no-repeat',
+                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/superdisfunction.png) 0 0/100% no-repeat',
                             zIndex: '1000'
                         });
                         jQuery('#draggableD12')
