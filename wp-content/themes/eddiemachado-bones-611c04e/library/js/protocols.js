@@ -1954,7 +1954,8 @@
                                         top: '-120px'
                                     });
                                     jQuery('#triangle_4').css({
-                                        transform: 'scale(0.2) rotateY(180deg)rotateZ(0deg)'
+                                        transform: 'scale(0.2) rotateY(180deg)rotateZ(60deg)',
+                                        left: '-180px'
                                     });
                                     //анимация первого треугольника
                                     jQuery('#draggableS_1').addClass('transparent');
@@ -1979,7 +1980,8 @@
                                                                     top: '-120px'
                                                                 });
                                                                 jQuery('#triangle_4').css({
-                                                                    transform: 'scale(0.2) rotateY(0deg)rotateZ(120deg)'
+                                                                    transform: 'scale(0.2) rotateY(0deg)rotateZ(60deg)',
+                                                                    left: '-180px'
                                                                 });
                                                                 //анимация первого треугольника
                                                                 jQuery('#draggableS_1').addClass('transparent');                                                                    
