@@ -2072,6 +2072,7 @@
                                 }, 250);
                                 jQuery('.box_rounded').css('transform', 'rotate(0deg) scale(1)');
                                 jQuery('#draggableD12').css('transform', 'rotate(0deg)');
+                                jQuery('.itemlist_item').removeClass('transparent');
                             }
                         }, 250);
                     }
@@ -2227,7 +2228,7 @@ v5 = function(){
                         top: '-120px'
                     });
                     //анимация первого треугольника
-                    jQuery('#draggableD_1').addClass('transparent');
+                    jQuery('#d').addClass('transparent');
                     firstTriangleAnimation = new Vivus('triangle_1', {type: 'delayed', duration: 150}, function(){
                     //анимация второго треугольника
                         setTimeout(function(){
