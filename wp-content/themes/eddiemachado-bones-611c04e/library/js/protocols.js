@@ -12,6 +12,7 @@
         onEnd,
         protocol,
         resorce,
+        rotateVal = 0,
         solis,
         dinamicElem = false,
         resourceActive = false,
@@ -1758,6 +1759,7 @@
         reloadTime = 0;
         reloadTime1 = 0;
         d12Val = 0;
+        rotateVal = 0;
         cur_animation_val = 0;
         count_animation = 1;
         phaseOne = setInterval(function(){
@@ -1850,6 +1852,7 @@
                 reloadTime1 = 0;
                 d12Val = 0;
                 cur_animation_val = 0;
+                rotateVal = 0;
                 count_animation = 1;
                 phaseOne = setInterval(function(){
                     if (count_animation <= 344){                                                                         //90
@@ -1860,7 +1863,7 @@
                             opacity: 0.8,
                             borderWidth: '1px',
                             paddingTop: '4px',
-                            transform: 'rotate('+cur_animation_val+'deg) scale(1)',
+                            transform: 'rotate('+rotateVal+'deg) scale(1)',
                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/povregdenie_demona.jpg) 0 0/100% no-repeat',
                             zIndex: '1000'
                         });
@@ -1875,6 +1878,7 @@
                                 borderColor: '#555'
                             });
                         count_animation += 1;
+                        rotateVal += 1.5;
                         // console.log(count_animation);
                         if(count_animation <= 120){
                             cur_animation_val += 1.5;
