@@ -2682,7 +2682,6 @@
                                                                                                                             zIndex: '1000'
                                                                                                                         });
                                                                                                                         jQuery('#draggable0').css({
-                                                                                                                            transform: 'rotate(+'+count_animation+'deg) scale(1)',
                                                                                                                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/plod.png) 0 0/100% no-repeat'
                                                                                                                         });
                                                                                                                         jQuery('#draggable4').css({
