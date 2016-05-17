@@ -1761,6 +1761,12 @@
         firstTriangleAnimation.play();
     }
     v4 = function(){
+        var sound = new Howl({
+            urls: ['/sounds/sound.ogg', '/sounds/sound.aac', '/sounds/sound.mp3'],
+            autoplay: false,
+            loop: false,
+            buffer: true
+        }); 
         dinamicElem = false;
     //фаза 1
         reloadTime = 0;
@@ -2752,9 +2758,10 @@
                                                                                                                             paddingTop: '2px',
                                                                                                                             zIndex: '1'
                                                                                                                         });
+                                                                                                                        tickSound.stop();
+                                                                                                                        sound.play();
                                                                                                                         jQuery('.chart').data('easyPieChart').update(100);
                                                                                                                         jQuery('.chart').find('span').text('100');
-                                                                                                                        tickSound.stop();
                                                                                                                         onEnd();
                                                                                                                         jQuery( ".btn__wizard" )
                                                                                                                             .text('Выполнить')
