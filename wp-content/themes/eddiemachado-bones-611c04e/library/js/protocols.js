@@ -2657,15 +2657,16 @@
                                                                                                                 count_animation = 1;
                                                                                                                 jQuery('.chart').data('easyPieChart').update(90);
                                                                                                                 jQuery('.chart').find('span').text('90');
-                                                                                                // Фаза 7
+                                                                                            //Фаза 7
                                                                                                                 reloadTime = 0;
                                                                                                                 reloadTime1 = 0;
                                                                                                                 d12Val = 0;
-                                                                                                                cur_animation_val = 0;
                                                                                                                 rotateVal = 0;
+                                                                                                                cur_animation_val = 0;
                                                                                                                 count_animation = 1;
                                                                                                                 phaseOne = setInterval(function(){
-                                                                                                                    if (count_animation <= 120){                                                                         //120
+                                                                                                                    if (count_animation <= 344){                                                                         //90
+                                                                                                                        tickSound.play();
                                                                                                                         jQuery('#draggable0, #draggable3, #draggable4').css({
                                                                                                                             color: 'transparent',
                                                                                                                             borderColor: '#777',
@@ -2760,9 +2761,9 @@
                                                                                                                         onEnd();
                                                                                                                         jQuery( ".btn__wizard" )
                                                                                                                             .text('Выполнить')
-                                                                                                                            .removeClass('btn__wizard_inAction');         
+                                                                                                                            .removeClass('btn__wizard_inAction');
                                                                                                                     }
-                                                                                                                }, 1000); 
+                                                                                                                }, 250); 
                                                                                                             }
                                                                                                         }, 250);
                                                                                                     }
