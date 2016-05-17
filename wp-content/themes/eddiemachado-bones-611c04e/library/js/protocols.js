@@ -35,6 +35,13 @@
         reloadTime,
         reloadTime1,
         d12Val,
+        ringStatus = function(){
+            if (jQuery('.box_rounded').hasClass('hidden')) {
+                jQuery('.box_rounded').removeClass('hidden')
+            } else {
+                jQuery('.box_rounded').addClass('hidden')
+            }
+        },
         cur_animation_val,
         tickSound = new buzz.sound( "/sounds/tick", {
             formats: [ "ogg", "mp3" ]
@@ -2090,6 +2097,8 @@
                                 cur_animation_val = 0;
                                 rotateVal = 0;
                                 count_animation = 1;
+                                tickSound.stop();
+                                ringStatus();
                     //Этап 4-1-1
                                 phaseSeven_one = setInterval(function(){
                                     if (count_animation <= 22){                                                                         //22
@@ -2502,6 +2511,8 @@
                                                                                                         cur_animation_val = 0;
                                                                                                         rotateVal = 0;
                                                                                                         count_animation = 1;
+                                                                                                        tickSound.play();
+                                                                                                        ringStatus();
                                                                                                         phaseOne = setInterval(function(){
                                                                                                             if (count_animation <= 344){                                                                         
                                                                                                                 tickSound.play();
