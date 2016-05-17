@@ -2076,17 +2076,6 @@
                                 clearInterval(phaseOne);
                                 count_animation = 1;
                                 tickSound.stop();
-                                phaseTwo = setInterval(function(){
-                                    if (reloadTime <= 1){                                                                       //1
-                                        tickSound.stop();
-                                        reloadSound.play();
-                                        reloadTime += 1;
-                                    } else {
-                                        clearInterval(phaseTwo);
-                                        reloadSound.stop();
-                                        tickSound.play();
-                                    }
-                                }, 250);
                                 jQuery('.box_rounded').css('transform', 'rotate(0deg) scale(1)');
                                 jQuery('#draggableD12').css('transform', 'rotate(0deg)');
                                 jQuery('.itemlist_item').removeClass('transparent');
@@ -2097,7 +2086,6 @@
                                 cur_animation_val = 0;
                                 rotateVal = 0;
                                 count_animation = 1;
-                                tickSound.stop();
                                 ringStatus();
                     //Этап 4-1-1
                                 phaseSeven_one = setInterval(function(){
