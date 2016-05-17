@@ -2372,7 +2372,7 @@
                                                                                     //фаза 5
                                                                                                 count_animation = 1;
                                                                                                 phaseOne = setInterval(function(){
-                                                                                                    if (count_animation <= 174){                                                                         //120
+                                                                                                    if (count_animation <= 174){
                                                                                                         cur_animation_val += 6;
                                                                                                         if (count_animation > 0 && count_animation <= 17){
                                                                                                             jQuery('#draggable4').css({
@@ -2663,7 +2663,7 @@
                                                                                                                 count_animation = 1;
                                                                                                                 jQuery('.chart').data('easyPieChart').update(90);
                                                                                                                 jQuery('.chart').find('span').text('90');
-                                                                                            //Фаза 7
+                                                                                            //фаза 7
                                                                                                                 reloadTime = 0;
                                                                                                                 reloadTime1 = 0;
                                                                                                                 d12Val = 0;
@@ -2672,7 +2672,6 @@
                                                                                                                 count_animation = 1;
                                                                                                                 phaseOne = setInterval(function(){
                                                                                                                     if (count_animation <= 344){                                                                         //90
-                                                                                                                        tickSound.play();
                                                                                                                         jQuery('#draggable0, #draggable3, #draggable4').css({
                                                                                                                             color: 'transparent',
                                                                                                                             borderColor: '#777',
@@ -2683,7 +2682,7 @@
                                                                                                                             zIndex: '1000'
                                                                                                                         });
                                                                                                                         jQuery('#draggable0').css({
-                                                                                                                            transform: 'rotate(+'+cur_animation_val+'deg) scale(1)',
+                                                                                                                            transform: 'rotate(+'+count_animation+'deg) scale(1)',
                                                                                                                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/plod.png) 0 0/100% no-repeat'
                                                                                                                         });
                                                                                                                         jQuery('#draggable4').css({
@@ -2692,8 +2691,6 @@
                                                                                                                         jQuery('#draggable3').css({
                                                                                                                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/chisty_vnutri.jpg) 0 0/100% no-repeat'
                                                                                                                         });
-                                                                                                                        count_animation += 1;
-                                                                                                                        cur_animation_val += 6;
                                                                                                                         jQuery('#draggableD12')
                                                                                                                             .removeClass('hidden')
                                                                                                                             .css({
@@ -2704,7 +2701,7 @@
                                                                                                                                 borderWidth: '1px',
                                                                                                                                 borderColor: '#777'
                                                                                                                             });
-                                                                                                                        rotateVal += 1.5;
+                                                                                                                        count_animation += 1;
                                                                                                                         if(count_animation <= 120){
                                                                                                                             cur_animation_val += 1.5;
                                                                                                                             d12Val+= 9;
@@ -2736,18 +2733,7 @@
                                                                                                                     } else {
                                                                                                                         clearInterval(phaseOne);
                                                                                                                         count_animation = 1;
-                                                                                                                        tickSound.stop();
-                                                                                                                        phaseTwo = setInterval(function(){
-                                                                                                                            if (reloadTime <= 1){                                                                       //1
-                                                                                                                                tickSound.stop();
-                                                                                                                                reloadSound.play();
-                                                                                                                                reloadTime += 1;
-                                                                                                                            } else {
-                                                                                                                                clearInterval(phaseTwo);
-                                                                                                                                reloadSound.stop();
-                                                                                                                                tickSound.play();
-                                                                                                                            }
-                                                                                                                        }, 250);
+                                                                                                                        cur_animation_val = 1;
                                                                                                                         jQuery('#draggable0, #draggable3, #draggable4').css({
                                                                                                                             background: 'rgba(255,255,255, 0.5)',
                                                                                                                             color: 'red',
@@ -2758,7 +2744,8 @@
                                                                                                                             paddingTop: '2px',
                                                                                                                             zIndex: '1'
                                                                                                                         });
-                                                                                                                        tickSound.stop();
+                                                                                                                        jQuery('.box_rounded').css('transform', 'rotate(0deg) scale(1)');
+                                                                                                                        jQuery('#draggableD12').css('transform', 'rotate(0deg)');
                                                                                                                         sound.play();
                                                                                                                         jQuery('.chart').data('easyPieChart').update(100);
                                                                                                                         jQuery('.chart').find('span').text('100');
@@ -2766,8 +2753,10 @@
                                                                                                                         jQuery( ".btn__wizard" )
                                                                                                                             .text('Выполнить')
                                                                                                                             .removeClass('btn__wizard_inAction');
+                                                                                                                        tickSound.stop();
+                                                                                                                        
                                                                                                                     }
-                                                                                                                }, 1000); 
+                                                                                                                }, 250);  
                                                                                                             }
                                                                                                         }, 250);
                                                                                                     }
