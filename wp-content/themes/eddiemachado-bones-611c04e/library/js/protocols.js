@@ -2698,9 +2698,7 @@
                                                                                                                                 borderWidth: '1px',
                                                                                                                                 borderColor: '#777'
                                                                                                                             });
-                                                                                                                        count_animation += 1;
                                                                                                                         rotateVal += 1.5;
-                                                                                                                        // console.log(count_animation);
                                                                                                                         if(count_animation <= 120){
                                                                                                                             cur_animation_val += 1.5;
                                                                                                                             d12Val+= 9;
