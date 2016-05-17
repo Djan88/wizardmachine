@@ -2481,7 +2481,6 @@
                                                                                                             jQuery('.chart').data('easyPieChart').update(79);
                                                                                                             jQuery('.chart').find('span').text('79');
                                                                                                         }
-                                                                                                        count_animation = 1;
                                                                                         // Фаза 6
                                                                                                         reloadTime = 0;
                                                                                                         reloadTime1 = 0;
@@ -2633,15 +2632,15 @@
                                                                                                                 jQuery('.box_rounded').css('transform', 'rotate(0deg) scale(1)');
                                                                                                                 jQuery('#draggableD12').css('transform', 'rotate(0deg)');
                                                                                                                 jQuery('.itemlist_item').removeClass('transparent');
+                                                                                                                jQuery('.chart').data('easyPieChart').update(90);
+                                                                                                                jQuery('.chart').find('span').text('90');
+                                                                                                // Фаза 7
                                                                                                                 reloadTime = 0;
                                                                                                                 reloadTime1 = 0;
                                                                                                                 d12Val = 0;
                                                                                                                 cur_animation_val = 0;
                                                                                                                 rotateVal = 0;
                                                                                                                 count_animation = 1;
-                                                                                                                jQuery('.chart').data('easyPieChart').update(90);
-                                                                                                                jQuery('.chart').find('span').text('90');
-                                                                                                // Фаза 7
                                                                                                                 phaseOne = setInterval(function(){
                                                                                                                     if (count_animation <= 120){                                                                         //120
                                                                                                                         jQuery('#draggable0, #draggable3, #draggable4').css({
@@ -2665,9 +2664,62 @@
                                                                                                                         });
                                                                                                                         count_animation += 1;
                                                                                                                         cur_animation_val += 6;
+                                                                                                                        jQuery('#draggableD12')
+                                                                                                                            .removeClass('hidden')
+                                                                                                                            .css({
+                                                                                                                                opacity: 0.8,
+                                                                                                                                transform: 'scale(1)',
+                                                                                                                                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat',
+                                                                                                                                transform: 'rotate(-'+d12Val+'deg)',
+                                                                                                                                borderWidth: '1px',
+                                                                                                                                borderColor: '#777'
+                                                                                                                            });
+                                                                                                                        count_animation += 1;
+                                                                                                                        rotateVal += 1.5;
+                                                                                                                        // console.log(count_animation);
+                                                                                                                        if(count_animation <= 120){
+                                                                                                                            cur_animation_val += 1.5;
+                                                                                                                            d12Val+= 9;
+                                                                                                                            jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                        } else if (count_animation >= 120 && count_animation <= 228){
+                                                                                                                            cur_animation_val -= 1.5;
+                                                                                                                            d12Val+= 9;
+                                                                                                                            jQuery('#draggableD12').css('transform', 'rotate(-'+d12Val+'deg)');
+                                                                                                                            jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                        } else if (count_animation >= 228 && count_animation <= 292){
+                                                                                                                            cur_animation_val -= 1.5;
+                                                                                                                            d12Val+= 9;
+                                                                                                                            jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                            jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                                                                                            jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                                                                                                        } else if (count_animation >= 292 && count_animation <= 344){
+                                                                                                                            cur_animation_val += 1.5;
+                                                                                                                            d12Val+= 9;
+                                                                                                                            jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                            jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                                                                                            jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                                                                                                        } else {
+                                                                                                                            d12Val+= 9;
+                                                                                                                            cur_animation_val += 1.5;
+                                                                                                                            jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                            jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                                                                                            jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                                                                                                        }
                                                                                                                     } else {
                                                                                                                         clearInterval(phaseOne);
                                                                                                                         count_animation = 1;
+                                                                                                                        tickSound.stop();
+                                                                                                                        phaseTwo = setInterval(function(){
+                                                                                                                            if (reloadTime <= 1){                                                                       //1
+                                                                                                                                tickSound.stop();
+                                                                                                                                reloadSound.play();
+                                                                                                                                reloadTime += 1;
+                                                                                                                            } else {
+                                                                                                                                clearInterval(phaseTwo);
+                                                                                                                                reloadSound.stop();
+                                                                                                                                tickSound.play();
+                                                                                                                            }
+                                                                                                                        }, 250);
                                                                                                                         jQuery('#draggable0, #draggable3, #draggable4').css({
                                                                                                                             background: 'rgba(255,255,255, 0.5)',
                                                                                                                             color: 'red',
