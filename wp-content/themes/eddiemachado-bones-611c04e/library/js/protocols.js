@@ -2002,24 +2002,24 @@
                                                                                         fourthTriangleAnimation = new Vivus('triangle_4', {type: 'delayed', duration: 150}, function(){
                                                                                         });
                                                                                         fourthTriangleAnimation.play();
-                                                                                    }, 250)
+                                                                                    }, 1000)
                                                                                 });
                                                                                 thirdTriangleAnimation.play();
-                                                                            }, 250)
+                                                                            }, 1000)
                                                                         });
                                                                         secondTriangleAnimation.play();
-                                                                    }, 250)
+                                                                    }, 1000)
                                                                 });
                                                                 firstTriangleAnimation.play();
                                                             });
                                                             fourthTriangleAnimation.play();
-                                                        }, 250)
+                                                        }, 1000)
                                                     });
                                                     thirdTriangleAnimation.play();
-                                                }, 250)
+                                                }, 1000)
                                             });
                                             secondTriangleAnimation.play();
-                                        }, 250)
+                                        }, 1000)
                                     });
                                     firstTriangleAnimation.play();
                                 }
