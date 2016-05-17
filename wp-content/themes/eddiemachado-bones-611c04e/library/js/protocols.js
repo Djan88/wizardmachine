@@ -2752,16 +2752,15 @@
                                                                                                                             paddingTop: '2px',
                                                                                                                             zIndex: '1'
                                                                                                                         });
-                                                                                                                        tickSound.stop();
-                                                                                                                        sound.play();
                                                                                                                         jQuery('.chart').data('easyPieChart').update(100);
                                                                                                                         jQuery('.chart').find('span').text('100');
+                                                                                                                        tickSound.stop();
                                                                                                                         onEnd();
                                                                                                                         jQuery( ".btn__wizard" )
                                                                                                                             .text('Выполнить')
                                                                                                                             .removeClass('btn__wizard_inAction');
                                                                                                                     }
-                                                                                                                }, 250); 
+                                                                                                                }, 1000); 
                                                                                                             }
                                                                                                         }, 250);
                                                                                                     }
