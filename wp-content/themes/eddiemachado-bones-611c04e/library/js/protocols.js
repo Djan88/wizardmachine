@@ -1870,7 +1870,7 @@
                 count_animation = 1;
                 phaseOne = setInterval(function(){
                     if (count_animation <= 344){                                                                         //90
-                        tickSound.play();
+                        // tickSound.play();
                         jQuery('#draggableS_1, #draggable4, #draggableD4, #draggableD5, #draggableD6').css({
                             color: 'transparent',
                             borderColor: '#777',
