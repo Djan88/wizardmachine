@@ -1102,7 +1102,6 @@
             } else {
                 clearInterval(phaseOne);
                 count_animation = 1;
-                tickSound.stop();
                 jQuery('.box_rounded').css('transform', 'rotate(0deg) scale(1)');
                 jQuery('#draggableD12').css('transform', 'rotate(0deg)');
                 jQuery('.itemlist_item').removeClass('transparent');
@@ -1198,7 +1197,7 @@
                         jQuery('#draggableD12').css('transform', 'rotate(0deg)');
                         jQuery('.chart').data('easyPieChart').update(24);
                         jQuery('.chart').find('span').text('24');
-    //фаза 1
+    //фаза 3
                         reloadTime = 0;
                         reloadTime1 = 0;
                         d12Val = 0;
