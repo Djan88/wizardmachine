@@ -1812,7 +1812,7 @@
                                                                                                                 ringStatus();
                                                                                                                 phaseOne = setInterval(function(){
                                                                                                                     if (count_animation <= 344){                                                                         //90
-                                                                                                                        jQuery('#draggable0, #draggable5, #draggable4, #draggable2').css({
+                                                                                                                        jQuery('#draggable0, #draggable3, #draggable4, #draggable2').css({
                                                                                                                             color: 'transparent',
                                                                                                                             borderColor: 'transparent',
                                                                                                                             opacity: 0.8,
@@ -1830,7 +1830,7 @@
                                                                                                                         jQuery('#draggable2').css({
                                                                                                                             background: 'url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/nerazd_001.png) 0 0/100% no-repeat'
                                                                                                                         });
-                                                                                                                        jQuery('#draggable5').css({
+                                                                                                                        jQuery('#draggable3').css({
                                                                                                                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/chisty_vnutri.jpg) 0 0/100% no-repeat'
                                                                                                                         });
                                                                                                                         jQuery('#draggableD12')
@@ -1876,7 +1876,7 @@
                                                                                                                         clearInterval(phaseOne);
                                                                                                                         count_animation = 1;
                                                                                                                         cur_animation_val = 1;
-                                                                                                                        jQuery('#draggable0, #draggable5, #draggable4, #draggable2').css({
+                                                                                                                        jQuery('#draggable0, #draggable3, #draggable4, #draggable2').css({
                                                                                                                             background: 'rgba(255,255,255, 0.5)',
                                                                                                                             color: 'red',
                                                                                                                             borderColor: 'red',
