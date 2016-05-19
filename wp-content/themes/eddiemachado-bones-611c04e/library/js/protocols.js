@@ -1429,6 +1429,86 @@
                                         jQuery('.itemlist_item').removeClass('transparent');
                                         jQuery('.chart').data('easyPieChart').update(36);
                                         jQuery('.chart').find('span').text('36');
+                            //фаза 5
+                                        count_animation = 1;
+                                        phaseOne = setInterval(function(){
+                                            if (count_animation <= 140){
+                                                cur_animation_val += 6;
+                                                if (count_animation > 0 && count_animation <= 17){
+                                                    jQuery('#draggable3').css({
+                                                        color: 'transparent',
+                                                        borderColor: 'transparent',
+                                                        opacity: 0.8,
+                                                        transform: 'scale(1)',
+                                                        borderWidth: '1px',
+                                                        paddingTop: '4px',
+                                                        background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/1_zemlya_lev.png) 0 0/100% no-repeat',
+                                                        zIndex: '1000'
+                                                    });
+                                                    jQuery('.chart').data('easyPieChart').update(61);
+                                                    jQuery('.chart').find('span').text('61');
+                                                } else if (count_animation > 17 && count_animation <= 34){
+                                                    jQuery('#draggable3').css({
+                                                        background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/2_vozduh_lev.png) 0 0/100% no-repeat'
+                                                    });
+                                                    jQuery('.chart').data('easyPieChart').update(63);
+                                                    jQuery('.chart').find('span').text('63');
+                                                } else if (count_animation > 34 && count_animation <= 53){
+                                                    jQuery('#draggable3').css({
+                                                        background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/3_voda_lev.png) 0 0/100% no-repeat'
+                                                    });
+                                                    jQuery('.chart').data('easyPieChart').update(65);
+                                                    jQuery('.chart').find('span').text('65');
+                                                } else if (count_animation > 53 && count_animation <= 70){
+                                                    jQuery('#draggable3').css({
+                                                        background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/4_ogon_lev.png) 0 0/100% no-repeat'
+                                                    });
+                                                    jQuery('.chart').data('easyPieChart').update(67);
+                                                    jQuery('.chart').find('span').text('67');
+                                                } else if (count_animation > 70 && count_animation <= 87){
+                                                    jQuery('#draggable3').css({
+                                                        background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/1_ogon_prav.png) 0 0/100% no-repeat'
+                                                    });
+                                                    jQuery('.chart').data('easyPieChart').update(69);
+                                                    jQuery('.chart').find('span').text('69');
+                                                } else if (count_animation > 87 && count_animation <= 104){
+                                                    jQuery('#draggable3').css({
+                                                        background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/2_voda_prav.png) 0 0/100% no-repeat'
+                                                    });
+                                                    jQuery('.chart').data('easyPieChart').update(71);
+                                                    jQuery('.chart').find('span').text('71');
+                                                } else if (count_animation > 104 && count_animation <= 123){
+                                                    jQuery('#draggable3').css({
+                                                        background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/3_vozduh_prav.png) 0 0/100% no-repeat'
+                                                    });
+                                                    jQuery('.chart').data('easyPieChart').update(73);
+                                                    jQuery('.chart').find('span').text('73');
+                                                } else if (count_animation > 123 && count_animation <= 140){
+                                                    jQuery('#draggable3').css({
+                                                        background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/4_zemlya_prav_lit.png) 0 0/100% no-repeat'
+                                                    });
+                                                    jQuery('.chart').data('easyPieChart').update(75);
+                                                    jQuery('.chart').find('span').text('75');
+                                                }
+                                                count_animation += 1;
+                                            } else {
+                                                clearInterval(phaseOne);
+                                                count_animation = 1;
+                                                jQuery('#draggable3').css({
+                                                    background: 'rgba(255,255,255, 0.5)',
+                                                    transform: 'scale(0.5)',
+                                                    color: 'red',
+                                                    borderColor: 'red',
+                                                    opacity: 1,
+                                                    borderWidth: '2px',
+                                                    paddingTop: '2px',
+                                                    zIndex: '1'
+                                                });
+                                                count_animation = 1;
+                                                jQuery('.chart').data('easyPieChart').update(81);
+                                                jQuery('.chart').find('span').text('81');
+                                            }
+                                        }, 1000);
                                     }
                                 }, 250);
                             }
