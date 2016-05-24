@@ -2974,7 +2974,7 @@ v5 = function(){
         buffer: true
     }); 
     dinamicElem = false;
-//фаза 3
+//фаза 1
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -2983,7 +2983,7 @@ v5 = function(){
     count_animation = 1;
     phaseOne = setInterval(function(){
         if (count_animation <= 344){                                                                         //90
-            jQuery('#draggableS1, #draggableVD, #draggableS4, #draggableS5, #draggableS6').css({
+            jQuery('#draggableS_1, #draggableVD, #draggableS4, #draggableS5, #draggableS6').css({
                 color: 'transparent',
                 borderColor: 'transparent',
                 opacity: 0.8,
@@ -2992,7 +2992,7 @@ v5 = function(){
                 paddingTop: '4px',
                 zIndex: '1000'
             });
-            jQuery('#draggableS1, #draggableS4, #draggableS5, #draggableS6').css({
+            jQuery('#draggableS_1, #draggableS4, #draggableS5, #draggableS6').css({
                 background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/povregdenie_demona.jpg) 0 0/100% no-repeat'
             });
             jQuery('#draggableVD').css({
@@ -3040,7 +3040,7 @@ v5 = function(){
         } else {
             clearInterval(phaseOne);
             count_animation = 1;
-            jQuery('#draggableS1, #draggableVD, #draggableS4, #draggableS5, #draggableS6').css({
+            jQuery('#draggableS_1, #draggableVD, #draggableS4, #draggableS5, #draggableS6').css({
                 background: 'rgba(255,255,255, 0.5)',
                 color: 'red',
                 borderColor: 'red',
