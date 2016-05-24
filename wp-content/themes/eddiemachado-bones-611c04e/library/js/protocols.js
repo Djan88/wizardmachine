@@ -3077,7 +3077,7 @@ v5 = function(){
             phaseOne = setInterval(function(){
                 if (count_animation <= 344){                                                                         //90
                     // tickSound.play();
-                    jQuery('#draggableD_1, #draggable4, #draggable5, #draggableD4, #draggableD5, #draggableD6').css({
+                    jQuery('#draggableD_1, #draggable4, #draggable5, #draggableD4, #draggableD5, #draggableD_6').css({
                         color: 'transparent',
                         borderColor: 'transparent',
                         opacity: 0.8,
@@ -3131,7 +3131,7 @@ v5 = function(){
                 } else {
                     clearInterval(phaseOne);
                     count_animation = 1;
-                    jQuery('#draggableD_1, #draggable4, #draggable5, #draggableD4, #draggableD5, #draggableD6').css({
+                    jQuery('#draggableD_1, #draggable4, #draggable5, #draggableD4, #draggableD5, #draggableD_6').css({
                         background: 'rgba(255,255,255, 0.5)',
                         color: 'red',
                         borderColor: 'red',
