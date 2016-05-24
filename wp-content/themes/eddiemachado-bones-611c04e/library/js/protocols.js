@@ -3166,7 +3166,6 @@ v5 = function(){
                     count_animation = 1;
                     phaseOne = setInterval(function(){
                         if (count_animation <= 344){                                                                         
-                            tickSound.play();
                             if (count_animation == 1) {
                                 cur_animation_val = 0;
                                 count_animation = 1;
