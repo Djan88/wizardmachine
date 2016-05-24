@@ -2981,6 +2981,7 @@ v5 = function(){
     rotateVal = 0;
     cur_animation_val = 0;
     count_animation = 1;
+    tickSound.play();
     phaseOne = setInterval(function(){
         if (count_animation <= 344){                                                                         //90
             jQuery('#draggableS_1, #draggableVD, #draggableS4, #draggableS5, #draggableS6').css({
