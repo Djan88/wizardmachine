@@ -19,6 +19,7 @@ jQuery(function() {
         curV = 'V3',
         actualV,
         curVZone = '#draggable3',
+
         supportsStorage = function(){
             try {
                 return 'localStorage' in window && window['localStorage'] !== null;
@@ -162,9 +163,7 @@ jQuery('.work-area').find('.returned').draggable();
             jQuery('.box_rounded').removeClass('hidden');
         } else if(protocol == 'v5'){
             jQuery('.box_rounded').removeClass('hidden');
-        } else if(protocol == 'v6'){
-            jQuery('.box_rounded').removeClass('hidden');
-        } else if(protocol == 'v7'){
+        } else if(protocol == 'face'){
             jQuery('.box_rounded').removeClass('hidden');
         } else {
             jQuery('.box_rounded').addClass('hidden');
@@ -245,9 +244,7 @@ jQuery('#main').on('click', '.fast-protocol', function() {
         jQuery('.box_rounded').removeClass('hidden');
     } else if(protocol == 'v5'){
         jQuery('.box_rounded').removeClass('hidden');
-    } else if(protocol == 'v6'){
-        jQuery('.box_rounded').removeClass('hidden');
-    } else if(protocol == 'v7'){
+    } else if(protocol == 'face'){
         jQuery('.box_rounded').removeClass('hidden');
     } else {
         jQuery('.box_rounded').addClass('hidden');
