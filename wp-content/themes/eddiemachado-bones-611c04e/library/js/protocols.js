@@ -3183,7 +3183,7 @@ v5 = function(){
                                 });
                                 //анимация первого треугольника
                                 jQuery('#draggableD_1').addClass('transparent');
-                                firstTriangleAnimation = new Vivus('triangle_1', {type: 'delayed', duration: 600}, function(){
+                                firstTriangleAnimation = new Vivus('triangleD_1', {type: 'delayed', duration: 600}, function(){
                                 //анимация второго треугольника
                                     setTimeout(function(){
                                         jQuery('#draggable2').addClass('transparent');
@@ -3210,7 +3210,7 @@ v5 = function(){
                                                             });
                                                             //анимация первого треугольника
                                                             jQuery('#draggableD_1').addClass('transparent');                                                                    
-                                                            firstTriangleAnimation = new Vivus('triangle_1', {type: 'delayed', duration: 600}, function(){
+                                                            firstTriangleAnimation = new Vivus('triangleD_1', {type: 'delayed', duration: 600}, function(){
                                                             //анимация второго треугольника
                                                                 setTimeout(function(){
                                                                     jQuery('#draggable2').addClass('transparent');
@@ -3716,7 +3716,251 @@ v5 = function(){
                                                                                                     count_animation = 1;
                                                                                                     jQuery('.chart').data('easyPieChart').update(81);
                                                                                                     jQuery('.chart').find('span').text('81');
-                                                                                    
+                                                                                    // Фаза 6
+                                                                                                    reloadTime = 0;
+                                                                                                    reloadTime1 = 0;
+                                                                                                    d12Val = 0;
+                                                                                                    cur_animation_val = 0;
+                                                                                                    rotateVal = 0;
+                                                                                                    count_animation = 1;
+                                                                                                    ringStatus();
+                                                                                                    tickSound.play();
+                                                                                                    phaseOne = setInterval(function(){
+                                                                                                        if (count_animation <= 344){                                                                         
+                                                                                                            tickSound.play();
+                                                                                                            if (count_animation == 1) {
+                                                                                                                cur_animation_val = 0;
+                                                                                                                count_animation = 1;
+                                                                                                                //анимация против часовой стрелки
+                                                                                                                jQuery('.triangle').css({
+                                                                                                                    transform: 'scale(0.2) rotateY(180deg)rotateZ(120deg)',
+                                                                                                                    left: '-180px',
+                                                                                                                    top: '-120px'
+                                                                                                                });
+                                                                                                                jQuery('#triangle_4').css({
+                                                                                                                    transform: 'scale(0.2) rotateY(180deg)rotateZ(60deg)',
+                                                                                                                    left: '-180px',
+                                                                                                                    top: '-140px'
+                                                                                                                });
+                                                                                                                //анимация первого треугольника
+                                                                                                                jQuery('#draggableD_1').addClass('transparent');
+                                                                                                                firstTriangleAnimation = new Vivus('triangleD_1', {type: 'delayed', duration: 600}, function(){
+                                                                                                                //анимация второго треугольника
+                                                                                                                    setTimeout(function(){
+                                                                                                                        jQuery('#draggable2').addClass('transparent');
+                                                                                                                        secondTriangleAnimation = new Vivus('triangle_2', {type: 'delayed', duration: 600}, function(){
+                                                                                                                //анимация третьего треугольника
+                                                                                                                            setTimeout(function(){
+                                                                                                                                jQuery('#draggable3').addClass('transparent');
+                                                                                                                                thirdTriangleAnimation = new Vivus('triangle_3', {type: 'delayed', duration: 600}, function(){
+                                                                                                                //анимация четвертого треугольника
+                                                                                                                                    setTimeout(function(){
+                                                                                                                                        jQuery('#draggable4').addClass('transparent');
+                                                                                                                                        fourthTriangleAnimation = new Vivus('triangle_4', {type: 'delayed', duration: 600}, function(){
+                                                                                                                                            jQuery('.itemlist_item').removeClass('transparent');
+                                                                                                                                        //анимация по часовой стрелке
+                                                                                                                                            jQuery('.triangle').css({
+                                                                                                                                                transform: 'scale(0.2) rotateY(0deg)rotateZ(120deg)',
+                                                                                                                                                left: '-170px',
+                                                                                                                                                top: '-120px'
+                                                                                                                                            });
+                                                                                                                                            jQuery('#triangle_4').css({
+                                                                                                                                                transform: 'scale(0.2) rotateY(0deg)rotateZ(60deg)',
+                                                                                                                                                left: '-160px',
+                                                                                                                                                top: '-140px'
+                                                                                                                                            });
+                                                                                                                                            //анимация первого треугольника
+                                                                                                                                            jQuery('#draggableD_1').addClass('transparent');                                                                    
+                                                                                                                                            firstTriangleAnimation = new Vivus('triangleD_1', {type: 'delayed', duration: 600}, function(){
+                                                                                                                                            //анимация второго треугольника
+                                                                                                                                                setTimeout(function(){
+                                                                                                                                                    jQuery('#draggable2').addClass('transparent');
+                                                                                                                                                    secondTriangleAnimation = new Vivus('triangle_2', {type: 'delayed', duration: 600}, function(){
+                                                                                                                                            //анимация третьего треугольника
+                                                                                                                                                        setTimeout(function(){
+                                                                                                                                                            jQuery('#draggable3').addClass('transparent');
+                                                                                                                                                            thirdTriangleAnimation = new Vivus('triangle_3', {type: 'delayed', duration: 600}, function(){
+                                                                                                                                            //анимация четвертого треугольника
+                                                                                                                                                                setTimeout(function(){
+                                                                                                                                                                    jQuery('#draggable4').addClass('transparent');
+                                                                                                                                                                    fourthTriangleAnimation = new Vivus('triangle_4', {type: 'delayed', duration: 600}, function(){
+                                                                                                                                                                    });
+                                                                                                                                                                    fourthTriangleAnimation.play();
+                                                                                                                                                                }, 250)
+                                                                                                                                                            });
+                                                                                                                                                            thirdTriangleAnimation.play();
+                                                                                                                                                        }, 250)
+                                                                                                                                                    });
+                                                                                                                                                    secondTriangleAnimation.play();
+                                                                                                                                                }, 250)
+                                                                                                                                            });
+                                                                                                                                            firstTriangleAnimation.play();
+                                                                                                                                        });
+                                                                                                                                        fourthTriangleAnimation.play();
+                                                                                                                                    }, 250)
+                                                                                                                                });
+                                                                                                                                thirdTriangleAnimation.play();
+                                                                                                                            }, 250)
+                                                                                                                        });
+                                                                                                                        secondTriangleAnimation.play();
+                                                                                                                    }, 250)
+                                                                                                                });
+                                                                                                                firstTriangleAnimation.play();
+                                                                                                            }
+                                                                                                            
+                                                                                                            jQuery('#draggableD12')
+                                                                                                                .removeClass('hidden')
+                                                                                                                .css({
+                                                                                                                    opacity: 0.8,
+                                                                                                                    transform: 'scale(1)',
+                                                                                                                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat',
+                                                                                                                    transform: 'rotate(-'+d12Val+'deg)',
+                                                                                                                    borderWidth: '1px',
+                                                                                                                    borderColor: 'transparent'
+                                                                                                                });
+                                                                                                            count_animation += 1;
+                                                                                                            rotateVal += 1.5;
+                                                                                                            // console.log(count_animation);
+                                                                                                            if(count_animation <= 120){
+                                                                                                                cur_animation_val += 1.5;
+                                                                                                                d12Val+= 9;
+                                                                                                                jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                            } else if (count_animation >= 120 && count_animation <= 228){
+                                                                                                                cur_animation_val -= 1.5;
+                                                                                                                d12Val+= 9;
+                                                                                                                jQuery('#draggableD12').css('transform', 'rotate(-'+d12Val+'deg)');
+                                                                                                                jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                            } else if (count_animation >= 228 && count_animation <= 292){
+                                                                                                                cur_animation_val -= 1.5;
+                                                                                                                d12Val+= 9;
+                                                                                                                jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                                                                                jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                                                                                            } else if (count_animation >= 292 && count_animation <= 344){
+                                                                                                                cur_animation_val += 1.5;
+                                                                                                                d12Val+= 9;
+                                                                                                                jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                                                                                jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                                                                                            } else {
+                                                                                                                d12Val+= 9;
+                                                                                                                cur_animation_val += 1.5;
+                                                                                                                jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                                                                                jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                                                                                            }
+                                                                                                        } else {
+                                                                                                            clearInterval(phaseOne);
+                                                                                                            count_animation = 1;
+                                                                                                            tickSound.stop();
+                                                                                                            jQuery('.box_rounded').css('transform', 'rotate(0deg) scale(1)');
+                                                                                                            jQuery('#draggableD12').css('transform', 'rotate(0deg)');
+                                                                                                            jQuery('.itemlist_item').removeClass('transparent');
+                                                                                                            reloadTime = 0;
+                                                                                                            reloadTime1 = 0;
+                                                                                                            d12Val = 0;
+                                                                                                            cur_animation_val = 0;
+                                                                                                            rotateVal = 0;
+                                                                                                            count_animation = 1;
+                                                                                                            jQuery('.chart').data('easyPieChart').update(90);
+                                                                                                            jQuery('.chart').find('span').text('90');
+                                                                                        //фаза 7
+                                                                                                            reloadTime = 0;
+                                                                                                            reloadTime1 = 0;
+                                                                                                            d12Val = 0;
+                                                                                                            rotateVal = 0;
+                                                                                                            cur_animation_val = 0;
+                                                                                                            count_animation = 1;
+                                                                                                            phaseOne = setInterval(function(){
+                                                                                                                if (count_animation <= 344){                                                                         //90
+                                                                                                                    jQuery('#draggable0, #draggable2, #draggable3, #draggable4').css({
+                                                                                                                        color: 'transparent',
+                                                                                                                        borderColor: 'transparent',
+                                                                                                                        opacity: 0.8,
+                                                                                                                        transform: 'scale(1)',
+                                                                                                                        borderWidth: '1px',
+                                                                                                                        paddingTop: '4px',
+                                                                                                                        zIndex: '1000'
+                                                                                                                    });
+                                                                                                                    jQuery('#draggable0').css({
+                                                                                                                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/plod.png) 0 0/100% no-repeat'
+                                                                                                                    });
+                                                                                                                    jQuery('#draggable4').css({
+                                                                                                                        background: 'url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/nerazd_002.png) 0 0/100% no-repeat'
+                                                                                                                    });
+                                                                                                                    jQuery('#draggable2').css({
+                                                                                                                        background: 'url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/nerazd_001.png) 0 0/100% no-repeat'
+                                                                                                                    });
+                                                                                                                    jQuery('#draggable3').css({
+                                                                                                                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/chisty_vnutri.jpg) 0 0/100% no-repeat'
+                                                                                                                    });
+                                                                                                                    jQuery('#draggableD12')
+                                                                                                                        .removeClass('hidden')
+                                                                                                                        .css({
+                                                                                                                            opacity: 0.8,
+                                                                                                                            transform: 'scale(1)',
+                                                                                                                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat',
+                                                                                                                            transform: 'rotate(-'+d12Val+'deg)',
+                                                                                                                            borderWidth: '1px',
+                                                                                                                            borderColor: 'transparent'
+                                                                                                                        });
+                                                                                                                    count_animation += 1;
+                                                                                                                    if(count_animation <= 120){
+                                                                                                                        cur_animation_val += 1.5;
+                                                                                                                        d12Val+= 9;
+                                                                                                                        jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                    } else if (count_animation >= 120 && count_animation <= 228){
+                                                                                                                        cur_animation_val -= 1.5;
+                                                                                                                        d12Val+= 9;
+                                                                                                                        jQuery('#draggableD12').css('transform', 'rotate(-'+d12Val+'deg)');
+                                                                                                                        jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                    } else if (count_animation >= 228 && count_animation <= 292){
+                                                                                                                        cur_animation_val -= 1.5;
+                                                                                                                        d12Val+= 9;
+                                                                                                                        jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                        jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                                                                                        jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                                                                                                    } else if (count_animation >= 292 && count_animation <= 344){
+                                                                                                                        cur_animation_val += 1.5;
+                                                                                                                        d12Val+= 9;
+                                                                                                                        jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                        jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                                                                                        jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                                                                                                    } else {
+                                                                                                                        d12Val+= 9;
+                                                                                                                        cur_animation_val += 1.5;
+                                                                                                                        jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                        jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                                                                                        jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                                                                                                    }
+                                                                                                                } else {
+                                                                                                                    clearInterval(phaseOne);
+                                                                                                                    count_animation = 1;
+                                                                                                                    cur_animation_val = 1;
+                                                                                                                    jQuery('#draggable0, #draggable2, #draggable3, #draggable4').css({
+                                                                                                                        background: 'rgba(255,255,255, 0.5)',
+                                                                                                                        color: 'red',
+                                                                                                                        borderColor: 'red',
+                                                                                                                        opacity: 1,
+                                                                                                                        transform: 'scale(0.5)',
+                                                                                                                        borderWidth: '2px',
+                                                                                                                        paddingTop: '2px',
+                                                                                                                        zIndex: '1'
+                                                                                                                    });
+                                                                                                                    jQuery('.box_rounded').css('transform', 'rotate(0deg) scale(1)');
+                                                                                                                    jQuery('#draggableD12').css('transform', 'rotate(0deg)');
+                                                                                                                    sound.play();
+                                                                                                                    jQuery('.chart').data('easyPieChart').update(100);
+                                                                                                                    jQuery('.chart').find('span').text('100');
+                                                                                                                    onEnd();
+                                                                                                                    jQuery( ".btn__wizard" )
+                                                                                                                        .text('Выполнить')
+                                                                                                                        .removeClass('btn__wizard_inAction');
+                                                                                                                    tickSound.stop();
+                                                                                                                }
+                                                                                                            }, 250);  
+                                                                                                        }
+                                                                                                    }, 250);
                                                                                                 }
                                                                                             }, 1000);
                                                                                         }
@@ -3735,7 +3979,6 @@ v5 = function(){
                                     }, 1000);
                                 }
                             }, 1000);
-        
                         }
                     }, 250);
                 }
