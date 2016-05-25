@@ -3825,7 +3825,6 @@ v5 = function(){
                                                                                                         } else {
                                                                                                             clearInterval(phaseOne);
                                                                                                             count_animation = 1;
-                                                                                                            tickSound.stop();
                                                                                                             jQuery('.box_rounded').css('transform', 'rotate(0deg) scale(1)');
                                                                                                             jQuery('#draggableD12').css('transform', 'rotate(0deg)');
                                                                                                             jQuery('.itemlist_item').removeClass('transparent');
