@@ -10265,8 +10265,8 @@ face = function(){
             }, 250);
             jQuery('.box_rounded').css('transform', 'rotate(0deg) scale(1)');
             jQuery('#draggableD12').css('transform', 'rotate(0deg)');
-            jQuery('.chart').data('easyPieChart').update(12);
-            jQuery('.chart').find('span').text('12');
+            jQuery('.chart').data('easyPieChart').update(6);
+            jQuery('.chart').find('span').text('6');
         //фаза 2
             reloadTime = 0;
             reloadTime1 = 0;
@@ -10354,8 +10354,8 @@ face = function(){
                     }, 250);
                     jQuery('.box_rounded').css('transform', 'rotate(0deg) scale(1)');
                     jQuery('#draggableD12').css('transform', 'rotate(0deg)');
-                    jQuery('.chart').data('easyPieChart').update(24);
-                    jQuery('.chart').find('span').text('24');
+                    jQuery('.chart').data('easyPieChart').update(12);
+                    jQuery('.chart').find('span').text('12');
     // Фаза 3
                     reloadTime = 0;
                     reloadTime1 = 0;
@@ -10498,8 +10498,8 @@ face = function(){
                             cur_animation_val = 0;
                             rotateVal = 0;
                             count_animation = 1;
-                            jQuery('.chart').data('easyPieChart').update(36);
-                            jQuery('.chart').find('span').text('36');
+                            jQuery('.chart').data('easyPieChart').update(18);
+                            jQuery('.chart').find('span').text('18');
             // Фаза 4
                             reloadTime = 0;
                             reloadTime1 = 0;
@@ -10643,8 +10643,8 @@ face = function(){
                                     cur_animation_val = 0;
                                     rotateVal = 0;
                                     count_animation = 1;
-                                    jQuery('.chart').data('easyPieChart').update(36);
-                                    jQuery('.chart').find('span').text('36');
+                                    jQuery('.chart').data('easyPieChart').update(24);
+                                    jQuery('.chart').find('span').text('24');
                     //Фаза 5
                                     reloadTime = 0;
                                     reloadTime1 = 0;
@@ -10683,8 +10683,8 @@ face = function(){
                                                 paddingTop: '2px',
                                                 zIndex: '1'
                                             });
-                                            jQuery('.chart').data('easyPieChart').update(39);
-                                            jQuery('.chart').find('span').text('39');
+                                            jQuery('.chart').data('easyPieChart').update(26);
+                                            jQuery('.chart').find('span').text('26');
                         //Этап 5-1-2
                                             cur_animation_val = 10;
                                             count_animation = 1;
@@ -10717,8 +10717,8 @@ face = function(){
                                                         paddingTop: '2px',
                                                         zIndex: '1'
                                                     });
-                                                    jQuery('.chart').data('easyPieChart').update(42);
-                                                    jQuery('.chart').find('span').text('42');
+                                                    jQuery('.chart').data('easyPieChart').update(28);
+                                                    jQuery('.chart').find('span').text('28');
                         //Этап 5-1-3
                                                     cur_animation_val = 270;
                                                     count_animation = 1;
@@ -10751,8 +10751,8 @@ face = function(){
                                                                 paddingTop: '2px',
                                                                 zIndex: '1'
                                                             });
-                                                            jQuery('.chart').data('easyPieChart').update(45);
-                                                            jQuery('.chart').find('span').text('45');
+                                                            jQuery('.chart').data('easyPieChart').update(30);
+                                                            jQuery('.chart').find('span').text('30');
                         //Этап 5-1-4
                                                             cur_animation_val = 300;
                                                             count_animation = 1;
@@ -10785,8 +10785,8 @@ face = function(){
                                                                         paddingTop: '2px',
                                                                         zIndex: '1'
                                                                     });
-                                                                    jQuery('.chart').data('easyPieChart').update(48);
-                                                                    jQuery('.chart').find('span').text('48');
+                                                                    jQuery('.chart').data('easyPieChart').update(32);
+                                                                    jQuery('.chart').find('span').text('32');
                             //Этап 5-2-1
                                                                     cur_animation_val = 55;
                                                                     count_animation = 1;
@@ -10819,8 +10819,8 @@ face = function(){
                                                                                 paddingTop: '2px',
                                                                                 zIndex: '1'
                                                                             });
-                                                                            jQuery('.chart').data('easyPieChart').update(51);
-                                                                            jQuery('.chart').find('span').text('51');
+                                                                            jQuery('.chart').data('easyPieChart').update(34);
+                                                                            jQuery('.chart').find('span').text('34');
                                                         //Этап 5-2-2
                                                                             cur_animation_val = 10;
                                                                             count_animation = 1;
@@ -10853,8 +10853,8 @@ face = function(){
                                                                                         paddingTop: '2px',
                                                                                         zIndex: '1'
                                                                                     });
-                                                                                    jQuery('.chart').data('easyPieChart').update(54);
-                                                                                    jQuery('.chart').find('span').text('54');
+                                                                                    jQuery('.chart').data('easyPieChart').update(36);
+                                                                                    jQuery('.chart').find('span').text('36');
                                                         //Этап 5-2-3
                                                                                     cur_animation_val = 270;
                                                                                     count_animation = 1;
@@ -10887,8 +10887,8 @@ face = function(){
                                                                                                 paddingTop: '2px',
                                                                                                 zIndex: '1'
                                                                                             });
-                                                                                            jQuery('.chart').data('easyPieChart').update(57);
-                                                                                            jQuery('.chart').find('span').text('57');
+                                                                                            jQuery('.chart').data('easyPieChart').update(38);
+                                                                                            jQuery('.chart').find('span').text('38');
                                                         //Этап 5-2-4
                                                                                             cur_animation_val = 300;
                                                                                             count_animation = 1;
@@ -10921,8 +10921,8 @@ face = function(){
                                                                                                         paddingTop: '2px',
                                                                                                         zIndex: '1'
                                                                                                     });
-                                                                                                    jQuery('.chart').data('easyPieChart').update(60);
-                                                                                                    jQuery('.chart').find('span').text('60');
+                                                                                                    jQuery('.chart').data('easyPieChart').update(40);
+                                                                                                    jQuery('.chart').find('span').text('40');
                                                                                     //Фаза 6
                                                                                                     reloadTime = 0;
                                                                                                     reloadTime1 = 0;
@@ -10960,8 +10960,8 @@ face = function(){
                                                                                                                 paddingTop: '2px',
                                                                                                                 zIndex: '1'
                                                                                                             });
-                                                                                                            jQuery('.chart').data('easyPieChart').update(39);
-                                                                                                            jQuery('.chart').find('span').text('39');
+                                                                                                            jQuery('.chart').data('easyPieChart').update(42);
+                                                                                                            jQuery('.chart').find('span').text('42');
                                                                                         //Этап 6-1-2
                                                                                                             cur_animation_val = 10;
                                                                                                             count_animation = 1;
@@ -10994,8 +10994,8 @@ face = function(){
                                                                                                                         paddingTop: '2px',
                                                                                                                         zIndex: '1'
                                                                                                                     });
-                                                                                                                    jQuery('.chart').data('easyPieChart').update(42);
-                                                                                                                    jQuery('.chart').find('span').text('42');
+                                                                                                                    jQuery('.chart').data('easyPieChart').update(44);
+                                                                                                                    jQuery('.chart').find('span').text('44');
                                                                                         //Этап 6-1-3
                                                                                                                     cur_animation_val = 270;
                                                                                                                     count_animation = 1;
@@ -11028,8 +11028,8 @@ face = function(){
                                                                                                                                 paddingTop: '2px',
                                                                                                                                 zIndex: '1'
                                                                                                                             });
-                                                                                                                            jQuery('.chart').data('easyPieChart').update(45);
-                                                                                                                            jQuery('.chart').find('span').text('45');
+                                                                                                                            jQuery('.chart').data('easyPieChart').update(46);
+                                                                                                                            jQuery('.chart').find('span').text('46');
                                                                                         //Этап 6-1-4
                                                                                                                             cur_animation_val = 300;
                                                                                                                             count_animation = 1;
@@ -11096,8 +11096,8 @@ face = function(){
                                                                                                                                                 paddingTop: '2px',
                                                                                                                                                 zIndex: '1'
                                                                                                                                             });
-                                                                                                                                            jQuery('.chart').data('easyPieChart').update(51);
-                                                                                                                                            jQuery('.chart').find('span').text('51');
+                                                                                                                                            jQuery('.chart').data('easyPieChart').update(50);
+                                                                                                                                            jQuery('.chart').find('span').text('50');
                                                                                                                         //Этап 6-2-2
                                                                                                                                             cur_animation_val = 10;
                                                                                                                                             count_animation = 1;
@@ -11130,8 +11130,8 @@ face = function(){
                                                                                                                                                         paddingTop: '2px',
                                                                                                                                                         zIndex: '1'
                                                                                                                                                     });
-                                                                                                                                                    jQuery('.chart').data('easyPieChart').update(54);
-                                                                                                                                                    jQuery('.chart').find('span').text('54');
+                                                                                                                                                    jQuery('.chart').data('easyPieChart').update(52);
+                                                                                                                                                    jQuery('.chart').find('span').text('52');
                                                                                                                         //Этап 6-2-3
                                                                                                                                                     cur_animation_val = 270;
                                                                                                                                                     count_animation = 1;
@@ -11164,8 +11164,8 @@ face = function(){
                                                                                                                                                                 paddingTop: '2px',
                                                                                                                                                                 zIndex: '1'
                                                                                                                                                             });
-                                                                                                                                                            jQuery('.chart').data('easyPieChart').update(57);
-                                                                                                                                                            jQuery('.chart').find('span').text('57');
+                                                                                                                                                            jQuery('.chart').data('easyPieChart').update(54);
+                                                                                                                                                            jQuery('.chart').find('span').text('54');
                                                                                                                         //Этап 6-2-4
                                                                                                                                                             cur_animation_val = 300;
                                                                                                                                                             count_animation = 1;
@@ -11198,8 +11198,8 @@ face = function(){
                                                                                                                                                                         paddingTop: '2px',
                                                                                                                                                                         zIndex: '1'
                                                                                                                                                                     });
-                                                                                                                                                                    jQuery('.chart').data('easyPieChart').update(60);
-                                                                                                                                                                    jQuery('.chart').find('span').text('60');
+                                                                                                                                                                    jQuery('.chart').data('easyPieChart').update(56);
+                                                                                                                                                                    jQuery('.chart').find('span').text('56');
                                                                                                                                                         //фаза 7
                                                                                                                                                                     count_animation = 1;
                                                                                                                                                                     phaseOne = setInterval(function(){
@@ -11216,8 +11216,8 @@ face = function(){
                                                                                                                                                                                     background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/1_zemlya_lev.png) 0 0/100% no-repeat',
                                                                                                                                                                                     zIndex: '1000'
                                                                                                                                                                                 });
-                                                                                                                                                                                jQuery('.chart').data('easyPieChart').update(62);
-                                                                                                                                                                                jQuery('.chart').find('span').text('62');
+                                                                                                                                                                                jQuery('.chart').data('easyPieChart').update(57);
+                                                                                                                                                                                jQuery('.chart').find('span').text('57');
                                                                                                                                                                             } else if (count_animation > 17 && count_animation <= 34){
                                                                                                                                                                                 jQuery('#draggableS_1').css({
                                                                                                                                                                                     background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/2_vozduh_lev.png) 0 0/100% no-repeat'
@@ -11232,8 +11232,8 @@ face = function(){
                                                                                                                                                                                     background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/1_zemlya_lev.png) 0 0/100% no-repeat',
                                                                                                                                                                                     zIndex: '1000'
                                                                                                                                                                                 });
-                                                                                                                                                                                jQuery('.chart').data('easyPieChart').update(64);
-                                                                                                                                                                                jQuery('.chart').find('span').text('64');
+                                                                                                                                                                                jQuery('.chart').data('easyPieChart').update(58);
+                                                                                                                                                                                jQuery('.chart').find('span').text('58');
                                                                                                                                                                             } else if (count_animation > 34 && count_animation <= 53){
                                                                                                                                                                                 jQuery('#draggableS_1').css({
                                                                                                                                                                                     background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/3_voda_lev.png) 0 0/100% no-repeat'
@@ -11241,8 +11241,8 @@ face = function(){
                                                                                                                                                                                 jQuery('#draggable4').css({
                                                                                                                                                                                     background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/2_vozduh_lev.png) 0 0/100% no-repeat'
                                                                                                                                                                                 });
-                                                                                                                                                                                jQuery('.chart').data('easyPieChart').update(66);
-                                                                                                                                                                                jQuery('.chart').find('span').text('66');
+                                                                                                                                                                                jQuery('.chart').data('easyPieChart').update(60);
+                                                                                                                                                                                jQuery('.chart').find('span').text('60');
                                                                                                                                                                             } else if (count_animation > 53 && count_animation <= 70){
                                                                                                                                                                                 jQuery('#draggableS_1').css({
                                                                                                                                                                                     background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/4_ogon_lev.png) 0 0/100% no-repeat'
@@ -11250,8 +11250,8 @@ face = function(){
                                                                                                                                                                                 jQuery('#draggable4').css({
                                                                                                                                                                                     background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/3_voda_lev.png) 0 0/100% no-repeat'
                                                                                                                                                                                 });
-                                                                                                                                                                                jQuery('.chart').data('easyPieChart').update(68);
-                                                                                                                                                                                jQuery('.chart').find('span').text('68');
+                                                                                                                                                                                jQuery('.chart').data('easyPieChart').update(61);
+                                                                                                                                                                                jQuery('.chart').find('span').text('61');
                                                                                                                                                                             } else if (count_animation > 70 && count_animation <= 87){
                                                                                                                                                                                 jQuery('#draggableS_1').css({
                                                                                                                                                                                     background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/1_ogon_prav.png) 0 0/100% no-repeat'
@@ -11259,8 +11259,8 @@ face = function(){
                                                                                                                                                                                 jQuery('#draggable4').css({
                                                                                                                                                                                     background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/4_ogon_lev.png) 0 0/100% no-repeat'
                                                                                                                                                                                 });
-                                                                                                                                                                                jQuery('.chart').data('easyPieChart').update(70);
-                                                                                                                                                                                jQuery('.chart').find('span').text('70');
+                                                                                                                                                                                jQuery('.chart').data('easyPieChart').update(63);
+                                                                                                                                                                                jQuery('.chart').find('span').text('63');
                                                                                                                                                                             } else if (count_animation > 87 && count_animation <= 104){
                                                                                                                                                                                 jQuery('#draggableS_1').css({
                                                                                                                                                                                     background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/2_voda_prav.png) 0 0/100% no-repeat'
@@ -11268,8 +11268,8 @@ face = function(){
                                                                                                                                                                                 jQuery('#draggable4').css({
                                                                                                                                                                                     background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/1_ogon_prav.png) 0 0/100% no-repeat'
                                                                                                                                                                                 });
-                                                                                                                                                                                jQuery('.chart').data('easyPieChart').update(72);
-                                                                                                                                                                                jQuery('.chart').find('span').text('72');
+                                                                                                                                                                                jQuery('.chart').data('easyPieChart').update(64);
+                                                                                                                                                                                jQuery('.chart').find('span').text('64');
                                                                                                                                                                             } else if (count_animation > 104 && count_animation <= 123){
                                                                                                                                                                                 jQuery('#draggableS_1').css({
                                                                                                                                                                                     background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/3_vozduh_prav.png) 0 0/100% no-repeat'
@@ -11277,8 +11277,8 @@ face = function(){
                                                                                                                                                                                 jQuery('#draggable4').css({
                                                                                                                                                                                     background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/2_voda_prav.png) 0 0/100% no-repeat'
                                                                                                                                                                                 });
-                                                                                                                                                                                jQuery('.chart').data('easyPieChart').update(74);
-                                                                                                                                                                                jQuery('.chart').find('span').text('74');
+                                                                                                                                                                                jQuery('.chart').data('easyPieChart').update(66);
+                                                                                                                                                                                jQuery('.chart').find('span').text('66');
                                                                                                                                                                             } else if (count_animation > 123 && count_animation <= 140){
                                                                                                                                                                                 jQuery('#draggableS_1').css({
                                                                                                                                                                                     background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/4_zemlya_prav_lit.png) 0 0/100% no-repeat'
@@ -11286,8 +11286,8 @@ face = function(){
                                                                                                                                                                                 jQuery('#draggable4').css({
                                                                                                                                                                                     background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/3_vozduh_prav.png) 0 0/100% no-repeat'
                                                                                                                                                                                 });
-                                                                                                                                                                                jQuery('.chart').data('easyPieChart').update(76);
-                                                                                                                                                                                jQuery('.chart').find('span').text('76');
+                                                                                                                                                                                jQuery('.chart').data('easyPieChart').update(67);
+                                                                                                                                                                                jQuery('.chart').find('span').text('67');
                                                                                                                                                                             } else if (count_animation > 140 && count_animation <= 157){
                                                                                                                                                                                 jQuery('#draggableS_1').css({
                                                                                                                                                                                     background: 'rgba(255,255,255, 0.5)',
@@ -11302,8 +11302,8 @@ face = function(){
                                                                                                                                                                                 jQuery('#draggable4').css({
                                                                                                                                                                                     background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/4_zemlya_prav_lit.png) 0 0/100% no-repeat'
                                                                                                                                                                                 });
-                                                                                                                                                                                jQuery('.chart').data('easyPieChart').update(78);
-                                                                                                                                                                                jQuery('.chart').find('span').text('78');
+                                                                                                                                                                                jQuery('.chart').data('easyPieChart').update(69);
+                                                                                                                                                                                jQuery('.chart').find('span').text('69');
                                                                                                                                                                             } else if (count_animation > 157 && count_animation <= 175){
                                                                                                                                                                                 jQuery('#draggable4').css({
                                                                                                                                                                                     background: 'rgba(255,255,255, 0.5)',
@@ -11315,8 +11315,8 @@ face = function(){
                                                                                                                                                                                     paddingTop: '2px',
                                                                                                                                                                                     zIndex: '1'
                                                                                                                                                                                 });
-                                                                                                                                                                                jQuery('.chart').data('easyPieChart').update(80);
-                                                                                                                                                                                jQuery('.chart').find('span').text('80');
+                                                                                                                                                                                jQuery('.chart').data('easyPieChart').update(70);
+                                                                                                                                                                                jQuery('.chart').find('span').text('70');
                                                                                                                                                                             }
                                                                                                                                                                             count_animation += 1;
                                                                                                                                                                         } else {
@@ -11333,8 +11333,8 @@ face = function(){
                                                                                                                                                                                 zIndex: '1'
                                                                                                                                                                             });
                                                                                                                                                                             count_animation = 1;
-                                                                                                                                                                            jQuery('.chart').data('easyPieChart').update(82);
-                                                                                                                                                                            jQuery('.chart').find('span').text('82');
+                                                                                                                                                                            jQuery('.chart').data('easyPieChart').update(72);
+                                                                                                                                                                            jQuery('.chart').find('span').text('72');
                                                                                                                                                                 //фаза 8
                                                                                                                                                                             count_animation = 1;
                                                                                                                                                                             phaseOne = setInterval(function(){
@@ -11351,8 +11351,8 @@ face = function(){
                                                                                                                                                                                             background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/1_zemlya_lev.png) 0 0/100% no-repeat',
                                                                                                                                                                                             zIndex: '1000'
                                                                                                                                                                                         });
-                                                                                                                                                                                        jQuery('.chart').data('easyPieChart').update(62);
-                                                                                                                                                                                        jQuery('.chart').find('span').text('62');
+                                                                                                                                                                                        jQuery('.chart').data('easyPieChart').update(73);
+                                                                                                                                                                                        jQuery('.chart').find('span').text('73');
                                                                                                                                                                                     } else if (count_animation > 17 && count_animation <= 34){
                                                                                                                                                                                         jQuery('#draggableD_1').css({
                                                                                                                                                                                             background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/2_vozduh_lev.png) 0 0/100% no-repeat'
@@ -11367,8 +11367,8 @@ face = function(){
                                                                                                                                                                                             background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/1_zemlya_lev.png) 0 0/100% no-repeat',
                                                                                                                                                                                             zIndex: '1000'
                                                                                                                                                                                         });
-                                                                                                                                                                                        jQuery('.chart').data('easyPieChart').update(64);
-                                                                                                                                                                                        jQuery('.chart').find('span').text('64');
+                                                                                                                                                                                        jQuery('.chart').data('easyPieChart').update(75);
+                                                                                                                                                                                        jQuery('.chart').find('span').text('75');
                                                                                                                                                                                     } else if (count_animation > 34 && count_animation <= 53){
                                                                                                                                                                                         jQuery('#draggableD_1').css({
                                                                                                                                                                                             background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/3_voda_lev.png) 0 0/100% no-repeat'
@@ -11376,8 +11376,8 @@ face = function(){
                                                                                                                                                                                         jQuery('#draggable5').css({
                                                                                                                                                                                             background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/2_vozduh_lev.png) 0 0/100% no-repeat'
                                                                                                                                                                                         });
-                                                                                                                                                                                        jQuery('.chart').data('easyPieChart').update(66);
-                                                                                                                                                                                        jQuery('.chart').find('span').text('66');
+                                                                                                                                                                                        jQuery('.chart').data('easyPieChart').update(76);
+                                                                                                                                                                                        jQuery('.chart').find('span').text('76');
                                                                                                                                                                                     } else if (count_animation > 53 && count_animation <= 70){
                                                                                                                                                                                         jQuery('#draggableD_1').css({
                                                                                                                                                                                             background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/4_ogon_lev.png) 0 0/100% no-repeat'
@@ -11385,8 +11385,8 @@ face = function(){
                                                                                                                                                                                         jQuery('#draggable5').css({
                                                                                                                                                                                             background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/3_voda_lev.png) 0 0/100% no-repeat'
                                                                                                                                                                                         });
-                                                                                                                                                                                        jQuery('.chart').data('easyPieChart').update(68);
-                                                                                                                                                                                        jQuery('.chart').find('span').text('68');
+                                                                                                                                                                                        jQuery('.chart').data('easyPieChart').update(78);
+                                                                                                                                                                                        jQuery('.chart').find('span').text('78');
                                                                                                                                                                                     } else if (count_animation > 70 && count_animation <= 87){
                                                                                                                                                                                         jQuery('#draggableD_1').css({
                                                                                                                                                                                             background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/1_ogon_prav.png) 0 0/100% no-repeat'
@@ -11394,8 +11394,8 @@ face = function(){
                                                                                                                                                                                         jQuery('#draggable5').css({
                                                                                                                                                                                             background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/4_ogon_lev.png) 0 0/100% no-repeat'
                                                                                                                                                                                         });
-                                                                                                                                                                                        jQuery('.chart').data('easyPieChart').update(70);
-                                                                                                                                                                                        jQuery('.chart').find('span').text('70');
+                                                                                                                                                                                        jQuery('.chart').data('easyPieChart').update(79);
+                                                                                                                                                                                        jQuery('.chart').find('span').text('79');
                                                                                                                                                                                     } else if (count_animation > 87 && count_animation <= 104){
                                                                                                                                                                                         jQuery('#draggableD_1').css({
                                                                                                                                                                                             background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/2_voda_prav.png) 0 0/100% no-repeat'
@@ -11403,8 +11403,8 @@ face = function(){
                                                                                                                                                                                         jQuery('#draggable5').css({
                                                                                                                                                                                             background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/1_ogon_prav.png) 0 0/100% no-repeat'
                                                                                                                                                                                         });
-                                                                                                                                                                                        jQuery('.chart').data('easyPieChart').update(72);
-                                                                                                                                                                                        jQuery('.chart').find('span').text('72');
+                                                                                                                                                                                        jQuery('.chart').data('easyPieChart').update(81);
+                                                                                                                                                                                        jQuery('.chart').find('span').text('81');
                                                                                                                                                                                     } else if (count_animation > 104 && count_animation <= 123){
                                                                                                                                                                                         jQuery('#draggableD_1').css({
                                                                                                                                                                                             background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/3_vozduh_prav.png) 0 0/100% no-repeat'
@@ -11412,8 +11412,8 @@ face = function(){
                                                                                                                                                                                         jQuery('#draggable5').css({
                                                                                                                                                                                             background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/2_voda_prav.png) 0 0/100% no-repeat'
                                                                                                                                                                                         });
-                                                                                                                                                                                        jQuery('.chart').data('easyPieChart').update(74);
-                                                                                                                                                                                        jQuery('.chart').find('span').text('74');
+                                                                                                                                                                                        jQuery('.chart').data('easyPieChart').update(82);
+                                                                                                                                                                                        jQuery('.chart').find('span').text('82');
                                                                                                                                                                                     } else if (count_animation > 123 && count_animation <= 140){
                                                                                                                                                                                         jQuery('#draggableD_1').css({
                                                                                                                                                                                             background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/4_zemlya_prav_lit.png) 0 0/100% no-repeat'
@@ -11421,8 +11421,8 @@ face = function(){
                                                                                                                                                                                         jQuery('#draggable5').css({
                                                                                                                                                                                             background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/3_vozduh_prav.png) 0 0/100% no-repeat'
                                                                                                                                                                                         });
-                                                                                                                                                                                        jQuery('.chart').data('easyPieChart').update(76);
-                                                                                                                                                                                        jQuery('.chart').find('span').text('76');
+                                                                                                                                                                                        jQuery('.chart').data('easyPieChart').update(84);
+                                                                                                                                                                                        jQuery('.chart').find('span').text('84');
                                                                                                                                                                                     } else if (count_animation > 140 && count_animation <= 157){
                                                                                                                                                                                         jQuery('#draggableD_1').css({
                                                                                                                                                                                             background: 'rgba(255,255,255, 0.5)',
@@ -11437,8 +11437,8 @@ face = function(){
                                                                                                                                                                                         jQuery('#draggable5').css({
                                                                                                                                                                                             background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/4_zemlya_prav_lit.png) 0 0/100% no-repeat'
                                                                                                                                                                                         });
-                                                                                                                                                                                        jQuery('.chart').data('easyPieChart').update(78);
-                                                                                                                                                                                        jQuery('.chart').find('span').text('78');
+                                                                                                                                                                                        jQuery('.chart').data('easyPieChart').update(85);
+                                                                                                                                                                                        jQuery('.chart').find('span').text('85');
                                                                                                                                                                                     } else if (count_animation > 157 && count_animation <= 175){
                                                                                                                                                                                         jQuery('#draggable5').css({
                                                                                                                                                                                             background: 'rgba(255,255,255, 0.5)',
@@ -11450,8 +11450,8 @@ face = function(){
                                                                                                                                                                                             paddingTop: '2px',
                                                                                                                                                                                             zIndex: '1'
                                                                                                                                                                                         });
-                                                                                                                                                                                        jQuery('.chart').data('easyPieChart').update(80);
-                                                                                                                                                                                        jQuery('.chart').find('span').text('80');
+                                                                                                                                                                                        jQuery('.chart').data('easyPieChart').update(87);
+                                                                                                                                                                                        jQuery('.chart').find('span').text('87');
                                                                                                                                                                                     }
                                                                                                                                                                                     count_animation += 1;
                                                                                                                                                                                 } else {
@@ -11468,8 +11468,8 @@ face = function(){
                                                                                                                                                                                         zIndex: '1'
                                                                                                                                                                                     });
                                                                                                                                                                                     count_animation = 1;
-                                                                                                                                                                                    jQuery('.chart').data('easyPieChart').update(82);
-                                                                                                                                                                                    jQuery('.chart').find('span').text('82');
+                                                                                                                                                                                    jQuery('.chart').data('easyPieChart').update(88);
+                                                                                                                                                                                    jQuery('.chart').find('span').text('88');
                                                                                                                                                                 //фаза 9
                                                                                                                                                                                     reloadTime = 0;
                                                                                                                                                                                     reloadTime1 = 0;
