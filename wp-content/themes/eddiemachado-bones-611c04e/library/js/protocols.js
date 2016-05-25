@@ -11203,7 +11203,7 @@ face = function(){
                                                                                                                                                         //фаза 7
                                                                                                                                                                     count_animation = 1;
                                                                                                                                                                     phaseOne = setInterval(function(){
-                                                                                                                                                                        if (count_animation <= 174){
+                                                                                                                                                                        if (count_animation <= 157){
                                                                                                                                                                             cur_animation_val += 6;
                                                                                                                                                                             if (count_animation > 0 && count_animation <= 17){
                                                                                                                                                                                 jQuery('#draggableS_1').css({
@@ -11304,19 +11304,6 @@ face = function(){
                                                                                                                                                                                 });
                                                                                                                                                                                 jQuery('.chart').data('easyPieChart').update(69);
                                                                                                                                                                                 jQuery('.chart').find('span').text('69');
-                                                                                                                                                                            } else if (count_animation > 157 && count_animation <= 175){
-                                                                                                                                                                                jQuery('#draggable4').css({
-                                                                                                                                                                                    background: 'rgba(255,255,255, 0.5)',
-                                                                                                                                                                                    color: 'red',
-                                                                                                                                                                                    borderColor: 'red',
-                                                                                                                                                                                    opacity: 1,
-                                                                                                                                                                                    transform: 'scale(0.5)',
-                                                                                                                                                                                    borderWidth: '2px',
-                                                                                                                                                                                    paddingTop: '2px',
-                                                                                                                                                                                    zIndex: '1'
-                                                                                                                                                                                });
-                                                                                                                                                                                jQuery('.chart').data('easyPieChart').update(70);
-                                                                                                                                                                                jQuery('.chart').find('span').text('70');
                                                                                                                                                                             }
                                                                                                                                                                             count_animation += 1;
                                                                                                                                                                         } else {
@@ -11338,7 +11325,7 @@ face = function(){
                                                                                                                                                                 //фаза 8
                                                                                                                                                                             count_animation = 1;
                                                                                                                                                                             phaseOne = setInterval(function(){
-                                                                                                                                                                                if (count_animation <= 174){
+                                                                                                                                                                                if (count_animation <= 157){
                                                                                                                                                                                     cur_animation_val += 6;
                                                                                                                                                                                     if (count_animation > 0 && count_animation <= 17){
                                                                                                                                                                                         jQuery('#draggableD_1').css({
@@ -11439,19 +11426,6 @@ face = function(){
                                                                                                                                                                                         });
                                                                                                                                                                                         jQuery('.chart').data('easyPieChart').update(85);
                                                                                                                                                                                         jQuery('.chart').find('span').text('85');
-                                                                                                                                                                                    } else if (count_animation > 157 && count_animation <= 175){
-                                                                                                                                                                                        jQuery('#draggable5').css({
-                                                                                                                                                                                            background: 'rgba(255,255,255, 0.5)',
-                                                                                                                                                                                            color: 'red',
-                                                                                                                                                                                            borderColor: 'red',
-                                                                                                                                                                                            opacity: 1,
-                                                                                                                                                                                            transform: 'scale(0.5)',
-                                                                                                                                                                                            borderWidth: '2px',
-                                                                                                                                                                                            paddingTop: '2px',
-                                                                                                                                                                                            zIndex: '1'
-                                                                                                                                                                                        });
-                                                                                                                                                                                        jQuery('.chart').data('easyPieChart').update(87);
-                                                                                                                                                                                        jQuery('.chart').find('span').text('87');
                                                                                                                                                                                     }
                                                                                                                                                                                     count_animation += 1;
                                                                                                                                                                                 } else {
