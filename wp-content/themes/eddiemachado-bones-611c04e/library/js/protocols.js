@@ -10170,6 +10170,7 @@ face = function(){
 //фаза 1
     reloadTime = 0;
     reloadTime1 = 0;
+    tickSound.play();
     d12Val = 0;
     cur_animation_val = 0;
     rotateVal = 0;
