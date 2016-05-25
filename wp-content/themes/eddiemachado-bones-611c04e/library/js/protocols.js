@@ -2555,7 +2555,7 @@
                                                                                     //фаза 5
                                                                                                 count_animation = 1;
                                                                                                 phaseOne = setInterval(function(){
-                                                                                                    if (count_animation <= 174){
+                                                                                                    if (count_animation <= 157){
                                                                                                         cur_animation_val += 6;
                                                                                                         if (count_animation > 0 && count_animation <= 17){
                                                                                                             jQuery('#draggable4').css({
@@ -2656,19 +2656,6 @@
                                                                                                             });
                                                                                                             jQuery('.chart').data('easyPieChart').update(77);
                                                                                                             jQuery('.chart').find('span').text('77');
-                                                                                                        } else if (count_animation > 157 && count_animation <= 175){
-                                                                                                            jQuery('#draggableS_1').css({
-                                                                                                                background: 'rgba(255,255,255, 0.5)',
-                                                                                                                color: 'red',
-                                                                                                                borderColor: 'red',
-                                                                                                                opacity: 1,
-                                                                                                                transform: 'scale(0.5)',
-                                                                                                                borderWidth: '2px',
-                                                                                                                paddingTop: '2px',
-                                                                                                                zIndex: '1'
-                                                                                                            });
-                                                                                                            jQuery('.chart').data('easyPieChart').update(79);
-                                                                                                            jQuery('.chart').find('span').text('79');
                                                                                                         }
                                                                                                         count_animation += 1;
                                                                                                     } else {
