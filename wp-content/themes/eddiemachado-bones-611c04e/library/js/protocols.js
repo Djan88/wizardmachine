@@ -179,8 +179,8 @@
                 }, 250);
                 jQuery('.box_rounded').css('transform', 'rotate(0deg) scale(1)');
                 jQuery('#draggableD12').css('transform', 'rotate(0deg)');
-                jQuery('.chart').data('easyPieChart').update(24);
-                jQuery('.chart').find('span').text('24');
+                jQuery('.chart').data('easyPieChart').update(12);
+                jQuery('.chart').find('span').text('12');
     //фаза 2
                 reloadTime = 0;
                 reloadTime1 = 0;
@@ -363,8 +363,8 @@
                                 }, 250);
                                 jQuery('.box_rounded').css('transform', 'rotate(0deg) scale(1)');
                                 jQuery('#draggableD12').css('transform', 'rotate(0deg)');
-                                jQuery('.chart').data('easyPieChart').update(24);
-                                jQuery('.chart').find('span').text('24');
+                                jQuery('.chart').data('easyPieChart').update(36);
+                                jQuery('.chart').find('span').text('36');
         //Фаза 4
                                 reloadTime = 0;
                                 reloadTime1 = 0;
@@ -501,8 +501,8 @@
                                         jQuery('.box_rounded').css('transform', 'rotate(0deg) scale(1)');
                                         jQuery('#draggableD12').css('transform', 'rotate(0deg)');
                                         jQuery('.itemlist_item').removeClass('transparent');
-                                        jQuery('.chart').data('easyPieChart').update(12);
-                                        jQuery('.chart').find('span').text('12');
+                                        jQuery('.chart').data('easyPieChart').update(48);
+                                        jQuery('.chart').find('span').text('48');
                         //Фаза 5
                                         reloadTime = 0;
                                         reloadTime1 = 0;
@@ -798,8 +798,8 @@
                                                                                                                         background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/1_zemlya_lev.png) 0 0/100% no-repeat',
                                                                                                                         zIndex: '1000'
                                                                                                                     });
-                                                                                                                    jQuery('.chart').data('easyPieChart').update(61);
-                                                                                                                    jQuery('.chart').find('span').text('61');
+                                                                                                                    jQuery('.chart').data('easyPieChart').update(74);
+                                                                                                                    jQuery('.chart').find('span').text('74');
                                                                                                                 } else if (count_animation > 17 && count_animation <= 34){
                                                                                                                     jQuery('#draggable2').css({
                                                                                                                         background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/2_vozduh_lev.png) 0 0/100% no-repeat'
@@ -814,8 +814,8 @@
                                                                                                                         background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/1_zemlya_lev.png) 0 0/100% no-repeat',
                                                                                                                         zIndex: '1000'
                                                                                                                     });
-                                                                                                                    jQuery('.chart').data('easyPieChart').update(63);
-                                                                                                                    jQuery('.chart').find('span').text('63');
+                                                                                                                    jQuery('.chart').data('easyPieChart').update(76);
+                                                                                                                    jQuery('.chart').find('span').text('76');
                                                                                                                 } else if (count_animation > 34 && count_animation <= 53){
                                                                                                                     jQuery('#draggable2').css({
                                                                                                                         background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/3_voda_lev.png) 0 0/100% no-repeat'
@@ -823,8 +823,8 @@
                                                                                                                     jQuery('#draggable5').css({
                                                                                                                         background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/2_vozduh_lev.png) 0 0/100% no-repeat'
                                                                                                                     });
-                                                                                                                    jQuery('.chart').data('easyPieChart').update(65);
-                                                                                                                    jQuery('.chart').find('span').text('65');
+                                                                                                                    jQuery('.chart').data('easyPieChart').update(78);
+                                                                                                                    jQuery('.chart').find('span').text('78');
                                                                                                                 } else if (count_animation > 53 && count_animation <= 70){
                                                                                                                     jQuery('#draggable2').css({
                                                                                                                         background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/4_ogon_lev.png) 0 0/100% no-repeat'
@@ -832,8 +832,8 @@
                                                                                                                     jQuery('#draggable5').css({
                                                                                                                         background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/3_voda_lev.png) 0 0/100% no-repeat'
                                                                                                                     });
-                                                                                                                    jQuery('.chart').data('easyPieChart').update(67);
-                                                                                                                    jQuery('.chart').find('span').text('67');
+                                                                                                                    jQuery('.chart').data('easyPieChart').update(80);
+                                                                                                                    jQuery('.chart').find('span').text('80');
                                                                                                                 } else if (count_animation > 70 && count_animation <= 87){
                                                                                                                     jQuery('#draggable2').css({
                                                                                                                         background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/1_ogon_prav.png) 0 0/100% no-repeat'
@@ -841,8 +841,8 @@
                                                                                                                     jQuery('#draggable5').css({
                                                                                                                         background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/4_ogon_lev.png) 0 0/100% no-repeat'
                                                                                                                     });
-                                                                                                                    jQuery('.chart').data('easyPieChart').update(69);
-                                                                                                                    jQuery('.chart').find('span').text('69');
+                                                                                                                    jQuery('.chart').data('easyPieChart').update(82);
+                                                                                                                    jQuery('.chart').find('span').text('82');
                                                                                                                 } else if (count_animation > 87 && count_animation <= 104){
                                                                                                                     jQuery('#draggable2').css({
                                                                                                                         background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/2_voda_prav.png) 0 0/100% no-repeat'
@@ -850,8 +850,8 @@
                                                                                                                     jQuery('#draggable5').css({
                                                                                                                         background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/1_ogon_prav.png) 0 0/100% no-repeat'
                                                                                                                     });
-                                                                                                                    jQuery('.chart').data('easyPieChart').update(71);
-                                                                                                                    jQuery('.chart').find('span').text('71');
+                                                                                                                    jQuery('.chart').data('easyPieChart').update(84);
+                                                                                                                    jQuery('.chart').find('span').text('84');
                                                                                                                 } else if (count_animation > 104 && count_animation <= 123){
                                                                                                                     jQuery('#draggable2').css({
                                                                                                                         background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/3_vozduh_prav.png) 0 0/100% no-repeat'
@@ -859,8 +859,8 @@
                                                                                                                     jQuery('#draggable5').css({
                                                                                                                         background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/2_voda_prav.png) 0 0/100% no-repeat'
                                                                                                                     });
-                                                                                                                    jQuery('.chart').data('easyPieChart').update(73);
-                                                                                                                    jQuery('.chart').find('span').text('73');
+                                                                                                                    jQuery('.chart').data('easyPieChart').update(86);
+                                                                                                                    jQuery('.chart').find('span').text('86');
                                                                                                                 } else if (count_animation > 123 && count_animation <= 140){
                                                                                                                     jQuery('#draggable2').css({
                                                                                                                         background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/4_zemlya_prav_lit.png) 0 0/100% no-repeat'
@@ -868,8 +868,8 @@
                                                                                                                     jQuery('#draggable5').css({
                                                                                                                         background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/3_vozduh_prav.png) 0 0/100% no-repeat'
                                                                                                                     });
-                                                                                                                    jQuery('.chart').data('easyPieChart').update(75);
-                                                                                                                    jQuery('.chart').find('span').text('75');
+                                                                                                                    jQuery('.chart').data('easyPieChart').update(88);
+                                                                                                                    jQuery('.chart').find('span').text('88');
                                                                                                                 } else if (count_animation > 140 && count_animation <= 157){
                                                                                                                     jQuery('#draggable2').css({
                                                                                                                         background: 'rgba(255,255,255, 0.5)',
@@ -884,8 +884,8 @@
                                                                                                                     jQuery('#draggable5').css({
                                                                                                                         background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/4_zemlya_prav_lit.png) 0 0/100% no-repeat'
                                                                                                                     });
-                                                                                                                    jQuery('.chart').data('easyPieChart').update(77);
-                                                                                                                    jQuery('.chart').find('span').text('77');
+                                                                                                                    jQuery('.chart').data('easyPieChart').update(90);
+                                                                                                                    jQuery('.chart').find('span').text('90');
                                                                                                                 }
                                                                                                                 count_animation += 1;
                                                                                                             } else {
@@ -902,8 +902,8 @@
                                                                                                                     zIndex: '1'
                                                                                                                 });
                                                                                                                 count_animation = 1;
-                                                                                                                jQuery('.chart').data('easyPieChart').update(81);
-                                                                                                                jQuery('.chart').find('span').text('81');
+                                                                                                                jQuery('.chart').data('easyPieChart').update(92);
+                                                                                                                jQuery('.chart').find('span').text('92');
                                                                                             //фаза 7
                                                                                                                 reloadTime = 0;
                                                                                                                 reloadTime1 = 0;
@@ -999,12 +999,10 @@
                                                                                                                             .text('Выполнить')
                                                                                                                             .removeClass('btn__wizard_inAction');
                                                                                                                         tickSound.stop();
-                                                                                                                        
                                                                                                                     }
                                                                                                                 }, 250);
                                                                                                             }
                                                                                                         }, 1000);
-                                                                
                                                                                                     }
                                                                                                 }, 1000);
                                                                                             }
