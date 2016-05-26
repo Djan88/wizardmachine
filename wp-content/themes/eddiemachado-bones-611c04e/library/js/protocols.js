@@ -1019,7 +1019,6 @@
                                                 }, 1000);
                                             }
                                         }, 1000);
-                        
                                     }
                                 }, 250);
                             }
@@ -2787,18 +2786,15 @@
                                                                                                         count_animation = 1;
                                                                                                         jQuery('.chart').data('easyPieChart').update(81);
                                                                                                         jQuery('.chart').find('span').text('81');
-                                                                                        // Фаза 6
+                                                                                        //Фаза 4
                                                                                                         reloadTime = 0;
                                                                                                         reloadTime1 = 0;
                                                                                                         d12Val = 0;
                                                                                                         cur_animation_val = 0;
                                                                                                         rotateVal = 0;
                                                                                                         count_animation = 1;
-                                                                                                        tickSound.play();
-                                                                                                        ringStatus();
                                                                                                         phaseOne = setInterval(function(){
-                                                                                                            if (count_animation <= 344){                                                                         
-                                                                                                                tickSound.play();
+                                                                                                            if (count_animation <= 344){                                                                         //90
                                                                                                                 if (count_animation == 1) {
                                                                                                                     cur_animation_val = 0;
                                                                                                                     count_animation = 1;
@@ -2923,27 +2919,9 @@
                                                                                                             } else {
                                                                                                                 clearInterval(phaseOne);
                                                                                                                 count_animation = 1;
-                                                                                                                tickSound.stop();
-                                                                                                                phaseTwo = setInterval(function(){
-                                                                                                                    if (reloadTime <= 1){                                                                       //1
-                                                                                                                        tickSound.stop();
-                                                                                                                        reloadSound.play();
-                                                                                                                        reloadTime += 1;
-                                                                                                                    } else {
-                                                                                                                        clearInterval(phaseTwo);
-                                                                                                                        reloadSound.stop();
-                                                                                                                        tickSound.play();
-                                                                                                                    }
-                                                                                                                }, 250);
                                                                                                                 jQuery('.box_rounded').css('transform', 'rotate(0deg) scale(1)');
                                                                                                                 jQuery('#draggableD12').css('transform', 'rotate(0deg)');
                                                                                                                 jQuery('.itemlist_item').removeClass('transparent');
-                                                                                                                reloadTime = 0;
-                                                                                                                reloadTime1 = 0;
-                                                                                                                d12Val = 0;
-                                                                                                                cur_animation_val = 0;
-                                                                                                                rotateVal = 0;
-                                                                                                                count_animation = 1;
                                                                                                                 jQuery('.chart').data('easyPieChart').update(90);
                                                                                                                 jQuery('.chart').find('span').text('90');
                                                                                             //фаза 7
