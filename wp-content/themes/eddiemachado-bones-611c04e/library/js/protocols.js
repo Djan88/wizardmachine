@@ -3066,7 +3066,7 @@ v5 = function(){
     tickSound.play();
     phaseOne = setInterval(function(){
         if (count_animation <= 344){                                                                         //90
-            jQuery('#draggableS_1, #draggableVD, #draggableS4, #draggableS5, #draggableS6,').css({
+            jQuery('#draggableS_1, #draggableVD, #draggableS4, #draggableS5, #draggableS6').css({
                 color: 'transparent',
                 borderColor: 'transparent',
                 opacity: 0.8,
