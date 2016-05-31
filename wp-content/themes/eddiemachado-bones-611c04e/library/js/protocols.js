@@ -2951,7 +2951,7 @@
                                                                                                                             background: 'url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/nerazd_002.png) 0 0/100% no-repeat'
                                                                                                                         });
                                                                                                                         jQuery('#draggable2').css({
-                                                                                                                            background: 'url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/nerazd_001.png) 0 0/100% no-repeat'
+                                                                                                                            background: 'url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/jiva.png) 0 0/100% no-repeat'
                                                                                                                         });
                                                                                                                         jQuery('#draggable3').css({
                                                                                                                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/chisty_vnutri.jpg) 0 0/100% no-repeat'
