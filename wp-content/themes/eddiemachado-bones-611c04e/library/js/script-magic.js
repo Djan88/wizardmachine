@@ -93,6 +93,19 @@ jQuery('.work-area').find('.returned').draggable();
         protocolName = jQuery(this).data('protocol-name');
         localStorage.setItem('protocol', protocol);
         localStorage.setItem('protocolName', protocolName);
+        if(protocol == 'v2'){
+            jQuery('.box_rounded').removeClass('hidden');
+        } else if(protocol == 'v3'){
+            jQuery('.box_rounded').removeClass('hidden');
+        } else if(protocol == 'v4'){
+            jQuery('.box_rounded').removeClass('hidden');
+        } else if(protocol == 'v5'){
+            jQuery('.box_rounded').removeClass('hidden');
+        } else if(protocol == 'face'){
+            jQuery('.box_rounded').removeClass('hidden');
+        } else {
+            jQuery('.box_rounded').addClass('hidden');
+        }
         jQuery('.prot_in_action').removeClass('hidden');
         jQuery('.prot_in_action').text('Активирован протокол '+protocolName);
         if(jQuery(this).hasClass('btn_choice__choiced')){
@@ -155,6 +168,9 @@ jQuery('.work-area').find('.returned').draggable();
         jQuery('.itemlist-two').append(croppedImg);
         jQuery('.work-area').find('.returned').draggable();        
         jQuery('.knife-wrap').css('height', jQuery('.itemlist-two').height()+20+'px');
+        if(supportsStorage && localStorage.getItem('protocol')){
+            protocol = localStorage.getItem('protocol');
+        }
         if(protocol == 'v2'){
             jQuery('.box_rounded').removeClass('hidden');
         } else if(protocol == 'v3'){
@@ -174,19 +190,6 @@ jQuery('.work-area').find('.returned').draggable();
         cur_screen += 1;
         nextScreen();
         jQuery('.btn__next').addClass('hidden');
-        if(protocol == 'v2'){
-            jQuery('.box_rounded').removeClass('hidden');
-        } else if(protocol == 'v3'){
-            jQuery('.box_rounded').removeClass('hidden');
-        } else if(protocol == 'v4'){
-            jQuery('.box_rounded').removeClass('hidden');
-        } else if(protocol == 'v5'){
-            jQuery('.box_rounded').removeClass('hidden');
-        } else if(protocol == 'face'){
-            jQuery('.box_rounded').removeClass('hidden');
-        } else {
-            jQuery('.box_rounded').addClass('hidden');
-        }
     });
 
 //ШАГ 3 (Старт процедуры)
