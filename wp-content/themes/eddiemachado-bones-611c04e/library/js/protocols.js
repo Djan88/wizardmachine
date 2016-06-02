@@ -928,10 +928,10 @@
                                                                                                                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/plod.png) 0 0/100% no-repeat'
                                                                                                                         });
                                                                                                                         jQuery('#draggable4').css({
-                                                                                                                            background: 'url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/nerazd_002.png) 0 0/100% no-repeat'
+                                                                                                                            background: 'url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/9-ug.png) 0 0/100% no-repeat'
                                                                                                                         });
                                                                                                                         jQuery('#draggable2').css({
-                                                                                                                            background: 'url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/nerazd_001.png) 0 0/100% no-repeat'
+                                                                                                                            background: 'url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/jiva.png) 0 0/100% no-repeat'
                                                                                                                         });
                                                                                                                         jQuery('#draggable3').css({
                                                                                                                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/chisty_vnutri.jpg) 0 0/100% no-repeat'
@@ -1937,10 +1937,10 @@
                                                                                                                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/plod.png) 0 0/100% no-repeat'
                                                                                                                         });
                                                                                                                         jQuery('#draggable4').css({
-                                                                                                                            background: 'url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/nerazd_002.png) 0 0/100% no-repeat'
+                                                                                                                            background: 'url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/9-ug.png) 0 0/100% no-repeat'
                                                                                                                         });
                                                                                                                         jQuery('#draggable2').css({
-                                                                                                                            background: 'url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/nerazd_001.png) 0 0/100% no-repeat'
+                                                                                                                            background: 'url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/jiva.png) 0 0/100% no-repeat'
                                                                                                                         });
                                                                                                                         jQuery('#draggable3').css({
                                                                                                                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/chisty_vnutri.jpg) 0 0/100% no-repeat'
@@ -2948,7 +2948,7 @@
                                                                                                                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/plod.png) 0 0/100% no-repeat'
                                                                                                                         });
                                                                                                                         jQuery('#draggable4').css({
-                                                                                                                            background: 'url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/nerazd_002.png) 0 0/100% no-repeat'
+                                                                                                                            background: 'url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/9-ug.png) 0 0/100% no-repeat'
                                                                                                                         });
                                                                                                                         jQuery('#draggable2').css({
                                                                                                                             background: 'url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/jiva.png) 0 0/100% no-repeat'
@@ -3953,10 +3953,10 @@ v5 = function(){
                                                                                                                         background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/plod.png) 0 0/100% no-repeat'
                                                                                                                     });
                                                                                                                     jQuery('#draggable4').css({
-                                                                                                                        background: 'url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/nerazd_002.png) 0 0/100% no-repeat'
+                                                                                                                        background: 'url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/9-ug.png) 0 0/100% no-repeat'
                                                                                                                     });
                                                                                                                     jQuery('#draggable2').css({
-                                                                                                                        background: 'url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/nerazd_001.png) 0 0/100% no-repeat'
+                                                                                                                        background: 'url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/jiva.png) 0 0/100% no-repeat'
                                                                                                                     });
                                                                                                                     jQuery('#draggable3').css({
                                                                                                                         background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/chisty_vnutri.jpg) 0 0/100% no-repeat'
@@ -11536,10 +11536,10 @@ face = function(){
                                                                                                                                                                                                 background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/plod.png) 0 0/100% no-repeat'
                                                                                                                                                                                             });
                                                                                                                                                                                             jQuery('#draggable4').css({
-                                                                                                                                                                                                background: 'url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/nerazd_002.png) 0 0/100% no-repeat'
+                                                                                                                                                                                                background: 'url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/9-ug.png) 0 0/100% no-repeat'
                                                                                                                                                                                             });
                                                                                                                                                                                             jQuery('#draggable2').css({
-                                                                                                                                                                                                background: 'url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/nerazd_001.png) 0 0/100% no-repeat'
+                                                                                                                                                                                                background: 'url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/jiva.png) 0 0/100% no-repeat'
                                                                                                                                                                                             });
                                                                                                                                                                                             jQuery('#draggable3').css({
                                                                                                                                                                                                 background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/chisty_vnutri.jpg) 0 0/100% no-repeat'
