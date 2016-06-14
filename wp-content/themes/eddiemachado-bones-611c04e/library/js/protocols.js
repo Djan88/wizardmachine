@@ -3079,7 +3079,7 @@ v5 = function(){
                 background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/povregdenie_demona.jpg) 0 0/100% no-repeat'
             });
             jQuery('#draggableVD').css({
-                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/nag.png) 0 0/100% no-repeat'
+                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/ishtar.png) 0 0/100% no-repeat'
             });
             jQuery('#draggableD12')
                 .removeClass('hidden')
