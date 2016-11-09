@@ -341,33 +341,6 @@ function uploadImageFile() { // Note: GD library is required for this function
                                 return;
                         }
 
-                        //exif only supports jpg in our supported file types
-                        if ($sExt == ".jpg") {
-                            $exif = exif_read_data($sTempFileName);
-
-                            //get the orientation
-                            if(isset($exif['Orientation'])) $orientation = $exif['Orientation'];
-                            elseif(isset($exif['COMPUTED']) && isset($exif['COMPUTED']['Orientation'])) $orientation = $exif['COMPUTED']['Orientation'];
-                            elseif(isset($exif['IFD0']) && isset($exif['IFD0']['Orientation'])) $orientation = $exif['IFD0']['Orientation'];
-
-                            switch($orientation){
-                                case 8:
-                                    $vImg = imagerotate($vImg, 90, 0);
-                                    $tmp = $aSize[0];
-                                    $aSize[0] = $aSize[1];
-                                    $aSize[1] = $tmp;
-                                    break;
-                                case 3:
-                                    $vImg = imagerotate($vImg, 180, 0);
-                                    break;
-                                case 6:
-                                    $vImg = imagerotate($vImg, -90, 0);
-                                    $tmp = $aSize[0];
-                                    $aSize[0] = $aSize[1];
-                                    $aSize[1] = $tmp;
-                                    break;
-                            }
-                        }
 
                         if($aSize[0] <= 800 && $_POST['mci_w']){
                             $k = 1;
