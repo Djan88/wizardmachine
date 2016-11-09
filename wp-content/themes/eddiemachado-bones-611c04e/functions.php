@@ -76,7 +76,7 @@ add_action( 'after_setup_theme', 'bones_ahoy' );
 /************* OEMBED SIZE OPTIONS *************/
 
 if ( ! isset( $content_width ) ) {
-	$content_width = 640;
+  $content_width = 640;
 }
 
 /************* THUMBNAIL SIZE OPTIONS *************/
@@ -163,40 +163,40 @@ add_action( 'customize_register', 'bones_theme_customizer' );
 
 // Sidebars & Widgetizes Areas
 function bones_register_sidebars() {
-	register_sidebar(array(
-		'id' => 'sidebar1',
-		'name' => __( 'Sidebar 1', 'bonestheme' ),
-		'description' => __( 'The first (primary) sidebar.', 'bonestheme' ),
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget' => '</div>',
-		'before_title' => '<h4 class="widgettitle">',
-		'after_title' => '</h4>',
-	));
+  register_sidebar(array(
+    'id' => 'sidebar1',
+    'name' => __( 'Sidebar 1', 'bonestheme' ),
+    'description' => __( 'The first (primary) sidebar.', 'bonestheme' ),
+    'before_widget' => '<div id="%1$s" class="widget %2$s">',
+    'after_widget' => '</div>',
+    'before_title' => '<h4 class="widgettitle">',
+    'after_title' => '</h4>',
+  ));
 
-	/*
-	to add more sidebars or widgetized areas, just copy
-	and edit the above sidebar code. In order to call
-	your new sidebar just use the following code:
+  /*
+  to add more sidebars or widgetized areas, just copy
+  and edit the above sidebar code. In order to call
+  your new sidebar just use the following code:
 
-	Just change the name to whatever your new
-	sidebar's id is, for example:
+  Just change the name to whatever your new
+  sidebar's id is, for example:
 
-	register_sidebar(array(
-		'id' => 'sidebar2',
-		'name' => __( 'Sidebar 2', 'bonestheme' ),
-		'description' => __( 'The second (secondary) sidebar.', 'bonestheme' ),
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget' => '</div>',
-		'before_title' => '<h4 class="widgettitle">',
-		'after_title' => '</h4>',
-	));
+  register_sidebar(array(
+    'id' => 'sidebar2',
+    'name' => __( 'Sidebar 2', 'bonestheme' ),
+    'description' => __( 'The second (secondary) sidebar.', 'bonestheme' ),
+    'before_widget' => '<div id="%1$s" class="widget %2$s">',
+    'after_widget' => '</div>',
+    'before_title' => '<h4 class="widgettitle">',
+    'after_title' => '</h4>',
+  ));
 
-	To call the sidebar in your template, you can just copy
-	the sidebar.php file and rename it to your sidebar's name.
-	So using the above example, it would be:
-	sidebar-sidebar2.php
+  To call the sidebar in your template, you can just copy
+  the sidebar.php file and rename it to your sidebar's name.
+  So using the above example, it would be:
+  sidebar-sidebar2.php
 
-	*/
+  */
 } // don't remove this bracket!
 
 
@@ -263,16 +263,16 @@ endif;
 add_action('template_redirect', 'kama_login_redirect');
 function kama_login_redirect(){
     if(!is_user_logged_in()){
-	if( strpos($_SERVER['REQUEST_URI'], 'login')!==false )
-		$loc = '/wp-login.php';
-	elseif( strpos($_SERVER['REQUEST_URI'], 'admin')!==false )
-		$loc = '/wp-admin/';
+  if( strpos($_SERVER['REQUEST_URI'], 'login')!==false )
+    $loc = '/wp-login.php';
+  elseif( strpos($_SERVER['REQUEST_URI'], 'admin')!==false )
+    $loc = '/wp-admin/';
         elseif( strpos($_SERVER['REQUEST_URI'], 'registration')!==false )
-		$loc = 'wp-login.php?action=register';
-	if( $loc ){
-		header( 'Location: '.get_option('site_url').$loc, true, 303 );
-		exit;
-	}
+    $loc = 'wp-login.php?action=register';
+  if( $loc ){
+    header( 'Location: '.get_option('site_url').$loc, true, 303 );
+    exit;
+  }
     }
 }
 
@@ -286,9 +286,9 @@ function sp_login_redirect($redirect_to, $request, $user){
 }
 
 function my_custom_login_logo(){
-	echo '<style type="text/css">
-	h1 a { background-image:url('.get_bloginfo('template_directory').'/library/images/test-logo.png) !important; }
-	</style>';
+  echo '<style type="text/css">
+  h1 a { background-image:url('.get_bloginfo('template_directory').'/library/images/test-logo.png) !important; }
+  </style>';
 }
 add_action('login_head', 'my_custom_login_logo');
 
@@ -341,6 +341,33 @@ function uploadImageFile() { // Note: GD library is required for this function
                                 return;
                         }
 
+                        //exif only supports jpg in our supported file types
+                        if ($sExt == ".jpg") {
+                            $exif = exif_read_data($sTempFileName);
+
+                            //get the orientation
+                            if(isset($exif['Orientation'])) $orientation = $exif['Orientation'];
+                            elseif(isset($exif['COMPUTED']) && isset($exif['COMPUTED']['Orientation'])) $orientation = $exif['COMPUTED']['Orientation'];
+                            elseif(isset($exif['IFD0']) && isset($exif['IFD0']['Orientation'])) $orientation = $exif['IFD0']['Orientation'];
+
+                            switch($orientation){
+                                case 8:
+                                    $vImg = imagerotate($vImg, 90, 0);
+                                    $tmp = $aSize[0];
+                                    $aSize[0] = $aSize[1];
+                                    $aSize[1] = $tmp;
+                                    break;
+                                case 3:
+                                    $vImg = imagerotate($vImg, 180, 0);
+                                    break;
+                                case 6:
+                                    $vImg = imagerotate($vImg, -90, 0);
+                                    $tmp = $aSize[0];
+                                    $aSize[0] = $aSize[1];
+                                    $aSize[1] = $tmp;
+                                    break;
+                            }
+                        }
 
                         if($aSize[0] <= 800 && $_POST['mci_w']){
                             $k = 1;
