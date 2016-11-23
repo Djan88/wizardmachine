@@ -664,3 +664,6 @@ form.pay-form
     transition: transform 1s linear;
     z-index: 4;
 }
+.btn_licens {
+    margin-top: 20px;
+}
