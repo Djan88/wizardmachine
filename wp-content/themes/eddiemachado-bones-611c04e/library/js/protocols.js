@@ -2786,7 +2786,7 @@
                                                                                                         count_animation = 1;
                                                                                                         jQuery('.chart').data('easyPieChart').update(81);
                                                                                                         jQuery('.chart').find('span').text('81');
-                                                                                        //Фаза 4
+                                                                                        // Фаза 4
                                                                                                         reloadTime = 0;
                                                                                                         reloadTime1 = 0;
                                                                                                         d12Val = 0;
