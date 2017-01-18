@@ -2933,9 +2933,9 @@
                                                                                                                 rotateVal = 0;
                                                                                                                 cur_animation_val = 0;
                                                                                                                 count_animation = 1;
-                                                                                                                tickSound.play();
                                                                                                                 phaseOne = setInterval(function(){
-                                                                                                                    if (count_animation <= 344){                                                                         //90
+                                                                                                                    if (count_animation <= 344){ 
+                                                                                                                        tickSound.play();                                                                        //90
                                                                                                                         jQuery('#draggable0, #draggable2, #draggable3, #draggable4').css({
                                                                                                                             color: 'transparent',
                                                                                                                             borderColor: 'transparent',
@@ -2996,7 +2996,9 @@
                                                                                                                             jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
                                                                                                                             jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
                                                                                                                         }
+                                                                                                                        tickSound.play();  
                                                                                                                     } else {
+                                                                                                                        tickSound.play();  
                                                                                                                         clearInterval(phaseOne);
                                                                                                                         count_animation = 1;
                                                                                                                         cur_animation_val = 1;
