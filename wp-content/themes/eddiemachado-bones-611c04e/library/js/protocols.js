@@ -2933,6 +2933,7 @@
                                                                                                                 rotateVal = 0;
                                                                                                                 cur_animation_val = 0;
                                                                                                                 count_animation = 1;
+                                                                                                                tickSound.play();
                                                                                                                 phaseOne = setInterval(function(){
                                                                                                                     if (count_animation <= 344){                                                                         //90
                                                                                                                         jQuery('#draggable0, #draggable2, #draggable3, #draggable4').css({
@@ -3938,6 +3939,7 @@ v5 = function(){
                                                                                                             rotateVal = 0;
                                                                                                             cur_animation_val = 0;
                                                                                                             count_animation = 1;
+                                                                                                            tickSound.play();
                                                                                                             phaseOne = setInterval(function(){
                                                                                                                 if (count_animation <= 344){                                                                         //90
                                                                                                                     jQuery('#draggable0, #draggable2, #draggable3, #draggable4').css({
