@@ -68,7 +68,7 @@
                   <div class="btn btn_sm btn_warning fast-protocol" data-fast="resource" data-protocol-name ="РЕСУРС">РЕСУРС</div>
                   <div class="btn btn_sm btn_warning fast-protocol" data-fast="solis" data-protocol-name ="SOLIS">SOLIS</div>
                   <?php  if(current_user_can('administrator')) { ?>
-                    <div class="btn btn_sm btn_warning fast-protocol" data-fast="demo" data-protocol-name ="demo">УПРОЩЕННЫЙ</div>
+                    <div class="btn btn_sm btn_warning fast-protocol" data-fast="demo" data-protocol-name ="«УНИВЕРСАЛЬНЫЙ»">«УНИВЕРСАЛЬНЫЙ»</div>
                   <?php } ?>
                 </div>
                 <!-- <div class="fast-protocol-resource clearfix hidden"> -->
@@ -99,8 +99,8 @@
                         <h3><span class="protocol_acent">(SOLIS)</span>«SOLIS»</h3>
                         <div>«Протокол "Solis" предназначен для "гиперресурсных" состояний, которые закономерно возникают после удачных проработок клиента на "wizardmachine", терапевтической дефрагментации, "Tarotmachine", а также после проработки кармических и родовых проблем либо после длительной "отжимке" негативного флюида из физического тела. При калибровке ставьте D1 на центр лба, а зону v3 на нижнюю границу сердца!»<div class="btn btn_lg btn_success btn_choice" data-protocol ="solis" data-protocol-name ="SOLIS">Выбрать</div></div>
                         <?php  if(current_user_can('administrator')) { ?>
-                          <h3><span class="protocol_acent">УПРОЩЕННЫЙ</span>«УПРОЩЕННЫЙ»</h3>
-                          <div>«Протокол "УПРОЩЕННЫЙ"»<div class="btn btn_lg btn_success btn_choice" data-protocol ="demo" data-protocol-name ="demo">Выбрать</div></div>
+                          <h3><span class="protocol_acent">(V1, V2, V3)</span>«УНИВЕРСАЛЬНЫЙ»</h3>
+                          <div>«Универсальный протокол"»<div class="btn btn_lg btn_success btn_choice" data-protocol ="demo" data-protocol-name ="«УНИВЕРСАЛЬНЫЙ»">Выбрать</div></div>
                         <?php } ?>
                     </div>
                 </div>

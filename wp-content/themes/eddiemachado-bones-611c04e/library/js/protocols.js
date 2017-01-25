@@ -11989,7 +11989,7 @@ demo = function(){
     count_animation = 1;
     ringStatus();
     phaseOne = setInterval(function(){
-        if (count_animation <= 193){                                                                         //120
+        if (count_animation <= 40){                                                                         //120
             cur_animation_val += 6;
             jQuery('#draggable2, #draggable3, #draggable4').css({
                 color: 'transparent',
