@@ -12048,6 +12048,16 @@ demo = function(){
                         paddingTop: '4px',
                         zIndex: '9000'
                     });
+                    jQuery('#draggableD12')
+                        .removeClass('hidden')
+                        .css({
+                            opacity: 0.8,
+                            transform: 'scale(1)',
+                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat',
+                            transform: 'rotate(-'+d12Val+'deg)',
+                            borderWidth: '1px',
+                            borderColor: 'transparent'
+                        });
                     jQuery('#draggable2').css({
                         background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/travma.jpg) 0 0/100% no-repeat'
                     });
@@ -12135,16 +12145,6 @@ demo = function(){
                                 background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/superdisfunction.png) 0 0/100% no-repeat',
                                 zIndex: '1000'
                             });
-                            jQuery('#draggableD12')
-                                .removeClass('hidden')
-                                .css({
-                                    opacity: 0.8,
-                                    transform: 'scale(1)',
-                                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat',
-                                    transform: 'rotate(-'+d12Val+'deg)',
-                                    borderWidth: '1px',
-                                    borderColor: 'transparent'
-                                });
                             rotateVal += 1.5;
                             if(count_animation <= 120){
                                 cur_animation_val += 1.5;
