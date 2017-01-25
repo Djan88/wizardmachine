@@ -12009,6 +12009,7 @@ demo = function(){
                 background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/nerazd_002.png) 0 0/100% no-repeat'
             });
             count_animation += 1;
+            console.log(count_animation);
         } else {
             clearInterval(phaseOne);
             count_animation = 1;
