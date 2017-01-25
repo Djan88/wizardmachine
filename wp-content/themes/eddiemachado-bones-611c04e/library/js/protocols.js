@@ -12008,6 +12008,7 @@ demo = function(){
             jQuery('#draggable4').css({
                 background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/nerazd_002.png) 0 0/100% no-repeat'
             });
+            count_animation += 1;
         } else {
             clearInterval(phaseOne);
             count_animation = 1;
@@ -12031,6 +12032,8 @@ demo = function(){
             cur_animation_val = 0;
             rotateVal = 0;
             count_animation = 1;
+            tickSound.play();
+            ringStatus();
             phaseOne = setInterval(function(){
                 if (count_animation <= 193){                                                                         //120
                     cur_animation_val += 6;
@@ -12052,8 +12055,7 @@ demo = function(){
                     jQuery('#draggable4').css({
                         background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/povregdenie_demona.jpg) 0 0/100% no-repeat'
                     });
-                    tickSound.play();
-                    ringStatus();
+                    count_animation += 1;
                     if(count_animation <= 120){
                         cur_animation_val += 1.5;
                         d12Val+= 9;
