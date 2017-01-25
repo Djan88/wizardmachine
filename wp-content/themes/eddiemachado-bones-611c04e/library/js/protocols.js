@@ -11987,6 +11987,7 @@ demo = function(){
     cur_animation_val = 0;
     rotateVal = 0;
     count_animation = 1;
+    ringStatus();
     phaseOne = setInterval(function(){
         if (count_animation <= 193){                                                                         //120
             cur_animation_val += 6;
@@ -12134,6 +12135,16 @@ demo = function(){
                                 background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/superdisfunction.png) 0 0/100% no-repeat',
                                 zIndex: '1000'
                             });
+                            jQuery('#draggableD12')
+                                .removeClass('hidden')
+                                .css({
+                                    opacity: 0.8,
+                                    transform: 'scale(1)',
+                                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat',
+                                    transform: 'rotate(-'+d12Val+'deg)',
+                                    borderWidth: '1px',
+                                    borderColor: 'transparent'
+                                });
                             rotateVal += 1.5;
                             if(count_animation <= 120){
                                 cur_animation_val += 1.5;
