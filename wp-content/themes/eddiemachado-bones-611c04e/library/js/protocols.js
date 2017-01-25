@@ -12037,8 +12037,7 @@ demo = function(){
             tickSound.play();
             ringStatus();
             phaseOne = setInterval(function(){
-                if (count_animation <= 193){                                                                         //120
-                    cur_animation_val += 6;
+                if (count_animation <= 344){                                                                         //90
                     jQuery('#draggable2, #draggable3, #draggable4').css({
                         color: 'transparent',
                         borderColor: 'transparent',
