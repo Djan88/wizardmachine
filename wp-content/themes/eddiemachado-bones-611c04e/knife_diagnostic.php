@@ -154,7 +154,7 @@
                         <h3><span class="protocol_acent">(SOLIS)</span>«SOLIS»</h3>
                         <div>«Протокол "Solis" предназначен для "гиперресурсных" состояний, которые закономерно возникают после удачных проработок клиента на "wizardmachine", терапевтической дефрагментации, "Tarotmachine", а также после проработки кармических и родовых проблем либо после длительной "отжимке" негативного флюида из физического тела. При калибровке ставьте D1 на центр лба, а зону v3 на нижнюю границу сердца!»<div class="btn btn_lg btn_success btn_choice" data-protocol ="solis" data-protocol-name ="SOLIS">Выбрать</div></div>
                         <?php  if(current_user_can('administrator')) { ?>
-                          <h3><span class="protocol_acent">(V1, V2, V3)</span>«УНИВЕРСАЛЬНЫЙ»</h3>
+                          <h3><span class="protocol_acent">(V2, V3, V4)</span>«УНИВЕРСАЛЬНЫЙ»</h3>
                           <div>«Универсальный протокол"»<div class="btn btn_lg btn_success btn_choice" data-protocol ="demo" data-protocol-name ="«УНИВЕРСАЛЬНЫЙ»">Выбрать</div></div>
                         <?php } ?>
                     </div>
