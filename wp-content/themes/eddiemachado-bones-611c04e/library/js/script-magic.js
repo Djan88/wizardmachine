@@ -234,6 +234,8 @@ jQuery( ".btn__wizard" ).on('click', function(event) {
                     resource();
                 } else if(protocol == 'solis'){
                     solis();
+                } else if(protocol == 'demo'){
+                    demo();
                 } else{
                     console.log('нет протокола с id '+ protocol)
                 }
