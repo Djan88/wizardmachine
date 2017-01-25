@@ -103,6 +103,8 @@ jQuery('.work-area').find('.returned').draggable();
             jQuery('.box_rounded').removeClass('hidden');
         } else if(protocol == 'face'){
             jQuery('.box_rounded').removeClass('hidden');
+        } else if(protocol == 'demo'){
+            jQuery('.box_rounded').removeClass('hidden');
         } else {
             jQuery('.box_rounded').addClass('hidden');
         }
@@ -203,10 +205,10 @@ jQuery( ".btn__wizard" ).on('click', function(event) {
     pointsStatus = true;
     v3status = true;
     curV = localStorage.getItem('curV');
-        checkPoints();
-        if(pointsStatus == false){
-            swal("Не все зоны перенесены", "Перед началом процедуры необходимо перенести все зоны", "info"); 
-        } else {
+        // checkPoints();
+        // if(pointsStatus == false){
+        //     swal("Не все зоны перенесены", "Перед началом процедуры необходимо перенести все зоны", "info"); 
+        // } else {
             jQuery(this)
                 .addClass('btn__wizard_inAction')
                 .text('Выполняется');
@@ -235,7 +237,7 @@ jQuery( ".btn__wizard" ).on('click', function(event) {
                 } else{
                     console.log('нет протокола с id '+ protocol)
                 }
-        }  
+        // }  
     // }
     main_heading();
 });

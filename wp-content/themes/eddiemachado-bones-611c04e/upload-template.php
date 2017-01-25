@@ -67,6 +67,9 @@
                   <div class="btn btn_sm btn_warning fast-protocol" data-fast="v5" data-protocol-name ="V5">V5</div>
                   <div class="btn btn_sm btn_warning fast-protocol" data-fast="resource" data-protocol-name ="РЕСУРС">РЕСУРС</div>
                   <div class="btn btn_sm btn_warning fast-protocol" data-fast="solis" data-protocol-name ="SOLIS">SOLIS</div>
+                  <?php  if(current_user_can('administrator')) { ?>
+                    <div class="btn btn_sm btn_warning fast-protocol" data-fast="demo" data-protocol-name ="demo">УПРОЩЕННЫЙ</div>
+                  <?php } ?>
                 </div>
                 <!-- <div class="fast-protocol-resource clearfix hidden"> -->
                   <!-- <div class="btn btn_sm btn_warning fast-v" data-v='#draggable1'>V1</div>  -->
