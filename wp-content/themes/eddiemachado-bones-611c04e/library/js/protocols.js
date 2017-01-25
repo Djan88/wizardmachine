@@ -12120,8 +12120,6 @@ demo = function(){
                     cur_animation_val = 0;
                     rotateVal = 0;
                     count_animation = 1;
-                    tickSound.play();
-                    ringStatus();
                     phaseOne = setInterval(function(){
                         if (count_animation <= 344){
                             jQuery('#draggable2, #draggable3, #draggable4').css({
