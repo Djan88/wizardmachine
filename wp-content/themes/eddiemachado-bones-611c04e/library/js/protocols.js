@@ -12120,11 +12120,10 @@ demo = function(){
                     cur_animation_val = 0;
                     rotateVal = 0;
                     count_animation = 1;
-                    jQuery('.box_rounded').css('transform', 'rotate(0deg) scale(1)');
-                    jQuery('#draggableD12').css('transform', 'rotate(0deg)');
+                    tickSound.play();
+                    ringStatus();
                     phaseOne = setInterval(function(){
-                        if (count_animation <= 193){                                                                         //120
-                            cur_animation_val += 6;
+                        if (count_animation <= 344){
                             jQuery('#draggable2, #draggable3, #draggable4').css({
                                 color: 'transparent',
                                 borderColor: 'transparent',
@@ -12135,7 +12134,19 @@ demo = function(){
                                 background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/superdisfunction.png) 0 0/100% no-repeat',
                                 zIndex: '1000'
                             });
+                            jQuery('#draggableD12')
+                                .removeClass('hidden')
+                                .css({
+                                    opacity: 0.8,
+                                    transform: 'scale(1)',
+                                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat',
+                                    transform: 'rotate(-'+d12Val+'deg)',
+                                    borderWidth: '1px',
+                                    borderColor: 'transparent'
+                                });
+                            count_animation += 1;
                             rotateVal += 1.5;
+                            // console.log(count_animation);
                             if(count_animation <= 120){
                                 cur_animation_val += 1.5;
                                 d12Val+= 9;
@@ -12178,11 +12189,10 @@ demo = function(){
                                 zIndex: '1'
                             });
                             count_animation = 1;
-                            jQuery('.chart').data('easyPieChart').update(20);
-                            jQuery('.chart').find('span').text('20');
-                           
+                            jQuery('.chart').data('easyPieChart').update(30);
+                            jQuery('.chart').find('span').text('30');
                        } 
-                    }, 1000);
+                    }, 250);
                } 
             }, 250);
        } 
