@@ -12048,6 +12048,15 @@ demo = function(){
                         paddingTop: '4px',
                         zIndex: '9000'
                     });
+                    jQuery('#draggable2').css({
+                        background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/travma.jpg) 0 0/100% no-repeat'
+                    });
+                    jQuery('#draggable3').css({
+                        background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/travma.jpg) 0 0/100% no-repeat'
+                    });
+                    jQuery('#draggable4').css({
+                        background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/povregdenie_demona.jpg) 0 0/100% no-repeat'
+                    });
                     jQuery('#draggableD12')
                         .removeClass('hidden')
                         .css({
@@ -12058,16 +12067,9 @@ demo = function(){
                             borderWidth: '1px',
                             borderColor: 'transparent'
                         });
-                    jQuery('#draggable2').css({
-                        background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/travma.jpg) 0 0/100% no-repeat'
-                    });
-                    jQuery('#draggable3').css({
-                        background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/travma.jpg) 0 0/100% no-repeat'
-                    });
-                    jQuery('#draggable4').css({
-                        background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/povregdenie_demona.jpg) 0 0/100% no-repeat'
-                    });
                     count_animation += 1;
+                    rotateVal += 1.5;
+                    // console.log(count_animation);
                     if(count_animation <= 120){
                         cur_animation_val += 1.5;
                         d12Val+= 9;
@@ -12183,7 +12185,7 @@ demo = function(){
                        } 
                     }, 1000);
                } 
-            }, 250);
+            }, 1000);
        } 
     }, 1000);
 }
