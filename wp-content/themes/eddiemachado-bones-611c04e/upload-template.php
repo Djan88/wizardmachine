@@ -97,8 +97,11 @@
                         <h3><span class="protocol_acent">(ДРЕНАЖ)</span>«РЕАКТИВАЦИЯ РЕСУРСА»</h3>
                         <div>«Дренажный протокол предназначен для флюидической очистки зон DSV тела ума. Рекомендован при хронических либо кармически отягощенных, а также гипоресурсных состояниях. Можно применять сразу дополнительно после основного протокола (кроме V5) либо самостоятельно»<div class="btn btn_lg btn_success btn_choice" data-protocol ="resource" data-protocol-name ="РЕАКТИВАЦИЯ РЕСУРСА">Выбрать</div></div>
                         <h3><span class="protocol_acent">(SOLIS)</span>«SOLIS»</h3>
-                        <div>«Протокол "Solis" предназначен для "гиперресурсных" состояний, которые закономерно возникают после удачных проработок клиента на "wizardmachine", терапевтической дефрагментации, "Tarotmachine", а также после проработки кармических и родовых проблем либо после длительной "отжимке" негативного флюида из физического тела. 
-При калибровке ставьте D1 на центр лба, а зону v3 на нижнюю границу сердца!»<div class="btn btn_lg btn_success btn_choice" data-protocol ="solis" data-protocol-name ="SOLIS">Выбрать</div></div>
+                        <div>«Протокол "Solis" предназначен для "гиперресурсных" состояний, которые закономерно возникают после удачных проработок клиента на "wizardmachine", терапевтической дефрагментации, "Tarotmachine", а также после проработки кармических и родовых проблем либо после длительной "отжимке" негативного флюида из физического тела. При калибровке ставьте D1 на центр лба, а зону v3 на нижнюю границу сердца!»<div class="btn btn_lg btn_success btn_choice" data-protocol ="solis" data-protocol-name ="SOLIS">Выбрать</div></div>
+                        <?php  if(current_user_can('administrator')) { ?>
+                          <h3><span class="protocol_acent">УПРОЩЕННЫЙ</span>«УПРОЩЕННЫЙ»</h3>
+                          <div>«Протокол "УПРОЩЕННЫЙ"»<div class="btn btn_lg btn_success btn_choice" data-protocol ="demo" data-protocol-name ="demo">Выбрать</div></div>
+                        <?php } ?>
                     </div>
                 </div>
                 <div class="machine_screen clearfix hidden">
