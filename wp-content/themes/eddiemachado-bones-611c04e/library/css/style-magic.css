@@ -643,7 +643,7 @@ form.pay-form
 }
 .steps.solis
 {
-    margin-bottom: 300px;
+    margin-bottom: 210px;
 }
 .box_rounded
 {
@@ -671,7 +671,7 @@ form.pay-form
     color: #204371;
     font-size: 14px;
     position: absolute;
-    right: 15px;
+    right: 10px;
     top: 67px;
     text-align: center;
 }
