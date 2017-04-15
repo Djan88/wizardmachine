@@ -426,8 +426,7 @@ path {
 .fast-protocol-wrap, .fast-protocol-resource 
 {
     text-align: justify;
-    width: 58%;
-    left: 22%;
+    left: 10%;
     position: absolute;
     background: #F4F4F4;
     z-index: 5;
