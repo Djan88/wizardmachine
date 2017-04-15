@@ -56,6 +56,7 @@
         v3;
 
     onEnd = function(){
+        jQuery('.prot_stage').addClass('hidden');
         swal({
             title: "Процедура окончена",   
             text: "Что вы хотите делать дальше?",   
@@ -11673,6 +11674,8 @@ solis = function(){
   jQuery('.steps').addClass('solis');
   //фаза 1
   count_animation = 1;
+  jQuery('.prot_stage').removeClass('hidden')
+  jQuery('.prot_stage').text('ФАЗА 1 из 15');
   phaseOne = setInterval(function(){
     if (count_animation <= 120){                                                                         //120
       cur_animation_val += 6;
@@ -11716,11 +11719,11 @@ solis = function(){
       });
       count_animation = 1;
       sound.play();
-
       jQuery('.chart').data('easyPieChart').update(3);
       jQuery('.chart').find('span').text('3');
       //фаза 2
       count_animation = 1;
+      jQuery('.prot_stage').text('ФАЗА 2 из 15');
       phaseOne = setInterval(function(){
         if (count_animation <= 120){                                                                         //120
           cur_animation_val += 6;
@@ -11783,6 +11786,7 @@ solis = function(){
           //фаза 3
           count_animation = 1;
           cur_animation_val = 0;
+          jQuery('.prot_stage').text('ФАЗА 3 из 15');
           phaseOne = setInterval(function(){
             if (count_animation <= 280){                                                                         //120
               cur_animation_val += 6;
@@ -11824,6 +11828,7 @@ solis = function(){
               //фаза 4
               count_animation = 1;
               cur_animation_val = 0;
+              jQuery('.prot_stage').text('ФАЗА 4 из 15');
               phaseOne = setInterval(function(){
                 if (count_animation <= 280){                                                                         //120
                   cur_animation_val += 6;
@@ -11868,6 +11873,7 @@ solis = function(){
                   cur_animation_val = 0;
                   rotateVal = 0;
                   count_animation = 1;
+                  jQuery('.prot_stage').text('ФАЗА 5 из 15');
       //Этап 5-1-1
                   phaseSeven_one = setInterval(function(){
                     if (count_animation <= 22){                                                                         //22
@@ -12310,6 +12316,7 @@ solis = function(){
                                                   jQuery('.chart').find('span').text('36');
                                                   //фаза 1
                                                   count_animation = 1;
+                                                  jQuery('.prot_stage').text('ФАЗА 6 из 15');
                                                   phaseOne = setInterval(function(){
                                                     if (count_animation <= 120){                                                                         //120
                                                       cur_animation_val += 6;
@@ -12358,6 +12365,7 @@ solis = function(){
                                                       jQuery('.chart').find('span').text('38');
                                                       //фаза 2
                                                       count_animation = 1;
+                                                      jQuery('.prot_stage').text('ФАЗА 7 из 15');
                                                       phaseOne = setInterval(function(){
                                                         if (count_animation <= 120){                                                                         //120
                                                           cur_animation_val += 6;
@@ -12420,6 +12428,7 @@ solis = function(){
                                                           //фаза 3
                                                           count_animation = 1;
                                                           cur_animation_val = 0;
+                                                          jQuery('.prot_stage').text('ФАЗА 8 из 15');
                                                           phaseOne = setInterval(function(){
                                                             if (count_animation <= 280){                                                                         //120
                                                               cur_animation_val += 6;
@@ -12461,6 +12470,7 @@ solis = function(){
                                                               //фаза 4
                                                               count_animation = 1;
                                                               cur_animation_val = 0;
+                                                              jQuery('.prot_stage').text('ФАЗА 9 из 15');
                                                               phaseOne = setInterval(function(){
                                                                 if (count_animation <= 280){                                                                         //120
                                                                   cur_animation_val += 6;
@@ -12505,6 +12515,7 @@ solis = function(){
                                                                   cur_animation_val = 0;
                                                                   rotateVal = 0;
                                                                   count_animation = 1;
+                                                                  jQuery('.prot_stage').text('ФАЗА 10 из 15');
                                                       //Этап 5-1-1
                                                                   phaseSeven_one = setInterval(function(){
                                                                     if (count_animation <= 22){                                                                         //22
@@ -12947,6 +12958,7 @@ solis = function(){
                                                                                                   jQuery('.chart').find('span').text('68');
                                                                                                   //фаза 1
                                                                                                   count_animation = 1;
+                                                                                                  jQuery('.prot_stage').text('ФАЗА 11 из 15');
                                                                                                   phaseOne = setInterval(function(){
                                                                                                     if (count_animation <= 120){                                                                         //120
                                                                                                       cur_animation_val += 6;
@@ -12995,6 +13007,7 @@ solis = function(){
                                                                                                       jQuery('.chart').find('span').text('71');
                                                                                                       //фаза 2
                                                                                                       count_animation = 1;
+                                                                                                      jQuery('.prot_stage').text('ФАЗА 12 из 15');
                                                                                                       phaseOne = setInterval(function(){
                                                                                                         if (count_animation <= 120){                                                                         //120
                                                                                                           cur_animation_val += 6;
@@ -13057,6 +13070,7 @@ solis = function(){
                                                                                                           //фаза 3
                                                                                                           count_animation = 1;
                                                                                                           cur_animation_val = 0;
+                                                                                                          jQuery('.prot_stage').text('ФАЗА 13 из 15');
                                                                                                           phaseOne = setInterval(function(){
                                                                                                             if (count_animation <= 280){                                                                         //120
                                                                                                               cur_animation_val += 6;
@@ -13098,6 +13112,7 @@ solis = function(){
                                                                                                               //фаза 4
                                                                                                               count_animation = 1;
                                                                                                               cur_animation_val = 0;
+                                                                                                              jQuery('.prot_stage').text('ФАЗА 14 из 15');
                                                                                                               phaseOne = setInterval(function(){
                                                                                                                 if (count_animation <= 280){                                                                         //120
                                                                                                                   cur_animation_val += 6;
@@ -13142,6 +13157,7 @@ solis = function(){
                                                                                                                   cur_animation_val = 0;
                                                                                                                   rotateVal = 0;
                                                                                                                   count_animation = 1;
+                                                                                                                  jQuery('.prot_stage').text('ФАЗА 15 из 15');
                                                                                                       //Этап 5-1-1
                                                                                                                   phaseSeven_one = setInterval(function(){
                                                                                                                     if (count_animation <= 22){                                                                         //22

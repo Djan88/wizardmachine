@@ -141,9 +141,9 @@
                     <div class="steps clearfix">
                         <h3 class="heading heading_dashboard">Перенесите зоны с шаблона на фото клиента</h3>
                         <h5 class="prot_in_action hidden"></h5>
-                        <h6 class="prot_stage hidden">ФАЗА 1 из 1</h6>
                     </div>
                     <div class="chart" data-percent="0"><span>0</span>%</div>
+                    <h6 class="prot_stage hidden">ФАЗА 1 из 1</h6>
                     <div id="snaptarget" class="wrapper">
                         <ul class="itemlist itemlist-one" id="itemlist-one">
                             <li id="draggable0" class="itemlist_item itemlist_item_dr item_list__mid draggable" style="left: 197px; top: -11px;">V0</li>
