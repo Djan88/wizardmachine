@@ -11670,7 +11670,7 @@ solis = function(){
   //фаза 1
   count_animation = 1;
   phaseOne = setInterval(function(){
-    if (count_animation <= 193){                                                                         //120
+    if (count_animation <= 120){                                                                         //120
       cur_animation_val += 6;
       jQuery('#draggableS6, #draggableVD, #draggable2, #draggable3, #draggable4, #draggable1').css({
           color: 'transparent',
@@ -11712,14 +11712,71 @@ solis = function(){
       });
       count_animation = 1;
       sound.play();
-      jQuery('#draggableClean_1, #draggableClean_2, #draggableClean_3, #draggableClean_4, #draggableClean_5, #draggableClean_6, #draggableClean_7').addClass('inopaciti');
       jQuery('.chart').data('easyPieChart').update(100);
       jQuery('.chart').find('span').text('100');
-      jQuery('.steps').removeClass('solis');
-      onEnd();
-      jQuery( ".btn__wizard" )
-          .text('Выполнить')
-          .removeClass('btn__wizard_inAction'); 
+      //фаза 2
+      count_animation = 1;
+      phaseOne = setInterval(function(){
+        if (count_animation <= 120){                                                                         //120
+          cur_animation_val += 6;
+          jQuery('#draggableClean_2, #draggableClean_3, #draggableClean_4, #draggableClean_5, #draggableClean_6, #draggableClean_7, #draggable0').css({
+              color: 'transparent',
+              borderColor: 'transparent',
+              opacity: 0.8,
+              transform: 'scale(1)',
+              borderWidth: '1px',
+              paddingTop: '4px',
+              zIndex: '9000'
+          });
+          jQuery('#draggableClean_2, #draggableClean_3, #draggableClean_4, #draggableClean_5, #draggableClean_6, #draggableClean_7, #draggable0').css({
+              background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/plod.png) 0 0/100% no-repeat'
+          });
+          jQuery('#draggableClean_2').css({
+              left: parseFloat(jQuery('#draggable0').css('left'))+'px',
+              top: parseFloat(jQuery('#draggable0').css('top'))-40+'px'
+          });
+          jQuery('#draggableClean_3').css({
+              left: parseFloat(jQuery('#draggableClean_2').css('left'))+'px',
+              top: parseFloat(jQuery('#draggableClean_2').css('top'))-40+'px'
+          });
+          jQuery('#draggableClean_4').css({
+              left: parseFloat(jQuery('#draggableClean_3').css('left'))+'px',
+              top: parseFloat(jQuery('#draggableClean_3').css('top'))-40+'px'
+          });
+          jQuery('#draggableClean_5').css({
+              left: parseFloat(jQuery('#draggableClean_4').css('left'))+'px',
+              top: parseFloat(jQuery('#draggableClean_4').css('top'))-40+'px'
+          });
+          jQuery('#draggableClean_6').css({
+              left: parseFloat(jQuery('#draggableClean_5').css('left'))+'px',
+              top: parseFloat(jQuery('#draggableClean_5').css('top'))-40+'px'
+          });
+          jQuery('#draggableClean_7').css({
+              left: parseFloat(jQuery('#draggableClean_6').css('left'))+'px',
+              top: parseFloat(jQuery('#draggableClean_6').css('top'))-40+'px'
+          });
+          jQuery('#draggableClean_1, #draggableClean_2, #draggableClean_3, #draggableClean_4, #draggableClean_5, #draggableClean_6, #draggableClean_7').removeClass('inopaciti');
+          count_animation += 1;
+        } else {
+          clearInterval(phaseOne);
+          count_animation = 1;
+          jQuery('#draggableClean_2, #draggableClean_3, #draggableClean_4, #draggableClean_5, #draggableClean_6, #draggableClean_7, #draggable0').css({
+              background: 'rgba(255,255,255, 0.5)',
+              transform: 'scale(0.5)',
+              color: 'red',
+              borderColor: 'red',
+              opacity: 1,
+              borderWidth: '2px',
+              paddingTop: '2px',
+              zIndex: '1'
+          });
+          count_animation = 1;
+          sound.play();
+          jQuery('#draggableClean_1, #draggableClean_2, #draggableClean_3, #draggableClean_4, #draggableClean_5, #draggableClean_6, #draggableClean_7').addClass('inopaciti');
+          jQuery('.chart').data('easyPieChart').update(100);
+          jQuery('.chart').find('span').text('100');
+        }
+      }, 1000);
     }
   }, 1000);
 }
