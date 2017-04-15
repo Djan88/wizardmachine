@@ -11696,6 +11696,7 @@ solis = function(){
       jQuery('#draggable1').css({
           background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle.png) 0 0/100% no-repeat'
       });
+      count_animation += 1;
     } else {
       clearInterval(phaseOne);
       count_animation = 1;
