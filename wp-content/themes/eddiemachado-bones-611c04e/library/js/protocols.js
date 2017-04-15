@@ -11688,7 +11688,7 @@ solis = function(){
           background: 'url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/nerazd.png) 0 0/100% no-repeat'
       });
       jQuery('#draggable3').css({
-          background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/nerazd.png) 0 0/100% no-repeat'
+          background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/nerazd_001.png) 0 0/100% no-repeat'
       });
       jQuery('#draggable4').css({
           background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/nerazd_002.png) 0 0/100% no-repeat'
