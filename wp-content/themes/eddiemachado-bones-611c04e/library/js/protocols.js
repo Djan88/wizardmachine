@@ -13580,6 +13580,7 @@ solis = function(){
                                                                                                                                                     zIndex: '1'
                                                                                                                                                   });
                                                                                                                                                   sound.play();
+                                                                                                                                                  jQuery('.steps').removeClass('solis');
                                                                                                                                                   jQuery('.chart').data('easyPieChart').update(100);
                                                                                                                                                   jQuery('.chart').find('span').text('100');
                                                                                                                                                   onEnd();

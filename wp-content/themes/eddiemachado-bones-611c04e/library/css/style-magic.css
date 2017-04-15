@@ -153,7 +153,7 @@ input {
 .steps
 {
     transition: all 1s linear;
-    margin-bottom: 55px;
+    margin-bottom: 100px;
 }
 .step
 {
@@ -665,4 +665,13 @@ form.pay-form
 }
 .btn_licens {
     margin-top: 20px;
+}
+.prot_stage 
+{
+    color: #204371;
+    font-size: 14px;
+    position: absolute;
+    right: 5px;
+    top: 67px;
+    text-align: center;
 }
