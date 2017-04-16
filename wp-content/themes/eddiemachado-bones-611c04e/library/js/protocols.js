@@ -395,7 +395,7 @@
                                             });
                                             //анимация первого треугольника
                                             jQuery('#draggable1').addClass('transparent');
-                                            firstTriangleAnimation = new Vivus('triangle_D_1', {type: 'delayed', duration: 600}, function(){
+                                            firstTriangleAnimation = new Vivus('triangle_1', {type: 'delayed', duration: 600}, function(){
                                             //анимация второго треугольника
                                                 setTimeout(function(){
                                                     jQuery('#draggable2').addClass('transparent');
@@ -422,7 +422,7 @@
                                                                         });
                                                                         //анимация первого треугольника
                                                                         jQuery('#draggable1').addClass('transparent');                                                                    
-                                                                        firstTriangleAnimation = new Vivus('triangle_D_1', {type: 'delayed', duration: 600}, function(){
+                                                                        firstTriangleAnimation = new Vivus('triangle_1', {type: 'delayed', duration: 600}, function(){
                                                                         //анимация второго треугольника
                                                                             setTimeout(function(){
                                                                                 jQuery('#draggable2').addClass('transparent');
@@ -1067,7 +1067,7 @@
                     });
                     //анимация первого треугольника
                     jQuery('#draggable1').addClass('transparent');
-                    firstTriangleAnimation = new Vivus('triangle_D_1', {type: 'delayed', duration: 600}, function(){
+                    firstTriangleAnimation = new Vivus('triangle_1', {type: 'delayed', duration: 600}, function(){
                     //анимация второго треугольника
                         setTimeout(function(){
                             jQuery('#draggable2').addClass('transparent');
@@ -1094,7 +1094,7 @@
                                                 });
                                                 //анимация первого треугольника
                                                 jQuery('#draggable1').addClass('transparent');                                                                    
-                                                firstTriangleAnimation = new Vivus('triangle_D_1', {type: 'delayed', duration: 600}, function(){
+                                                firstTriangleAnimation = new Vivus('triangle_1', {type: 'delayed', duration: 600}, function(){
                                                 //анимация второго треугольника
                                                     setTimeout(function(){
                                                         jQuery('#draggable2').addClass('transparent');
@@ -1404,7 +1404,7 @@
                                             });
                                             //анимация первого треугольника
                                             jQuery('#draggable1').addClass('transparent');
-                                            firstTriangleAnimation = new Vivus('triangle_D_1', {type: 'delayed', duration: 600}, function(){
+                                            firstTriangleAnimation = new Vivus('triangle_1', {type: 'delayed', duration: 600}, function(){
                                             //анимация второго треугольника
                                                 setTimeout(function(){
                                                     jQuery('#draggable2').addClass('transparent');
@@ -1431,7 +1431,7 @@
                                                                         });
                                                                         //анимация первого треугольника
                                                                         jQuery('#draggable1').addClass('transparent');                                                                    
-                                                                        firstTriangleAnimation = new Vivus('triangle_D_1', {type: 'delayed', duration: 600}, function(){
+                                                                        firstTriangleAnimation = new Vivus('triangle_1', {type: 'delayed', duration: 600}, function(){
                                                                         //анимация второго треугольника
                                                                             setTimeout(function(){
                                                                                 jQuery('#draggable2').addClass('transparent');
@@ -3272,7 +3272,7 @@ v5 = function(){
                                 });
                                 //анимация первого треугольника
                                 jQuery('#draggable1').addClass('transparent');
-                                firstTriangleAnimation = new Vivus('triangle_D_1', {type: 'delayed', duration: 600}, function(){
+                                firstTriangleAnimation = new Vivus('triangle_1', {type: 'delayed', duration: 600}, function(){
                                 //анимация второго треугольника
                                     setTimeout(function(){
                                         jQuery('#draggable2').addClass('transparent');
@@ -3299,7 +3299,7 @@ v5 = function(){
                                                             });
                                                             //анимация первого треугольника
                                                             jQuery('#draggable1').addClass('transparent');                                                                    
-                                                            firstTriangleAnimation = new Vivus('triangle_D_1', {type: 'delayed', duration: 600}, function(){
+                                                            firstTriangleAnimation = new Vivus('triangle_1', {type: 'delayed', duration: 600}, function(){
                                                             //анимация второго треугольника
                                                                 setTimeout(function(){
                                                                     jQuery('#draggable2').addClass('transparent');
@@ -3820,7 +3820,7 @@ v5 = function(){
                                                                                                                 });
                                                                                                                 //анимация первого треугольника
                                                                                                                 jQuery('#draggable1').addClass('transparent');
-                                                                                                                firstTriangleAnimation = new Vivus('triangle_D_1', {type: 'delayed', duration: 600}, function(){
+                                                                                                                firstTriangleAnimation = new Vivus('triangle_1', {type: 'delayed', duration: 600}, function(){
                                                                                                                 //анимация второго треугольника
                                                                                                                     setTimeout(function(){
                                                                                                                         jQuery('#draggable2').addClass('transparent');
@@ -3847,7 +3847,7 @@ v5 = function(){
                                                                                                                                             });
                                                                                                                                             //анимация первого треугольника
                                                                                                                                             jQuery('#draggable1').addClass('transparent');                                                                    
-                                                                                                                                            firstTriangleAnimation = new Vivus('triangle_D_1', {type: 'delayed', duration: 600}, function(){
+                                                                                                                                            firstTriangleAnimation = new Vivus('triangle_1', {type: 'delayed', duration: 600}, function(){
                                                                                                                                             //анимация второго треугольника
                                                                                                                                                 setTimeout(function(){
                                                                                                                                                     jQuery('#draggable2').addClass('transparent');
@@ -10601,7 +10601,7 @@ face = function(){
                                         });
                                         //анимация первого треугольника
                                         jQuery('#draggable1').addClass('transparent');
-                                        firstTriangleAnimation = new Vivus('triangle_D_1', {type: 'delayed', duration: 600}, function(){
+                                        firstTriangleAnimation = new Vivus('triangle_1', {type: 'delayed', duration: 600}, function(){
                                         //анимация второго треугольника
                                             setTimeout(function(){
                                                 jQuery('#draggable2').addClass('transparent');
@@ -10628,7 +10628,7 @@ face = function(){
                                                                     });
                                                                     //анимация первого треугольника
                                                                     jQuery('#draggable1').addClass('transparent');                                                                    
-                                                                    firstTriangleAnimation = new Vivus('triangle_D_1', {type: 'delayed', duration: 600}, function(){
+                                                                    firstTriangleAnimation = new Vivus('triangle_1', {type: 'delayed', duration: 600}, function(){
                                                                     //анимация второго треугольника
                                                                         setTimeout(function(){
                                                                             jQuery('#draggable2').addClass('transparent');
