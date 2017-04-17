@@ -11689,7 +11689,7 @@ solis = function(){
           zIndex: '9000'
       });
       jQuery('#draggableS6, #draggableVD').css({
-          background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/nag.png) 0 0/100% no-repeat'
+          background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/ishtar.png) 0 0/100% no-repeat'
       });
       jQuery('#draggable2').css({
           background: 'url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/nerazd.png) 0 0/100% no-repeat'
@@ -12330,7 +12330,7 @@ solis = function(){
                                                           zIndex: '9000'
                                                       });
                                                       jQuery('#draggableS6, #draggableVD').css({
-                                                          background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/nag.png) 0 0/100% no-repeat'
+                                                          background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/ishtar.png) 0 0/100% no-repeat'
                                                       });
                                                       jQuery('#draggable2').css({
                                                           background: 'url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/nerazd.png) 0 0/100% no-repeat'
@@ -12972,7 +12972,7 @@ solis = function(){
                                                                                                           zIndex: '9000'
                                                                                                       });
                                                                                                       jQuery('#draggableS6, #draggableVD').css({
-                                                                                                          background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/nag.png) 0 0/100% no-repeat'
+                                                                                                          background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/ishtar.png) 0 0/100% no-repeat'
                                                                                                       });
                                                                                                       jQuery('#draggable2').css({
                                                                                                           background: 'url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/nerazd.png) 0 0/100% no-repeat'
