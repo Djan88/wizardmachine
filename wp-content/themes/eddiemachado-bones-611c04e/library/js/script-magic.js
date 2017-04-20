@@ -6,6 +6,7 @@ jQuery(function() {
     jQuery('#main img:first-child').addClass('returned hidden');
     var cur_screen = 0,
         nextScreen,
+        ratioten = jQuery('.ratioten').data('ratio')
         croppedImg,
         curChoice,
         protocol,
@@ -46,6 +47,10 @@ jQuery(function() {
         } else if (cur_screen == 1){
             jQuery('.btn_back').removeClass('hidden');
         }
+    }
+    //info о продлении
+    if (ratioten && ratioten > 0) {
+        swal("Скоро истекает срок действия вашей лицензии", "Вы можете продлить лицензию со скидкой написав на <a href="mailto:wizardmachine@yandex.ru">wizardmachine@yandex.ru</a>", "info"); 
     }
     //Получение данных из локального хранилища
     if(supportsStorage && localStorage.getItem('curChoice')){
