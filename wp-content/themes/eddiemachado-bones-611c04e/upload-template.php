@@ -27,6 +27,7 @@
                 $regtime = strtotime($user_reg);
                 $cur_data = time();
                 $ratio =($cur_data - $regtime) - $year_val;
+                $ratioten = $ratio - 864000;
                 echo '<div class="hidden user_reg"> Текущая дата- '.$cur_data.', Дата регистрации- '.$user_reg.', Дата преобразованная регистрации- '.$regtime.'" </div><div class="hidden user_reg"> Разница= '.$ratio.'" </div>';
             ?>
 
@@ -45,7 +46,7 @@
                         <th>Дата активации лицензии</th><td><?php echo $user_reg; ?></td>
                       </tr>
                     </table>
-                    <h3 class="heading hidden">Вы можете продлить лицензию на 1 год со скидкой 50%</h3>
+                    <h3 class="heading hidden">Вы можете продлить лицензию на 1 год со скидкой</h3>
                     <a href="#contact_form_pop" class="btn btn_lg btn_success btn_licens fancybox">Продлить лицензию</a>
                     <h6 style="color:red;">Не сообщайте посторонним лицам ваш пароль на вход в программу.<br>Администрация проекта никогда не попросит его!</h6>
                     <div class="fancybox-hidden" style="display: none;">
