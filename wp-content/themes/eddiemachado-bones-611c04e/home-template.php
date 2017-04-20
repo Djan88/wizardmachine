@@ -39,13 +39,10 @@
                                 $ratioten = $ratio + 864000;
                             ?>
                             <?php if ($ratioten > 0) { ?>
-                                <div class="alert alert-info fade in">
+                                <div class="alert alert-warning fade in">
                                     <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
                                     <h4>Срок действия вашей лицензии истекает менее чем через 10 дней</h4>
                                     <p>Вы можете продлить лицензию со скидкой написав нам на <a href="mailto:wizardmachine@yandex.ru">wizardmachine@yandex.ru</a></p>
-                                    <p>
-                                        <button type="button" class="close btn btn-success">Закрыть</button>
-                                    </p>
                                 </div>
                             <?php } ?>
                         </div>
