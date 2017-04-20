@@ -36,7 +36,7 @@
                             $regtime = strtotime($user_reg);
                             $cur_data = time();
                             $ratio =($cur_data - $regtime) - $year_val;
-                            $ratioten = ($cur_data - $regtime) - $year_val - 864000;
+                            $ratioten = ($cur_data - $regtime) - $year_val + 864000;
                           ?>
                           <?php if ($ratioten > 0) { ?>
                             <div class="ratioten "></div>
