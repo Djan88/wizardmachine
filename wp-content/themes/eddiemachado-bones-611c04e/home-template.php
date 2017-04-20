@@ -26,25 +26,25 @@
                         
                         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                         <div class="reg_block">
-                            <?php 
-                                $user = get_current_user_id();
-                                $cur_user_data = get_userdata($user);
-                                $user_reg = $cur_user_data->get('user_registered');
-                                $user_login = $cur_user_data->get('user_login');
-                                $user_mail = $cur_user_data->get('user_email');
-                                $year_val = 31536000;
-                                $regtime = strtotime($user_reg);
-                                $cur_data = time();
-                                $ratio =($cur_data - $regtime) - $year_val;
-                                $ratioten = $ratio + 864000;
-                            ?>
-                            <?php if ($ratioten > 0) { ?>
-                                <div class="alert alert-warning fade in">
-                                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                                    <h4>Срок действия вашей лицензии истекает менее чем через 10 дней</h4>
-                                    <p>Вы можете продлить лицензию со скидкой написав нам на <a href="mailto:wizardmachine@yandex.ru">wizardmachine@yandex.ru</a></p>
-                                </div>
-                            <?php } ?>
+                          <?php 
+                            $user = get_current_user_id();
+                            $cur_user_data = get_userdata($user);
+                            $user_reg = $cur_user_data->get('user_registered');
+                            $user_login = $cur_user_data->get('user_login');
+                            $user_mail = $cur_user_data->get('user_email');
+                            $year_val = 31536000;
+                            $regtime = strtotime($user_reg);
+                            $cur_data = time();
+                            $ratio =($cur_data - $regtime) - $year_val;
+                            $ratioten = $ratio + 864000;
+                          ?>
+                          <?php if ($ratioten > 0) { ?>
+                            <div class="alert alert-warning fade in">
+                              <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                              <h5>Срок действия вашей лицензии истекает менее чем через 10 дней</h5>
+                              <p>Вы можете продлить лицензию со скидкой написав на <a href="mailto:wizardmachine@yandex.ru">wizardmachine@yandex.ru</a></p>
+                            </div>
+                          <?php } ?>
                         </div>
                         <div class="home-content">
                             <?php the_content(); ?>
