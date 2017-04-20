@@ -6,7 +6,7 @@ jQuery(function() {
     jQuery('#main img:first-child').addClass('returned hidden');
     var cur_screen = 0,
         nextScreen,
-        ratioten = jQuery('.ratioten').data('ratio')
+        ratioten = jQuery('.ratioten').data('ratio'),
         croppedImg,
         curChoice,
         protocol,
