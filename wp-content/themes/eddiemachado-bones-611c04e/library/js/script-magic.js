@@ -50,7 +50,7 @@ jQuery(function() {
     }
     //info о продлении
     if (ratioten && ratioten > 0) {
-        swal("Скоро истекает срок действия вашей лицензии", "Вы можете продлить лицензию со скидкой написав на <a href="mailto:wizardmachine@yandex.ru">wizardmachine@yandex.ru</a>", "info"); 
+        swal("Скоро истекает срок действия вашей лицензии", "Вы можете продлить лицензию со скидкой написав на wizardmachine@yandex.ru", "info"); 
     }
     //Получение данных из локального хранилища
     if(supportsStorage && localStorage.getItem('curChoice')){
