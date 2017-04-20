@@ -482,5 +482,5 @@ jQuery('#main').on('click', '.fast-protocol', function() {
         lineWidth: 6,
         size: 95
     });
-    $(".alert").alert();
+    jQuery(".alert").alert();
 });
