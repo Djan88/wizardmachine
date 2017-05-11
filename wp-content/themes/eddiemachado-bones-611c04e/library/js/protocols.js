@@ -11719,8 +11719,8 @@ solis = function(){
       });
       count_animation = 1;
       sound.play();
-      jQuery('.chart').data('easyPieChart').update(3);
-      jQuery('.chart').find('span').text('3');
+      jQuery('.chart').data('easyPieChart').update(4);
+      jQuery('.chart').find('span').text('4');
       //фаза 2
       count_animation = 1;
       jQuery('.prot_stage').text('ФАЗА 2 из 15');
@@ -11781,8 +11781,8 @@ solis = function(){
           count_animation = 1;
           sound.play();
           jQuery('#draggableClean_2, #draggableClean_3, #draggableClean_4, #draggableClean_5, #draggableClean_6, #draggableClean_7').addClass('inopaciti');
-          jQuery('.chart').data('easyPieChart').update(6);
-          jQuery('.chart').find('span').text('6');
+          jQuery('.chart').data('easyPieChart').update(8);
+          jQuery('.chart').find('span').text('8');
           //фаза 3
           count_animation = 1;
           cur_animation_val = 0;
@@ -11823,8 +11823,8 @@ solis = function(){
               });
               count_animation = 1;
               sound.play();
-              jQuery('.chart').data('easyPieChart').update(9);
-              jQuery('.chart').find('span').text('9');
+              jQuery('.chart').data('easyPieChart').update(12);
+              jQuery('.chart').find('span').text('12');
               //фаза 4
               count_animation = 1;
               cur_animation_val = 0;
@@ -11864,8 +11864,8 @@ solis = function(){
                   });
                   count_animation = 1;
                   sound.play();
-                  jQuery('.chart').data('easyPieChart').update(12);
-                  jQuery('.chart').find('span').text('12');
+                  jQuery('.chart').data('easyPieChart').update(16);
+                  jQuery('.chart').find('span').text('16');
                   //Фаза 5
                   reloadTime = 0;
                   reloadTime1 = 0;
@@ -11908,8 +11908,8 @@ solis = function(){
                         zIndex: '1'
                       });
                       sound.play();
-                      jQuery('.chart').data('easyPieChart').update(15);
-                      jQuery('.chart').find('span').text('15');
+                      jQuery('.chart').data('easyPieChart').update(20);
+                      jQuery('.chart').find('span').text('20');
   //Этап 5-1-2
                       cur_animation_val = 0;
                       cur_animation_val_one = 10;
@@ -11957,8 +11957,8 @@ solis = function(){
                             zIndex: '1'
                           });
                           sound.play();
-                          jQuery('.chart').data('easyPieChart').update(18);
-                          jQuery('.chart').find('span').text('18');
+                          jQuery('.chart').data('easyPieChart').update(24);
+                          jQuery('.chart').find('span').text('24');
         //Этап 5-1-3
                           cur_animation_val = 0;
                           cur_animation_val_one = 10;
@@ -12017,8 +12017,8 @@ solis = function(){
                                 zIndex: '1'
                               });
                               sound.play();
-                              jQuery('.chart').data('easyPieChart').update(21);
-                              jQuery('.chart').find('span').text('21');
+                              jQuery('.chart').data('easyPieChart').update(30);
+                              jQuery('.chart').find('span').text('30');
     //Этап 5-1-4
                               cur_animation_val = 0;
                               cur_animation_val_one = 10;
@@ -12088,8 +12088,8 @@ solis = function(){
                                     zIndex: '1'
                                   });
                                   sound.play();
-                                  jQuery('.chart').data('easyPieChart').update(24);
-                                  jQuery('.chart').find('span').text('24');
+                                  jQuery('.chart').data('easyPieChart').update(34);
+                                  jQuery('.chart').find('span').text('34');
         //Этап 5-1-5
                                   cur_animation_val = 0;
                                   cur_animation_val_one = 10;
@@ -12159,8 +12159,8 @@ solis = function(){
                                         zIndex: '1'
                                       });
                                       sound.play();
-                                      jQuery('.chart').data('easyPieChart').update(27);
-                                      jQuery('.chart').find('span').text('27');
+                                      jQuery('.chart').data('easyPieChart').update(38);
+                                      jQuery('.chart').find('span').text('38');
             //Этап 5-1-6
                                       cur_animation_val = 0;
                                       cur_animation_val_one = 10;
@@ -12220,8 +12220,8 @@ solis = function(){
                                             zIndex: '1'
                                           });
                                           sound.play();
-                                          jQuery('.chart').data('easyPieChart').update(30);
-                                          jQuery('.chart').find('span').text('30');
+                                          jQuery('.chart').data('easyPieChart').update(42);
+                                          jQuery('.chart').find('span').text('42');
                 //Этап 5-1-7
                                           cur_animation_val = 0;
                                           cur_animation_val_one = 10;
@@ -12271,8 +12271,8 @@ solis = function(){
                                                 zIndex: '1'
                                               });
                                               sound.play();
-                                              jQuery('.chart').data('easyPieChart').update(33);
-                                              jQuery('.chart').find('span').text('33');
+                                              jQuery('.chart').data('easyPieChart').update(48);
+                                              jQuery('.chart').find('span').text('48');
                     //Этап 5-1-8
                                               cur_animation_val = 0;
                                               cur_animation_val_one = 10;
@@ -12312,8 +12312,8 @@ solis = function(){
                                                     zIndex: '1'
                                                   });
                                                   sound.play();
-                                                  jQuery('.chart').data('easyPieChart').update(36);
-                                                  jQuery('.chart').find('span').text('36');
+                                                  jQuery('.chart').data('easyPieChart').update(54);
+                                                  jQuery('.chart').find('span').text('54');
                                                   //фаза 1
                                                   count_animation = 1;
                                                   jQuery('.prot_stage').text('ФАЗА 6 из 15');
@@ -12361,8 +12361,8 @@ solis = function(){
                                                       count_animation = 1;
                                                       sound.play();
 
-                                                      jQuery('.chart').data('easyPieChart').update(38);
-                                                      jQuery('.chart').find('span').text('38');
+                                                      jQuery('.chart').data('easyPieChart').update(60);
+                                                      jQuery('.chart').find('span').text('60');
                                                       //фаза 2
                                                       count_animation = 1;
                                                       jQuery('.prot_stage').text('ФАЗА 7 из 15');
@@ -12423,8 +12423,8 @@ solis = function(){
                                                           count_animation = 1;
                                                           sound.play();
                                                           jQuery('#draggableClean_2, #draggableClean_3, #draggableClean_4, #draggableClean_5, #draggableClean_6, #draggableClean_7').addClass('inopaciti');
-                                                          jQuery('.chart').data('easyPieChart').update(40);
-                                                          jQuery('.chart').find('span').text('40');
+                                                          jQuery('.chart').data('easyPieChart').update(64);
+                                                          jQuery('.chart').find('span').text('64');
                                                           //фаза 3
                                                           count_animation = 1;
                                                           cur_animation_val = 0;
@@ -12465,8 +12465,8 @@ solis = function(){
                                                               });
                                                               count_animation = 1;
                                                               sound.play();
-                                                              jQuery('.chart').data('easyPieChart').update(42);
-                                                              jQuery('.chart').find('span').text('42');
+                                                              jQuery('.chart').data('easyPieChart').update(68);
+                                                              jQuery('.chart').find('span').text('68');
                                                               //фаза 4
                                                               count_animation = 1;
                                                               cur_animation_val = 0;
@@ -12506,8 +12506,8 @@ solis = function(){
                                                                   });
                                                                   count_animation = 1;
                                                                   sound.play();
-                                                                  jQuery('.chart').data('easyPieChart').update(44);
-                                                                  jQuery('.chart').find('span').text('44');
+                                                                  jQuery('.chart').data('easyPieChart').update(74);
+                                                                  jQuery('.chart').find('span').text('74');
                                                                   //Фаза 5
                                                                   reloadTime = 0;
                                                                   reloadTime1 = 0;
@@ -12550,8 +12550,8 @@ solis = function(){
                                                                         zIndex: '1'
                                                                       });
                                                                       sound.play();
-                                                                      jQuery('.chart').data('easyPieChart').update(47);
-                                                                      jQuery('.chart').find('span').text('47');
+                                                                      jQuery('.chart').data('easyPieChart').update(78);
+                                                                      jQuery('.chart').find('span').text('78');
                                                   //Этап 5-1-2
                                                                       cur_animation_val = 0;
                                                                       cur_animation_val_one = 10;
@@ -12599,8 +12599,8 @@ solis = function(){
                                                                             zIndex: '1'
                                                                           });
                                                                           sound.play();
-                                                                          jQuery('.chart').data('easyPieChart').update(50);
-                                                                          jQuery('.chart').find('span').text('50');
+                                                                          jQuery('.chart').data('easyPieChart').update(84);
+                                                                          jQuery('.chart').find('span').text('84');
                                                         //Этап 5-1-3
                                                                           cur_animation_val = 0;
                                                                           cur_animation_val_one = 10;
@@ -12659,8 +12659,8 @@ solis = function(){
                                                                                 zIndex: '1'
                                                                               });
                                                                               sound.play();
-                                                                              jQuery('.chart').data('easyPieChart').update(53);
-                                                                              jQuery('.chart').find('span').text('53');
+                                                                              jQuery('.chart').data('easyPieChart').update(90);
+                                                                              jQuery('.chart').find('span').text('90');
                                                     //Этап 5-1-4
                                                                               cur_animation_val = 0;
                                                                               cur_animation_val_one = 10;
@@ -12730,8 +12730,8 @@ solis = function(){
                                                                                     zIndex: '1'
                                                                                   });
                                                                                   sound.play();
-                                                                                  jQuery('.chart').data('easyPieChart').update(56);
-                                                                                  jQuery('.chart').find('span').text('56');
+                                                                                  jQuery('.chart').data('easyPieChart').update(93);
+                                                                                  jQuery('.chart').find('span').text('93');
                                                         //Этап 5-1-5
                                                                                   cur_animation_val = 0;
                                                                                   cur_animation_val_one = 10;
@@ -12801,8 +12801,8 @@ solis = function(){
                                                                                         zIndex: '1'
                                                                                       });
                                                                                       sound.play();
-                                                                                      jQuery('.chart').data('easyPieChart').update(59);
-                                                                                      jQuery('.chart').find('span').text('59');
+                                                                                      jQuery('.chart').data('easyPieChart').update(95);
+                                                                                      jQuery('.chart').find('span').text('95');
                                                             //Этап 5-1-6
                                                                                       cur_animation_val = 0;
                                                                                       cur_animation_val_one = 10;
@@ -12862,8 +12862,8 @@ solis = function(){
                                                                                             zIndex: '1'
                                                                                           });
                                                                                           sound.play();
-                                                                                          jQuery('.chart').data('easyPieChart').update(62);
-                                                                                          jQuery('.chart').find('span').text('62');
+                                                                                          jQuery('.chart').data('easyPieChart').update(97);
+                                                                                          jQuery('.chart').find('span').text('97');
                                                                 //Этап 5-1-7
                                                                                           cur_animation_val = 0;
                                                                                           cur_animation_val_one = 10;
@@ -12913,8 +12913,8 @@ solis = function(){
                                                                                                 zIndex: '1'
                                                                                               });
                                                                                               sound.play();
-                                                                                              jQuery('.chart').data('easyPieChart').update(65);
-                                                                                              jQuery('.chart').find('span').text('65');
+                                                                                              jQuery('.chart').data('easyPieChart').update(99);
+                                                                                              jQuery('.chart').find('span').text('99');
                                                                     //Этап 5-1-8
                                                                                               cur_animation_val = 0;
                                                                                               cur_animation_val_one = 10;
@@ -12954,8 +12954,8 @@ solis = function(){
                                                                                                     zIndex: '1'
                                                                                                   });
                                                                                                   sound.play();
-                                                                                                  jQuery('.chart').data('easyPieChart').update(68);
-                                                                                                  jQuery('.chart').find('span').text('68');
+                                                                                                  jQuery('.chart').data('easyPieChart').update(100);
+                                                                                                  jQuery('.chart').find('span').text('100');
                                                                                                   onEnd();
                                                                                                   jQuery( ".btn__wizard" )
                                                                                                       .text('Выполнить')
