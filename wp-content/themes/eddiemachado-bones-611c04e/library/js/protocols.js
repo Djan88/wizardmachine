@@ -13827,7 +13827,6 @@ mmt = function(){
     tickSound.play();
     rotateVal = 0;
     count_animation = 1;
-    ringStatus();
     phaseOne = setInterval(function(){
         if (count_animation <= 34){                                                                         //120
             cur_animation_val += 6;
