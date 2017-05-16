@@ -247,6 +247,8 @@ jQuery( ".btn__wizard" ).on('click', function(event) {
                     solis();
                 } else if(protocol == 'demo'){
                     demo();
+                } else if(protocol == 'mmt'){
+                    mmt();
                 } else{
                     console.log('нет протокола с id '+ protocol)
                 }
