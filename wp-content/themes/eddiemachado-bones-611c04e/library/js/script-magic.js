@@ -192,6 +192,8 @@ jQuery('.work-area').find('.returned').draggable();
             jQuery('.box_rounded').removeClass('hidden');
         } else if(protocol == 'demo'){
             jQuery('.box_rounded').removeClass('hidden');
+        } else if(protocol == 'mmt'){
+            jQuery('.box_rounded').removeClass('hidden');
         } else {
             jQuery('.box_rounded').addClass('hidden');
         }
