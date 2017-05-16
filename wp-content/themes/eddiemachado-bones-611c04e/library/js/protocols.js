@@ -13932,8 +13932,6 @@ mmt = function(){
                         });
                     count_animation += 1;
                     rotateVal += 1.5;
-                    transform: 'rotate('+rotateVal+'deg) scale(1)',
-                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/superdisfunction.png) 0 0/100% no-repeat',
                     // console.log(count_animation);
                     if(count_animation <= 30){
                         cur_animation_val += 6;
