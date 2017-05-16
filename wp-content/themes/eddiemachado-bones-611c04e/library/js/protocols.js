@@ -13994,7 +13994,7 @@ mmt = function(){
                                 borderColor: 'transparent',
                                 opacity: 0.8,
                                 transform: 'scale(1)',
-                                background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/travma.jpg) 0 0/100% no-repeat'
+                                background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/travma.jpg) 0 0/100% no-repeat',
                                 borderWidth: '1px',
                                 paddingTop: '4px',
                                 zIndex: '9000'
