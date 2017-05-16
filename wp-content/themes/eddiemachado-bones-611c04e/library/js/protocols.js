@@ -18,6 +18,7 @@
         resorce,
         rotateVal = 0,
         solis,
+        mmt,
         dinamicElem = false,
         resourceActive = false,
         resorceGlobal,
@@ -13810,6 +13811,141 @@ demo = function(){
     }, 1000);
 }
 
+mmt = function(){
+    var sound = new Howl({
+        urls: ['/sounds/sound.ogg', '/sounds/sound.aac', '/sounds/sound.mp3'],
+        autoplay: false,
+        loop: false,
+        buffer: true
+    }); 
+    dinamicElem = false;
+//Фаза 1
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    cur_animation_val = 0;
+    rotateVal = 0;
+    count_animation = 1;
+    ringStatus();
+    phaseOne = setInterval(function(){
+        if (count_animation <= 34){                                                                         //120
+            cur_animation_val += 6;
+            jQuery('#draggableD3, #draggableS2').css({
+                color: 'transparent',
+                borderColor: 'transparent',
+                opacity: 0.8,
+                transform: 'scale(1)',
+                borderWidth: '1px',
+                paddingTop: '4px',
+                zIndex: '9000'
+            });
+            jQuery('#draggableD3, #draggableS2').css({
+                background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/life_vater.png) 0 0/100% no-repeat'
+            });
+            count_animation += 1;
+        } else {
+            clearInterval(phaseOne);
+            count_animation = 1;
+            jQuery('#draggableD3, #draggableS2').css({
+                background: 'rgba(255,255,255, 0.5)',
+                transform: 'scale(0.5)',
+                color: 'red',
+                borderColor: 'red',
+                opacity: 1,
+                borderWidth: '2px',
+                paddingTop: '2px',
+                zIndex: '1'
+            });
+            count_animation = 1;
+            jQuery('.chart').data('easyPieChart').update(11);
+            jQuery('.chart').find('span').text('11');
+        //Фаза 2
+            reloadTime = 0;
+            reloadTime1 = 0;
+            d12Val = 0;
+            cur_animation_val = 0;
+            rotateVal = 0;
+            count_animation = 1;
+            ringStatus();
+            phaseOne = setInterval(function(){
+                if (count_animation <= 34){                                                                         //120
+                    cur_animation_val += 6;
+                    jQuery('#draggableD3, #draggableS2').css({
+                        color: 'transparent',
+                        borderColor: 'transparent',
+                        opacity: 0.8,
+                        transform: 'scale(1)',
+                        borderWidth: '1px',
+                        paddingTop: '4px',
+                        transform: 'rotate('+rotateVal+'deg) scale(1)',
+                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/superdisfunction.png) 0 0/100% no-repeat',
+                        zIndex: '9000'
+                    });
+                    count_animation += 1;
+                } else {
+                    clearInterval(phaseOne);
+                    count_animation = 1;
+                    jQuery('#draggableD3, #draggableS2').css({
+                        background: 'rgba(255,255,255, 0.5)',
+                        transform: 'scale(0.5)',
+                        color: 'red',
+                        borderColor: 'red',
+                        opacity: 1,
+                        borderWidth: '2px',
+                        paddingTop: '2px',
+                        zIndex: '1'
+                    });
+                    count_animation = 1;
+                    rotateVal += 1.5;
+                    jQuery('.chart').data('easyPieChart').update(11);
+                    jQuery('.chart').find('span').text('11');
+                //Фаза 2
+                    reloadTime = 0;
+                    reloadTime1 = 0;
+                    d12Val = 0;
+                    cur_animation_val = 0;
+                    rotateVal = 0;
+                    count_animation = 1;
+                    ringStatus();
+                    phaseOne = setInterval(function(){
+                        if (count_animation <= 34){                                                                         //120
+                            cur_animation_val += 6;
+                            jQuery('#draggableD3, #draggableS2').css({
+                                color: 'transparent',
+                                borderColor: 'transparent',
+                                opacity: 0.8,
+                                transform: 'scale(1)',
+                                borderWidth: '1px',
+                                paddingTop: '4px',
+                                zIndex: '9000'
+                            });
+                            jQuery('#draggableD3, #draggableS2').css({
+                                background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/travma.jpg) 0 0/100% no-repeat'
+                            });
+                            count_animation += 1;
+                        } else {
+                            clearInterval(phaseOne);
+                            count_animation = 1;
+                            jQuery('#draggableD3, #draggableS2').css({
+                                background: 'rgba(255,255,255, 0.5)',
+                                transform: 'scale(0.5)',
+                                color: 'red',
+                                borderColor: 'red',
+                                opacity: 1,
+                                borderWidth: '2px',
+                                paddingTop: '2px',
+                                zIndex: '1'
+                            });
+                            count_animation = 1;
+                            jQuery('.chart').data('easyPieChart').update(11);
+                            jQuery('.chart').find('span').text('11');
+                       } 
+                    }, 1000);
+               } 
+            }, 1000);
+       } 
+    }, 1000);
+}
 
 v7 = function(){
     dinamicElem = false;
