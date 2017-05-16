@@ -13828,8 +13828,7 @@ mmt = function(){
     rotateVal = 0;
     count_animation = 1;
     phaseOne = setInterval(function(){
-        if (count_animation <= 34){                                                                         //120
-            cur_animation_val += 6;
+        if (count_animation <= 90){                                                                         //120
             jQuery('#draggableD3, #draggableS2').css({
                 color: 'transparent',
                 borderColor: 'transparent',
@@ -13854,16 +13853,16 @@ mmt = function(){
                 });
             count_animation += 1;
             // console.log(count_animation);
-            if(count_animation <= 120){
+            if(count_animation <= 30){
                 cur_animation_val += 1.5;
                 d12Val+= 9;
                 jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
-            } else if (count_animation >= 120 && count_animation <= 228){
+            } else if (count_animation >= 30 && count_animation <= 60){
                 cur_animation_val -= 1.5;
                 d12Val+= 9;
                 jQuery('#draggableD12').css('transform', 'rotate(-'+d12Val+'deg)');
                 jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
-            } else if (count_animation >= 228 && count_animation <= 292){
+            } else if (count_animation >= 60 && count_animation <= 292){
                 cur_animation_val -= 1.5;
                 d12Val+= 9;
                 jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
