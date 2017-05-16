@@ -13824,7 +13824,6 @@ mmt = function(){
     reloadTime1 = 0;
     d12Val = 0;
     cur_animation_val = 0;
-    tickSound.play();
     rotateVal = 0;
     count_animation = 1;
     phaseOne = setInterval(function(){
