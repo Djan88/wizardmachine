@@ -13882,6 +13882,7 @@ mmt = function(){
                         zIndex: '9000'
                     });
                     count_animation += 1;
+                    rotateVal += 1.5;
                 } else {
                     clearInterval(phaseOne);
                     count_animation = 1;
@@ -13896,7 +13897,6 @@ mmt = function(){
                         zIndex: '1'
                     });
                     count_animation = 1;
-                    rotateVal += 1.5;
                     jQuery('.chart').data('easyPieChart').update(11);
                     jQuery('.chart').find('span').text('11');
                 //Фаза 2
