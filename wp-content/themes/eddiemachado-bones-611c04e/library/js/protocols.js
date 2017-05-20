@@ -14072,22 +14072,22 @@ mmt = function(){
                                         paddingTop: '4px',
                                         zIndex: '9000'
                                     });
-                                    if(count_animation <= 15){
+                                    if(count_animation <= 21){
                                         jQuery('#draggableD3, #draggableS2').css({
                                             transform: 'rotate(20deg) scale(1)',
                                             background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle_air.png) 3px 0/90% no-repeat'
                                         });
-                                    } else if (count_animation >= 15 && count_animation <= 30){
+                                    } else if (count_animation >= 21 && count_animation <= 41){
                                         jQuery('#draggableD3, #draggableS2').css({
                                             transform: 'rotate(30deg) scale(1)',
                                             background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle_water.png) 3px 0/90% no-repeat'
                                         });
-                                    } else if (count_animation >= 30 && count_animation <= 45){
+                                    } else if (count_animation >= 41 && count_animation <= 51){
                                         jQuery('#draggableD3, #draggableS2').css({
                                             transform: 'rotate(30deg) scale(1)',
                                             background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle_fire.png) 3px 0/90% no-repeat'
                                         });
-                                    } else if (count_animation >= 45 && count_animation <= 60){
+                                    } else if (count_animation >= 51 && count_animation <= 60){
                                         jQuery('#draggableD3, #draggableS2').css({
                                             transform: 'rotate(30deg) scale(1)',
                                             background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle_earth.png) 3px 0/90% no-repeat'
