@@ -13896,8 +13896,8 @@ mmt = function(){
             count_animation = 1;
             jQuery('.box_rounded').css('transform', 'rotate(0deg) scale(1)');
             jQuery('#draggableD12').css('transform', 'rotate(0deg)');
-            jQuery('.chart').data('easyPieChart').update(11);
-            jQuery('.chart').find('span').text('11');
+            jQuery('.chart').data('easyPieChart').update(4);
+            jQuery('.chart').find('span').text('4');
         //Фаза 2
             reloadTime = 0;
             reloadTime1 = 0;
@@ -13975,8 +13975,8 @@ mmt = function(){
                     count_animation = 1;
                     jQuery('.box_rounded').css('transform', 'rotate(0deg) scale(1)');
                     jQuery('#draggableD12').css('transform', 'rotate(0deg)');
-                    jQuery('.chart').data('easyPieChart').update(11);
-                    jQuery('.chart').find('span').text('11');
+                    jQuery('.chart').data('easyPieChart').update(8);
+                    jQuery('.chart').find('span').text('8');
                 //Фаза 3
                     reloadTime = 0;
                     reloadTime1 = 0;
@@ -14052,8 +14052,8 @@ mmt = function(){
                             count_animation = 1;
                             jQuery('.box_rounded').css('transform', 'rotate(0deg) scale(1)');
                             jQuery('#draggableD12').css('transform', 'rotate(0deg)');
-                            jQuery('.chart').data('easyPieChart').update(11);
-                            jQuery('.chart').find('span').text('11');
+                            jQuery('.chart').data('easyPieChart').update(12);
+                            jQuery('.chart').find('span').text('12');
                         //Фаза 4
                             reloadTime = 0;
                             reloadTime1 = 0;
@@ -14149,8 +14149,8 @@ mmt = function(){
                                     count_animation = 1;
                                     jQuery('.box_rounded').css('transform', 'rotate(0deg) scale(1)');
                                     jQuery('#draggableD12').css('transform', 'rotate(0deg)');
-                                    jQuery('.chart').data('easyPieChart').update(11);
-                                    jQuery('.chart').find('span').text('11');
+                                    jQuery('.chart').data('easyPieChart').update(16);
+                                    jQuery('.chart').find('span').text('16');
                                 //Фаза 5
                                     reloadTime = 0;
                                     reloadTime1 = 0;
@@ -14246,8 +14246,8 @@ mmt = function(){
                                             count_animation = 1;
                                             jQuery('.box_rounded').css('transform', 'rotate(0deg) scale(1)');
                                             jQuery('#draggableD12').css('transform', 'rotate(0deg)');
-                                            jQuery('.chart').data('easyPieChart').update(11);
-                                            jQuery('.chart').find('span').text('11');
+                                            jQuery('.chart').data('easyPieChart').update(20);
+                                            jQuery('.chart').find('span').text('20');
                                         //Фаза 6
                                             reloadTime = 0;
                                             reloadTime1 = 0;
@@ -14325,8 +14325,8 @@ mmt = function(){
                                                     count_animation = 1;
                                                     jQuery('.box_rounded').css('transform', 'rotate(0deg) scale(1)');
                                                     jQuery('#draggableD12').css('transform', 'rotate(0deg)');
-                                                    jQuery('.chart').data('easyPieChart').update(11);
-                                                    jQuery('.chart').find('span').text('11');
+                                                    jQuery('.chart').data('easyPieChart').update(25);
+                                                    jQuery('.chart').find('span').text('25');
                                                 //Фаза 7
                                                     reloadTime = 0;
                                                     reloadTime1 = 0;
@@ -14404,8 +14404,8 @@ mmt = function(){
                                                             count_animation = 1;
                                                             jQuery('.box_rounded').css('transform', 'rotate(0deg) scale(1)');
                                                             jQuery('#draggableD12').css('transform', 'rotate(0deg)');
-                                                            jQuery('.chart').data('easyPieChart').update(11);
-                                                            jQuery('.chart').find('span').text('11');
+                                                            jQuery('.chart').data('easyPieChart').update(29);
+                                                            jQuery('.chart').find('span').text('29');
                                                         //Фаза 8
                                                             reloadTime = 0;
                                                             reloadTime1 = 0;
@@ -14481,8 +14481,8 @@ mmt = function(){
                                                                     count_animation = 1;
                                                                     jQuery('.box_rounded').css('transform', 'rotate(0deg) scale(1)');
                                                                     jQuery('#draggableD12').css('transform', 'rotate(0deg)');
-                                                                    jQuery('.chart').data('easyPieChart').update(11);
-                                                                    jQuery('.chart').find('span').text('11');
+                                                                    jQuery('.chart').data('easyPieChart').update(33);
+                                                                    jQuery('.chart').find('span').text('33');
                                                                 //Фаза 9
                                                                     reloadTime = 0;
                                                                     reloadTime1 = 0;
@@ -14578,8 +14578,8 @@ mmt = function(){
                                                                             count_animation = 1;
                                                                             jQuery('.box_rounded').css('transform', 'rotate(0deg) scale(1)');
                                                                             jQuery('#draggableD12').css('transform', 'rotate(0deg)');
-                                                                            jQuery('.chart').data('easyPieChart').update(11);
-                                                                            jQuery('.chart').find('span').text('11');
+                                                                            jQuery('.chart').data('easyPieChart').update(37);
+                                                                            jQuery('.chart').find('span').text('37');
                                                                         //Фаза 10
                                                                             reloadTime = 0;
                                                                             reloadTime1 = 0;
@@ -14675,8 +14675,8 @@ mmt = function(){
                                                                                     count_animation = 1;
                                                                                     jQuery('.box_rounded').css('transform', 'rotate(0deg) scale(1)');
                                                                                     jQuery('#draggableD12').css('transform', 'rotate(0deg)');
-                                                                                    jQuery('.chart').data('easyPieChart').update(11);
-                                                                                    jQuery('.chart').find('span').text('11');
+                                                                                    jQuery('.chart').data('easyPieChart').update(41);
+                                                                                    jQuery('.chart').find('span').text('41');
                                                                                 //Фаза 11
                                                                                     reloadTime = 0;
                                                                                     reloadTime1 = 0;
@@ -14754,8 +14754,8 @@ mmt = function(){
                                                                                             count_animation = 1;
                                                                                             jQuery('.box_rounded').css('transform', 'rotate(0deg) scale(1)');
                                                                                             jQuery('#draggableD12').css('transform', 'rotate(0deg)');
-                                                                                            jQuery('.chart').data('easyPieChart').update(11);
-                                                                                            jQuery('.chart').find('span').text('11');
+                                                                                            jQuery('.chart').data('easyPieChart').update(46);
+                                                                                            jQuery('.chart').find('span').text('46');
                                                                                         //Фаза 12
                                                                                             reloadTime = 0;
                                                                                             reloadTime1 = 0;
@@ -14833,8 +14833,8 @@ mmt = function(){
                                                                                                     count_animation = 1;
                                                                                                     jQuery('.box_rounded').css('transform', 'rotate(0deg) scale(1)');
                                                                                                     jQuery('#draggableD12').css('transform', 'rotate(0deg)');
-                                                                                                    jQuery('.chart').data('easyPieChart').update(11);
-                                                                                                    jQuery('.chart').find('span').text('11');
+                                                                                                    jQuery('.chart').data('easyPieChart').update(51);
+                                                                                                    jQuery('.chart').find('span').text('51');
                                                                                                 //Фаза 13
                                                                                                     reloadTime = 0;
                                                                                                     reloadTime1 = 0;
@@ -14913,8 +14913,8 @@ mmt = function(){
                                                                                                             count_animation = 1;
                                                                                                             jQuery('.box_rounded').css('transform', 'rotate(0deg) scale(1)');
                                                                                                             jQuery('#draggableD12').css('transform', 'rotate(0deg)');
-                                                                                                            jQuery('.chart').data('easyPieChart').update(11);
-                                                                                                            jQuery('.chart').find('span').text('11');
+                                                                                                            jQuery('.chart').data('easyPieChart').update(55);
+                                                                                                            jQuery('.chart').find('span').text('55');
                                                                                                         //Фаза 14
                                                                                                             reloadTime = 0;
                                                                                                             reloadTime1 = 0;
@@ -15010,8 +15010,8 @@ mmt = function(){
                                                                                                                     count_animation = 1;
                                                                                                                     jQuery('.box_rounded').css('transform', 'rotate(0deg) scale(1)');
                                                                                                                     jQuery('#draggableD12').css('transform', 'rotate(0deg)');
-                                                                                                                    jQuery('.chart').data('easyPieChart').update(11);
-                                                                                                                    jQuery('.chart').find('span').text('11');
+                                                                                                                    jQuery('.chart').data('easyPieChart').update(59);
+                                                                                                                    jQuery('.chart').find('span').text('59');
                                                                                                                 //Фаза 15
                                                                                                                     reloadTime = 0;
                                                                                                                     reloadTime1 = 0;
@@ -15107,8 +15107,8 @@ mmt = function(){
                                                                                                                             count_animation = 1;
                                                                                                                             jQuery('.box_rounded').css('transform', 'rotate(0deg) scale(1)');
                                                                                                                             jQuery('#draggableD12').css('transform', 'rotate(0deg)');
-                                                                                                                            jQuery('.chart').data('easyPieChart').update(11);
-                                                                                                                            jQuery('.chart').find('span').text('11');
+                                                                                                                            jQuery('.chart').data('easyPieChart').update(63);
+                                                                                                                            jQuery('.chart').find('span').text('63');
                                                                                                                         //Фаза 16
                                                                                                                             reloadTime = 0;
                                                                                                                             reloadTime1 = 0;
@@ -15186,8 +15186,8 @@ mmt = function(){
                                                                                                                                     count_animation = 1;
                                                                                                                                     jQuery('.box_rounded').css('transform', 'rotate(0deg) scale(1)');
                                                                                                                                     jQuery('#draggableD12').css('transform', 'rotate(0deg)');
-                                                                                                                                    jQuery('.chart').data('easyPieChart').update(11);
-                                                                                                                                    jQuery('.chart').find('span').text('11');
+                                                                                                                                    jQuery('.chart').data('easyPieChart').update(67);
+                                                                                                                                    jQuery('.chart').find('span').text('67');
                                                                                                                                 //Фаза 17
                                                                                                                                     reloadTime = 0;
                                                                                                                                     reloadTime1 = 0;
@@ -15265,8 +15265,8 @@ mmt = function(){
                                                                                                                                             count_animation = 1;
                                                                                                                                             jQuery('.box_rounded').css('transform', 'rotate(0deg) scale(1)');
                                                                                                                                             jQuery('#draggableD12').css('transform', 'rotate(0deg)');
-                                                                                                                                            jQuery('.chart').data('easyPieChart').update(11);
-                                                                                                                                            jQuery('.chart').find('span').text('11');
+                                                                                                                                            jQuery('.chart').data('easyPieChart').update(71);
+                                                                                                                                            jQuery('.chart').find('span').text('71');
                                                                                                                                         //Фаза 18
                                                                                                                                             reloadTime = 0;
                                                                                                                                             reloadTime1 = 0;
@@ -15362,8 +15362,8 @@ mmt = function(){
                                                                                                                                                     count_animation = 1;
                                                                                                                                                     jQuery('.box_rounded').css('transform', 'rotate(0deg) scale(1)');
                                                                                                                                                     jQuery('#draggableD12').css('transform', 'rotate(0deg)');
-                                                                                                                                                    jQuery('.chart').data('easyPieChart').update(11);
-                                                                                                                                                    jQuery('.chart').find('span').text('11');
+                                                                                                                                                    jQuery('.chart').data('easyPieChart').update(76);
+                                                                                                                                                    jQuery('.chart').find('span').text('76');
                                                                                                                                                 //Фаза 19
                                                                                                                                                     reloadTime = 0;
                                                                                                                                                     reloadTime1 = 0;
@@ -15459,9 +15459,9 @@ mmt = function(){
                                                                                                                                                             count_animation = 1;
                                                                                                                                                             jQuery('.box_rounded').css('transform', 'rotate(0deg) scale(1)');
                                                                                                                                                             jQuery('#draggableD12').css('transform', 'rotate(0deg)');
-                                                                                                                                                            jQuery('.chart').data('easyPieChart').update(11);
-                                                                                                                                                            jQuery('.chart').find('span').text('11');
-                                                                                                                                                        //Фаза 15
+                                                                                                                                                            jQuery('.chart').data('easyPieChart').update(80);
+                                                                                                                                                            jQuery('.chart').find('span').text('80');
+                                                                                                                                                        //Фаза 20
                                                                                                                                                             reloadTime = 0;
                                                                                                                                                             reloadTime1 = 0;
                                                                                                                                                             d12Val = 0;
@@ -15556,9 +15556,9 @@ mmt = function(){
                                                                                                                                                                     count_animation = 1;
                                                                                                                                                                     jQuery('.box_rounded').css('transform', 'rotate(0deg) scale(1)');
                                                                                                                                                                     jQuery('#draggableD12').css('transform', 'rotate(0deg)');
-                                                                                                                                                                    jQuery('.chart').data('easyPieChart').update(11);
-                                                                                                                                                                    jQuery('.chart').find('span').text('11');
-                                                                                                                                                                //Фаза 16
+                                                                                                                                                                    jQuery('.chart').data('easyPieChart').update(84);
+                                                                                                                                                                    jQuery('.chart').find('span').text('84');
+                                                                                                                                                                //Фаза 21
                                                                                                                                                                     reloadTime = 0;
                                                                                                                                                                     reloadTime1 = 0;
                                                                                                                                                                     d12Val = 0;
@@ -15567,7 +15567,7 @@ mmt = function(){
                                                                                                                                                                     count_animation = 1;
                                                                                                                                                                     phaseOne = setInterval(function(){
                                                                                                                                                                         if (count_animation <= 90){                                                                         //120
-                                                                                                                                                                            jQuery('#draggableD3, #draggableD5').css({
+                                                                                                                                                                            jQuery('#draggableD3, #draggable1').css({
                                                                                                                                                                                 color: 'transparent',
                                                                                                                                                                                 borderColor: 'transparent',
                                                                                                                                                                                 opacity: 0.8,
@@ -15576,7 +15576,7 @@ mmt = function(){
                                                                                                                                                                                 paddingTop: '4px',
                                                                                                                                                                                 zIndex: '9000'
                                                                                                                                                                             });
-                                                                                                                                                                            jQuery('#draggableD3, #draggableD5').css({
+                                                                                                                                                                            jQuery('#draggableD3, #draggable1').css({
                                                                                                                                                                                 background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/life_vater.png) 0 0/100% no-repeat'
                                                                                                                                                                             });
                                                                                                                                                                             jQuery('#draggableD12')
@@ -15622,7 +15622,7 @@ mmt = function(){
                                                                                                                                                                         } else {
                                                                                                                                                                             clearInterval(phaseOne);
                                                                                                                                                                             count_animation = 1;
-                                                                                                                                                                            jQuery('#draggableD3, #draggableD5').css({
+                                                                                                                                                                            jQuery('#draggableD3, #draggable1').css({
                                                                                                                                                                                 background: 'rgba(255,255,255, 0.5)',
                                                                                                                                                                                 transform: 'scale(0.5)',
                                                                                                                                                                                 color: 'red',
@@ -15635,9 +15635,9 @@ mmt = function(){
                                                                                                                                                                             count_animation = 1;
                                                                                                                                                                             jQuery('.box_rounded').css('transform', 'rotate(0deg) scale(1)');
                                                                                                                                                                             jQuery('#draggableD12').css('transform', 'rotate(0deg)');
-                                                                                                                                                                            jQuery('.chart').data('easyPieChart').update(11);
-                                                                                                                                                                            jQuery('.chart').find('span').text('11');
-                                                                                                                                                                        //Фаза 17
+                                                                                                                                                                            jQuery('.chart').data('easyPieChart').update(88);
+                                                                                                                                                                            jQuery('.chart').find('span').text('88');
+                                                                                                                                                                        //Фаза 22
                                                                                                                                                                             reloadTime = 0;
                                                                                                                                                                             reloadTime1 = 0;
                                                                                                                                                                             d12Val = 0;
@@ -15646,7 +15646,7 @@ mmt = function(){
                                                                                                                                                                             count_animation = 1;
                                                                                                                                                                             phaseOne = setInterval(function(){
                                                                                                                                                                                 if (count_animation <= 90){                                                                         //120
-                                                                                                                                                                                    jQuery('#draggableD3, #draggableD5').css({
+                                                                                                                                                                                    jQuery('#draggableD3, #draggable1').css({
                                                                                                                                                                                         color: 'transparent',
                                                                                                                                                                                         borderColor: 'transparent',
                                                                                                                                                                                         opacity: 0.8,
@@ -15700,7 +15700,7 @@ mmt = function(){
                                                                                                                                                                                 } else {
                                                                                                                                                                                     clearInterval(phaseOne);
                                                                                                                                                                                     count_animation = 1;
-                                                                                                                                                                                    jQuery('#draggableD3, #draggableD5').css({
+                                                                                                                                                                                    jQuery('#draggableD3, #draggable1').css({
                                                                                                                                                                                         background: 'rgba(255,255,255, 0.5)',
                                                                                                                                                                                         transform: 'scale(0.5)',
                                                                                                                                                                                         color: 'red',
@@ -15713,9 +15713,9 @@ mmt = function(){
                                                                                                                                                                                     count_animation = 1;
                                                                                                                                                                                     jQuery('.box_rounded').css('transform', 'rotate(0deg) scale(1)');
                                                                                                                                                                                     jQuery('#draggableD12').css('transform', 'rotate(0deg)');
-                                                                                                                                                                                    jQuery('.chart').data('easyPieChart').update(11);
-                                                                                                                                                                                    jQuery('.chart').find('span').text('11');
-                                                                                                                                                                                //Фаза 18
+                                                                                                                                                                                    jQuery('.chart').data('easyPieChart').update(92);
+                                                                                                                                                                                    jQuery('.chart').find('span').text('92');
+                                                                                                                                                                                //Фаза 23
                                                                                                                                                                                     reloadTime = 0;
                                                                                                                                                                                     reloadTime1 = 0;
                                                                                                                                                                                     d12Val = 0;
@@ -15724,7 +15724,7 @@ mmt = function(){
                                                                                                                                                                                     count_animation = 1;
                                                                                                                                                                                     phaseOne = setInterval(function(){
                                                                                                                                                                                         if (count_animation <= 60){                                                                         //120
-                                                                                                                                                                                            jQuery('#draggableD3, #draggableD5').css({
+                                                                                                                                                                                            jQuery('#draggableD3, #draggable1').css({
                                                                                                                                                                                                 color: 'transparent',
                                                                                                                                                                                                 borderColor: 'transparent',
                                                                                                                                                                                                 opacity: 0.8,
@@ -15734,22 +15734,22 @@ mmt = function(){
                                                                                                                                                                                                 zIndex: '9000'
                                                                                                                                                                                             });
                                                                                                                                                                                             if(count_animation <= 21){
-                                                                                                                                                                                                jQuery('#draggableD3, #draggableD5').css({
+                                                                                                                                                                                                jQuery('#draggableD3, #draggable1').css({
                                                                                                                                                                                                     transform: 'rotate(20deg) scale(1)',
                                                                                                                                                                                                     background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle_air.png) 3px 0/90% no-repeat'
                                                                                                                                                                                                 });
                                                                                                                                                                                             } else if (count_animation >= 21 && count_animation <= 41){
-                                                                                                                                                                                                jQuery('#draggableD3, #draggableD5').css({
+                                                                                                                                                                                                jQuery('#draggableD3, #draggable1').css({
                                                                                                                                                                                                     transform: 'rotate(30deg) scale(1)',
                                                                                                                                                                                                     background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle_water.png) 3px 0/90% no-repeat'
                                                                                                                                                                                                 });
                                                                                                                                                                                             } else if (count_animation >= 41 && count_animation <= 51){
-                                                                                                                                                                                                jQuery('#draggableD3, #draggableD5').css({
+                                                                                                                                                                                                jQuery('#draggableD3, #draggable1').css({
                                                                                                                                                                                                     transform: 'rotate(-30deg) scale(1)',
                                                                                                                                                                                                     background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle_fire.png) 3px 0/90% no-repeat'
                                                                                                                                                                                                 });
                                                                                                                                                                                             } else if (count_animation >= 51 && count_animation <= 60){
-                                                                                                                                                                                                jQuery('#draggableD3, #draggableD5').css({
+                                                                                                                                                                                                jQuery('#draggableD3, #draggable1').css({
                                                                                                                                                                                                     transform: 'rotate(-20deg) scale(1)',
                                                                                                                                                                                                     background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle_earth.png) 3px 0/90% no-repeat'
                                                                                                                                                                                                 });
@@ -15797,7 +15797,7 @@ mmt = function(){
                                                                                                                                                                                         } else {
                                                                                                                                                                                             clearInterval(phaseOne);
                                                                                                                                                                                             count_animation = 1;
-                                                                                                                                                                                            jQuery('#draggableD3, #draggableD5').css({
+                                                                                                                                                                                            jQuery('#draggableD3, #draggable1').css({
                                                                                                                                                                                                 background: 'rgba(255,255,255, 0.5)',
                                                                                                                                                                                                 transform: 'scale(0.5)',
                                                                                                                                                                                                 color: 'red',
@@ -15810,9 +15810,9 @@ mmt = function(){
                                                                                                                                                                                             count_animation = 1;
                                                                                                                                                                                             jQuery('.box_rounded').css('transform', 'rotate(0deg) scale(1)');
                                                                                                                                                                                             jQuery('#draggableD12').css('transform', 'rotate(0deg)');
-                                                                                                                                                                                            jQuery('.chart').data('easyPieChart').update(11);
-                                                                                                                                                                                            jQuery('.chart').find('span').text('11');
-                                                                                                                                                                                        //Фаза 19
+                                                                                                                                                                                            jQuery('.chart').data('easyPieChart').update(96);
+                                                                                                                                                                                            jQuery('.chart').find('span').text('96');
+                                                                                                                                                                                        //Фаза 24
                                                                                                                                                                                             reloadTime = 0;
                                                                                                                                                                                             reloadTime1 = 0;
                                                                                                                                                                                             d12Val = 0;
@@ -15821,7 +15821,7 @@ mmt = function(){
                                                                                                                                                                                             count_animation = 1;
                                                                                                                                                                                             phaseOne = setInterval(function(){
                                                                                                                                                                                                 if (count_animation <= 60){                                                                         //120
-                                                                                                                                                                                                    jQuery('#draggableD3, #draggableD5').css({
+                                                                                                                                                                                                    jQuery('#draggableD3, #draggable1').css({
                                                                                                                                                                                                         color: 'transparent',
                                                                                                                                                                                                         borderColor: 'transparent',
                                                                                                                                                                                                         opacity: 0.8,
@@ -15831,22 +15831,22 @@ mmt = function(){
                                                                                                                                                                                                         zIndex: '9000'
                                                                                                                                                                                                     });
                                                                                                                                                                                                     if(count_animation <= 21){
-                                                                                                                                                                                                        jQuery('#draggableD3, #draggableD5').css({
+                                                                                                                                                                                                        jQuery('#draggableD3, #draggable1').css({
                                                                                                                                                                                                             transform: 'rotate(20deg) scale(1)',
                                                                                                                                                                                                             background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle_fire.png) 3px 0/90% no-repeat'
                                                                                                                                                                                                         });
                                                                                                                                                                                                     } else if (count_animation >= 21 && count_animation <= 41){
-                                                                                                                                                                                                        jQuery('#draggableD3, #draggableD5').css({
+                                                                                                                                                                                                        jQuery('#draggableD3, #draggable1').css({
                                                                                                                                                                                                             transform: 'rotate(30deg) scale(1)',
                                                                                                                                                                                                             background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle_water.png) 3px 0/90% no-repeat'
                                                                                                                                                                                                         });
                                                                                                                                                                                                     } else if (count_animation >= 41 && count_animation <= 51){
-                                                                                                                                                                                                        jQuery('#draggableD3, #draggableD5').css({
+                                                                                                                                                                                                        jQuery('#draggableD3, #draggable1').css({
                                                                                                                                                                                                             transform: 'rotate(-30deg) scale(1)',
                                                                                                                                                                                                             background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle_air.png) 3px 0/90% no-repeat'
                                                                                                                                                                                                         });
                                                                                                                                                                                                     } else if (count_animation >= 51 && count_animation <= 60){
-                                                                                                                                                                                                        jQuery('#draggableD3, #draggableD5').css({
+                                                                                                                                                                                                        jQuery('#draggableD3, #draggable1').css({
                                                                                                                                                                                                             transform: 'rotate(-20deg) scale(1)',
                                                                                                                                                                                                             background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle_earth.png) 3px 0/90% no-repeat'
                                                                                                                                                                                                         });
@@ -15894,7 +15894,7 @@ mmt = function(){
                                                                                                                                                                                                 } else {
                                                                                                                                                                                                     clearInterval(phaseOne);
                                                                                                                                                                                                     count_animation = 1;
-                                                                                                                                                                                                    jQuery('#draggableD3, #draggableD5').css({
+                                                                                                                                                                                                    jQuery('#draggableD3, #draggable1').css({
                                                                                                                                                                                                         background: 'rgba(255,255,255, 0.5)',
                                                                                                                                                                                                         transform: 'scale(0.5)',
                                                                                                                                                                                                         color: 'red',
@@ -15907,8 +15907,12 @@ mmt = function(){
                                                                                                                                                                                                     count_animation = 1;
                                                                                                                                                                                                     jQuery('.box_rounded').css('transform', 'rotate(0deg) scale(1)');
                                                                                                                                                                                                     jQuery('#draggableD12').css('transform', 'rotate(0deg)');
-                                                                                                                                                                                                    jQuery('.chart').data('easyPieChart').update(11);
-                                                                                                                                                                                                    jQuery('.chart').find('span').text('11');
+                                                                                                                                                                                                    jQuery('.chart').data('easyPieChart').update(100);
+                                                                                                                                                                                                    jQuery('.chart').find('span').text('100');
+                                                                                                                                                                                                    onEnd();
+                                                                                                                                                                                                    jQuery( ".btn__wizard" )
+                                                                                                                                                                                                        .text('Выполнить')
+                                                                                                                                                                                                        .removeClass('btn__wizard_inAction');
                                                                                                                                                                                                } 
                                                                                                                                                                                             }, 1000);
                                                                                                                                                                                        } 
