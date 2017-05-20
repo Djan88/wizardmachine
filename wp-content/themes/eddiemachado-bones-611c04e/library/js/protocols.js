@@ -14109,18 +14109,18 @@ mmt = function(){
                                         cur_animation_val += 9;
                                         d12Val+= 9;
                                         jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
-                                    } else if (count_animation >= 21 && count_animation <= 42){
+                                    } else if (count_animation >= 21 && count_animation <= 41){
                                         cur_animation_val -= 9;
                                         d12Val+= 9;
                                         jQuery('#draggableD12').css('transform', 'rotate(-'+d12Val+'deg)');
                                         jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
-                                    } else if (count_animation >= 30 && count_animation <= 45){
+                                    } else if (count_animation >= 41 && count_animation <= 51){
                                         cur_animation_val -= 9;
                                         d12Val+= 9;
                                         jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
                                         jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
                                         jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
-                                    } else if (count_animation >= 40 && count_animation <= 60){
+                                    } else if (count_animation >= 51 && count_animation <= 60){
                                         cur_animation_val += 9;
                                         d12Val+= 9;
                                         jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
