@@ -13832,7 +13832,7 @@ mmt = function(){
                 color: 'transparent',
                 borderColor: 'transparent',
                 opacity: 0.8,
-                transform: 'scale(0.5)',
+                transform: 'scale(1)',
                 borderWidth: '1px',
                 paddingTop: '4px',
                 zIndex: '9000'
