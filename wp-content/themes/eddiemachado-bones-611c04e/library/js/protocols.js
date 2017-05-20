@@ -13832,13 +13832,14 @@ mmt = function(){
                 color: 'transparent',
                 borderColor: 'transparent',
                 opacity: 0.8,
-                transform: 'scale(1)',
+                transform: 'scale(1) rotate(30deg)',
                 borderWidth: '1px',
                 paddingTop: '4px',
                 zIndex: '9000'
             });
             jQuery('#draggableD3, #draggableS2').css({
-                background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/life_vater.png) 0 0/100% no-repeat'
+                // background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/life_vater.png) 0 0/100% no-repeat'
+                background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle_fire.png) 0 0/100% no-repeat'
             });
             jQuery('#draggableD12')
                 .removeClass('hidden')
