@@ -14105,11 +14105,11 @@ mmt = function(){
                                         });
                                     count_animation += 1;
                                     console.log(count_animation);
-                                    if(count_animation <= 15){
+                                    if(count_animation <= 21){
                                         cur_animation_val += 9;
                                         d12Val+= 9;
                                         jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
-                                    } else if (count_animation >= 15 && count_animation <= 30){
+                                    } else if (count_animation >= 21 && count_animation <= 42){
                                         cur_animation_val -= 9;
                                         d12Val+= 9;
                                         jQuery('#draggableD12').css('transform', 'rotate(-'+d12Val+'deg)');
