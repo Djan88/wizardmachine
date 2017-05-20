@@ -14087,7 +14087,7 @@ mmt = function(){
                                             transform: 'rotate(30deg) scale(1)',
                                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle_fire.png) 3px 0/90% no-repeat'
                                         });
-                                    } else if (count_animation >= 30 && count_animation <= 60){
+                                    } else if (count_animation >= 45 && count_animation <= 60){
                                         jQuery('#draggableD3, #draggableS2').css({
                                             transform: 'rotate(30deg) scale(1)',
                                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle_earth.png) 3px 0/90% no-repeat'
@@ -14106,29 +14106,29 @@ mmt = function(){
                                     count_animation += 1;
                                     // console.log(count_animation);
                                     if(count_animation <= 15){
-                                        cur_animation_val += 9;
+                                        cur_animation_val += 8;
                                         d12Val+= 9;
                                         jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
                                     } else if (count_animation >= 15 && count_animation <= 30){
-                                        cur_animation_val -= 9;
+                                        cur_animation_val -= 8;
                                         d12Val+= 9;
                                         jQuery('#draggableD12').css('transform', 'rotate(-'+d12Val+'deg)');
                                         jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
-                                    } else if (count_animation >= 30 && count_animation <= 40){
-                                        cur_animation_val -= 9;
+                                    } else if (count_animation >= 30 && count_animation <= 45){
+                                        cur_animation_val -= 8;
                                         d12Val+= 9;
                                         jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
                                         jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
                                         jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
-                                    } else if (count_animation >= 40 && count_animation <= 55){
-                                        cur_animation_val += 9;
+                                    } else if (count_animation >= 45 && count_animation <= 60){
+                                        cur_animation_val += 8;
                                         d12Val+= 9;
                                         jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
                                         jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
                                         jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
                                     } else {
                                         d12Val+= 9;
-                                        cur_animation_val += 9;
+                                        cur_animation_val += 8;
                                         jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
                                         jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
                                         jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
