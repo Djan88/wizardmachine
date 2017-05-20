@@ -158,7 +158,7 @@
                           <h3><span class="protocol_acent">(V2, V3, V4)</span>«УНИВЕРСАЛЬНЫЙ»</h3>
                           <div>«Упрощенный протокол работает на ключевых зонах V2, V3, V4 и эффективен для коррекции широкого круга проблем, прост в использовании, достаточно фото-селфи по пояс.»<div class="btn btn_lg btn_success btn_choice" data-protocol ="demo" data-protocol-name ="«УНИВЕРСАЛЬНЫЙ»">Выбрать</div></div>
                           <h3><span class="protocol_acent">(ММТ)</span>ВИСЦЕРАЛЬНЫЙ ПРОТОКОЛ</h3>
-                          <div>«Протокол для висцеры. Печеночное продвижение»<div class="btn btn_lg btn_success btn_choice" data-protocol ="mmt" data-protocol-name ="«УНИВЕРСАЛЬНЫЙ»">Выбрать</div></div>
+                          <div>«Протокол для висцеры. Печеночное продвижение»<div class="btn btn_lg btn_success btn_choice" data-protocol ="mmt" data-protocol-name ="протокол для висцеры">Выбрать</div></div>
                         <?php } ?>
                     </div>
                 </div>
