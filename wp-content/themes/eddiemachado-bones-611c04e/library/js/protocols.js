@@ -14151,6 +14151,1805 @@ mmt = function(){
                                     jQuery('#draggableD12').css('transform', 'rotate(0deg)');
                                     jQuery('.chart').data('easyPieChart').update(11);
                                     jQuery('.chart').find('span').text('11');
+                                //Фаза 5
+                                    reloadTime = 0;
+                                    reloadTime1 = 0;
+                                    d12Val = 0;
+                                    cur_animation_val = 0;
+                                    rotateVal = 0;
+                                    count_animation = 1;
+                                    phaseOne = setInterval(function(){
+                                        if (count_animation <= 60){                                                                         //120
+                                            jQuery('#draggableD3, #draggableS2').css({
+                                                color: 'transparent',
+                                                borderColor: 'transparent',
+                                                opacity: 0.8,
+                                                transform: 'scale(1)',
+                                                borderWidth: '1px',
+                                                paddingTop: '4px',
+                                                zIndex: '9000'
+                                            });
+                                            if(count_animation <= 21){
+                                                jQuery('#draggableD3, #draggableS2').css({
+                                                    transform: 'rotate(20deg) scale(1)',
+                                                    background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle_fire.png) 3px 0/90% no-repeat'
+                                                });
+                                            } else if (count_animation >= 21 && count_animation <= 41){
+                                                jQuery('#draggableD3, #draggableS2').css({
+                                                    transform: 'rotate(30deg) scale(1)',
+                                                    background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle_water.png) 3px 0/90% no-repeat'
+                                                });
+                                            } else if (count_animation >= 41 && count_animation <= 51){
+                                                jQuery('#draggableD3, #draggableS2').css({
+                                                    transform: 'rotate(-30deg) scale(1)',
+                                                    background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle_air.png) 3px 0/90% no-repeat'
+                                                });
+                                            } else if (count_animation >= 51 && count_animation <= 60){
+                                                jQuery('#draggableD3, #draggableS2').css({
+                                                    transform: 'rotate(-20deg) scale(1)',
+                                                    background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle_earth.png) 3px 0/90% no-repeat'
+                                                });
+                                            }
+                                            jQuery('#draggableD12')
+                                                .removeClass('hidden')
+                                                .css({
+                                                    opacity: 0.8,
+                                                    transform: 'scale(1)',
+                                                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat',
+                                                    transform: 'rotate(-'+d12Val+'deg)',
+                                                    borderWidth: '1px',
+                                                    borderColor: 'transparent'
+                                                });
+                                            count_animation += 1;
+                                            console.log(count_animation);
+                                            if(count_animation <= 21){
+                                                cur_animation_val += 9;
+                                                d12Val+= 9;
+                                                jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                            } else if (count_animation >= 21 && count_animation <= 41){
+                                                cur_animation_val -= 9;
+                                                d12Val+= 9;
+                                                jQuery('#draggableD12').css('transform', 'rotate(-'+d12Val+'deg)');
+                                                jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                            } else if (count_animation >= 41 && count_animation <= 51){
+                                                cur_animation_val -= 9;
+                                                d12Val+= 9;
+                                                jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                            } else if (count_animation >= 51 && count_animation <= 60){
+                                                cur_animation_val += 9;
+                                                d12Val+= 9;
+                                                jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                            } else {
+                                                d12Val+= 9;
+                                                cur_animation_val += 9;
+                                                jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                            }
+                                        } else {
+                                            clearInterval(phaseOne);
+                                            count_animation = 1;
+                                            jQuery('#draggableD3, #draggableS2').css({
+                                                background: 'rgba(255,255,255, 0.5)',
+                                                transform: 'scale(0.5)',
+                                                color: 'red',
+                                                borderColor: 'red',
+                                                opacity: 1,
+                                                borderWidth: '2px',
+                                                paddingTop: '2px',
+                                                zIndex: '1'
+                                            });
+                                            count_animation = 1;
+                                            jQuery('.box_rounded').css('transform', 'rotate(0deg) scale(1)');
+                                            jQuery('#draggableD12').css('transform', 'rotate(0deg)');
+                                            jQuery('.chart').data('easyPieChart').update(11);
+                                            jQuery('.chart').find('span').text('11');
+                                        //Фаза 6
+                                            reloadTime = 0;
+                                            reloadTime1 = 0;
+                                            d12Val = 0;
+                                            cur_animation_val = 0;
+                                            rotateVal = 0;
+                                            count_animation = 1;
+                                            phaseOne = setInterval(function(){
+                                                if (count_animation <= 90){                                                                         //120
+                                                    jQuery('#draggableD3, #draggableS3').css({
+                                                        color: 'transparent',
+                                                        borderColor: 'transparent',
+                                                        opacity: 0.8,
+                                                        transform: 'scale(1)',
+                                                        borderWidth: '1px',
+                                                        paddingTop: '4px',
+                                                        zIndex: '9000'
+                                                    });
+                                                    jQuery('#draggableD3, #draggableS3').css({
+                                                        background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/life_vater.png) 0 0/100% no-repeat'
+                                                    });
+                                                    jQuery('#draggableD12')
+                                                        .removeClass('hidden')
+                                                        .css({
+                                                            opacity: 0.8,
+                                                            transform: 'scale(1)',
+                                                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat',
+                                                            transform: 'rotate(-'+d12Val+'deg)',
+                                                            borderWidth: '1px',
+                                                            borderColor: 'transparent'
+                                                        });
+                                                    count_animation += 1;
+                                                    // console.log(count_animation);
+                                                    if(count_animation <= 30){
+                                                        cur_animation_val += 6;
+                                                        d12Val+= 9;
+                                                        jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                    } else if (count_animation >= 30 && count_animation <= 56){
+                                                        cur_animation_val -= 6;
+                                                        d12Val+= 9;
+                                                        jQuery('#draggableD12').css('transform', 'rotate(-'+d12Val+'deg)');
+                                                        jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                    } else if (count_animation >= 56 && count_animation <= 75){
+                                                        cur_animation_val -= 6;
+                                                        d12Val+= 9;
+                                                        jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                        jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                        jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                                    } else if (count_animation >= 75 && count_animation <= 90){
+                                                        cur_animation_val += 6;
+                                                        d12Val+= 9;
+                                                        jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                        jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                        jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                                    } else {
+                                                        d12Val+= 9;
+                                                        cur_animation_val += 6;
+                                                        jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                        jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                        jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                                    }
+                                                } else {
+                                                    clearInterval(phaseOne);
+                                                    count_animation = 1;
+                                                    jQuery('#draggableD3, #draggableS3').css({
+                                                        background: 'rgba(255,255,255, 0.5)',
+                                                        transform: 'scale(0.5)',
+                                                        color: 'red',
+                                                        borderColor: 'red',
+                                                        opacity: 1,
+                                                        borderWidth: '2px',
+                                                        paddingTop: '2px',
+                                                        zIndex: '1'
+                                                    });
+                                                    count_animation = 1;
+                                                    jQuery('.box_rounded').css('transform', 'rotate(0deg) scale(1)');
+                                                    jQuery('#draggableD12').css('transform', 'rotate(0deg)');
+                                                    jQuery('.chart').data('easyPieChart').update(11);
+                                                    jQuery('.chart').find('span').text('11');
+                                                //Фаза 7
+                                                    reloadTime = 0;
+                                                    reloadTime1 = 0;
+                                                    d12Val = 0;
+                                                    cur_animation_val = 0;
+                                                    rotateVal = 0;
+                                                    count_animation = 1;
+                                                    phaseOne = setInterval(function(){
+                                                        if (count_animation <= 90){                                                                         //120
+                                                            jQuery('#draggableD3, #draggableS3').css({
+                                                                color: 'transparent',
+                                                                borderColor: 'transparent',
+                                                                opacity: 0.8,
+                                                                transform: 'scale(1)',
+                                                                transform: 'rotate('+rotateVal+'deg) scale(1)',
+                                                                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/superdisfunction.png) 0 0/100% no-repeat',
+                                                                borderWidth: '1px',
+                                                                paddingTop: '4px',
+                                                                zIndex: '9000'
+                                                            });
+                                                            jQuery('#draggableD12')
+                                                                .removeClass('hidden')
+                                                                .css({
+                                                                    opacity: 0.8,
+                                                                    transform: 'scale(1)',
+                                                                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat',
+                                                                    transform: 'rotate(-'+d12Val+'deg)',
+                                                                    borderWidth: '1px',
+                                                                    borderColor: 'transparent'
+                                                                });
+                                                            count_animation += 1;
+                                                            rotateVal +=3;
+                                                            // console.log(count_animation);
+                                                            if(count_animation <= 30){
+                                                                cur_animation_val += 6;
+                                                                d12Val+= 9;
+                                                                jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                            } else if (count_animation >= 30 && count_animation <= 56){
+                                                                cur_animation_val -= 6;
+                                                                d12Val+= 9;
+                                                                jQuery('#draggableD12').css('transform', 'rotate(-'+d12Val+'deg)');
+                                                                jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                            } else if (count_animation >= 56 && count_animation <= 75){
+                                                                cur_animation_val -= 6;
+                                                                d12Val+= 9;
+                                                                jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                                jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                                            } else if (count_animation >= 75 && count_animation <= 90){
+                                                                cur_animation_val += 6;
+                                                                d12Val+= 9;
+                                                                jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                                jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                                            } else {
+                                                                d12Val+= 9;
+                                                                cur_animation_val += 6;
+                                                                jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                                jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                                            }
+                                                        } else {
+                                                            clearInterval(phaseOne);
+                                                            count_animation = 1;
+                                                            jQuery('#draggableD3, #draggableS3').css({
+                                                                background: 'rgba(255,255,255, 0.5)',
+                                                                transform: 'scale(0.5)',
+                                                                color: 'red',
+                                                                borderColor: 'red',
+                                                                opacity: 1,
+                                                                borderWidth: '2px',
+                                                                paddingTop: '2px',
+                                                                zIndex: '1'
+                                                            });
+                                                            count_animation = 1;
+                                                            jQuery('.box_rounded').css('transform', 'rotate(0deg) scale(1)');
+                                                            jQuery('#draggableD12').css('transform', 'rotate(0deg)');
+                                                            jQuery('.chart').data('easyPieChart').update(11);
+                                                            jQuery('.chart').find('span').text('11');
+                                                        //Фаза 8
+                                                            reloadTime = 0;
+                                                            reloadTime1 = 0;
+                                                            d12Val = 0;
+                                                            cur_animation_val = 0;
+                                                            rotateVal = 0;
+                                                            count_animation = 1;
+                                                            phaseOne = setInterval(function(){
+                                                                if (count_animation <= 90){                                                                         //120
+                                                                    jQuery('#draggableD3, #draggableS3').css({
+                                                                        color: 'transparent',
+                                                                        borderColor: 'transparent',
+                                                                        opacity: 0.8,
+                                                                        transform: 'scale(1)',
+                                                                        background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/travma.jpg) 0 0/100% no-repeat',
+                                                                        borderWidth: '1px',
+                                                                        paddingTop: '4px',
+                                                                        zIndex: '9000'
+                                                                    });
+                                                                    jQuery('#draggableD12')
+                                                                        .removeClass('hidden')
+                                                                        .css({
+                                                                            opacity: 0.8,
+                                                                            transform: 'scale(1)',
+                                                                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat',
+                                                                            transform: 'rotate(-'+d12Val+'deg)',
+                                                                            borderWidth: '1px',
+                                                                            borderColor: 'transparent'
+                                                                        });
+                                                                    count_animation += 1;
+                                                                    // console.log(count_animation);
+                                                                    if(count_animation <= 30){
+                                                                        cur_animation_val += 6;
+                                                                        d12Val+= 9;
+                                                                        jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                    } else if (count_animation >= 30 && count_animation <= 56){
+                                                                        cur_animation_val -= 6;
+                                                                        d12Val+= 9;
+                                                                        jQuery('#draggableD12').css('transform', 'rotate(-'+d12Val+'deg)');
+                                                                        jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                    } else if (count_animation >= 56 && count_animation <= 75){
+                                                                        cur_animation_val -= 6;
+                                                                        d12Val+= 9;
+                                                                        jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                        jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                                        jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                                                    } else if (count_animation >= 75 && count_animation <= 90){
+                                                                        cur_animation_val += 6;
+                                                                        d12Val+= 9;
+                                                                        jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                        jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                                        jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                                                    } else {
+                                                                        d12Val+= 9;
+                                                                        cur_animation_val += 6;
+                                                                        jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                        jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                                        jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                                                    }
+                                                                } else {
+                                                                    clearInterval(phaseOne);
+                                                                    count_animation = 1;
+                                                                    jQuery('#draggableD3, #draggableS3').css({
+                                                                        background: 'rgba(255,255,255, 0.5)',
+                                                                        transform: 'scale(0.5)',
+                                                                        color: 'red',
+                                                                        borderColor: 'red',
+                                                                        opacity: 1,
+                                                                        borderWidth: '2px',
+                                                                        paddingTop: '2px',
+                                                                        zIndex: '1'
+                                                                    });
+                                                                    count_animation = 1;
+                                                                    jQuery('.box_rounded').css('transform', 'rotate(0deg) scale(1)');
+                                                                    jQuery('#draggableD12').css('transform', 'rotate(0deg)');
+                                                                    jQuery('.chart').data('easyPieChart').update(11);
+                                                                    jQuery('.chart').find('span').text('11');
+                                                                //Фаза 9
+                                                                    reloadTime = 0;
+                                                                    reloadTime1 = 0;
+                                                                    d12Val = 0;
+                                                                    cur_animation_val = 0;
+                                                                    rotateVal = 0;
+                                                                    count_animation = 1;
+                                                                    phaseOne = setInterval(function(){
+                                                                        if (count_animation <= 60){                                                                         //120
+                                                                            jQuery('#draggableD3, #draggableS3').css({
+                                                                                color: 'transparent',
+                                                                                borderColor: 'transparent',
+                                                                                opacity: 0.8,
+                                                                                transform: 'scale(1)',
+                                                                                borderWidth: '1px',
+                                                                                paddingTop: '4px',
+                                                                                zIndex: '9000'
+                                                                            });
+                                                                            if(count_animation <= 21){
+                                                                                jQuery('#draggableD3, #draggableS3').css({
+                                                                                    transform: 'rotate(20deg) scale(1)',
+                                                                                    background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle_air.png) 3px 0/90% no-repeat'
+                                                                                });
+                                                                            } else if (count_animation >= 21 && count_animation <= 41){
+                                                                                jQuery('#draggableD3, #draggableS3').css({
+                                                                                    transform: 'rotate(30deg) scale(1)',
+                                                                                    background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle_water.png) 3px 0/90% no-repeat'
+                                                                                });
+                                                                            } else if (count_animation >= 41 && count_animation <= 51){
+                                                                                jQuery('#draggableD3, #draggableS3').css({
+                                                                                    transform: 'rotate(-30deg) scale(1)',
+                                                                                    background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle_fire.png) 3px 0/90% no-repeat'
+                                                                                });
+                                                                            } else if (count_animation >= 51 && count_animation <= 60){
+                                                                                jQuery('#draggableD3, #draggableS3').css({
+                                                                                    transform: 'rotate(-20deg) scale(1)',
+                                                                                    background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle_earth.png) 3px 0/90% no-repeat'
+                                                                                });
+                                                                            }
+                                                                            jQuery('#draggableD12')
+                                                                                .removeClass('hidden')
+                                                                                .css({
+                                                                                    opacity: 0.8,
+                                                                                    transform: 'scale(1)',
+                                                                                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat',
+                                                                                    transform: 'rotate(-'+d12Val+'deg)',
+                                                                                    borderWidth: '1px',
+                                                                                    borderColor: 'transparent'
+                                                                                });
+                                                                            count_animation += 1;
+                                                                            console.log(count_animation);
+                                                                            if(count_animation <= 21){
+                                                                                cur_animation_val += 9;
+                                                                                d12Val+= 9;
+                                                                                jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                            } else if (count_animation >= 21 && count_animation <= 41){
+                                                                                cur_animation_val -= 9;
+                                                                                d12Val+= 9;
+                                                                                jQuery('#draggableD12').css('transform', 'rotate(-'+d12Val+'deg)');
+                                                                                jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                            } else if (count_animation >= 41 && count_animation <= 51){
+                                                                                cur_animation_val -= 9;
+                                                                                d12Val+= 9;
+                                                                                jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                                                jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                                                            } else if (count_animation >= 51 && count_animation <= 60){
+                                                                                cur_animation_val += 9;
+                                                                                d12Val+= 9;
+                                                                                jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                                                jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                                                            } else {
+                                                                                d12Val+= 9;
+                                                                                cur_animation_val += 9;
+                                                                                jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                                                jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                                                            }
+                                                                        } else {
+                                                                            clearInterval(phaseOne);
+                                                                            count_animation = 1;
+                                                                            jQuery('#draggableD3, #draggableS3').css({
+                                                                                background: 'rgba(255,255,255, 0.5)',
+                                                                                transform: 'scale(0.5)',
+                                                                                color: 'red',
+                                                                                borderColor: 'red',
+                                                                                opacity: 1,
+                                                                                borderWidth: '2px',
+                                                                                paddingTop: '2px',
+                                                                                zIndex: '1'
+                                                                            });
+                                                                            count_animation = 1;
+                                                                            jQuery('.box_rounded').css('transform', 'rotate(0deg) scale(1)');
+                                                                            jQuery('#draggableD12').css('transform', 'rotate(0deg)');
+                                                                            jQuery('.chart').data('easyPieChart').update(11);
+                                                                            jQuery('.chart').find('span').text('11');
+                                                                        //Фаза 10
+                                                                            reloadTime = 0;
+                                                                            reloadTime1 = 0;
+                                                                            d12Val = 0;
+                                                                            cur_animation_val = 0;
+                                                                            rotateVal = 0;
+                                                                            count_animation = 1;
+                                                                            phaseOne = setInterval(function(){
+                                                                                if (count_animation <= 60){                                                                         //120
+                                                                                    jQuery('#draggableD3, #draggableS3').css({
+                                                                                        color: 'transparent',
+                                                                                        borderColor: 'transparent',
+                                                                                        opacity: 0.8,
+                                                                                        transform: 'scale(1)',
+                                                                                        borderWidth: '1px',
+                                                                                        paddingTop: '4px',
+                                                                                        zIndex: '9000'
+                                                                                    });
+                                                                                    if(count_animation <= 21){
+                                                                                        jQuery('#draggableD3, #draggableS3').css({
+                                                                                            transform: 'rotate(20deg) scale(1)',
+                                                                                            background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle_fire.png) 3px 0/90% no-repeat'
+                                                                                        });
+                                                                                    } else if (count_animation >= 21 && count_animation <= 41){
+                                                                                        jQuery('#draggableD3, #draggableS3').css({
+                                                                                            transform: 'rotate(30deg) scale(1)',
+                                                                                            background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle_water.png) 3px 0/90% no-repeat'
+                                                                                        });
+                                                                                    } else if (count_animation >= 41 && count_animation <= 51){
+                                                                                        jQuery('#draggableD3, #draggableS3').css({
+                                                                                            transform: 'rotate(-30deg) scale(1)',
+                                                                                            background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle_air.png) 3px 0/90% no-repeat'
+                                                                                        });
+                                                                                    } else if (count_animation >= 51 && count_animation <= 60){
+                                                                                        jQuery('#draggableD3, #draggableS3').css({
+                                                                                            transform: 'rotate(-20deg) scale(1)',
+                                                                                            background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle_earth.png) 3px 0/90% no-repeat'
+                                                                                        });
+                                                                                    }
+                                                                                    jQuery('#draggableD12')
+                                                                                        .removeClass('hidden')
+                                                                                        .css({
+                                                                                            opacity: 0.8,
+                                                                                            transform: 'scale(1)',
+                                                                                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat',
+                                                                                            transform: 'rotate(-'+d12Val+'deg)',
+                                                                                            borderWidth: '1px',
+                                                                                            borderColor: 'transparent'
+                                                                                        });
+                                                                                    count_animation += 1;
+                                                                                    console.log(count_animation);
+                                                                                    if(count_animation <= 21){
+                                                                                        cur_animation_val += 9;
+                                                                                        d12Val+= 9;
+                                                                                        jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                    } else if (count_animation >= 21 && count_animation <= 41){
+                                                                                        cur_animation_val -= 9;
+                                                                                        d12Val+= 9;
+                                                                                        jQuery('#draggableD12').css('transform', 'rotate(-'+d12Val+'deg)');
+                                                                                        jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                    } else if (count_animation >= 41 && count_animation <= 51){
+                                                                                        cur_animation_val -= 9;
+                                                                                        d12Val+= 9;
+                                                                                        jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                        jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                                                        jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                                                                    } else if (count_animation >= 51 && count_animation <= 60){
+                                                                                        cur_animation_val += 9;
+                                                                                        d12Val+= 9;
+                                                                                        jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                        jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                                                        jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                                                                    } else {
+                                                                                        d12Val+= 9;
+                                                                                        cur_animation_val += 9;
+                                                                                        jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                        jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                                                        jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                                                                    }
+                                                                                } else {
+                                                                                    clearInterval(phaseOne);
+                                                                                    count_animation = 1;
+                                                                                    jQuery('#draggableD3, #draggableS3').css({
+                                                                                        background: 'rgba(255,255,255, 0.5)',
+                                                                                        transform: 'scale(0.5)',
+                                                                                        color: 'red',
+                                                                                        borderColor: 'red',
+                                                                                        opacity: 1,
+                                                                                        borderWidth: '2px',
+                                                                                        paddingTop: '2px',
+                                                                                        zIndex: '1'
+                                                                                    });
+                                                                                    count_animation = 1;
+                                                                                    jQuery('.box_rounded').css('transform', 'rotate(0deg) scale(1)');
+                                                                                    jQuery('#draggableD12').css('transform', 'rotate(0deg)');
+                                                                                    jQuery('.chart').data('easyPieChart').update(11);
+                                                                                    jQuery('.chart').find('span').text('11');
+                                                                                //Фаза 11
+                                                                                    reloadTime = 0;
+                                                                                    reloadTime1 = 0;
+                                                                                    d12Val = 0;
+                                                                                    cur_animation_val = 0;
+                                                                                    rotateVal = 0;
+                                                                                    count_animation = 1;
+                                                                                    phaseOne = setInterval(function(){
+                                                                                        if (count_animation <= 90){                                                                         //120
+                                                                                            jQuery('#draggableD3, #draggableS4').css({
+                                                                                                color: 'transparent',
+                                                                                                borderColor: 'transparent',
+                                                                                                opacity: 0.8,
+                                                                                                transform: 'scale(1)',
+                                                                                                borderWidth: '1px',
+                                                                                                paddingTop: '4px',
+                                                                                                zIndex: '9000'
+                                                                                            });
+                                                                                            jQuery('#draggableD3, #draggableS4').css({
+                                                                                                background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/life_vater.png) 0 0/100% no-repeat'
+                                                                                            });
+                                                                                            jQuery('#draggableD12')
+                                                                                                .removeClass('hidden')
+                                                                                                .css({
+                                                                                                    opacity: 0.8,
+                                                                                                    transform: 'scale(1)',
+                                                                                                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat',
+                                                                                                    transform: 'rotate(-'+d12Val+'deg)',
+                                                                                                    borderWidth: '1px',
+                                                                                                    borderColor: 'transparent'
+                                                                                                });
+                                                                                            count_animation += 1;
+                                                                                            // console.log(count_animation);
+                                                                                            if(count_animation <= 30){
+                                                                                                cur_animation_val += 6;
+                                                                                                d12Val+= 9;
+                                                                                                jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                            } else if (count_animation >= 30 && count_animation <= 56){
+                                                                                                cur_animation_val -= 6;
+                                                                                                d12Val+= 9;
+                                                                                                jQuery('#draggableD12').css('transform', 'rotate(-'+d12Val+'deg)');
+                                                                                                jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                            } else if (count_animation >= 56 && count_animation <= 75){
+                                                                                                cur_animation_val -= 6;
+                                                                                                d12Val+= 9;
+                                                                                                jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                                                                jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                                                                            } else if (count_animation >= 75 && count_animation <= 90){
+                                                                                                cur_animation_val += 6;
+                                                                                                d12Val+= 9;
+                                                                                                jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                                                                jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                                                                            } else {
+                                                                                                d12Val+= 9;
+                                                                                                cur_animation_val += 6;
+                                                                                                jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                                                                jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                                                                            }
+                                                                                        } else {
+                                                                                            clearInterval(phaseOne);
+                                                                                            count_animation = 1;
+                                                                                            jQuery('#draggableD3, #draggableS4').css({
+                                                                                                background: 'rgba(255,255,255, 0.5)',
+                                                                                                transform: 'scale(0.5)',
+                                                                                                color: 'red',
+                                                                                                borderColor: 'red',
+                                                                                                opacity: 1,
+                                                                                                borderWidth: '2px',
+                                                                                                paddingTop: '2px',
+                                                                                                zIndex: '1'
+                                                                                            });
+                                                                                            count_animation = 1;
+                                                                                            jQuery('.box_rounded').css('transform', 'rotate(0deg) scale(1)');
+                                                                                            jQuery('#draggableD12').css('transform', 'rotate(0deg)');
+                                                                                            jQuery('.chart').data('easyPieChart').update(11);
+                                                                                            jQuery('.chart').find('span').text('11');
+                                                                                        //Фаза 12
+                                                                                            reloadTime = 0;
+                                                                                            reloadTime1 = 0;
+                                                                                            d12Val = 0;
+                                                                                            cur_animation_val = 0;
+                                                                                            rotateVal = 0;
+                                                                                            count_animation = 1;
+                                                                                            phaseOne = setInterval(function(){
+                                                                                                if (count_animation <= 90){                                                                         //120
+                                                                                                    jQuery('#draggableD3, #draggableS4').css({
+                                                                                                        color: 'transparent',
+                                                                                                        borderColor: 'transparent',
+                                                                                                        opacity: 0.8,
+                                                                                                        transform: 'scale(1)',
+                                                                                                        transform: 'rotate('+rotateVal+'deg) scale(1)',
+                                                                                                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/superdisfunction.png) 0 0/100% no-repeat',
+                                                                                                        borderWidth: '1px',
+                                                                                                        paddingTop: '4px',
+                                                                                                        zIndex: '9000'
+                                                                                                    });
+                                                                                                    jQuery('#draggableD12')
+                                                                                                        .removeClass('hidden')
+                                                                                                        .css({
+                                                                                                            opacity: 0.8,
+                                                                                                            transform: 'scale(1)',
+                                                                                                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat',
+                                                                                                            transform: 'rotate(-'+d12Val+'deg)',
+                                                                                                            borderWidth: '1px',
+                                                                                                            borderColor: 'transparent'
+                                                                                                        });
+                                                                                                    count_animation += 1;
+                                                                                                    rotateVal +=3;
+                                                                                                    // console.log(count_animation);
+                                                                                                    if(count_animation <= 30){
+                                                                                                        cur_animation_val += 6;
+                                                                                                        d12Val+= 9;
+                                                                                                        jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                    } else if (count_animation >= 30 && count_animation <= 56){
+                                                                                                        cur_animation_val -= 6;
+                                                                                                        d12Val+= 9;
+                                                                                                        jQuery('#draggableD12').css('transform', 'rotate(-'+d12Val+'deg)');
+                                                                                                        jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                    } else if (count_animation >= 56 && count_animation <= 75){
+                                                                                                        cur_animation_val -= 6;
+                                                                                                        d12Val+= 9;
+                                                                                                        jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                        jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                                                                        jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                                                                                    } else if (count_animation >= 75 && count_animation <= 90){
+                                                                                                        cur_animation_val += 6;
+                                                                                                        d12Val+= 9;
+                                                                                                        jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                        jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                                                                        jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                                                                                    } else {
+                                                                                                        d12Val+= 9;
+                                                                                                        cur_animation_val += 6;
+                                                                                                        jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                        jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                                                                        jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                                                                                    }
+                                                                                                } else {
+                                                                                                    clearInterval(phaseOne);
+                                                                                                    count_animation = 1;
+                                                                                                    jQuery('#draggableD3, #draggableS4').css({
+                                                                                                        background: 'rgba(255,255,255, 0.5)',
+                                                                                                        transform: 'scale(0.5)',
+                                                                                                        color: 'red',
+                                                                                                        borderColor: 'red',
+                                                                                                        opacity: 1,
+                                                                                                        borderWidth: '2px',
+                                                                                                        paddingTop: '2px',
+                                                                                                        zIndex: '1'
+                                                                                                    });
+                                                                                                    count_animation = 1;
+                                                                                                    jQuery('.box_rounded').css('transform', 'rotate(0deg) scale(1)');
+                                                                                                    jQuery('#draggableD12').css('transform', 'rotate(0deg)');
+                                                                                                    jQuery('.chart').data('easyPieChart').update(11);
+                                                                                                    jQuery('.chart').find('span').text('11');
+                                                                                                //Фаза 13
+                                                                                                    reloadTime = 0;
+                                                                                                    reloadTime1 = 0;
+                                                                                                    d12Val = 0;
+                                                                                                    cur_animation_val = 0;
+                                                                                                    rotateVal = 0;
+                                                                                                    count_animation = 1;
+                                                                                                    phaseOne = setInterval(function(){
+                                                                                                        if (count_animation <= 90){                                                                         //120
+                                                                                                            jQuery('#draggableD3, #draggableS4').css({
+                                                                                                                color: 'transparent',
+                                                                                                                borderColor: 'transparent',
+                                                                                                                opacity: 0.8,
+                                                                                                                transform: 'scale(1)',
+                                                                                                                background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/travma.jpg) 0 0/100% no-repeat',
+                                                                                                                borderWidth: '1px',
+                                                                                                                paddingTop: '4px',
+                                                                                                                zIndex: '9000'
+                                                                                                            });                                                                         //120
+                                                                                                            jQuery('#draggableS4').css({
+                                                                                                                background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/povregdenie_demona.jpg) 0 0/100% no-repeat'
+                                                                                                            });
+                                                                                                            jQuery('#draggableD12')
+                                                                                                                .removeClass('hidden')
+                                                                                                                .css({
+                                                                                                                    opacity: 0.8,
+                                                                                                                    transform: 'scale(1)',
+                                                                                                                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat',
+                                                                                                                    transform: 'rotate(-'+d12Val+'deg)',
+                                                                                                                    borderWidth: '1px',
+                                                                                                                    borderColor: 'transparent'
+                                                                                                                });
+                                                                                                            count_animation += 1;
+                                                                                                            // console.log(count_animation);
+                                                                                                            if(count_animation <= 30){
+                                                                                                                cur_animation_val += 6;
+                                                                                                                d12Val+= 9;
+                                                                                                                jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                            } else if (count_animation >= 30 && count_animation <= 56){
+                                                                                                                cur_animation_val -= 6;
+                                                                                                                d12Val+= 9;
+                                                                                                                jQuery('#draggableD12').css('transform', 'rotate(-'+d12Val+'deg)');
+                                                                                                                jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                            } else if (count_animation >= 56 && count_animation <= 75){
+                                                                                                                cur_animation_val -= 6;
+                                                                                                                d12Val+= 9;
+                                                                                                                jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                                                                                jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                                                                                            } else if (count_animation >= 75 && count_animation <= 90){
+                                                                                                                cur_animation_val += 6;
+                                                                                                                d12Val+= 9;
+                                                                                                                jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                                                                                jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                                                                                            } else {
+                                                                                                                d12Val+= 9;
+                                                                                                                cur_animation_val += 6;
+                                                                                                                jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                                                                                jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                                                                                            }
+                                                                                                        } else {
+                                                                                                            clearInterval(phaseOne);
+                                                                                                            count_animation = 1;
+                                                                                                            jQuery('#draggableD3, #draggableS4').css({
+                                                                                                                background: 'rgba(255,255,255, 0.5)',
+                                                                                                                transform: 'scale(0.5)',
+                                                                                                                color: 'red',
+                                                                                                                borderColor: 'red',
+                                                                                                                opacity: 1,
+                                                                                                                borderWidth: '2px',
+                                                                                                                paddingTop: '2px',
+                                                                                                                zIndex: '1'
+                                                                                                            });
+                                                                                                            count_animation = 1;
+                                                                                                            jQuery('.box_rounded').css('transform', 'rotate(0deg) scale(1)');
+                                                                                                            jQuery('#draggableD12').css('transform', 'rotate(0deg)');
+                                                                                                            jQuery('.chart').data('easyPieChart').update(11);
+                                                                                                            jQuery('.chart').find('span').text('11');
+                                                                                                        //Фаза 14
+                                                                                                            reloadTime = 0;
+                                                                                                            reloadTime1 = 0;
+                                                                                                            d12Val = 0;
+                                                                                                            cur_animation_val = 0;
+                                                                                                            rotateVal = 0;
+                                                                                                            count_animation = 1;
+                                                                                                            phaseOne = setInterval(function(){
+                                                                                                                if (count_animation <= 60){                                                                         //120
+                                                                                                                    jQuery('#draggableD3, #draggableS4').css({
+                                                                                                                        color: 'transparent',
+                                                                                                                        borderColor: 'transparent',
+                                                                                                                        opacity: 0.8,
+                                                                                                                        transform: 'scale(1)',
+                                                                                                                        borderWidth: '1px',
+                                                                                                                        paddingTop: '4px',
+                                                                                                                        zIndex: '9000'
+                                                                                                                    });
+                                                                                                                    if(count_animation <= 21){
+                                                                                                                        jQuery('#draggableD3, #draggableS4').css({
+                                                                                                                            transform: 'rotate(20deg) scale(1)',
+                                                                                                                            background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle_air.png) 3px 0/90% no-repeat'
+                                                                                                                        });
+                                                                                                                    } else if (count_animation >= 21 && count_animation <= 41){
+                                                                                                                        jQuery('#draggableD3, #draggableS4').css({
+                                                                                                                            transform: 'rotate(30deg) scale(1)',
+                                                                                                                            background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle_water.png) 3px 0/90% no-repeat'
+                                                                                                                        });
+                                                                                                                    } else if (count_animation >= 41 && count_animation <= 51){
+                                                                                                                        jQuery('#draggableD3, #draggableS4').css({
+                                                                                                                            transform: 'rotate(-30deg) scale(1)',
+                                                                                                                            background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle_fire.png) 3px 0/90% no-repeat'
+                                                                                                                        });
+                                                                                                                    } else if (count_animation >= 51 && count_animation <= 60){
+                                                                                                                        jQuery('#draggableD3, #draggableS4').css({
+                                                                                                                            transform: 'rotate(-20deg) scale(1)',
+                                                                                                                            background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle_earth.png) 3px 0/90% no-repeat'
+                                                                                                                        });
+                                                                                                                    }
+                                                                                                                    jQuery('#draggableD12')
+                                                                                                                        .removeClass('hidden')
+                                                                                                                        .css({
+                                                                                                                            opacity: 0.8,
+                                                                                                                            transform: 'scale(1)',
+                                                                                                                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat',
+                                                                                                                            transform: 'rotate(-'+d12Val+'deg)',
+                                                                                                                            borderWidth: '1px',
+                                                                                                                            borderColor: 'transparent'
+                                                                                                                        });
+                                                                                                                    count_animation += 1;
+                                                                                                                    console.log(count_animation);
+                                                                                                                    if(count_animation <= 21){
+                                                                                                                        cur_animation_val += 9;
+                                                                                                                        d12Val+= 9;
+                                                                                                                        jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                    } else if (count_animation >= 21 && count_animation <= 41){
+                                                                                                                        cur_animation_val -= 9;
+                                                                                                                        d12Val+= 9;
+                                                                                                                        jQuery('#draggableD12').css('transform', 'rotate(-'+d12Val+'deg)');
+                                                                                                                        jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                    } else if (count_animation >= 41 && count_animation <= 51){
+                                                                                                                        cur_animation_val -= 9;
+                                                                                                                        d12Val+= 9;
+                                                                                                                        jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                        jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                                                                                        jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                                                                                                    } else if (count_animation >= 51 && count_animation <= 60){
+                                                                                                                        cur_animation_val += 9;
+                                                                                                                        d12Val+= 9;
+                                                                                                                        jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                        jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                                                                                        jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                                                                                                    } else {
+                                                                                                                        d12Val+= 9;
+                                                                                                                        cur_animation_val += 9;
+                                                                                                                        jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                        jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                                                                                        jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                                                                                                    }
+                                                                                                                } else {
+                                                                                                                    clearInterval(phaseOne);
+                                                                                                                    count_animation = 1;
+                                                                                                                    jQuery('#draggableD3, #draggableS4').css({
+                                                                                                                        background: 'rgba(255,255,255, 0.5)',
+                                                                                                                        transform: 'scale(0.5)',
+                                                                                                                        color: 'red',
+                                                                                                                        borderColor: 'red',
+                                                                                                                        opacity: 1,
+                                                                                                                        borderWidth: '2px',
+                                                                                                                        paddingTop: '2px',
+                                                                                                                        zIndex: '1'
+                                                                                                                    });
+                                                                                                                    count_animation = 1;
+                                                                                                                    jQuery('.box_rounded').css('transform', 'rotate(0deg) scale(1)');
+                                                                                                                    jQuery('#draggableD12').css('transform', 'rotate(0deg)');
+                                                                                                                    jQuery('.chart').data('easyPieChart').update(11);
+                                                                                                                    jQuery('.chart').find('span').text('11');
+                                                                                                                //Фаза 15
+                                                                                                                    reloadTime = 0;
+                                                                                                                    reloadTime1 = 0;
+                                                                                                                    d12Val = 0;
+                                                                                                                    cur_animation_val = 0;
+                                                                                                                    rotateVal = 0;
+                                                                                                                    count_animation = 1;
+                                                                                                                    phaseOne = setInterval(function(){
+                                                                                                                        if (count_animation <= 60){                                                                         //120
+                                                                                                                            jQuery('#draggableD3, #draggableS4').css({
+                                                                                                                                color: 'transparent',
+                                                                                                                                borderColor: 'transparent',
+                                                                                                                                opacity: 0.8,
+                                                                                                                                transform: 'scale(1)',
+                                                                                                                                borderWidth: '1px',
+                                                                                                                                paddingTop: '4px',
+                                                                                                                                zIndex: '9000'
+                                                                                                                            });
+                                                                                                                            if(count_animation <= 21){
+                                                                                                                                jQuery('#draggableD3, #draggableS4').css({
+                                                                                                                                    transform: 'rotate(20deg) scale(1)',
+                                                                                                                                    background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle_fire.png) 3px 0/90% no-repeat'
+                                                                                                                                });
+                                                                                                                            } else if (count_animation >= 21 && count_animation <= 41){
+                                                                                                                                jQuery('#draggableD3, #draggableS4').css({
+                                                                                                                                    transform: 'rotate(30deg) scale(1)',
+                                                                                                                                    background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle_water.png) 3px 0/90% no-repeat'
+                                                                                                                                });
+                                                                                                                            } else if (count_animation >= 41 && count_animation <= 51){
+                                                                                                                                jQuery('#draggableD3, #draggableS4').css({
+                                                                                                                                    transform: 'rotate(-30deg) scale(1)',
+                                                                                                                                    background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle_air.png) 3px 0/90% no-repeat'
+                                                                                                                                });
+                                                                                                                            } else if (count_animation >= 51 && count_animation <= 60){
+                                                                                                                                jQuery('#draggableD3, #draggableS4').css({
+                                                                                                                                    transform: 'rotate(-20deg) scale(1)',
+                                                                                                                                    background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle_earth.png) 3px 0/90% no-repeat'
+                                                                                                                                });
+                                                                                                                            }
+                                                                                                                            jQuery('#draggableD12')
+                                                                                                                                .removeClass('hidden')
+                                                                                                                                .css({
+                                                                                                                                    opacity: 0.8,
+                                                                                                                                    transform: 'scale(1)',
+                                                                                                                                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat',
+                                                                                                                                    transform: 'rotate(-'+d12Val+'deg)',
+                                                                                                                                    borderWidth: '1px',
+                                                                                                                                    borderColor: 'transparent'
+                                                                                                                                });
+                                                                                                                            count_animation += 1;
+                                                                                                                            console.log(count_animation);
+                                                                                                                            if(count_animation <= 21){
+                                                                                                                                cur_animation_val += 9;
+                                                                                                                                d12Val+= 9;
+                                                                                                                                jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                            } else if (count_animation >= 21 && count_animation <= 41){
+                                                                                                                                cur_animation_val -= 9;
+                                                                                                                                d12Val+= 9;
+                                                                                                                                jQuery('#draggableD12').css('transform', 'rotate(-'+d12Val+'deg)');
+                                                                                                                                jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                            } else if (count_animation >= 41 && count_animation <= 51){
+                                                                                                                                cur_animation_val -= 9;
+                                                                                                                                d12Val+= 9;
+                                                                                                                                jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                                jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                                                                                                jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                                                                                                            } else if (count_animation >= 51 && count_animation <= 60){
+                                                                                                                                cur_animation_val += 9;
+                                                                                                                                d12Val+= 9;
+                                                                                                                                jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                                jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                                                                                                jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                                                                                                            } else {
+                                                                                                                                d12Val+= 9;
+                                                                                                                                cur_animation_val += 9;
+                                                                                                                                jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                                jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                                                                                                jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                                                                                                            }
+                                                                                                                        } else {
+                                                                                                                            clearInterval(phaseOne);
+                                                                                                                            count_animation = 1;
+                                                                                                                            jQuery('#draggableD3, #draggableS4').css({
+                                                                                                                                background: 'rgba(255,255,255, 0.5)',
+                                                                                                                                transform: 'scale(0.5)',
+                                                                                                                                color: 'red',
+                                                                                                                                borderColor: 'red',
+                                                                                                                                opacity: 1,
+                                                                                                                                borderWidth: '2px',
+                                                                                                                                paddingTop: '2px',
+                                                                                                                                zIndex: '1'
+                                                                                                                            });
+                                                                                                                            count_animation = 1;
+                                                                                                                            jQuery('.box_rounded').css('transform', 'rotate(0deg) scale(1)');
+                                                                                                                            jQuery('#draggableD12').css('transform', 'rotate(0deg)');
+                                                                                                                            jQuery('.chart').data('easyPieChart').update(11);
+                                                                                                                            jQuery('.chart').find('span').text('11');
+                                                                                                                        //Фаза 16
+                                                                                                                            reloadTime = 0;
+                                                                                                                            reloadTime1 = 0;
+                                                                                                                            d12Val = 0;
+                                                                                                                            cur_animation_val = 0;
+                                                                                                                            rotateVal = 0;
+                                                                                                                            count_animation = 1;
+                                                                                                                            phaseOne = setInterval(function(){
+                                                                                                                                if (count_animation <= 90){                                                                         //120
+                                                                                                                                    jQuery('#draggableD3, #draggableD5').css({
+                                                                                                                                        color: 'transparent',
+                                                                                                                                        borderColor: 'transparent',
+                                                                                                                                        opacity: 0.8,
+                                                                                                                                        transform: 'scale(1)',
+                                                                                                                                        borderWidth: '1px',
+                                                                                                                                        paddingTop: '4px',
+                                                                                                                                        zIndex: '9000'
+                                                                                                                                    });
+                                                                                                                                    jQuery('#draggableD3, #draggableD5').css({
+                                                                                                                                        background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/life_vater.png) 0 0/100% no-repeat'
+                                                                                                                                    });
+                                                                                                                                    jQuery('#draggableD12')
+                                                                                                                                        .removeClass('hidden')
+                                                                                                                                        .css({
+                                                                                                                                            opacity: 0.8,
+                                                                                                                                            transform: 'scale(1)',
+                                                                                                                                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat',
+                                                                                                                                            transform: 'rotate(-'+d12Val+'deg)',
+                                                                                                                                            borderWidth: '1px',
+                                                                                                                                            borderColor: 'transparent'
+                                                                                                                                        });
+                                                                                                                                    count_animation += 1;
+                                                                                                                                    // console.log(count_animation);
+                                                                                                                                    if(count_animation <= 30){
+                                                                                                                                        cur_animation_val += 6;
+                                                                                                                                        d12Val+= 9;
+                                                                                                                                        jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                                    } else if (count_animation >= 30 && count_animation <= 56){
+                                                                                                                                        cur_animation_val -= 6;
+                                                                                                                                        d12Val+= 9;
+                                                                                                                                        jQuery('#draggableD12').css('transform', 'rotate(-'+d12Val+'deg)');
+                                                                                                                                        jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                                    } else if (count_animation >= 56 && count_animation <= 75){
+                                                                                                                                        cur_animation_val -= 6;
+                                                                                                                                        d12Val+= 9;
+                                                                                                                                        jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                                        jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                                                                                                        jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                                                                                                                    } else if (count_animation >= 75 && count_animation <= 90){
+                                                                                                                                        cur_animation_val += 6;
+                                                                                                                                        d12Val+= 9;
+                                                                                                                                        jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                                        jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                                                                                                        jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                                                                                                                    } else {
+                                                                                                                                        d12Val+= 9;
+                                                                                                                                        cur_animation_val += 6;
+                                                                                                                                        jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                                        jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                                                                                                        jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                                                                                                                    }
+                                                                                                                                } else {
+                                                                                                                                    clearInterval(phaseOne);
+                                                                                                                                    count_animation = 1;
+                                                                                                                                    jQuery('#draggableD3, #draggableD5').css({
+                                                                                                                                        background: 'rgba(255,255,255, 0.5)',
+                                                                                                                                        transform: 'scale(0.5)',
+                                                                                                                                        color: 'red',
+                                                                                                                                        borderColor: 'red',
+                                                                                                                                        opacity: 1,
+                                                                                                                                        borderWidth: '2px',
+                                                                                                                                        paddingTop: '2px',
+                                                                                                                                        zIndex: '1'
+                                                                                                                                    });
+                                                                                                                                    count_animation = 1;
+                                                                                                                                    jQuery('.box_rounded').css('transform', 'rotate(0deg) scale(1)');
+                                                                                                                                    jQuery('#draggableD12').css('transform', 'rotate(0deg)');
+                                                                                                                                    jQuery('.chart').data('easyPieChart').update(11);
+                                                                                                                                    jQuery('.chart').find('span').text('11');
+                                                                                                                                //Фаза 17
+                                                                                                                                    reloadTime = 0;
+                                                                                                                                    reloadTime1 = 0;
+                                                                                                                                    d12Val = 0;
+                                                                                                                                    cur_animation_val = 0;
+                                                                                                                                    rotateVal = 0;
+                                                                                                                                    count_animation = 1;
+                                                                                                                                    phaseOne = setInterval(function(){
+                                                                                                                                        if (count_animation <= 90){                                                                         //120
+                                                                                                                                            jQuery('#draggableD3, #draggableD5').css({
+                                                                                                                                                color: 'transparent',
+                                                                                                                                                borderColor: 'transparent',
+                                                                                                                                                opacity: 0.8,
+                                                                                                                                                transform: 'scale(1)',
+                                                                                                                                                transform: 'rotate('+rotateVal+'deg) scale(1)',
+                                                                                                                                                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/superdisfunction.png) 0 0/100% no-repeat',
+                                                                                                                                                borderWidth: '1px',
+                                                                                                                                                paddingTop: '4px',
+                                                                                                                                                zIndex: '9000'
+                                                                                                                                            });
+                                                                                                                                            jQuery('#draggableD12')
+                                                                                                                                                .removeClass('hidden')
+                                                                                                                                                .css({
+                                                                                                                                                    opacity: 0.8,
+                                                                                                                                                    transform: 'scale(1)',
+                                                                                                                                                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat',
+                                                                                                                                                    transform: 'rotate(-'+d12Val+'deg)',
+                                                                                                                                                    borderWidth: '1px',
+                                                                                                                                                    borderColor: 'transparent'
+                                                                                                                                                });
+                                                                                                                                            count_animation += 1;
+                                                                                                                                            rotateVal +=3;
+                                                                                                                                            // console.log(count_animation);
+                                                                                                                                            if(count_animation <= 30){
+                                                                                                                                                cur_animation_val += 6;
+                                                                                                                                                d12Val+= 9;
+                                                                                                                                                jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                                            } else if (count_animation >= 30 && count_animation <= 56){
+                                                                                                                                                cur_animation_val -= 6;
+                                                                                                                                                d12Val+= 9;
+                                                                                                                                                jQuery('#draggableD12').css('transform', 'rotate(-'+d12Val+'deg)');
+                                                                                                                                                jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                                            } else if (count_animation >= 56 && count_animation <= 75){
+                                                                                                                                                cur_animation_val -= 6;
+                                                                                                                                                d12Val+= 9;
+                                                                                                                                                jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                                                jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                                                                                                                jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                                                                                                                            } else if (count_animation >= 75 && count_animation <= 90){
+                                                                                                                                                cur_animation_val += 6;
+                                                                                                                                                d12Val+= 9;
+                                                                                                                                                jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                                                jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                                                                                                                jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                                                                                                                            } else {
+                                                                                                                                                d12Val+= 9;
+                                                                                                                                                cur_animation_val += 6;
+                                                                                                                                                jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                                                jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                                                                                                                jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                                                                                                                            }
+                                                                                                                                        } else {
+                                                                                                                                            clearInterval(phaseOne);
+                                                                                                                                            count_animation = 1;
+                                                                                                                                            jQuery('#draggableD3, #draggableD5').css({
+                                                                                                                                                background: 'rgba(255,255,255, 0.5)',
+                                                                                                                                                transform: 'scale(0.5)',
+                                                                                                                                                color: 'red',
+                                                                                                                                                borderColor: 'red',
+                                                                                                                                                opacity: 1,
+                                                                                                                                                borderWidth: '2px',
+                                                                                                                                                paddingTop: '2px',
+                                                                                                                                                zIndex: '1'
+                                                                                                                                            });
+                                                                                                                                            count_animation = 1;
+                                                                                                                                            jQuery('.box_rounded').css('transform', 'rotate(0deg) scale(1)');
+                                                                                                                                            jQuery('#draggableD12').css('transform', 'rotate(0deg)');
+                                                                                                                                            jQuery('.chart').data('easyPieChart').update(11);
+                                                                                                                                            jQuery('.chart').find('span').text('11');
+                                                                                                                                        //Фаза 18
+                                                                                                                                            reloadTime = 0;
+                                                                                                                                            reloadTime1 = 0;
+                                                                                                                                            d12Val = 0;
+                                                                                                                                            cur_animation_val = 0;
+                                                                                                                                            rotateVal = 0;
+                                                                                                                                            count_animation = 1;
+                                                                                                                                            phaseOne = setInterval(function(){
+                                                                                                                                                if (count_animation <= 60){                                                                         //120
+                                                                                                                                                    jQuery('#draggableD3, #draggableD5').css({
+                                                                                                                                                        color: 'transparent',
+                                                                                                                                                        borderColor: 'transparent',
+                                                                                                                                                        opacity: 0.8,
+                                                                                                                                                        transform: 'scale(1)',
+                                                                                                                                                        borderWidth: '1px',
+                                                                                                                                                        paddingTop: '4px',
+                                                                                                                                                        zIndex: '9000'
+                                                                                                                                                    });
+                                                                                                                                                    if(count_animation <= 21){
+                                                                                                                                                        jQuery('#draggableD3, #draggableD5').css({
+                                                                                                                                                            transform: 'rotate(20deg) scale(1)',
+                                                                                                                                                            background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle_air.png) 3px 0/90% no-repeat'
+                                                                                                                                                        });
+                                                                                                                                                    } else if (count_animation >= 21 && count_animation <= 41){
+                                                                                                                                                        jQuery('#draggableD3, #draggableD5').css({
+                                                                                                                                                            transform: 'rotate(30deg) scale(1)',
+                                                                                                                                                            background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle_water.png) 3px 0/90% no-repeat'
+                                                                                                                                                        });
+                                                                                                                                                    } else if (count_animation >= 41 && count_animation <= 51){
+                                                                                                                                                        jQuery('#draggableD3, #draggableD5').css({
+                                                                                                                                                            transform: 'rotate(-30deg) scale(1)',
+                                                                                                                                                            background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle_fire.png) 3px 0/90% no-repeat'
+                                                                                                                                                        });
+                                                                                                                                                    } else if (count_animation >= 51 && count_animation <= 60){
+                                                                                                                                                        jQuery('#draggableD3, #draggableD5').css({
+                                                                                                                                                            transform: 'rotate(-20deg) scale(1)',
+                                                                                                                                                            background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle_earth.png) 3px 0/90% no-repeat'
+                                                                                                                                                        });
+                                                                                                                                                    }
+                                                                                                                                                    jQuery('#draggableD12')
+                                                                                                                                                        .removeClass('hidden')
+                                                                                                                                                        .css({
+                                                                                                                                                            opacity: 0.8,
+                                                                                                                                                            transform: 'scale(1)',
+                                                                                                                                                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat',
+                                                                                                                                                            transform: 'rotate(-'+d12Val+'deg)',
+                                                                                                                                                            borderWidth: '1px',
+                                                                                                                                                            borderColor: 'transparent'
+                                                                                                                                                        });
+                                                                                                                                                    count_animation += 1;
+                                                                                                                                                    console.log(count_animation);
+                                                                                                                                                    if(count_animation <= 21){
+                                                                                                                                                        cur_animation_val += 9;
+                                                                                                                                                        d12Val+= 9;
+                                                                                                                                                        jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                                                    } else if (count_animation >= 21 && count_animation <= 41){
+                                                                                                                                                        cur_animation_val -= 9;
+                                                                                                                                                        d12Val+= 9;
+                                                                                                                                                        jQuery('#draggableD12').css('transform', 'rotate(-'+d12Val+'deg)');
+                                                                                                                                                        jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                                                    } else if (count_animation >= 41 && count_animation <= 51){
+                                                                                                                                                        cur_animation_val -= 9;
+                                                                                                                                                        d12Val+= 9;
+                                                                                                                                                        jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                                                        jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                                                                                                                        jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                                                                                                                                    } else if (count_animation >= 51 && count_animation <= 60){
+                                                                                                                                                        cur_animation_val += 9;
+                                                                                                                                                        d12Val+= 9;
+                                                                                                                                                        jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                                                        jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                                                                                                                        jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                                                                                                                                    } else {
+                                                                                                                                                        d12Val+= 9;
+                                                                                                                                                        cur_animation_val += 9;
+                                                                                                                                                        jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                                                        jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                                                                                                                        jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                                                                                                                                    }
+                                                                                                                                                } else {
+                                                                                                                                                    clearInterval(phaseOne);
+                                                                                                                                                    count_animation = 1;
+                                                                                                                                                    jQuery('#draggableD3, #draggableD5').css({
+                                                                                                                                                        background: 'rgba(255,255,255, 0.5)',
+                                                                                                                                                        transform: 'scale(0.5)',
+                                                                                                                                                        color: 'red',
+                                                                                                                                                        borderColor: 'red',
+                                                                                                                                                        opacity: 1,
+                                                                                                                                                        borderWidth: '2px',
+                                                                                                                                                        paddingTop: '2px',
+                                                                                                                                                        zIndex: '1'
+                                                                                                                                                    });
+                                                                                                                                                    count_animation = 1;
+                                                                                                                                                    jQuery('.box_rounded').css('transform', 'rotate(0deg) scale(1)');
+                                                                                                                                                    jQuery('#draggableD12').css('transform', 'rotate(0deg)');
+                                                                                                                                                    jQuery('.chart').data('easyPieChart').update(11);
+                                                                                                                                                    jQuery('.chart').find('span').text('11');
+                                                                                                                                                //Фаза 19
+                                                                                                                                                    reloadTime = 0;
+                                                                                                                                                    reloadTime1 = 0;
+                                                                                                                                                    d12Val = 0;
+                                                                                                                                                    cur_animation_val = 0;
+                                                                                                                                                    rotateVal = 0;
+                                                                                                                                                    count_animation = 1;
+                                                                                                                                                    phaseOne = setInterval(function(){
+                                                                                                                                                        if (count_animation <= 60){                                                                         //120
+                                                                                                                                                            jQuery('#draggableD3, #draggableD5').css({
+                                                                                                                                                                color: 'transparent',
+                                                                                                                                                                borderColor: 'transparent',
+                                                                                                                                                                opacity: 0.8,
+                                                                                                                                                                transform: 'scale(1)',
+                                                                                                                                                                borderWidth: '1px',
+                                                                                                                                                                paddingTop: '4px',
+                                                                                                                                                                zIndex: '9000'
+                                                                                                                                                            });
+                                                                                                                                                            if(count_animation <= 21){
+                                                                                                                                                                jQuery('#draggableD3, #draggableD5').css({
+                                                                                                                                                                    transform: 'rotate(20deg) scale(1)',
+                                                                                                                                                                    background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle_fire.png) 3px 0/90% no-repeat'
+                                                                                                                                                                });
+                                                                                                                                                            } else if (count_animation >= 21 && count_animation <= 41){
+                                                                                                                                                                jQuery('#draggableD3, #draggableD5').css({
+                                                                                                                                                                    transform: 'rotate(30deg) scale(1)',
+                                                                                                                                                                    background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle_water.png) 3px 0/90% no-repeat'
+                                                                                                                                                                });
+                                                                                                                                                            } else if (count_animation >= 41 && count_animation <= 51){
+                                                                                                                                                                jQuery('#draggableD3, #draggableD5').css({
+                                                                                                                                                                    transform: 'rotate(-30deg) scale(1)',
+                                                                                                                                                                    background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle_air.png) 3px 0/90% no-repeat'
+                                                                                                                                                                });
+                                                                                                                                                            } else if (count_animation >= 51 && count_animation <= 60){
+                                                                                                                                                                jQuery('#draggableD3, #draggableD5').css({
+                                                                                                                                                                    transform: 'rotate(-20deg) scale(1)',
+                                                                                                                                                                    background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle_earth.png) 3px 0/90% no-repeat'
+                                                                                                                                                                });
+                                                                                                                                                            }
+                                                                                                                                                            jQuery('#draggableD12')
+                                                                                                                                                                .removeClass('hidden')
+                                                                                                                                                                .css({
+                                                                                                                                                                    opacity: 0.8,
+                                                                                                                                                                    transform: 'scale(1)',
+                                                                                                                                                                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat',
+                                                                                                                                                                    transform: 'rotate(-'+d12Val+'deg)',
+                                                                                                                                                                    borderWidth: '1px',
+                                                                                                                                                                    borderColor: 'transparent'
+                                                                                                                                                                });
+                                                                                                                                                            count_animation += 1;
+                                                                                                                                                            console.log(count_animation);
+                                                                                                                                                            if(count_animation <= 21){
+                                                                                                                                                                cur_animation_val += 9;
+                                                                                                                                                                d12Val+= 9;
+                                                                                                                                                                jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                                                            } else if (count_animation >= 21 && count_animation <= 41){
+                                                                                                                                                                cur_animation_val -= 9;
+                                                                                                                                                                d12Val+= 9;
+                                                                                                                                                                jQuery('#draggableD12').css('transform', 'rotate(-'+d12Val+'deg)');
+                                                                                                                                                                jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                                                            } else if (count_animation >= 41 && count_animation <= 51){
+                                                                                                                                                                cur_animation_val -= 9;
+                                                                                                                                                                d12Val+= 9;
+                                                                                                                                                                jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                                                                jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                                                                                                                                jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                                                                                                                                            } else if (count_animation >= 51 && count_animation <= 60){
+                                                                                                                                                                cur_animation_val += 9;
+                                                                                                                                                                d12Val+= 9;
+                                                                                                                                                                jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                                                                jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                                                                                                                                jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                                                                                                                                            } else {
+                                                                                                                                                                d12Val+= 9;
+                                                                                                                                                                cur_animation_val += 9;
+                                                                                                                                                                jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                                                                jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                                                                                                                                jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                                                                                                                                            }
+                                                                                                                                                        } else {
+                                                                                                                                                            clearInterval(phaseOne);
+                                                                                                                                                            count_animation = 1;
+                                                                                                                                                            jQuery('#draggableD3, #draggableD5').css({
+                                                                                                                                                                background: 'rgba(255,255,255, 0.5)',
+                                                                                                                                                                transform: 'scale(0.5)',
+                                                                                                                                                                color: 'red',
+                                                                                                                                                                borderColor: 'red',
+                                                                                                                                                                opacity: 1,
+                                                                                                                                                                borderWidth: '2px',
+                                                                                                                                                                paddingTop: '2px',
+                                                                                                                                                                zIndex: '1'
+                                                                                                                                                            });
+                                                                                                                                                            count_animation = 1;
+                                                                                                                                                            jQuery('.box_rounded').css('transform', 'rotate(0deg) scale(1)');
+                                                                                                                                                            jQuery('#draggableD12').css('transform', 'rotate(0deg)');
+                                                                                                                                                            jQuery('.chart').data('easyPieChart').update(11);
+                                                                                                                                                            jQuery('.chart').find('span').text('11');
+                                                                                                                                                        //Фаза 15
+                                                                                                                                                            reloadTime = 0;
+                                                                                                                                                            reloadTime1 = 0;
+                                                                                                                                                            d12Val = 0;
+                                                                                                                                                            cur_animation_val = 0;
+                                                                                                                                                            rotateVal = 0;
+                                                                                                                                                            count_animation = 1;
+                                                                                                                                                            phaseOne = setInterval(function(){
+                                                                                                                                                                if (count_animation <= 60){                                                                         //120
+                                                                                                                                                                    jQuery('#draggableD3, #draggableS4').css({
+                                                                                                                                                                        color: 'transparent',
+                                                                                                                                                                        borderColor: 'transparent',
+                                                                                                                                                                        opacity: 0.8,
+                                                                                                                                                                        transform: 'scale(1)',
+                                                                                                                                                                        borderWidth: '1px',
+                                                                                                                                                                        paddingTop: '4px',
+                                                                                                                                                                        zIndex: '9000'
+                                                                                                                                                                    });
+                                                                                                                                                                    if(count_animation <= 21){
+                                                                                                                                                                        jQuery('#draggableD3, #draggableS4').css({
+                                                                                                                                                                            transform: 'rotate(20deg) scale(1)',
+                                                                                                                                                                            background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle_fire.png) 3px 0/90% no-repeat'
+                                                                                                                                                                        });
+                                                                                                                                                                    } else if (count_animation >= 21 && count_animation <= 41){
+                                                                                                                                                                        jQuery('#draggableD3, #draggableS4').css({
+                                                                                                                                                                            transform: 'rotate(30deg) scale(1)',
+                                                                                                                                                                            background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle_water.png) 3px 0/90% no-repeat'
+                                                                                                                                                                        });
+                                                                                                                                                                    } else if (count_animation >= 41 && count_animation <= 51){
+                                                                                                                                                                        jQuery('#draggableD3, #draggableS4').css({
+                                                                                                                                                                            transform: 'rotate(-30deg) scale(1)',
+                                                                                                                                                                            background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle_air.png) 3px 0/90% no-repeat'
+                                                                                                                                                                        });
+                                                                                                                                                                    } else if (count_animation >= 51 && count_animation <= 60){
+                                                                                                                                                                        jQuery('#draggableD3, #draggableS4').css({
+                                                                                                                                                                            transform: 'rotate(-20deg) scale(1)',
+                                                                                                                                                                            background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle_earth.png) 3px 0/90% no-repeat'
+                                                                                                                                                                        });
+                                                                                                                                                                    }
+                                                                                                                                                                    jQuery('#draggableD12')
+                                                                                                                                                                        .removeClass('hidden')
+                                                                                                                                                                        .css({
+                                                                                                                                                                            opacity: 0.8,
+                                                                                                                                                                            transform: 'scale(1)',
+                                                                                                                                                                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat',
+                                                                                                                                                                            transform: 'rotate(-'+d12Val+'deg)',
+                                                                                                                                                                            borderWidth: '1px',
+                                                                                                                                                                            borderColor: 'transparent'
+                                                                                                                                                                        });
+                                                                                                                                                                    count_animation += 1;
+                                                                                                                                                                    console.log(count_animation);
+                                                                                                                                                                    if(count_animation <= 21){
+                                                                                                                                                                        cur_animation_val += 9;
+                                                                                                                                                                        d12Val+= 9;
+                                                                                                                                                                        jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                                                                    } else if (count_animation >= 21 && count_animation <= 41){
+                                                                                                                                                                        cur_animation_val -= 9;
+                                                                                                                                                                        d12Val+= 9;
+                                                                                                                                                                        jQuery('#draggableD12').css('transform', 'rotate(-'+d12Val+'deg)');
+                                                                                                                                                                        jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                                                                    } else if (count_animation >= 41 && count_animation <= 51){
+                                                                                                                                                                        cur_animation_val -= 9;
+                                                                                                                                                                        d12Val+= 9;
+                                                                                                                                                                        jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                                                                        jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                                                                                                                                        jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                                                                                                                                                    } else if (count_animation >= 51 && count_animation <= 60){
+                                                                                                                                                                        cur_animation_val += 9;
+                                                                                                                                                                        d12Val+= 9;
+                                                                                                                                                                        jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                                                                        jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                                                                                                                                        jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                                                                                                                                                    } else {
+                                                                                                                                                                        d12Val+= 9;
+                                                                                                                                                                        cur_animation_val += 9;
+                                                                                                                                                                        jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                                                                        jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                                                                                                                                        jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                                                                                                                                                    }
+                                                                                                                                                                } else {
+                                                                                                                                                                    clearInterval(phaseOne);
+                                                                                                                                                                    count_animation = 1;
+                                                                                                                                                                    jQuery('#draggableD3, #draggableS4').css({
+                                                                                                                                                                        background: 'rgba(255,255,255, 0.5)',
+                                                                                                                                                                        transform: 'scale(0.5)',
+                                                                                                                                                                        color: 'red',
+                                                                                                                                                                        borderColor: 'red',
+                                                                                                                                                                        opacity: 1,
+                                                                                                                                                                        borderWidth: '2px',
+                                                                                                                                                                        paddingTop: '2px',
+                                                                                                                                                                        zIndex: '1'
+                                                                                                                                                                    });
+                                                                                                                                                                    count_animation = 1;
+                                                                                                                                                                    jQuery('.box_rounded').css('transform', 'rotate(0deg) scale(1)');
+                                                                                                                                                                    jQuery('#draggableD12').css('transform', 'rotate(0deg)');
+                                                                                                                                                                    jQuery('.chart').data('easyPieChart').update(11);
+                                                                                                                                                                    jQuery('.chart').find('span').text('11');
+                                                                                                                                                                //Фаза 16
+                                                                                                                                                                    reloadTime = 0;
+                                                                                                                                                                    reloadTime1 = 0;
+                                                                                                                                                                    d12Val = 0;
+                                                                                                                                                                    cur_animation_val = 0;
+                                                                                                                                                                    rotateVal = 0;
+                                                                                                                                                                    count_animation = 1;
+                                                                                                                                                                    phaseOne = setInterval(function(){
+                                                                                                                                                                        if (count_animation <= 90){                                                                         //120
+                                                                                                                                                                            jQuery('#draggableD3, #draggableD5').css({
+                                                                                                                                                                                color: 'transparent',
+                                                                                                                                                                                borderColor: 'transparent',
+                                                                                                                                                                                opacity: 0.8,
+                                                                                                                                                                                transform: 'scale(1)',
+                                                                                                                                                                                borderWidth: '1px',
+                                                                                                                                                                                paddingTop: '4px',
+                                                                                                                                                                                zIndex: '9000'
+                                                                                                                                                                            });
+                                                                                                                                                                            jQuery('#draggableD3, #draggableD5').css({
+                                                                                                                                                                                background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/life_vater.png) 0 0/100% no-repeat'
+                                                                                                                                                                            });
+                                                                                                                                                                            jQuery('#draggableD12')
+                                                                                                                                                                                .removeClass('hidden')
+                                                                                                                                                                                .css({
+                                                                                                                                                                                    opacity: 0.8,
+                                                                                                                                                                                    transform: 'scale(1)',
+                                                                                                                                                                                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat',
+                                                                                                                                                                                    transform: 'rotate(-'+d12Val+'deg)',
+                                                                                                                                                                                    borderWidth: '1px',
+                                                                                                                                                                                    borderColor: 'transparent'
+                                                                                                                                                                                });
+                                                                                                                                                                            count_animation += 1;
+                                                                                                                                                                            // console.log(count_animation);
+                                                                                                                                                                            if(count_animation <= 30){
+                                                                                                                                                                                cur_animation_val += 6;
+                                                                                                                                                                                d12Val+= 9;
+                                                                                                                                                                                jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                                                                            } else if (count_animation >= 30 && count_animation <= 56){
+                                                                                                                                                                                cur_animation_val -= 6;
+                                                                                                                                                                                d12Val+= 9;
+                                                                                                                                                                                jQuery('#draggableD12').css('transform', 'rotate(-'+d12Val+'deg)');
+                                                                                                                                                                                jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                                                                            } else if (count_animation >= 56 && count_animation <= 75){
+                                                                                                                                                                                cur_animation_val -= 6;
+                                                                                                                                                                                d12Val+= 9;
+                                                                                                                                                                                jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                                                                                jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                                                                                                                                                jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                                                                                                                                                            } else if (count_animation >= 75 && count_animation <= 90){
+                                                                                                                                                                                cur_animation_val += 6;
+                                                                                                                                                                                d12Val+= 9;
+                                                                                                                                                                                jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                                                                                jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                                                                                                                                                jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                                                                                                                                                            } else {
+                                                                                                                                                                                d12Val+= 9;
+                                                                                                                                                                                cur_animation_val += 6;
+                                                                                                                                                                                jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                                                                                jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                                                                                                                                                jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                                                                                                                                                            }
+                                                                                                                                                                        } else {
+                                                                                                                                                                            clearInterval(phaseOne);
+                                                                                                                                                                            count_animation = 1;
+                                                                                                                                                                            jQuery('#draggableD3, #draggableD5').css({
+                                                                                                                                                                                background: 'rgba(255,255,255, 0.5)',
+                                                                                                                                                                                transform: 'scale(0.5)',
+                                                                                                                                                                                color: 'red',
+                                                                                                                                                                                borderColor: 'red',
+                                                                                                                                                                                opacity: 1,
+                                                                                                                                                                                borderWidth: '2px',
+                                                                                                                                                                                paddingTop: '2px',
+                                                                                                                                                                                zIndex: '1'
+                                                                                                                                                                            });
+                                                                                                                                                                            count_animation = 1;
+                                                                                                                                                                            jQuery('.box_rounded').css('transform', 'rotate(0deg) scale(1)');
+                                                                                                                                                                            jQuery('#draggableD12').css('transform', 'rotate(0deg)');
+                                                                                                                                                                            jQuery('.chart').data('easyPieChart').update(11);
+                                                                                                                                                                            jQuery('.chart').find('span').text('11');
+                                                                                                                                                                        //Фаза 17
+                                                                                                                                                                            reloadTime = 0;
+                                                                                                                                                                            reloadTime1 = 0;
+                                                                                                                                                                            d12Val = 0;
+                                                                                                                                                                            cur_animation_val = 0;
+                                                                                                                                                                            rotateVal = 0;
+                                                                                                                                                                            count_animation = 1;
+                                                                                                                                                                            phaseOne = setInterval(function(){
+                                                                                                                                                                                if (count_animation <= 90){                                                                         //120
+                                                                                                                                                                                    jQuery('#draggableD3, #draggableD5').css({
+                                                                                                                                                                                        color: 'transparent',
+                                                                                                                                                                                        borderColor: 'transparent',
+                                                                                                                                                                                        opacity: 0.8,
+                                                                                                                                                                                        transform: 'scale(1)',
+                                                                                                                                                                                        background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/travma.jpg) 0 0/100% no-repeat',
+                                                                                                                                                                                        borderWidth: '1px',
+                                                                                                                                                                                        paddingTop: '4px',
+                                                                                                                                                                                        zIndex: '9000'
+                                                                                                                                                                                    });
+                                                                                                                                                                                    jQuery('#draggableD12')
+                                                                                                                                                                                        .removeClass('hidden')
+                                                                                                                                                                                        .css({
+                                                                                                                                                                                            opacity: 0.8,
+                                                                                                                                                                                            transform: 'scale(1)',
+                                                                                                                                                                                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat',
+                                                                                                                                                                                            transform: 'rotate(-'+d12Val+'deg)',
+                                                                                                                                                                                            borderWidth: '1px',
+                                                                                                                                                                                            borderColor: 'transparent'
+                                                                                                                                                                                        });
+                                                                                                                                                                                    count_animation += 1;
+                                                                                                                                                                                    rotateVal +=3;
+                                                                                                                                                                                    // console.log(count_animation);
+                                                                                                                                                                                    if(count_animation <= 30){
+                                                                                                                                                                                        cur_animation_val += 6;
+                                                                                                                                                                                        d12Val+= 9;
+                                                                                                                                                                                        jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                                                                                    } else if (count_animation >= 30 && count_animation <= 56){
+                                                                                                                                                                                        cur_animation_val -= 6;
+                                                                                                                                                                                        d12Val+= 9;
+                                                                                                                                                                                        jQuery('#draggableD12').css('transform', 'rotate(-'+d12Val+'deg)');
+                                                                                                                                                                                        jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                                                                                    } else if (count_animation >= 56 && count_animation <= 75){
+                                                                                                                                                                                        cur_animation_val -= 6;
+                                                                                                                                                                                        d12Val+= 9;
+                                                                                                                                                                                        jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                                                                                        jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                                                                                                                                                        jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                                                                                                                                                                    } else if (count_animation >= 75 && count_animation <= 90){
+                                                                                                                                                                                        cur_animation_val += 6;
+                                                                                                                                                                                        d12Val+= 9;
+                                                                                                                                                                                        jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                                                                                        jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                                                                                                                                                        jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                                                                                                                                                                    } else {
+                                                                                                                                                                                        d12Val+= 9;
+                                                                                                                                                                                        cur_animation_val += 6;
+                                                                                                                                                                                        jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                                                                                        jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                                                                                                                                                        jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                                                                                                                                                                    }
+                                                                                                                                                                                } else {
+                                                                                                                                                                                    clearInterval(phaseOne);
+                                                                                                                                                                                    count_animation = 1;
+                                                                                                                                                                                    jQuery('#draggableD3, #draggableD5').css({
+                                                                                                                                                                                        background: 'rgba(255,255,255, 0.5)',
+                                                                                                                                                                                        transform: 'scale(0.5)',
+                                                                                                                                                                                        color: 'red',
+                                                                                                                                                                                        borderColor: 'red',
+                                                                                                                                                                                        opacity: 1,
+                                                                                                                                                                                        borderWidth: '2px',
+                                                                                                                                                                                        paddingTop: '2px',
+                                                                                                                                                                                        zIndex: '1'
+                                                                                                                                                                                    });
+                                                                                                                                                                                    count_animation = 1;
+                                                                                                                                                                                    jQuery('.box_rounded').css('transform', 'rotate(0deg) scale(1)');
+                                                                                                                                                                                    jQuery('#draggableD12').css('transform', 'rotate(0deg)');
+                                                                                                                                                                                    jQuery('.chart').data('easyPieChart').update(11);
+                                                                                                                                                                                    jQuery('.chart').find('span').text('11');
+                                                                                                                                                                                //Фаза 18
+                                                                                                                                                                                    reloadTime = 0;
+                                                                                                                                                                                    reloadTime1 = 0;
+                                                                                                                                                                                    d12Val = 0;
+                                                                                                                                                                                    cur_animation_val = 0;
+                                                                                                                                                                                    rotateVal = 0;
+                                                                                                                                                                                    count_animation = 1;
+                                                                                                                                                                                    phaseOne = setInterval(function(){
+                                                                                                                                                                                        if (count_animation <= 60){                                                                         //120
+                                                                                                                                                                                            jQuery('#draggableD3, #draggableD5').css({
+                                                                                                                                                                                                color: 'transparent',
+                                                                                                                                                                                                borderColor: 'transparent',
+                                                                                                                                                                                                opacity: 0.8,
+                                                                                                                                                                                                transform: 'scale(1)',
+                                                                                                                                                                                                borderWidth: '1px',
+                                                                                                                                                                                                paddingTop: '4px',
+                                                                                                                                                                                                zIndex: '9000'
+                                                                                                                                                                                            });
+                                                                                                                                                                                            if(count_animation <= 21){
+                                                                                                                                                                                                jQuery('#draggableD3, #draggableD5').css({
+                                                                                                                                                                                                    transform: 'rotate(20deg) scale(1)',
+                                                                                                                                                                                                    background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle_air.png) 3px 0/90% no-repeat'
+                                                                                                                                                                                                });
+                                                                                                                                                                                            } else if (count_animation >= 21 && count_animation <= 41){
+                                                                                                                                                                                                jQuery('#draggableD3, #draggableD5').css({
+                                                                                                                                                                                                    transform: 'rotate(30deg) scale(1)',
+                                                                                                                                                                                                    background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle_water.png) 3px 0/90% no-repeat'
+                                                                                                                                                                                                });
+                                                                                                                                                                                            } else if (count_animation >= 41 && count_animation <= 51){
+                                                                                                                                                                                                jQuery('#draggableD3, #draggableD5').css({
+                                                                                                                                                                                                    transform: 'rotate(-30deg) scale(1)',
+                                                                                                                                                                                                    background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle_fire.png) 3px 0/90% no-repeat'
+                                                                                                                                                                                                });
+                                                                                                                                                                                            } else if (count_animation >= 51 && count_animation <= 60){
+                                                                                                                                                                                                jQuery('#draggableD3, #draggableD5').css({
+                                                                                                                                                                                                    transform: 'rotate(-20deg) scale(1)',
+                                                                                                                                                                                                    background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle_earth.png) 3px 0/90% no-repeat'
+                                                                                                                                                                                                });
+                                                                                                                                                                                            }
+                                                                                                                                                                                            jQuery('#draggableD12')
+                                                                                                                                                                                                .removeClass('hidden')
+                                                                                                                                                                                                .css({
+                                                                                                                                                                                                    opacity: 0.8,
+                                                                                                                                                                                                    transform: 'scale(1)',
+                                                                                                                                                                                                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat',
+                                                                                                                                                                                                    transform: 'rotate(-'+d12Val+'deg)',
+                                                                                                                                                                                                    borderWidth: '1px',
+                                                                                                                                                                                                    borderColor: 'transparent'
+                                                                                                                                                                                                });
+                                                                                                                                                                                            count_animation += 1;
+                                                                                                                                                                                            console.log(count_animation);
+                                                                                                                                                                                            if(count_animation <= 21){
+                                                                                                                                                                                                cur_animation_val += 9;
+                                                                                                                                                                                                d12Val+= 9;
+                                                                                                                                                                                                jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                                                                                            } else if (count_animation >= 21 && count_animation <= 41){
+                                                                                                                                                                                                cur_animation_val -= 9;
+                                                                                                                                                                                                d12Val+= 9;
+                                                                                                                                                                                                jQuery('#draggableD12').css('transform', 'rotate(-'+d12Val+'deg)');
+                                                                                                                                                                                                jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                                                                                            } else if (count_animation >= 41 && count_animation <= 51){
+                                                                                                                                                                                                cur_animation_val -= 9;
+                                                                                                                                                                                                d12Val+= 9;
+                                                                                                                                                                                                jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                                                                                                jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                                                                                                                                                                jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                                                                                                                                                                            } else if (count_animation >= 51 && count_animation <= 60){
+                                                                                                                                                                                                cur_animation_val += 9;
+                                                                                                                                                                                                d12Val+= 9;
+                                                                                                                                                                                                jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                                                                                                jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                                                                                                                                                                jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                                                                                                                                                                            } else {
+                                                                                                                                                                                                d12Val+= 9;
+                                                                                                                                                                                                cur_animation_val += 9;
+                                                                                                                                                                                                jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                                                                                                jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                                                                                                                                                                jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                                                                                                                                                                            }
+                                                                                                                                                                                        } else {
+                                                                                                                                                                                            clearInterval(phaseOne);
+                                                                                                                                                                                            count_animation = 1;
+                                                                                                                                                                                            jQuery('#draggableD3, #draggableD5').css({
+                                                                                                                                                                                                background: 'rgba(255,255,255, 0.5)',
+                                                                                                                                                                                                transform: 'scale(0.5)',
+                                                                                                                                                                                                color: 'red',
+                                                                                                                                                                                                borderColor: 'red',
+                                                                                                                                                                                                opacity: 1,
+                                                                                                                                                                                                borderWidth: '2px',
+                                                                                                                                                                                                paddingTop: '2px',
+                                                                                                                                                                                                zIndex: '1'
+                                                                                                                                                                                            });
+                                                                                                                                                                                            count_animation = 1;
+                                                                                                                                                                                            jQuery('.box_rounded').css('transform', 'rotate(0deg) scale(1)');
+                                                                                                                                                                                            jQuery('#draggableD12').css('transform', 'rotate(0deg)');
+                                                                                                                                                                                            jQuery('.chart').data('easyPieChart').update(11);
+                                                                                                                                                                                            jQuery('.chart').find('span').text('11');
+                                                                                                                                                                                        //Фаза 19
+                                                                                                                                                                                            reloadTime = 0;
+                                                                                                                                                                                            reloadTime1 = 0;
+                                                                                                                                                                                            d12Val = 0;
+                                                                                                                                                                                            cur_animation_val = 0;
+                                                                                                                                                                                            rotateVal = 0;
+                                                                                                                                                                                            count_animation = 1;
+                                                                                                                                                                                            phaseOne = setInterval(function(){
+                                                                                                                                                                                                if (count_animation <= 60){                                                                         //120
+                                                                                                                                                                                                    jQuery('#draggableD3, #draggableD5').css({
+                                                                                                                                                                                                        color: 'transparent',
+                                                                                                                                                                                                        borderColor: 'transparent',
+                                                                                                                                                                                                        opacity: 0.8,
+                                                                                                                                                                                                        transform: 'scale(1)',
+                                                                                                                                                                                                        borderWidth: '1px',
+                                                                                                                                                                                                        paddingTop: '4px',
+                                                                                                                                                                                                        zIndex: '9000'
+                                                                                                                                                                                                    });
+                                                                                                                                                                                                    if(count_animation <= 21){
+                                                                                                                                                                                                        jQuery('#draggableD3, #draggableD5').css({
+                                                                                                                                                                                                            transform: 'rotate(20deg) scale(1)',
+                                                                                                                                                                                                            background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle_fire.png) 3px 0/90% no-repeat'
+                                                                                                                                                                                                        });
+                                                                                                                                                                                                    } else if (count_animation >= 21 && count_animation <= 41){
+                                                                                                                                                                                                        jQuery('#draggableD3, #draggableD5').css({
+                                                                                                                                                                                                            transform: 'rotate(30deg) scale(1)',
+                                                                                                                                                                                                            background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle_water.png) 3px 0/90% no-repeat'
+                                                                                                                                                                                                        });
+                                                                                                                                                                                                    } else if (count_animation >= 41 && count_animation <= 51){
+                                                                                                                                                                                                        jQuery('#draggableD3, #draggableD5').css({
+                                                                                                                                                                                                            transform: 'rotate(-30deg) scale(1)',
+                                                                                                                                                                                                            background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle_air.png) 3px 0/90% no-repeat'
+                                                                                                                                                                                                        });
+                                                                                                                                                                                                    } else if (count_animation >= 51 && count_animation <= 60){
+                                                                                                                                                                                                        jQuery('#draggableD3, #draggableD5').css({
+                                                                                                                                                                                                            transform: 'rotate(-20deg) scale(1)',
+                                                                                                                                                                                                            background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle_earth.png) 3px 0/90% no-repeat'
+                                                                                                                                                                                                        });
+                                                                                                                                                                                                    }
+                                                                                                                                                                                                    jQuery('#draggableD12')
+                                                                                                                                                                                                        .removeClass('hidden')
+                                                                                                                                                                                                        .css({
+                                                                                                                                                                                                            opacity: 0.8,
+                                                                                                                                                                                                            transform: 'scale(1)',
+                                                                                                                                                                                                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.jpg) 0 0/100% no-repeat',
+                                                                                                                                                                                                            transform: 'rotate(-'+d12Val+'deg)',
+                                                                                                                                                                                                            borderWidth: '1px',
+                                                                                                                                                                                                            borderColor: 'transparent'
+                                                                                                                                                                                                        });
+                                                                                                                                                                                                    count_animation += 1;
+                                                                                                                                                                                                    console.log(count_animation);
+                                                                                                                                                                                                    if(count_animation <= 21){
+                                                                                                                                                                                                        cur_animation_val += 9;
+                                                                                                                                                                                                        d12Val+= 9;
+                                                                                                                                                                                                        jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                                                                                                    } else if (count_animation >= 21 && count_animation <= 41){
+                                                                                                                                                                                                        cur_animation_val -= 9;
+                                                                                                                                                                                                        d12Val+= 9;
+                                                                                                                                                                                                        jQuery('#draggableD12').css('transform', 'rotate(-'+d12Val+'deg)');
+                                                                                                                                                                                                        jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                                                                                                    } else if (count_animation >= 41 && count_animation <= 51){
+                                                                                                                                                                                                        cur_animation_val -= 9;
+                                                                                                                                                                                                        d12Val+= 9;
+                                                                                                                                                                                                        jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                                                                                                        jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                                                                                                                                                                        jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                                                                                                                                                                                    } else if (count_animation >= 51 && count_animation <= 60){
+                                                                                                                                                                                                        cur_animation_val += 9;
+                                                                                                                                                                                                        d12Val+= 9;
+                                                                                                                                                                                                        jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                                                                                                        jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                                                                                                                                                                        jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                                                                                                                                                                                    } else {
+                                                                                                                                                                                                        d12Val+= 9;
+                                                                                                                                                                                                        cur_animation_val += 9;
+                                                                                                                                                                                                        jQuery('.box_rounded').css('transform', 'rotate('+cur_animation_val+'deg) scale(1)');
+                                                                                                                                                                                                        jQuery('#draggableD12').css('transform', 'rotate('+d12Val+'deg)');
+                                                                                                                                                                                                        jQuery('#draggableD12').css('background', '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/daemon.png) 0 0/100% no-repeat');
+                                                                                                                                                                                                    }
+                                                                                                                                                                                                } else {
+                                                                                                                                                                                                    clearInterval(phaseOne);
+                                                                                                                                                                                                    count_animation = 1;
+                                                                                                                                                                                                    jQuery('#draggableD3, #draggableD5').css({
+                                                                                                                                                                                                        background: 'rgba(255,255,255, 0.5)',
+                                                                                                                                                                                                        transform: 'scale(0.5)',
+                                                                                                                                                                                                        color: 'red',
+                                                                                                                                                                                                        borderColor: 'red',
+                                                                                                                                                                                                        opacity: 1,
+                                                                                                                                                                                                        borderWidth: '2px',
+                                                                                                                                                                                                        paddingTop: '2px',
+                                                                                                                                                                                                        zIndex: '1'
+                                                                                                                                                                                                    });
+                                                                                                                                                                                                    count_animation = 1;
+                                                                                                                                                                                                    jQuery('.box_rounded').css('transform', 'rotate(0deg) scale(1)');
+                                                                                                                                                                                                    jQuery('#draggableD12').css('transform', 'rotate(0deg)');
+                                                                                                                                                                                                    jQuery('.chart').data('easyPieChart').update(11);
+                                                                                                                                                                                                    jQuery('.chart').find('span').text('11');
+                                                                                                                                                                                               } 
+                                                                                                                                                                                            }, 1000);
+                                                                                                                                                                                       } 
+                                                                                                                                                                                    }, 1000);
+                                                                                                                                                                               } 
+                                                                                                                                                                            }, 1000);
+                                                                                                                                                                       } 
+                                                                                                                                                                    }, 1000);
+                                                                                                                                                               } 
+                                                                                                                                                            }, 1000);
+
+                                                                                                                                                       } 
+                                                                                                                                                    }, 1000);
+                                                                                                                                               } 
+                                                                                                                                            }, 1000);
+                                                                                                                                       } 
+                                                                                                                                    }, 1000);
+                                                                                                                               } 
+                                                                                                                            }, 1000);
+                                                                                                                       } 
+                                                                                                                    }, 1000);
+                                                                                                               } 
+                                                                                                            }, 1000);
+                                                                                                       } 
+                                                                                                    }, 1000);
+                                                                                               } 
+                                                                                            }, 1000);
+                                                                                       } 
+                                                                                    }, 1000);
+                                                                               } 
+                                                                            }, 1000);
+                                                                       } 
+                                                                    }, 1000);
+                                                               } 
+                                                            }, 1000);
+                                                       } 
+                                                    }, 1000);
+                                               } 
+                                            }, 1000);
+                                       } 
+                                    }, 1000);
                                } 
                             }, 1000);
                        } 
