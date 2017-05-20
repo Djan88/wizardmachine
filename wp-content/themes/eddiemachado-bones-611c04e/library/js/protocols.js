@@ -13832,14 +13832,13 @@ mmt = function(){
                 color: 'transparent',
                 borderColor: 'transparent',
                 opacity: 0.8,
-                transform: 'scale(1) rotate(20deg)',
+                transform: 'scale(0.5)',
                 borderWidth: '1px',
                 paddingTop: '4px',
                 zIndex: '9000'
             });
             jQuery('#draggableD3, #draggableS2').css({
-                // background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/life_vater.png) 0 0/100% no-repeat'
-                background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle_fire.png) 0 0/100% no-repeat'
+                background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/life_vater.png) 0 0/100% no-repeat'
             });
             jQuery('#draggableD12')
                 .removeClass('hidden')
@@ -14075,22 +14074,22 @@ mmt = function(){
                                     });
                                     if(count_animation <= 21){
                                         jQuery('#draggableD3, #draggableS2').css({
-                                            // transform: 'rotate(20deg) scale(1)',
+                                            transform: 'rotate(20deg) scale(1)',
                                             background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle_air.png) 3px 0/90% no-repeat'
                                         });
                                     } else if (count_animation >= 21 && count_animation <= 41){
                                         jQuery('#draggableD3, #draggableS2').css({
-                                            // transform: 'rotate(30deg) scale(1)',
+                                            transform: 'rotate(30deg) scale(1)',
                                             background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle_water.png) 3px 0/90% no-repeat'
                                         });
                                     } else if (count_animation >= 41 && count_animation <= 51){
                                         jQuery('#draggableD3, #draggableS2').css({
-                                            // transform: 'rotate(30deg) scale(1)',
+                                            transform: 'rotate(-30deg) scale(1)',
                                             background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle_fire.png) 3px 0/90% no-repeat'
                                         });
                                     } else if (count_animation >= 51 && count_animation <= 60){
                                         jQuery('#draggableD3, #draggableS2').css({
-                                            // transform: 'rotate(30deg) scale(1)',
+                                            transform: 'rotate(-20deg) scale(1)',
                                             background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle_earth.png) 3px 0/90% no-repeat'
                                         });
                                     }
