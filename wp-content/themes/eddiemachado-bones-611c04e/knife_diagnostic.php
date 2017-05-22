@@ -67,10 +67,8 @@
                   <div class="btn btn_sm btn_warning fast-protocol" data-fast="v5" data-protocol-name ="V5">V5</div>
                   <div class="btn btn_sm btn_warning fast-protocol" data-fast="resource" data-protocol-name ="РЕСУРС">РЕСУРС</div>
                   <div class="btn btn_sm btn_warning fast-protocol" data-fast="solis" data-protocol-name ="SOLIS">SOLIS</div>
-                  <?php  if(current_user_can('administrator')) { ?>
-                    <div class="btn btn_sm btn_warning fast-protocol" data-fast="demo" data-protocol-name ="«УНИВЕРСАЛЬНЫЙ»">«УНИВЕРСАЛЬНЫЙ»</div>
-                    <div class="btn btn_sm btn_warning fast-protocol" data-fast="mmt" data-protocol-name ="ММТ">«ВИСЦЕРАЛЬНЫЙ ПРОТОКОЛ»</div>
-                  <?php } ?>
+                  <div class="btn btn_sm btn_warning fast-protocol" data-fast="demo" data-protocol-name ="«УНИВЕРСАЛЬНЫЙ»">«УНИВЕРСАЛЬНЫЙ»</div>
+                  <div class="btn btn_sm btn_warning fast-protocol" data-fast="mmt" data-protocol-name ="ММТ">«ВИСЦЕРАЛЬНЫЙ ПРОТОКОЛ»</div>
                 </div>
                 <!-- <div class="fast-protocol-resource clearfix hidden"> -->
                   <!-- <div class="btn btn_sm btn_warning fast-v" data-v='#draggable1'>V1</div>  -->
@@ -154,12 +152,10 @@
                         <div>«Дренажный протокол предназначен для флюидической очистки зон DSV тела ума. Рекомендован при хронических либо кармически отягощенных, а также гипоресурсных состояниях. Можно применять сразу дополнительно после основного протокола (кроме V5) либо самостоятельно»<div class="btn btn_lg btn_success btn_choice" data-protocol ="resource" data-protocol-name ="РЕАКТИВАЦИЯ РЕСУРСА">Выбрать</div></div>
                         <h3><span class="protocol_acent">(SOLIS)</span>«SOLIS»</h3>
                         <div>«Протокол "Solis" предназначен для "гиперресурсных" состояний, которые закономерно возникают после удачных проработок клиента на "wizardmachine", терапевтической дефрагментации, "Tarotmachine", а также после проработки кармических и родовых проблем либо после длительной "отжимке" негативного флюида из физического тела. При калибровке ставьте D1 на центр лба, а зону v3 на нижнюю границу сердца!»<div class="btn btn_lg btn_success btn_choice" data-protocol ="solis" data-protocol-name ="SOLIS">Выбрать</div></div>
-                        <?php  if(current_user_can('administrator')) { ?>
-                          <h3><span class="protocol_acent">(V2, V3, V4)</span>«УНИВЕРСАЛЬНЫЙ»</h3>
-                          <div>«Упрощенный протокол работает на ключевых зонах V2, V3, V4 и эффективен для коррекции широкого круга проблем, прост в использовании, достаточно фото-селфи по пояс.»<div class="btn btn_lg btn_success btn_choice" data-protocol ="demo" data-protocol-name ="«УНИВЕРСАЛЬНЫЙ»">Выбрать</div></div>
-                          <h3><span class="protocol_acent">(ММТ)</span>ВИСЦЕРАЛЬНЫЙ ПРОТОКОЛ</h3>
-                          <div>«Протокол для висцеры. Печеночное продвижение»<div class="btn btn_lg btn_success btn_choice" data-protocol ="mmt" data-protocol-name ="Висцеральный">Выбрать</div></div>
-                        <?php } ?>
+                        <h3><span class="protocol_acent">(V2, V3, V4)</span>«УНИВЕРСАЛЬНЫЙ»</h3>
+                        <div>«Упрощенный протокол работает на ключевых зонах V2, V3, V4 и эффективен для коррекции широкого круга проблем, прост в использовании, достаточно фото-селфи по пояс.»<div class="btn btn_lg btn_success btn_choice" data-protocol ="demo" data-protocol-name ="«УНИВЕРСАЛЬНЫЙ»">Выбрать</div></div>
+                        <h3><span class="protocol_acent">(ММТ)</span>ВИСЦЕРАЛЬНЫЙ ПРОТОКОЛ</h3>
+                        <div>«Протокол для висцеры. Печеночное продвижение»<div class="btn btn_lg btn_success btn_choice" data-protocol ="mmt" data-protocol-name ="Висцеральный">Выбрать</div></div>
                     </div>
                 </div>
                 <div class="machine_screen work-area clearfix hidden">
