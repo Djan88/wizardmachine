@@ -52,7 +52,7 @@
                     <div class="fancybox-hidden" style="display: none;">
                       <div id="contact_form_pop">
                         <h5 class="heading">Заполните форму</h5>
-                        <h6 class="heading">Внесите данные по вашему аккаунту из таблицы выше</h6>
+                        <h6 class="heading">Внесите данные по вашему аккаунту из таблицы выше</h6> 
                         <hr>
                         <?php echo do_shortcode('[contact-form-7 id="111" title="Продление лицензии"]'); ?>
                       </div>
