@@ -1,6 +1,1 @@
-[11-Apr-2016 01:54:04 Europe/Simferopol] PHP Warning:  require(ABSPATHWPINC/option.php): failed to open stream: No such file or directory in /home/machinemagic/public_html/wp-includes/functions.php on line 8
-[11-Apr-2016 01:54:04 Europe/Simferopol] PHP Warning:  require(ABSPATHWPINC/option.php): failed to open stream: No such file or directory in /home/machinemagic/public_html/wp-includes/functions.php on line 8
-[11-Apr-2016 01:54:04 Europe/Simferopol] PHP Fatal error:  require(): Failed opening required 'ABSPATHWPINC/option.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/machinemagic/public_html/wp-includes/functions.php on line 8
-[11-Apr-2016 01:54:06 Europe/Simferopol] PHP Warning:  require(ABSPATHWPINC/option.php): failed to open stream: No such file or directory in /home/machinemagic/public_html/wp-includes/functions.php on line 8
-[11-Apr-2016 01:54:06 Europe/Simferopol] PHP Warning:  require(ABSPATHWPINC/option.php): failed to open stream: No such file or directory in /home/machinemagic/public_html/wp-includes/functions.php on line 8
-[11-Apr-2016 01:54:06 Europe/Simferopol] PHP Fatal error:  require(): Failed opening required 'ABSPATHWPINC/option.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/machinemagic/public_html/wp-includes/functions.php on line 8
+[10-Mar-2017 15:29:50 Europe/Simferopol] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/machinemagic/public_html/wp-includes/rss-functions.php on line 8

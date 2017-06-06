@@ -1,0 +1,525 @@
+<html>
+<head>
+<!-- revisium.com/ai/ -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+<META NAME="ROBOTS" CONTENT="NOINDEX,NOFOLLOW">
+<title>Отчет по /home/machinemagic/public_html</title>
+<style type="text/css" title="currentStyle">
+	@import "https://revisium.com/extra/media/css/demo_page2.css";
+	@import "https://revisium.com/extra/media/css/jquery.dataTables2.css";
+</style>
+
+<script type="text/javascript" language="javascript" src="https://yandex.st/jquery/2.1.0/jquery.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://datatables.net/download/build/jquery.dataTables.js"></script>
+
+<style type="text/css">
+ body 
+ {
+   font-family: Tahoma;
+   color: #5a5a5a;
+   background: #FFFFFF;
+   font-size: 14px;
+   margin: 20px;
+   padding: 0;
+ }
+
+.header
+ {
+   font-size: 34px;
+   margin: 0 0 10px 0;
+ }
+
+ .hidd
+ {
+    display: none;
+ }
+ 
+ .ok
+ {
+    color: green;
+ }
+ 
+ .line_no
+ {
+   -webkit-border-radius: 6px;
+   -moz-border-radius: 6px;
+   border-radius: 6px;
+
+   background: #DAF2C1;
+   padding: 2px 5px 2px 5px;
+   margin: 0 5px 0 5px;
+ }
+ 
+ .credits_header 
+ {
+  -webkit-border-radius: 6px;
+   -moz-border-radius: 6px;
+   border-radius: 6px;
+
+   background: #F2F2F2;
+   padding: 10px;
+   font-size: 11px;
+    margin: 0 0 10px 0;
+ }
+ 
+ .marker
+ {
+    color: #FF0090;
+	font-weight: 100;
+	background: #FF0090;
+	padding: 2px 0px 2px 0px;
+	width: 2px;
+ }
+ 
+ .title
+ {
+   font-size: 24px;
+   margin: 20px 0 10px 0;
+   color: #9CA9D1;
+}
+
+.summary 
+{
+  float: left;
+  width: 500px;
+}
+
+.summary TD
+{
+  font-size: 12px;
+  border-bottom: 1px solid #F0F0F0;
+  font-weight: 700;
+  padding: 10px 0 10px 0;
+}
+ 
+.crit, .vir
+{
+  color: #D84B55;
+}
+
+.intitem
+{
+  color:#4a6975;
+}
+
+.spacer
+{
+   margin: 0 0 50px 0;
+   clear:both;
+}
+
+.warn
+{
+  color: #F6B700;
+}
+
+.clear
+{
+   clear: both;
+}
+
+.offer
+{
+  -webkit-border-radius: 6px;
+   -moz-border-radius: 6px;
+   border-radius: 6px;
+
+   width: 500px;
+   background: #ECF7DE;
+   color: #747474;
+   font-size: 11px;
+   font-family: Arial;
+   padding: 20px;
+   margin: 20px 0 0 500px;
+   
+   font-size: 16px;
+}
+ 
+.flist
+{
+   font-family: Arial;
+}
+
+.flist TD
+{
+   font-size: 11px;
+   padding: 5px;
+}
+
+.flist TH
+{
+   font-size: 12px;
+   height: 30px;
+   padding: 5px;
+   background: #CEE9EF;
+}
+
+
+.it
+{
+   font-size: 14px;
+   font-weight: 100;
+   margin-top: 10px;
+}
+
+.crit .it A {
+   color: #E50931; 
+   line-height: 25px;
+   text-decoration: none;
+}
+
+.warn .it A {
+   color: #F2C900; 
+   line-height: 25px;
+   text-decoration: none;
+}
+
+
+
+.details
+{
+   font-family: Calibri;
+   font-size: 12px;
+   margin: 10px 10px 10px 0px;
+}
+
+.crit .details
+{
+   color: #A08080;
+}
+
+.warn .details
+{
+   color: #808080;
+}
+
+.details A
+{
+  color: #FFF;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 2px;
+  background: #E5CEDE;
+  -webkit-border-radius: 7px;
+   -moz-border-radius: 7px;
+   border-radius: 7px;
+}
+
+.details A:hover
+{
+   background: #A0909B;
+}
+
+.ctd
+{
+   margin: 10px 0px 10px 0;
+   align:center;
+}
+
+.ctd A 
+{
+   color: #0D9922;
+}
+
+.disclaimer
+{
+   color: darkgreen;
+   margin: 10px 10px 10px 0;
+}
+
+.note_vir
+{
+   margin: 10px 0 10px 0;
+   //padding: 10px;
+   color: #FF4F4F;
+   font-size: 15px;
+   font-weight: 700;
+   clear:both;
+  
+}
+
+.note_warn
+{
+   margin: 10px 0 10px 0;
+   color: #F6B700;
+   font-size: 15px;
+   font-weight: 700;
+   clear:both;
+}
+
+.note_int
+{
+   margin: 10px 0 10px 0;
+   color: #60b5d6;
+   font-size: 15px;
+   font-weight: 700;
+   clear:both;
+}
+
+.updateinfo
+{
+  color: #FFF;
+  text-decoration: none;
+  background: #E5CEDE;
+  -webkit-border-radius: 7px;
+   -moz-border-radius: 7px;
+   border-radius: 7px;
+
+  margin: 10px 0 10px 0px;   
+  padding: 10px;
+}
+
+
+.caution
+{
+  color: #EF7B75;
+  text-decoration: none;
+  margin: 20px 0 0px 0px;   
+  font-size: 12px;
+}
+
+.footer
+{
+  color: #303030;
+  text-decoration: none;
+  background: #F4F4F4;
+  -webkit-border-radius: 7px;
+   -moz-border-radius: 7px;
+   border-radius: 7px;
+
+  margin: 80px 0 10px 0px;   
+  padding: 10px;
+}
+
+.rep
+{
+  color: #303030;
+  text-decoration: none;
+  background: #94DDDB;
+  -webkit-border-radius: 7px;
+   -moz-border-radius: 7px;
+   border-radius: 7px;
+
+  margin: 10px 0 10px 0px;   
+  padding: 10px;
+  font-size: 12px;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="header">Отчет сканера <a href="https://revisium.com/ai/">AI-Bolit</a> v20170519: /home/machinemagic/public_html/ (1/1)</div>
+<div class="credits_header">Скрипт бесплатный только для личного некоммерческого использования. Есть <a href="https://revisium.com/ai/faq.php#faq11" target=_blank>коммерческая лицензия</a> (пункт №11).</div>
+<div class="details_header">
+   Затрачено времени: <b>2 m 30 s</b>. Сканирование начато 20-05-2017 в 23:28:51, сканирование завершено 20-05-2017 в 23:31:21<br/>
+   Всего проверено 1402 директорий и 8313 файлов. Использовано памяти при сканировании: 7.74 Mb.
+ </div>
+
+ 
+ 
+ <div class="summary">
+<div class="title">Сводный отчет</div><table cellspacing=0 border=0><tr><td class="warn" width=400>Пропущенных больших файлов</td><td class="warn">28</td></tr><tr><td class="warn" width=400>Скрытых файлов</td><td class="warn">3</td></tr></table><!--[json]{"redirect":0,"critical_php":0,"critical_js":0,"phishing":0,"unix_exec":0,"iframes":0,"not_read":0,"base64":0,"heuristics":0,"symlinks":0,"big_files_skipped":28}[/json]--><div class=details style="margin: 20px 20px 20px 0">Обращаем внимание, что обнаруженные файлы не всегда являются вирусами и хакерскими скриптами. Сканер старается минимизировать число ложных обнаружений, но это не всегда возможно, так как найденный фрагмент может встречаться как во вредоносных скриптах, так и в обычных.</div>
+
+ </div>
+ 
+ <div class="offer">
+Обращаем внимание на то, что большинство CMS <b>без дополнительной защиты</b> рано или поздно <b>взламывают</b>.<p> Компания <a href="https://revisium.com/">"Ревизиум"</a> предлагает услугу превентивной защиты сайта от взлома с использованием уникальной <b>процедуры "цементирования сайта"</b>. Подробно на <a href="https://revisium.com/ru/client_protect/">странице услуги</a>. <p>Лучшее лечение &mdash; это профилактика.
+ </div>
+  
+ <div class="clear"></div>
+ 
+ <div class="title">Критические замечания</div><div class="note_vir">Уязвимости в скриптах (2)</div><div class="crit"><li>/home/machinemagic/public_html/wp-includes/class-phpmailer.php - RCE : CVE-2016-10045, CVE-2016-10031</li><li>/home/machinemagic/public_html/machine-magic/wp-includes/class-phpmailer.php - RCE : CVE-2016-10045, CVE-2016-10031</li></div><p>
+<div class="ok"><b>Вредоносные скрипты не найдены. Попробуйте сканер в режиме "Параноидальный".</b></div><div style="margin-top: 20px" class="title">Предупреждения</div><div class="note_warn">Скрытые файлы (3)</div><div class="warn">/home/machinemagic/public_html/wizard-machine/.git<br />
+/home/machinemagic/public_html/.htpasswds<br />
+/home/machinemagic/public_html/.git</div><div class="spacer"></div>
+<div class="note_warn">Большие файлы (больше чем 600.00 Kb). Пропущено</div><div class="warn"><div class="flist"><table cellspacing=1 cellpadding=4 border=0 id="table_8823470"><thead><tr class="tbgh0"><th width=70%>Путь</th><th>Изменение свойств</th><th>Изменение содержимого</th><th width=90>Размер</th><th width=0 class="hidd">CRC32</th><th width=0 class="hidd"></th><th width=0 class="hidd"></th><th width=0 class="hidd"></th></tr></thead><tbody><tr class="tbg0" o="id_z6332461"><td><div class="it"><a class="it">/home/machinemagic/public_html/sounds/tick.ogg</a></div></td><td align=center><div class="ctd">26/05/2016 12:28:19</div></td><td align=center><div class="ctd">26/05/2016 12:28:19</div></td><td align=center><div class="ctd">4.13 Mb</div></td><td class="hidd"><div class="hidd">624bd7b3a663abafc55e4c58baf460e6c28fb59c</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1464254899</div></td><td class="hidd"><div class="hidd">id_z6332461</div></td></tr><tr class="tbg1" o="id_z3678612"><td><div class="it"><a class="it">/home/machinemagic/public_html/sounds/tick.mp3</a></div></td><td align=center><div class="ctd">26/05/2016 12:28:19</div></td><td align=center><div class="ctd">26/05/2016 12:28:19</div></td><td align=center><div class="ctd">3.18 Mb</div></td><td class="hidd"><div class="hidd">8fe9e624d0b19694ba2b8dd78135134bec78302b</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1464254899</div></td><td class="hidd"><div class="hidd">id_z3678612</div></td></tr><tr class="tbg0" o="id_z5880107"><td><div class="it"><a class="it">/home/machinemagic/public_html/sounds/tick.wav</a></div></td><td align=center><div class="ctd">26/05/2016 12:28:19</div></td><td align=center><div class="ctd">26/05/2016 12:28:19</div></td><td align=center><div class="ctd">1,012.43 Kb</div></td><td class="hidd"><div class="hidd">4de757f679ecaed4eac552cd05a6a5816801803c</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1464254899</div></td><td class="hidd"><div class="hidd">id_z5880107</div></td></tr><tr class="tbg1" o="id_z2173294"><td><div class="it"><a class="it">/home/machinemagic/public_html/wp-admin/images/bg_wizard.jpg</a></div></td><td align=center><div class="ctd">20/11/2014 11:50:29</div></td><td align=center><div class="ctd">20/11/2014 11:50:29</div></td><td align=center><div class="ctd">750.58 Kb</div></td><td class="hidd"><div class="hidd">572ff22ea90250a8463361db7aadf25a4be09880</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1416473429</div></td><td class="hidd"><div class="hidd">id_z2173294</div></td></tr><tr class="tbg0" o="id_z5210966"><td><div class="it"><a class="it">/home/machinemagic/public_html/forum/includes/utf/data/recode_cjk.php</a></div></td><td align=center><div class="ctd">19/11/2015 13:31:03</div></td><td align=center><div class="ctd">27/07/2015 14:34:08</div></td><td align=center><div class="ctd">1.36 Mb</div></td><td class="hidd"><div class="hidd">3765c04b026fce1cba978628c2625aad19136d27</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1437996848</div></td><td class="hidd"><div class="hidd">id_z5210966</div></td></tr><tr class="tbg1" o="id_z6596043"><td><div class="it"><a class="it">/home/machinemagic/public_html/wizard-machine/.git/objects/pack/tmp_pack_8MaA9A</a></div></td><td align=center><div class="ctd">20/05/2015 10:26:36</div></td><td align=center><div class="ctd">20/05/2015 10:26:36</div></td><td align=center><div class="ctd">11.23 Mb</div></td><td class="hidd"><div class="hidd">5b2c9a4750029d11f963c8394918a6948b773838</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1432106796</div></td><td class="hidd"><div class="hidd">id_z6596043</div></td></tr><tr class="tbg0" o="id_z2409890"><td><div class="it"><a class="it">/home/machinemagic/public_html/AIBOLIT-WHITELIST.db</a></div></td><td align=center><div class="ctd">20/05/2017 23:28:49</div></td><td align=center><div class="ctd">20/05/2017 23:28:49</div></td><td align=center><div class="ctd">5.03 Mb</div></td><td class="hidd"><div class="hidd">08492201b27c461627c4ce479760d84eaf6bab36</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1495312129</div></td><td class="hidd"><div class="hidd">id_z2409890</div></td></tr><tr class="tbg1" o="id_z5279130"><td><div class="it"><a class="it">/home/machinemagic/public_html/.git/objects/pack/pack-8e663bcaf6dcf4ae68d4ef512fa98f16d842800b.pack</a></div></td><td align=center><div class="ctd">15/04/2017 17:02:09</div></td><td align=center><div class="ctd">15/04/2017 17:02:08</div></td><td align=center><div class="ctd">244.30 Mb</div></td><td class="hidd"><div class="hidd">9b76bfb14ae191668cc7ac302935ff086a25a6ea</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1492264928</div></td><td class="hidd"><div class="hidd">id_z5279130</div></td></tr><tr class="tbg0" o="id_z6249305"><td><div class="it"><a class="it">/home/machinemagic/public_html/.git/objects/pack/pack-452e58de450083db529086743addf72706dcf904.pack</a></div></td><td align=center><div class="ctd">30/07/2015 16:11:31</div></td><td align=center><div class="ctd">30/07/2015 16:11:31</div></td><td align=center><div class="ctd">3.08 Mb</div></td><td class="hidd"><div class="hidd">c33454642cd669c78a9baa46b546f39fc56b6d25</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1438261891</div></td><td class="hidd"><div class="hidd">id_z6249305</div></td></tr><tr class="tbg1" o="id_z6157232"><td><div class="it"><a class="it">/home/machinemagic/public_html/.git/objects/pack/pack-8497b15fa844cefd4480df4aead9224a1d72505a.pack</a></div></td><td align=center><div class="ctd">12/11/2014 16:11:18</div></td><td align=center><div class="ctd">12/11/2014 16:11:18</div></td><td align=center><div class="ctd">14.88 Mb</div></td><td class="hidd"><div class="hidd">f348ebd5a390a6ef542ca954223b48cf9b88027b</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1415797878</div></td><td class="hidd"><div class="hidd">id_z6157232</div></td></tr><tr class="tbg0" o="id_z7455584"><td><div class="it"><a class="it">/home/machinemagic/public_html/.git/objects/pack/pack-ef69fff855bf6f9ad14bd383dd6ff024518b71d8.pack</a></div></td><td align=center><div class="ctd">01/12/2015 10:39:01</div></td><td align=center><div class="ctd">01/12/2015 10:39:01</div></td><td align=center><div class="ctd">667.97 Kb</div></td><td class="hidd"><div class="hidd">a00f470dfdb68178ebb5647928c15949bbcf1a5c</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1448955541</div></td><td class="hidd"><div class="hidd">id_z7455584</div></td></tr><tr class="tbg1" o="id_z1284387"><td><div class="it"><a class="it">/home/machinemagic/public_html/.git/objects/pack/pack-dc3757b43f5f1e6bb57bcbfa14b31b0c30eee634.pack</a></div></td><td align=center><div class="ctd">19/11/2015 12:21:27</div></td><td align=center><div class="ctd">19/11/2015 12:21:23</div></td><td align=center><div class="ctd">469.88 Mb</div></td><td class="hidd"><div class="hidd">3b54c4841197c6b41371481fbad8d82b6e697c5e</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1447924883</div></td><td class="hidd"><div class="hidd">id_z1284387</div></td></tr><tr class="tbg0" o="id_z5088509"><td><div class="it"><a class="it">/home/machinemagic/public_html/.git/objects/pack/pack-556908ad50d3f96ae12d8249fae97fd787d28939.pack</a></div></td><td align=center><div class="ctd">26/05/2016 12:28:06</div></td><td align=center><div class="ctd">26/05/2016 12:28:06</div></td><td align=center><div class="ctd">11.94 Mb</div></td><td class="hidd"><div class="hidd">9eab6835cdf9da37653fde3297bd256daa5e802a</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1464254886</div></td><td class="hidd"><div class="hidd">id_z5088509</div></td></tr><tr class="tbg1" o="id_z5339840"><td><div class="it"><a class="it">/home/machinemagic/public_html/.git/objects/40/98d3413a3b4ed6aeddd04ca7b35fd91f10a5aa</a></div></td><td align=center><div class="ctd">20/05/2017 23:28:49</div></td><td align=center><div class="ctd">20/05/2017 23:28:49</div></td><td align=center><div class="ctd">4.99 Mb</div></td><td class="hidd"><div class="hidd">bbfedb206bc8a7b41a7ff7944a29a254173aafd8</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1495312129</div></td><td class="hidd"><div class="hidd">id_z5339840</div></td></tr><tr class="tbg0" o="id_z7958309"><td><div class="it"><a class="it">/home/machinemagic/public_html/.git/index</a></div></td><td align=center><div class="ctd">20/05/2017 23:28:49</div></td><td align=center><div class="ctd">20/05/2017 23:28:49</div></td><td align=center><div class="ctd">1.27 Mb</div></td><td class="hidd"><div class="hidd">512d31ef04775a4a01c718b2e2db05c262bae6e0</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1495312129</div></td><td class="hidd"><div class="hidd">id_z7958309</div></td></tr><tr class="tbg1" o="id_z3436056"><td><div class="it"><a class="it">/home/machinemagic/public_html/wp-content/uploads/2015/01/4.jpeg</a></div></td><td align=center><div class="ctd">19/01/2015 16:39:55</div></td><td align=center><div class="ctd">19/01/2015 16:39:55</div></td><td align=center><div class="ctd">800.95 Kb</div></td><td class="hidd"><div class="hidd">f5b9b231f2590bb7f0e6df808a12f9c83ac95e46</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1421674795</div></td><td class="hidd"><div class="hidd">id_z3436056</div></td></tr><tr class="tbg0" o="id_z4105271"><td><div class="it"><a class="it">/home/machinemagic/public_html/wp-content/uploads/2015/02/Kniga_po_Vizard-terapii.compressed.pdf</a></div></td><td align=center><div class="ctd">09/02/2015 14:27:05</div></td><td align=center><div class="ctd">09/02/2015 14:27:05</div></td><td align=center><div class="ctd">1.46 Mb</div></td><td class="hidd"><div class="hidd">f5b9b231f2590bb7f0e6df808a12f9c83ac95e46</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1423481225</div></td><td class="hidd"><div class="hidd">id_z4105271</div></td></tr><tr class="tbg1" o="id_z7431824"><td><div class="it"><a class="it">/home/machinemagic/public_html/wp-content/uploads/2015/02/Osnovy_biologicheskogo_tsentrirovania.compressed.pdf</a></div></td><td align=center><div class="ctd">09/02/2015 14:27:13</div></td><td align=center><div class="ctd">09/02/2015 14:27:13</div></td><td align=center><div class="ctd">3.47 Mb</div></td><td class="hidd"><div class="hidd">f5b9b231f2590bb7f0e6df808a12f9c83ac95e46</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1423481233</div></td><td class="hidd"><div class="hidd">id_z7431824</div></td></tr><tr class="tbg0" o="id_z7912398"><td><div class="it"><a class="it">/home/machinemagic/public_html/wp-content/uploads/2015/02/Manual_dlya_Wizardmachine.pdf</a></div></td><td align=center><div class="ctd">06/02/2015 16:03:28</div></td><td align=center><div class="ctd">06/02/2015 16:03:28</div></td><td align=center><div class="ctd">5.96 Mb</div></td><td class="hidd"><div class="hidd">f5b9b231f2590bb7f0e6df808a12f9c83ac95e46</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1423227808</div></td><td class="hidd"><div class="hidd">id_z7912398</div></td></tr><tr class="tbg1" o="id_z3976130"><td><div class="it"><a class="it">/home/machinemagic/public_html/wp-content/themes/eddiemachado-bones-611c04e/library/js/protocols.js</a></div></td><td align=center><div class="ctd">20/05/2017 15:53:27</div></td><td align=center><div class="ctd">20/05/2017 15:53:27</div></td><td align=center><div class="ctd">1.58 Mb</div></td><td class="hidd"><div class="hidd">207a623358a2ce8ce68200117cc36bb111690fdf</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1495284807</div></td><td class="hidd"><div class="hidd">id_z3976130</div></td></tr><tr class="tbg0" o="id_z6872192"><td><div class="it"><a class="it">/home/machinemagic/public_html/wp-content/themes/eddiemachado-bones-611c04e/library/images/simvoly.008.jpg</a></div></td><td align=center><div class="ctd">16/12/2014 16:27:21</div></td><td align=center><div class="ctd">16/12/2014 16:27:21</div></td><td align=center><div class="ctd">820.79 Kb</div></td><td class="hidd"><div class="hidd">7c68980677811a52b5bd4f2811f36eeb8c004bfb</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1418736441</div></td><td class="hidd"><div class="hidd">id_z6872192</div></td></tr><tr class="tbg1" o="id_z8026774"><td><div class="it"><a class="it">/home/machinemagic/public_html/wp-content/themes/eddiemachado-bones-611c04e/library/images/simvoly.009.jpg</a></div></td><td align=center><div class="ctd">16/12/2014 16:27:21</div></td><td align=center><div class="ctd">16/12/2014 16:27:21</div></td><td align=center><div class="ctd">897.82 Kb</div></td><td class="hidd"><div class="hidd">ac6e81fe438824eb2c9c7daf8f68dccab44e15eb</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1418736441</div></td><td class="hidd"><div class="hidd">id_z8026774</div></td></tr><tr class="tbg0" o="id_z5434020"><td><div class="it"><a class="it">/home/machinemagic/public_html/wp-content/themes/eddiemachado-bones-611c04e/library/images/bg_wizard.jpg</a></div></td><td align=center><div class="ctd">20/11/2014 11:50:29</div></td><td align=center><div class="ctd">20/11/2014 11:50:29</div></td><td align=center><div class="ctd">750.58 Kb</div></td><td class="hidd"><div class="hidd">019c3eda05b70a7170e6aa082b179c401d9f4c09</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1416473429</div></td><td class="hidd"><div class="hidd">id_z5434020</div></td></tr><tr class="tbg1" o="id_z1424280"><td><div class="it"><a class="it">/home/machinemagic/public_html/wp-content/themes/twentyfourteen/screenshot.png</a></div></td><td align=center><div class="ctd">21/04/2016 12:06:41</div></td><td align=center><div class="ctd">21/04/2016 12:06:41</div></td><td align=center><div class="ctd">911.43 Kb</div></td><td class="hidd"><div class="hidd">8130211fa482d047a86da49281fe62d0d2aaa264</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1461229601</div></td><td class="hidd"><div class="hidd">id_z1424280</div></td></tr><tr class="tbg0" o="id_z4109102"><td><div class="it"><a class="it">/home/machinemagic/public_html/wp-includes/js/zxcvbn.min.js</a></div></td><td align=center><div class="ctd">12/11/2014 16:11:18</div></td><td align=center><div class="ctd">12/11/2014 16:11:18</div></td><td align=center><div class="ctd">682.35 Kb</div></td><td class="hidd"><div class="hidd">ce299353e317018aa779acb5785cd739f917b316</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1415797878</div></td><td class="hidd"><div class="hidd">id_z4109102</div></td></tr><tr class="tbg1" o="id_z7086099"><td><div class="it"><a class="it">/home/machinemagic/public_html/machine-magic/wp-content/themes/twentyfourteen/screenshot.png</a></div></td><td align=center><div class="ctd">30/07/2015 16:11:38</div></td><td align=center><div class="ctd">30/07/2015 16:11:38</div></td><td align=center><div class="ctd">602.79 Kb</div></td><td class="hidd"><div class="hidd">8130211fa482d047a86da49281fe62d0d2aaa264</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1438261898</div></td><td class="hidd"><div class="hidd">id_z7086099</div></td></tr><tr class="tbg0" o="id_z8416199"><td><div class="it"><a class="it">/home/machinemagic/public_html/machine-magic/wp-includes/js/zxcvbn.min.js</a></div></td><td align=center><div class="ctd">30/07/2015 16:11:38</div></td><td align=center><div class="ctd">30/07/2015 16:11:38</div></td><td align=center><div class="ctd">682.35 Kb</div></td><td class="hidd"><div class="hidd">ce299353e317018aa779acb5785cd739f917b316</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1438261898</div></td><td class="hidd"><div class="hidd">id_z8416199</div></td></tr><tr class="tbg1" o="id_z4848435"><td><div class="it"><a class="it">/home/machinemagic/public_html/machine-magic/aaa.git/objects/pack/pack-b16aec8a117204c358c7ffe3e3273a48b59dc87d.pack</a></div></td><td align=center><div class="ctd">30/07/2015 16:11:38</div></td><td align=center><div class="ctd">30/07/2015 16:11:38</div></td><td align=center><div class="ctd">19.24 Mb</div></td><td class="hidd"><div class="hidd">2c76fa9d0bed66f96ac1e235fdaa432ad9cc5591</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1438261898</div></td><td class="hidd"><div class="hidd">id_z4848435</div></td></tr></tbody></table></div><div class=clear style="margin: 20px 0 0 0"></div></div><div class="note_warn">В не .php файле содержится стартовая сигнатура PHP кода. Возможно, там вредоносный код</div><div class="warn"><div class="flist"><table cellspacing=1 cellpadding=4 border=0 id="table_1344597"><thead><tr class="tbgh0"><th width=70%>Путь</th><th>Изменение свойств</th><th>Изменение содержимого</th><th width=90>Размер</th><th width=0 class="hidd">CRC32</th><th width=0 class="hidd"></th><th width=0 class="hidd"></th><th width=0 class="hidd"></th></tr></thead><tbody><tr class="tbg0" o="id_z1905317"><td><div class="it"><a class="it">/home/machinemagic/public_html/wp-content/plugins/advanced-custom-fields/lang/acf-he_IL.po</a></div><div class="details"><span class="line_no">1</span>…#&lt;p class=&quot;description&quot;&gt;&lt;?php _e(&quot;Instructions for authors.Shown when submitting<span class="marker">&nbsp;</span>data&quot;,&#039;acf&#039;);?&gt;&lt;/p&gt;&lt;/td&gt;#wpml-name: 3b6814f581ce44458452b7b17ae1efa5 msgid &quot;Fie</div></td><td align=center><div class="ctd">21/04/2016 12:05:08</div></td><td align=center><div class="ctd">21/04/2016 12:05:08</div></td><td align=center><div class="ctd">118.22 Kb</div></td><td class="hidd"><div class="hidd">0966471b50200168418879af820de0d20288c8be</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1461229508</div></td><td class="hidd"><div class="hidd">id_z1905317</div></td></tr><tr class="tbg1" o="id_z4671905"><td><div class="it"><a class="it">/home/machinemagic/public_html/wp-content/plugins/si-captcha-for-wordpress/readme.txt</a></div><div class="details"><span class="line_no">1</span>…ve it up if it is below the comment textarea.(WP3 series) Since WP3 there is new<span class="marker">&nbsp;</span>function comment_form inside `/wp-includes/comment-template.php`.Your is theme</div></td><td align=center><div class="ctd">21/04/2016 12:05:27</div></td><td align=center><div class="ctd">21/04/2016 12:05:27</div></td><td align=center><div class="ctd">28.65 Kb</div></td><td class="hidd"><div class="hidd">7053494658d5cf34807abe8a11372027cd7e1499</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1461229527</div></td><td class="hidd"><div class="hidd">id_z4671905</div></td></tr><tr class="tbg0" o="id_z6677058"><td><div class="it"><a class="it">/home/machinemagic/public_html/wp-content/plugins/easy-fancybox/readme.txt</a></div><div class="details"><span class="line_no">1</span>…#anyID&quot;` to `href=&quot;http://yoursite.url/page/#anyID&quot;`,disabling inline content sh<span class="marker">&nbsp;</span>own in FancyBox.- **Wordpress Firewall 2** blocks access to image files needed </div></td><td align=center><div class="ctd">19/11/2015 11:17:20</div></td><td align=center><div class="ctd">19/11/2015 11:17:20</div></td><td align=center><div class="ctd">38.69 Kb</div></td><td class="hidd"><div class="hidd">d90eea628a999cf59ccd9329cd1e85c49ac76c80</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1447921040</div></td><td class="hidd"><div class="hidd">id_z6677058</div></td></tr><tr class="tbg1" o="id_z4583929"><td><div class="it"><a class="it">/home/machinemagic/public_html/wp-includes/js/customize-loader.js</a></div><div class="details"><span class="line_no">1</span>…ze&quot; href=&quot;&lt;?php  echo wp_customize_url();?&gt;&quot;&gt;Open Customizer&lt;/a&gt;* * augments wp.c<span class="marker">&nbsp;</span>ustomize.Events */ Loader=$.extend({},api.Events,{/** * Setup the Loader;trigge</div></td><td align=center><div class="ctd">21/04/2016 12:04:51</div></td><td align=center><div class="ctd">21/04/2016 12:04:51</div></td><td align=center><div class="ctd">6.89 Kb</div></td><td class="hidd"><div class="hidd">09d5ae8ebdaaa7082f28a2d10d0d0f0ef704dee3</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1461229491</div></td><td class="hidd"><div class="hidd">id_z4583929</div></td></tr><tr class="tbg0" o="id_z1552011"><td><div class="it"><a class="it">/home/machinemagic/public_html/machine-magic/wp-content/plugins/si-captcha-for-wordpress/readme.txt</a></div><div class="details"><span class="line_no">1</span>… the comment textarea.(WP3 series) Since WP3 there is new function comment_form<span class="marker">&nbsp;</span>inside `/wp-includes/comment-template.php`.Your is theme probably not up to cur</div></td><td align=center><div class="ctd">30/07/2015 16:11:38</div></td><td align=center><div class="ctd">30/07/2015 16:11:38</div></td><td align=center><div class="ctd">29.28 Kb</div></td><td class="hidd"><div class="hidd">3c7813ecb09a0793937ccf56ef93366d83edf4a8</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1438261898</div></td><td class="hidd"><div class="hidd">id_z1552011</div></td></tr></tbody></table></div><div class=clear style="margin: 20px 0 0 0"></div></div>
+<div class="note_warn">Версии найденных CMS<br/>PhpBB v3.1.x<br />
+Wordpress v4.0<br />
+Wordpress v4.5.2</div>
+ 
+	<div class="footer">
+	   <div class="disclaimer"><span class="vir">[!]</span> Отказ от гарантий: невозможно гарантировать обнаружение всех вредоносных скриптов. Поэтому разработчик сканера не несет ответственности за возможные последствия работы сканера AI-Bolit или неоправданные ожидания пользователей относительно функциональности и возможностей.
+   </div>
+   <div class="thanx">
+      Замечания и предложения по работе скрипта, а также не обнаруженные вредоносные скрипты вы можете присылать на <a href="mailto:ai@revisium.com">ai@revisium.com</a>.<br/>
+      Также будем чрезвычайно благодарны за любые упоминания сканера AI-Bolit на вашем сайте, в блоге, среди друзей, знакомых и клиентов. <br/>Ссылку можно поставить на страницу <a href="https://revisium.com/ai/">https://revisium.com/ai/</a>.<br/> 
+     <p>Получить консультацию или задать вопросы можно по email <a href="mailto:ai@revisium.com">ai@revisium.com</a>.</p> 
+	</div>
+	</div>
+	
+<script language="javascript">
+
+function hsig(id) {
+  var divs = document.getElementsByTagName("tr");
+  for(var i = 0; i < divs.length; i++){
+     
+     if (divs[i].getAttribute('o') == id) {
+        divs[i].innerHTML = '';
+     }
+  }
+
+  return false;
+}
+
+
+$(document).ready(function(){
+    $('#table_crit').dataTable({
+       "aLengthMenu": [[100 , 500, -1], [100, 500, "All"]],
+       "aoColumns": [
+                                     {"iDataSort": 7, "width":"70%"},
+                                     {"iDataSort": 5},
+                                     {"iDataSort": 6},
+                                     {"bSortable": true},
+                                     {"bVisible": false},
+                                     {"bVisible": false},
+                                     {"bVisible": false},
+                                     {"bVisible": false}
+                     ],
+		"paging": true,
+       "iDisplayLength": 500,
+		"oLanguage": {
+			"sLengthMenu": "Отображать по _MENU_ записей",
+			"sZeroRecords": "Ничего не найдено",
+			"sInfo": "Отображается c _START_ по _END_ из _TOTAL_ файлов",
+			"sInfoEmpty": "Нет файлов",
+			"sInfoFiltered": "(всего записей _MAX_)",
+			"sSearch":       "Поиск:",
+			"sUrl":          "",
+			"oPaginate": {
+				"sFirst": "Первая",
+				"sPrevious": "Предыдущая",
+				"sNext": "Следующая",
+				"sLast": "Последняя"
+			},
+			"oAria": {
+				"sSortAscending": ": активировать для сортировки столбца по возрастанию",
+				"sSortDescending": ": активировать для сортировки столбцов по убыванию"	
+			}
+		}
+
+     } );
+
+});
+
+$(document).ready(function(){
+    $('#table_vir').dataTable({
+       "aLengthMenu": [[100 , 500, -1], [100, 500, "All"]],
+		"paging": true,
+       "aoColumns": [
+                                     {"iDataSort": 7, "width":"70%"},
+                                     {"iDataSort": 5},
+                                     {"iDataSort": 6},
+                                     {"bSortable": true},
+                                     {"bVisible": false},
+                                     {"bVisible": false},
+                                     {"bVisible": false},
+                                     {"bVisible": false}
+                     ],
+       "iDisplayLength": 500,
+		"oLanguage": {
+			"sLengthMenu": "Отображать по _MENU_ записей",
+			"sZeroRecords": "Ничего не найдено",
+			"sInfo": "Отображается c _START_ по _END_ из _TOTAL_ файлов",
+			"sInfoEmpty": "Нет файлов",
+			"sInfoFiltered": "(всего записей _MAX_)",
+			"sSearch":       "Поиск:",
+			"sUrl":          "",
+			"oPaginate": {
+				"sFirst": "Первая",
+				"sPrevious": "Предыдущая",
+				"sNext": "Следующая",
+				"sLast": "Последняя"
+			},
+			"oAria": {
+				"sSortAscending":  ": активировать для сортировки столбца по возрастанию",
+				"sSortDescending": ": активировать для сортировки столбцов по убыванию"	
+			}
+		},
+
+     } );
+
+});
+
+if ($('#table_warn0')) {
+    $('#table_warn0').dataTable({
+       "aLengthMenu": [[100 , 500, -1], [100, 500, "All"]],
+		"paging": true,
+       "aoColumns": [
+                                     {"iDataSort": 7, "width":"70%"},
+                                     {"iDataSort": 5},
+                                     {"iDataSort": 6},
+                                     {"bSortable": true},
+                                     {"bVisible": false},
+                                     {"bVisible": false},
+                                     {"bVisible": false},
+                                     {"bVisible": false}
+                     ],
+			         "iDisplayLength": 500,
+			  		"oLanguage": {
+			  			"sLengthMenu": "Отображать по _MENU_ записей",
+			  			"sZeroRecords": "Ничего не найдено",
+			  			"sInfo": "Отображается c _START_ по _END_ из _TOTAL_ файлов",
+			  			"sInfoEmpty": "Нет файлов",
+			  			"sInfoFiltered": "(всего записей _MAX_)",
+			  			"sSearch":       "Поиск:",
+			  			"sUrl":          "",
+			  			"oPaginate": {
+			  				"sFirst": "Первая",
+			  				"sPrevious": "Предыдущая",
+			  				"sNext": "Следующая",
+			  				"sLast": "Последняя"
+			  			},
+			  			"oAria": {
+			  				"sSortAscending":  ": активировать для сортировки столбца по возрастанию",
+			  				"sSortDescending": ": активировать для сортировки столбцов по убыванию"	
+			  			}
+		}
+
+     } );
+}
+
+if ($('#table_warn1')) {
+    $('#table_warn1').dataTable({
+       "aLengthMenu": [[100 , 500, -1], [100, 500, "All"]],
+		"paging": true,
+       "aoColumns": [
+                                     {"iDataSort": 7, "width":"70%"},
+                                     {"iDataSort": 5},
+                                     {"iDataSort": 6},
+                                     {"bSortable": true},
+                                     {"bVisible": false},
+                                     {"bVisible": false},
+                                     {"bVisible": false},
+                                     {"bVisible": false}
+                     ],
+			         "iDisplayLength": 500,
+			  		"oLanguage": {
+			  			"sLengthMenu": "Отображать по _MENU_ записей",
+			  			"sZeroRecords": "Ничего не найдено",
+			  			"sInfo": "Отображается c _START_ по _END_ из _TOTAL_ файлов",
+			  			"sInfoEmpty": "Нет файлов",
+			  			"sInfoFiltered": "(всего записей _MAX_)",
+			  			"sSearch":       "Поиск:",
+			  			"sUrl":          "",
+			  			"oPaginate": {
+			  				"sFirst": "Первая",
+			  				"sPrevious": "Предыдущая",
+			  				"sNext": "Следующая",
+			  				"sLast": "Последняя"
+			  			},
+			  			"oAria": {
+			  				"sSortAscending":  ": активировать для сортировки столбца по возрастанию",
+			  				"sSortDescending": ": активировать для сортировки столбцов по убыванию"	
+			  			}
+		}
+
+     } );
+}
+
+
+</script>
+<!-- [][263883]  -->
+ </body>
+</html>
