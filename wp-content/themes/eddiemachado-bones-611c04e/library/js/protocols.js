@@ -1066,6 +1066,7 @@
                 });
                 if (count_animation <= 172){
                     jQuery('#draggable3').css({
+                        transform: 'scale(1)',
                         background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/life_vater.png) 0 0/100% no-repeat'
                     });
                 } else {
