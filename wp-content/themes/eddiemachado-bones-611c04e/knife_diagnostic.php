@@ -870,18 +870,15 @@
                                   sodipodi:nodetypes="cccc" /></svg>
                             </li>
                             <li id="draggable5" class="itemlist_item itemlist_item_dr item_list__mid draggable" style="left: 197px; top: 203px;">V5</li>
-                            <li id="draggableD1" class="itemlist_item itemlist_item_dr item_list__mid draggable" style="left: 149px; top: 30px;">D+</li>
                             <li id="draggableD_6" class="itemlist_item itemlist_item_dr item_list__mid draggable" style="left: 170px; top: 365px;">D6</li>
                             <li id="draggableClean" class="itemlist_item itemlist_item_dr item_list__mid itemlist_item__clear draggable" style="left: -15px; top: 94px;"></li>
                             <li id="draggableS2" class="itemlist_item itemlist_item_dr item_list__mid draggable" style="left: 241px; top: 76px;">S2</li>
                             <li id="draggableS2_1" class="itemlist_item itemlist_item_dr item_list__mid draggable" style="left: 241px; top: 114px;">S2</li>
-                            <li id="draggableSh" class="itemlist_item itemlist_item_dr item_list__mid draggable" style="left: 299px; top: 98px;">SH</li>
                             <li id="draggableS3" class="itemlist_item itemlist_item_dr item_list__mid draggable" style="left: 235px; top: 150px;">S3</li>
                             <li id="draggableS4" class="itemlist_item itemlist_item_dr item_list__mid draggable" style="left: 235px; top: 190px;">S4</li>
                             <li id="draggableS5" class="itemlist_item itemlist_item_dr item_list__mid draggable" style="left: 235px; top: 250px;">S5</li>
                             <li id="draggableS6" class="itemlist_item itemlist_item_dr item_list__mid draggable" style="left: 228px; top: 365px;">S6</li>
                             <li id="draggableVD" class="itemlist_item itemlist_item_dr item_list__mid draggable" style="left: 197px; top: 440px;">V-</li>
-                            <li id="draggableS1" class="itemlist_item itemlist_item_dr item_list__mid draggable" style="left: 243px; top: 30px;">S+</li>
                             <li id="draggableD2" class="itemlist_item itemlist_item_dr item_list__mid draggable" style="left: 150px; top: 75px;">D2</li>
                             <li id="draggableD3" class="itemlist_item itemlist_item_dr item_list__mid draggable" style="left: 160px; top: 150px;">D3</li>
                             <li id="draggableD5" class="itemlist_item itemlist_item_dr item_list__mid draggable" style="left: 160px; top: 250px;">D5</li>
