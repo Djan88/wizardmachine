@@ -1449,7 +1449,7 @@
                                         cur_animation_val = 0;
                                         rotateVal = 0;
                                         count_animation = 1;
-                                        ringStatus();
+                                        ringStatus(); 
                                         tickSound.stop();
                             //Этап 5-1-1
                                         phaseSeven_one = setInterval(function(){
@@ -2048,7 +2048,6 @@
                                                                                                                                                                                         borderColor: 'transparent'
                                                                                                                                                                                     });
                                                                                                                                                                                 count_animation += 1;
-                                                                                                                                                                                console.log(count_animation);
                                                                                                                                                                                 if(count_animation <= 21){
                                                                                                                                                                                     cur_animation_val += 9;
                                                                                                                                                                                     d12Val+= 9;
@@ -2100,7 +2099,7 @@
                                                                                                                                                                                     .text('Выполнить')
                                                                                                                                                                                     .removeClass('btn__wizard_inAction');
                                                                                                                                                                            } 
-                                                                                                                                                                        }, 3000);
+                                                                                                                                                                        }, 4000);
                                                                                                                                                                     }
                                                                                                                                                                 }, 1000);
                                                                                                                                                             }
