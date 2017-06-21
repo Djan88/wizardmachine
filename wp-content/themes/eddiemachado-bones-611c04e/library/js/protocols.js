@@ -1152,7 +1152,6 @@
                 cur_animation_val = 0;
                 rotateVal = 0;
                 count_animation = 1;
-                tickSound.play();
                 phaseOne = setInterval(function(){
                     if (count_animation <= 344){                                                                         //90
                         jQuery('#draggable3, #draggableS3').css({
@@ -1251,7 +1250,6 @@
                         cur_animation_val = 0;
                         rotateVal = 0;
                         count_animation = 1;
-                        tickSound.play();
                         phaseOne = setInterval(function(){
                             if (count_animation <= 344){                                                                         //90
                                 jQuery('#draggable4').css({
@@ -1350,7 +1348,6 @@
                                 cur_animation_val = 0;
                                 rotateVal = 0;
                                 count_animation = 1;
-                                tickSound.play();
                                 phaseOne = setInterval(function(){
                                     if (count_animation <= 344){                                                                         //90
                                         jQuery('#draggableD4, #draggableS4').css({
@@ -1427,17 +1424,6 @@
                                             paddingTop: '5px',
                                             zIndex: '1'
                                         });
-                                        phaseTwo = setInterval(function(){
-                                            if (reloadTime <= 1){                                                                       //1
-                                                tickSound.stop();
-                                                reloadSound.play();
-                                                reloadTime += 1;
-                                            } else {
-                                                clearInterval(phaseTwo);
-                                                reloadSound.stop();
-                                                tickSound.play();
-                                            }
-                                        }, 250);
                                         jQuery('.box_rounded').css('transform', 'rotate(0deg) scale(1)');
                                         jQuery('#draggableD12').css('transform', 'rotate(0deg)');
                                         jQuery('.chart').data('easyPieChart').update(56);
