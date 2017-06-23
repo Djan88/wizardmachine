@@ -1050,6 +1050,8 @@
         rotateVal = 0;
         count_animation = 1;
         tickSound.play();
+        jQuery('.prot_stage').removeClass('hidden')
+        jQuery('.prot_stage').text('ФАЗА 1 из 7');
         phaseOne = setInterval(function(){
             if (count_animation <= 344){                                                                         //90
                 jQuery('#draggable3, #draggableD2, #draggableD3').css({
@@ -1152,6 +1154,7 @@
                 cur_animation_val = 0;
                 rotateVal = 0;
                 count_animation = 1;
+                jQuery('.prot_stage').text('ФАЗА 2 из 7');
                 phaseOne = setInterval(function(){
                     if (count_animation <= 344){                                                                         //90
                         jQuery('#draggable3, #draggableS3').css({
@@ -1250,6 +1253,7 @@
                         cur_animation_val = 0;
                         rotateVal = 0;
                         count_animation = 1;
+                        jQuery('.prot_stage').text('ФАЗА 3 из 7');
                         phaseOne = setInterval(function(){
                             if (count_animation <= 344){                                                                         //90
                                 jQuery('#draggable4').css({
@@ -1348,6 +1352,7 @@
                                 cur_animation_val = 0;
                                 rotateVal = 0;
                                 count_animation = 1;
+                                jQuery('.prot_stage').text('ФАЗА 4 из 7');
                                 phaseOne = setInterval(function(){
                                     if (count_animation <= 344){                                                                         //90
                                         jQuery('#draggableD4, #draggableS4').css({
@@ -1437,6 +1442,7 @@
                                         count_animation = 1;
                                         ringStatus(); 
                                         tickSound.stop();
+                                        jQuery('.prot_stage').text('ФАЗА 5 из 7');
                             //Этап 5-1-1
                                         phaseSeven_one = setInterval(function(){
                                             if (count_animation <= 22){                                                                         //22
@@ -1714,6 +1720,7 @@
                                                                                                         cur_animation_val = 0;
                                                                                                         rotateVal = 0;
                                                                                                         count_animation = 1;
+                                                                                                        jQuery('.prot_stage').text('ФАЗА 6 из 7');
                                                                                             //Этап 6-1-1
                                                                                                         phaseSeven_one = setInterval(function(){
                                                                                                             if (count_animation <= 22){                                                                         //22
@@ -1991,6 +1998,7 @@
                                                                                                                                                                         cur_animation_val = 0;
                                                                                                                                                                         rotateVal = 0;
                                                                                                                                                                         count_animation = 1;
+                                                                                                                                                                        jQuery('.prot_stage').text('ФАЗА 7 из 7');
                                                                                                                                                                         phaseOne = setInterval(function(){
                                                                                                                                                                             if (count_animation <= 60){                                                                         //120
                                                                                                                                                                                 jQuery('#draggable3, #draggable4, #draggable1').css({
@@ -13110,6 +13118,8 @@ demo = function(){
     rotateVal = 0;
     count_animation = 1;
     ringStatus();
+    jQuery('.prot_stage').removeClass('hidden')
+    jQuery('.prot_stage').text('ФАЗА 1 из 9');
     phaseOne = setInterval(function(){
         if (count_animation <= 40){                                                                         //120
             cur_animation_val += 6;
@@ -13157,6 +13167,7 @@ demo = function(){
             count_animation = 1;
             tickSound.play();
             ringStatus();
+            jQuery('.prot_stage').text('ФАЗА 2 из 9');
             phaseOne = setInterval(function(){
                 if (count_animation <= 344){                                                                         //90
                     jQuery('#draggable2, #draggable3, #draggable4').css({
@@ -13241,6 +13252,7 @@ demo = function(){
                     cur_animation_val = 0;
                     rotateVal = 0;
                     count_animation = 1;
+                    jQuery('.prot_stage').text('ФАЗА 3 из 9');
                     phaseOne = setInterval(function(){
                         if (count_animation <= 344){
                             jQuery('#draggable2, #draggable3, #draggable4').css({
@@ -13319,6 +13331,7 @@ demo = function(){
                             count_animation = 1;
                             tickSound.stop();
                             ringStatus();
+                            jQuery('.prot_stage').text('ФАЗА 4 из 9');
                 //Этап 4-1-1
                             phaseSeven_one = setInterval(function(){
                                 if (count_animation <= 22){                                                                         //22
@@ -13460,6 +13473,7 @@ demo = function(){
                                                             cur_animation_val = 0;
                                                             rotateVal = 0;
                                                             count_animation = 1;
+                                                            jQuery('.prot_stage').text('ФАЗА 5 из 9');
                                                 //Этап 5-1-1
                                                             phaseSeven_one = setInterval(function(){
                                                                 if (count_animation <= 22){                                                                         //22
@@ -13601,6 +13615,7 @@ demo = function(){
                                                                                             cur_animation_val = 0;
                                                                                             rotateVal = 0;
                                                                                             count_animation = 1;
+                                                                                            jQuery('.prot_stage').text('ФАЗА 6 из 9');
                                                                                 //Этап 6-1-1
                                                                                             phaseSeven_one = setInterval(function(){
                                                                                                 if (count_animation <= 22){                                                                         //22
@@ -13742,6 +13757,7 @@ demo = function(){
                                                                                                                             cur_animation_val = 0;
                                                                                                                             rotateVal = 0;
                                                                                                                             count_animation = 1;
+                                                                                                                            jQuery('.prot_stage').text('ФАЗА 7 из 9');
                                                                                                                             phaseOne = setInterval(function(){
                                                                                                                                 if (count_animation <= 40){                                                                         //120
                                                                                                                                     cur_animation_val += 6;
@@ -13781,6 +13797,7 @@ demo = function(){
                                                                                                                                     cur_animation_val = 0;
                                                                                                                                     rotateVal = 0;
                                                                                                                                     count_animation = 1;
+                                                                                                                                    jQuery('.prot_stage').text('ФАЗА 8 из 9');
                                                                                                                                     phaseOne = setInterval(function(){
                                                                                                                                         if (count_animation <= 40){                                                                         //120
                                                                                                                                             cur_animation_val += 6;
@@ -13820,6 +13837,7 @@ demo = function(){
                                                                                                                                             cur_animation_val = 0;
                                                                                                                                             rotateVal = 0;
                                                                                                                                             count_animation = 1;
+                                                                                                                                            jQuery('.prot_stage').text('ФАЗА 9 из 9');
                                                                                                                                             phaseOne = setInterval(function(){
                                                                                                                                                 if (count_animation <= 40){                                                                         //120
                                                                                                                                                     cur_animation_val += 6;
@@ -13909,6 +13927,8 @@ mmt = function(){
     cur_animation_val = 0;
     rotateVal = 0;
     count_animation = 1;
+    jQuery('.prot_stage').removeClass('hidden')
+    jQuery('.prot_stage').text('ФАЗА 1 из 24');
     phaseOne = setInterval(function(){
         if (count_animation <= 90){                                                                         //120
             jQuery('#draggableD3, #draggableS2').css({
@@ -13988,6 +14008,7 @@ mmt = function(){
             cur_animation_val = 0;
             rotateVal = 0;
             count_animation = 1;
+            jQuery('.prot_stage').text('ФАЗА 2 из 24');
             phaseOne = setInterval(function(){
                 if (count_animation <= 90){                                                                         //120
                     jQuery('#draggableD3, #draggableS2').css({
@@ -14067,6 +14088,7 @@ mmt = function(){
                     cur_animation_val = 0;
                     rotateVal = 0;
                     count_animation = 1;
+                    jQuery('.prot_stage').text('ФАЗА 3 из 24');
                     phaseOne = setInterval(function(){
                         if (count_animation <= 90){                                                                         //120
                             jQuery('#draggableD3, #draggableS2').css({
@@ -14144,6 +14166,7 @@ mmt = function(){
                             cur_animation_val = 0;
                             rotateVal = 0;
                             count_animation = 1;
+                            jQuery('.prot_stage').text('ФАЗА 4 из 24');
                             phaseOne = setInterval(function(){
                                 if (count_animation <= 60){                                                                         //120
                                     jQuery('#draggableD3, #draggableS2').css({
@@ -14241,6 +14264,7 @@ mmt = function(){
                                     cur_animation_val = 0;
                                     rotateVal = 0;
                                     count_animation = 1;
+                                    jQuery('.prot_stage').text('ФАЗА 5 из 24');
                                     phaseOne = setInterval(function(){
                                         if (count_animation <= 60){                                                                         //120
                                             jQuery('#draggableD3, #draggableS2').css({
@@ -14338,6 +14362,7 @@ mmt = function(){
                                             cur_animation_val = 0;
                                             rotateVal = 0;
                                             count_animation = 1;
+                                            jQuery('.prot_stage').text('ФАЗА 6 из 24');
                                             phaseOne = setInterval(function(){
                                                 if (count_animation <= 90){                                                                         //120
                                                     jQuery('#draggableD3, #draggableS3').css({
@@ -14417,6 +14442,7 @@ mmt = function(){
                                                     cur_animation_val = 0;
                                                     rotateVal = 0;
                                                     count_animation = 1;
+                                                    jQuery('.prot_stage').text('ФАЗА 7 из 24');
                                                     phaseOne = setInterval(function(){
                                                         if (count_animation <= 90){                                                                         //120
                                                             jQuery('#draggableD3, #draggableS3').css({
@@ -14496,6 +14522,7 @@ mmt = function(){
                                                             cur_animation_val = 0;
                                                             rotateVal = 0;
                                                             count_animation = 1;
+                                                            jQuery('.prot_stage').text('ФАЗА 8 из 24');
                                                             phaseOne = setInterval(function(){
                                                                 if (count_animation <= 90){                                                                         //120
                                                                     jQuery('#draggableD3, #draggableS3').css({
@@ -14573,6 +14600,7 @@ mmt = function(){
                                                                     cur_animation_val = 0;
                                                                     rotateVal = 0;
                                                                     count_animation = 1;
+                                                                    jQuery('.prot_stage').text('ФАЗА 9 из 24');
                                                                     phaseOne = setInterval(function(){
                                                                         if (count_animation <= 60){                                                                         //120
                                                                             jQuery('#draggableD3, #draggableS3').css({
@@ -14670,6 +14698,7 @@ mmt = function(){
                                                                             cur_animation_val = 0;
                                                                             rotateVal = 0;
                                                                             count_animation = 1;
+                                                                            jQuery('.prot_stage').text('ФАЗА 10 из 24');
                                                                             phaseOne = setInterval(function(){
                                                                                 if (count_animation <= 60){                                                                         //120
                                                                                     jQuery('#draggableD3, #draggableS3').css({
@@ -14767,6 +14796,7 @@ mmt = function(){
                                                                                     cur_animation_val = 0;
                                                                                     rotateVal = 0;
                                                                                     count_animation = 1;
+                                                                                    jQuery('.prot_stage').text('ФАЗА 11 из 24');
                                                                                     phaseOne = setInterval(function(){
                                                                                         if (count_animation <= 90){                                                                         //120
                                                                                             jQuery('#draggableD3, #draggableS4').css({
@@ -14846,6 +14876,7 @@ mmt = function(){
                                                                                             cur_animation_val = 0;
                                                                                             rotateVal = 0;
                                                                                             count_animation = 1;
+                                                                                            jQuery('.prot_stage').text('ФАЗА 12 из 24');
                                                                                             phaseOne = setInterval(function(){
                                                                                                 if (count_animation <= 90){                                                                         //120
                                                                                                     jQuery('#draggableD3, #draggableS4').css({
@@ -14925,6 +14956,7 @@ mmt = function(){
                                                                                                     cur_animation_val = 0;
                                                                                                     rotateVal = 0;
                                                                                                     count_animation = 1;
+                                                                                                    jQuery('.prot_stage').text('ФАЗА 13 из 24');
                                                                                                     phaseOne = setInterval(function(){
                                                                                                         if (count_animation <= 90){                                                                         //120
                                                                                                             jQuery('#draggableD3, #draggableS4').css({
@@ -15005,6 +15037,7 @@ mmt = function(){
                                                                                                             cur_animation_val = 0;
                                                                                                             rotateVal = 0;
                                                                                                             count_animation = 1;
+                                                                                                            jQuery('.prot_stage').text('ФАЗА 14 из 24');
                                                                                                             phaseOne = setInterval(function(){
                                                                                                                 if (count_animation <= 60){                                                                         //120
                                                                                                                     jQuery('#draggableD3, #draggableS4').css({
@@ -15102,6 +15135,7 @@ mmt = function(){
                                                                                                                     cur_animation_val = 0;
                                                                                                                     rotateVal = 0;
                                                                                                                     count_animation = 1;
+                                                                                                                    jQuery('.prot_stage').text('ФАЗА 15 из 24');
                                                                                                                     phaseOne = setInterval(function(){
                                                                                                                         if (count_animation <= 60){                                                                         //120
                                                                                                                             jQuery('#draggableD3, #draggableS4').css({
@@ -15199,6 +15233,7 @@ mmt = function(){
                                                                                                                             cur_animation_val = 0;
                                                                                                                             rotateVal = 0;
                                                                                                                             count_animation = 1;
+                                                                                                                            jQuery('.prot_stage').text('ФАЗА 16 из 24');
                                                                                                                             phaseOne = setInterval(function(){
                                                                                                                                 if (count_animation <= 90){                                                                         //120
                                                                                                                                     jQuery('#draggableD3, #draggableD5').css({
@@ -15278,6 +15313,7 @@ mmt = function(){
                                                                                                                                     cur_animation_val = 0;
                                                                                                                                     rotateVal = 0;
                                                                                                                                     count_animation = 1;
+                                                                                                                                    jQuery('.prot_stage').text('ФАЗА 17 из 24');
                                                                                                                                     phaseOne = setInterval(function(){
                                                                                                                                         if (count_animation <= 90){                                                                         //120
                                                                                                                                             jQuery('#draggableD3, #draggableD5').css({
@@ -15357,6 +15393,7 @@ mmt = function(){
                                                                                                                                             cur_animation_val = 0;
                                                                                                                                             rotateVal = 0;
                                                                                                                                             count_animation = 1;
+                                                                                                                                            jQuery('.prot_stage').text('ФАЗА 18 из 24');
                                                                                                                                             phaseOne = setInterval(function(){
                                                                                                                                                 if (count_animation <= 60){                                                                         //120
                                                                                                                                                     jQuery('#draggableD3, #draggableD5').css({
@@ -15454,6 +15491,7 @@ mmt = function(){
                                                                                                                                                     cur_animation_val = 0;
                                                                                                                                                     rotateVal = 0;
                                                                                                                                                     count_animation = 1;
+                                                                                                                                                    jQuery('.prot_stage').text('ФАЗА 19 из 24');
                                                                                                                                                     phaseOne = setInterval(function(){
                                                                                                                                                         if (count_animation <= 60){                                                                         //120
                                                                                                                                                             jQuery('#draggableD3, #draggableD5').css({
@@ -15551,6 +15589,7 @@ mmt = function(){
                                                                                                                                                             cur_animation_val = 0;
                                                                                                                                                             rotateVal = 0;
                                                                                                                                                             count_animation = 1;
+                                                                                                                                                            jQuery('.prot_stage').text('ФАЗА 20 из 24');
                                                                                                                                                             phaseOne = setInterval(function(){
                                                                                                                                                                 if (count_animation <= 60){                                                                         //120
                                                                                                                                                                     jQuery('#draggableD3, #draggableS4').css({
@@ -15648,6 +15687,7 @@ mmt = function(){
                                                                                                                                                                     cur_animation_val = 0;
                                                                                                                                                                     rotateVal = 0;
                                                                                                                                                                     count_animation = 1;
+                                                                                                                                                                    jQuery('.prot_stage').text('ФАЗА 21 из 24');
                                                                                                                                                                     phaseOne = setInterval(function(){
                                                                                                                                                                         if (count_animation <= 90){                                                                         //120
                                                                                                                                                                             jQuery('#draggableD3, #draggable1').css({
@@ -15727,6 +15767,7 @@ mmt = function(){
                                                                                                                                                                             cur_animation_val = 0;
                                                                                                                                                                             rotateVal = 0;
                                                                                                                                                                             count_animation = 1;
+                                                                                                                                                                            jQuery('.prot_stage').text('ФАЗА 22 из 24');
                                                                                                                                                                             phaseOne = setInterval(function(){
                                                                                                                                                                                 if (count_animation <= 90){                                                                         //120
                                                                                                                                                                                     jQuery('#draggableD3, #draggable1').css({
@@ -15805,6 +15846,7 @@ mmt = function(){
                                                                                                                                                                                     cur_animation_val = 0;
                                                                                                                                                                                     rotateVal = 0;
                                                                                                                                                                                     count_animation = 1;
+                                                                                                                                                                                    jQuery('.prot_stage').text('ФАЗА 23 из 24');
                                                                                                                                                                                     phaseOne = setInterval(function(){
                                                                                                                                                                                         if (count_animation <= 60){                                                                         //120
                                                                                                                                                                                             jQuery('#draggableD3, #draggable1').css({
@@ -15902,6 +15944,7 @@ mmt = function(){
                                                                                                                                                                                             cur_animation_val = 0;
                                                                                                                                                                                             rotateVal = 0;
                                                                                                                                                                                             count_animation = 1;
+                                                                                                                                                                                            jQuery('.prot_stage').text('ФАЗА 24 из 24');
                                                                                                                                                                                             phaseOne = setInterval(function(){
                                                                                                                                                                                                 if (count_animation <= 60){                                                                         //120
                                                                                                                                                                                                     jQuery('#draggableD3, #draggable1').css({
