@@ -2244,7 +2244,6 @@
                 jQuery('#draggableD12').css('transform', 'rotate(0deg)');
                 jQuery('.chart').data('easyPieChart').update(14);
                 jQuery('.chart').find('span').text('14');
-            
             }
         }, 250);
     }
