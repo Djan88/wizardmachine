@@ -2338,7 +2338,7 @@
                                     opacity: 0.8,
                                     borderWidth: '1px',
                                     paddingTop: '4px',
-                                    zIndex: '1000'
+                                    zIndex: '1000',
                                     transform: 'scale(1)'
                                 });
                                 if (count_animation <= 172){
