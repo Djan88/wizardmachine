@@ -2262,6 +2262,7 @@
                             opacity: 0.8,
                             borderWidth: '1px',
                             paddingTop: '4px',
+                            transform: 'scale(1)',
                             zIndex: '1000'
                         });
                         jQuery('#draggable3, #draggable4').css({
