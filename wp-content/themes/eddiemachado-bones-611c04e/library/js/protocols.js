@@ -3401,7 +3401,7 @@ v5 = function(){
             jQuery('.prot_stage').text('ФАЗА 2 из 8');
             phaseOne = setInterval(function(){
                 if (count_animation <= 344){                                                                         //90
-                    jQuery('#draggableD6, #draggableD5').css({
+                    jQuery('#draggableD_6, #draggableD5').css({
                         color: 'transparent',
                         borderColor: 'transparent',
                         opacity: 0.8,
@@ -3410,12 +3410,12 @@ v5 = function(){
                         zIndex: '1000'
                     });
                     if (count_animation <= 172){
-                        jQuery('#draggableD6, #draggableD5').css({
+                        jQuery('#draggableD_6, #draggableD5').css({
                             transform: 'scale(1)',
                             background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/life_vater.png) 0 0/100% no-repeat'
                         });
                     } else {
-                        jQuery('#draggableD6, #draggableD5').css({
+                        jQuery('#draggableD_6, #draggableD5').css({
                             background: 'rgba(255,255,255, 0.5)',
                             color: 'red',
                             borderColor: 'red',
@@ -3425,7 +3425,7 @@ v5 = function(){
                             paddingTop: '5px',
                             zIndex: '1'
                         });
-                        jQuery('#draggableD6, #draggableD5, #draggable5').css({
+                        jQuery('#draggableD_6, #draggableD5, #draggable5').css({
                             color: 'transparent',
                             borderColor: 'transparent',
                             opacity: 0.8,
@@ -3481,7 +3481,7 @@ v5 = function(){
                     clearInterval(phaseOne);
                     count_animation = 1;
                     rotateVal = 0;
-                    jQuery('#draggableD6, #draggableD5, #draggable5').css({
+                    jQuery('#draggableD_6, #draggableD5, #draggable5').css({
                         background: 'rgba(255,255,255, 0.5)',
                         color: 'red',
                         borderColor: 'red',
