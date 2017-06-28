@@ -3504,7 +3504,7 @@ v5 = function(){
                     count_animation = 1;
                     ringStatus(); 
                     tickSound.stop();
-                    jQuery('.prot_stage').text('ФАЗА 5 из 7');
+                    jQuery('.prot_stage').text('ФАЗА 3 из 8');
         //Этап 3-1-1
                     phaseSeven_one = setInterval(function(){
                         if (count_animation <= 22){                                                                         //22
