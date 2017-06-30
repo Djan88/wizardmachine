@@ -426,7 +426,7 @@ path {
 .fast-protocol-wrap, .fast-protocol-resource 
 {
     text-align: justify;
-    left: 10%;
+    left: 20px;
     position: absolute;
     background: #F4F4F4;
     z-index: 5;
@@ -441,8 +441,8 @@ path {
 .fast-protocol, .fast-v
 {
     font-weight: 600;
-    padding: 7px 9px;
-    font-size: 15px;
+    padding: 7px 7px;
+    font-size: 11px;
 }
 .button__main 
 {
