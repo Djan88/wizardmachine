@@ -666,8 +666,6 @@
                                                                                                cur_animation_val = 0;
                                                                                                rotateVal = 0;
                                                                                                count_animation = 1;
-                                                                                               ringStatus();
-                                                                                               tickSound.play();
                                                                                                jQuery('.prot_stage').text('ФАЗА 5 из 10');
                                                                                                phaseOne = setInterval(function(){
                                                                                                    if (count_animation <= 60){                                                                         //120
@@ -765,6 +763,8 @@
                                                                                                        cur_animation_val = 0;
                                                                                                        rotateVal = 0;
                                                                                                        count_animation = 1;
+                                                                                                       ringStatus();
+                                                                                                       tickSound.play();
                                                                                                        jQuery('.prot_stage').removeClass('hidden')
                                                                                                        jQuery('.prot_stage').text('ФАЗА 6 из 10');
                                                                                                        phaseOne = setInterval(function(){
