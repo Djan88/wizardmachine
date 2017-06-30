@@ -278,17 +278,6 @@
                            paddingTop: '5px',
                            zIndex: '1'
                        });
-                       phaseTwo = setInterval(function(){
-                           if (reloadTime <= 1){                                                                       //1
-                               tickSound.stop();
-                               reloadSound.play();
-                               reloadTime += 1;
-                           } else {
-                               clearInterval(phaseTwo);
-                               reloadSound.stop();
-                               tickSound.play();
-                           }
-                       }, 250);
                        jQuery('.box_rounded').css('transform', 'rotate(0deg) scale(1)');
                        jQuery('#draggableD12').css('transform', 'rotate(0deg)');
                        jQuery('.chart').data('easyPieChart').update(14);
@@ -300,6 +289,8 @@
                        cur_animation_val = 0;
                        rotateVal = 0;
                        count_animation = 1;
+                       ringStatus();
+                       tickSound.stop();
                        jQuery('.prot_stage').text('ФАЗА 3 из 10');
            //Этап 3-1-1
                        phaseSeven_one = setInterval(function(){
@@ -675,6 +666,8 @@
                                                                                                cur_animation_val = 0;
                                                                                                rotateVal = 0;
                                                                                                count_animation = 1;
+                                                                                               ringStatus();
+                                                                                               tickSound.play();
                                                                                                jQuery('.prot_stage').text('ФАЗА 5 из 10');
                                                                                                phaseOne = setInterval(function(){
                                                                                                    if (count_animation <= 60){                                                                         //120
@@ -1032,17 +1025,6 @@
                                                                                                                                     paddingTop: '5px',
                                                                                                                                     zIndex: '1'
                                                                                                                                 });
-                                                                                                                                phaseTwo = setInterval(function(){
-                                                                                                                                    if (reloadTime <= 1){                                                                       //1
-                                                                                                                                        tickSound.stop();
-                                                                                                                                        reloadSound.play();
-                                                                                                                                        reloadTime += 1;
-                                                                                                                                    } else {
-                                                                                                                                        clearInterval(phaseTwo);
-                                                                                                                                        reloadSound.stop();
-                                                                                                                                        tickSound.play();
-                                                                                                                                    }
-                                                                                                                                }, 250);
                                                                                                                                 jQuery('.box_rounded').css('transform', 'rotate(0deg) scale(1)');
                                                                                                                                 jQuery('#draggableD12').css('transform', 'rotate(0deg)');
                                                                                                                                 jQuery('.chart').data('easyPieChart').update(14);
@@ -1054,6 +1036,8 @@
                                                                                                                                 cur_animation_val = 0;
                                                                                                                                 rotateVal = 0;
                                                                                                                                 count_animation = 1;
+                                                                                                                                ringStatus();
+                                                                                                                                tickSound.stop();
                                                                                                                                 jQuery('.prot_stage').text('ФАЗА 9 из 10');
                                                                                                                     //Этап 9-1-1
                                                                                                                                 phaseSeven_one = setInterval(function(){
