@@ -62,10 +62,10 @@
                 
                 <div class="fast-protocol-wrap clearfix hidden">
                   <div class="btn btn_sm btn_warning fast-protocol" data-fast="face" data-protocol-name ="V1">V1</div>
-                  <div class="btn btn_sm btn_warning fast-protocol" data-fast="v2" data-protocol-name ="V2">V2</div> 
-                  <div class="btn btn_sm btn_warning fast-protocol" data-fast="v3" data-protocol-name ="V3">V3</div> 
-                  <div class="btn btn_sm btn_warning fast-protocol" data-fast="v4" data-protocol-name ="V4">V4</div> 
-                  <div class="btn btn_sm btn_warning fast-protocol" data-fast="v5" data-protocol-name ="V5">V5</div>
+                  <div class="btn btn_sm btn_warning fast-protocol" data-fast="v2" data-protocol-name ="V2">ПРОТОКОЛ 2-5</div> 
+                  <div class="btn btn_sm btn_warning fast-protocol" data-fast="v3" data-protocol-name ="V3">ПРОТОКОЛ 3-4</div> 
+                  <div class="btn btn_sm btn_warning fast-protocol" data-fast="v4" data-protocol-name ="V4">ПРОТОКОЛ 4-3</div> 
+                  <div class="btn btn_sm btn_warning fast-protocol" data-fast="v5" data-protocol-name ="V5">ПРОТОКОЛ 5-2</div>
                   <div class="btn btn_sm btn_warning fast-protocol" data-fast="resource" data-protocol-name ="РЕСУРС">РЕСУРС</div>
                   <div class="btn btn_sm btn_warning fast-protocol" data-fast="solis" data-protocol-name ="SOLIS">SOLIS</div>
                   <div class="btn btn_sm btn_warning fast-protocol" data-fast="demo" data-protocol-name ="«УНИВЕРСАЛЬНЫЙ»">«УНИВЕРСАЛЬНЫЙ»</div>
@@ -86,14 +86,14 @@
                     <div id="accordion" class="select_program">
                         <h3><span class="protocol_acent">(V1)</span>«КРАНИАЛЬНЫЙ ПРОТОКОЛ»</h3>
                         <div>«Краниальный протокол» - «используется при актуальности зоны головы, а также для терапевтической дефрагментации ума»<div class="btn btn_lg btn_success btn_choice" data-protocol ="face" data-protocol-name ="V1">Выбрать</div></div>
-                        <h3><span class="protocol_acent">(V2)</span>ЛЮДИ И ОТНОШЕНИЯ. ВЕЩИ, ПРЕДМЕТЫ И ДОСТИЖЕНИЕ ЦЕЛЕЙ</h3>
-                        <div>«Застрявшие назойливые мысли в голове о людях или предметах, мысленные диалоги, остановленное действие: «сделать или не сделать… поступать так или эдак… купить или не купить… выбрать это или то…»<div class="btn btn_lg btn_success btn_choice" data-protocol ="v2" data-protocol-name ="V2">Выбрать</div></div>
-                        <h3><span class="protocol_acent">(V3)</span>РАЗДРАЖЕНИЕ И НЕПРИЯТИЕ</h3>
-                        <div>«Раздражают и напрягают обстоятельства жизни, события и явления природы и социума, действия и поступки других людей, их внешний вид или слова. Стойкое ощущение собственной правильности и крутизны»<div class="btn btn_lg btn_success btn_choice" data-protocol ="v3" data-protocol-name ="V3">Выбрать</div></div>
-                        <h3><span class="protocol_acent">(V4)</span>СУЕТА, БЕСПОКОЙСТВО И НАПРЯЖЕНИЕ</h3>
-                        <div>«Беспокойство о том, что произойдет, ускорение мышления и действий, недовольство собой и заниженная самооценка:  «… опоздаю, не успею… а вдруг случиться... а что будет…  а кто что скажет/подумает про меня… а как я буду выглядеть в глазах окружающих…  я стараюсь все лучшим образом делать…"  и  далее, в этом роде.»<div class="btn btn_lg btn_success btn_choice" data-protocol ="v4" data-protocol-name ="V4">Выбрать</div></div>
-                        <h3><span class="protocol_acent">(V5)</span>«ИРРАЦИОНАЛЬНОЕ, ВИТАЛЬНАЯ СИЛА»</h3>
-                        <div>«Иррациональное. Ощущение непреодолимой и целиком захватывающей  силы и энергии.Насильственное следование некой жизненной стратегии, витальные страхи.»<div class="btn btn_lg btn_success btn_choice" data-protocol ="v5" data-protocol-name ="V5">Выбрать</div></div>
+                        <h3><span class="protocol_acent">(ПРОТОКОЛ 2-5)</span>ЛЮДИ И ОТНОШЕНИЯ. ВЕЩИ, ПРЕДМЕТЫ И ДОСТИЖЕНИЕ ЦЕЛЕЙ</h3>
+                        <div>«Показания для коррекции - застрявшие мысли/дилеммы категорий люди и отношения, а также предметы/вещи/деньги. Рационализации (самообман), неотпущенные переживания обиды и вины, клинические проявления V2 заболеваний.»<div class="btn btn_lg btn_success btn_choice" data-protocol ="v2" data-protocol-name ="ПРОТОКОЛ 2-5">Выбрать</div></div>
+                        <h3><span class="protocol_acent">(ПРОТОКОЛ 3-4)</span>РАЗДРАЖЕНИЕ И НЕПРИЯТИЕ</h3>
+                        <div>«Показания к применению - чувство непереносимости ситуации либо отношений, невозможности принять для себя это переживания, раздражение от всех и вся, попытки заставить вас принять чужое мнение, или ваши попытки заставить кого-либо принять вашу точку зрения, клинические проявления V3 заболеваний.»<div class="btn btn_lg btn_success btn_choice" data-protocol ="v3" data-protocol-name ="ПРОТОКОЛ 3-4">Выбрать</div></div>
+                        <h3><span class="protocol_acent">(ПРОТОКОЛ 4-3)</span>СУЕТА, БЕСПОКОЙСТВО И НАПРЯЖЕНИЕ</h3>
+                        <div>«Показания к применению - переживание беспокойства, тревожности, суеты и торопливости, злости и заниженной самооценки. Клинические проявления V4 заболеваний.»<div class="btn btn_lg btn_success btn_choice" data-protocol ="v4" data-protocol-name ="ПРОТОКОЛ 4-3">Выбрать</div></div>
+                        <h3><span class="protocol_acent">(ПРОТОКОЛ 5-2)</span>«ИРРАЦИОНАЛЬНОЕ, ВИТАЛЬНАЯ СИЛА»</h3>
+                        <div>«Показания к применению - невротические переживания нехватки воздуха, страхов закрытого пространства, высоты. Синдром хронической усталости, последствия физических травм, насилия, утопления, кровопотери, общего наркоза и прочих ситуаций, связанных с угрозой жизни. Клинические проявления V5 заболеваний.»<div class="btn btn_lg btn_success btn_choice" data-protocol ="v5" data-protocol-name ="ПРОТОКОЛ 5-2">Выбрать</div></div>
                         <h3><span class="protocol_acent">(ДРЕНАЖ)</span>«РЕАКТИВАЦИЯ РЕСУРСА»</h3>
                         <div>«Дренажный протокол предназначен для флюидической очистки зон DSV тела ума. Рекомендован при хронических либо кармически отягощенных, а также гипоресурсных состояниях. Можно применять сразу дополнительно после основного протокола (кроме V5) либо самостоятельно»<div class="btn btn_lg btn_success btn_choice" data-protocol ="resource" data-protocol-name ="РЕАКТИВАЦИЯ РЕСУРСА">Выбрать</div></div>
                         <h3><span class="protocol_acent">(SOLIS)</span>«SOLIS»</h3>
