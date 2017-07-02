@@ -1408,7 +1408,7 @@
                     zIndex: '1000'
                 });
                 jQuery('#draggableClean').css({
-                    transform: transform: 'rotate(-'+rotateVal+'deg) scale(1)',
+                    transform: 'rotate(-'+rotateVal+'deg) scale(1)',
                     background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/lovushka.png) 0 0/100% no-repeat'
                 });
                 if (count_animation <= 86){
