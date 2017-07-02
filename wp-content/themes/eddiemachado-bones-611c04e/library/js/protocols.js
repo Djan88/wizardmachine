@@ -1414,22 +1414,22 @@
                 if (count_animation <= 86){
                     jQuery('#draggableS3, #draggableS2_1, #draggable3').css({
                         transform: 'scale(1)',
-                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/life_vater.png) 0 0/100% no-repeat'
+                        background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle_water.png) 0 0/100% no-repeat'
                     });
                 } else if (count_animation <= 172){
                     jQuery('#draggableS3, #draggableS2_1, #draggable3').css({
                         transform: 'scale(1)',
-                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
+                        background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle_air.png) 0 0/100% no-repeat'
                     });
                 } else if (count_animation <= 258){
                     jQuery('#draggableS3, #draggableS2_1, #draggable3').css({
                         transform: 'scale(1)',
-                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/travma.jpg) 0 0/100% no-repeat'
+                        background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle_earth_fire.png) 0 0/100% no-repeat'
                     });
                 } else {
                     jQuery('#draggableS3, #draggableS2_1, #draggable3').css({
                         transform: 'rotate('+rotateVal+'deg) scale(1)',
-                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/superdisfunction.png) 0 0/100% no-repeat'
+                        background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/superdisfunction.png) 0 0/100% no-repeat'
                     });
                 }
                 jQuery('#draggableD12')
