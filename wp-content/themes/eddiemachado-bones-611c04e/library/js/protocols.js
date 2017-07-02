@@ -1409,7 +1409,7 @@
                 });
                 jQuery('#draggableClean').css({
                     transform: 'rotate(-'+rotateVal+'deg) scale(1)',
-                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle_earth.png) 0 0/100% no-repeat'
+                    background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle_earth.png) 0 0/100% no-repeat'
                 });
                 if (count_animation <= 86){
                     jQuery('#draggableS3, #draggableS2_1, #draggable3').css({
