@@ -675,3 +675,7 @@ form.pay-form
     top: 67px;
     text-align: center;
 }
+.sweet-alert .icon 
+{
+    width: 80px!important;
+}
