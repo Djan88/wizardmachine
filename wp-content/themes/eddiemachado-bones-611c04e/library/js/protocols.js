@@ -13112,7 +13112,7 @@ solis = function(){
   phaseOne = setInterval(function(){
     if (count_animation <= 120){                                                                         //120
       cur_animation_val += 6;
-      jQuery('#draggableS6, #draggableVD, #draggable2, #draggable3, #draggable4, #draggable1').css({
+      jQuery('#draggableS6, #draggableVD, #draggable2, #draggable3, #draggable4').css({
           color: 'transparent',
           borderColor: 'transparent',
           opacity: 0.8,
@@ -13133,14 +13133,11 @@ solis = function(){
       jQuery('#draggable4').css({
           background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/nerazd_002.png) 0 0/100% no-repeat'
       });
-      jQuery('#draggable1').css({
-          background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/triangle.png) 0 0/100% no-repeat'
-      });
       count_animation += 1;
     } else {
       clearInterval(phaseOne);
       count_animation = 1;
-      jQuery('#draggableS6, #draggableVD, #draggable2, #draggable3, #draggable4, #draggable1').css({
+      jQuery('#draggableS6, #draggableVD, #draggable2, #draggable3, #draggable4').css({
           background: 'rgba(255,255,255, 0.5)',
           transform: 'scale(0.5)',
           color: 'red',
