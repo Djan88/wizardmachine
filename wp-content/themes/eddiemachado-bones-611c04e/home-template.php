@@ -19,6 +19,7 @@
                     <?php if(current_user_can('subscriber')){ ?>
                 
                           <div class="home-content">
+                              <h2 class="home_heading">WIZARDMACHINE</h2>
                               <?php the_content(); ?>
                           </div>
                     <!-- Если зашел участник или администратор -->

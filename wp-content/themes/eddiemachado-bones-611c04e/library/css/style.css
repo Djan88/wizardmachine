@@ -2214,12 +2214,14 @@ be set to display none.
 }
 .home .home-page-content
 {
-    width: 600px;
-    margin: auto;
-    background: none;
-    color: #fff;
-    box-shadow: none;
-    text-align: center;
+  width: 600px;
+  margin: auto;
+  background: none;
+  color: #fff;
+  box-shadow: none;
+  text-align: center;
+  position: absolute;
+  top: 0;
 }
 .home .login__form input#wp-submit, .home a
 {
@@ -2282,7 +2284,7 @@ be set to display none.
 }
 .home .btn_trans 
 {
-  margin-top: 50px;
+  /*margin-top: 50px;*/
   margin-bottom: 10px;
 }
 .home-content 
