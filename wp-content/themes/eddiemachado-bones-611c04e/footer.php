@@ -47,7 +47,21 @@
             <script>
                 var window_height = jQuery(window).height();
                 jQuery('#main').css('height', window_height+'px');
-                
+                var count_animation = 0,
+                    rotateVal = 0;
+                phaseTen = setInterval(function(){
+                    if (count_animation <= 134400){                                                                         //90
+                        // tickSound.play();
+                        jQuery('.wings_home').css({
+                            transform: 'rotate(-'+rotateVal+'deg) scale(1)'
+                        });
+                        count_animation += 1;
+                        rotateVal += 1.5;
+                    } else {
+                        clearInterval(phaseOne);
+                        count_animation = 0
+                    }
+                }, 250);
             </script>
         <?php } ?>
 
