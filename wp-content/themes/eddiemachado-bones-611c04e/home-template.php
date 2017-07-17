@@ -67,6 +67,7 @@
                 
                 <?php } else { ?>
                     <div class="home-content" style="text-align: center;">
+                        <h2 class="home_heading">WIZARDMACHINE</h2>
                         <?php the_content(); ?>
                         <div class="btn btn_lg btn_trans show_form">Вход для сертифицированных пользователей</div><br>
                         <a href="/wp-content/uploads/2015/02/Kniga_po_Vizard-terapii.compressed.pdf" target="_blank" class="button button-primary button-large button__main">Книга "Визард терапия"</a>
