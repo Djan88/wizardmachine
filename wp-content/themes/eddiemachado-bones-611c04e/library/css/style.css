@@ -2371,14 +2371,14 @@ be set to display none.
     padding: 6px 12px;
     margin-bottom: 0;
     font-size: 14px;
-    color: #fff;
+    color: #204371;
     text-decoration: none;
     font-weight: 400;
     text-align: center;
     white-space: nowrap;
     vertical-align: middle;
     cursor: pointer;
-    border: 1px solid #fff;
+    border: 1px solid #204371;
     border-radius: 5px;
     -webkit-transition: all 0.2s ease-in;
        -moz-transition: all 0.2s ease-in;
