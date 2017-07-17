@@ -481,14 +481,13 @@ path {
 }
 .btn_trans:hover, .button__main:hover , .home .button:hover
 {
-  background: rgba(255,255,255, 0.2)!important;
-  color: #fff!important;
-  border-color: #fff!important;
+    background: rgba(255,255,255, 0.2)!important;
+    color: #eb592a!important;
+    border-color: #eb592a!important;
 }
-.btn_trans:hover, .button__main:visited , .home .button:visited
+h2.home_heading
 {
-    color: #0b1d7a!important;
-    border-color: #0b1d7a!important;
+    color: #DD291F;
 }
 span.supportlink 
 {

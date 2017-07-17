@@ -44,6 +44,7 @@
                           <?php } ?>
                         </div>
                         <div class="home-content">
+                            <h2 class="home_heading">WIZARDMACHINE</h2>
                             <?php the_content(); ?>
                         </div>
                         <a href="/wizard" class="button button-primary button-large">Выбор протокола</a>
