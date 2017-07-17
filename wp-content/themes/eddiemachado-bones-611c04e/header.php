@@ -49,6 +49,10 @@
         <div id="container">
 
             <?php if(!is_front_page()){ ?>
+                <div class="wrapper_home">
+                    <img src="<?php echo get_template_directory_uri(); ?>/library/images/tower.png" class="tower_home" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/library/images/wings.png" class="wings_home" alt="">
+                </div>
                 <header class="header" role="banner">
 
                     <div id="inner-header" class="wrap cf">

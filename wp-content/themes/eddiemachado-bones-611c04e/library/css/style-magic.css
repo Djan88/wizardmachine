@@ -1,3 +1,25 @@
+.wrapper_home
+{
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+.tower_home
+{
+    width: 440px;
+    padding-top: 60px;
+    margin-left: 600px;
+    display: block;
+}
+.wings_home
+{
+    margin: auto;
+    position: absolute;
+    top: 30px;
+    left: 730px;
+    transition: transform 1s linear;
+    width: 300px;
+}
 .wrapper
 {
     font-family: "Roboto",helvetica,arial,sans-serif;
