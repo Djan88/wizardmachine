@@ -76,7 +76,6 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
-                            <button type="button" class="btn btn-primary">Сохранить изменения</button>
                         </div>
                     </div>
                 </div>
