@@ -27,7 +27,24 @@
             <?php } ?>
 
         </div>
-
+            <!-- Modal -->
+            <div class="modal fade" id="myModal_login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title" id="myModalLabel">Название модали</h4>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                            <button type="button" class="btn btn-primary">Сохранить изменения</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         <?php // all js scripts are loaded in library/bones.php ?>
         <?php wp_footer(); ?>
         <script src="<?php bloginfo('template_url'); ?>/library/js/jquery-ui.min.js"></script>
