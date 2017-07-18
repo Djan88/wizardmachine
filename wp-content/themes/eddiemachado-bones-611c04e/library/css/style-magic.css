@@ -487,7 +487,17 @@ path {
 }
 h2.home_heading
 {
-    color: #DD291F;
+    color: #081d78;
+    display: inline;
+    border: 1px solid #081d78;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+h2.home_heading:hover
+{
+    background: #081d78;
+    color: #fff;
 }
 span.supportlink 
 {
