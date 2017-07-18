@@ -2371,6 +2371,7 @@ be set to display none.
     display: inline-block;
     padding: 6px 12px;
     margin-bottom: 0;
+    background: transparent;
     font-size: 14px;
     color: #204371;
     text-decoration: none;
