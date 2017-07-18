@@ -493,6 +493,9 @@ h2.home_heading
     padding: 10px;
     cursor: pointer;
     border-radius: 6px;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    transition: all 0.2s linear;
 }
 h2.home_heading:hover
 {
