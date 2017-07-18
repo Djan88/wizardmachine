@@ -57,6 +57,7 @@
         <script src="<?php bloginfo('template_url'); ?>/library/js/howler.js"></script>
         <script src="<?php bloginfo('template_url'); ?>/library/js/canvas.js"></script>
         <script src="<?php bloginfo('template_url'); ?>/library/js/easypie.js"></script>
+        <script src="<?php bloginfo('template_url'); ?>/library/js/bootstrap.js"></script>
         <script src="<?php bloginfo('template_url'); ?>/library/js/pieChartPlugin.js"></script>
         <script src='<?php bloginfo('template_url'); ?>/library/js/protocols.js'></script>
         <script src='<?php bloginfo('template_url'); ?>/library/js/script-magic.js'></script>
