@@ -241,6 +241,12 @@ button.close {
     border-radius: 6px;
     background: transparent;
 }
+.wings_door {
+    position: absolute;
+    top: 368px;
+    left: 830px;
+    width: 100px;
+}
 .wings_step
 {
     margin-left:340px;
