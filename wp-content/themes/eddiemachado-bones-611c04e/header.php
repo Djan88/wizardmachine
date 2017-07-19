@@ -50,6 +50,7 @@
         <div class="wrapper_home">
             <img src="<?php echo get_template_directory_uri(); ?>/library/images/tower.png" class="tower_home" alt="">
             <img src="<?php echo get_template_directory_uri(); ?>/library/images/wings.png" class="wings_home" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/library/images/w.gif" class="wings_step" alt="">
         </div>
         <?php }?>
         <div id="container">
