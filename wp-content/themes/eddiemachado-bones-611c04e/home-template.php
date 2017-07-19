@@ -68,7 +68,7 @@
                 
                 <?php } else { ?>
                     <div class="home-content" style="text-align: right">
-                        <h2 class="home_heading" data-toggle="modal" data-target="#myModal_login">WIZARDMACHINE</h2>
+<!--                        <h2 class="home_heading" data-toggle="modal" data-target="#myModal_login">WIZARDMACHINE</h2>-->
 
                     </div>
 
