@@ -253,8 +253,12 @@ button.close {
 {
     background: rgba(252, 211, 0, 1);
     opacity: 1;
-    width: 100px;
-    height: 100px;
+    width: 16px;
+    height: 20px;
+    position: absolute;
+    left: 616px;
+    top: 250px;
+    z-index: -1;
 }
 @keyframes timing-percents {
     20% {
