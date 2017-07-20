@@ -251,46 +251,39 @@ button.close {
 
 .window_light
 {
-    background: yellow;
-    opacity: 1;
-    width: 100px;
-    height: 100px;
+    content: attr(data-content);
+    display: inline-block;
+    position: absolute;
+    left: .2em;
+    width: 5em;
+    height: 2em;
+    padding: .2em;
+    background: mediumturquoise;
+    border-radius: 3px;
+    line-height: 2em;
+    text-shadow: .05em .05em teal;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFF;
 }
 @keyframes timing-percents {
     20% {
-        opacity: 0.8;
         animation-timing-function: ease-in;
-    }
-    30% {
-        opacity: 0.4;
-        animation-timing-function: ease-out;
-    }
-    35% {
-        opacity: 0.2;
-        animation-timing-function: ease-out;
     }
     40% {
-        opacity: 0.6;
+        left: 40%;
+        background: yellowgreen;
         animation-timing-function: ease-out;
     }
-    50% {
-        opacity: 0.6;
-        animation-timing-function: ease-out;
     60% {
-        opacity: 1;
-        animation-timing-function: ease-in;
-    }
-    70% {
-        opacity: 0.2;
-        animation-timing-function: ease-in;
-    }
-    80% {
-        opacity: 0.4;
+        left: 60%;
+        background: gold;
         animation-timing-function: ease-in;
     }
     100% {
-        opacity: 1;
-        animation-timing-function: ease-in;
+        left: 100%;
+        margin-left: -5.6em;
+        background: crimson;
     }
 }
 .window_light
