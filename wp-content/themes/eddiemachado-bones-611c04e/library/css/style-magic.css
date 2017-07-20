@@ -251,21 +251,10 @@ button.close {
 
 .window_light
 {
-    content: attr(data-content);
-    display: inline-block;
-    position: absolute;
-    opacity:1;
-    left: .2em;
-    width: 5em;
-    height: 2em;
-    padding: .2em;
-    background: mediumturquoise;
-    border-radius: 3px;
-    line-height: 2em;
-    text-shadow: .05em .05em teal;
-    text-align: center;
-    text-transform: capitalize;
-    color: #FFF;
+    background: rgba(252,211,0,0);
+    opacity: 1;
+    width: 100px;
+    height: 100px;
 }
 @keyframes timing-percents {
     20% {
