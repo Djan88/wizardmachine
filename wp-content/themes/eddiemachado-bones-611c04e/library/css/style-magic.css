@@ -254,6 +254,7 @@ button.close {
     content: attr(data-content);
     display: inline-block;
     position: absolute;
+    opacity:1;
     left: .2em;
     width: 5em;
     height: 2em;
@@ -268,22 +269,39 @@ button.close {
 }
 @keyframes timing-percents {
     20% {
+        opacity: 0.8;
         animation-timing-function: ease-in;
     }
-    40% {
-        left: 40%;
-        background: yellowgreen;
+    30% {
+        opacity: 0.4;
         animation-timing-function: ease-out;
     }
+    35% {
+        opacity: 0.2;
+        animation-timing-function: ease-out;
+    }
+    40% {
+        opacity: 0.6;
+        animation-timing-function: ease-out;
+    }
+    50% {
+        opacity: 0.6;
+        animation-timing-function: ease-out;
     60% {
-        left: 60%;
-        background: gold;
+        opacity: 1;
+        animation-timing-function: ease-in;
+    }
+    70% {
+        opacity: 0.2;
+        animation-timing-function: ease-in;
+    }
+    80% {
+        opacity: 0.4;
         animation-timing-function: ease-in;
     }
     100% {
-        left: 100%;
-        margin-left: -5.6em;
-        background: crimson;
+        opacity: 1;
+        animation-timing-function: ease-in;
     }
 }
 .window_light
