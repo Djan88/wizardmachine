@@ -306,6 +306,14 @@ button.close {
 {
     margin-left:-160px;
 }
+.wings_enter
+{
+    width: 200px;
+    position: absolute;
+    top: 430px;
+    left: 617px;
+    transform: rotate(-25deg);
+}
 input[type=submit]:hover, input[type=submit]:active {
     /*background: #d9d9d9;
     -webkit-box-shadow: inset 0 0 1px 1px #eaeaea;
