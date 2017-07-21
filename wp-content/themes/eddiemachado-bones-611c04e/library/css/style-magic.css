@@ -251,7 +251,7 @@ button.close {
 
 .window_light
 {
-    background: rgba(252, 211, 0, 1);
+    background: rgba(250, 130, 6, 1);
     opacity: 1;
     width: 16px;
     height: 20px;
@@ -262,45 +262,45 @@ button.close {
 }
 @keyframes timing-percents {
     20% {
-        background: rgba(252, 211, 0, 0.8);
+        background: rgba(250, 130, 6, 0.8);
         animation-timing-function: ease-in;
     }
     30% {
-        background: rgba(252, 211, 0, 0.4);
+        background: rgba(250, 130, 6, 0.4);
         animation-timing-function: ease-out;
     }
     35% {
-        background: rgba(252, 211, 0, 0.4);
+        background: rgba(250, 130, 6, 0.4);
         animation-timing-function: ease-out;
     }
     40% {
-        background: rgba(252, 211, 0, 0.6);
+        background: rgba(250, 130, 6, 0.6);
         animation-timing-function: ease-out;
     }
     50% {
-        background: rgba(252, 211, 0, 0.6);
+        background: rgba(250, 130, 6, 0.6);
         animation-timing-function: ease-out;
     }
     60% {
-        background: rgba(252, 211, 0, 1);
+        background: rgba(250, 130, 6, 1);
         animation-timing-function: ease-in;
     }
     70% {
-        background: rgba(252, 211, 0, 0.2);
+        background: rgba(250, 130, 6, 0.2);
         animation-timing-function: ease-in;
     }
     80% {
-        background: rgba(252, 211, 0, 0.4);
+        background: rgba(250, 130, 6, 0.4);
         animation-timing-function: ease-in;
     }
     100% {
-        background: rgba(252, 211, 0, 1);
+        background: rgba(250, 130, 6, 1);
         animation-timing-function: ease-in;
     }
 }
 .window_light
 {
-    animation: timing-percents 5s infinite alternate;
+    animation: timing-percents 3s infinite alternate;
 }
 .wings_step
 {
