@@ -43,10 +43,6 @@
                             <div class="ratioten" data-ratio="<?php echo $ratioten;?>"></div>
                           <?php } ?>
                         </div>
-                        <div class="home-content">
-                            <h2 class="home_heading">WIZARDMACHINE</h2>
-                            <?php the_content(); ?>
-                        </div>
                         <a href="/wizard" class="button button-primary button-large">Выбор протокола</a>
                         <a href="/knife_diagnostic" class="button button-primary button-large">Диагностика ножом</a>
                         <?php if(is_user_logged_in()){ ?>

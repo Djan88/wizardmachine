@@ -48,12 +48,17 @@
     <body <?php body_class(); ?>>
         <?php if(is_front_page()){ ?>
         <div class="wrapper_home">
+            <div class="window_light wl_up"></div>
             <img src="<?php echo get_template_directory_uri(); ?>/library/images/tower.png" class="tower_home" alt="">
             <img src="<?php echo get_template_directory_uri(); ?>/library/images/wings.png" class="wings_home" alt="">
-            <img src="<?php echo get_template_directory_uri(); ?>/library/images/w.gif" class="wings_step" alt="">
-            <img src="<?php echo get_template_directory_uri(); ?>/library/images/enter.png" class="wings_enter" alt="">
-            <img src="<?php echo get_template_directory_uri(); ?>/library/images/door.gif"  data-toggle="modal" data-target="#myModal_login" class="wings_door" alt="">
-            <div class="window_light wl_up"></div>
+            <?php if(!is_user_logged_in()){ ?>
+                <img src="<?php echo get_template_directory_uri(); ?>/library/images/door.gif"  data-toggle="modal" data-target="#myModal_login" class="wings_door" alt="">
+            <?php }?>
+            <?php if(is_user_logged_in()){ ?>
+            <a class="btn btn_sm btn_warning btn_logout" href="<?php echo home_url(); ?>/wp-login.php?action=logout&amp;_wpnonce=a6cad512ba">
+                <img src="<?php echo get_template_directory_uri(); ?>/library/images/door.gif"  data-toggle="modal" data-target="#myModal_login" class="wings_door" alt="">
+            </a>
+            <?php }?>
         </div>
         <?php }?>
         <div id="container">
@@ -88,7 +93,6 @@
 
                         </nav> -->
                         <?php if(is_user_logged_in()){ ?>
-                            <a class="btn btn_sm btn_warning btn_logout" href="<?php echo home_url(); ?>/wp-login.php?action=logout&amp;_wpnonce=a6cad512ba">Выйти</a>
                             <div class="btn btn_sm btn_warning btn__wizard hidden" >Выполнить</div>
                             <div class="btn btn_sm btn_warning btn__next hidden" >Выбрать протокол <span>›</span></div>
                             <div class="btn btn_sm btn_warning btn__crop hidden" >Обрезать фото</div>
