@@ -306,6 +306,17 @@ button.close {
 {
     margin-left:-160px;
 }
+a.wings_door_closed
+{
+    position: absolute;
+    border: none;
+    width: 100px;
+}
+.wings_door_closed img
+{
+    width: 100%;
+    height:auto;
+}
 .wings_enter
 {
     width: 200px;
