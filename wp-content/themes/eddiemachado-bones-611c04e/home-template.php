@@ -43,12 +43,10 @@
                             <div class="ratioten" data-ratio="<?php echo $ratioten;?>"></div>
                           <?php } ?>
                         </div>
-                        <a href="/wizard" class="button button-primary button-large">Выбор протокола</a>
+                        <a href="/wizard" class="button button-primary button-large btn_choice">Выбор протокола</a>
                         <a href="/knife_diagnostic" class="button button-primary button-large">Диагностика ножом</a>
-                        <div style="padding-top: 25px;">
-                            <a href="http://help.yandex.ru/common/support/screenshot.xml" target="_blank" class="button button-primary button-large button__main">Как сделать "скриншот" экрана</a>
-                            <a href="/wp-content/uploads/2015/02/Manual_dlya_Wizardmachine.pdf" target="_blank" class="button button-primary button-large button__main">Руководство пользователя</a> 
-                        </div>
+                        <a href="http://help.yandex.ru/common/support/screenshot.xml" target="_blank" class="button button-primary button-large button__main">Как сделать "скриншот" экрана</a>
+                        <a href="/wp-content/uploads/2015/02/Manual_dlya_Wizardmachine.pdf" target="_blank" class="button button-primary button-large button__main">Руководство пользователя</a>
                         <!-- <div><a href="/pay/" target="_blank" class="btn btn_lg btn_trans" style="margin-top: 10px; margin-left: 15px;">Оплата доступа</a></div> -->
                         <!-- <div><a href="/consultation/" target="_blank" class="btn btn_lg btn_trans" style="margin-top: 10px; margin-left: 15px;">Оплата консультации</a></div> -->
 
