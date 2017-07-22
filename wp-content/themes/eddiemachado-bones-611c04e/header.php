@@ -57,7 +57,7 @@
             <?php }?>
             <?php if(is_user_logged_in()){ ?>
             <a class="btn btn_sm btn_warning btn_logout" href="<?php echo home_url(); ?>/wp-login.php?action=logout&amp;_wpnonce=a6cad512ba">
-                <img src="<?php echo get_template_directory_uri(); ?>/library/images/door.gif"  data-toggle="modal" data-target="#myModal_login" class="wings_door" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/library/images/door.gif" class="wings_door" alt="">
             </a>
             <?php }?>
         </div>
