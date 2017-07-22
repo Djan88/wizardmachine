@@ -56,8 +56,8 @@
             <?php }?>
             <?php if(is_user_logged_in()){ ?>
                 <div class="window_light wl_up"></div>
-                <a class="btn btn_sm btn_warning btn_logout" href="<?php echo home_url(); ?>/wp-login.php?action=logout&amp;_wpnonce=a6cad512ba">
-                <img src="<?php echo get_template_directory_uri(); ?>/library/images/door.png" class="wings_door_closed" alt="">
+                <a class="btn btn_sm btn_warning wings_door_closed" href="<?php echo home_url(); ?>/wp-login.php?action=logout&amp;_wpnonce=a6cad512ba">
+                <img src="<?php echo get_template_directory_uri(); ?>/library/images/door.png" alt="">
             </a>
             <?php }?>
         </div>
