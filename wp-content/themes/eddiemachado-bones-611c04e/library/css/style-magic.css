@@ -245,7 +245,7 @@ input[type=submit], .home a
     position: absolute;
     left: -40px;
     transform: rotate(20deg);
-    padding-right: 45px!important;
+    padding-right: 30px!important;
     z-index: -1;
     top: 80px;
 }
@@ -834,4 +834,41 @@ form.pay-form
 .sweet-alert .icon 
 {
     width: 80px!important; 
+}
+@media (max-width: 1000px) {
+    .tower_home
+    {
+        margin-left: 250px;
+        width: 350px;
+    }
+    .wings_home
+    {
+        top: 40px;
+        left: 360px;
+        width: 220px;
+    }
+    .window_light
+    {
+        left: 460px;
+        top: 210px;
+    }
+    a.wings_door_closed
+    {
+        width: 65px;
+        top: 310px;
+        left: 440px;
+    }
+    .btn_choice_prot_knife
+    {
+        left: 320px;
+
+    }
+    .btn_choice_reference
+    {
+        left: 315px;
+    }
+    .home .home-page-content
+    {
+        width: 560px;
+    }
 }

@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a8c20f5-fb8c-4bb3-9bda-6e9760e4ff83" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/eddiemachado-bones-611c04e/header.php" afterPath="$PROJECT_DIR$/wp-content/themes/eddiemachado-bones-611c04e/header.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/eddiemachado-bones-611c04e/library/css/style-magic.css" afterPath="$PROJECT_DIR$/wp-content/themes/eddiemachado-bones-611c04e/library/css/style-magic.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -70,8 +69,8 @@
       <file leaf-file-name="style-magic.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/eddiemachado-bones-611c04e/library/css/style-magic.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="479">
-              <caret line="287" column="1" lean-forward="false" selection-start-line="287" selection-start-column="1" selection-end-line="287" selection-end-column="1" />
+            <state relative-caret-position="370">
+              <caret line="856" column="20" lean-forward="true" selection-start-line="856" selection-start-column="20" selection-end-line="856" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -401,12 +400,12 @@
       <workItem from="1499782052674" duration="1420000" />
       <workItem from="1500297860720" duration="13464000" />
       <workItem from="1500718581615" duration="1932000" />
-      <workItem from="1500726019667" duration="1564000" />
+      <workItem from="1500726019667" duration="3224000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21146000" />
+    <option name="totallyTimeSpent" value="22806000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -670,8 +669,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/eddiemachado-bones-611c04e/library/css/style-magic.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="287" column="1" lean-forward="false" selection-start-line="287" selection-start-column="1" selection-end-line="287" selection-end-column="1" />
+        <state relative-caret-position="370">
+          <caret line="856" column="20" lean-forward="true" selection-start-line="856" selection-start-column="20" selection-end-line="856" selection-end-column="20" />
           <folding />
         </state>
       </provider>
