@@ -2221,7 +2221,7 @@ be set to display none.
   top: 300px;
   left: 340px;
   cursor: pointer;
-  z-index: 0;
+  z-index: -1;
 }
 .home .login__form input#wp-submit, .home a
 {

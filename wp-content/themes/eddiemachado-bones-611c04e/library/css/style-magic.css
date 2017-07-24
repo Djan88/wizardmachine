@@ -226,7 +226,11 @@ input[type=submit], .home a
 }
 .btn_choice_prot
 {
-
+    position: absolute;
+    left: 15px;
+    transform: rotate(20deg);
+    padding-right: 30px!important;
+    z-index: -1;
 }
 .btn_choice_knife
 {
