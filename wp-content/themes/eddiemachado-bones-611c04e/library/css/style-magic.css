@@ -333,7 +333,7 @@ button.close {
 }
 .wings_step
 {
-    margin-left:-160px;
+    width: 300px;
 }
 a.wings_door_closed
 {
