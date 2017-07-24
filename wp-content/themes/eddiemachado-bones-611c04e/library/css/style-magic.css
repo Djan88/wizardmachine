@@ -284,6 +284,11 @@ button.close {
     top: 250px;
     z-index: -1;
 }
+.window_light.wl_down
+{
+    top: 395px;
+    left: 536px;
+}
 @keyframes timing-percents {
     20% {
         background: rgba(250, 130, 6, 0.8);
