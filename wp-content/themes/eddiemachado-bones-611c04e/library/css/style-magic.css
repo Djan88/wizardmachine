@@ -232,9 +232,31 @@ input[type=submit], .home a
     padding-right: 30px!important;
     z-index: -1;
 }
-.btn_choice_knife
+.btn_choice_prot_knife
 {
-
+    position: absolute;
+    left: 365px;
+    transform: rotate(-20deg);
+    padding-left: 30px!important;
+    z-index: -1;
+}
+.btn_choice_screen
+{
+    position: absolute;
+    left: -40px;
+    transform: rotate(20deg);
+    padding-right: 45px!important;
+    z-index: -1;
+    top: 80px;
+}
+.btn_choice_reference
+{
+    position: absolute;
+    left: 370px;
+    transform: rotate(-20deg);
+    padding-left: 45px!important;
+    z-index: -1;
+    top: 80px;
 }
 button.close {
     float: right;
