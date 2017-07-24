@@ -869,6 +869,8 @@ form.pay-form
     }
     .home .home-page-content
     {
-        width: 560px;
+        width: 570px;
+        left: 200px;
+        top: 220px;
     }
 }
