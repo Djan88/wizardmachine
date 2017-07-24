@@ -334,6 +334,8 @@ button.close {
 .wings_step
 {
     width: 300px;
+    left: 430px;
+    position: absolute;
 }
 a.wings_door_closed
 {
@@ -875,7 +877,7 @@ form.pay-form
     }
     .wings_step
     {
-        margin-left: -120px;
+        left: 340px;
         width: 200px;
     }
     .window_light.wl_down
