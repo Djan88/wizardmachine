@@ -837,6 +837,14 @@ form.pay-form
 {
     width: 80px!important; 
 }
+img.outdoor
+{
+    position: absolute;
+    left: 141px;
+    width: 40px;
+    height: auto;
+    top: 5px;
+}
 @media (max-width: 1000px) {
     .tower_home
     {
