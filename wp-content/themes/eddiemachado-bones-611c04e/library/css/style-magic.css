@@ -224,7 +224,7 @@ input[type=submit], .home a
     -moz-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in;
 }
-div#myModal_choice
+div#myModal_choice .modal-footer
 {
     text-align: center;
 }
