@@ -224,39 +224,15 @@ input[type=submit], .home a
     -moz-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in;
 }
-.btn_choice_prot
+div#myModal_choice
 {
-    position: absolute;
-    left: 15px;
-    transform: rotate(20deg);
-    padding-right: 30px!important;
-    z-index: -1;
+    text-align: center;
 }
-.btn_choice_prot_knife
+div#myModal_choice .button
 {
-    position: absolute;
-    left: 365px;
-    transform: rotate(-20deg);
-    padding-left: 30px!important;
-    z-index: -1;
-}
-.btn_choice_screen
-{
-    position: absolute;
-    left: -40px;
-    transform: rotate(20deg);
-    padding-right: 30px!important;
-    z-index: -1;
-    top: 80px;
-}
-.btn_choice_reference
-{
-    position: absolute;
-    left: 370px;
-    transform: rotate(-20deg);
-    padding-left: 45px!important;
-    z-index: -1;
-    top: 80px;
+    display: block!important;
+    margin: auto;
+    width: 80%;
 }
 button.close {
     float: right;
@@ -876,7 +852,7 @@ img.outdoor
     }
     .btn_choice_prot_knife
     {
-        left: 320px;
+        /*left: 320px;*/
 
     }
     .btn_choice_reference
