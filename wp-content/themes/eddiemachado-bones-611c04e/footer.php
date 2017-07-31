@@ -36,7 +36,7 @@
                             <h4 class="modal-title" id="myModalLabel">Вход для сертифицированных пользователей</h4>
                         </div>
                         <div class="modal-body">
-                            <a href="/wp-content/uploads/2015/02/Kniga_po_Vizard-terapii.compressed.pdf" target="_blank" class="button button-primary button-large button__main">Книга "Визард терапия"</a>
+                            <a href="www.wizardduos.ru" target="_blank" class="button button-primary button-large button__main">"Wizard Duos"</a>
                             <a href="/wp-content/uploads/2015/02/Osnovy_biologicheskogo_tsentrirovania.compressed.pdf" target="_blank" class="button button-primary button-large button__main">Книга "Биологическое центрирование"</a>
                             <a href="https://www.youtube.com/watch?v=ZZPjJGX-BM4" target="_blank" class="button button-primary button-large button__main">Видео</a>
                             <div class="login__form">
