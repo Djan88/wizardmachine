@@ -231,8 +231,10 @@ div#myModal_choice .modal-footer
 div#myModal_choice .button
 {
     display: block!important;
-    margin: auto;
-    width: 80%;
+    margin: auto!important;
+    width: 90%;
+    text-align: center;
+    margin-bottom: 10px!important;
 }
 button.close {
     float: right;
@@ -820,6 +822,7 @@ img.outdoor
     top: 382px;
     width: 40px;
     height: auto;
+    cursor: pointer;
 }
 @media (max-width: 1000px) {
     img.outdoor
