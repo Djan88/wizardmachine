@@ -58,9 +58,9 @@
             <?php if(is_user_logged_in()){ ?>
                 <div class="window_light wl_up"></div>
                 <a class="btn btn_sm btn_warning wings_door_closed" href="<?php echo home_url(); ?>/wp-login.php?action=logout&amp;_wpnonce=a6cad512ba">
-                <img src="<?php echo get_template_directory_uri(); ?>/library/images/door.png" class="door_closed" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/library/images/door.png" class="door_closed" alt="">
+                </a>
                 <img src="<?php echo get_template_directory_uri(); ?>/library/images/outdoor_board.gif" class="outdoor"   data-toggle="modal" data-target="#myModal_choice"  alt="">
-            </a>
             <?php }?>
         </div>
         <?php }?>
