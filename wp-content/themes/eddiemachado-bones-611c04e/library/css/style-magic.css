@@ -840,12 +840,18 @@ form.pay-form
 img.outdoor
 {
     position: absolute;
-    left: 141px;
+    left: 733px;
+    top: 382px;
     width: 40px;
     height: auto;
-    top: 5px;
 }
 @media (max-width: 1000px) {
+    img.outdoor
+    {
+        left: 555px;
+        top: 316px;
+        width: 32px;
+    }
     .tower_home
     {
         margin-left: 250px;

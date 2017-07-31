@@ -80,6 +80,27 @@
                     </div>
                 </div>
             </div>
+            <!-- Modal two -->
+            <div class="modal fade" id="myModal_choice" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title" id="myModalLabel">Выбор режима работы</h4>
+                        </div>
+                        <div class="modal-body">
+                            <a href="/wizard" class="button button-primary button-large btn_choice_prot">Выбор протокола</a>
+                            <a href="/knife_diagnostic" class="button button-primary button-large btn_choice_prot_knife">Диагностика ножом</a>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="http://help.yandex.ru/common/support/screenshot.xml" target="_blank" class="button button-primary button-large button__main btn_choice_screen">Как сделать "скриншот" экрана</a>
+                            <a href="/wp-content/uploads/2015/02/Manual_dlya_Wizardmachine.pdf" target="_blank" class="button button-primary button-large button__main btn_choice_reference">Руководство пользователя</a>
+                            <!-- <div><a href="/pay/" target="_blank" class="btn btn_lg btn_trans" style="margin-top: 10px; margin-left: 15px;">Оплата доступа</a></div> -->
+                            <!-- <div><a href="/consultation/" target="_blank" class="btn btn_lg btn_trans" style="margin-top: 10px; margin-left: 15px;">Оплата консультации</a></div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
         <?php // all js scripts are loaded in library/bones.php ?>
         <?php wp_footer(); ?>
         <script src="<?php bloginfo('template_url'); ?>/library/js/jquery-ui.min.js"></script>
