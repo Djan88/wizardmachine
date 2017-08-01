@@ -8,17 +8,16 @@
 {
     width: 440px;
     padding-top: 60px;
-    margin-left: 350px;
     display: block;
 }
 .wings_home
 {
     margin: auto;
     position: absolute;
-    top: 30px;
-    left: 480px;
+    top: 50px;
+    left: 50px;
     transition: transform 1s linear;
-    width: 300px;
+    width: 350px;
 }
 .wrapper
 {
@@ -255,11 +254,11 @@ button.close {
 {
     background: rgba(250, 130, 6, 1);
     opacity: 1;
-    width: 16px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     position: absolute;
-    left: 616px;
-    top: 250px;
+    left: 200px;
+    top: 315px;
     z-index: -1;
 }
 .window_light.wl_down
@@ -319,9 +318,9 @@ a.wings_door_closed
 {
     position: absolute;
     border: none;
-    width: 75px;
-    top: 378px;
-    left: 592px;
+    width: 90px;
+    top: 495px;
+    left: 179px;
 }
 .wings_door_closed img
 {
@@ -818,9 +817,9 @@ form.pay-form
 img.outdoor
 {
     position: absolute;
-    left: 733px;
-    top: 382px;
-    width: 40px;
+    left: 364px;
+    top: 493px;
+    width: 53px;
     height: auto;
     cursor: pointer;
 }
@@ -838,7 +837,6 @@ img.outdoor
     }
     .tower_home
     {
-        margin-left: 250px;
         width: 350px;
     }
     .wings_home
