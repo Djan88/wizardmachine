@@ -874,18 +874,18 @@ img.outdoor
     }
     .wings_step
     {
-        left: 340px;
+        left: 50px;
         width: 200px;
     }
     .window_light.wl_down
     {
-        top: 325px;
-        left: 395px;
+        top: 415px;
+        left: 74px;
     }
     .wings_door
     {
-        top: 304px;
-        left: 432px;
-        width: 80px;
+        top: 392px;
+        left: 127px;
+        width: 102px;
     }
 }
