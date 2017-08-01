@@ -827,13 +827,14 @@ img.outdoor
     position: relative;
     margin: auto;
     width: 400px;
+    margin-top: 40px;
 }
 @media (max-width: 1000px) {
     img.outdoor
     {
-        left: 555px;
-        top: 316px;
-        width: 32px;
+        left: 290px;
+        top: 404px;
+        width: 41px;
     }
     .tower_home
     {
@@ -842,19 +843,19 @@ img.outdoor
     .wings_home
     {
         top: 40px;
-        left: 360px;
-        width: 220px;
+        left: 20px;
+        width: 300px;
     }
     .window_light
     {
-        left: 460px;
-        top: 210px;
+        left: 155px;
+        top: 255px;
     }
     a.wings_door_closed
     {
-        width: 65px;
-        top: 310px;
-        left: 440px;
+        width: 75px;
+        top: 402px;
+        left: 140px;
     }
     .btn_choice_prot_knife
     {

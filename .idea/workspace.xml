@@ -71,8 +71,8 @@
       <file leaf-file-name="style-magic.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/eddiemachado-bones-611c04e/library/css/style-magic.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="248" column="13" lean-forward="false" selection-start-line="248" selection-start-column="13" selection-end-line="248" selection-end-column="13" />
+            <state relative-caret-position="140">
+              <caret line="836" column="17" lean-forward="false" selection-start-line="836" selection-start-column="17" selection-end-line="836" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -402,12 +402,12 @@
       <workItem from="1499782052674" duration="1420000" />
       <workItem from="1500297860720" duration="13464000" />
       <workItem from="1500718581615" duration="1932000" />
-      <workItem from="1500726019667" duration="10733000" />
+      <workItem from="1500726019667" duration="11390000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30315000" />
+    <option name="totallyTimeSpent" value="30972000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -687,8 +687,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/eddiemachado-bones-611c04e/library/css/style-magic.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="248" column="13" lean-forward="false" selection-start-line="248" selection-start-column="13" selection-end-line="248" selection-end-column="13" />
+        <state relative-caret-position="140">
+          <caret line="836" column="17" lean-forward="false" selection-start-line="836" selection-start-column="17" selection-end-line="836" selection-end-column="17" />
           <folding />
         </state>
       </provider>
