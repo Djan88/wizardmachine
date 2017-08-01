@@ -824,6 +824,11 @@ img.outdoor
     height: auto;
     cursor: pointer;
 }
+.wr_in {
+    position: relative;
+    margin: auto;
+    width: 400px;
+}
 @media (max-width: 1000px) {
     img.outdoor
     {
