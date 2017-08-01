@@ -14,10 +14,10 @@
 {
     margin: auto;
     position: absolute;
-    top: 50px;
-    left: 50px;
+    top: 0;
+    left: 0;
     transition: transform 1s linear;
-    width: 350px;
+    width: 450px;
 }
 .wrapper
 {
@@ -244,9 +244,9 @@ button.close {
 }
 .wings_door {
     position: absolute;
-    top: 368px;
-    left: 580px;
-    width: 100px;
+    top: 475px;
+    left: 158px;
+    width: 130px;
     cursor: pointer;
 }
 
@@ -263,8 +263,8 @@ button.close {
 }
 .window_light.wl_down
 {
-    top: 395px;
-    left: 536px;
+    top: 507px;
+    left: 95px;
 }
 @keyframes timing-percents {
     20% {
@@ -311,7 +311,7 @@ button.close {
 .wings_step
 {
     width: 300px;
-    left: 430px;
+    left: 30px;
     position: absolute;
 }
 a.wings_door_closed
