@@ -40,7 +40,7 @@ jQuery(document).ready(function() {
       });
     } 
   }
-  $("#handle1").on("drag", function (e) {
+  $("#handle1").on("stop", function (e) {
       valueNow = jQuery('.rs-handle').attr('aria-valuenow');
       valueNow_ = jQuery('.rs-bar').css('transform');
       console.log(valueNow_);
