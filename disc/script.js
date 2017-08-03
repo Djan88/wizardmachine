@@ -37,7 +37,6 @@ jQuery(document).ready(function() {
         jQuery(this).addClass('elem_pos_active');
       });
     }
-    tickSound.stop();
   }
   $("#handle1").on("drag", function (e) {
       valueNow = jQuery('.rs-handle').attr('aria-valuenow');
