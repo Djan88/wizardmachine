@@ -17,8 +17,9 @@ jQuery(document).ready(function() {
     tooltipFormat: "changeTooltip"
   });
   highlighter = function(){
-    console.log(jQuery('.rs-handle').attr('aria-valuenow'));
     tickSound.play();
+    valueNow_ = jQuery('.rs-bar').css('transform');
+    console.log(valueNow_);
     jQuery('.elem_pos').each(function(index, el) {
       jQuery(this).removeClass('elem_pos_active')
     });
@@ -40,10 +41,8 @@ jQuery(document).ready(function() {
       });
     } 
   }
-  $("#handle1").on("stop", function (e) {
+  $("#handle1").on("drag", function (e) {
       valueNow = jQuery('.rs-handle').attr('aria-valuenow');
-      valueNow_ = jQuery('.rs-bar').css('transform');
-      console.log(valueNow_);
       highlighter();
   })
 });
