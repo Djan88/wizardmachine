@@ -41,7 +41,7 @@ jQuery(document).ready(function() {
       });
     } 
   }
-  $("#handle1").on("drag", function (e) {
+  $("#handle1").on("change", function (e) {
       valueNow = jQuery('.rs-handle').attr('aria-valuenow');
       highlighter();
   })
