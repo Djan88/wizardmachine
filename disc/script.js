@@ -18,7 +18,7 @@ jQuery(document).ready(function() {
   });
   highlighter = function(){
     tickSound.play();
-    valueNow_ = jQuery('.rs-bar').css('transform');
+    valueNow_ = jQuery('.rs-bar').attr('style');
     console.log(valueNow_);
     jQuery('.elem_pos').each(function(index, el) {
       jQuery(this).removeClass('elem_pos_active')
@@ -41,7 +41,7 @@ jQuery(document).ready(function() {
       });
     } 
   }
-  $("#handle1").on("change", function (e) {
+  $("#handle1").on("drag", function (e) {
       valueNow = jQuery('.rs-handle').attr('aria-valuenow');
       highlighter();
   })
