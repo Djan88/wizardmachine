@@ -24,6 +24,9 @@
     position: absolute;
     width: 80px;
 }
+.rs-bar {
+    transition: all 0.25s linear!important;
+}
 svg path 
 {
     stroke-width: 10px;
