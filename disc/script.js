@@ -2,7 +2,7 @@ jQuery(document).ready(function() {
   var valueNow,
       highlighter,
       tickSound = new buzz.sound( "seif", {
-          formats: [ "ogg", "mp3" ]
+          formats: [ "ogg", "mp3", "wav" ]
       });
   $("#handle1").roundSlider({
     min: 0,
