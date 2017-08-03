@@ -57,7 +57,7 @@ svg path
 }
 .elem_pos svg {
     width: 80px;
-    height: auto;
+    height: 100px;
 }
 span.rs-tooltip.rs-tooltip-text {
     display: none;
