@@ -7,7 +7,7 @@ jQuery(document).ready(function() {
       });
   $("#handle1").roundSlider({
     min: 0,
-    max: 12000,
+    max: 120000,
     step: 1000,
     value: 0,
     radius: 200,
@@ -18,31 +18,30 @@ jQuery(document).ready(function() {
   });
   highlighter = function(){
     tickSound.play();
-    valueNow_ = jQuery('.rs-bar').attr('style');
     console.log(valueNow_);
     jQuery('.elem_pos').each(function(index, el) {
       jQuery(this).removeClass('elem_pos_active')
     });
-    if (valueNow == 0 || valueNow == 4000 || valueNow == 8000 || valueNow == 12000) {
+    if (valueNow == 'z-index: 8; transform: rotate(0deg);' || valueNow == 'z-index: 8; transform: rotate(120deg);' || valueNow == 'z-index: 8; transform: rotate(240deg);' || valueNow == 'z-index: 8; transform: rotate(360deg);') {
       jQuery('.elem_pos_d').each(function(index, el) {
         jQuery(this).addClass('elem_pos_active');
       });
-    } else if (valueNow == 1000 || valueNow == 5000 || valueNow == 9000) {
+    } else if (valueNow == 'z-index: 8; transform: rotate(30deg);' || valueNow == 'z-index: 8; transform: rotate(150deg);' || valueNow == 'z-index: 8; transform: rotate(270deg);') {
       jQuery('.elem_pos_t').each(function(index, el) {
         jQuery(this).addClass('elem_pos_active');
       });
-    }  else if (valueNow == 2000 || valueNow == 6000 || valueNow == 10000) {
+    }  else if (valueNow == 'z-index: 8; transform: rotate(60deg);' || valueNow == 'z-index: 8; transform: rotate(180deg);' || valueNow == 'z-index: 8; transform: rotate(300deg);') {
       jQuery('.elem_pos_r').each(function(index, el) {
         jQuery(this).addClass('elem_pos_active');
       });
-    }   else if (valueNow == 3000 || valueNow == 7000 || valueNow == 11000) {
+    }   else if (valueNow == 'z-index: 8; transform: rotate(90deg);' || valueNow == 'z-index: 8; transform: rotate(210deg);' || valueNow == 'z-index: 8; transform: rotate(330deg);') {
       jQuery('.elem_pos_s').each(function(index, el) {
         jQuery(this).addClass('elem_pos_active');
       });
     } 
   }
   $("#handle1").on("drag", function (e) {
-      valueNow = jQuery('.rs-handle').attr('aria-valuenow');
+      valueNow = jQuery('.rs-bar').attr('style');
       highlighter();
   })
 });
