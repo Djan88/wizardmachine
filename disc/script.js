@@ -1,5 +1,6 @@
 jQuery(document).ready(function() {
   var valueNow,
+      valueNow_,
       highlighter,
       tickSound = new buzz.sound( "seif", {
           formats: [ "ogg", "mp3" ]
@@ -41,6 +42,8 @@ jQuery(document).ready(function() {
   }
   $("#handle1").on("drag", function (e) {
       valueNow = jQuery('.rs-handle').attr('aria-valuenow');
+      valueNow_ = jQuery('.rs-bar').css('transform');
+      console.log(valueNow_);
       highlighter();
   })
 });
