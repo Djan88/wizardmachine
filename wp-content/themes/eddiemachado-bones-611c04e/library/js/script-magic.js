@@ -30,9 +30,7 @@ jQuery(function() {
         };
 
     //Отображение меню в модали
-    if(!jQuery('.show_menu')){
-
-    } else {
+    if(jQuery('.wings_door_closed')){
         jQuery('#myModal_choice').modal('show');
     }
 
