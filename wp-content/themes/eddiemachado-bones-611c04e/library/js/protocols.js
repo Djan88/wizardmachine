@@ -65,7 +65,7 @@
             showCancelButton: true,   
             confirmButtonColor: "#DD6B55",   
             confirmButtonText: "Продолжить сессию",   
-            cancelButtonText: "Выйти"
+            cancelButtonText: "Новый клиент"
         },
         function(isConfirm){   
             if (isConfirm) {
