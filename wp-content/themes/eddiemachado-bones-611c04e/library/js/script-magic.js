@@ -29,11 +29,6 @@ jQuery(function() {
             }
         };
 
-    //Отображение меню в модали
-    if(jQuery('body').find(jQuery('.wings_door_closed'))){
-        jQuery('#myModal_choice').modal('show');
-    }
-
     //Функция проверки положения точек
     checkPoints = function(){
         jQuery('.itemlist_item_dr').each(function() {
