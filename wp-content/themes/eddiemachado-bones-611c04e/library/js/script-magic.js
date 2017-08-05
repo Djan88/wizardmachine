@@ -30,7 +30,9 @@ jQuery(function() {
         };
 
     //Отображение меню в модали
-    if(jQuery('.show_menu')){
+    if(!jQuery('.show_menu')){
+
+    } else {
         jQuery('#myModal_choice').modal('show');
     }
 
