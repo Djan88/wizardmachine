@@ -29,6 +29,11 @@ jQuery(function() {
             }
         };
 
+    //Отображение меню в модали
+    if(jQuery('.show_menu')){
+        jQuery('#myModal_choice').modal('show');
+    }
+
     //Функция проверки положения точек
     checkPoints = function(){
         jQuery('.itemlist_item_dr').each(function() {
