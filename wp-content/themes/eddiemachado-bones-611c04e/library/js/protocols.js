@@ -120,12 +120,12 @@
                if (count_animation <= 172){
                    jQuery('#draggableS2, #draggableS2_1, #draggable2, #draggableD2').css({
                        transform: 'scale(1)',
-                       background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/life_vater.png) 0 0/100% no-repeat'
+                       background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
                    });
                } else {
                    jQuery('#draggableS2, #draggableS2_1, #draggable2, #draggableD2').css({
                        transform: 'scale(1)',
-                       background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
+                       background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/life_vater.png) 0 0/100% no-repeat'
                    });
                }
                jQuery('#draggableD12')
@@ -787,12 +787,12 @@
                                                                                                                if (count_animation <= 172){
                                                                                                                    jQuery('#draggableS6, #draggableS5, #draggable5, #draggableD5, #draggableD6').css({
                                                                                                                        transform: 'scale(1)',
-                                                                                                                       background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/life_vater.png) 0 0/100% no-repeat'
+                                                                                                                       background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
                                                                                                                    });
                                                                                                                } else {
                                                                                                                    jQuery('#draggableS6, #draggableS5, #draggable5, #draggableD5, #draggableD6').css({
                                                                                                                        transform: 'scale(1)',
-                                                                                                                       background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
+                                                                                                                       background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/life_vater.png) 0 0/100% no-repeat'
                                                                                                                    });
                                                                                                                }
                                                                                                                jQuery('#draggableD12')
@@ -1414,12 +1414,12 @@
                 if (count_animation <= 86){
                     jQuery('#draggableS3, #draggableS2_1, #draggable3').css({
                         transform: 'scale(1)',
-                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/life_vater.png) 0 0/100% no-repeat'
+                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
                     });
                 } else if (count_animation <= 172){
                     jQuery('#draggableS3, #draggableS2_1, #draggable3').css({
                         transform: 'scale(1)',
-                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
+                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/life_vater.png) 0 0/100% no-repeat'
                     });
                 } else if (count_animation <= 258){
                     jQuery('#draggableS3, #draggableS2_1, #draggable3').css({
@@ -1529,12 +1529,12 @@
                         if (count_animation <= 86){
                             jQuery('#draggableD2, #draggableD3').css({
                                 transform: 'scale(1)',
-                                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/life_vater.png) 0 0/100% no-repeat'
+                                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
                             });
                         } else if (count_animation <= 172){
                             jQuery('#draggableD2, #draggableD3').css({
                                 transform: 'scale(1)',
-                                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
+                                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/life_vater.png) 0 0/100% no-repeat'
                             });
                         } else if (count_animation <= 258){
                             jQuery('#draggableD2, #draggableD3').css({
@@ -1644,12 +1644,12 @@
                                 if (count_animation <= 86){
                                     jQuery('#draggableS2, #draggable4, #draggable1').css({
                                         transform: 'scale(1)',
-                                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/life_vater.png) 0 0/100% no-repeat'
+                                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
                                     });
                                 } else if (count_animation <= 172){
                                     jQuery('#draggableS2, #draggable4, #draggable1').css({
                                         transform: 'scale(1)',
-                                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
+                                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/life_vater.png) 0 0/100% no-repeat'
                                     });
                                 } else if (count_animation <= 258){
                                     jQuery('#draggableS2, #draggable4, #draggable1').css({
@@ -1759,12 +1759,12 @@
                                         if (count_animation <= 86){
                                             jQuery('#draggableS4, #draggableD4').css({
                                                 transform: 'scale(1)',
-                                                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/life_vater.png) 0 0/100% no-repeat'
+                                                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
                                             });
                                         } else if (count_animation <= 172){
                                             jQuery('#draggableS4, #draggableD4').css({
                                                 transform: 'scale(1)',
-                                                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
+                                                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/life_vater.png) 0 0/100% no-repeat'
                                             });
                                         } else if (count_animation <= 258){
                                             jQuery('#draggableD4').css({
@@ -2573,12 +2573,12 @@
                 if (count_animation <= 86){
                     jQuery('#draggableS4, #draggable4').css({
                         transform: 'scale(1)',
-                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/life_vater.png) 0 0/100% no-repeat'
+                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
                     });
                 } else if (count_animation <= 172){
                     jQuery('#draggableS4, #draggable4').css({
                         transform: 'scale(1)',
-                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
+                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/life_vater.png) 0 0/100% no-repeat'
                     });
                 } else if (count_animation <= 258){
                     jQuery('#draggableS4, #draggable4').css({
@@ -2685,12 +2685,12 @@
                         if (count_animation <= 86){
                             jQuery('#draggable1, #draggable4').css({
                                 transform: 'scale(1)',
-                                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/life_vater.png) 0 0/100% no-repeat'
+                                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
                             });
                         } else if (count_animation <= 172){
                             jQuery('#draggable1, #draggable4').css({
                                 transform: 'scale(1)',
-                                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
+                                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/life_vater.png) 0 0/100% no-repeat'
                             });
                         } else if (count_animation <= 258){
                             jQuery('#draggable1, #draggable4').css({
@@ -2797,12 +2797,12 @@
                                 if (count_animation <= 86){
                                     jQuery('#draggableD3, #draggableD2').css({
                                         transform: 'scale(1)',
-                                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/life_vater.png) 0 0/100% no-repeat'
+                                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
                                     });
                                 } else if (count_animation <= 172){
                                     jQuery('#draggableD3, #draggableD2').css({
                                         transform: 'scale(1)',
-                                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
+                                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/life_vater.png) 0 0/100% no-repeat'
                                     });
                                 } else if (count_animation <= 258){
                                     jQuery('#draggableD3, #draggableD2').css({
@@ -2909,12 +2909,12 @@
                                         if (count_animation <= 86){
                                             jQuery('#draggable3, #draggableS3').css({
                                                 transform: 'scale(1)',
-                                                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/life_vater.png) 0 0/100% no-repeat'
+                                                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
                                             });
                                         } else if (count_animation <= 172){
                                             jQuery('#draggable3, #draggableS3').css({
                                                 transform: 'scale(1)',
-                                                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
+                                                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/life_vater.png) 0 0/100% no-repeat'
                                             });
                                         } else if (count_animation <= 258){
                                             jQuery('#draggable3, #draggableS3').css({
@@ -3718,12 +3718,12 @@ v5 = function(){
             if (count_animation <= 172){
                 jQuery('#draggableS6, #draggableS5, #draggable5').css({
                     transform: 'scale(1)',
-                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/life_vater.png) 0 0/100% no-repeat'
+                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
                 });
             } else if (count_animation > 172 && count_animation <= 258){
                 jQuery('#draggableS6, #draggableS5, #draggable5').css({
                     transform: 'scale(1)',
-                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
+                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/life_vater.png) 0 0/100% no-repeat'
                 });
             } else {
                 jQuery('#draggableS6, #draggableS5, #draggable5').css({
@@ -3824,12 +3824,12 @@ v5 = function(){
                     if (count_animation <= 86){
                         jQuery('#draggableD_6, #draggableD5').css({
                             transform: 'scale(1)',
-                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/life_vater.png) 0 0/100% no-repeat'
+                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
                         });
                     } else if (count_animation > 86 && count_animation <= 172){
                         jQuery('#draggableD_6, #draggableD5').css({
                             transform: 'scale(1)',
-                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
+                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/life_vater.png) 0 0/100% no-repeat'
                         });
                     } else if (count_animation > 172 && count_animation <= 258){
                         jQuery('#draggableD_6, #draggableD5').css({
@@ -4866,12 +4866,12 @@ v5 = function(){
                                                                                                                                                                                                                                     if (count_animation <= 172){
                                                                                                                                                                                                                                         jQuery('#draggable2, #draggable1').css({
                                                                                                                                                                                                                                             transform: 'scale(1)',
-                                                                                                                                                                                                                                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/life_vater.png) 0 0/100% no-repeat'
+                                                                                                                                                                                                                                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
                                                                                                                                                                                                                                         });
                                                                                                                                                                                                                                     } else {
                                                                                                                                                                                                                                         jQuery('#draggable2, #draggable1').css({
                                                                                                                                                                                                                                             transform: 'scale(1)',
-                                                                                                                                                                                                                                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
+                                                                                                                                                                                                                                            background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/life_vater.png) 0 0/100% no-repeat'
                                                                                                                                                                                                                                         });
                                                                                                                                                                                                                                     }
                                                                                                                                                                                                                                     jQuery('#draggableClean').css({
