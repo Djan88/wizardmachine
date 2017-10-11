@@ -10,6 +10,7 @@ jQuery(function() {
         checkV3,
         knife,
         knife_rate_class,
+        knife_rate_class_dotted,
         main_heading,
         curUrl = window.location.pathname,
         pointsStatus = true,
@@ -32,6 +33,10 @@ jQuery(function() {
         drag: function() {
             knife = jQuery('.knife').css('top');
             knife_rate_class = 'knife_rate knife_rate-'+knife;
+            knife_rate_class_dotted = '.knife_rate knife_rate-'+knife;
+            if(jQuery('.knife-wrap').find(knife_rate_class_dotted)){
+                console.log(knife_rate_class);
+            }
             jQuery('.knife-wrap').append('<div class='+knife_rate_class+'></div>');
         }
     });
