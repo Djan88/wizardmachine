@@ -44,7 +44,7 @@ jQuery(function() {
             jQuery('.knife-wrap').append('<div class='+knife_rate_class+'></div>');
             console.log(knife_rate_class_dotted);
             jQuery(knife_rate_class_dotted).addClass('knife_rate').css({
-                top: +knife+45+'px',
+                top: knife+45+'px',
                 width: knifeDateDiff+'px'
             });
             knifeDateOld = knifeDate;
