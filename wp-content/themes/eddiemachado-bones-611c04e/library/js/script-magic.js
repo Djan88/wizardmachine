@@ -31,7 +31,7 @@ jQuery(function() {
         };
 
     jQuery('.knife').draggable({
-        containment: "#containment-wrapper",
+        containment: ".knife-wrap",
         axis: 'y',
         drag: function() {
             knife = jQuery('.knife').css('top');
