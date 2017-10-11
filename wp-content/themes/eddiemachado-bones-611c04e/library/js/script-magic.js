@@ -35,7 +35,7 @@ jQuery(function() {
         axis: 'y',
         drag: function() {
             knife = jQuery('.knife').css('top');
-            knife = +knife;
+            knife = knife.substr(knife.length - 2);
             knifeDate = new Date();
             knifeDateDiff = knifeDate - knifeDateOld;
             console.log(knife);
@@ -44,7 +44,7 @@ jQuery(function() {
             jQuery('.knife-wrap').append('<div class='+knife_rate_class+'></div>');
             console.log(knife_rate_class_dotted);
             jQuery(knife_rate_class_dotted).addClass('knife_rate').css({
-                top: knife+45+'px',
+                top: +knife+45+'px',
                 width: knifeDateDiff+'px'
             });
             knifeDateOld = knifeDate;
