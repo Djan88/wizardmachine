@@ -31,7 +31,7 @@ jQuery(function() {
         };
 
     jQuery('.knife').draggable({
-        containment: '#inner-content',
+        containment: "#containment-wrapper",
         axis: 'y',
         drag: function() {
             knife = jQuery('.knife').css('top');
@@ -44,7 +44,7 @@ jQuery(function() {
             console.log(knife_rate_class_dotted);
             jQuery(knife_rate_class_dotted).addClass('knife_rate').css({
                 top: knife,
-                width: knifeDateDiff+'px'
+                width: knifeDateDiff+45+'px'
             });
             knifeDateOld = knifeDate;
         }

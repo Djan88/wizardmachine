@@ -718,6 +718,7 @@ form.pay-form
 {
     height:1px;
     width: 0;
+    max-width: 200px;
     background: #5e1043;
     position: absolute;
     left: 410px;
