@@ -29,8 +29,6 @@ jQuery(function() {
         containment: '#inner-content',
         axis: 'y',
         drag: function() {
-            counts[ 1 ]++;
-            updateCounterStatus( $drag_counter, counts[ 1 ] );
             knife = jquery('.knife');
             jquery('.knife-wrap').append(jquery('.knife_rate').css({
                 height: '40px',
