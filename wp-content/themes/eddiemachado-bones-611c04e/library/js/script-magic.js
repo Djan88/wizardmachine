@@ -1,9 +1,4 @@
 jQuery(function() {
-
-
-    jQuery('.knife').draggable({containment: '#inner-content', axis: 'y' });
-    //Скрываем возможно загруженное изображение
-    jQuery('#main img:first-child').addClass('returned hidden');
     var cur_screen = 0,
         nextScreen,
         ratioten = jQuery('.ratioten').data('ratio'),
@@ -13,6 +8,7 @@ jQuery(function() {
         checkPoints,
         protocolName,
         checkV3,
+        knife,
         main_heading,
         curUrl = window.location.pathname,
         pointsStatus = true,
@@ -29,6 +25,21 @@ jQuery(function() {
             }
         };
 
+    jQuery('.knife').draggable({
+        containment: '#inner-content',
+        axis: 'y',
+        drag: function() {
+            counts[ 1 ]++;
+            updateCounterStatus( $drag_counter, counts[ 1 ] );
+            knife = jquery('.knife');
+            jquery('.knife-wrap').append(jquery('.knife_rate').css({
+                height: '40px',
+                top: knife.css('top')
+            }))
+        }
+    });
+    //Скрываем возможно загруженное изображение
+    jQuery('#main img:first-child').addClass('returned hidden');
     //Функция проверки положения точек
     checkPoints = function(){
         jQuery('.itemlist_item_dr').each(function() {

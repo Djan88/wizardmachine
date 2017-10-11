@@ -15282,7 +15282,7 @@ mmt = function(){
                 jQuery('#draggableD3, #draggableS2').css({
                     background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
                 });
-            } else {
+            } else if (count_animation <= 90) {
                 jQuery('#draggableD3, #draggableS2').css({
                     background: 'transparent url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/life_vater.png) 0 0/100% no-repeat'
                 });
