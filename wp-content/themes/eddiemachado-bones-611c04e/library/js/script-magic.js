@@ -44,7 +44,7 @@ jQuery(function() {
             if(jQuery(knife_rate_class_dotted).length){
                 console.log(knife_rate_class_dotted);
             } else {
-                jQuery(knife_rate_class_dotted).addClass('knife_rate').css({
+                jQuery(knife_rate_class_dotted).css({
                     top: knife
                 });
             }
