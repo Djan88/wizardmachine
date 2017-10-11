@@ -33,7 +33,7 @@ jQuery(function() {
             jQuery('.knife-wrap').append('<div class="knife_rate"></div>').css({
                 height: '40px',
                 top: knife.css('top')
-            }))
+            })
         }
     });
     //Скрываем возможно загруженное изображение
