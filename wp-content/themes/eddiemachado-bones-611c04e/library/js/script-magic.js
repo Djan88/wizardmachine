@@ -41,9 +41,13 @@ jQuery(function() {
             knife_rate_class = 'knife_rate-'+knife;
             knife_rate_class_dotted = '.knife_rate-'+knife;
             jQuery('.knife-wrap').append('<div class='+knife_rate_class+'></div>');
-            jQuery(knife_rate_class_dotted).addClass('knife_rate').css({
-                top: knife
-            });
+            if(jQuery(knife_rate_class_dotted).length){
+                console.log(knife_rate_class_dotted);
+            } else {
+                jQuery(knife_rate_class_dotted).addClass('knife_rate').css({
+                    top: knife
+                });
+            }
             knifeDateOld = knifeDate;
         }
     });
