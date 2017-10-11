@@ -9,6 +9,7 @@ jQuery(function() {
         protocolName,
         checkV3,
         knife,
+        knife_rate_class,
         main_heading,
         curUrl = window.location.pathname,
         pointsStatus = true,
@@ -30,7 +31,8 @@ jQuery(function() {
         axis: 'y',
         drag: function() {
             knife = jQuery('.knife').css('top');
-            jQuery('.knife-wrap').append('<div class="knife_rate"></div>').css('top', knife);
+            knife_rate_class = 'knife_rate'
+            jQuery('.knife-wrap').append(jQuery('div.knife_rate').css('top', knife));
         }
     });
     //Скрываем возможно загруженное изображение
