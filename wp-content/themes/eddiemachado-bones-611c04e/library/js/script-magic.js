@@ -31,8 +31,8 @@ jQuery(function() {
         axis: 'y',
         drag: function() {
             knife = jQuery('.knife').css('top');
-            knife_rate_class = 'knife_rate'
-            jQuery('.knife-wrap').append(('<div class="knife_rate"></div>').css('top', knife));
+            knife_rate_class = 'knife_rate knife_rate-'+knife;
+            jQuery('.knife-wrap').append('<div class='+knife_rate_class+'></div>');
         }
     });
     //Скрываем возможно загруженное изображение
