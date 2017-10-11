@@ -37,7 +37,7 @@ jQuery(function() {
             knife = jQuery('.knife').css('top');
             knifeDate = new Date();
             knifeDateDiff = knifeDate - knifeDateOld;
-            console.log(knifeDateDiff);
+            console.log(knife);
             knife_rate_class = 'knife_rate knife_rate-'+knife;
             knife_rate_class_dotted = '.knife_rate knife_rate-'+knife;
             jQuery('.knife-wrap').append('<div class='+knife_rate_class+'></div>');
