@@ -30,7 +30,7 @@ jQuery(function() {
         axis: 'y',
         drag: function() {
             knife = jQuery('.knife');
-            jQuery('.knife-wrap').append(jQuery('.knife_rate').css({
+            jQuery('.knife-wrap').append('<div class="knife_rate"></div>').css({
                 height: '40px',
                 top: knife.css('top')
             }))
