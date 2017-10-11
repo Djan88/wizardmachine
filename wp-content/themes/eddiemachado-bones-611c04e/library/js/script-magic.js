@@ -29,8 +29,8 @@ jQuery(function() {
         containment: '#inner-content',
         axis: 'y',
         drag: function() {
-            knife = jquery('.knife');
-            jquery('.knife-wrap').append(jquery('.knife_rate').css({
+            knife = jQuery('.knife');
+            jQuery('.knife-wrap').append(jQuery('.knife_rate').css({
                 height: '40px',
                 top: knife.css('top')
             }))
