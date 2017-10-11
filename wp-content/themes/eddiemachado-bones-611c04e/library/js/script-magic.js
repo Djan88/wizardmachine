@@ -36,7 +36,7 @@ jQuery(function() {
         drag: function() {
             knife = jQuery('.knife').css('top');
             knifeDate = new Date();
-            knifeDateDiff = knifeDate - KnifeDateOld;
+            knifeDateDiff = knifeDate - knifeDateOld;
             console.log(knifeDateDiff);
             knife_rate_class = 'knife_rate knife_rate-'+knife;
             knife_rate_class_dotted = '.knife_rate knife_rate-'+knife;
@@ -44,7 +44,7 @@ jQuery(function() {
             jQuery(knife_rate_class_dotted).css({
                 top: knife
             });
-            KnifeDateOld = knifeDate;
+            knifeDateOld = knifeDate;
         }
     });
     //Скрываем возможно загруженное изображение
