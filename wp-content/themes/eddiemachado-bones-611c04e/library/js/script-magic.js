@@ -9,6 +9,9 @@ jQuery(function() {
         protocolName,
         checkV3,
         knife,
+        knifeDate,
+        knifeDateOld = null,
+        knifeDateDiff,
         knife_rate_class,
         knife_rate_class_dotted,
         main_heading,
@@ -32,13 +35,16 @@ jQuery(function() {
         axis: 'y',
         drag: function() {
             knife = jQuery('.knife').css('top');
+            knifeDate = new Date();
+            knifeDateDiff = knifeDate - KnifeDateOld;
+            console.log(knifeDateDiff);
             knife_rate_class = 'knife_rate knife_rate-'+knife;
             knife_rate_class_dotted = '.knife_rate knife_rate-'+knife;
-            if(jQuery('.knife-wrap').children(knife_rate_class_dotted)){
-
-            } else {
-                jQuery('.knife-wrap').append('<div class='+knife_rate_class+'></div>');
-            }
+            jQuery('.knife-wrap').append('<div class='+knife_rate_class+'></div>');
+            jQuery(knife_rate_class_dotted).css({
+                top: knife
+            });
+            KnifeDateOld = knifeDate;
         }
     });
     //Скрываем возможно загруженное изображение
