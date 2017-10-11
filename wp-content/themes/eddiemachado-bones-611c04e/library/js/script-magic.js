@@ -35,7 +35,7 @@ jQuery(function() {
         axis: 'y',
         drag: function() {
             knife = jQuery('.knife').css('top');
-            knife = knife.substr(knife.length - 2);
+            knife = knife.substr(0, knife.length - 2);
             knifeDate = new Date();
             knifeDateDiff = knifeDate - knifeDateOld;
             console.log(knife);
