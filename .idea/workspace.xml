@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a8c20f5-fb8c-4bb3-9bda-6e9760e4ff83" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/eddiemachado-bones-611c04e/library/css/style-magic.css" afterPath="$PROJECT_DIR$/wp-content/themes/eddiemachado-bones-611c04e/library/css/style-magic.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/eddiemachado-bones-611c04e/library/js/script-magic.js" afterPath="$PROJECT_DIR$/wp-content/themes/eddiemachado-bones-611c04e/library/js/script-magic.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,11 +57,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="script-magic.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="script-magic.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/eddiemachado-bones-611c04e/library/js/script-magic.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="35" column="14" lean-forward="false" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
+            <state relative-caret-position="495">
+              <caret line="33" column="9" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -76,11 +77,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style-magic.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="style-magic.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/eddiemachado-bones-611c04e/library/css/style-magic.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="716" column="11" lean-forward="false" selection-start-line="716" selection-start-column="1" selection-end-line="716" selection-end-column="11" />
+            <state relative-caret-position="366">
+              <caret line="719" column="16" lean-forward="false" selection-start-line="719" selection-start-column="16" selection-end-line="719" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -140,8 +141,8 @@
         <option value="$PROJECT_DIR$/wp-content/themes/eddiemachado-bones-611c04e/header.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/eddiemachado-bones-611c04e/footer.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/eddiemachado-bones-611c04e/library/js/protocols.js" />
-        <option value="$PROJECT_DIR$/wp-content/themes/eddiemachado-bones-611c04e/library/css/style-magic.css" />
         <option value="$PROJECT_DIR$/wp-content/themes/eddiemachado-bones-611c04e/library/js/script-magic.js" />
+        <option value="$PROJECT_DIR$/wp-content/themes/eddiemachado-bones-611c04e/library/css/style-magic.css" />
       </list>
     </option>
   </component>
@@ -400,12 +401,12 @@
       <workItem from="1505205087260" duration="917000" />
       <workItem from="1505379370025" duration="2984000" />
       <workItem from="1506931231221" duration="5000" />
-      <workItem from="1507718066664" duration="3204000" />
+      <workItem from="1507718066664" duration="4146000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55688000" />
+    <option name="totallyTimeSpent" value="56630000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -855,14 +856,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/eddiemachado-bones-611c04e/library/css/style-magic.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="716" column="11" lean-forward="false" selection-start-line="716" selection-start-column="1" selection-end-line="716" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/eddiemachado-bones-611c04e/library/js/protocols.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="379">
@@ -873,8 +866,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/eddiemachado-bones-611c04e/library/js/script-magic.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="14" lean-forward="false" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
+        <state relative-caret-position="495">
+          <caret line="33" column="9" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/eddiemachado-bones-611c04e/library/css/style-magic.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="719" column="16" lean-forward="false" selection-start-line="719" selection-start-column="16" selection-end-line="719" selection-end-column="16" />
           <folding />
         </state>
       </provider>

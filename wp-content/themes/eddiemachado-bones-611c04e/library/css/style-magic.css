@@ -717,6 +717,7 @@ form.pay-form
 .knife_rate
 {
     height:1px;
+    width: 40px;
     background: #5e1043;
     position: absolute;
     left: 410px;
