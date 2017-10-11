@@ -717,10 +717,13 @@ form.pay-form
 .knife_rate
 {
     height:1px;
-    width: 40px;
+    width: 0;
     background: #5e1043;
     position: absolute;
     left: 410px;
+    -webkit-transition: width 0.5s linear;
+    -moz-transition: width 0.5s linear;
+    transition: width 0.5s linear;
 
 }
 .chart{

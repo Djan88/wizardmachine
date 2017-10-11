@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a8c20f5-fb8c-4bb3-9bda-6e9760e4ff83" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/eddiemachado-bones-611c04e/library/css/style-magic.css" afterPath="$PROJECT_DIR$/wp-content/themes/eddiemachado-bones-611c04e/library/css/style-magic.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/eddiemachado-bones-611c04e/library/js/script-magic.js" afterPath="$PROJECT_DIR$/wp-content/themes/eddiemachado-bones-611c04e/library/js/script-magic.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -60,7 +61,7 @@
         <entry file="file://$PROJECT_DIR$/wp-content/themes/eddiemachado-bones-611c04e/library/js/script-magic.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="415">
-              <caret line="46" column="12" lean-forward="false" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
+              <caret line="46" column="40" lean-forward="false" selection-start-line="46" selection-start-column="40" selection-end-line="46" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -79,8 +80,8 @@
       <file leaf-file-name="style-magic.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/eddiemachado-bones-611c04e/library/css/style-magic.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
-              <caret line="719" column="16" lean-forward="false" selection-start-line="719" selection-start-column="16" selection-end-line="719" selection-end-column="16" />
+            <state relative-caret-position="323">
+              <caret line="724" column="39" lean-forward="true" selection-start-line="724" selection-start-column="39" selection-end-line="724" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -125,6 +126,7 @@
       <find>knife</find>
       <find>css</find>
       <find>find</find>
+      <find>tra</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -401,12 +403,12 @@
       <workItem from="1505205087260" duration="917000" />
       <workItem from="1505379370025" duration="2984000" />
       <workItem from="1506931231221" duration="5000" />
-      <workItem from="1507718066664" duration="7993000" />
+      <workItem from="1507718066664" duration="8138000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60477000" />
+    <option name="totallyTimeSpent" value="60622000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -866,8 +868,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/eddiemachado-bones-611c04e/library/css/style-magic.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="719" column="16" lean-forward="false" selection-start-line="719" selection-start-column="16" selection-end-line="719" selection-end-column="16" />
+        <state relative-caret-position="323">
+          <caret line="724" column="39" lean-forward="true" selection-start-line="724" selection-start-column="39" selection-end-line="724" selection-end-column="39" />
           <folding />
         </state>
       </provider>
@@ -875,7 +877,7 @@
     <entry file="file://$PROJECT_DIR$/wp-content/themes/eddiemachado-bones-611c04e/library/js/script-magic.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="415">
-          <caret line="46" column="12" lean-forward="false" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
+          <caret line="46" column="40" lean-forward="false" selection-start-line="46" selection-start-column="40" selection-end-line="46" selection-end-column="40" />
           <folding />
         </state>
       </provider>
