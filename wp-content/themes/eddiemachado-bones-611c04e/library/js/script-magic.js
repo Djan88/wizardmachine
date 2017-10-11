@@ -34,7 +34,7 @@ jQuery(function() {
             knife = jQuery('.knife').css('top');
             knife_rate_class = 'knife_rate knife_rate-'+knife;
             knife_rate_class_dotted = '.knife_rate knife_rate-'+knife;
-            if(jQuery('.knife-wrap').find(knife_rate_class_dotted)){
+            if(jQuery(knife_rate_class_dotted).length){
                 jQuery(knife_rate_class_dotted)
             } else {
                 jQuery('.knife-wrap').append('<div class='+knife_rate_class+'></div>');
