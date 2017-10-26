@@ -33,7 +33,7 @@ jQuery(function() {
     // Управление графиком ножа
     if(supportsStorage && localStorage.getItem('grafSt')){
         grafSt = localStorage.getItem('grafSt');
-        if(grafSt == true){
+        if(grafSt === true){
             jQuery('.btn__graf').addClass('active');
             jQuery('.btn__nograf').removeClass('active');
             jQuery('.btn__clgraf').removeClass('disabled');
