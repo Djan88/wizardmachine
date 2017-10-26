@@ -53,12 +53,16 @@ jQuery(function() {
         grafSt = true;
         localStorage.setItem('grafSt', grafSt);
         jQuery('.btn__clgraf').removeClass('disabled');
+        jQuery('.btn__graf').addClass('active');
+        jQuery('.btn__nograf').removeClass('active');
     })
     jQuery('.btn__nograf').on('click', function (event) {
         grafSt = false;
         localStorage.setItem('grafSt', grafSt);
         jQuery('.btn__clgraf').addClass('disabled');
         jQuery('.knife_rate').detach();
+        jQuery('.btn__graf').removeClass('active');
+        jQuery('.btn__nograf').addClass('active');
     })
     // Анимация ножа
     jQuery('.knife').draggable({
