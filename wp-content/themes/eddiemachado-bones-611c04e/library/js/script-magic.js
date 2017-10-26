@@ -9,6 +9,7 @@ jQuery(function() {
         protocolName,
         checkV3,
         knife,
+        grafSt,
         knifeDate,
         knifeDateOld = null,
         knifeDateDiff,
@@ -29,7 +30,31 @@ jQuery(function() {
                 return false;
             }
         };
-// Анимация диагностики ножом
+    // Управление графиком ножа
+    if(supportsStorage && localStorage.getItem('grafSt')){
+        grafSt = localStorage.getItem('grafSt');
+        if(grafSt === true){
+            jQuery('.btn__graf').addClass('active');
+            jQuery('.btn__nograf').removeClass('active');
+            jQuery('.btn__clgraf').removeClass('disabled');
+        } else {
+            jQuery('.btn__graf').removeClass('active');
+            jQuery('.btn__nograf').addClass('active');
+            jQuery('.btn__clgraf').addClass('disabled');
+        }
+    }
+    jQuery('.btn__clgraf').on('click', function (event) {
+        if(!jQuery(this).hasClass('disabled')){
+            jQuery('.knife_rate').detach();
+        }
+    })
+    jQuery('.btn__graf').on('click', function (event) {
+        grafSt = true;
+    })
+    jQuery('.btn__nograf').on('click', function (event) {
+
+    })
+    // Анимация ножа
     jQuery('.knife').draggable({
         containment: '#inner-content',
         axis: 'y',
@@ -50,11 +75,6 @@ jQuery(function() {
             }
         }
     });
-    // Управление графиком ножа
-
-    jQuery('.btn__clgraf').on('click', function (event) {
-        jQuery('.knife_rate').detach();
-    })
     //Скрываем возможно загруженное изображение
     jQuery('#main img:first-child').addClass('returned hidden');
     //Функция проверки положения точек
