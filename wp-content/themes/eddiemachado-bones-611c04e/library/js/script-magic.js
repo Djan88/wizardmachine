@@ -36,11 +36,11 @@ jQuery(function() {
         console.log(grafSt);
     }
     if(grafSt === 'graf'){
-        jQuery('.btn__graf').button();
+        jQuery('.btn__graf').button('toggle');
         jQuery('.btn__clgraf').removeClass('disabled');
         console.log('1')
     } else {
-        jQuery('.btn__nograf').button();
+        jQuery('.btn__nograf').button('toggle');
         jQuery('.btn__clgraf').addClass('disabled');
         console.log('2')
     }
