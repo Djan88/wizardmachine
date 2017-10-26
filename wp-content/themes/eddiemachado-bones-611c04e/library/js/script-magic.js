@@ -35,11 +35,12 @@ jQuery(function() {
         grafSt = localStorage.getItem('grafSt');
         console.log(grafSt);
     }
-    if(grafSt == true){
+    if(grafSt === true){
         jQuery('.btn__graf').addClass('active');
         jQuery('.btn__nograf').removeClass('active');
         jQuery('.btn__clgraf').removeClass('disabled');
-    } else {
+    }
+    if(grafSt === false) {
         jQuery('.btn__graf').removeClass('active');
         jQuery('.btn__nograf').addClass('active');
         jQuery('.btn__clgraf').addClass('disabled');

@@ -101,8 +101,12 @@
                             <div class="btn btn_sm btn_warning btn__wizard hidden" >Выполнить</div>
                             <div class="btn btn_sm btn_warning btn__next hidden" >Выбрать протокол <span>›</span></div>
                             <div class="btn-group btn-group-graf hidden" data-toggle="buttons">
-                                <div class="btn btn_sm btn_warning btn__graf active">С графиком</div>
-                                <div class="btn btn_sm btn_warning btn__nograf">Без графика</div>
+                                <label class="btn btn_sm btn_warning btn__graf active">
+                                    <input type="radio" name="grafOps" id="option1"> С графиком
+                                </label>
+                                <label class="btn btn_sm btn_warning btn__nograf">
+                                    <input type="radio" name="grafOps" id="option3"> Без графика
+                                </label>
                             </div>
                             <div class="btn btn_sm btn_warning btn__clgraf hidden" >ОЧИСТИТЬ ГРАФИК</div>
                             <div class="btn btn_sm btn_warning btn__crop hidden" >Обрезать фото</div>
