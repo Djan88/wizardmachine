@@ -68,7 +68,7 @@
                   <div class="btn btn_sm btn_warning fast-protocol" data-fast="resource" data-protocol-name ="РЕСУРС">РЕСУРС</div>
                   <div class="btn btn_sm btn_warning fast-protocol" data-fast="solis" data-protocol-name ="SOLIS">SOLIS</div>
                   <div class="btn btn_sm btn_warning fast-protocol" data-fast="demo" data-protocol-name ="«УНИВЕРСАЛЬНЫЙ»">«УНИВЕРСАЛЬНЫЙ»</div>
-                  <div class="btn btn_sm btn_warning fast-protocol" data-fast="mmt" data-protocol-name ="ММТ">«ВИСЦЕРАЛЬНЫЙ ПРОТОКОЛ»</div>
+                  <div class="btn btn_sm btn_warning fast-protocol" data-fast="mmt" data-protocol-name ="ВИСЦЕРАЛЬНЫЙ">«ВИСЦЕРАЛЬНЫЙ ПРОТОКОЛ»</div>
                 </div>
                 <!-- <div class="fast-protocol-resource clearfix hidden"> -->
                   <!-- <div class="btn btn_sm btn_warning fast-v" data-v='#draggable1'>V1</div>  -->
@@ -163,7 +163,7 @@
                         </p><div class="btn btn_lg btn_success btn_choice" data-protocol ="solis" data-protocol-name ="SOLIS">Выбрать</div></div>
                         <h3><span class="protocol_acent">(V2, V3, V4)</span>«УНИВЕРСАЛЬНЫЙ»</h3>
                         <div>«Упрощенный протокол работает на ключевых зонах V2, V3, V4 и эффективен для коррекции широкого круга проблем, прост в использовании, достаточно фото-селфи по пояс.»<div class="btn btn_lg btn_success btn_choice" data-protocol ="demo" data-protocol-name ="«УНИВЕРСАЛЬНЫЙ»">Выбрать</div></div>
-                        <h3><span class="protocol_acent">(ММТ)</span>ВИСЦЕРАЛЬНЫЙ ПРОТОКОЛ</h3>
+                        <h3><span class="protocol_acent">(ВИСЦЕРАЛЬНЫЙ)</span>ВИСЦЕРАЛЬНЫЙ ПРОТОКОЛ</h3>
                         <div>«Печеночное продвижение. Для коррекции вегетативно/сосудистых, висцеральных, психосоматических проблем, а также состояний, связанных с нарушением иммунитета и обмена веществ»<div class="btn btn_lg btn_success btn_choice" data-protocol ="mmt" data-protocol-name ="Висцеральный">Выбрать</div> </div>
                     </div>
                 </div>

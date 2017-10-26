@@ -29,7 +29,7 @@ jQuery(function() {
                 return false;
             }
         };
-
+// Анимация диагностики ножом
     jQuery('.knife').draggable({
         containment: '#inner-content',
         axis: 'y',
