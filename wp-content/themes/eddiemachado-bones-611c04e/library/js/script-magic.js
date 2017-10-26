@@ -328,7 +328,7 @@ jQuery('#main').on('click', '.fast-protocol', function() {
 // Возврат на предыдущий шаг
     jQuery('.btn_back').on('click', function(event) {
         jQuery('.btn__crop, .btn__wizard').addClass('hidden');
-        console.log(cur_screen);
+        // console.log(cur_screen);
         jQuery('.machine_screen')
             .addClass('hidden')
             .removeClass('fadeIn')

@@ -866,7 +866,7 @@ label.btn.btn_sm.btn_warning.btn__graf:first-child
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
-label.btn.btn_sm.btn_warning.btn__graf:last-child
+label.btn.btn_sm.btn_warning.btn__nograf:last-child
 {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
