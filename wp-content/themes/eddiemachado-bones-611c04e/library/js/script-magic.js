@@ -328,7 +328,7 @@ jQuery('#main').on('click', '.fast-protocol', function() {
 // Возврат на предыдущий шаг
     jQuery('.btn_back').on('click', function(event) {
         jQuery('.btn__crop, .btn__wizard').addClass('hidden');
-        // console.log(cur_screen);
+        console.log(cur_screen);
         jQuery('.machine_screen')
             .addClass('hidden')
             .removeClass('fadeIn')
@@ -354,6 +354,8 @@ jQuery('#main').on('click', '.fast-protocol', function() {
             jQuery('.btn__clgraf').removeClass('hidden');
         } else {
             jQuery('.btn__next').addClass('hidden');
+            jQuery('.btn-group-graf').addClass('hidden');
+            jQuery('.btn__clgraf').addClass('hidden');
         }
         cur_screen -= 1; 
         main_heading()
