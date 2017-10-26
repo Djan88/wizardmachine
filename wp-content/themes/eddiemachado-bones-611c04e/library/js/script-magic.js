@@ -42,6 +42,7 @@ jQuery(function() {
             jQuery('.btn__nograf').addClass('active');
             jQuery('.btn__clgraf').addClass('disabled');
         }
+        console.log(grafSt);
     }
     jQuery('.btn__clgraf').on('click', function (event) {
         if(!jQuery(this).hasClass('disabled')){
