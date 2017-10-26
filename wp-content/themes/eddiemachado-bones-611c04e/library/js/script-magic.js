@@ -34,7 +34,7 @@ jQuery(function() {
         containment: '#inner-content',
         axis: 'y',
         drag: function() {
-            if(jQuery('.btn__graf').has_class('active')){
+            if(jQuery('.btn__graf').hasClass('active')){
                 knife = jQuery('.knife').css('top');
                 knife = knife.substr(0, knife.length - 2);
                 knifeDate = new Date();
