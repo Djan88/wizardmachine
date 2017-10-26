@@ -880,6 +880,13 @@ label.btn.btn_sm.btn_warning.btn__graf.active, label.btn.btn_sm.btn_warning.btn_
     background-color: #204371;
     color: #fff!important;
 }
+.btn_warning.disabled,.btn_warning.disabled:hover
+{
+    color: #204371;
+    background: #fff;
+    cursor: default;
+    opacity: 0.3;
+}
 .btn__clgraf
 {
     font-weight: 600;
