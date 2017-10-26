@@ -108,7 +108,7 @@
                                     <input type="radio" name="grafOps" id="option3"> Без графика
                                 </label>
                             </div>
-                            <div class="btn btn_sm btn_warning btn__clgraf hidden" >Очистить график</div>
+                            <div class="btn btn_sm btn_warning btn__clgraf hidden" >ОЧИТСТИТЬ ГРАФИК</div>
                             <div class="btn btn_sm btn_warning btn__crop hidden" >Обрезать фото</div>
                             <div class="btn btn_sm btn_warning btn_back invisible"><span>‹</span> Назад</div>
                         <?php }?>

@@ -846,6 +846,37 @@ img.outdoor
     width: 400px;
     margin-top: 40px;
 }
+.btn-group.btn-group-graf
+{
+    display: inline-block;
+    margin-left: 10px;
+}
+.btn-group-graf label
+{
+    margin: 0!important;
+    display: inline;
+    padding: 6px;
+}
+.btn-group-graf label input
+{
+    display: none;
+}
+label.btn.btn_sm.btn_warning.btn__graf:first-child
+{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+label.btn.btn_sm.btn_warning.btn__graf:last-child
+{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.btn__clgraf
+{
+    font-weight: 600;
+    font-size: 13px;
+    height: 30px;
+}
 @media (max-width: 1000px) {
     img.outdoor
     {
