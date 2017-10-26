@@ -36,13 +36,10 @@ jQuery(function() {
         console.log(grafSt);
     }
     if(grafSt === true){
-        jQuery('.btn__graf').addClass('active');
-        jQuery('.btn__nograf').removeClass('active');
+        jQuery('.btn__graf').button()
         jQuery('.btn__clgraf').removeClass('disabled');
-    }
-    if(grafSt === false) {
-        jQuery('.btn__graf').removeClass('active');
-        jQuery('.btn__nograf').addClass('active');
+    } else {
+        jQuery('.btn__graf').button()
         jQuery('.btn__clgraf').addClass('disabled');
     }
     jQuery('.btn__clgraf').on('click', function (event) {
