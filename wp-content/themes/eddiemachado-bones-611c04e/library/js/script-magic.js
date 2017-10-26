@@ -9,7 +9,7 @@ jQuery(function() {
         protocolName,
         checkV3,
         knife,
-        grafSt,
+        grafSt = true,
         knifeDate,
         knifeDateOld = null,
         knifeDateDiff,
@@ -44,16 +44,18 @@ jQuery(function() {
         }
     }
     jQuery('.btn__clgraf').on('click', function (event) {
-        if(jQuery(this).hasClass('disabled')){
+        if(!jQuery(this).hasClass('disabled')){
             jQuery('.knife_rate').detach();
         }
     })
     jQuery('.btn__graf').on('click', function (event) {
         grafSt = true;
+        localStorage.setItem('grafSt', grafSt);
         jQuery('.btn__clgraf').removeClass('disabled');
     })
     jQuery('.btn__nograf').on('click', function (event) {
         grafSt = false;
+        localStorage.setItem('grafSt', grafSt);
         jQuery('.btn__clgraf').addClass('disabled');
     })
     // Анимация ножа
@@ -61,7 +63,7 @@ jQuery(function() {
         containment: '#inner-content',
         axis: 'y',
         drag: function() {
-            if(grafSt == true){
+            if(jQuery('.btn__graf').hasClass('active')){
                 knife = jQuery('.knife').css('top');
                 knife = knife.substr(0, knife.length - 2);
                 knifeDate = new Date();
