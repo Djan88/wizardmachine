@@ -35,7 +35,7 @@ jQuery(function() {
         grafSt = localStorage.getItem('grafSt');
         console.log(grafSt);
     }
-    if(grafSt === true){
+    if(grafSt === 1){
         jQuery('.btn__graf').addClass('active');
         jQuery('.btn__nograf').removeClass('active');
         jQuery('.btn__clgraf').removeClass('disabled');
@@ -50,12 +50,12 @@ jQuery(function() {
         }
     })
     jQuery('.btn__graf').on('click', function (event) {
-        grafSt = true;
+        grafSt = 1;
         localStorage.setItem('grafSt', grafSt);
         jQuery('.btn__clgraf').removeClass('disabled');
     })
     jQuery('.btn__nograf').on('click', function (event) {
-        grafSt = false;
+        grafSt = 2;
         localStorage.setItem('grafSt', grafSt);
         jQuery('.btn__clgraf').addClass('disabled');
         jQuery('.knife_rate').detach();
