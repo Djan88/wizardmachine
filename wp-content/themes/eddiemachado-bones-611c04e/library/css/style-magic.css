@@ -851,7 +851,7 @@ img.outdoor
     display: inline-block;
     margin-left: 10px;
 }
-.btn-group-graf label
+.btn-group-graf div
 {
     margin: 0!important;
     display: inline;
@@ -864,18 +864,18 @@ img.outdoor
 {
     display: none;
 }
-label.btn.btn_sm.btn_warning.btn__graf:first-child
+div.btn.btn_sm.btn_warning.btn__graf:first-child
 {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
-label.btn.btn_sm.btn_warning.btn__nograf:last-child
+div.btn.btn_sm.btn_warning.btn__nograf:last-child
 {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     border-left-color: transparent;
 }
-label.btn.btn_sm.btn_warning.btn__graf.active, label.btn.btn_sm.btn_warning.btn__nograf.active
+div.btn.btn_sm.btn_warning.btn__graf.active, div.btn.btn_sm.btn_warning.btn__nograf.active
 {
     background-color: #204371;
     color: #fff!important;
