@@ -101,7 +101,7 @@
                             <div class="btn btn_sm btn_warning btn__wizard hidden" >Выполнить</div>
                             <div class="btn btn_sm btn_warning btn__next hidden" >Выбрать протокол <span>›</span></div>
                             <div class="btn-group btn-group-graf hidden" data-toggle="buttons">
-                                <label class="btn btn_sm btn_warning btn__graf active">
+                                <label class="btn btn_sm btn_warning btn__graf">
                                     <input type="radio" name="grafOps" id="option1"> С графиком
                                 </label>
                                 <label class="btn btn_sm btn_warning btn__nograf">

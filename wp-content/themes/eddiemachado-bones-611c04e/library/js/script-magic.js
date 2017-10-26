@@ -9,7 +9,7 @@ jQuery(function() {
         protocolName,
         checkV3,
         knife,
-        grafSt,
+        grafSt = 'graf',
         knifeDate,
         knifeDateOld = null,
         knifeDateDiff,
