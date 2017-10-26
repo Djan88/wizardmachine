@@ -50,6 +50,10 @@ jQuery(function() {
             knifeDateOld = knifeDate;
         }
     });
+    // Управление графиком ножа
+    jQuery('.btn__clgraf').on('click', function (event) {
+        jQuery('.knife_rate').detach();
+    })
     //Скрываем возможно загруженное изображение
     jQuery('#main img:first-child').addClass('returned hidden');
     //Функция проверки положения точек
