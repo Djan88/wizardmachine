@@ -35,25 +35,27 @@ jQuery(function() {
         grafSt = localStorage.getItem('grafSt');
         console.log(grafSt);
     }
-    if(grafSt === true){
-        jQuery('.btn__graf').button()
+    if(grafSt == true){
+        jQuery('.btn__graf').button();
         jQuery('.btn__clgraf').removeClass('disabled');
+        console.log('1')
     } else {
-        jQuery('.btn__graf').button()
+        jQuery('.btn__graf').button();
         jQuery('.btn__clgraf').addClass('disabled');
+        console.log('2')
     }
     jQuery('.btn__clgraf').on('click', function (event) {
         if(!jQuery(this).hasClass('disabled')){
             jQuery('.knife_rate').detach();
         }
-    })
+    });
     jQuery('.btn__graf').on('click', function (event) {
         grafSt = true;
         localStorage.setItem('grafSt', grafSt);
         jQuery('.btn__clgraf').removeClass('disabled');
         jQuery('.btn__graf').addClass('active');
         jQuery('.btn__nograf').removeClass('active');
-    })
+    });
     jQuery('.btn__nograf').on('click', function (event) {
         grafSt = false;
         localStorage.setItem('grafSt', grafSt);
@@ -61,7 +63,7 @@ jQuery(function() {
         jQuery('.knife_rate').detach();
         jQuery('.btn__graf').removeClass('active');
         jQuery('.btn__nograf').addClass('active');
-    })
+    });
     // Анимация ножа
     jQuery('.knife').draggable({
         containment: '#inner-content',
