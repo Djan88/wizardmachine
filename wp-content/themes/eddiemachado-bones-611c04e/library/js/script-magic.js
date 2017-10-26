@@ -33,16 +33,16 @@ jQuery(function() {
     // Управление графиком ножа
     if(supportsStorage && localStorage.getItem('grafSt')){
         grafSt = localStorage.getItem('grafSt');
-        if(grafSt === true){
-            jQuery('.btn__graf').addClass('active');
-            jQuery('.btn__nograf').removeClass('active');
-            jQuery('.btn__clgraf').removeClass('disabled');
-        } else if(grafSt === false) {
-            jQuery('.btn__graf').removeClass('active');
-            jQuery('.btn__nograf').addClass('active');
-            jQuery('.btn__clgraf').addClass('disabled');
-        }
         console.log(grafSt);
+    }
+    if(grafSt === true){
+        jQuery('.btn__graf').addClass('active');
+        jQuery('.btn__nograf').removeClass('active');
+        jQuery('.btn__clgraf').removeClass('disabled');
+    } else if(grafSt === false) {
+        jQuery('.btn__graf').removeClass('active');
+        jQuery('.btn__nograf').addClass('active');
+        jQuery('.btn__clgraf').addClass('disabled');
     }
     jQuery('.btn__clgraf').on('click', function (event) {
         if(!jQuery(this).hasClass('disabled')){
