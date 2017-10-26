@@ -191,6 +191,8 @@ jQuery('.work-area').find('.returned').draggable();
         } else {
             cur_screen = 1;
             jQuery('.btn__next').removeClass('hidden');
+            jQuery('.btn-group-graf').removeClass('hidden');
+            jQuery('.btn__clgraf').removeClass('hidden');
         };
         nextScreen();
         jQuery('.btn_back')
@@ -226,6 +228,8 @@ jQuery('.work-area').find('.returned').draggable();
         cur_screen += 1;
         nextScreen();
         jQuery('.btn__next').addClass('hidden');
+        jQuery('.btn-group-graf').addClass('hidden');
+        jQuery('.btn__clgraf').addClass('hidden');
     });
 
 //ШАГ 3 (Старт процедуры)
@@ -346,6 +350,8 @@ jQuery('#main').on('click', '.fast-protocol', function() {
         };
         if (curUrl !== '/wizard/' && cur_screen == 2){
             jQuery('.btn__next').removeClass('hidden');
+            jQuery('.btn-group-graf').removeClass('hidden');
+            jQuery('.btn__clgraf').removeClass('hidden');
         } else {
             jQuery('.btn__next').addClass('hidden');
         }
