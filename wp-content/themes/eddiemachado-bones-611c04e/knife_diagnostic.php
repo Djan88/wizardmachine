@@ -45,9 +45,9 @@
                         <th>Дата активации лицензии</th><td><?php echo $user_reg; ?></td>
                       </tr>
                     </table>
-                    <h3 class="heading">Вы можете продлить лицензию на 1 год со скидкой 50%</h3>
+                    <h3 class="heading">Вы можете продлить лицензию на 1 год со скидкой</h3>
                     <a href="#contact_form_pop" class="btn btn_lg btn_success btn_licens fancybox">Продлить лицензию</a>
-                    <h6 style="color:red;">Не сообщайте посторонним лицам ваш пароль на вход в программу.<br>Администрация проекта никогда не попросит его!</h6>
+                    <h6 style="color:red;">Не сообщайте посторонним лицам ваш пароль на вход в программу.</h6>
                     <div class="fancybox-hidden" style="display: none;">
                       <div id="contact_form_pop">
                         <h5 class="heading">Заполните форму</h5>
