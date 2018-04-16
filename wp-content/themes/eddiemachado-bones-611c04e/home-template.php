@@ -9,7 +9,7 @@
 <div id="content">
     <div id="inner-content" class="wrap cf">
         <div id="main" class="m-all t-2of3 cf" role="main">
-            <div class="home-page-content">    
+            <div class="home-page-content <?php if(current_user_can('subscriber')){ ?>subscriber<?php } ?>">    
                 <?php if(is_user_logged_in()){ ?>
                     <!-- Если зашел подписчик -->
                     <?php if(current_user_can('subscriber')){ ?>
