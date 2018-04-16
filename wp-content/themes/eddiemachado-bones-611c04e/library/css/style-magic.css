@@ -893,6 +893,10 @@ label.btn.btn_sm.btn_warning.btn__graf.active, label.btn.btn_sm.btn_warning.btn_
     font-size: 13px;
     height: 30px;
 }
+.subscriber_wrap
+{
+    height: auto!important;
+}
 .home-page-content.subscriber
 {
     width: auto;
