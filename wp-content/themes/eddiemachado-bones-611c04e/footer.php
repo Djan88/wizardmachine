@@ -139,10 +139,12 @@
             </script>
         <?php } ?>
         <?php if(is_user_logged_in()&&is_front_page()) { ?>
-            <script>
-                //Отображение меню в модали
-                jQuery('#myModal_choice').modal('show');
-            </script>
+            <?php if(current_user_can('contributor') || current_user_can('administrator')) { ?>
+                <script>
+                    //Отображение меню в модали
+                    jQuery('#myModal_choice').modal('show');
+                </script>
+            <?php } ?>
         <?php } ?>
 
     </body>

@@ -7,21 +7,16 @@
 <?php get_header(); ?>
 
 <div id="content">
-
     <div id="inner-content" class="wrap cf">
-
         <div id="main" class="m-all t-2of3 cf" role="main">
-
-            <div class="home-page-content">
-                
+            <div class="home-page-content">    
                 <?php if(is_user_logged_in()){ ?>
                     <!-- Если зашел подписчик -->
                     <?php if(current_user_can('subscriber')){ ?>
-                
-                          <div class="home-content">
-                              <h2 class="home_heading">WIZARDMACHINE</h2>
+                        <div class="home-content">
+                            <h2 class="home_heading">WIZARDMACHINE</h2>
                               <?php the_content(); ?>
-                          </div>
+                        </div>
                     <!-- Если зашел участник или администратор -->
                     <?php } elseif(current_user_can('contributor') || current_user_can('administrator')) { ?>
                         
@@ -44,27 +39,16 @@
                           <?php } ?>
                         </div>
                         <?php endwhile; ?>
-
-                        <?php endif; ?>
-                            
-                            
+                        <?php endif; ?> 
                     <?php } ?>
-                
                 <?php } else { ?>
                     <div class="home-content" style="text-align: right">
 <!--                        <h2 class="home_heading" data-toggle="modal" data-target="#myModal_login">WIZARDMACHINE</h2>-->
-
                     </div>
-
                 <?php } ?>
-
-                
             </div>
-
         </div>
-
     </div>
-
 </div>
 
 
