@@ -915,6 +915,22 @@ label.btn.btn_sm.btn_warning.btn__graf.active, label.btn.btn_sm.btn_warning.btn_
     -o-box-shadow: 0 1px 8px #d3cec7;
     box-shadow: 0 1px 8px #d3cec7;
 }
+img.wizard-machine_items.hidden 
+{
+    display: block!important;
+    margin: auto;
+    max-width: 600px;
+}
+.vitrin 
+{
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+}
+h1.vitrin_heading, .vitrin h2, .vitrin h3, .vitrin h4 {
+    border-bottom: 3px solid;
+    font-weight: 600;
+}
 @media (max-width: 1000px) {
     img.outdoor
     {
