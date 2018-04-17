@@ -18,7 +18,7 @@
                           <div class="row">
                             <div class="col-md-10 col-md-offset-1">
                               <div class="vitrin">
-                                <p><h3>Добрый день!</h3></p>
+                                <p>Добрый день!</p>
                                 <p>
                                   <b>"WizardMachine"</b> — это интерактивный веб-проект для коррекции индивидуальных личностных проблем. Работа осуществляется по цифровой фотографии пациента. Для эффективной работы в программе оператору необходимо обладать базовыми навыками биологического центрирования и прочесть книгу Чикурова Юрия Валентиновича "Биологическое Центрирование. Практическое руководство".
                                 </p>
@@ -35,7 +35,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="col-md-12">
+                        <div class="col-md-12 vitrin">
                           <h2>Из чего состоит функционал программы.</h2>
                           <div class="row">
                             <div class="col-sm-12">
@@ -53,7 +53,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="col-md-12">
+                        <div class="col-md-12 vitrin">
                           <h2>Стоимость приобретения "WizardMachine".</h2>
                           <div class="row">
                             <div class="col-sm-12">
@@ -68,7 +68,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="col-md-12">
+                        <div class="col-md-12 vitrin">
                           <h2>Как приобрести доступ к программе?</h2>
                           <div class="row">
                             <div class="col-md-10 col-md-offset-1">
