@@ -1268,11 +1268,11 @@ body.home
 }
 body.home #main
 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
+  /*display: -webkit-box;*/
+  /*display: -webkit-flex;*/
+  /*display: -moz-box;*/
+  /*display: -ms-flexbox;*/
+  /*display: flex;*/
   /*height: 40em;*/
 }
 /*.home .note_small a
@@ -2063,6 +2063,7 @@ you can add resource intensive styles.
   .wrap {
     width: 1040px; 
     padding: 10px 10px 0;
+    max-width: 100%;
     } }
 
   #inner-header.wrap, #inner-footer.wrap
