@@ -54,7 +54,7 @@
                           <h2>Стоимость приобретения "WizardMachine".</h2>
                           <div class="row">
                             <div class="col-sm-12">
-                              <div class="vitrin vitrin-content">
+                              <div class="vitrin">
                                 <p>
                                     Стоимость подключения к программе на 1 год составляет 35 000 руб.
                                 </p>
@@ -69,7 +69,7 @@
                           <h2>Как приобрести доступ к программе?</h2>
                           <div class="row">
                             <div class="col-md-10 col-md-offset-1">
-                              <div class="vitrin vitrin-content">
+                              <div class="vitrin">
                                 Для того чтоб приобрести доступ к программе напишите на <a href="mailto:info@chikurov.com">info@chikurov.com</a> указав в письме какой вариант работы Вы выбираете.
                                 <h3></h3>
                                 <h4>Юридическая информация:</h4>
