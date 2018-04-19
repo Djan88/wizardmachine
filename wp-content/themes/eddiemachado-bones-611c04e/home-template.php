@@ -54,12 +54,12 @@
                           <h2>Стоимость приобретения "WizardMachine".</h2>
                           <div class="row">
                             <div class="col-sm-12">
-                              <div class="vitrin vitrin-content">
+                              <div class="vitrin vitrin-content vitrin-centered">
                                 <p>
-                                    Стоимость подключения к программе на 1 год составляет 35 000 руб.
+                                    Стоимость подключения к программе на 1 год составляет <div class="vitrin-price">35 000 руб.</div>
                                 </p>
                                 <p>
-                                    Через год и далее Вы сможете продлить Вашу учетную запись за 25 000 руб.
+                                    Через год и далее Вы сможете продлить Вашу учетную запись за <div class="vitrin-price">25 000 руб.</div>
                                 </p>
                               </div>
                             </div>
