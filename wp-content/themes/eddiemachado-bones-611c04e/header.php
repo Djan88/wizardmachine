@@ -47,26 +47,32 @@
 
     <body <?php body_class(); ?>>
         <?php if(is_front_page()){ ?>
-        <div class="wrapper_home wr">
-            <div class="wr_in">
-                <img src="<?php echo get_template_directory_uri(); ?>/library/images/tower.png" class="tower_home" alt="">
-                <img src="<?php echo get_template_directory_uri(); ?>/library/images/wings.png" class="wings_home" alt="">
-                <img src="<?php echo get_template_directory_uri(); ?>/library/images/outdoor_board.gif" class="outdoor"   data-toggle="modal" data-target="#myModal_choice"  alt="">
-                <?php if(!is_user_logged_in()){ ?>
-                    <div class="window_light wl_down"></div>
-                    <img src="<?php echo get_template_directory_uri(); ?>/library/images/w.gif" class="wings_step" alt="">
-                    <img src="<?php echo get_template_directory_uri(); ?>/library/images/door.gif"  data-toggle="modal" data-target="#myModal_login" class="wings_door" alt="">
+            <?php if(!is_user_logged_in()){ ?>
+                <div class="wrapper_home wr">
+                    <div class="wr_in">
+                        <img src="<?php echo get_template_directory_uri(); ?>/library/images/tower.png" class="tower_home" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/library/images/wings.png" class="wings_home" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/library/images/outdoor_board.gif" class="outdoor"   data-toggle="modal" data-target="#myModal_choice"  alt="">
+                        <div class="window_light wl_down"></div>
+                        <img src="<?php echo get_template_directory_uri(); ?>/library/images/w.gif" class="wings_step" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/library/images/door.gif"  data-toggle="modal" data-target="#myModal_login" class="wings_door" alt="">
+                    </div>
+                </div>
+            <?php } else { ?>
+                <?php if(current_user_can('contributor') || current_user_can('administrator')){ ?>
+                    <div class="wrapper_home wr">
+                        <div class="wr_in">
+                            <img src="<?php echo get_template_directory_uri(); ?>/library/images/tower.png" class="tower_home" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/library/images/wings.png" class="wings_home" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/library/images/outdoor_board.gif" class="outdoor"   data-toggle="modal" data-target="#myModal_choice"  alt="">
+                            <div class="window_light wl_up"></div>
+                            <a class="btn btn_sm btn_warning wings_door_closed" href="<?php echo home_url(); ?>/wp-login.php?action=logout&amp;_wpnonce=a6cad512ba">
+                                <img src="<?php echo get_template_directory_uri(); ?>/library/images/door.png" class="door_closed" alt="">
+                            </a>
+                        </div>
+                    </div>
                 <?php } ?>
-                <?php if(is_user_logged_in()){ ?>
-                    <?php if(current_user_can('contributor') || current_user_can('administrator')){ ?>
-                        <div class="window_light wl_up"></div>
-                        <a class="btn btn_sm btn_warning wings_door_closed" href="<?php echo home_url(); ?>/wp-login.php?action=logout&amp;_wpnonce=a6cad512ba">
-                            <img src="<?php echo get_template_directory_uri(); ?>/library/images/door.png" class="door_closed" alt="">
-                        </a>
-                    <?php } ?>
-                <?php } ?>
-            </div>
-        </div>
+            <?php } ?>
         <?php } ?>
         <div id="container">
 
