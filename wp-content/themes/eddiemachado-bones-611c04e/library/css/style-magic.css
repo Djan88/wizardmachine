@@ -956,6 +956,14 @@ h1.vitrin_heading, .vitrin h2, .vitrin h3, .vitrin h4 {
 {
     border: none;
     display: inline;
+    color: #646773;
+    text-transform: initial;
+    text-decoration: underline;
+}
+.footer.vitrin 
+{
+    font-size: 14px;
+    color: #fff;
 }
 @media (max-width: 1000px) {
     img.outdoor

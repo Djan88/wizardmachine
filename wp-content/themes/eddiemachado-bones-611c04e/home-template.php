@@ -87,9 +87,9 @@
                                 </div>
                             </div>
                         </div>
-                        <footer class="footer" role="contentinfo">
+                        <footer class="footer vitrin" role="contentinfo">
                             <div id="inner-footer" class="wrap cf">
-                                <p class="source-org copyright">© 2018 <a href="/" class="homelink">Wizardmachine</a>. Версия 4.2.2 <span class="supportlink">Поддержка пользователей: <a href="mailto:wizardmachine@yandex.ru">wizardmachine@yandex.ru</a></span>
+                                <p class="source-org copyright">© 2018 <a href="/" class="homelink">Wizardmachine</a> Версия 4.2.2 <span class="supportlink">Поддержка пользователей: <a href="mailto:wizardmachine@yandex.ru">wizardmachine@yandex.ru</a></span>
                                 </p>
                             </div>
                         </footer>
