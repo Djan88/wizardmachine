@@ -930,6 +930,17 @@ img.wizard-machine_items.hidden
 h1.vitrin_heading, .vitrin h2, .vitrin h3, .vitrin h4 {
     border-bottom: 3px solid;
     font-weight: 600;
+    color: #0b1d7a;
+    text-align: center;
+}
+.vitrin .col-sm-12 
+{
+    width: 70%;
+    margin: auto;
+    min-width: 250px;
+    padding: 10px;
+    border: 1px solid #0b1d7a;
+    border-radius: 6px;
 }
 @media (max-width: 1000px) {
     img.outdoor
