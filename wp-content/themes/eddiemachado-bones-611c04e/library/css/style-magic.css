@@ -906,6 +906,7 @@ label.btn.btn_sm.btn_warning.btn__graf.active, label.btn.btn_sm.btn_warning.btn_
     margin-top: 0;
     background: #E0CFAB;
     padding: 20px;
+    cursor: auto;
     padding-top: 0;
     margin: auto;
     position: relative;
