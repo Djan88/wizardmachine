@@ -921,6 +921,7 @@ label.btn.btn_sm.btn_warning.btn__graf.active, label.btn.btn_sm.btn_warning.btn_
     color: #204371;
     text-decoration: underline;
     font-weight: bold;
+    cursor: pointer;
 }
 img.wizard-machine_items.hidden 
 {
