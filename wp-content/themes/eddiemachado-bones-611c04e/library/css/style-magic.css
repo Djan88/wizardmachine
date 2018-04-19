@@ -959,6 +959,7 @@ h1.vitrin_heading, .vitrin h2, .vitrin h3, .vitrin h4 {
     color: #646773;
     text-transform: initial;
     text-decoration: underline;
+    margin-right: 0;
 }
 .footer.vitrin 
 {
@@ -974,6 +975,12 @@ h1.vitrin_heading, .vitrin h2, .vitrin h3, .vitrin h4 {
     background: #D0A985;
     color: #fff;
     font-weight: bold;
+    font-size: 22px;
+    text-decoration: underline;
+}
+.vitrin_heading 
+{
+    padding: 10px 0;
 }
 @media (max-width: 1000px) {
     img.outdoor
