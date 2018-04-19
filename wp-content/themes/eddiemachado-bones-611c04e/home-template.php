@@ -71,7 +71,6 @@
                             <div class="col-md-10 col-md-offset-1">
                               <div class="vitrin">
                                 Для того чтоб приобрести доступ к программе напишите на <a href="mailto:info@chikurov.com">info@chikurov.com</a> указав в письме какой вариант работы Вы выбираете.
-                                <h3></h3>
                                 <h4>Юридическая информация:</h4>
                                 <p><a href="mailto:info@chikurov.com">info@chikurov.com</a> / +7 (495) 135-25-48</p>
                                 <p>ОГРНИП: 314910224600336</p>
