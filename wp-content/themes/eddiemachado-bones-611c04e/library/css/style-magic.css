@@ -943,6 +943,15 @@ h1.vitrin_heading, .vitrin h2, .vitrin h3, .vitrin h4 {
     border-radius: 6px;
     background: #d4d4d4;
 }
+.vitrin-centered
+{
+    text-align: center;
+}
+.vitrin a 
+{
+    border: none;
+    display: inline;
+}
 @media (max-width: 1000px) {
     img.outdoor
     {
