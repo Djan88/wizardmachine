@@ -933,7 +933,7 @@ h1.vitrin_heading, .vitrin h2, .vitrin h3, .vitrin h4 {
     color: #0b1d7a;
     text-align: center;
 }
-.vitrin .col-sm-12 
+.vitrin-content 
 {
     width: 70%;
     margin: auto;
