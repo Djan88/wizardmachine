@@ -74,7 +74,7 @@
                 <?php } ?>
             <?php } ?>
         <?php } ?>
-        <div id="container  <?php if(current_user_can('subscriber')){ ?>subscriber_wrapper<?php } ?>">
+        <div id="container" <?php if(current_user_can('subscriber')){ ?>class="subscriber_wrapper"<?php } ?>>
 
             <?php if(!is_front_page()){ ?>
 
