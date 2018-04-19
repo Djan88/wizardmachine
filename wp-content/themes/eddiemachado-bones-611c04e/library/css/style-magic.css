@@ -916,6 +916,12 @@ label.btn.btn_sm.btn_warning.btn__graf.active, label.btn.btn_sm.btn_warning.btn_
     -o-box-shadow: 0 1px 8px #625751;
     box-shadow: 0 1px 8px #625751;
 }
+.toRegistration, .toLogin 
+{
+    color: #204371;
+    text-decoration: underline;
+    font-weight: bold;
+}
 img.wizard-machine_items.hidden 
 {
     display: block!important;
