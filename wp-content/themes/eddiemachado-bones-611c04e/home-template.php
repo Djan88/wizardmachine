@@ -37,7 +37,7 @@
                           <div class="row">
                             <div class="col-sm-12">
                               <div class="vitrin">
-                                <p class="vitrin_content">
+                                <p class="vitrin-content">
                                     Приобретая программу Вы получите на свою электронную почту подробное руководство в формате PDF с наглядными изображениями и описанием каждой из возможностей программы.
                                     Каждый шаг в программе хорошо докумментирован и не позволит Вам сделать "что-то не то...".<br>
                                     Программа работает по встроенным протоколам. Проведя все приготовления оператору останется только нажать кнопку "Выполнить", всю дальнейшую работу "WizardMachine" выполнит самостоятельно, в автоматическом режиме.
@@ -54,7 +54,7 @@
                           <h2>Стоимость приобретения "WizardMachine".</h2>
                           <div class="row">
                             <div class="col-sm-12">
-                              <div class="vitrin">
+                              <div class="vitrin vitrin-content">
                                 <p>
                                     Стоимость подключения к программе на 1 год составляет 35 000 руб.
                                 </p>
@@ -79,6 +79,12 @@
                             </div>
                           </div>
                         </div>
+                        <footer class="footer" role="contentinfo">
+                            <div id="inner-footer" class="wrap cf">
+                                <p class="source-org copyright">© 2018 <a href="/" class="homelink">Wizardmachine</a>. Версия 4.2.2 <span class="supportlink">Поддержка пользователей: <a href="mailto:wizardmachine@yandex.ru">wizardmachine@yandex.ru</a></span>
+                                </p>
+                            </div>
+                        </footer>
                     <!-- Если зашел участник или администратор -->
                     <?php } elseif(current_user_can('contributor') || current_user_can('administrator')) { ?>
                         
