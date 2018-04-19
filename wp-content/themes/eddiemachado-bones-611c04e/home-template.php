@@ -66,26 +66,25 @@
                           </div>
                         </div>
                         <div class="col-md-12 vitrin">
-                          <h2>Как приобрести доступ к программе?</h2>
-                          <div class="row">
-                            <div class="col-md-10 col-md-offset-1">
-                                <div class="vitrin vitrin-content vitrin-centered">
-                                    Для того чтоб приобрести доступ к программе напишите на <a href="mailto:info@chikurov.com">info@chikurov.com</a> указав в письме какой вариант работы Вы выбираете.
+                            <h2>Как приобрести доступ к программе?</h2>
+                            <div class="row">
+                                <div class="col-md-10 col-md-offset-1">
+                                    <div class="vitrin vitrin-content vitrin-centered">
+                                        Для того чтоб приобрести доступ к программе напишите на <a href="mailto:info@chikurov.com">info@chikurov.com</a> указав в письме какой вариант работы Вы выбираете.
+                                    </div>
                                 </div>
-                              </div>
                             </div>
-                          </div>
-                          <div class="col-md-12 vitrin">
+                        </div>
+                        <div class="col-md-12 vitrin">
                             <h4>Юридическая информация:</h4>
                             <div class="row">
-                              <div class="col-md-10 col-md-offset-1">
-                                  <div class="vitrin-centered">
-                                      <p><a href="mailto:info@chikurov.com">info@chikurov.com</a> / +7 (495) 135-25-48</p>
-                                      <p>ОГРНИП: 314910224600336</p>
-                                      <p>ИНН: 7706092528</p>
-                                  </div>
+                                <div class="col-md-10 col-md-offset-1">
+                                    <div class="vitrin-centered">
+                                        <p><a href="mailto:info@chikurov.com">info@chikurov.com</a> / +7 (495) 135-25-48</p>
+                                        <p>ОГРНИП: 314910224600336</p>
+                                        <p>ИНН: 7706092528</p>
+                                    </div>
                                 </div>
-                              </div>
                             </div>
                         </div>
                         <footer class="footer" role="contentinfo">
