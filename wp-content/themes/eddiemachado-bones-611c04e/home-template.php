@@ -23,9 +23,6 @@
                                   <b>"WizardMachine"</b> — это интерактивный веб-проект для коррекции индивидуальных личностных проблем. Работа осуществляется по цифровой фотографии пациента. Для эффективной работы в программе оператору необходимо обладать базовыми навыками биологического центрирования и прочесть книгу Чикурова Юрия Валентиновича "Биологическое Центрирование. Практическое руководство".
                                 </p>
                                 <p>
-                                  Программа существует уже более 4 лет. Пользователю доступен ряд основных протоколов разработанных для коррекции актуальности той или иной зоны, а так-же несколько специальных.
-                                </p>
-                                <p>
                                   <img src="<?php bloginfo('template_url'); ?>/library/images/items.png" alt="wizard-machine_items" class="wizard-machine_items">
                                 </p>
                                 <p>
@@ -47,7 +44,7 @@
                                 </p>
                                 <p>
                                     <h3>"WizardMachine". Учебный фильм</h3>
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/9XI9Z7kHmmY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                    <iframe style="display: block;margin: auto;" width="560" height="315" src="https://www.youtube.com/embed/9XI9Z7kHmmY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                                 </p>
                               </div>
                             </div>
