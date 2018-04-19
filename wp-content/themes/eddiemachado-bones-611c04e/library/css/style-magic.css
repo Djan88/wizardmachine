@@ -904,17 +904,14 @@ label.btn.btn_sm.btn_warning.btn__graf.active, label.btn.btn_sm.btn_warning.btn_
     left: 0;
     top: 0;
     margin-top: 0;
-    background: #E0CFAB;
+    background: #EBEBDD;
     padding: 20px;
     cursor: auto;
     padding-top: 0;
     margin: auto;
+    border: 1px solid #3F4568;
     position: relative;
-    -webkit-box-shadow: 0 1px 8px #d3cec7;
-    -moz-box-shadow: 0 1px 8px #625751;
-    -ms-box-shadow: 0 1px 8px #625751;
-    -o-box-shadow: 0 1px 8px #625751;
-    box-shadow: 0 1px 8px #625751;
+    border-radius: 6px;
 }
 .toRegistration, .toLogin 
 {
@@ -933,17 +930,17 @@ img.wizard-machine_items.hidden
 {
     font-size: 18px;
     font-weight: 500;
-    color: #000;
+    color: #455253;
 }
 h1.vitrin_heading, .vitrin h2, .vitrin h3, .vitrin h4 {
     border-bottom: 3px solid;
     font-weight: 600;
-    color: #625751;
+    color: #fff;
     text-align: center;
 }
 .subscriber_wrapper
 {
-    background: #D0A985;
+    background: #F0F0E2;
 }
 .vitrin-content 
 {
@@ -951,10 +948,10 @@ h1.vitrin_heading, .vitrin h2, .vitrin h3, .vitrin h4 {
     margin: auto;
     min-width: 250px;
     padding: 15px;
-    border: 1px solid #EAEDDE;
+    border: 1px solid #181B2E;
     border-radius: 6px;
-    background: #6F9198;
-    color: #fff;
+    background: #F6F5EE;
+    color: #455253;
 }
 .vitrin-centered
 {
@@ -978,9 +975,9 @@ h1.vitrin_heading, .vitrin h2, .vitrin h3, .vitrin h4 {
 {
     display: inline-block;
     padding: 10px;
-    border: 1px solid #fff;
+    border: 1px solid #555;
     border-radius: 6px;
-    background: #D0A985;
+    background: #1CA4D6;
     color: #fff;
     font-weight: bold;
     font-size: 22px;
