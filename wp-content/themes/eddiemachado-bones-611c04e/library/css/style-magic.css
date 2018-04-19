@@ -904,16 +904,16 @@ label.btn.btn_sm.btn_warning.btn__graf.active, label.btn.btn_sm.btn_warning.btn_
     left: 0;
     top: 0;
     margin-top: 0;
-    background: #F4F4F4;
+    background: #E0CFAB;
     padding: 20px;
     padding-top: 0;
     margin: 10px auto 30px;
     position: relative;
     -webkit-box-shadow: 0 1px 8px #d3cec7;
-    -moz-box-shadow: 0 1px 8px #d3cec7;
-    -ms-box-shadow: 0 1px 8px #d3cec7;
-    -o-box-shadow: 0 1px 8px #d3cec7;
-    box-shadow: 0 1px 8px #d3cec7;
+    -moz-box-shadow: 0 1px 8px #625751;
+    -ms-box-shadow: 0 1px 8px #625751;
+    -o-box-shadow: 0 1px 8px #625751;
+    box-shadow: 0 1px 8px #625751;
 }
 img.wizard-machine_items.hidden 
 {
@@ -930,18 +930,23 @@ img.wizard-machine_items.hidden
 h1.vitrin_heading, .vitrin h2, .vitrin h3, .vitrin h4 {
     border-bottom: 3px solid;
     font-weight: 600;
-    color: #0b1d7a;
+    color: #625751;
     text-align: center;
+}
+.subscriber_wrapper
+{
+    background: #D0A985;
 }
 .vitrin-content 
 {
     width: 70%;
     margin: auto;
     min-width: 250px;
-    padding: 10px;
-    border: 1px solid #0b1d7a;
+    padding: 15px;
+    border: 1px solid #EAEDDE;
     border-radius: 6px;
-    background: #d4d4d4;
+    background: #6F9198;
+    color: #fff;
 }
 .vitrin-centered
 {
