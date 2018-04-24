@@ -83,7 +83,7 @@
             <div class="col-sm-12">
               <div class="vitrin vitrin-content vitrin-centered">
                 <p>
-                    Стоимость подключения к программе на 1 год составляет <div class="vitrin-price">35 000 руб.</div>
+                    Стоимость получения доступа к программе на 1 год составляет <div class="vitrin-price">35 000 руб.</div>
                 </p>
                 <p>
                     Через год и далее Вы сможете продлить Вашу учетную запись за <div class="vitrin-price">25 000 руб.</div>
