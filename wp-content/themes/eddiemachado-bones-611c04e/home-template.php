@@ -10,7 +10,9 @@
     <div id="inner-content" class="wrap cf">
         <div id="main" class="m-all t-2of3 cf <?php if(current_user_can('subscriber')){ ?>subscriber_wrap<?php } ?>" role="main">
             <div class="home-page-content <?php if(current_user_can('subscriber')){ ?>subscriber<?php } ?>">    
-                <?php if(current_user_can('contributor') || current_user_can('administrator')) { ?>
+                <?php if(is_user_logged_in()){ ?>
+                    <!-- Если зашел подписчик -->
+                    <?php if(current_user_can('contributor') || current_user_can('administrator')) { ?>
                         
                         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                         <div class="reg_block">
