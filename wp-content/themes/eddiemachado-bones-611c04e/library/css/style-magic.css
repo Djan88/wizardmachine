@@ -310,8 +310,8 @@ button.close {
 }
 .wings_step
 {
-    width: 300px;
-    left: 30px;
+    width: 150px;
+    left: 120px;
     position: absolute;
 }
 a.wings_door_closed
@@ -989,7 +989,12 @@ h1.vitrin_heading, .vitrin h2, .vitrin h3, .vitrin h4 {
 }
 div#main 
 {
-    max-height: 70px!important;
+    height: auto!important;
+}
+img.wizard-machine_items 
+{
+    max-width: 100%;
+    height: auto;
 }
 @media (max-width: 1000px) {
     img.outdoor
