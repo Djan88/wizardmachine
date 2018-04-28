@@ -19,7 +19,7 @@
                             )); ?>
                         </nav>
 
-                        <p class="source-org copyright">&copy; <?php echo date('Y'); ?> <a href="/" class="homelink"><?php bloginfo( 'name' ); ?></a>. Версия 4.2.2 <?php if(is_user_logged_in()){ ?><a href="/kabinet">Личный кабинет</a>
+                        <p class="source-org copyright">&copy; <?php echo date('Y'); ?> <a href="/" class="homelink"><?php bloginfo( 'name' ); ?></a>. Версия 4.2.2 <?php if(is_user_logged_in()){ ?>| <a href="/kabinet">Личный кабинет</a>| 
                             <a href="<?php echo home_url(); ?>/wp-login.php?action=logout&amp;_wpnonce=a6cad512ba">Выйти</a><?php } ?><span class="supportlink">Поддержка пользователей: <a href="mailto:wizardmachine@yandex.ru">wizardmachine@yandex.ru</a></span></p>
 
                     </div>
