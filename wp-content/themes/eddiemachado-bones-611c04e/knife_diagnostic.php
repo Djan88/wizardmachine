@@ -908,7 +908,7 @@
                     </div>
                 </div>
             <?php } else { ?>
-                <div style="text-align: center">Вы получили это письмо, потому, что зарегистрировались на сайте <a href="http://wizardmachine.ru/">wizardmachine</a>. Администрация сайта  доводит до вашего сведения информацию о том, что получение доступа на сайт происходит после предварительного обучения пользователя. Обучение будет проходить в виде очного либо дистантного семинара. По всем вопросам обращаться к Роману <a href="mailto:info@bablosstudio.ru">info@bablosstudio.ru</a></div>
+                <div style="text-align: center">Вы видите это сообщение, потому, что зарегистрированы на сайте <a href="http://wizardmachine.ru/">wizardmachine</a>. На данный момент Вы не имеете дейтсвующего доступа к программе. Узнать как продлить доступ к "WizardMachine" вы можете написав на <a href="mailto:info@chikurov.com">info@chikurov.com</a>, Вам оперативно ответят. После контакта с тех.поддержкой Вы сможете оплатить доступ из <a href="/kabinet/">личного кабинета</a> пользователя</div>
             <?php } ?>
         <?php } else { ?>
             <div class="login__form">

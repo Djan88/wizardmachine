@@ -878,7 +878,7 @@
                     </div>
                 </div>
             <?php } else { ?>
-                <div style="text-align: center">Вы видите это сообщение, потому, что зарегистрированы на сайте <a href="http://wizardmachine.ru/">wizardmachine</a>. На данный момент Вы не имеете дейтсвующего доступа к программе. Узнать стоимость и оплатить доступ Вы можете из <a href="/kabinet/">личного кабинета</a> пользователя. По всем вопросам пишите на <a href="mailto:info@chikurov.com">info@chikurov.com</a>, Вам оперативно ответят</div>
+                <div style="text-align: center">Вы видите это сообщение, потому, что зарегистрированы на сайте <a href="http://wizardmachine.ru/">wizardmachine</a>. На данный момент Вы не имеете дейтсвующего доступа к программе. Узнать как продлить доступ к "WizardMachine" вы можете написав на <a href="mailto:info@chikurov.com">info@chikurov.com</a>, Вам оперативно ответят. После контакта с тех.поддержкой Вы сможете оплатить доступ из <a href="/kabinet/">личного кабинета</a> пользователя</div> 
             <?php } ?>
         <?php } else { ?>
             <div class="login__form">
