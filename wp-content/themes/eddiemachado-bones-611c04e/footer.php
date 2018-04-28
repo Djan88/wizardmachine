@@ -19,7 +19,7 @@
                             )); ?>
                         </nav>
 
-                        <p class="source-org copyright">&copy; <?php echo date('Y'); ?> <a href="/" class="homelink"><?php bloginfo( 'name' ); ?></a>. Версия 4.2.2 <?php if(is_user_logged_in()){ ?>| <a href="/kabinet">Личный кабинет</a>| 
+                        <p class="source-org copyright">&copy; <?php echo date('Y'); ?> <a href="/" class="homelink"><?php bloginfo( 'name' ); ?></a>. Версия 5.0 <?php if(is_user_logged_in()){ ?>| <a href="/kabinet">Личный кабинет</a> | 
                             <a href="<?php echo home_url(); ?>/wp-login.php?action=logout&amp;_wpnonce=a6cad512ba">Выйти</a><?php } ?><span class="supportlink">Поддержка пользователей: <a href="mailto:wizardmachine@yandex.ru">wizardmachine@yandex.ru</a></span></p>
 
                     </div>
@@ -115,9 +115,9 @@
                         </div>
                         <?php } ?>
                         <div class="modal-footer">
+                            <a href="https://cloud.mail.ru/public/Kbmz/qmbeahoCs" target="_blank" class="button button-primary button-large button__main">Руководство пользователя</a>
                             <a href="http://help.yandex.ru/common/support/screenshot.xml" target="_blank" class="button button-primary button-large button__main btn_choice_screen">Как сделать "скриншот" экрана</a>
                             <a href="https://cloud.mail.ru/public/Ep18/Rtg37KpVW" target="_blank" class="button button-primary button-large button__main">Книга "Биологическое центрирование"</a>
-                            <a href="https://www.youtube.com/watch?v=9XI9Z7kHmmY" target="_blank" class="button button-primary button-large button__main">Учебное видео</a>
                             <!-- <div><a href="/pay/" target="_blank" class="btn btn_lg btn_trans" style="margin-top: 10px; margin-left: 15px;">Оплата доступа</a></div> -->
                             <!-- <div><a href="/consultation/" target="_blank" class="btn btn_lg btn_trans" style="margin-top: 10px; margin-left: 15px;">Оплата консультации</a></div> -->
                         </div>
