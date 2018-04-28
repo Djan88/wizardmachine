@@ -167,8 +167,14 @@ function wau_set_discount_price($tariff_price, $discount){
     
 }
 
-function wau_get_tariff_price($tariff_id){
+function wau_get_tariff_price($tariff_id, $user_id = false){
     global $WAU_User;
+    
+    if($user_id){
+        $WAU_User = new WAU_User(array(
+            'user_id' => $user_id
+        ));
+    }
     
     $tariff = wau_get_tariff($tariff_id);
     

@@ -148,7 +148,7 @@ function wau_payment($payData){
     
     $tariff = wau_get_tariff($baggage->tariff_id);
     
-    $tariff_price = wau_get_tariff_price($baggage->tariff_id);
+    $tariff_price = wau_get_tariff_price($baggage->tariff_id, $payData->user_id);
     
     if($tariff_price != $payData->pay_summ) return false;
     

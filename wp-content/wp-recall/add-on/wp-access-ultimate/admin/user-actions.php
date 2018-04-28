@@ -45,13 +45,13 @@ function wau_save_user_access($user_id){
     foreach($data as $account_id => $accessData){
         
         if(!isset($accessData['account_id'])) continue;
-        
+
         $result = wau_update_user_access($user_id, $account_id, wau_setup_time(array(
-            'year'      => $accessData['year'],
-            'month'     => $accessData['month'],
-            'day'       => $accessData['day'],
-            'hour'      => $accessData['hour'],
-            'minute'    => $accessData['minute'],
+            'year'      => isset($accessData['year']) && $accessData['year']? $accessData['year']: 0,
+            'month'     => isset($accessData['month']) && $accessData['month']? $accessData['month']: 0,
+            'day'       => isset($accessData['day']) && $accessData['day']? $accessData['day']: 0,
+            'hour'      => isset($accessData['hour']) && $accessData['hour']? $accessData['hour']: 0,
+            'minute'    => isset($accessData['minute']) && $accessData['minute']? $accessData['minute']: 0
         )));
         
         $updAccounts[] = $account_id;

@@ -2,18 +2,33 @@
 # This file is distributed under the same license as the Themes - Twenty Fourteen package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2015-07-18 11:27:20+0000\n"
+"PO-Revision-Date: 2018-02-12 18:07:10+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: GlotPress/2.3.0-alpha\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
 "Language: ru\n"
 "Project-Id-Version: Themes - Twenty Fourteen\n"
 
 #. Description of the plugin/theme
 msgid "In 2014, our default theme lets you create a responsive magazine website with a sleek, modern design. Feature your favorite homepage content in either a grid or a slider. Use the three widget areas to customize your website, and change your content's layout with a full-width page template and a contributor page to show off your authors. Creating a magazine website with WordPress has never been easier."
 msgstr "В 2014 году наша тема по умолчанию позволит вам создать адаптивный журнальный сайт с современным дизайном. Отобразите на главной свои любимые записи в виде сетки или слайдера. Используйте три области для виджетов, чтобы настроить свой сайт. Попробуйте также изменить представление содержимого с помощью шаблона страницы на всю ширину и создайте страницу участников, чтобы показать авторов сайта. Создать журнальный сайт на WordPress стало проще, чем когда-либо."
+
+#. translators: 1: number of comments, 2: post title
+#: comments.php:34
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s мысль о &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s мысли о &ldquo;%2$s&rdquo;"
+msgstr[2] "%1$s мыслей о &ldquo;%2$s&rdquo;"
+
+#. translators: %s: post title
+#: comments.php:30
+msgctxt "comments title"
+msgid "One thought on &ldquo;%s&rdquo;"
+msgstr "Одна мысль про &ldquo;%s&rdquo;"
 
 #. Template Name of the plugin/theme
 msgid "Full Width Page"
@@ -31,87 +46,87 @@ msgstr "Архив метки: %s"
 msgid "Search Results for: %s"
 msgstr "Результаты поиска: %s"
 
-#: inc/widgets.php:282
+#: inc/widgets.php:283
 msgid "Post format to show:"
 msgstr "Формат записей:"
 
-#: inc/widgets.php:279
+#: inc/widgets.php:280
 msgid "Number of posts to show:"
 msgstr "Количество записей:"
 
-#: inc/widgets.php:276
+#: inc/widgets.php:277
 msgid "Title:"
 msgstr "Заголовок:"
 
 #. translators: used with More archives link
-#: inc/widgets.php:227
+#: inc/widgets.php:228
 msgid "%s <span class=\"meta-nav\">&rarr;</span>"
 msgstr "%s <span class=\"meta-nav\">&rarr;</span>"
 
-#: inc/widgets.php:183
+#: inc/widgets.php:184
 msgid "This gallery contains <a href=\"%1$s\" rel=\"bookmark\">%2$s photo</a>."
 msgid_plural "This gallery contains <a href=\"%1$s\" rel=\"bookmark\">%2$s photos</a>."
 msgstr[0] "Эта галерея содержит <a href=\"%1$s\" rel=\"bookmark\">%2$s фотографию</a>."
 msgstr[1] "Эта галерея содержит <a href=\"%1$s\" rel=\"bookmark\">%2$s фотографии</a>."
 msgstr[2] "Эта галерея содержит <a href=\"%1$s\" rel=\"bookmark\">%2$s фотографий</a>."
 
-#: inc/widgets.php:148 inc/widgets.php:193
+#: inc/widgets.php:149 inc/widgets.php:194
 msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
 msgstr "Читать далее <span class=\"meta-nav\">&rarr;</span>"
 
-#: inc/widgets.php:101
+#: inc/widgets.php:102
 msgid "More asides"
 msgstr "Другие заметки"
 
-#: inc/widgets.php:100 taxonomy-post_format.php:30
+#: inc/widgets.php:101 taxonomy-post_format.php:30
 msgid "Asides"
 msgstr "Заметки"
 
-#: inc/widgets.php:96
+#: inc/widgets.php:97
 msgid "More galleries"
 msgstr "Другие галереи"
 
-#: inc/widgets.php:95 taxonomy-post_format.php:48
+#: inc/widgets.php:96 taxonomy-post_format.php:48
 msgid "Galleries"
 msgstr "Галереи"
 
-#: inc/widgets.php:92
+#: inc/widgets.php:93
 msgid "More links"
 msgstr "Другие ссылки"
 
-#: inc/widgets.php:91 taxonomy-post_format.php:45
+#: inc/widgets.php:92 taxonomy-post_format.php:45
 msgid "Links"
 msgstr "Ссылки"
 
-#: inc/widgets.php:88
+#: inc/widgets.php:89
 msgid "More quotes"
 msgstr "Другие цитаты"
 
-#: inc/widgets.php:87 taxonomy-post_format.php:42
+#: inc/widgets.php:88 taxonomy-post_format.php:42
 msgid "Quotes"
 msgstr "Цитаты"
 
-#: inc/widgets.php:84
+#: inc/widgets.php:85
 msgid "More audio"
 msgstr "Другие аудио"
 
-#: inc/widgets.php:83 taxonomy-post_format.php:39
+#: inc/widgets.php:84 taxonomy-post_format.php:39
 msgid "Audio"
 msgstr "Аудио"
 
-#: inc/widgets.php:80
+#: inc/widgets.php:81
 msgid "More videos"
 msgstr "Другие видео"
 
-#: inc/widgets.php:79 taxonomy-post_format.php:36
+#: inc/widgets.php:80 taxonomy-post_format.php:36
 msgid "Videos"
 msgstr "Видео"
 
-#: inc/widgets.php:76
+#: inc/widgets.php:77
 msgid "More images"
 msgstr "Другие изображения"
 
-#: inc/widgets.php:75 taxonomy-post_format.php:33
+#: inc/widgets.php:76 taxonomy-post_format.php:33
 msgid "Images"
 msgstr "Изображения"
 
@@ -175,7 +190,7 @@ msgstr "Улучшите дизайн вашего сайта с помощью 
 msgid "The home page features your choice of up to 6 posts prominently displayed in a grid or slider, controlled by a <a href=\"%1$s\">tag</a>; you can change the tag and layout in <a href=\"%2$s\">Appearance &rarr; Customize</a>. If no posts match the tag, <a href=\"%3$s\">sticky posts</a> will be displayed instead."
 msgstr "На главной странице можно отобразить до 6 записей в виде сетки или слайдера, отмеченных <a href=\"%1$s\">меткой</a>. Переименовать метку и выбрать вариант отображения можно на экране <a href=\"%2$s\">«Внешний вид» &rarr; «Настроить»</a>. Если записей с меткой не найдено, будут отображаться <a href=\"%3$s\">прилепленные записи</a>."
 
-#. #-#-#-#-#  twentyfourteen.pot (Twenty Fourteen 1.9)  #-#-#-#-#
+#. #-#-#-#-#  twentyfourteen.pot (Twenty Fourteen 2.1)  #-#-#-#-#
 #. Theme Name of the plugin/theme
 #: inc/customizer.php:142
 msgid "Twenty Fourteen"
@@ -347,19 +362,19 @@ msgstr "Изменить"
 
 #: content-aside.php:37 content-audio.php:37 content-gallery.php:37
 #: content-image.php:37 content-link.php:37 content-quote.php:37
-#: content-video.php:37 content.php:38 inc/widgets.php:215
+#: content-video.php:37 content.php:38 inc/widgets.php:216
 msgid "% Comments"
 msgstr "Комментарии (%)"
 
 #: content-aside.php:37 content-audio.php:37 content-gallery.php:37
 #: content-image.php:37 content-link.php:37 content-quote.php:37
-#: content-video.php:37 content.php:38 inc/widgets.php:215
+#: content-video.php:37 content.php:38 inc/widgets.php:216
 msgid "1 Comment"
 msgstr "1 комментарий"
 
 #: content-aside.php:37 content-audio.php:37 content-gallery.php:37
 #: content-image.php:37 content-link.php:37 content-quote.php:37
-#: content-video.php:37 content.php:38 inc/widgets.php:215
+#: content-video.php:37 content.php:38 inc/widgets.php:216
 msgid "Leave a comment"
 msgstr "Оставить комментарий"
 
@@ -370,28 +385,21 @@ msgctxt "Used between list items, there is a space after the comma."
 msgid ", "
 msgstr ", "
 
-#: comments.php:59
+#: comments.php:75
 msgid "Comments are closed."
 msgstr "Обсуждение закрыто."
 
-#: comments.php:36 comments.php:54
+#: comments.php:52 comments.php:70
 msgid "Newer Comments &rarr;"
 msgstr "Следующие комментарии &rarr;"
 
-#: comments.php:35 comments.php:53
+#: comments.php:51 comments.php:69
 msgid "&larr; Older Comments"
 msgstr "&larr; Предыдущие комментарии"
 
-#: comments.php:34 comments.php:52
+#: comments.php:50 comments.php:68
 msgid "Comment navigation"
 msgstr "Навигация по комментариям"
-
-#: comments.php:27
-msgid "One thought on &ldquo;%2$s&rdquo;"
-msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] "%2$s: %1$s комментарий"
-msgstr[1] "%2$s: %1$s комментария"
-msgstr[2] "%2$s: %1$s комментариев"
 
 #: category.php:20
 msgid "Category Archives: %s"
@@ -435,7 +443,7 @@ msgstr "По данному адресу ничего не найдено. По�
 msgid "Not Found"
 msgstr "Не найдено"
 
-#. #-#-#-#-#  twentyfourteen.pot (Twenty Fourteen 1.9)  #-#-#-#-#
+#. #-#-#-#-#  twentyfourteen.pot (Twenty Fourteen 2.1)  #-#-#-#-#
 #. Author URI of the plugin/theme
 #: footer.php:21
 msgid "https://wordpress.org/"
