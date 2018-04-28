@@ -109,7 +109,7 @@
                             <?php if(current_user_can('contributor') || current_user_can('administrator')){ ?>
                                 <a href="/wizard" class="button button-primary button-large btn_choice_prot">Выбор протокола</a>
                             <a href="/knife_diagnostic" class="button button-primary button-large btn_choice_prot_knife">Диагностика ножом</a>
-                            <?php } else { ?>
+                            <?php } ?>
                             <a href="/kabinet" class="button button-primary button-large btn_choice_prot">Личный кабинет</a>
                         </div>
                         <?php } ?>
