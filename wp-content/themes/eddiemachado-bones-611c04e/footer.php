@@ -118,8 +118,9 @@
                             <a href="https://cloud.mail.ru/public/Kbmz/qmbeahoCs" target="_blank" class="button button-primary button-large button__main">Руководство пользователя</a>
                             <a href="http://help.yandex.ru/common/support/screenshot.xml" target="_blank" class="button button-primary button-large button__main btn_choice_screen">Как сделать "скриншот" экрана</a>
                             <a href="https://cloud.mail.ru/public/Ep18/Rtg37KpVW" target="_blank" class="button button-primary button-large button__main">Книга "Биологическое центрирование"</a>
-                            <!-- <div><a href="/pay/" target="_blank" class="btn btn_lg btn_trans" style="margin-top: 10px; margin-left: 15px;">Оплата доступа</a></div> -->
-                            <!-- <div><a href="/consultation/" target="_blank" class="btn btn_lg btn_trans" style="margin-top: 10px; margin-left: 15px;">Оплата консультации</a></div> -->
+                            <?php if(is_user_logged_in()){ ?>
+                                <a href="<?php echo home_url(); ?>/wp-login.php?action=logout&amp;_wpnonce=a6cad512ba" target="_blank" class="button button-primary button-large button__main btn_choice_screen">Выйти</a>
+                            <?php } ?>
                         </div>
                     </div>
                 </div>
