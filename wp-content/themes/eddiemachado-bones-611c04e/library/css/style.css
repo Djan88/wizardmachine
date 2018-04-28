@@ -2348,6 +2348,10 @@ be set to display none.
 {
   display: none!important;
 }
+#rcl-office .hidden
+{
+  display: block!important;
+}
 .invisible
 {
   visibility: hidden!important;
