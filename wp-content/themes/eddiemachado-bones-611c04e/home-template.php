@@ -12,7 +12,7 @@
             <div class="col-md-12">
                 <div class="row">
                     <div class="col-md-10 col-md-offset-1">
-                        <div class="vitrin vitrin-content vitrin-article">
+                        <div class="vitrin vitrin-content vitrin-article vitrin-centered">
                             Вы видите это сообщение, потому, что зарегистрированы на сайте <a href="http://wizardmachine.ru/">"WizardMachine"</a> но на данный момент не имеете действующего доступа к программе.<br>
                             Узнайте как получить доступ к программе по <a href="#howto">этой ссылке</a>
                         </div>
@@ -56,13 +56,14 @@
           </div>
         </div>
         <div class="col-md-12 vitrin">
-            <h2 name="howto">Как приобрести доступ к "WizardMachine"?</h2>
+            <h2>Как приобрести доступ к "WizardMachine"?</h2>
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
                     <div class="vitrin vitrin-content vitrin-centered">
                         Стоимость получения доступа к программе на 1 год составляет <div class="vitrin-price">35 000 руб.</div> Через год и далее Вы сможете продлить Вашу учетную запись за <div class="vitrin-price">25 000 руб.</div>
                     </div>
                     <div class="vitrin vitrin-content vitrin-pay">
+                        <a name="howto"></a>
                         <b>Чтоб получить доступ к программе необходимо сделать следующее:</b>
                     
                         <p>

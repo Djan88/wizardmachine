@@ -1014,6 +1014,11 @@ a.button.button-no
     background: #fdf4d1;
     margin: 15px auto;
 }
+.vitrin-article
+{
+    border: 2px solid darkred;
+    color: darkgoldenrod;
+}
 @media (max-width: 1000px) {
     img.outdoor
     {
