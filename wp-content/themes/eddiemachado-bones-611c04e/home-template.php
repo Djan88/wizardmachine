@@ -47,27 +47,30 @@
           </div>
         </div>
         <div class="col-md-12 vitrin">
-          <h2>Стоимость приобретения "WizardMachine".</h2>
-          <div class="row">
-            <div class="col-sm-12">
-              <div class="vitrin vitrin-content vitrin-centered">
-                <p>
-                    Стоимость получения доступа к программе на 1 год составляет <div class="vitrin-price">35 000 руб.</div>
-                </p>
-                <p>
-                    Через год и далее Вы сможете продлить Вашу учетную запись за <div class="vitrin-price">25 000 руб.</div>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-12 vitrin">
-            <h2>Как приобрести доступ к программе?</h2>
+            <h2>Как приобрести доступ к "WizardMachine"?</h2>
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
                     <div class="vitrin vitrin-content vitrin-centered">
-                        Для того чтоб приобрести доступ к программе напишите на <a href="mailto:info@chikurov.com">info@chikurov.com</a>
-                        <p>В теме письма укажите пожалуйста "Приобретение доступа к WizardMachine"</p>
+                        Стоимость получения доступа к программе на 1 год составляет <div class="vitrin-price">35 000 руб.</div>. Через год и далее Вы сможете продлить Вашу учетную запись за <div class="vitrin-price">25 000 руб.</div>
+                    </div>
+                    <div class="vitrin vitrin-content vitrin-centered">
+                        Чтоб получить доступ к программе необходимо сделать следующее:
+                    </div>
+                    <div class="vitrin vitrin-content vitrin-centered">
+                        <span class="article_main">— </span><span class="reg_login toLogin" data-toggle="modal" data-target="#myModal_login">Войдите</span> на сайт. Если у Вас еще нет учетной записи "WizardMachine" <span class="reg_login toLogin" data-toggle="modal" data-target="#myModal_login">зарегистрируйтесь</span>.
+                    </div>
+                    <div class="vitrin vitrin-content vitrin-centered">
+                        <span class="article_main">— </span> Войдите в <a href="/kabinet">личный кабинет</a> пользователя.
+                    </div>
+                    <div class="vitrin vitrin-content vitrin-centered">
+                        <span class="article_main">— </span> Выберите вкладку <b>"Все доступы"</b>, нажмите "оплатить" -> Оплатить через "Робокассу" и Выберите удобный способ оплаты.
+                    </div>
+                    <div class="vitrin vitrin-content vitrin-centered">
+                        По завершении оплаты Вы получите на Вашу почту письмо с подтверждением. С этой минуты Ваш доступ к программе "WizardMachine" активен! Приятного пользования!
+                    </div>
+                    <div class="vitrin vitrin-content vitrin-centered">
+                        Если у Вас возникли вопросы напишите на <a href="mailto:info@chikurov.com">info@chikurov.com</a>
+                        <p>В теме письма укажите пожалуйста "Вопрос по WizardMachine"</p>
                     </div>
                 </div>
             </div>
