@@ -107,10 +107,8 @@
                         </div>
                         <?php if(is_user_logged_in()){ ?>
                         <div class="modal-body">
-                            <?php if(current_user_can('contributor') || current_user_can('administrator')){ ?>
-                                <a href="/wizard" class="button button-primary button-large btn_choice_prot">Выбор протокола</a>
-                            <a href="/knife_diagnostic" class="button button-primary button-large btn_choice_prot_knife">Диагностика ножом</a>
-                            <?php } ?>
+                            <a href="/wizard" class="button button-primary button-large btn_choice_prot <?php if(current_user_can('subscriber')){ ?>button-no<?php } ?>">Выбор протокола</a>
+                            <a href="/knife_diagnostic" class="button button-primary button-large btn_choice_prot_knife <?php if(current_user_can('subscriber')){ ?>button-no<?php } ?>">Диагностика ножом</a>
                             <a href="/kabinet" class="button button-primary button-large btn_choice_prot">Личный кабинет</a>
                         </div>
                         <?php } ?>
