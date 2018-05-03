@@ -1,7 +1,7 @@
 jQuery(function() {
     var cur_screen = 0,
         nextScreen,
-        ratioten = jQuery('.ratioten').data('ratio'),
+        // ratioten = jQuery('.ratioten').data('ratio'),
         croppedImg,
         curChoice,
         protocol,
@@ -107,9 +107,9 @@ jQuery(function() {
         }
     }
     //info о продлении
-    if (ratioten && ratioten > 0) {
-        swal("Информация", "Срок действия вашей лицензии истекает менее чем через 10 дней. Вы можете продлить лицензию со скидкой написав на wizardmachine@yandex.ru", "info"); 
-    }
+    // if (ratioten && ratioten > 0) {
+    //     swal("Информация", "Срок действия вашей лицензии истекает менее чем через 10 дней. Вы можете продлить лицензию со скидкой написав на wizardmachine@yandex.ru", "info"); 
+    // }
     //Получение данных из локального хранилища
     if(supportsStorage && localStorage.getItem('curChoice')){
         curChoice = localStorage.getItem('curChoice');
