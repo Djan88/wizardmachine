@@ -57,7 +57,7 @@
                         Чтоб получить доступ к программе необходимо сделать следующее:
                     </div>
                     <div class="vitrin vitrin-content">
-                        <span class="article_main">— </span><span class="reg_login toLogin" data-toggle="modal" data-target="#myModal_login">Войдите</span> на сайт. Если у Вас еще нет учетной записи "WizardMachine" <span class="reg_login toLogin" data-toggle="modal" data-target="#myModal_login">зарегистрируйтесь</span>.
+                        <span class="article_main">— </span><span class="reg_login toLogin" data-toggle="modal" data-target="#myModal_login">Войдите</span> на сайт. Если у Вас еще нет учетной записи "WizardMachine" <span class="reg_login toRegistration" data-toggle="modal" data-target="#myModal_login">зарегистрируйтесь</span>.
                     </div>
                     <div class="vitrin vitrin-content">
                         <span class="article_main">— </span> Войдите в <a href="/kabinet">личный кабинет</a> пользователя.
