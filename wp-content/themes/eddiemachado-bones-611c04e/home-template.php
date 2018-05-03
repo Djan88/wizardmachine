@@ -8,6 +8,18 @@
 
 <div id="content">
     <?php if(!is_user_logged_in() || current_user_can('subscriber')){ ?>
+        <?php if(current_user_can('subscriber')){ ?>
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="vitrin vitrin-content vitrin-article">
+                            Вы видите это сообщение, потому, что зарегистрированы на сайте <a href="http://wizardmachine.ru/">"WizardMachine"</a> но на данный момент не имеете действующего доступа к программе.<br>
+                            Узнайте как получить доступ к программе по <a href="#howto">этой ссылке</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <?php } ?>
         <div class="col-md-12">
           <h1 class="vitrin_heading">Интерактивный веб-проект "WizardMachine"</h1>
           <div class="row">
@@ -44,7 +56,7 @@
           </div>
         </div>
         <div class="col-md-12 vitrin">
-            <h2>Как приобрести доступ к "WizardMachine"?</h2>
+            <h2 name="howto">Как приобрести доступ к "WizardMachine"?</h2>
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
                     <div class="vitrin vitrin-content vitrin-centered">
@@ -54,7 +66,7 @@
                         <b>Чтоб получить доступ к программе необходимо сделать следующее:</b>
                     
                         <p>
-                            <span class="article_main">— </span><span class="reg_login toLogin" data-toggle="modal" data-target="#myModal_login">Войдите</span> на сайт. Если у Вас еще нет учетной записи "WizardMachine" <span class="reg_login toRegistration" data-toggle="modal" data-target="#myModal_login">зарегистрируйтесь</span>.</br>
+                            <span class="article_main">— </span><span class="reg_login toLogin" data-toggle="modal" data-target="#myModal_login">Войдите</span> на сайт. Если у Вас еще нет учетной записи "WizardMachine" — <span class="reg_login toRegistration" data-toggle="modal" data-target="#myModal_login">зарегистрируйтесь</span>.</br>
                             <i style="text-align: center;">(В дальнейшем войти в программу можно будет кликнув на "дверь мельницы")</i>
                         </p>
                         <p>
