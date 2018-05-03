@@ -1006,6 +1006,10 @@ a.button.button-no
     color: #555;
     opacity: 0.3;
 }
+.vitrin a
+{
+    color: #204371;
+}
 @media (max-width: 1000px) {
     img.outdoor
     {
