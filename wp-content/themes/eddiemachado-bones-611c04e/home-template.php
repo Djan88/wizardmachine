@@ -18,9 +18,6 @@
                   <b>"WizardMachine"</b> — это интерактивный веб-проект для коррекции индивидуальных личностных проблем. Работа осуществляется по цифровой фотографии пациента. Для эффективной работы в программе оператору необходимо обладать базовыми навыками биологического центрирования и прочесть книгу Чикурова Юрия Валентиновича <b>"Биологическое Центрирование. Практическое руководство".</b>
                 </p>
                 <p>
-                  <img src="<?php bloginfo('template_url'); ?>/library/images/items.png" alt="wizard-machine_items" class="wizard-machine_items">
-                </p>
-                <p>
                   Программа существует уже более 4 лет. За это время программа значительно расширилась. Пользователю доступен ряд основных протоколов разработанных для коррекции актуальности той или иной зоны, а так-же несколько специальных.
                 </p>
               </div>
@@ -57,7 +54,8 @@
                         <b>Чтоб получить доступ к программе необходимо сделать следующее:</b>
                     
                         <p>
-                            <span class="article_main">— </span><span class="reg_login toLogin" data-toggle="modal" data-target="#myModal_login">Войдите</span> на сайт. Если у Вас еще нет учетной записи "WizardMachine" <span class="reg_login toRegistration" data-toggle="modal" data-target="#myModal_login">зарегистрируйтесь</span>.
+                            <span class="article_main">— </span><span class="reg_login toLogin" data-toggle="modal" data-target="#myModal_login">Войдите</span> на сайт. Если у Вас еще нет учетной записи "WizardMachine" <span class="reg_login toRegistration" data-toggle="modal" data-target="#myModal_login">зарегистрируйтесь</span>.</br>
+                            <i style="text-align: center;">(В дальнейшем войти в программу можно будет кликнув на "дверь мельницы")</i>
                         </p>
                         <p>
                             <span class="article_main">— </span> Войдите в <a target="_blank" href="/kabinet">личный кабинет</a> пользователя.
