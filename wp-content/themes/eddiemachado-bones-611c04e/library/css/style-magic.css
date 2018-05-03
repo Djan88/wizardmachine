@@ -979,6 +979,7 @@ h1.vitrin_heading, .vitrin h2, .vitrin h3, .vitrin h4 {
     font-weight: bold;
     font-size: 22px;
     text-decoration: underline;
+    padding: 5px 0;
 }
 .vitrin_heading 
 {
