@@ -1007,6 +1007,7 @@ a.button.button-no
 .vitrin a
 {
     color: #204371;
+    padding: 0;
 }
 @media (max-width: 1000px) {
     img.outdoor
