@@ -1000,6 +1000,11 @@ img.wizard-machine_items
 {
     text-align: center;
 }
+a.button.button-no 
+{
+    color: #555;
+    opacity: 0.3;
+}
 @media (max-width: 1000px) {
     img.outdoor
     {
