@@ -996,6 +996,10 @@ img.wizard-machine_items
     max-width: 100%;
     height: auto;
 }
+.subscriber_info
+{
+    text-align: center;
+}
 @media (max-width: 1000px) {
     img.outdoor
     {
