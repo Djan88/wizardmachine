@@ -39,7 +39,7 @@
             </div>
         </div>
     </div>
-    <?php if(!is_user_logged_in()){ ?>
+    <?php if(!is_user_logged_in() || current_user_can('subscriber')){ ?>
         <div class="col-md-12">
           <h1 class="vitrin_heading">Интерактивный веб-проект "WizardMachine"</h1>
           <div class="row">
