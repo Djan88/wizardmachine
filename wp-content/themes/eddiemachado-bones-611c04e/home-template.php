@@ -65,16 +65,17 @@
                     </div>
                     <div class="vitrin vitrin-content vitrin-pay">
                         <b>Чтоб получить доступ к программе необходимо сделать следующее:</b>
-                    
-                        <p>
-                            <span class="article_main">— </span><span class="reg_login toLogin" data-toggle="modal" data-target="#myModal_login">Войдите</span> на сайт. Если у Вас еще нет учетной записи "WizardMachine" — <span class="reg_login toRegistration" data-toggle="modal" data-target="#myModal_login">зарегистрируйтесь</span>.</br>
-                            <i style="text-align: center;">(В дальнейшем войти в программу можно будет кликнув на "дверь мельницы")</i>
-                        </p>
+                        <?php if(is_user_logged_in()){ ?>
+                            <p>
+                                <span class="article_main">— </span><span class="reg_login toLogin" data-toggle="modal" data-target="#myModal_login">Войдите</span> на сайт. Если у Вас еще нет учетной записи "WizardMachine" — <span class="reg_login toRegistration" data-toggle="modal" data-target="#myModal_login">зарегистрируйтесь</span>.</br>
+                                <i style="text-align: center;">(В дальнейшем войти в программу можно будет кликнув на "дверь мельницы")</i>
+                            </p>
+                        <?php } ?>
                         <p>
                             <span class="article_main">— </span> Войдите в <a target="_blank" href="/kabinet">личный кабинет</a> пользователя.
                         </p>
                         <p>
-                            <span class="article_main">— </span> Выберите вкладку <b>"Все доступы"</b>, нажмите "Приобрести" -> "Оплатить через "Робокасса" -> Выберите удобный способ для Вас способ и произведите оплату.</br>
+                            <span class="article_main">— </span> Выберите вкладку <b>"Все доступы"</b>, нажмите "Приобрести" -> "Оплатить через "Робокасса" -> Выберите удобный для Вас способ и произведите оплату.</br>
                             <i style="text-align: center;">(Напоминаем что начиная со второго года пользователи "WizardMachine" получают скидку на продление лицензии 30%. Оплату продления со скидкой можно произвести на вкладке "Текущий доступ")</i>
                         </p>
                         <p>
