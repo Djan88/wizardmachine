@@ -52,7 +52,7 @@ function wau_save_user_access($user_id){
             'day'       => isset($accessData['day']) && $accessData['day']? $accessData['day']: 0,
             'hour'      => isset($accessData['hour']) && $accessData['hour']? $accessData['hour']: 0,
             'minute'    => isset($accessData['minute']) && $accessData['minute']? $accessData['minute']: 0
-        )));
+        )), false);
         
         $updAccounts[] = $account_id;
         

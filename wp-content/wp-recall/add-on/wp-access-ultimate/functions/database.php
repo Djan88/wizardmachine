@@ -254,13 +254,11 @@ function wau_update_access($access_id, $update){
     
 }
 
-function wau_update_user_access($user_id, $account_id, $access_time){
-    
-    $access = wau_get_user_access_by_account($user_id, $account_id);
-    
-    if($access){
+function wau_update_user_access($user_id, $account_id, $access_time, $append = true){
+
+    if($access = wau_get_user_access_by_account($user_id, $account_id)){
         
-        if(wau_get_account_field($account_id, 'is_prolong')){
+        if($append && wau_get_account_field($account_id, 'is_prolong')){
             $access_time += $access->access_time - (strtotime(current_time('mysql')) - strtotime($access->access_date));
         }
         
