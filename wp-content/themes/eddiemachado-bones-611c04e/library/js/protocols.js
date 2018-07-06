@@ -1429,23 +1429,18 @@
                 });
                 if (count_animation <= 86){
                     jQuery('#draggableS3, #draggableS2_1, #draggable3').css({
-                        transform: 'scale(1)',
-                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
-                    });
-                } else if (count_animation <= 172){
-                    jQuery('#draggableS3, #draggableS2_1, #draggable3').css({
-                        transform: 'scale(1)',
-                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/life_vater.png) 0 0/100% no-repeat'
+                        transform: 'rotate('+rotateVal+'deg) scale(1)',
+                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/superdisfunction.png) 0 0/100% no-repeat'
                     });
                 } else if (count_animation <= 258){
                     jQuery('#draggableS3, #draggableS2_1, #draggable3').css({
                         transform: 'scale(1)',
                         background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/travma.jpg) 0 0/100% no-repeat'
                     });
-                } else {
+                } else{
                     jQuery('#draggableS3, #draggableS2_1, #draggable3').css({
-                        transform: 'rotate('+rotateVal+'deg) scale(1)',
-                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/superdisfunction.png) 0 0/100% no-repeat'
+                        transform: 'scale(1)',
+                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/povregdenie_demona.jpg) 0 0/100% no-repeat'
                     });
                 }
                 jQuery('#draggableD12')
@@ -1544,13 +1539,8 @@
                         });
                         if (count_animation <= 86){
                             jQuery('#draggableD2, #draggableD3').css({
-                                transform: 'scale(1)',
-                                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
-                            });
-                        } else if (count_animation <= 172){
-                            jQuery('#draggableD2, #draggableD3').css({
-                                transform: 'scale(1)',
-                                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/life_vater.png) 0 0/100% no-repeat'
+                                transform: 'rotate('+rotateVal+'deg) scale(1)',
+                                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/superdisfunction.png) 0 0/100% no-repeat'
                             });
                         } else if (count_animation <= 258){
                             jQuery('#draggableD2, #draggableD3').css({
@@ -1559,8 +1549,8 @@
                             });
                         } else {
                             jQuery('#draggableD2, #draggableD3').css({
-                                transform: 'rotate('+rotateVal+'deg) scale(1)',
-                                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/superdisfunction.png) 0 0/100% no-repeat'
+                                transform: 'scale(1)',
+                                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/povregdenie_demona.jpg) 0 0/100% no-repeat'
                             });
                         }
                         jQuery('#draggableD12')
@@ -1659,13 +1649,8 @@
                                 });
                                 if (count_animation <= 86){
                                     jQuery('#draggableS2, #draggable4, #draggable1').css({
-                                        transform: 'scale(1)',
-                                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
-                                    });
-                                } else if (count_animation <= 172){
-                                    jQuery('#draggableS2, #draggable4, #draggable1').css({
-                                        transform: 'scale(1)',
-                                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/life_vater.png) 0 0/100% no-repeat'
+                                        transform: 'rotate('+rotateVal+'deg) scale(1)',
+                                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/superdisfunction.png) 0 0/100% no-repeat'
                                     });
                                 } else if (count_animation <= 258){
                                     jQuery('#draggableS2, #draggable4, #draggable1').css({
@@ -1674,8 +1659,8 @@
                                     });
                                 } else {
                                     jQuery('#draggableS2, #draggable4, #draggable1').css({
-                                        transform: 'rotate('+rotateVal+'deg) scale(1)',
-                                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/superdisfunction.png) 0 0/100% no-repeat'
+                                        transform: 'scale(1)',
+                                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/povregdenie_demona.jpg) 0 0/100% no-repeat'
                                     });
                                 }
                                 jQuery('#draggableD12')
@@ -1774,27 +1759,18 @@
                                         });
                                         if (count_animation <= 86){
                                             jQuery('#draggableS4, #draggableD4').css({
-                                                transform: 'scale(1)',
-                                                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
-                                            });
-                                        } else if (count_animation <= 172){
-                                            jQuery('#draggableS4, #draggableD4').css({
-                                                transform: 'scale(1)',
-                                                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/life_vater.png) 0 0/100% no-repeat'
+                                                transform: 'rotate('+rotateVal+'deg) scale(1)',
+                                                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/superdisfunction.png) 0 0/100% no-repeat'
                                             });
                                         } else if (count_animation <= 258){
-                                            jQuery('#draggableD4').css({
+                                            jQuery('#draggableS4, #draggableD4').css({
                                                 transform: 'scale(1)',
                                                 background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/travma.jpg) 0 0/100% no-repeat'
                                             });
-                                            jQuery('#draggableS4').css({
-                                                transform: 'scale(1)',
-                                                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/povregdenie_demona.jpg) 0 0/100% no-repeat'
-                                            });
                                         } else {
                                             jQuery('#draggableS4, #draggableD4').css({
-                                                transform: 'rotate('+rotateVal+'deg) scale(1)',
-                                                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/superdisfunction.png) 0 0/100% no-repeat'
+                                                transform: 'scale(1)',
+                                                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/povregdenie_demona.jpg) 0 0/100% no-repeat'
                                             });
                                         }
                                         jQuery('#draggableD12')
@@ -2596,23 +2572,18 @@
                 });
                 if (count_animation <= 86){
                     jQuery('#draggableS4, #draggable4').css({
-                        transform: 'scale(1)',
-                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
-                    });
-                } else if (count_animation <= 172){
-                    jQuery('#draggableS4, #draggable4').css({
-                        transform: 'scale(1)',
-                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/life_vater.png) 0 0/100% no-repeat'
+                        transform: 'rotate('+rotateVal+'deg) scale(1)',
+                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/superdisfunction.png) 0 0/100% no-repeat'
                     });
                 } else if (count_animation <= 258){
                     jQuery('#draggableS4, #draggable4').css({
                         transform: 'scale(1)',
-                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/povregdenie_demona.jpg) 0 0/100% no-repeat'
+                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/travma.jpg) 0 0/100% no-repeat'
                     });
                 } else {
                     jQuery('#draggableS4, #draggable4').css({
-                        transform: 'rotate('+rotateVal+'deg) scale(1)',
-                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/superdisfunction.png) 0 0/100% no-repeat'
+                        transform: 'scale(1)',
+                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/povregdenie_demona.jpg) 0 0/100% no-repeat'
                     });
                 }
                 jQuery('#draggableD12')
@@ -2708,13 +2679,8 @@
                         });
                         if (count_animation <= 86){
                             jQuery('#draggable1, #draggable4').css({
-                                transform: 'scale(1)',
-                                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
-                            });
-                        } else if (count_animation <= 172){
-                            jQuery('#draggable1, #draggable4').css({
-                                transform: 'scale(1)',
-                                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/life_vater.png) 0 0/100% no-repeat'
+                              transform: 'rotate('+rotateVal+'deg) scale(1)',
+                              background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/superdisfunction.png) 0 0/100% no-repeat'
                             });
                         } else if (count_animation <= 258){
                             jQuery('#draggable1, #draggable4').css({
@@ -2724,7 +2690,7 @@
                         } else {
                             jQuery('#draggable1, #draggable4').css({
                                 transform: 'scale(1)',
-                                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/disfunction.jpg) 0 0/100% no-repeat'
+                                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/povregdenie_demona) 0 0/100% no-repeat'
                             });
                         }
                         jQuery('#draggableD12')
@@ -2820,13 +2786,8 @@
                                 });
                                 if (count_animation <= 86){
                                     jQuery('#draggableD3, #draggableD2').css({
-                                        transform: 'scale(1)',
-                                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
-                                    });
-                                } else if (count_animation <= 172){
-                                    jQuery('#draggableD3, #draggableD2').css({
-                                        transform: 'scale(1)',
-                                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/life_vater.png) 0 0/100% no-repeat'
+                                        transform: 'rotate('+rotateVal+'deg) scale(1)',
+                                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/superdisfunction.png) 0 0/100% no-repeat'
                                     });
                                 } else if (count_animation <= 258){
                                     jQuery('#draggableD3, #draggableD2').css({
@@ -2835,8 +2796,8 @@
                                     });
                                 } else {
                                     jQuery('#draggableD3, #draggableD2').css({
-                                        transform: 'rotate('+rotateVal+'deg) scale(1)',
-                                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/superdisfunction.png) 0 0/100% no-repeat'
+                                        transform: 'scale(1)',
+                                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/povregdenie_demona.jpg) 0 0/100% no-repeat'
                                     });
                                 }
                                 jQuery('#draggableD12')
@@ -2932,13 +2893,8 @@
                                         });
                                         if (count_animation <= 86){
                                             jQuery('#draggable3, #draggableS3').css({
-                                                transform: 'scale(1)',
-                                                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/veter.png) 0 0/100% no-repeat'
-                                            });
-                                        } else if (count_animation <= 172){
-                                            jQuery('#draggable3, #draggableS3').css({
-                                                transform: 'scale(1)',
-                                                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/life_vater.png) 0 0/100% no-repeat'
+                                                transform: 'rotate('+rotateVal+'deg) scale(1)',
+                                                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/superdisfunction.png) 0 0/100% no-repeat'
                                             });
                                         } else if (count_animation <= 258){
                                             jQuery('#draggable3, #draggableS3').css({
@@ -2947,8 +2903,8 @@
                                             });
                                         } else {
                                             jQuery('#draggable3, #draggableS3').css({
-                                                transform: 'rotate('+rotateVal+'deg) scale(1)',
-                                                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/superdisfunction.png) 0 0/100% no-repeat'
+                                                transform: 'scale(1)',
+                                                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/povregdenie_demona.jpg) 0 0/100% no-repeat'
                                             });
                                         }
                                         jQuery('#draggableD12')
@@ -3755,7 +3711,7 @@ v5 = function(){
             } else if (count_animation > 172 && count_animation <= 258){
                 jQuery('#draggableS6, #draggableS5, #draggable5').css({
                     transform: 'scale(1)',
-                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/life_vater.png) 0 0/100% no-repeat'
+                    background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/travma.jpg) 0 0/100% no-repeat'
                 });
             } else {
                 jQuery('#draggableS6, #draggableS5, #draggable5').css({
