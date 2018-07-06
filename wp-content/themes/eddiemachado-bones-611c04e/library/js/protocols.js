@@ -1552,6 +1552,7 @@
                                 transform: 'scale(1)',
                                 background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/povregdenie_demona.jpg) 0 0/100% no-repeat'
                             });
+                            
                         }
                         jQuery('#draggableD12')
                             .removeClass('hidden')
