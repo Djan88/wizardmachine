@@ -7,7 +7,7 @@
  * Copyright (c) 2008 - 2010 Janis Skarnelis
  * That said, it is hardly a one-person project. Many people have submitted bugs, code, and offered their advice freely. Their support is greatly appreciated.
  *
- * Version: 1.3.14 (23/04/2018)
+ * Version: 1.3.20 (2018/06/15)
  * Requires: jQuery v1.7+
  *
  * Dual licensed under the MIT and GPL licenses:
@@ -84,6 +84,10 @@
 			if ( document.documentElement.clientWidth < selectedOpts.minViewportWidth ) {
 				busy = false;
 				return;
+			}
+
+			if ('object' === typeof arguments[0] && 'click' === arguments[0].type) {
+				arguments[0].preventDefault();
 			}
 
 			ret = selectedOpts.onStart(selectedArray, selectedIndex, selectedOpts);
@@ -329,8 +333,7 @@
 		},
 
 		_process_inline = function() {
-			var
-				w = selectedOpts.width,
+			var w = selectedOpts.width,
 				h = selectedOpts.height,
 				ww = $(window).width() == 0 ? window.innerWidth : $(window).width(),
 				wh = $(window).height() == 0 ? window.innerHeight : $(window).height();
@@ -452,7 +455,7 @@
 						.css({
 							'border-width' : currentOpts.padding,
 							'width'	: final_pos.width - currentOpts.padding * 2,
-							'height' : selectedOpts.autoDimensions ? 'auto' : final_pos.height - titleHeight - currentOpts.padding * 2
+							'height' : currentOpts.autoDimensions ? 'auto' : final_pos.height - titleHeight - currentOpts.padding * 2
 						});
 
 					if (equal) {
@@ -506,7 +509,7 @@
 			content
 				.css({
 					'width' : final_pos.width - currentOpts.padding * 2,
-					'height' : selectedOpts.autoDimensions ? 'auto' : final_pos.height - titleHeight - currentOpts.padding * 2
+					'height' : currentOpts.autoDimensions ? 'auto' : final_pos.height - titleHeight - currentOpts.padding * 2
 				})
 				.html( tmp.contents() );
 
@@ -635,7 +638,7 @@
 				wrap.css('filter', 0);
 			}
 
-			if (selectedOpts.autoDimensions) {
+			if (currentOpts.autoDimensions) {
 				content.css('height','auto');
 			}
 
@@ -680,8 +683,8 @@
 
 			if (currentOpts.type == 'iframe') {
 				$('<iframe id="fancybox-frame" name="fancybox-frame' + new Date().getTime() + '"' + (navigator.userAgent.match(/msie [6]/i) ? ' allowtransparency="true""' : '')
-				  + ' style="border:0;margin:0;overflow:' + (selectedOpts.scrolling == 'auto' ? 'auto' : (selectedOpts.scrolling == 'yes' ? 'scroll' : 'hidden')) + '" src="'
-				  + currentOpts.href + '"' + (false === currentOpts.allowfullscreen ? '' : ' allowfullscreen') + ' tabindex="999"></iframe>')
+				  + ' style="border:0;margin:0;overflow:' + (currentOpts.scrolling == 'auto' ? 'auto' : (currentOpts.scrolling == 'yes' ? 'scroll' : 'hidden')) + '" src="'
+				  + currentOpts.href + '"' + (false === currentOpts.allowfullscreen ? '' : ' allowfullscreen') + ' allow="autoplay; encrypted-media" tabindex="999"></iframe>')
 				  .appendTo(content).load(function() {
 					$.fancybox.hideActivity();
 				}).focus();
@@ -704,12 +707,19 @@
 		_preload_next = function() {
 			var pos = typeof arguments[0] == 'number' ? arguments[0] : currentIndex + 1;
 
-			if (pos >= currentArray.length) {
+			if ( pos >= currentArray.length ) {
 				if (currentOpts.cyclic) {
 					pos = 0;
 				} else {
 					return;
 				}
+			}
+
+			if ( pos == currentIndex ) {
+				currentOpts.enableKeyboardNav = false;
+				wrap.off('mousewheel.fb');
+				nav_right.hide();
+				return;
 			}
 
 			if ( _preload_image( pos ) ) {
@@ -722,12 +732,19 @@
 		_preload_prev = function() {
 			var pos = typeof arguments[0] == 'number' ? arguments[0] : currentIndex - 1;
 
-			if (pos < 0) {
+			if ( pos < 0 ) {
 				if (currentOpts.cyclic) {
 					pos = currentArray.length - 1;
 				} else {
 					return;
 				}
+			}
+
+			if ( pos == currentIndex ) {
+				currentOpts.enableKeyboardNav = false;
+				wrap.off('mousewheel.fb');
+				nav_left.hide();
+				return;
 			}
 
 			if ( _preload_image( pos ) ) {
@@ -776,13 +793,16 @@
 					window.innerWidth || document.documentElement.clientWidth || document.getElementsByTagName('body')[0].clientWidth,
 				h = !isTouch && window.innerHeight && document.documentElement.clientHeight ?
 					Math.min(window.innerHeight, document.documentElement.clientHeight) :
-					window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight;
+					window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight,
+				margin;
+
+			margin = arguments[0] === true ? 0 : currentOpts.margin;
 
 			return [
-				w - (currentOpts.margin * 2),
-				h - (currentOpts.margin * 2),
-				$(document).scrollLeft() + currentOpts.margin,
-				$(document).scrollTop() + currentOpts.margin
+				w - (margin * 2),
+				h - (margin * 2),
+				$(document).scrollLeft() + margin,
+				$(document).scrollTop() + margin
 			];
 		},
 
@@ -898,8 +918,6 @@
 			.data('fancybox', $.extend({}, options, ($.metadata ? $(this).metadata() : {})))
 			.off('click.fb')
 			.on('click.fb', function(e) {
-				e.preventDefault();
-
 				if (busy) {
 					return;
 				}
@@ -920,7 +938,7 @@
 					selectedIndex = selectedArray.index( this );
 				}
 
-				_start();
+				_start(e);
 
 				return;
 			});
@@ -993,7 +1011,7 @@
 
 		obj = currentArray[pos];
 
-		if ( typeof obj !== 'undefined' && typeof obj.href !== 'undefined' && obj.href === currentOpts.href ) {
+		if ( pos != currentIndex && typeof obj !== 'undefined' && typeof obj.href !== 'undefined' && obj.href === currentOpts.href ) {
 			$.fancybox.next( pos + 1 );
 		} else {
 			$.fancybox.pos( pos );
@@ -1015,7 +1033,7 @@
 
 		obj = currentArray[pos];
 
-		if ( typeof obj !== 'undefined' && typeof obj.href !== 'undefined' && obj.href === currentOpts.href ) {
+		if ( pos != currentIndex && typeof obj !== 'undefined' && typeof obj.href !== 'undefined' && obj.href === currentOpts.href ) {
 			$.fancybox.prev( pos - 1 );
 		} else {
 			$.fancybox.pos( pos );
@@ -1199,9 +1217,9 @@
 		}
 
 		align = arguments[0] === true ? 1 : 0;
-		view = _get_viewport();
+		view = _get_viewport(true);
 
-		if (!align && (wrap.width() > view[0] || wrap.height() > view[1])) {
+		if (!align && ((wrap.width() + 40) > view[0] || (wrap.height() + 40) > view[1])) {
 			return;
 		}
 
