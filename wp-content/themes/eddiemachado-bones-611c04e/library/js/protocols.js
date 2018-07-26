@@ -1552,7 +1552,7 @@
                                 transform: 'scale(1)',
                                 background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/povregdenie_demona.jpg) 0 0/100% no-repeat'
                             });
-                            
+
                         }
                         jQuery('#draggableD12')
                             .removeClass('hidden')
@@ -2579,7 +2579,7 @@
                 } else if (count_animation <= 258){
                     jQuery('#draggableS4, #draggable4').css({
                         transform: 'scale(1)',
-                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/travma.jpg) 0 0/100% no-repeat'
+                        background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/travma.jpg) 0 0/100% no-repeat'
                     });
                 } else {
                     jQuery('#draggableS4, #draggable4').css({
@@ -2691,7 +2691,7 @@
                         } else {
                             jQuery('#draggable1, #draggable4').css({
                                 transform: 'scale(1)',
-                                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/povregdenie_demona) 0 0/100% no-repeat'
+                                background: '#fff url(/wp-content/themes/eddiemachado-bones-611c04e/library/images/povregdenie_demona.jpg) 0 0/100% no-repeat'
                             });
                         }
                         jQuery('#draggableD12')
