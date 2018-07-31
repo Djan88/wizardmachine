@@ -333,6 +333,7 @@ jQuery( ".btn__wizard" ).on('click', function(event) {
 jQuery('#main').on('click', '.fast-protocol', function() {
     jQuery('.chart').data('easyPieChart').update(0);
     jQuery('.chart').find('span').text('0'); 
+    jQuery('.box_rounded').removeClass('hidden');
     protocol = jQuery(this).data('fast');
     localStorage.setItem('protocol', protocol);
     protocolName = jQuery(this).data('protocol-name');
