@@ -91,8 +91,12 @@
             <?php if(!is_front_page()){ ?>
 
                 <header class="header" role="banner">
-
-                    <div id="inner-header" class="wrap cf">
+                    
+                    <?php if(is_user_logged_in() && current_user_can('administrator') && wp_is_mobile()) { ?>
+                      <div id="inner-header" class="wrap-mobile cf">
+                    <?php } else { ?>
+                      <div id="inner-header" class="wrap cf">
+                    <?php } ?>
 
                         <?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
                         <!-- <p id="logo" class="h1"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></p> -->

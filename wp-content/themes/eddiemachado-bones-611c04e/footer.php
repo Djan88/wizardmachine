@@ -1,7 +1,11 @@
             <?php if(!is_front_page()){ ?>
                 <footer class="footer" role="contentinfo">
-
-                    <div id="inner-footer" class="wrap cf">
+                    
+                    <?php if(is_user_logged_in() && current_user_can('administrator') && wp_is_mobile()) { ?>
+                      <div id="inner-footer" class="wrap-mobile cf">
+                    <?php } else { ?>
+                      <div id="inner-footer" class="wrap cf">
+                    <?php } ?>
 
                         <nav role="navigation">
                             <?php wp_nav_menu(array(
