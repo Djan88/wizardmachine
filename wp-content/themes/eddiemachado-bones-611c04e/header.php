@@ -90,12 +90,13 @@
 
             <?php if(!is_front_page()){ ?>
 
-                <header class="header" role="banner">
                     
                     <?php if(is_user_logged_in() && current_user_can('administrator') && wp_is_mobile()) { ?>
-                      <div id="inner-header" class="wrap-mobile cf">
+                        <header class="header header-mobile" role="banner">
+                            <div id="inner-header" class="wrap-mobile cf">
                     <?php } else { ?>
-                      <div id="inner-header" class="wrap cf">
+                        <header class="header" role="banner">
+                            <div id="inner-header" class="wrap cf">
                     <?php } ?>
 
                         <?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>

@@ -701,6 +701,9 @@ them however you see fit.
     /*float: left;*/
     padding-right: 0.75em;
     /*width: 66.66%; */
+  }
+  .wrap .t-2of3
+  {
     min-width: 830px;
   }
 

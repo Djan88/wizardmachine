@@ -679,7 +679,15 @@ header .btn
     margin: 0 10px 0 0 !important;
     width: 190px !important;
 }
-
+#inner-header.wrapper-mobile
+{
+    padding: 10px 10px 0;
+}
+.header.header-mobile
+{
+    background: #F4F4F4;
+    box-shadow: none;
+}
 .pay-form__submit
 {
     vertical-align: middle;
