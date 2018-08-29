@@ -7,8 +7,13 @@
 <?php get_header(); ?>
   
 <div id="content">
-
+  
+  <!-- Проверка входа с мобильного устройства -->
+  <?php if(is_user_logged_in() && current_user_can('administrator') && wp_is_mobile()) { ?>
+    <div id="inner-content" class="wrap-mobile cf">
+  <?php } else { ?>
     <div id="inner-content" class="wrap cf">
+  <?php } ?>
 
         <div id="main" class="m-all t-2of3 cf home-page-content" role="main">
         <?php if(is_user_logged_in()){ ?>
