@@ -1035,6 +1035,11 @@ a.button.button-no
 {
     width: 100%;
 }
+.wm_mobile .itemlist img.returned
+{
+    width: 100%!important;
+    height: auto!important;
+}
 @media (max-width: 1000px) {
     img.outdoor
     {
