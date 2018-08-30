@@ -1031,6 +1031,10 @@ a.button.button-no
     border: 2px solid darkred;
     color: darkgoldenrod;
 }
+.wm_mobile .itemlist
+{
+    width: 100%;
+}
 @media (max-width: 1000px) {
     img.outdoor
     {
