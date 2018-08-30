@@ -153,13 +153,13 @@ h3:focus
 @media (max-width: 600px) {
     .wrap-mobile .step2 img
     {
-        max-width: 500px;
+        /*max-width: 500px;*/
     }
 }
 @media (max-width: 400px) {
     .wrap-mobile .step2 img
     {
-        max-width: 270px;
+        /*max-width: 270px;*/
     }
 }
 label {
