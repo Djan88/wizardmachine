@@ -534,6 +534,7 @@ jQuery('#main').on('click', '.fast-protocol', function() {
 
                     setTimeout(function(){
                         // initialize Jcrop
+                        console.log(jQuery('.step2').width());
                         jQuery('#preview').Jcrop({
                             minSize: [32, 32],// keep aspect ratio 1:1
                             bgFade: true, // use fade effect
