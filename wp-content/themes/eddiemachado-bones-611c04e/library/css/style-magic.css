@@ -150,6 +150,11 @@ h3:focus
     margin: auto;
     height: auto!important;
 }
+.wrap-mobile .step2 img
+{
+    width: 100%!important;
+    max-width: none;
+}
 label {
     margin: 0 5px;
 }
