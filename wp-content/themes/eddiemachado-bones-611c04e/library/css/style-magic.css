@@ -150,10 +150,17 @@ h3:focus
     margin: auto;
     height: auto!important;
 }
-.wrap-mobile .step2 img
-{
-    width: 100%!important;
-    max-width: none;
+@media (max-width: 600px) {
+    .wrap-mobile .step2 img
+    {
+        max-width: 500px;
+    }
+}
+@media (max-width: 400px) {
+    .wrap-mobile .step2 img
+    {
+        max-width: 270px;
+    }
 }
 label {
     margin: 0 5px;
