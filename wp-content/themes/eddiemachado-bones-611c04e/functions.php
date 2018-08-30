@@ -371,15 +371,15 @@ function uploadImageFile() { // Note: GD library is required for this function
                             }
                         }
 
-                        if($aSize[0] <= 800 && $_POST['mci_w']){
+                        if($aSize[0] <= 270 && $_POST['mci_w']){
                             $k = 1;
                         }else{
-                            $k = $aSize[0] / 800;
+                            $k = $aSize[0] / 270;
                         }
 
                         if(!$_POST['mci_x1']) $_POST['mci_x1'] = 0;
                         if(!$_POST['mci_y1']) $_POST['mci_y1'] = 0;
-                        if(!$_POST['mci_w']) $_POST['mci_w'] = 800;
+                        if(!$_POST['mci_w']) $_POST['mci_w'] = 270;
                         if(!$_POST['mci_h']) $_POST['mci_h'] = $aSize[1] / $k;
 
                         $iWidth = (int)$_POST['mci_w'];
