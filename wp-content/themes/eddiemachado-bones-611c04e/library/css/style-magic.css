@@ -143,6 +143,11 @@ h3:focus
     max-width: 400px;
     margin: auto;
 }
+.wm_mobile .itemlist-two, .wm_mobile .returned
+{
+    width: 100%;
+    max-width: 100%;
+}
 .step2 img 
 {
     max-width: 800px;
