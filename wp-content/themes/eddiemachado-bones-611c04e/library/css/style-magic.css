@@ -150,10 +150,6 @@ h3:focus
     margin: auto;
     height: auto!important;
 }
-.wrap-mobile .step2 img
-{
-    max-width: 300px;
-}
 label {
     margin: 0 5px;
 }
@@ -1030,10 +1026,6 @@ a.button.button-no
 {
     border: 2px solid darkred;
     color: darkgoldenrod;
-}
-.wm_mobile .itemlist
-{
-    width: 100%;
 }
 @media (max-width: 1000px) {
     img.outdoor

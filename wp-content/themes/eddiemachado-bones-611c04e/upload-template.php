@@ -103,7 +103,18 @@
                     <div class="chart" data-percent="0"><span>0</span>%</div>
                     <h6 class="prot_stage hidden">ФАЗА 1 из 1</h6>
                     
-                    
+                    <?php if(is_user_logged_in() && current_user_can('administrator') && wp_is_mobile()) { ?>
+                      <!-- If login from smartphone -->
+                      <div id="snaptarget" class="wrapper wm_mobile">
+                        <ul class="itemlist itemlist-two" id="itemlist-two">
+                        <div class="box_rounded hidden">
+                            <li id="draggableD12" class="itemlist_item item_list__mid draggable hidden" style="left: 45%; top: 5px;"></li>
+                        </div>
+                        <li class="itemlist-two-li"></li>
+                        </ul>
+                      </div>  
+                    <?php } else { ?>
+                      <!-- If login from desktop -->
                       <div id="snaptarget" class="wrapper">
                         <ul class="itemlist itemlist-one" id="itemlist-one">
                           <li id="draggable0" class="itemlist_item itemlist_item_dr item_list__mid draggable" style="left: 197px; top: -11px;">V0</li>
@@ -836,7 +847,7 @@
                         <li class="itemlist-two-li"></li>
                         </ul>
                       </div>  
-
+                    <?php } ?>  
                 </div>
             <?php } else { ?>
                 <div class="subscriber_info">Вы видите это сообщение, потому, что зарегистрированы на сайте <a href="http://wizardmachine.ru/">"WizardMachine"</a> но на данный момент не имеете действующего доступа к программе.
