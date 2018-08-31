@@ -159,6 +159,9 @@ h3:focus
 {
     display: block;
     margin: auto;
+    text-align: center;
+    float: none;
+    font-size: 19px
 }
 .step2 img 
 {
