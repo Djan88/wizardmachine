@@ -6,6 +6,7 @@ jQuery(function() {
         curChoice,
         protocol,
         checkPoints,
+        checkPointsMobile,
         protocolName,
         checkV3,
         knife,
@@ -90,6 +91,14 @@ jQuery(function() {
     //Функция проверки положения точек
     checkPoints = function(){
         jQuery('.itemlist_item_dr').each(function() {
+            if(parseFloat(jQuery(this).css('left')) < 450){
+                pointsStatus = false;
+                console.log('status '+pointsStatus);
+            }
+        });
+    }
+    checkPointsMobile = function(){
+        jQuery('.itemlist_item_sm').each(function() {
             if(parseFloat(jQuery(this).css('left')) < 450){
                 pointsStatus = false;
                 console.log('status '+pointsStatus);
@@ -290,6 +299,7 @@ jQuery( ".btn__wizard" ).on('click', function(event) {
     v3status = true;
     curV = localStorage.getItem('curV');
         checkPoints();
+        // checkPointsMobile();
         if(pointsStatus == false){
             swal("Не все зоны перенесены", "Перед началом процедуры необходимо перенести все зоны", "info");
         } else {

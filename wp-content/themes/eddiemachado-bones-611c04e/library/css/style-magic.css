@@ -156,6 +156,13 @@ h3:focus
     margin-left: 0;
     height: 40px;
 }
+.mobile_zones ul
+{
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
 .wrap-mobile .steps_protocol .prot_in_action
 {
     margin-top: 0;
