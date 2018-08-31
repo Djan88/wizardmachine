@@ -103,7 +103,7 @@
                           <div class="mobile_zones">
                             <ul class="mobile_zones_D">
                               <li id="draggableD2" class="itemlist_item itemlist_item_sm item_list__mid draggable" style="left: 1px; top: 1px;">D2</li>
-                              <li id="draggableD3" class="itemlist_item itemlist_item_sm item_list__mid draggable" style="left: 1px; top: 11px;">D3</li>
+                              <li id="draggableD3" class="itemlist_item itemlist_item_sm item_list__mid draggable" style="left: 1px; top: 1px;">D3</li>
                               <li id="draggableD4" class="itemlist_item itemlist_item_sm item_list__mid draggable" style="left: 1px; top: 1px;">D4</li>
                               <li id="draggableD5" class="itemlist_item itemlist_item_sm item_list__mid draggable" style="left: 1px; top: 1px;">D5</li>
                               <li id="draggableD_6" class="itemlist_item itemlist_item_sm item_list__mid draggable" style="left: 1px; top: 1px;">D6</li>
@@ -813,14 +813,14 @@
                               <li id="draggable5" class="itemlist_item itemlist_item_sm item_list__mid draggable" style="left: 1px; top: 1px;">V5</li>
                               <li id="draggableVD" class="itemlist_item itemlist_item_sm item_list__mid draggable" style="left: 1px; top: 1px;">V-</li>
                               <li id="draggableClean" class="itemlist_item itemlist_item_sm item_list__mid itemlist_item__clear draggable" style="left: 1px; top: 1px;"></li>
-                              <li id="draggableClean_1" class="itemlist_item itemlist_item_sm item_list__mid itemlist_item__clear draggable inopaciti" style="left: 1px; top: 1px;"></li>
-                              <li id="draggableClean_2" class="itemlist_item itemlist_item_sm item_list__mid itemlist_item__clear draggable inopaciti" style="left: 1px; top: 1px;"></li>
-                              <li id="draggableClean_3" class="itemlist_item itemlist_item_sm item_list__mid itemlist_item__clear draggable inopaciti" style="left: 1px; top: 1px;"></li>
-                              <li id="draggableClean_4" class="itemlist_item itemlist_item_sm item_list__mid itemlist_item__clear draggable inopaciti" style="left: 1px; top: 1px;"></li>
-                              <li id="draggableClean_5" class="itemlist_item itemlist_item_sm item_list__mid itemlist_item__clear draggable inopaciti" style="left: 1px; top: 1px;"></li>
-                              <li id="draggableClean_6" class="itemlist_item itemlist_item_sm item_list__mid itemlist_item__clear draggable inopaciti" style="left: 1px; top: 1px;"></li>
-                              <li id="draggableClean_7" class="itemlist_item itemlist_item_sm item_list__mid itemlist_item__clear draggable inopaciti" style="left: 1px; top: 1px;"></li>
-                              <li id="draggableClean_8" class="itemlist_item itemlist_item_sm item_list__mid itemlist_item__clear draggable inopaciti" style="left: 1px; top: 1px;"></li>
+                              <li id="draggableClean_1" class="itemlist_item itemlist_item_sm item_list__mid itemlist_item__clear draggable inopaciti" style="left: 200px; top: 1px;"></li>
+                              <li id="draggableClean_2" class="itemlist_item itemlist_item_sm item_list__mid itemlist_item__clear draggable inopaciti" style="left: 200px; top: 1px;"></li>
+                              <li id="draggableClean_3" class="itemlist_item itemlist_item_sm item_list__mid itemlist_item__clear draggable inopaciti" style="left: 200px; top: 1px;"></li>
+                              <li id="draggableClean_4" class="itemlist_item itemlist_item_sm item_list__mid itemlist_item__clear draggable inopaciti" style="left: 200px; top: 1px;"></li>
+                              <li id="draggableClean_5" class="itemlist_item itemlist_item_sm item_list__mid itemlist_item__clear draggable inopaciti" style="left: 200px; top: 1px;"></li>
+                              <li id="draggableClean_6" class="itemlist_item itemlist_item_sm item_list__mid itemlist_item__clear draggable inopaciti" style="left: 200px; top: 1px;"></li>
+                              <li id="draggableClean_7" class="itemlist_item itemlist_item_sm item_list__mid itemlist_item__clear draggable inopaciti" style="left: 200px; top: 1px;"></li>
+                              <li id="draggableClean_8" class="itemlist_item itemlist_item_sm item_list__mid itemlist_item__clear draggable inopaciti" style="left: 200px; top: 1px;"></li>
                             </ul>
                           </div>
                         <?php } ?>  
