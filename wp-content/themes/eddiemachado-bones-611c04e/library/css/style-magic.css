@@ -154,6 +154,11 @@ h3:focus
     text-align: left;
     max-width: 70%;
     margin-left: 0;
+    height: 40px;
+}
+.wrap-mobile .steps_protocol .prot_in_action
+{
+    margin-top: 0;
 }
 .wrap-mobile .copyright span
 {
