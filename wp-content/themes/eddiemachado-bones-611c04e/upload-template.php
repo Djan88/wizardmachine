@@ -96,7 +96,7 @@
                 </div>
                 
                 <div class="machine_screen work-area clearfix hidden">
-                    <div class="steps clearfix">
+                    <div class="steps steps_protocol clearfix">
                         <h3 class="heading heading_dashboard">Перенесите зоны с шаблона на фото клиента</h3>
                         <h5 class="prot_in_action hidden"></h5>
                     </div>
