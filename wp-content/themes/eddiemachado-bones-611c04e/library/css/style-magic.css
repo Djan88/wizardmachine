@@ -156,11 +156,11 @@ h3:focus
     margin-left: 0;
     height: 40px;
 }
-.mobile_zones ul
+.mobile_zones
 {
     position: relative;
     display: inline-block;
-    width: 30px;
+    width: 110px;
     height: 30px;
 }
 .wrap-mobile .steps_protocol .prot_in_action
@@ -178,6 +178,10 @@ h3:focus
     text-align: center;
     float: none;
     font-size: 19px
+}
+.wrap-mobile .protocol_choice .steps
+{
+    margin-bottom: 25px;
 }
 .step2 img 
 {
