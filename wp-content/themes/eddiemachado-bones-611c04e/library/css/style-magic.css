@@ -4,6 +4,13 @@
     width: 100%;
     text-align: center;
 }
+@media (max-width: 600px) {
+    .wrapper_home
+    {
+        overflow: hidden;
+    }
+      
+}
 .tower_home
 {
     width: 440px;
