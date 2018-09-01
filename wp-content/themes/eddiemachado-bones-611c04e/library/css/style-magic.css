@@ -167,6 +167,10 @@ h3:focus
 {
     margin: 0;
 }
+.mobile_zones li:before, .mobile_zones li:after
+{
+    display: none!important;
+}
 .wrap-mobile .copyright span
 {
     display: block;
