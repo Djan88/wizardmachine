@@ -159,7 +159,7 @@ h3:focus
 .wrap-mobile .steps_protocol
 {
     text-align: left;
-    max-width: 70%;
+    max-width: 75%;
     margin-left: 0;
     height: 40px;
 }
@@ -173,6 +173,7 @@ h3:focus
 .wrap-mobile .steps_protocol .prot_in_action
 {
     margin: 0;
+    white-space: nowrap;
 }
 .itemlist_item.itemlist_item_sm
 {
