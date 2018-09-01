@@ -99,7 +99,7 @@ jQuery(function() {
     }
     checkPointsMobile = function(){
         jQuery('.itemlist_item_sm').each(function() {
-            if(parseFloat(jQuery(this).css('left')) < 450){
+            if(parseFloat(jQuery(this).css('top')) < 35){
                 pointsStatus = false;
                 console.log('status '+pointsStatus);
             }
@@ -299,7 +299,7 @@ jQuery( ".btn__wizard" ).on('click', function(event) {
     v3status = true;
     curV = localStorage.getItem('curV');
         checkPoints();
-        // checkPointsMobile();
+        checkPointsMobile();
         if(pointsStatus == false){
             swal("Не все зоны перенесены", "Перед началом процедуры необходимо перенести все зоны", "info");
         } else {
