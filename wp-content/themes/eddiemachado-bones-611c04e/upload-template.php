@@ -101,20 +101,20 @@
                         <h5 class="prot_in_action hidden"></h5>
                         <?php if(is_user_logged_in() && current_user_can('administrator') && wp_is_mobile()) { ?>
                           <ul class="mobile_zones">
-                              <li id="draggableD2" class="itemlist_item itemlist_item_sm item_list__mid draggable" style="left: 1px; top: 1px;">D2</li>
-                              <li id="draggableD3" class="itemlist_item itemlist_item_sm item_list__mid draggable" style="left: 1px; top: 1px;">D3</li>
-                              <li id="draggableD4" class="itemlist_item itemlist_item_sm item_list__mid draggable" style="left: 1px; top: 1px;">D4</li>
-                              <li id="draggableD5" class="itemlist_item itemlist_item_sm item_list__mid draggable" style="left: 1px; top: 1px;">D5</li>
-                              <li id="draggableD_6" class="itemlist_item itemlist_item_sm item_list__mid draggable" style="left: 1px; top: 1px;">D6</li>
-                              <li id="draggableS2" class="itemlist_item itemlist_item_sm item_list__mid draggable" style="left: 41px; top: 1px;">S2</li>
-                              <li id="draggableS2_1" class="itemlist_item itemlist_item_sm item_list__mid draggable" style="left: 41px; top: 1px;">S2</li>
-                              <li id="draggableS3" class="itemlist_item itemlist_item_sm item_list__mid draggable" style="left: 41px; top: 1px;">S3</li>
-                              <li id="draggableS4" class="itemlist_item itemlist_item_sm item_list__mid draggable" style="left: 41px; top: 1px;">S4</li>
-                              <li id="draggableS5" class="itemlist_item itemlist_item_sm item_list__mid draggable" style="left: 41px; top: 1px;">S5</li>
-                              <li id="draggableS6" class="itemlist_item itemlist_item_sm item_list__mid draggable" style="left: 41px; top: 1px;">S6</li>
-                              <li id="draggableClean" class="itemlist_item itemlist_item_sm item_list__mid itemlist_item__clear draggable" style="left: 81px; top: 1px;"></li>
-                              <li id="draggable0" class="itemlist_item itemlist_item_sm item_list__mid draggable" style="left: 81px; top: 1px;">V0</li>
-                              <li id="draggable1" class="itemlist_item itemlist_item_sm item_list__mid draggable" style="left: 81px; top: 1px;">V1
+                              <li id="draggableD2" class="itemlist_item itemlist_item_sm item_list__mid draggable" style="left: 1px; top: -8px;">D2</li>
+                              <li id="draggableD3" class="itemlist_item itemlist_item_sm item_list__mid draggable" style="left: 1px; top: -8px;">D3</li>
+                              <li id="draggableD4" class="itemlist_item itemlist_item_sm item_list__mid draggable" style="left: 1px; top: -8px;">D4</li>
+                              <li id="draggableD5" class="itemlist_item itemlist_item_sm item_list__mid draggable" style="left: 1px; top: -8px;">D5</li>
+                              <li id="draggableD_6" class="itemlist_item itemlist_item_sm item_list__mid draggable" style="left: 1px; top: -8px;">D6</li>
+                              <li id="draggableS2" class="itemlist_item itemlist_item_sm item_list__mid draggable" style="left: 41px; top: -8px;">S2</li>
+                              <li id="draggableS2_1" class="itemlist_item itemlist_item_sm item_list__mid draggable" style="left: 41px; top: -8px;">S2</li>
+                              <li id="draggableS3" class="itemlist_item itemlist_item_sm item_list__mid draggable" style="left: 41px; top: -8px;">S3</li>
+                              <li id="draggableS4" class="itemlist_item itemlist_item_sm item_list__mid draggable" style="left: 41px; top: -8px;">S4</li>
+                              <li id="draggableS5" class="itemlist_item itemlist_item_sm item_list__mid draggable" style="left: 41px; top: -8px;">S5</li>
+                              <li id="draggableS6" class="itemlist_item itemlist_item_sm item_list__mid draggable" style="left: 41px; top: -8px;">S6</li>
+                              <li id="draggableClean" class="itemlist_item itemlist_item_sm item_list__mid itemlist_item__clear draggable" style="left: 81px; top: -8px;"></li>
+                              <li id="draggable0" class="itemlist_item itemlist_item_sm item_list__mid draggable" style="left: 81px; top: -8px;">V0</li>
+                              <li id="draggable1" class="itemlist_item itemlist_item_sm item_list__mid draggable" style="left: 81px; top: -8px;">V1
                                 <svg id="triangle_1" class="triangle hidden"
                                 xmlns:dc="http://purl.org/dc/elements/1.1/"
                                 xmlns:cc="http://creativecommons.org/ns#"
@@ -287,7 +287,7 @@
                                   d="m 322.51281,286.28317 -284.757805,0 L 180.13391,39.806513 z"
                                   sodipodi:nodetypes="cccc" /></svg>
                               </li>
-                              <li id="draggable2" class="itemlist_item itemlist_item_sm item_list__mid draggable" style="left: 81px; top: 1px;">V2
+                              <li id="draggable2" class="itemlist_item itemlist_item_sm item_list__mid draggable" style="left: 81px; top: -8px;">V2
                                 <svg id="triangle_2" class="triangle hidden"
                                 xmlns:dc="http://purl.org/dc/elements/1.1/"
                                 xmlns:cc="http://creativecommons.org/ns#"
@@ -460,7 +460,7 @@
                                   d="m 322.51281,286.28317 -284.757805,0 L 180.13391,39.806513 z"
                                   sodipodi:nodetypes="cccc" /></svg>
                                 </li>
-                              <li id="draggable3" class="itemlist_item itemlist_item_sm item_list__mid draggable" style="left: 81px; top: 1px;">V3
+                              <li id="draggable3" class="itemlist_item itemlist_item_sm item_list__mid draggable" style="left: 81px; top: -8px;">V3
                                   <svg id="triangle_3" class="triangle hidden"
                                   xmlns:dc="http://purl.org/dc/elements/1.1/"
                                   xmlns:cc="http://creativecommons.org/ns#"
@@ -633,7 +633,7 @@
                                     d="m 322.51281,286.28317 -284.757805,0 L 180.13391,39.806513 z"
                                     sodipodi:nodetypes="cccc" /></svg>
                               </li>
-                              <li id="draggable4" class="itemlist_item itemlist_item_sm item_list__mid draggable" style="left: 81px; top: 1px;">V4
+                              <li id="draggable4" class="itemlist_item itemlist_item_sm item_list__mid draggable" style="left: 81px; top: -8px;">V4
                                 <svg id="triangle_4" class="triangle hidden"
                                 xmlns:dc="http://purl.org/dc/elements/1.1/"
                                 xmlns:cc="http://creativecommons.org/ns#"
@@ -806,8 +806,8 @@
                                   d="m 322.51281,286.28317 -284.757805,0 L 180.13391,39.806513 z"
                                   sodipodi:nodetypes="cccc" /></svg>
                               </li>
-                              <li id="draggable5" class="itemlist_item itemlist_item_sm item_list__mid draggable" style="left: 81px; top: 1px;">V5</li>
-                              <li id="draggableVD" class="itemlist_item itemlist_item_sm item_list__mid draggable" style="left: 81px; top: 1px;">V-</li>
+                              <li id="draggable5" class="itemlist_item itemlist_item_sm item_list__mid draggable" style="left: 81px; top: -8px;">V5</li>
+                              <li id="draggableVD" class="itemlist_item itemlist_item_sm item_list__mid draggable" style="left: 81px; top: -8px;">V-</li>
                               <li id="draggableClean_1" class="itemlist_item itemlist_item_sm item_list__mid itemlist_item__clear draggable inopaciti" style="left: 100px; top: 100px;"></li>
                               <li id="draggableClean_2" class="itemlist_item itemlist_item_sm item_list__mid itemlist_item__clear draggable inopaciti" style="left: 100px; top: 100px;"></li>
                               <li id="draggableClean_3" class="itemlist_item itemlist_item_sm item_list__mid itemlist_item__clear draggable inopaciti" style="left: 100px; top: 100px;"></li>

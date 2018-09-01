@@ -170,6 +170,7 @@ h3:focus
 .itemlist_item.itemlist_item_sm
 {
     padding-left: 8px;
+    background: rgba(255,255,255, 1);
             transform: scale(0.6);
     -webkit-transform: scale(0.6);
 }
