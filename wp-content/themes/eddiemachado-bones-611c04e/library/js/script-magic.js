@@ -309,7 +309,7 @@ jQuery( ".btn__wizard" ).on('click', function(event) {
                 jQuery('.heading_dashboard').text('Процедура выполняется')
                 jQuery('.btn_back').addClass('invisible');
                 protocol = localStorage.getItem('protocol');
-                jQuery('.itemlist_item').css('background', 'rgba(255,255,255, 1)');
+                jQuery('.itemlist_item').css('background', 'rgba(255,255,255, 0.6)');
                 console.log(protocol);
                 if(protocol == 'v2'){
                     v2();
