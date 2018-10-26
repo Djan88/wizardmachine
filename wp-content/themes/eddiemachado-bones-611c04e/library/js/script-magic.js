@@ -340,7 +340,6 @@ jQuery( ".btn__wizard" ).on('click', function(event) {
                     }
             }
         // }
-    }
     main_heading();
 });
 //Быстрая смена протокола
