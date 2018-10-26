@@ -299,44 +299,48 @@ jQuery( ".btn__wizard" ).on('click', function(event) {
     curV = localStorage.getItem('curV');
         checkPoints();
         checkPointsMobile();
-        if(pointsStatus == false){
-            swal("Не все зоны перенесены", "Перед началом процедуры необходимо перенести на фото все зоны", "info");
-        } else {
-            jQuery(this)
-                .addClass('btn__wizard_inAction')
-                .text('Выполняется');
-                jQuery('.heading_dashboard').text('Процедура выполняется')
-                jQuery('.btn_back').addClass('invisible');
-                protocol = localStorage.getItem('protocol');
-                jQuery('.itemlist_item').css('background', 'rgba(255,255,255, 0.6)');
-                console.log(protocol);
-                if(protocol == 'v2'){
-                    v2();
-                } else if(protocol == 'v3'){
-                    v3();
-                } else if(protocol == 'v4'){
-                    v4();
-                } else if(protocol == 'v5'){
-                    v5();
-                } else if(protocol == 'v6'){
-                    v6();
-                } else if(protocol == 'v7'){
-                    v7();
-                } else if(protocol == 'face'){
-                    face();
-                } else if(protocol == 'resource'){
-                    resource();
-                } else if(protocol == 'solis'){
-                    solis();
-                } else if(protocol == 'demo'){
-                    demo();
-                } else if(protocol == 'mmt'){
-                    mmt();
-                } else{
-                    console.log('нет протокола с id '+ protocol)
-                }
-        }
-    // }
+        // if(pointsStatus == false){
+        //     swal("Не все зоны перенесены", "Перед началом процедуры необходимо перенести на фото все зоны", "info");
+        // } else {
+            if (jQuery( ".btn__wizard" ).hasClass('btn__wizard_inAction')) {
+
+            } else {
+                jQuery(this)
+                    .addClass('btn__wizard_inAction')
+                    .text('Выполняется');
+                    jQuery('.heading_dashboard').text('Процедура выполняется')
+                    jQuery('.btn_back').addClass('invisible');
+                    protocol = localStorage.getItem('protocol');
+                    jQuery('.itemlist_item').css('background', 'rgba(255,255,255, 0.6)');
+                    console.log(protocol);
+                    if(protocol == 'v2'){
+                        v2();
+                    } else if(protocol == 'v3'){
+                        v3();
+                    } else if(protocol == 'v4'){
+                        v4();
+                    } else if(protocol == 'v5'){
+                        v5();
+                    } else if(protocol == 'v6'){
+                        v6();
+                    } else if(protocol == 'v7'){
+                        v7();
+                    } else if(protocol == 'face'){
+                        face();
+                    } else if(protocol == 'resource'){
+                        resource();
+                    } else if(protocol == 'solis'){
+                        solis();
+                    } else if(protocol == 'demo'){
+                        demo();
+                    } else if(protocol == 'mmt'){
+                        mmt();
+                    } else{
+                        console.log('нет протокола с id '+ protocol)
+                    }
+            }
+        // }
+    }
     main_heading();
 });
 //Быстрая смена протокола
