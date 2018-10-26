@@ -6038,9 +6038,6 @@ resource = function(){
             sound.play();
             jQuery('.chart').data('easyPieChart').update(8);
             jQuery('.chart').find('span').text('8');
-            jQuery( ".btn__wizard" )
-                .text('Выполнить')
-                .removeClass('btn__wizard_inAction');
 //Фаза 2
             cur_animation_val = 0;
             count_animation = 1;
