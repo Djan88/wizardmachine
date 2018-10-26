@@ -6548,9 +6548,6 @@ resource = function(){
                     sound.play();
                     jQuery('.chart').data('easyPieChart').update(16);
                     jQuery('.chart').find('span').text('16');
-                    jQuery( ".btn__wizard" )
-                        .text('Выполнить')
-                        .removeClass('btn__wizard_inAction');
         //Фаза 3
                     cur_animation_val = 0;
                     count_animation = 1;
@@ -7058,9 +7055,6 @@ resource = function(){
                             sound.play();
                             jQuery('.chart').data('easyPieChart').update(24);
                             jQuery('.chart').find('span').text('24');
-                            jQuery( ".btn__wizard" )
-                                .text('Выполнить')
-                                .removeClass('btn__wizard_inAction');
             //Фаза 4
                             cur_animation_val = 0;
                             count_animation = 1;
@@ -7568,9 +7562,7 @@ resource = function(){
                                     sound.play();
                                     jQuery('.chart').data('easyPieChart').update(32);
                                     jQuery('.chart').find('span').text('32');
-                                    jQuery( ".btn__wizard" )
-                                        .text('Выполнить')
-                                        .removeClass('btn__wizard_inAction');
+
             //Фаза 5
                                     cur_animation_val = 0;
                                     count_animation = 1;
@@ -8078,9 +8070,6 @@ resource = function(){
                                             sound.play();
                                             jQuery('.chart').data('easyPieChart').update(40);
                                             jQuery('.chart').find('span').text('40');
-                                            jQuery( ".btn__wizard" )
-                                                .text('Выполнить')
-                                                .removeClass('btn__wizard_inAction');
             //Фаза 6
                                             cur_animation_val = 0;
                                             count_animation = 1;
@@ -8588,9 +8577,6 @@ resource = function(){
                                                     sound.play();
                                                     jQuery('.chart').data('easyPieChart').update(48);
                                                     jQuery('.chart').find('span').text('48');
-                                                    jQuery( ".btn__wizard" )
-                                                        .text('Выполнить')
-                                                        .removeClass('btn__wizard_inAction');
                                                 //Фаза 7
                                                     cur_animation_val = 0;
                                                     count_animation = 1;
@@ -9098,9 +9084,6 @@ resource = function(){
                                                             sound.play();
                                                             jQuery('.chart').data('easyPieChart').update(56);
                                                             jQuery('.chart').find('span').text('56');
-                                                            jQuery( ".btn__wizard" )
-                                                                .text('Выполнить')
-                                                                .removeClass('btn__wizard_inAction');
                                                 //Фаза 8
                                                             cur_animation_val = 0;
                                                             count_animation = 1;
@@ -9608,9 +9591,6 @@ resource = function(){
                                                                     sound.play();
                                                                     jQuery('.chart').data('easyPieChart').update(64);
                                                                     jQuery('.chart').find('span').text('64');
-                                                                    jQuery( ".btn__wizard" )
-                                                                        .text('Выполнить')
-                                                                        .removeClass('btn__wizard_inAction');
                                                         //Фаза 9
                                                                     cur_animation_val = 0;
                                                                     count_animation = 1;
@@ -10118,9 +10098,6 @@ resource = function(){
                                                                             sound.play();
                                                                             jQuery('.chart').data('easyPieChart').update(72);
                                                                             jQuery('.chart').find('span').text('72');
-                                                                            jQuery( ".btn__wizard" )
-                                                                                .text('Выполнить')
-                                                                                .removeClass('btn__wizard_inAction');
                                                                         //Фаза 10
                                                                             cur_animation_val = 0;
                                                                             count_animation = 1;
@@ -10628,9 +10605,6 @@ resource = function(){
                                                                                     sound.play();
                                                                                     jQuery('.chart').data('easyPieChart').update(80);
                                                                                     jQuery('.chart').find('span').text('80');
-                                                                                    jQuery( ".btn__wizard" )
-                                                                                        .text('Выполнить')
-                                                                                        .removeClass('btn__wizard_inAction');
                                                                         //Фаза 11
                                                                                     cur_animation_val = 0;
                                                                                     count_animation = 1;
@@ -11138,9 +11112,6 @@ resource = function(){
                                                                                             sound.play();
                                                                                             jQuery('.chart').data('easyPieChart').update(90);
                                                                                             jQuery('.chart').find('span').text('90');
-                                                                                            jQuery( ".btn__wizard" )
-                                                                                                .text('Выполнить')
-                                                                                                .removeClass('btn__wizard_inAction');
                                                                                 //Фаза 12
                                                                                             cur_animation_val = 0;
                                                                                             count_animation = 1;

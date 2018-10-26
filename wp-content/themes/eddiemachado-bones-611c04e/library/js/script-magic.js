@@ -1,7 +1,6 @@
 jQuery(function() {
     var cur_screen = 0,
         nextScreen,
-        // ratioten = jQuery('.ratioten').data('ratio'),
         croppedImg,
         curChoice,
         protocol,
