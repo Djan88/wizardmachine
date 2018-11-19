@@ -114,7 +114,7 @@ jQuery(function() {
     // Рекланые баннеры
     //Получение данных из локального хранилища
     if(supportsStorage && localStorage.getItem('popupStatus1')){
-      popupStatus1 = localStorage.getItem('popupStatus1')+8000;
+      popupStatus1 = parseFloat(localStorage.getItem('popupStatus1'))+8000;
     }
     cur_time = new Date().getTime();
     console.log(popupStatus1);
