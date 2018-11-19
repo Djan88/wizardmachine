@@ -119,15 +119,15 @@ jQuery(function() {
       console.log(popupStatus1);
       console.log(cur_time);
     }
-    // if (popupStatus1 && popupStatus1+2628000 < cur_time) {
-    //   setTimeout(openPopup, 5000);
-    //   // jQuery('#book_down').on('hidden.bs.modal', function (e) {
-    //   //   setTimeout(openPopupTwo, 25000);
-    //   // })
-    //   localStorage.setItem('popupStatus1', cur_time);
-    // } else if (!popupStatus1) {
-    //   localStorage.setItem('popupStatus1', cur_time);
-    // }
+    if (popupStatus1 && popupStatus1+8000 < cur_time) {
+      setTimeout(openPopup, 5000);
+      // jQuery('#book_down').on('hidden.bs.modal', function (e) {
+      //   setTimeout(openPopupTwo, 25000);
+      // })
+      localStorage.setItem('popupStatus1', cur_time);
+    } else if (!popupStatus1) {
+      localStorage.setItem('popupStatus1', cur_time);
+    }
     
     // Текст заголовка
     main_heading = function(){
