@@ -1112,6 +1112,13 @@ a.button.button-no
     margin: 0;
     padding: 0;
 }
+.modal_link .modal-body .close
+{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 20px;
+}
 @media (max-width: 1000px) {
     img.outdoor
     {
