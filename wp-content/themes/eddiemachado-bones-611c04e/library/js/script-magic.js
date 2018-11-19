@@ -308,36 +308,36 @@ jQuery( ".btn__wizard" ).on('click', function(event) {
                 jQuery(this)
                     .addClass('btn__wizard_inAction')
                     .text('Выполняется');
-                    jQuery('.heading_dashboard').text('Процедура выполняется')
-                    jQuery('.btn_back').addClass('invisible');
-                    protocol = localStorage.getItem('protocol');
-                    jQuery('.itemlist_item').css('background', 'rgba(255,255,255, 0.6)');
-                    console.log(protocol);
-                    if(protocol == 'v2'){
-                        v2();
-                    } else if(protocol == 'v3'){
-                        v3();
-                    } else if(protocol == 'v4'){
-                        v4();
-                    } else if(protocol == 'v5'){
-                        v5();
-                    } else if(protocol == 'v6'){
-                        v6();
-                    } else if(protocol == 'v7'){
-                        v7();
-                    } else if(protocol == 'face'){
-                        face();
-                    } else if(protocol == 'resource'){
-                        resource();
-                    } else if(protocol == 'solis'){
-                        solis();
-                    } else if(protocol == 'demo'){
-                        demo();
-                    } else if(protocol == 'mmt'){
-                        mmt();
-                    } else{
-                        console.log('нет протокола с id '+ protocol)
-                    }
+                jQuery('.heading_dashboard').text('Процедура выполняется')
+                jQuery('.btn_back').addClass('invisible');
+                protocol = localStorage.getItem('protocol');
+                jQuery('.itemlist_item').css('background', 'rgba(255,255,255, 0.6)');
+                console.log(protocol);
+                if(protocol == 'v2'){
+                    v2();
+                } else if(protocol == 'v3'){
+                    v3();
+                } else if(protocol == 'v4'){
+                    v4();
+                } else if(protocol == 'v5'){
+                    v5();
+                } else if(protocol == 'v6'){
+                    v6();
+                } else if(protocol == 'v7'){
+                    v7();
+                } else if(protocol == 'face'){
+                    face();
+                } else if(protocol == 'resource'){
+                    resource();
+                } else if(protocol == 'solis'){
+                    solis();
+                } else if(protocol == 'demo'){
+                    demo();
+                } else if(protocol == 'mmt'){
+                    mmt();
+                } else{
+                    console.log('нет протокола с id '+ protocol)
+                }
             }
         // }
     main_heading();
@@ -587,4 +587,22 @@ jQuery('#main').on('click', '.fast-protocol', function() {
         lineWidth: 6,
         size: 95
     });
+
+    function openPopupOne(){
+      jQuery('#wizardtherapy').modal('show');
+    }
+    //Получение данных из локального хранилища
+    if(supportsStorage && localStorage.getItem('popupStatus1')){
+      popupStatus = localStorage.getItem('popupStatus1');
+    }
+    jQuery('.btn_test_modal').on('click', function(event) {
+        openPopupOne();
+    });
+    // if (popupStatus == false) {
+    //   setTimeout(openPopup, 5000);
+    //   jQuery('#book_down').on('hidden.bs.modal', function (e) {
+    //     setTimeout(openPopupTwo, 25000);
+    //   })
+    //   localStorage.setItem('popupStatus', true);
+    // }
 });

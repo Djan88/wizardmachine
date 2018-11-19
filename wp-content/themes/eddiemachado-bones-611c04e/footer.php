@@ -24,7 +24,10 @@
                         </nav>
 
                         <p class="source-org copyright"><span>&copy; <?php echo date('Y'); ?> <a href="/" class="homelink"><?php bloginfo( 'name' ); ?></a>. Версия 5.1</span><span> <?php if(is_user_logged_in()){ ?>| <a href="/kabinet">Личный кабинет</a> | 
-                            <a href="<?php echo home_url(); ?>/wp-login.php?action=logout&amp;_wpnonce=a6cad512ba">Выйти</a></span><?php } ?><span class="supportlink">Поддержка пользователей: <a href="mailto:info@chikurov.com">info@chikurov.com</a></span></p>
+                            <a href="<?php echo home_url(); ?>/wp-login.php?action=logout&amp;_wpnonce=a6cad512ba">Выйти</a></span><?php } ?><span class="supportlink">Поддержка пользователей: <a href="mailto:info@chikurov.com">info@chikurov.com</a></span>
+                        <?php if(current_user_can('administrator')){ ?>
+                            <span class="button button-primary button-large btn_test_modal">Открыть</span>
+                        <?php } ?></p>
 
                     </div>
 
@@ -126,6 +129,20 @@
                             <?php if(is_user_logged_in()){ ?>
                                 <a href="<?php echo home_url(); ?>/wp-login.php?action=logout&amp;_wpnonce=a6cad512ba" class="button button-primary button-large button__main btn_choice_screen">Выйти</a>
                             <?php } ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal Wizardtyerapy -->
+            <div class="modal fade" id="wizardtherapy" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal_menu">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title" id="myModalLabel">Выбор режима работы</h4>
+                        </div>
+                        <div class="modal-body">
+                           <a href="https://school-bc.ru/" target="_blank"><img src="<?php bloginfo('template_url'); ?>/library/images/wizardtherapy.png" alt="wizardtherapy"></a> 
                         </div>
                     </div>
                 </div>
