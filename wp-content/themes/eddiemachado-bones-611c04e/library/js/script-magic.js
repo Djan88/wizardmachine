@@ -22,6 +22,8 @@ jQuery(function() {
         curV = 'V3',
         actualV,
         curVZone = '#draggable3',
+        popupStatus1,
+        cur_time,
 
         supportsStorage = function(){
             try {
@@ -593,16 +595,18 @@ jQuery('#main').on('click', '.fast-protocol', function() {
     }
     //Получение данных из локального хранилища
     if(supportsStorage && localStorage.getItem('popupStatus1')){
-      popupStatus = localStorage.getItem('popupStatus1');
+      popupStatus1 = localStorage.getItem('popupStatus1');
+      cur_time = new Date().getTime();
+      console.log(popupStatus1);
+      console.log(cur_time);
     }
-    jQuery('.btn_test_modal').on('click', function(event) {
-        openPopupOne();
-    });
-    // if (popupStatus == false) {
+    // if (popupStatus1 && popupStatus1+2628000 < cur_time) {
     //   setTimeout(openPopup, 5000);
-    //   jQuery('#book_down').on('hidden.bs.modal', function (e) {
-    //     setTimeout(openPopupTwo, 25000);
-    //   })
-    //   localStorage.setItem('popupStatus', true);
+    //   // jQuery('#book_down').on('hidden.bs.modal', function (e) {
+    //   //   setTimeout(openPopupTwo, 25000);
+    //   // })
+    //   localStorage.setItem('popupStatus1', cur_time);
+    // } else if (!popupStatus1) {
+    //   localStorage.setItem('popupStatus1', cur_time);
     // }
 });
