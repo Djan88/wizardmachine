@@ -115,8 +115,8 @@ jQuery(function() {
     //Получение данных из локального хранилища
     if(supportsStorage && localStorage.getItem('popupStatus1')){
       popupStatus1 = localStorage.getItem('popupStatus1');
-      cur_time = new Date().getTime();
     }
+    cur_time = new Date().getTime();
     console.log(popupStatus1);
     console.log(cur_time);
     console.log(cur_time - (popupStatus1 + 8000));
@@ -127,6 +127,7 @@ jQuery(function() {
       // })
       localStorage.setItem('popupStatus1', cur_time);
     } else if (!popupStatus1) {
+      setTimeout(openPopupOne, 5000);
       localStorage.setItem('popupStatus1', cur_time);
     }
     
