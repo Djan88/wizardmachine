@@ -106,6 +106,30 @@ jQuery(function() {
             }
         });
     }
+
+    function openPopupOne(){
+      jQuery('#wizardtherapy').modal('show');
+    }
+
+    // Рекланые баннеры
+    //Получение данных из локального хранилища
+    if(supportsStorage && localStorage.getItem('popupStatus1')){
+      popupStatus1 = localStorage.getItem('popupStatus1');
+      cur_time = new Date().getTime();
+      console.log(popupStatus1);
+      console.log(cur_time);
+    }
+    cur_time = new Date().getTime();
+    localStorage.setItem('popupStatus1', cur_time);
+    // if (popupStatus1 && popupStatus1+2628000 < cur_time) {
+    //   setTimeout(openPopup, 5000);
+    //   // jQuery('#book_down').on('hidden.bs.modal', function (e) {
+    //   //   setTimeout(openPopupTwo, 25000);
+    //   // })
+    //   localStorage.setItem('popupStatus1', cur_time);
+    // } else if (!popupStatus1) {
+    //   localStorage.setItem('popupStatus1', cur_time);
+    // }
     
     // Текст заголовка
     main_heading = function(){
@@ -372,21 +396,8 @@ jQuery('#main').on('click', '.fast-protocol', function() {
     } else {
         jQuery('.box_rounded').addClass('hidden');
     }
-    // if(protocol == 'resource'){
-    //     jQuery('.fast-protocol-resource')
-    //         .removeClass('hidden')
-    //         .addClass('fadeIn');
-    // }
 });
-// jQuery('#main').on('click', '.fast-v', function() {
-//     curV = jQuery(this).text();
-//     curVZone = jQuery(this).data('v');
-//     localStorage.setItem('curVZone', curVZone);
-//     localStorage.setItem('curV', curV);
-//     jQuery('.fast-protocol-resource')
-//         .addClass('hidden')
-//         .removeClass('fadeIn');
-// });
+
 
 // Возврат на предыдущий шаг
     jQuery('.btn_back').on('click', function(event) {
@@ -589,26 +600,4 @@ jQuery('#main').on('click', '.fast-protocol', function() {
         lineWidth: 6,
         size: 95
     });
-
-    function openPopupOne(){
-      jQuery('#wizardtherapy').modal('show');
-    }
-    //Получение данных из локального хранилища
-    if(supportsStorage && localStorage.getItem('popupStatus1')){
-      popupStatus1 = localStorage.getItem('popupStatus1');
-      cur_time = new Date().getTime();
-      console.log(popupStatus1);
-      console.log(cur_time);
-    }
-    cur_time = new Date().getTime();
-    localStorage.setItem('popupStatus1', cur_time);
-    // if (popupStatus1 && popupStatus1+2628000 < cur_time) {
-    //   setTimeout(openPopup, 5000);
-    //   // jQuery('#book_down').on('hidden.bs.modal', function (e) {
-    //   //   setTimeout(openPopupTwo, 25000);
-    //   // })
-    //   localStorage.setItem('popupStatus1', cur_time);
-    // } else if (!popupStatus1) {
-    //   localStorage.setItem('popupStatus1', cur_time);
-    // }
 });
