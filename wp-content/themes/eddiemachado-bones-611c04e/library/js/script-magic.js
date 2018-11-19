@@ -119,7 +119,7 @@ jQuery(function() {
     cur_time = new Date().getTime();
     console.log(popupStatus1);
     console.log(cur_time);
-    console.log(cur_time - (popupStatus1 + 8000));
+    console.log(popupStatus1 - cur_time);
     if (popupStatus1 && popupStatus1+8000 < cur_time) {
       setTimeout(openPopupOne, 5000);
       // jQuery('#book_down').on('hidden.bs.modal', function (e) {
