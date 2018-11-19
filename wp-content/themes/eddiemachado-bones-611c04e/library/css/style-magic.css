@@ -1111,6 +1111,12 @@ a.button.button-no
     border: none;
     margin: 0;
     padding: 0;
+    width: 100%;
+}
+.modal_link .modal-body a img
+{
+    display: block;
+    width: 100%;
 }
 .modal_link .modal-body .close
 {
