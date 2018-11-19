@@ -120,7 +120,7 @@ jQuery(function() {
       console.log(cur_time);
     }
     if (popupStatus1 && popupStatus1+8000 < cur_time) {
-      setTimeout(openPopup, 5000);
+      setTimeout(openPopupOne, 5000);
       // jQuery('#book_down').on('hidden.bs.modal', function (e) {
       //   setTimeout(openPopupTwo, 25000);
       // })
