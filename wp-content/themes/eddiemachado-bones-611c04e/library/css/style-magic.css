@@ -1102,6 +1102,16 @@ a.button.button-no
     border: 2px solid darkred;
     color: darkgoldenrod;
 }
+.modal_link .modal-body
+{
+    padding: 0;
+}
+.modal_link .modal-body a
+{
+    border: none;
+    margin: 0;
+    padding: 0;
+}
 @media (max-width: 1000px) {
     img.outdoor
     {
