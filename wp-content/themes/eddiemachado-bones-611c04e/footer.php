@@ -116,7 +116,9 @@
                             <?php if(current_user_can('administrator')){ ?>
                                 <a href="/wp-admin" class="button button-primary button-large btn_choice_prot">Административная панель</a>
                             <?php } ?>
-                            <?php echo do_shortcode( '[theme_switcha_select text="Выберите версию"]' ); ?>
+                            <div class="version">
+                                <?php echo do_shortcode( '[theme_switcha_select text="Выберите версию"]' ); ?>
+                            </div>
                         </div>
                         <?php } ?>
                         <div class="modal-footer">
