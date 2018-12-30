@@ -415,6 +415,10 @@ input.crop_photo
   text-align: center;
   font-size: 18px;
 }
+.cab_sidebar
+{
+  display: none!important;
+}
 @media (min-width: 600px) {
   .sweet-alert
   {
