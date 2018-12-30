@@ -1124,6 +1124,22 @@ a.button.button-no
     top: 15px;
     font-size: 20px;
 }
+.version 
+{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+select#theme-switcha 
+{
+    margin: auto;
+    width: 100%;
+    border: 1px solid #0b1d7a;
+    color: #0b1d7a;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: block;
+}
 @media (max-width: 1000px) {
     img.outdoor
     {
