@@ -310,6 +310,28 @@
 			    </p>
 			  </form>
 			</div>
+			<div class="col protocols_info text_center form-group form-group_register hidden">
+				<div class="current_protocol_img">
+					<i class="fas fa-lock"></i>
+				</div>
+			  <form name="registerform" id="registerform" action="<?php echo site_url('wp-login.php?action=register'); ?>" method="post">
+			    <p>
+			      <label for="user_login">Придумайте логин<br />
+			      <input type="text" name="user_login" id="user_login" class="input form-control" value="" size="20" style=""></label>
+			    </p>
+			    <p>
+			      <label for="user_email">E-mail<br>
+			      <input type="email" name="user_email" id="user_email" class="input form-control" value="" size="25">
+			      </label>
+			    </p>
+			    
+			    <p id="reg_passmail">Подтверждение регистрации будет отправлено на ваш e-mail.</p>
+			    <br class="clear">
+			    <input type="hidden" name="redirect_to" value="">
+			    <p class="submit"><input type="submit" name="wp-submit" id="wp-submit" class="btn btn-primary" value="Регистрация"></p>
+			    <p class="note_small">У Вас уже есть учетная запись? <span class="toLogin">Войдите</span> в "WizardMachine" используя свои логин и пароль</p>
+			  </form>
+			</div>
 		</div>
 	<?php } ?>
 </div>
