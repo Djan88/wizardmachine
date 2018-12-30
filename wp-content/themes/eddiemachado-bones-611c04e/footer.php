@@ -117,7 +117,7 @@
                                 <a href="/wp-admin" class="button button-primary button-large btn_choice_prot">Административная панель</a>
                             <?php } ?>
                             <div class="version">
-                                <?php echo do_shortcode( '[theme_switcha_select text="Выберите версию"]' ); ?>
+                                <?php echo //do_shortcode( '[theme_switcha_select text="Выберите версию"]' ); ?>
                             </div>
                         </div>
                         <?php } ?>
