@@ -33,7 +33,11 @@
             </div>
             <div class="col-4 header-title">
               <?php if(is_user_logged_in()) { ?>
-                Загрузите фото
+                <?php if(current_user_can('contributor') || current_user_can('administrator')) { ?>
+                  Загрузите фото
+                <?php } else { ?>
+                  Приветствуем в "WizardMachine"
+                <?php } ?>
               <?php } else { ?>
                 Вход
               <?php } ?>
