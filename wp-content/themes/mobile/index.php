@@ -270,7 +270,7 @@
 
 	<?php } else { ?>
 		<div class="row">
-			<div class="col protocols_info text_center form-group">
+			<div class="col protocols_info text_center form-group form-group_login">
 				<div class="current_protocol_img">
 					<i class="fas fa-lock"></i>
 				</div>
@@ -304,6 +304,9 @@
 			      <input type="hidden" name="customize-login" value="1" />
 			<?php endif; ?>
 			      <input type="hidden" name="testcookie" value="1" />
+			    </p>
+			    <p>
+			    	<p class="note_small">У Вас еще нет учетной записи? <span class="toRegistration">Зарегистрируйтесь</span> в "WizardMachine" и узнайте как получить доступ</p>
 			    </p>
 			  </form>
 			</div>
