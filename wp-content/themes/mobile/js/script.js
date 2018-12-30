@@ -52,13 +52,13 @@ jQuery(document).ready(function () {
 
   // Register / Login
   jQuery('.toRegistration').on('click', function(event) {
-    jQuery('.form-group_register').addClass('hidden');
-    jQuery('.form-group_login').removeClass('hidden');
+    jQuery('.form-group_login').addClass('hidden');
+    jQuery('.form-group_register').removeClass('hidden');
     jQuery('.header-title').text('Регистрация');
   });
   jQuery('.toLogin').on('click', function(event) {
-    jQuery('.form-group_register').removeClass('hidden');
-    jQuery('.form-group_login').addClass('hidden');
+    jQuery('.form-group_login').removeClass('hidden');
+    jQuery('.form-group_register').addClass('hidden');
     jQuery('.header-title').text('Вход');
   });
 
