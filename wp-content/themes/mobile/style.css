@@ -408,6 +408,13 @@ input.crop_photo
     -moz-transition: width 0.5s linear;
     transition: width 0.5s linear;
 }
+.subscriber_info 
+{
+  padding-top: 75px;
+  color: #eee;
+  text-align: center;
+  font-size: 18px;
+}
 @media (min-width: 600px) {
   .sweet-alert
   {
