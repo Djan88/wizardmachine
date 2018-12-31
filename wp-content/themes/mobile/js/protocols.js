@@ -4308,6 +4308,7 @@ v2 = function(){
         });
       }
       count_animation += 1;
+      rotate_lovushka += 2;
     } else {
       clearInterval(phaseOne);
       jQuery('.draggable_d2').css({
@@ -4344,6 +4345,7 @@ v2 = function(){
             });
           }
           count_animation += 1;
+          rotate_lovushka += 2;
         } else {
           clearInterval(phaseOne);
           jQuery('.draggable_v2').css({
@@ -4380,6 +4382,7 @@ v2 = function(){
                 });
               }
               count_animation += 1;
+              rotate_lovushka += 2;
             } else {
               clearInterval(phaseOne);
               jQuery('.draggable_s2').css({
@@ -4416,6 +4419,7 @@ v2 = function(){
                     });
                   }
                   count_animation += 1;
+                  rotate_lovushka += 2;
                 } else {
                   clearInterval(phaseOne);
                   jQuery('.draggable_d2').css({
@@ -4452,6 +4456,7 @@ v2 = function(){
                         });
                       }
                       count_animation += 1;
+                      rotate_lovushka += 2;
                     } else {
                       clearInterval(phaseOne);
                       jQuery('.draggable_v2').css({
@@ -4488,6 +4493,7 @@ v2 = function(){
                             });
                           }
                           count_animation += 1;
+                          rotate_lovushka += 2;
                         } else {
                           clearInterval(phaseOne);
                           jQuery('.draggable_s2').css({
@@ -4561,6 +4567,7 @@ v2 = function(){
                                     });
                                   }
                                   count_animation += 1;
+                                  rotate_lovushka += 2;
                                 } else {
                                   clearInterval(phaseOne);
                                   jQuery('.draggable_v2').css({
@@ -4597,6 +4604,7 @@ v2 = function(){
                                         });
                                       }
                                       count_animation += 1;
+                                      rotate_lovushka += 2;
                                     } else {
                                       clearInterval(phaseOne);
                                       count_animation = 1;
@@ -4636,6 +4644,7 @@ v2 = function(){
                                             });
                                           }
                                           count_animation += 1;
+                                          rotate_lovushka += 2;
                                         } else {
                                           clearInterval(phaseOne);
                                           jQuery('.draggable_d2').css({
@@ -4672,6 +4681,7 @@ v2 = function(){
                                                 });
                                               }
                                               count_animation += 1;
+                                              rotate_lovushka += 2;
                                             } else {
                                               clearInterval(phaseOne);
                                               jQuery('.draggable_v2').css({
@@ -4708,6 +4718,7 @@ v2 = function(){
                                                     });
                                                   }
                                                   count_animation += 1;
+                                                  rotate_lovushka += 2;
                                                 } else {
                                                   clearInterval(phaseOne);
                                                   count_animation = 1;
