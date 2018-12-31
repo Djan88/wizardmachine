@@ -17442,7 +17442,7 @@ universal = function(){
 
 
 checkPoints = function(){
-  jQuery('.zone.draggable').each(function() {
+  jQuery('.mobile_screen_final .zone.draggable').each(function() {
     if(parseFloat(jQuery(this).css('top')) < 50){
       pointsStatus = false;
       console.log('status '+pointsStatus);
