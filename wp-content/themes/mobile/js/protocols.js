@@ -1625,7 +1625,7 @@ v1 = function(){
   jQuery('.status_pahaze_all').text('5');
   localStorage.setItem('pausedPhases', '5');
   localStorage.setItem('pausedProtName', 'Краниальный протокол');
-  jQuery('.zone_x, .zone_l').removeClass('hidden').css('transform', 'rotate(-90deg) scale(1.5)');
+  jQuery('.zone_x, .zone_l').removeClass('hidden').css('transform', 'rotate(-90deg) scale(1.3)');
   jQuery('.status_percent').text('0%');
   jQuery('.status_pahaze_now').text('1');
   count_animation = 0;
@@ -4279,7 +4279,7 @@ v2 = function(){
   localStorage.setItem('pausedProtName', 'Протокол 2-5');
   jQuery('.status_percent').text('0%');
   jQuery('.status_pahaze_now').text('1');
-  jQuery('.zone_x, .zone_l').removeClass('hidden').css('transform', 'rotate(-90deg) scale(1.5)');
+  jQuery('.zone_x, .zone_l').removeClass('hidden').css('transform', 'rotate(-90deg) scale(1.3)');
   console.log('Фаза 1/1');
   count_animation = 0;
   phaseOne = setInterval(function(){
@@ -6172,7 +6172,7 @@ v3 = function(){
   jQuery('.status_percent').text('0%');
   jQuery('.status_pahaze_now').text('1');
   console.log('Фаза 1/1');
-  jQuery('.zone_x, .zone_l').removeClass('hidden').css('transform', 'rotate(-90deg) scale(1.5)');
+  jQuery('.zone_x, .zone_l').removeClass('hidden').css('transform', 'rotate(-90deg) scale(1.3)');
   count_animation = 0;
   phaseOne = setInterval(function(){
     if (count_animation <= 12){
@@ -8078,7 +8078,7 @@ v4_2 = function(){
   jQuery('.status_percent').text('10%');
   console.log('Фаза 2/1');
   jQuery('.status_pahaze_now').text('2');
-  jQuery('.zone_x, .zone_l').removeClass('hidden').css('transform', 'rotate(-90deg) scale(1.5)');
+  jQuery('.zone_x, .zone_l').removeClass('hidden').css('transform', 'rotate(-90deg) scale(1.3)');
   count_animation = 0;
   phaseOne = setInterval(function(){
     if (count_animation <= 12){
@@ -10364,7 +10364,7 @@ v5 = function(){
   localStorage.setItem('pausedProtName', 'Протокол 5-2');
   jQuery('.status_percent').text('0%');
   jQuery('.status_pahaze_now').text('1');
-  jQuery('.zone_x, .zone_l').removeClass('hidden').css('transform', 'rotate(-90deg) scale(1.5)');
+  jQuery('.zone_x, .zone_l').removeClass('hidden').css('transform', 'rotate(-90deg) scale(1.3)');
   console.log('Фаза 1/1');
   count_animation = 0;
   phaseOne = setInterval(function(){
@@ -14661,7 +14661,7 @@ drenag = function(){
   jQuery('.status_pahaze_all').text('12');
   localStorage.setItem('pausedPhases', '12');
   localStorage.setItem('pausedProtName', 'Дренажный протокол');
-  jQuery('.zone_x, .zone_l').removeClass('hidden').css('transform', 'rotate(-90deg) scale(1.5)');
+  jQuery('.zone_x, .zone_l').removeClass('hidden').css('transform', 'rotate(-90deg) scale(1.3)');
   jQuery('.status_percent').text('0%');
   jQuery('.status_pahaze_now').text('1');
   count_animation = 0;
@@ -15398,7 +15398,7 @@ solis = function(){
   jQuery('.status_pahaze_all').text('5');
   localStorage.setItem('pausedPhases', '5');
   localStorage.setItem('pausedProtName', 'Протокол Solis');
-  jQuery('.zone_x, .zone_l').removeClass('hidden').css('transform', 'rotate(-90deg) scale(1.5)');
+  jQuery('.zone_x, .zone_l').removeClass('hidden').css('transform', 'rotate(-90deg) scale(1.3)');
   r_top = jQuery('.draggable_v3').css('top');
   l_top = jQuery('.draggable_v3').css('top');
 // Фаза 1
@@ -16204,7 +16204,7 @@ mmt3 = function(){
 mmt2 = function(){
   jQuery('.status_pahaze_now').text('2');
   jQuery('.status_percent').text('24%');
-  jQuery('.zone_x, .zone_l').removeClass('hidden').css('transform', 'rotate(-90deg) scale(1.5)');
+  jQuery('.zone_x, .zone_l').removeClass('hidden').css('transform', 'rotate(-90deg) scale(1.3)');
   console.log('Фаза 1/1');
   count_animation = 0;
   phaseOne = setInterval(function(){
@@ -16359,7 +16359,7 @@ mmt = function(){
   localStorage.setItem('pausedProtName', 'Висцеральный протокол');
   jQuery('.status_percent').text('0%');
   jQuery('.status_pahaze_now').text('1');
-  jQuery('.zone_x, .zone_l').removeClass('hidden').css('transform', 'rotate(-90deg) scale(1.5)');
+  jQuery('.zone_x, .zone_l').removeClass('hidden').css('transform', 'rotate(-90deg) scale(1.3)');
   console.log('Фаза 1/1');
   count_animation = 0;
   phaseOne = setInterval(function(){
@@ -16615,7 +16615,7 @@ mmt = function(){
 universal3 = function(){
   jQuery('.status_pahaze_now').text('3');
   jQuery('.status_percent').text('92%');
-  jQuery('.zone_x, .zone_l').removeClass('hidden').css('transform', 'rotate(-90deg) scale(1.5)');
+  jQuery('.zone_x, .zone_l').removeClass('hidden').css('transform', 'rotate(-90deg) scale(1.3)');
   console.log('Фаза 1/1');
   count_animation = 0;
   phaseOne = setInterval(function(){
@@ -17267,7 +17267,7 @@ universal = function(){
   localStorage.setItem('pausedProtName', 'Универсальный протокол');
   jQuery('.status_percent').text('0%');
   jQuery('.status_pahaze_now').text('1');
-  jQuery('.zone_x, .zone_l').removeClass('hidden').css('transform', 'rotate(-90deg) scale(1.5)');
+  jQuery('.zone_x, .zone_l').removeClass('hidden').css('transform', 'rotate(-90deg) scale(1.3)');
   console.log('Фаза 1/1');
   count_animation = 0;
   phaseOne = setInterval(function(){
