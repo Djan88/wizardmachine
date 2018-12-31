@@ -24,6 +24,8 @@ var chain,
     protocolfromMemory,
     protocolName,
     phaseOne,
+    checkPoints,
+    pointsStatus = true,
     count_animation = 0,
     rotate_one = 0,
     rotate_two = 0,
@@ -17439,54 +17441,68 @@ universal = function(){
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
+checkPoints = function(){
+  jQuery('.zone').each(function() {
+    if(parseFloat(jQuery(this).css('top')) < 50){
+      pointsStatus = false;
+      console.log('status '+pointsStatus);
+    }
+  });
+}
+
 // START
 jQuery('.btn_start').on('click', function(event) {
-  jQuery('.btn-to_endNow').removeClass('hidden');
-  if (jQuery(this).attr('disabled')) {
-
-  } else if (pausedStatus == true) {
-    jQuery('.status').removeClass('hidden');
-    jQuery('.status_pahaze_all').text(localStorage.getItem('pausedPhases'));
-    jQuery('.status_title').text(localStorage.getItem('pausedProtName'));
-    jQuery('.loaded_img').attr('src', localStorage.getItem('pausedPhoto'));
-    console.log(localStorage.getItem('pausedPhoto'));
-    protocolfromMemory = eval(localStorage.getItem('paused'))
-    protocolfromMemory();
-    pausedStatus = false;
-    jQuery('.btn-to_endNow').css('color', '#fff');
+  checkPoints();
+  if(pointsStatus == false){
+    swal("Не все зоны перенесены", "Перед началом процедуры необходимо перенести на фото все зоны", "info");
   } else {
-    protocol = localStorage.getItem('protocol');
     jQuery('.btn-to_endNow').removeClass('hidden');
-    if (protocol == 'v1') {
-      v1();
-      jQuery('.status_title').text('Протокол V1');
-    } else if (protocol == 'v2') {
-      v2();
-      jQuery('.status_title').text('Протокол V2-5');
-    } else if (protocol == 'v3') {
-      v3();
-      jQuery('.status_title').text('Протокол V3-4');
-    } else if (protocol == 'v4') {
-      v4();
-      jQuery('.status_title').text('Протокол V4-3');
-    } else if (protocol == 'v5') {
-      v5();
-      jQuery('.status_title').text('Протокол V5-2');
-    } else if (protocol == 'solis') {
-      solis();
-      jQuery('.status_title').text('Протокол Solis');
-    } else if (protocol == 'drenag') {
-      drenag();
-      jQuery('.status_title').text('Дренажный протокол');
-    } else if (protocol == 'universal') {
-      universal();
-      jQuery('.status_title').text('Универсальный протокол');
-    } else if (protocol == 'visceral') {
-      mmt();
-      jQuery('.status_title').text('Висцеральный протокол');
+    if (jQuery(this).attr('disabled')) {
+
+    } else if (pausedStatus == true) {
+      jQuery('.status').removeClass('hidden');
+      jQuery('.status_pahaze_all').text(localStorage.getItem('pausedPhases'));
+      jQuery('.status_title').text(localStorage.getItem('pausedProtName'));
+      jQuery('.loaded_img').attr('src', localStorage.getItem('pausedPhoto'));
+      console.log(localStorage.getItem('pausedPhoto'));
+      protocolfromMemory = eval(localStorage.getItem('paused'))
+      protocolfromMemory();
+      pausedStatus = false;
+      jQuery('.btn-to_endNow').css('color', '#fff');
+    } else {
+      protocol = localStorage.getItem('protocol');
+      jQuery('.btn-to_endNow').removeClass('hidden');
+      if (protocol == 'v1') {
+        v1();
+        jQuery('.status_title').text('Протокол V1');
+      } else if (protocol == 'v2') {
+        v2();
+        jQuery('.status_title').text('Протокол V2-5');
+      } else if (protocol == 'v3') {
+        v3();
+        jQuery('.status_title').text('Протокол V3-4');
+      } else if (protocol == 'v4') {
+        v4();
+        jQuery('.status_title').text('Протокол V4-3');
+      } else if (protocol == 'v5') {
+        v5();
+        jQuery('.status_title').text('Протокол V5-2');
+      } else if (protocol == 'solis') {
+        solis();
+        jQuery('.status_title').text('Протокол Solis');
+      } else if (protocol == 'drenag') {
+        drenag();
+        jQuery('.status_title').text('Дренажный протокол');
+      } else if (protocol == 'universal') {
+        universal();
+        jQuery('.status_title').text('Универсальный протокол');
+      } else if (protocol == 'visceral') {
+        mmt();
+        jQuery('.status_title').text('Висцеральный протокол');
+      }
+      jQuery('.header-title').text('Программа выполняется');
+      jQuery('.btn_start').attr('disabled', 'disabled');
     }
-    jQuery('.header-title').text('Программа выполняется');
-    jQuery('.btn_start').attr('disabled', 'disabled');
   }
 });
 // STOP
