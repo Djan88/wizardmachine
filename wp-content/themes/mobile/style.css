@@ -419,6 +419,11 @@ input.crop_photo
 {
   display: none!important;
 }
+.toRegistration, .toLogin 
+{
+  color: #007bff;
+  font-weight: bold;
+}
 @media (min-width: 600px) {
   .sweet-alert
   {
