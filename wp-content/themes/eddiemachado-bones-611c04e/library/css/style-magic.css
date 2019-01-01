@@ -1140,6 +1140,10 @@ select#theme-switcha
     font-weight: 500;
     display: block;
 }
+#wpadminbar
+{
+    display: none!important;
+}
 @media (max-width: 1000px) {
     img.outdoor
     {

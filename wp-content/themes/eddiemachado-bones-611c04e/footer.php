@@ -23,7 +23,7 @@
                             )); ?>
                         </nav>
 
-                        <p class="source-org copyright"><span>&copy; <?php echo date('Y'); ?> <a href="/" class="homelink"><?php bloginfo( 'name' ); ?></a>. Версия 5.1</span><span> <?php if(is_user_logged_in()){ ?>| <a href="/kabinet">Личный кабинет</a> | 
+                        <p class="source-org copyright"><span>&copy; <?php echo date('Y'); ?> <a href="/" class="homelink"><?php bloginfo( 'name' ); ?></a>. Версия 5.2</span><span> <?php if(is_user_logged_in()){ ?>| <a href="/kabinet">Личный кабинет</a> | 
                             <a href="<?php echo home_url(); ?>/wp-login.php?action=logout&amp;_wpnonce=a6cad512ba">Выйти</a></span><?php } ?><span class="supportlink">Поддержка пользователей: <a href="mailto:info@chikurov.com">info@chikurov.com</a></span></p>
                     </div>
 
