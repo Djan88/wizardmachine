@@ -14983,7 +14983,7 @@ solis = function(){
 
 
 mmt7 = function(){
-  jQuery('.status_pahaze_now').text('3');
+  jQuery('.status_pahaze_now').text('7');
   jQuery('.status_percent').text('94%');
   console.log('Фаза 1/1');
   count_animation = 0;
