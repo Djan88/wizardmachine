@@ -54,7 +54,7 @@
                 <i class="fab fa-react"></i>
               </button>
               <button type="button" class="btn btn-lg btn-link clear_graph hidden justify-content-end">
-                <i class="far fa-trash-alt"></i>
+                <i class="fas fa-broom"></i>
               </button>
               <button type="button" class="btn btn-lg btn-link btn_protocols hidden justify-content-end">
                 <i class="far fa-check-square"></i>
