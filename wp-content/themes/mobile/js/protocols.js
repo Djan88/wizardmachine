@@ -92,7 +92,7 @@ onEnd = function(){
 
   protocolName = localStorage.getItem('protocolName');
   swal({
-    title: "Протокол "+protocolName+" завершен",
+    title: "Протокол завершен",
     text: "Что делать дальше?",
     type: "success",
     showCancelButton: true,
