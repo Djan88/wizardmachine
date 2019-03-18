@@ -272,8 +272,6 @@ function rcl_get_order_tabs($rcl_tabs){
         $counter[$order] = $id;
     }
 
-    if(count($counter) < 2) return $rcl_tabs;
-
     ksort($counter);
     $id_first = array_shift($counter);
     $rcl_tabs[$id_first]['first'] = 1;
