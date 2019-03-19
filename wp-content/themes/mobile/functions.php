@@ -106,6 +106,9 @@ function uploadImageFile() { // Note: GD library is required for this function
                                 case 3:
                                     $vImg = imagerotate($vImg, 180, 0);
                                     break;
+                                case 0:
+                                    $vImg = imagerotate($vImg, 180, 0);
+                                    break;
                                 case 6:
                                     $vImg = imagerotate($vImg, -90, 0);
                                     $tmp = $aSize[0];
