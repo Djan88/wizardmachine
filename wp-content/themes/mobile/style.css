@@ -91,6 +91,7 @@ div#recallbar, div#wpadminbar
 .content
 {
   padding-bottom: 20px;
+  padding-top: 80px;
 }
 .protocols_info
 {
