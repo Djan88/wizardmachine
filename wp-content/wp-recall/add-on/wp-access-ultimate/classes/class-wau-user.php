@@ -1,240 +1,302 @@
 <?php
 
-class WAU_User extends WAU_Accounts_Walker{
+class WAU_User extends WAU_Accounts_Walker {
 
-    public $user_id;
-    public $access;
-    public $branch_accounts;
+	public $user_id;
+	public $access;
+	public $branch_accounts;
 
-    function __construct($args) {
+	function __construct( $args ) {
 
-        parent::__construct(array(
-            'number' => -1
-        ));
+		parent::__construct( array(
+			'number' => -1
+		) );
 
-        $this->init_properties($args);
+		$this->init_properties( $args );
 
-        if(!$this->access){
+		if ( !$this->access ) {
 
-            $query = new WAU_Access();
+			$query = new WAU_Access();
 
-            $this->access = $query->get_results(array(
-                'user_id' => $this->user_id,
-                'number' => -1
-            ));
+			$this->access = $query->get_results( array(
+				'user_id'	 => $this->user_id,
+				'number'	 => -1
+				) );
+		}
 
-        }
+		if ( $this->access ) {
 
-        if($this->access){
+			$branch_accounts = array();
+			foreach ( $this->access as $access ) {
+				if ( !$this->get_branch( $access->account_id ) )
+					continue;
+				$branch_accounts = array_merge( $branch_accounts, $this->get_branch( $access->account_id ) );
+			}
 
-            $branch_accounts = array();
-            foreach($this->access as $access){
-                if(!$this->get_branch($access->account_id)) continue;
-                $branch_accounts = array_merge($branch_accounts, $this->get_branch($access->account_id));
-            }
+			if ( $branch_accounts ) {
 
-            if($branch_accounts){
+				foreach ( $branch_accounts as $account ) {
+					$this->branch_accounts[] = $account->account_id;
+				}
 
-                foreach($branch_accounts as $account){
-                    $this->branch_accounts[] = $account->account_id;
-                }
+				array_unique( $this->branch_accounts );
+			}
+		}
+	}
 
-                array_unique($this->branch_accounts);
+	function init_properties( $args ) {
 
-            }
+		$properties = get_class_vars( get_class( $this ) );
 
-        }
+		foreach ( $properties as $name => $val ) {
+			if ( isset( $args[$name] ) )
+				$this->$name = $args[$name];
+		}
+	}
 
-    }
+	function get_account_ids() {
 
-    function init_properties($args){
+		if ( !$this->access )
+			return false;
 
-        $properties = get_class_vars(get_class($this));
+		$accoint_ids = array();
+		foreach ( $this->access as $access ) {
+			$accoint_ids[] = $access->account_id;
+		}
 
-        foreach ($properties as $name=>$val){
-            if(isset($args[$name])) $this->$name = $args[$name];
-        }
+		return $accoint_ids;
+	}
 
-    }
+	function is_access( $account_ids ) {
 
-    function get_account_ids(){
+		if ( !$this->access )
+			return false;
 
-        if(!$this->access) return false;
+		if ( is_array( $account_ids ) ) {
 
-        $accoint_ids = array();
-        foreach($this->access as $access){
-            $accoint_ids[] = $access->account_id;
-        }
+			foreach ( $this->access as $access ) {
+				if ( !in_array( $access->account_id, $account_ids ) )
+					continue;
+				return true;
+			}
+		}else {
 
-        return $accoint_ids;
+			foreach ( $this->access as $access ) {
+				if ( $access->account_id != $account_ids )
+					continue;
+				return true;
+			}
+		}
 
-    }
+		return false;
+	}
 
-    function is_access($account_ids){
+	function is_branch_access( $account_id, $important = false ) {
 
-        if(!$this->access) return false;
+		if ( !$this->branch_accounts )
+			return false;
 
-        if(is_array($account_ids)){
+		if ( is_array( $account_id ) ) {
 
-            foreach($this->access as $access){
-                if(!in_array($access->account_id, $account_ids)) continue;
-                return true;
-            }
+			foreach ( $account_id as $accID ) {
 
-        }else{
+				if ( $important ) {
+					if ( in_array( $accID, $this->branch_accounts ) )
+						$access[] = $accID;
+				}else {
+					if ( in_array( $accID, $this->branch_accounts ) )
+						return true;
+				}
+			}
 
-            foreach($this->access as $access){
-                if($access->account_id != $account_ids) continue;
-                return true;
-            }
+			if ( $important ) {
+				return count( $account_id ) == count( $access );
+			}
+		} else {
 
-        }
+			return in_array( $account_id, $this->branch_accounts );
+		}
 
-        return false;
+		return false;
+	}
 
-    }
+	function get_access_by_account( $account_id ) {
 
-    function is_branch_access($account_id, $important = false){
+		if ( !$this->access )
+			return false;
 
-        if(!$this->branch_accounts) return false;
+		foreach ( $this->access as $access ) {
+			if ( $access->account_id != $account_id )
+				continue;
+			return $access;
+		}
 
-        if(is_array($account_id)){
+		return false;
+	}
 
-            foreach($account_id as $accID){
+	function get_time_value( $valueName, $account_id ) {
 
-                if($important){
-                    if(in_array($accID, $this->branch_accounts)) $access[] = $accID;
-                }else{
-                    if(in_array($accID, $this->branch_accounts)) return true;
-                }
+		$access = $this->get_access_by_account( $account_id );
 
-            }
+		if ( !$access )
+			return 0;
 
-            if($important){
-                return count($account_id) == count($access);
-            }
+		$timeValues = wau_parse_time( $access->access_time );
 
-        }else{
+		return $timeValues[$valueName];
+	}
 
-            return in_array($account_id, $this->branch_accounts);
+	function get_current_time_value( $valueName, $account_id ) {
 
-        }
+		$access = $this->get_access_by_account( $account_id );
 
-        return false;
+		if ( !$access )
+			return 0;
 
-    }
+		$time = $access->access_time - (strtotime( current_time( 'mysql' ) ) - strtotime( $access->access_date ));
 
-    function get_access_by_account($account_id){
+		$timeValues = wau_parse_time( $time );
 
-        if(!$this->access) return false;
+		return $timeValues[$valueName];
+	}
 
-        foreach($this->access as $access){
-            if($access->account_id != $account_id) continue;
-            return $access;
-        }
+	function get_hidden_posts() {
 
-        return false;
+		$hidden_posts = array();
 
-    }
+		if ( $post_ids = $this->get_hidden_single_posts() ) {
+			$hidden_posts = $post_ids;
+		}
 
-    function get_time_value($valueName, $account_id){
+		if ( $post_ids = $this->get_hidden_posts_by_terms() ) {
+			$hidden_posts = array_merge( $hidden_posts, $post_ids );
+		}
 
-        $access = $this->get_access_by_account($account_id);
+		if ( !$hidden_posts )
+			return array();
 
-        if(!$access) return 0;
+		$hidden_posts = array_unique( $hidden_posts );
 
-        $timeValues = wau_parse_time($access->access_time);
+		return $hidden_posts;
+	}
 
-        return $timeValues[$valueName];
+	function get_hidden_single_posts() {
+		global $wpdb;
 
-    }
+		if ( wau_get_option( 'author-show' ) && $this->user_id ) {
+			$dataClosedPosts = $wpdb->get_results( "SELECT "
+				. "pm.post_id, pm.meta_value "
+				. "FROM $wpdb->postmeta AS pm "
+				. "INNER JOIN $wpdb->posts AS p ON pm.post_id=p.ID "
+				. "WHERE pm.meta_key='wau-access' "
+				. "AND p.post_author != '$this->user_id'" );
+		} else {
+			$dataClosedPosts = $wpdb->get_results( "SELECT "
+				. "post_id, meta_value "
+				. "FROM $wpdb->postmeta "
+				. "WHERE meta_key='wau-access'" );
+		}
 
-    function get_current_time_value($valueName, $account_id){
+		if ( !$dataClosedPosts )
+			return false;
 
-        $access = $this->get_access_by_account($account_id);
+		$hidden_posts = array();
 
-        if(!$access) return 0;
+		foreach ( $dataClosedPosts as $data ) {
 
-        $time = $access->access_time - (strtotime(current_time('mysql')) - strtotime($access->access_date));
+			$access_ids = array();
 
-        $timeValues = wau_parse_time($time);
+			$value = maybe_unserialize( $data->meta_value );
 
-        return $timeValues[$valueName];
+			$hidden = isset( $value->options['hidden'] ) ? $value->options['hidden'] : 0;
 
-    }
+			if ( !$hidden )
+				continue;
 
-    function get_hidden_posts(){
-        global $wpdb;
+			foreach ( $value->access as $accessData ) {
+				$access_ids[] = $accessData->account_id;
+			}
 
-        $dataClosedPosts = $wpdb->get_results("SELECT "
-        . "post_id, meta_value "
-        . "FROM $wpdb->postmeta "
-        . "WHERE meta_key='wau-access'");
+			if ( !$this->is_branch_access( $access_ids, $value->options['important'] ) ) {
+				$hidden_posts[] = $data->post_id;
+			}
+		}
 
-        if(!$dataClosedPosts) return false;
+		return $hidden_posts;
+	}
 
-        $hidden_posts = array();
+	function get_hidden_terms() {
+		global $wpdb;
 
-        foreach($dataClosedPosts as $data){
+		$dataClosedTerms = $wpdb->get_results( "SELECT "
+			. "tm.term_id, tm.meta_value, tt.taxonomy "
+			. "FROM $wpdb->termmeta AS tm "
+			. "INNER JOIN $wpdb->term_taxonomy AS tt ON tm.term_id=tt.term_id "
+			. "WHERE tm.meta_key='wau-access'" );
 
-            $access_ids = array();
+		if ( !$dataClosedTerms )
+			return false;
 
-            $value = maybe_unserialize($data->meta_value);
+		$hidden_terms = array();
 
-            $hidden = isset($value->options['hidden'])? $value->options['hidden']: 0;
+		foreach ( $dataClosedTerms as $data ) {
 
-            if(!$hidden) continue;
+			$access_ids = array();
 
-            foreach($value->access as $accessData){
-                $access_ids[] = $accessData->account_id;
-            }
+			$value = maybe_unserialize( $data->meta_value );
 
-            if (!$this->is_branch_access($access_ids, $value->options['important'])) {
-                $hidden_posts[] = $data->post_id;
-            }
+			$hidden = isset( $value->options['hidden'] ) ? $value->options['hidden'] : 0;
 
-        }
+			if ( !$hidden )
+				continue;
 
-        return $hidden_posts;
+			foreach ( $value->access as $accessData ) {
+				$access_ids[] = $accessData->account_id;
+			}
 
-    }
+			if ( !$this->is_branch_access( $access_ids, $value->options['important'] ) ) {
+				$hidden_terms[$data->taxonomy][] = $data->term_id;
+			}
+		}
 
-    function get_hidden_terms(){
-        global $wpdb;
+		return $hidden_terms;
+	}
 
-        $dataClosedTerms = $wpdb->get_results("SELECT "
-        . "tm.term_id, tm.meta_value, tt.taxonomy "
-        . "FROM $wpdb->termmeta AS tm "
-        . "INNER JOIN $wpdb->term_taxonomy AS tt ON tm.term_id=tt.term_id "
-        . "WHERE tm.meta_key='wau-access'");
+	function get_hidden_posts_by_terms() {
+		global $wpdb;
 
-        if(!$dataClosedTerms) return false;
+		$hiddenTrems = $this->get_hidden_terms();
 
-        $hidden_terms = array();
+		if ( !$hiddenTrems )
+			return false;
 
-        foreach($dataClosedTerms as $data){
+		$term_ids = array();
+		foreach ( $hiddenTrems as $tax => $ids ) {
+			$term_ids = array_merge( $term_ids, $ids );
+		}
 
-            $access_ids = array();
+		$term_ids = array_unique( $term_ids );
 
-            $value = maybe_unserialize($data->meta_value);
+		if ( !$term_ids )
+			return false;
 
-            $hidden = isset($value->options['hidden'])? $value->options['hidden']: 0;
+		if ( wau_get_option( 'author-show' ) && $this->user_id ) {
+			$dataClosedPosts = $wpdb->get_col( "SELECT "
+				. "tr.object_id "
+				. "FROM $wpdb->term_relationships AS tr "
+				. "INNER JOIN $wpdb->term_taxonomy AS tt ON tr.term_taxonomy_id=tt.term_taxonomy_id "
+				. "INNER JOIN $wpdb->posts AS p ON tr.object_id=p.ID "
+				. "WHERE tt.term_id IN (" . implode( ',', $term_ids ) . ") "
+				. "AND p.post_author != '$this->user_id'" );
+		} else {
+			$dataClosedPosts = $wpdb->get_col( "SELECT "
+				. "tr.object_id "
+				. "FROM $wpdb->term_relationships AS tr "
+				. "INNER JOIN $wpdb->term_taxonomy AS tt ON tr.term_taxonomy_id=tt.term_taxonomy_id "
+				. "WHERE tt.term_id IN (" . implode( ',', $term_ids ) . ")" );
+		}
 
-            if(!$hidden) continue;
-
-            foreach($value->access as $accessData){
-                $access_ids[] = $accessData->account_id;
-            }
-
-            if (!$this->is_branch_access($access_ids, $value->options['important'])) {
-                $hidden_terms[$data->taxonomy][] = $data->term_id;
-            }
-
-        }
-
-        return $hidden_terms;
-
-    }
+		return $dataClosedPosts;
+	}
 
 }
-

@@ -56,15 +56,29 @@ function theme_switcha_validate_options($input) {
 
 function theme_switcha_settings_section_options() {
 	
+	echo '<div class="plugin-wrap">';
+	
+	echo '<div class="plugin-intro">';
+	
 	echo '<p>'. esc_html__('Thanks for using Theme Switcha :)', 'theme-switcha') .'</p>';
 	
 	echo '<p>'. esc_html__('Need help?', 'theme-switcha');
 	
-	echo ' <a target="_blank" rel="noopener noreferrer" href="https://wordpress.org/plugins/theme-switcha/installation/">'. esc_html__('Visit the plugins docs', 'theme-switcha') .' &raquo;</a></p>';
+	echo ' <a target="_blank" rel="noopener noreferrer" href="https://wordpress.org/plugins/theme-switcha/installation/">'. esc_html__('Visit the plugins docs', 'theme-switcha') .' &raquo;</a>';
 	
-	echo '<p class="book-blurb"><a target="_blank" rel="noopener noreferrer" href="https://wp-tao.com/wordpress-themes-book/" title="'. esc_html__('WordPress Themes In Depth', 'theme-switcha') .'">';
+	echo '</p>';
 	
-	echo '<img src="'. plugins_url('img/wp-themes-480x120.jpg', dirname(__FILE__)) .'" width="240" height="60" alt="'. esc_html__('WordPress Themes In Depth', 'theme-switcha') .'"></a></p>';
+	echo '</div>';
+	
+	echo '<div class="book-blurb">';
+	
+	echo '<a target="_blank" rel="noopener noreferrer" href="https://wp-tao.com/wordpress-themes-book/" title="'. esc_html__('WordPress Themes In Depth', 'theme-switcha') .'">';
+	
+	echo '<img src="'. plugins_url('img/wp-themes-480x120.jpg', dirname(__FILE__)) .'" width="240" height="60" alt="'. esc_html__('WordPress Themes In Depth', 'theme-switcha') .'"></a>';
+	
+	echo '</div>';
+	
+	echo '</div>';
 	
 }
 

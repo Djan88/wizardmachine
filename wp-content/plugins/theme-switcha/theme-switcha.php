@@ -3,15 +3,15 @@
 	Plugin Name: Theme Switcha
 	Plugin URI: https://perishablepress.com/theme-switcha/
 	Description: Theme switching done right.
-	Tags: theme, switch, switcher, preview, demo,  development, admin, themes, plugin, testing, template, maintenance, theme development
+	Tags: theme, switch, switcher, theme switcher, preview, demo, development, admin, themes, plugin, testing, template, maintenance
 	Author: Jeff Starr
 	Contributors: specialk
 	Author URI: https://plugin-planet.com/
 	Donate link: https://monzillamedia.com/donate.html
 	Requires at least: 4.1
-	Tested up to: 5.0
-	Stable tag: 1.8
-	Version: 1.8
+	Tested up to: 5.1
+	Stable tag: 2.0
+	Version: 2.0
 	Requires PHP: 5.2
 	Text Domain: theme-switcha
 	Domain Path: /languages
@@ -32,7 +32,7 @@
 	You should have received a copy of the GNU General Public License
 	with this program. If not, visit: https://www.gnu.org/licenses/
 	
-	Copyright 2018 Monzilla Media. All rights reserved.
+	Copyright 2019 Monzilla Media. All rights reserved.
 */
 
 if (!defined('ABSPATH')) die();
@@ -91,7 +91,7 @@ if (!class_exists('Theme_Switcha')) {
 		private function constants() {
 			
 			if (!defined('THEME_SWITCHA_REQUIRE')) define('THEME_SWITCHA_REQUIRE', '4.1');
-			if (!defined('THEME_SWITCHA_VERSION')) define('THEME_SWITCHA_VERSION', '1.8');
+			if (!defined('THEME_SWITCHA_VERSION')) define('THEME_SWITCHA_VERSION', '2.0');
 			if (!defined('THEME_SWITCHA_NAME'))    define('THEME_SWITCHA_NAME',    'Theme Switcha');
 			if (!defined('THEME_SWITCHA_AUTHOR'))  define('THEME_SWITCHA_AUTHOR',  'Jeff Starr');
 			if (!defined('THEME_SWITCHA_HOME'))    define('THEME_SWITCHA_HOME',    'https://perishablepress.com/theme-switcha/');
@@ -114,7 +114,7 @@ if (!class_exists('Theme_Switcha')) {
 		
 		public function action_links($links, $file) {
 			
-			if ($file == THEME_SWITCHA_FILE) {
+			if ($file == THEME_SWITCHA_FILE && current_user_can('manage_options')) {
 				
 				$add_links = '<a href="'. admin_url('options-general.php?page=theme_switcha_settings') .'">'. esc_html__('Settings', 'theme-switcha') .'</a>';
 				array_unshift($links, $add_links);

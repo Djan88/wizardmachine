@@ -65,6 +65,7 @@ class WPSEO_Option_Titles extends WPSEO_Option {
 		'company_logo'                  => '',
 		'company_name'                  => '',
 		'company_or_person'             => '',
+		'company_or_person_user_id'     => false,
 
 		'stripcategorybase'             => false,
 
@@ -459,8 +460,8 @@ class WPSEO_Option_Titles extends WPSEO_Option {
 					}
 					break;
 
-				/* Integer field - not in form. */
-				case 'title_test':
+				case 'company_or_person_user_id':
+				case 'title_test': /* Integer field - not in form. */
 					if ( isset( $dirty[ $key ] ) ) {
 						$int = WPSEO_Utils::validate_int( $dirty[ $key ] );
 						if ( $int !== false && $int >= 0 ) {
@@ -574,10 +575,8 @@ class WPSEO_Option_Titles extends WPSEO_Option {
 		static $original = null;
 
 		// Double-run this function to ensure renaming of the taxonomy options will work.
-		if ( ! isset( $original ) && has_action( 'wpseo_double_clean_titles', array(
-				$this,
-				'clean',
-			) ) === false
+		if ( ! isset( $original )
+			&& has_action( 'wpseo_double_clean_titles', array( $this, 'clean' ) ) === false
 		) {
 			add_action( 'wpseo_double_clean_titles', array( $this, 'clean' ) );
 			$original = $option_value;
@@ -655,7 +654,7 @@ class WPSEO_Option_Titles extends WPSEO_Option {
 		unset( $rename, $old, $new );
 
 
-		/**
+		/*
 		 * {@internal This clean-up action can only be done effectively once the taxonomies
 		 *            and post_types have been registered, i.e. at the end of the init action.}}
 		 */

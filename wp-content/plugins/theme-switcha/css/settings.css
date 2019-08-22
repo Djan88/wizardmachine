@@ -4,10 +4,19 @@
 
 .wp-admin h2 { margin-top: 30px; }
 
-.wp-admin .book-blurb { margin-top: 20px; }
-.wp-admin .book-blurb a { width: 240px; height: 60px; display: inline-block; opacity: 0.9; }
+.wp-admin .plugin-wrap { width: 100%; overflow: hidden; }
+.wp-admin .plugin-intro { float: left; width: 48%; }
+.wp-admin .plugin-intro p:first-child { margin-top: 0; }
+.wp-admin .plugin-intro p:last-child { margin-bottom: 0; }
+.wp-admin .book-blurb { float: right; width: 48%; }
+.wp-admin .book-blurb a { width: 240px; height: 60px; display: block; opacity: 0.9; }
 .wp-admin .book-blurb a:hover { opacity: 1.0; }
 .wp-admin .book-blurb img { width: 240px; height: 60px; display: block; }
+
+@media (max-width: 580px) {
+	.wp-admin .plugin-intro, .wp-admin .book-blurb { float: none; width: 100%; }
+	.wp-admin .book-blurb { margin: 20px 0 10px 0; }
+}
 
 .wp-admin .custom-label { display: block; color: #777; font-style: italic; font-size: 14px; line-height: 1.5; }
 

@@ -3,15 +3,15 @@
 Plugin Name: Theme Switcha
 Plugin URI: https://perishablepress.com/theme-switcha/
 Description: Theme switching done right.
-Tags: theme, switch, switcher, preview, demo,  development, admin, themes, plugin, testing, template, maintenance, theme development
+Tags: theme, switch, switcher, theme switcher, preview, demo, development, admin, themes, plugin, testing, template, maintenance
 Author: Jeff Starr
 Contributors: specialk
 Author URI: https://plugin-planet.com/
 Donate link: https://monzillamedia.com/donate.html
 Requires at least: 4.1
-Tested up to: 5.0
-Stable tag: 1.8
-Version: 1.8
+Tested up to: 5.1
+Stable tag: 2.0
+Version: 2.0
 Requires PHP: 5.2
 Text Domain: theme-switcha
 Domain Path: /languages
@@ -27,6 +27,9 @@ Theme switching done right.
 
 There are many theme-switch plugins but none of them provide the simplicity, performance, and reliability that I require for my own sites. So I wrote my own plugin using the WP API and kept the plugin as focused and solid as possible. Only essential theme-switching features have been added, along with a simple yet informative UI. This gives you a consistent, quality theme-switching experience that you can optionally share with your visitors.
 
+**Important**
+
+This plugin is not needed if you are using the WP Theme Customizer to make changes. In fact, your changes may not be remembered if you try to use Theme Switcha plugin together with the Customizer. Bottom line: use the Customizer to make changes as supported by your theme. Or use the Theme Switcha plugin to make changes to your theme template files. Do NOT use both together at the same time.
 
 **Plugin Features**
 
@@ -78,9 +81,9 @@ The beauty of Theme Switcha is that it's all 100% transparent: visitors will nev
 Plus you get free, responsive support from one the world's top WordPress developers ;)
 
 
-**GDPR**
+**Privacy**
 
-This plugin does not collect any user data. So it does _not_ do anything to make your site _less_ compliant with GDPR. I have done my best to ensure that this plugin is 100% GDPR compliant, but I'm not a lawyer so can't guarantee anything. To determine if your site is GDPR compliant, please consult an attorney.
+This plugin does not collect or store any user data. It does not set any cookies, and it does not connect to any third-party locations. Thus, this plugin does not affect user privacy in any way.
 
 > Works perfectly with or without Gutenberg Block Editor
 
@@ -408,6 +411,7 @@ And/or purchase one of my premium WordPress plugins:
 * [BBQ Pro](https://plugin-planet.com/bbq-pro/) - Super fast WordPress firewall
 * [Blackhole Pro](https://plugin-planet.com/blackhole-pro/) - Automatically block bad bots
 * [Banhammer Pro](https://plugin-planet.com/banhammer-pro/) - Monitor traffic and ban the bad guys
+* [GA Google Analytics Pro](https://plugin-planet.com/ga-google-analytics-pro/) - Connect your WordPress to Google Analytics
 * [USP Pro](https://plugin-planet.com/usp-pro/) - Unlimited front-end forms
 
 Links, tweets and likes also appreciated. Thanks! :)
@@ -415,6 +419,21 @@ Links, tweets and likes also appreciated. Thanks! :)
 
 
 == Changelog ==
+
+If you like Theme Switcha, please take a moment to [give a 5-star rating](https://wordpress.org/support/plugin/theme-switcha/reviews/?rate=5#new-post). It helps to keep development and support going strong. Thank you!
+
+
+**2.0 (2019/03/10)**
+
+* Adds check for admin user for settings shortcut link
+* Tweaks plugin settings screen UI
+* Generates new default translation template
+* Tests on WordPress 5.1 and 5.2 (alpha)
+
+**1.9 (2019/02/20)**
+
+* Just a version bump for compat with WP 5.1
+* Full update coming soon :)
 
 **1.8 (2018/11/16)**
 
