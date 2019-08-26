@@ -101,7 +101,7 @@
        rotateVal = 0;
        count_animation = 1;
        tickSound.play();
-       jQuery('.prot_stage').removeClass('hidden')
+       jQuery('.prot_stage').removeClass('hidden');
        jQuery('.prot_stage').text('ФАЗА 1 из 9');
        phaseOne = setInterval(function(){
            if (count_animation <= 344){                                                                         //90

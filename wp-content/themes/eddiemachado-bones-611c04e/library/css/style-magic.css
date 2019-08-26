@@ -893,9 +893,9 @@ form.pay-form
 
 .box_rounded, #draggableD12
 {
-    -webkit-transition: transform 1s linear;
-    -moz-transition: transform 1s linear;
-    transition: transform 1s linear;
+    -webkit-transition: transform 0.250s linear;
+    -moz-transition: transform 0.250s linear;
+    transition: transform 0.250s linear;
     z-index: 4;
 }
 .btn_licens {
