@@ -325,9 +325,9 @@ jQuery( ".btn__wizard" ).on('click', function(event) {
     curV = localStorage.getItem('curV');
         checkPoints();
         checkPointsMobile();
-        if(pointsStatus == false){
-            swal("Не все зоны перенесены", "Перед началом процедуры необходимо перенести на фото все зоны", "info");
-        } else {
+        // if(pointsStatus == false){
+        //     swal("Не все зоны перенесены", "Перед началом процедуры необходимо перенести на фото все зоны", "info");
+        // } else {
             if (jQuery( ".btn__wizard" ).hasClass('btn__wizard_inAction')) {
 
             } else {
@@ -365,7 +365,7 @@ jQuery( ".btn__wizard" ).on('click', function(event) {
                     console.log('нет протокола с id '+ protocol)
                 }
             }
-        }
+        // }
     main_heading();
 });
 //Быстрая смена протокола
