@@ -413,6 +413,15 @@ input.crop_photo
 {
   display: none!important;
 }
+input.wpcf7-form-control.wpcf7-submit 
+{
+  background: #1bb1dc;
+  border: 0;
+  border-radius: 3px;
+  padding: 8px 30px;
+  color: #fff;
+  transition: 0.3s;
+}
 .subscriber_info 
 {
   padding-top: 75px;
