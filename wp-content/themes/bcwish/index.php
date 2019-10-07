@@ -135,7 +135,6 @@
   ============================-->
   <?php if(is_page(183)) { ?>
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-    <div class="col col-12 col-sm-12 col-md-8 col-lg-6 col-xl-6 protocols">
       <main id="main">
         <div class="container container_main">
           <div class="row">
@@ -145,7 +144,6 @@
           </div>
         </div>
       </main>
-    </div>
 
     <?php endwhile; ?>
 
