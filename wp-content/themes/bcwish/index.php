@@ -100,7 +100,7 @@
               // print_r('<div style="color: #fff;">'.$date_diff.'</div>');
               // print_r('<div style="color: #fff;"> status '.$new_registred.'</div>');
             ?>
-            <li><a href="/cabinet">Личный кабинет</a></li>
+            <li><a href="/kabinet">Личный кабинет</a></li>
             <?php if(current_user_can('administrator')){ ?>
               <li><a href="/wp-admin">Панель управления</a></li>
             <?php } ?>
