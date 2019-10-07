@@ -46,6 +46,12 @@ jQuery(function() {
           loop: false,
           buffer: true
       }),
+      alert_altSound = new Howl({
+          urls: ['/sounds/alert_alt.mp3'],
+          autoplay: false,
+          loop: false,
+          buffer: true
+      }),
       supportsStorage = function(){
           try {
               return 'localStorage' in window && window['localStorage'] !== null;
@@ -17260,7 +17266,7 @@ jQuery(function() {
     checkPoints();
     if(pointsStatus == false){
       swal("Не все зоны перенесены!", "Перед началом процедуры необходимо перенести на фото все зоны.", "info");
-      alertSound.play();
+      alert_altSound.play();
       pointsStatus = true;
     } else {
       if (pausedStatus == true) {
