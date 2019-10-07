@@ -2168,6 +2168,16 @@ main#main
   margin-top: 5px;
   margin-bottom: 5px;
 }
+
+.wpcf7-form-control.wpcf7-submit
+{
+  background: #1bb1dc;
+  border: 0;
+  border-radius: 3px;
+  padding: 8px 30px;
+  color: #fff;
+  transition: 0.3s;
+}
 /*--------------------------------------------------------------
 # Responsive Media Queries
 --------------------------------------------------------------*/
