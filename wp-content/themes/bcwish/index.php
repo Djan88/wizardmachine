@@ -38,16 +38,113 @@
   <!--==========================
   Header
   ============================-->
+  <header id="header">
+    <button type="button" class="wizard_crop hidden header_btn"><i class="fa fa-crop"></i></button>
+    <a href="/" class="wizard_to_start hidden header_btn"><i class="fa fa-arrow-left"></i></a>
+    <button type="button" class="wizard_to_what_way hidden header_btn">
+      <i class="fa fa-arrow-left"></i>
+    </button>
+    <button type="button" class="wizard_to_protList hidden header_btn">
+      <i class="fa fa-arrow-left"></i>
+    </button>
+    <button type="button" class="wizard_to_protDiag hidden header_btn">
+      <i class="fa fa-arrow-left"></i>
+    </button>
+    <button type="button" class="wizard_clean_graf hidden header_btn">
+      <i class="fa fa-trash"></i>
+    </button>
+    <button type="button" class="wizard_play header_btn hidden">
+      <i class="fa fa-play-circle wizard_start_icon"></i>
+    </button>
+    <button type="button" class="wizard_stop hidden header_btn" data-toggle="popover" data-placement="bottom" title="Протокол остановлен!" data-content="Выполнение протокола будет приостановлено по окончании текущей фазы. Все данные будут сохранены">
+      <span class="wizard_percent">0%</span>
+      <i class="fa fa-stop-circle wizard_stop_icon"></i>
+    </button>
+
+    <div id="topbar">
+      <div class="container">
+        <div class="social-links">
+          <a target="_blank" href="https://www.instagram.com/dr.chikurov/" class="instagram"><i class="fa fa-instagram"></i></a>
+          <a target="_blank" href="https://www.youtube.com/user/ThePractik01/" class="youtube"><i class="fa fa-youtube"></i></a>
+          <a target="_blank" href="https://www.facebook.com/profile.php?id=100012253260685&pnref" class="facebook"><i class="fa fa-facebook"></i></a>
+          <a target="_blank" href="https://vk.com/id139677998" class="vk"><i class="fa fa-vk"></i></a>
+          <a target="_blank" href="https://chikurov.com" class="site"><i class="fa fa-globe"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container container_main container container_main_main">
+
+      <div class="logo float-left">
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <h1 class="text-light"><a href="/" class="scrollto"><span><span class="acent">W</span>IZARD<span class="acent">M</span>ACHINE</span></a></h1>
+        <!-- <a href="#header" class="scrollto"><img src="img/logo.png" alt="" class="img-fluid"></a> -->
+      </div>
+
+      <nav class="main-nav float-right d-none d-lg-block">
+        <ul>
+          <?php if(is_user_logged_in()){ ?>
+            <?php 
+              $cur_user_id = get_current_user_id();
+              $user = get_userdata($cur_user_id);
+              $user_date  =  strtotime($user->user_registered);
+              $cur_date  =  strtotime("now");
+              $date_diff = $cur_date - $user_date;
+              if ($date_diff < 259000) {
+                $new_registred = 1;
+              } else {
+                $new_registred = 0;
+              }
+              // print_r('<div style="color: #fff;">'.$user_date.'</div>');
+              // print_r('<div style="color: #fff;">'.$cur_date.'</div>');
+              // print_r('<div style="color: #fff;">'.$date_diff.'</div>');
+              // print_r('<div style="color: #fff;"> status '.$new_registred.'</div>');
+            ?>
+            <li><a href="/kabinet">Личный кабинет</a></li>
+            <?php if(current_user_can('administrator')){ ?>
+              <li><a href="/wp-admin">Панель управления</a></li>
+            <?php } ?>
+          <?php } else { ?>
+            <li class="active"><a href="#intro">Вход</a></li>
+            <li><a href="#services">Инструкция</a></li>
+          <?php } ?>
+          <li>
+            <?php echo do_shortcode( '[theme_switcha_select text="Выберите версию"]' ); ?>
+          </li>
+          <li><a href="#footer">Обратная связь</a></li>
+          <?php if(is_user_logged_in()){ ?>
+            <li><a href="/wp-login.php?action=logout&_wpnonce=0d90a53269">Выход</a></li>
+          <?php } ?>
+          <li>
+            <div class="social-links">
+              <a target="_blank" href="https://www.instagram.com/dr.chikurov/" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a target="_blank" href="https://www.youtube.com/user/ThePractik01/" class="youtube"><i class="fa fa-youtube"></i></a>
+              <a target="_blank" href="https://www.facebook.com/profile.php?id=100012253260685&pnref" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a target="_blank" href="https://vk.com/id139677998" class="vk"><i class="fa fa-vk"></i></a>
+              <a target="_blank" href="https://chikurov.com" class="site"><i class="fa fa-globe"></i></a>
+            </div>
+          </li>
+        </ul>
+      </nav><!-- .main-nav -->
+      
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Intro Section
+  ============================-->
   <?php if(is_page(183)) { ?>
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
     <div class="col col-12 col-sm-12 col-md-8 col-lg-6 col-xl-6 protocols">
-      <article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article">
-
-        <section class="entry-content cf">
-          <?php the_content(); ?>
-        </section>
-
-      </article>
+      <main id="main">
+        <div class="container container_main">
+          <div class="row">
+            <div class="col-md-12">
+              <?php the_content(); ?>
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
 
     <?php endwhile; ?>
@@ -68,101 +165,6 @@
 
     <?php endif; ?>
   <?php } else { ?>
-    <header id="header">
-      <button type="button" class="wizard_crop hidden header_btn"><i class="fa fa-crop"></i></button>
-      <a href="/" class="wizard_to_start hidden header_btn"><i class="fa fa-arrow-left"></i></a>
-      <button type="button" class="wizard_to_what_way hidden header_btn">
-        <i class="fa fa-arrow-left"></i>
-      </button>
-      <button type="button" class="wizard_to_protList hidden header_btn">
-        <i class="fa fa-arrow-left"></i>
-      </button>
-      <button type="button" class="wizard_to_protDiag hidden header_btn">
-        <i class="fa fa-arrow-left"></i>
-      </button>
-      <button type="button" class="wizard_clean_graf hidden header_btn">
-        <i class="fa fa-trash"></i>
-      </button>
-      <button type="button" class="wizard_play header_btn hidden">
-        <i class="fa fa-play-circle wizard_start_icon"></i>
-      </button>
-      <button type="button" class="wizard_stop hidden header_btn" data-toggle="popover" data-placement="bottom" title="Протокол остановлен!" data-content="Выполнение протокола будет приостановлено по окончании текущей фазы. Все данные будут сохранены">
-        <span class="wizard_percent">0%</span>
-        <i class="fa fa-stop-circle wizard_stop_icon"></i>
-      </button>
-
-      <div id="topbar">
-        <div class="container">
-          <div class="social-links">
-            <a target="_blank" href="https://www.instagram.com/dr.chikurov/" class="instagram"><i class="fa fa-instagram"></i></a>
-            <a target="_blank" href="https://www.youtube.com/user/ThePractik01/" class="youtube"><i class="fa fa-youtube"></i></a>
-            <a target="_blank" href="https://www.facebook.com/profile.php?id=100012253260685&pnref" class="facebook"><i class="fa fa-facebook"></i></a>
-            <a target="_blank" href="https://vk.com/id139677998" class="vk"><i class="fa fa-vk"></i></a>
-            <a target="_blank" href="https://chikurov.com" class="site"><i class="fa fa-globe"></i></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="container container_main container container_main_main">
-
-        <div class="logo float-left">
-          <!-- Uncomment below if you prefer to use an image logo -->
-          <h1 class="text-light"><a href="/" class="scrollto"><span><span class="acent">W</span>IZARD<span class="acent">M</span>ACHINE</span></a></h1>
-          <!-- <a href="#header" class="scrollto"><img src="img/logo.png" alt="" class="img-fluid"></a> -->
-        </div>
-
-        <nav class="main-nav float-right d-none d-lg-block">
-          <ul>
-            <?php if(is_user_logged_in()){ ?>
-              <?php 
-                $cur_user_id = get_current_user_id();
-                $user = get_userdata($cur_user_id);
-                $user_date  =  strtotime($user->user_registered);
-                $cur_date  =  strtotime("now");
-                $date_diff = $cur_date - $user_date;
-                if ($date_diff < 259000) {
-                  $new_registred = 1;
-                } else {
-                  $new_registred = 0;
-                }
-                // print_r('<div style="color: #fff;">'.$user_date.'</div>');
-                // print_r('<div style="color: #fff;">'.$cur_date.'</div>');
-                // print_r('<div style="color: #fff;">'.$date_diff.'</div>');
-                // print_r('<div style="color: #fff;"> status '.$new_registred.'</div>');
-              ?>
-              <li><a href="/kabinet">Личный кабинет</a></li>
-              <?php if(current_user_can('administrator')){ ?>
-                <li><a href="/wp-admin">Панель управления</a></li>
-              <?php } ?>
-            <?php } else { ?>
-              <li class="active"><a href="#intro">Вход</a></li>
-              <li><a href="#services">Инструкция</a></li>
-            <?php } ?>
-            <li>
-              <?php echo do_shortcode( '[theme_switcha_select text="Выберите версию"]' ); ?>
-            </li>
-            <li><a href="#footer">Обратная связь</a></li>
-            <?php if(is_user_logged_in()){ ?>
-              <li><a href="/wp-login.php?action=logout&_wpnonce=0d90a53269">Выход</a></li>
-            <?php } ?>
-            <li>
-              <div class="social-links">
-                <a target="_blank" href="https://www.instagram.com/dr.chikurov/" class="instagram"><i class="fa fa-instagram"></i></a>
-                <a target="_blank" href="https://www.youtube.com/user/ThePractik01/" class="youtube"><i class="fa fa-youtube"></i></a>
-                <a target="_blank" href="https://www.facebook.com/profile.php?id=100012253260685&pnref" class="facebook"><i class="fa fa-facebook"></i></a>
-                <a target="_blank" href="https://vk.com/id139677998" class="vk"><i class="fa fa-vk"></i></a>
-                <a target="_blank" href="https://chikurov.com" class="site"><i class="fa fa-globe"></i></a>
-              </div>
-            </li>
-          </ul>
-        </nav><!-- .main-nav -->
-        
-      </div>
-    </header><!-- #header -->
-
-    <!--==========================
-      Intro Section
-    ============================-->
     <section id="intro" class="clearfix">
       <div class="container container_main h-100">
         <div class="row justify-content-center align-self-center">
@@ -1325,47 +1327,48 @@
 
       <?php } ?>
     </main>
+  <?php }?>
 
-    <!--==========================
-      Footer
-    ============================-->
-    <footer id="footer" class="section-bg">
-      <div class="footer-top">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-5">
-              <div class="row">
-                <div class="col-sm-12">
-                  <div class="footer-info">
-                    <h3><span class="acent">W</span>izard<span class="acent">M</span>achine</h3>
-                    <p><b>"WizardMachine"</b> — это программа для коррекции актуальных личностных проблем методами "Биологического Центрирования". Разработана в Москве, в <b>"Школе Доктора Чикурова"</b> 2015 г.</p>
-                  </div>
-                  <div class="footer-newsletter">
-                    <h4>Новости школы</h4>
-                    <p>Подпишитесь на новости <b>"Школы Доктора Чикурова"</b> и <b>"WizardMachine"</b> в любой из социальных сетей. Будет интересно, гарантируем!</p>
-                    <div class="social-links">
-                      <a target="_blank" href="https://www.instagram.com/dr.chikurov/" class="instagram"><i class="fa fa-instagram"></i></a>
-                      <a target="_blank" href="https://www.youtube.com/user/ThePractik01/" class="youtube"><i class="fa fa-youtube"></i></a>
-                      <a target="_blank" href="https://www.facebook.com/profile.php?id=100012253260685&pnref" class="facebook"><i class="fa fa-facebook"></i></a>
-                      <a target="_blank" href="https://vk.com/id139677998" class="vk"><i class="fa fa-vk"></i></a>
-                      <a target="_blank" href="https://chikurov.com" class="site"><i class="fa fa-globe"></i></a>
-                    </div>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer" class="section-bg">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="footer-info">
+                  <h3><span class="acent">W</span>izard<span class="acent">M</span>achine</h3>
+                  <p><b>"WizardMachine"</b> — это программа для коррекции актуальных личностных проблем методами "Биологического Центрирования". Разработана в Москве, в <b>"Школе Доктора Чикурова"</b> 2015 г.</p>
+                </div>
+                <div class="footer-newsletter">
+                  <h4>Новости школы</h4>
+                  <p>Подпишитесь на новости <b>"Школы Доктора Чикурова"</b> и <b>"WizardMachine"</b> в любой из социальных сетей. Будет интересно, гарантируем!</p>
+                  <div class="social-links">
+                    <a target="_blank" href="https://www.instagram.com/dr.chikurov/" class="instagram"><i class="fa fa-instagram"></i></a>
+                    <a target="_blank" href="https://www.youtube.com/user/ThePractik01/" class="youtube"><i class="fa fa-youtube"></i></a>
+                    <a target="_blank" href="https://www.facebook.com/profile.php?id=100012253260685&pnref" class="facebook"><i class="fa fa-facebook"></i></a>
+                    <a target="_blank" href="https://vk.com/id139677998" class="vk"><i class="fa fa-vk"></i></a>
+                    <a target="_blank" href="https://chikurov.com" class="site"><i class="fa fa-globe"></i></a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-sm-7">
-              <div class="form">
-                <h4>Есть вопрос? Есть ответ!</h4>
-                <p>У Вас остались вопросы? Нужна помощь в освоениии <b>"WizardMachine"</b>? Хотите сказать нам спасибо? Воспользуйтесь формой ниже. Вам оперативно ответят!</p>
-                <?php echo do_shortcode('[contact-form-7 id="262" title="Обратная связь"]')?>
-              </div>
+          </div>
+          <div class="col-sm-7">
+            <div class="form">
+              <h4>Есть вопрос? Есть ответ!</h4>
+              <p>У Вас остались вопросы? Нужна помощь в освоениии <b>"WizardMachine"</b>? Хотите сказать нам спасибо? Воспользуйтесь формой ниже. Вам оперативно ответят!</p>
+              <?php echo do_shortcode('[contact-form-7 id="262" title="Обратная связь"]')?>
             </div>
           </div>
         </div>
       </div>
-    </footer><!-- #footer -->
-  <?php }?>
+    </div>
+  </footer><!-- #footer -->
 
   <!-- <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a> -->
   <!-- Uncomment below i you want to use a preloader -->
