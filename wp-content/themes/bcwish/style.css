@@ -2158,6 +2158,16 @@ main#main
   display: block;
   margin: auto;
 }
+.mobile-nav select 
+{
+  margin-left: 12px;
+  background: transparent;
+  color: #1bb1dc;
+  border: none;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
 /*--------------------------------------------------------------
 # Responsive Media Queries
 --------------------------------------------------------------*/
