@@ -398,16 +398,20 @@ input.crop_photo
   background: transparent;
 }
 .dragger_rate {
-    height: 3px;
-    width: 0;
-    border-top-right-radius: 50%;
-    border-bottom-right-radius: 50%;
-    max-width: 30%;
-    background: #2f0707;
-    position: absolute;
-    -webkit-transition: width 0.5s linear;
-    -moz-transition: width 0.5s linear;
-    transition: width 0.5s linear;
+  height: 3px;
+  width: 0;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  max-width: 30%;
+  background: #2f0707;
+  position: absolute;
+  -webkit-transition: width 0.5s linear;
+  -moz-transition: width 0.5s linear;
+  transition: width 0.5s linear;
+}
+.back-to-top
+{
+  display: none!important;
 }
 .subscriber_info 
 {
