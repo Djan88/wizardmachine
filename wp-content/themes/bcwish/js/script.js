@@ -3,13 +3,13 @@ jQuery(function() {
       cur_protocol,
       returned_img,
       nextSound = new Howl({
-          urls: ['/sounds/tap.mp3'],
+          urls: ['/sounds/Cancel_2.mp3'],
           autoplay: false,
           loop: false,
           buffer: true
       }),
       prevSound = new Howl({
-          urls: ['/sounds/Cancel_2.mp3'],
+          urls: ['/sounds/tap.mp3'],
           autoplay: false,
           loop: false,
           buffer: true
