@@ -9,7 +9,7 @@ jQuery(function() {
           buffer: true
       }),
       prevSound = new Howl({
-          urls: ['/sounds/tap.mp3'],
+          urls: ['/sounds/button.mp3'],
           autoplay: false,
           loop: false,
           buffer: true
