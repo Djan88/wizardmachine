@@ -2182,6 +2182,10 @@ main.kabinet
 {
   padding-top: 80px;
 }
+.grecaptcha-badge 
+{
+  display: none!important;
+}
 /*--------------------------------------------------------------
 # Responsive Media Queries
 --------------------------------------------------------------*/
