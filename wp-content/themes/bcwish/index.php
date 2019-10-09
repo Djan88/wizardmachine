@@ -175,7 +175,7 @@
               <?php if(current_user_can('subscriber') && $new_registred == 0){ ?>
                 <h2>Доступ к программе закрыт!<br>Оплатите доступ в личном кабинете<span> и пользуйтесь программой целый год!</span></h2>
                 <div>
-                  <a href="/cabinet" class="btn-get-started">Личный кабинет</a>
+                  <a href="/kabinet" class="btn-get-started">Личный кабинет</a>
                 </div>
               <?php } else if (current_user_can('contributor') || current_user_can('administrator') || $new_registred == 1) { ?>
                 <h2>
