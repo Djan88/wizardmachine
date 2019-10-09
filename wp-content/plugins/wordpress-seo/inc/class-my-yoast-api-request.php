@@ -18,14 +18,13 @@ class WPSEO_MyYoast_Api_Request {
 	protected $url;
 
 	/**
-	 * The request paramaters.
+	 * The request parameters.
 	 *
 	 * @var array
 	 */
 	protected $args = array(
 		'method'    => 'GET',
-		'timeout'   => 1,
-		'sslverify' => false,
+		'timeout'   => 5,
 		'headers'   => array(
 			'Accept-Encoding' => '*',
 		),
@@ -53,7 +52,7 @@ class WPSEO_MyYoast_Api_Request {
 	protected $client;
 
 	/**
-	 * Constructor
+	 * Constructor.
 	 *
 	 * @codeCoverageIgnore
 	 *
@@ -66,7 +65,7 @@ class WPSEO_MyYoast_Api_Request {
 	}
 
 	/**
-	 * Fires the request
+	 * Fires the request.
 	 *
 	 * @return bool True when request is successful.
 	 */

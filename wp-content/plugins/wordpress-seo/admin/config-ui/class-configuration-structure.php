@@ -31,6 +31,7 @@ class WPSEO_Configuration_Structure {
 		'publishingEntity'           => array(
 			'publishingEntity',
 			'publishingEntityType',
+			'publishingEntityCompanyInfo',
 			'publishingEntityCompanyName',
 			'publishingEntityCompanyLogo',
 			'publishingEntityPersonId',
@@ -53,8 +54,10 @@ class WPSEO_Configuration_Structure {
 			'siteName',
 			'separator',
 		),
-		'newsletter'                 => array( 'mailchimpSignup' ),
-		'suggestions'                => array( 'suggestions' ),
+		'newsletter'                 => array(
+			'mailchimpSignup',
+			'suggestions',
+		),
 		'success'                    => array( 'successMessage' ),
 	);
 
@@ -83,15 +86,17 @@ class WPSEO_Configuration_Structure {
 			__( 'Multiple authors', 'wordpress-seo' ),
 			$this->fields['multipleAuthors']
 		);
-		$this->add_step(
-			'connect-google-search-console',
-			__( 'Google Search Console', 'wordpress-seo' ),
-			$this->fields['connectGoogleSearchConsole']
-		);
-		$this->add_step( 'title-template', __( 'Title settings', 'wordpress-seo' ), $this->fields['titleTemplate'] );
+		// @codingStandardsIgnoreStart -- These lines are commented out temporarily, see next line.
+		// Commented out since 11.1.1 patch because Google removed their GSC API.
+//		$this->add_step(
+//			'connect-google-search-console',
+//			__( 'Google Search Console', 'wordpress-seo' ),
+//			$this->fields['connectGoogleSearchConsole']
+//		);
+		// @codingStandardsIgnoreEnd
 
-		$this->add_step( 'newsletter', __( 'Newsletter', 'wordpress-seo' ), $this->fields['newsletter'], true, true );
-		$this->add_step( 'suggestions', __( 'You might like', 'wordpress-seo' ), $this->fields['suggestions'], true, true );
+		$this->add_step( 'title-template', __( 'Title settings', 'wordpress-seo' ), $this->fields['titleTemplate'] );
+		$this->add_step( 'newsletter', __( 'Continue learning', 'wordpress-seo' ), $this->fields['newsletter'], true, true );
 		$this->add_step( 'success', __( 'Success!', 'wordpress-seo' ), $this->fields['success'], true, true );
 	}
 
@@ -114,7 +119,7 @@ class WPSEO_Configuration_Structure {
 	}
 
 	/**
-	 * Retrieve the registered steps
+	 * Retrieve the registered steps.
 	 *
 	 * @return array
 	 */

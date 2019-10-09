@@ -6,11 +6,16 @@
  */
 
 /**
- * This class registers all the necessary styles and scripts. Also has methods for the enqueing of scripts and styles. It automatically adds a prefix to the handle.
+ * This class registers all the necessary styles and scripts.
+ *
+ * Also has methods for the enqueing of scripts and styles.
+ * It automatically adds a prefix to the handle.
  */
 class WPSEO_Admin_Asset_Manager {
 
 	/**
+	 * Class that manages the assets' location.
+	 *
 	 * @var WPSEO_Admin_Asset_Location
 	 */
 	protected $asset_location;
@@ -140,7 +145,7 @@ class WPSEO_Admin_Asset_Manager {
 	}
 
 	/**
-	 * Flattens a version number for use in a filename
+	 * Flattens a version number for use in a filename.
 	 *
 	 * @param string $version The original version number.
 	 *
@@ -449,6 +454,7 @@ class WPSEO_Admin_Asset_Manager {
 				'deps' => array(
 					'wp-util',
 					'wp-api',
+					'wp-sanitize',
 					'wp-element',
 					'wp-i18n',
 					'wp-data',
@@ -466,6 +472,7 @@ class WPSEO_Admin_Asset_Manager {
 				'name' => 'term-scraper',
 				'src'  => 'wp-seo-term-scraper-' . $flat_version,
 				'deps' => array(
+					'wp-sanitize',
 					'wp-element',
 					'wp-i18n',
 					'wp-data',
@@ -515,6 +522,8 @@ class WPSEO_Admin_Asset_Manager {
 					'wp-i18n',
 					'wp-components',
 					'wp-data',
+					self::PREFIX . 'analysis',
+					self::PREFIX . 'components',
 					self::PREFIX . 'commons',
 				),
 			),
@@ -640,16 +649,6 @@ class WPSEO_Admin_Asset_Manager {
 					'wp-element',
 				),
 			),
-			array(
-				'name' => 'courses-overview',
-				'src'  => 'wp-seo-courses-overview-' . $flat_version,
-				'deps' => array(
-					'wp-element',
-					'wp-i18n',
-					self::PREFIX . 'styled-components',
-					self::PREFIX . 'components',
-				),
-			),
 		);
 	}
 
@@ -658,7 +657,7 @@ class WPSEO_Admin_Asset_Manager {
 	 *
 	 * @todo Data format is not self-documenting. Needs explanation inline. R.
 	 *
-	 * @return array styles that need to be registered.
+	 * @return array Styles that need to be registered.
 	 */
 	protected function styles_to_be_registered() {
 		$flat_version = $this->flatten_version( WPSEO_VERSION );
