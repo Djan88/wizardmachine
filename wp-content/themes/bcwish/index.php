@@ -1379,8 +1379,8 @@
   <!-- JavaScript Libraries -->
   <script src="<?php bloginfo('template_url'); ?>/js/jquery-ui.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/jquery.ui.touch-punch.min.js"></script>
-  <script src="<?php bloginfo('template_url'); ?>/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <!-- <script src="<?php //bloginfo('template_url'); ?>/lib/easing/easing.min.js"></script> -->
+  <!-- <script src="<?php //bloginfo('template_url'); ?>/lib/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+  <!-- <script src="<?php bloginfo('template_url'); ?>/lib/easing/easing.min.js"></script> -->
   <script src="<?php bloginfo('template_url'); ?>/lib/mobile-nav/mobile-nav.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/lib/wow/wow.min.js"></script>
   <!-- <script src="<?php //bloginfo('template_url'); ?>/lib/waypoints/waypoints.min.js"></script> -->
