@@ -328,16 +328,16 @@
                 <div id="faq" class="col-md-12 wizard_prots hidden">
                   <ul id="faq-list" class="wow fadeInUp">
                     <li>
-                      <a data-toggle="collapse" href="#faq9" class="collapsed">(УНИВЕРСАЛЬНЫЙ) Универсальный протокол <i class="ion-android-remove"></i></a>
+                      <a data-toggle="collapse" href="#faq9" class="collapsed">УНИВЕРСАЛЬНЫЙ <i class="ion-android-remove"></i></a>
                       <div id="faq9" class="collapse" data-parent="#faq-list">
                         <p>
                           Универсальный протокол - самодостаточный глобальный протокол. Применяем в непонятных случаях.
                         </p>
-                        <p><button class="btn wizard_blue wizard_protocol wizard_protocol_9 wizard_prot_9 wow bounceInUp" data-wow-duration="1.4s">Активировать УНИВЕРСАЛЬНЫЙ</button></p>
+                        <p><button class="btn wizard_blue wizard_protocol wizard_protocol_9 wizard_prot_9 wow bounceInUp" data-wow-duration="1.4s">Активировать протокол</button></p>
                       </div>
                     </li>
                     <li>
-                      <a data-toggle="collapse" class="collapsed" href="#faq1">(V1) Краниальный протокол <i class="ion-android-remove"></i></a>
+                      <a data-toggle="collapse" class="collapsed" href="#faq1">НИЖНИЕ МИРЫ <i class="ion-android-remove"></i></a>
                       <div id="faq1" class="collapse" data-parent="#faq-list">
                         <p>
                           «Краниальный протокол» - применяем при флюэдической нагрузке головы, а также пространства над головой и под ногами. Терапия типичных последствий магии или несовсем экологичного занятия энергетическими практиками. Последствия посещения «мест силы» в экзотических странах, а также приема внутрь всяких психоактивных гадостей, будь то грибы или айаваска.
@@ -345,12 +345,12 @@
                         <?php if ($new_registred == 1) { ?>
                           <p><div class=" closed_protocol wow bounceInUp">Этот протокол доступен только пользователям с оплаченным доступом! Оплатите доступ к программе и откройте все протоколы "WizardMachine"</div></p>
                         <?php } else { ?>
-                          <p><button class="btn wizard_blue wizard_protocol wizard_protocol_1 wizard_prot_1 wow bounceInUp" data-wow-duration="1.4s">Активировать V1</button></p>
+                          <p><button class="btn wizard_blue wizard_protocol wizard_protocol_1 wizard_prot_1 wow bounceInUp" data-wow-duration="1.4s">Активировать протокол</button></p>
                         <?php } ?>
                       </div>
                     </li>
                     <li>
-                      <a data-toggle="collapse" href="#faq2" class="collapsed">(V2—V5) Люди и отношения. Предметы, вещи и достижение целей <i class="ion-android-remove"></i></a>
+                      <a data-toggle="collapse" href="#faq2" class="collapsed">ГОРЕ ОТ УМА <i class="ion-android-remove"></i></a>
                       <div id="faq2" class="collapse" data-parent="#faq-list">
                         <p>
                           Коррекция ситуации «Горе от ума» с вторичным подавлением восходящего потока Ресурса жизненной Силы. Дилемм, проблем выбора цели или предметов. Вовлечения во что-либо и вожделения. Регулярных состояний недостижения результата, событийного вектора «Потеря», особенно повторяющихся по типу «дня сурка». Отсутствие поддержки Отца.
@@ -358,12 +358,12 @@
                         <?php if ($new_registred == 1) { ?>
                           <p><div class=" closed_protocol wow bounceInUp">Этот протокол доступен только пользователям с оплаченным доступом! Оплатите доступ к программе и откройте все протоколы "WizardMachine"</div></p>
                         <?php } else { ?>
-                          <p><button class="btn wizard_blue wizard_protocol wizard_protocol_2 wizard_prot_2 wow bounceInUp" data-wow-duration="1.4s">Активировать V2-V5</button></p>
+                          <p><button class="btn wizard_blue wizard_protocol wizard_protocol_2 wizard_prot_2 wow bounceInUp" data-wow-duration="1.4s">Активировать протокол</button></p>
                         <?php } ?>
                       </div>
                     </li>
                     <li>
-                      <a data-toggle="collapse" href="#faq3" class="collapsed">(V3—V4) Раздражение и неприятие <i class="ion-android-remove"></i></a>
+                      <a data-toggle="collapse" href="#faq3" class="collapsed">МОЯ ПРАВДА <i class="ion-android-remove"></i></a>
                       <div id="faq3" class="collapse" data-parent="#faq-list">
                         <p>
                           Коррекция переживаний, основанных на неприятии себя, ощущении, что «живу не своей жизнью». Саморазрушительных тенденций, основанных на внешнем гиперконтроле Матери и подавлении, исходящем от нее.<br>Чувства непереносимости ситуации либо отношений. Несправедливости. Избыточного Действия по преодолению сложностей в делах.
@@ -371,12 +371,12 @@
                         <?php if ($new_registred == 1) { ?>
                           <p><div class=" closed_protocol wow bounceInUp">Этот протокол доступен только пользователям с оплаченным доступом! Оплатите доступ к программе и откройте все протоколы "WizardMachine"</div></p>
                         <?php } else { ?>
-                          <p><button class="btn wizard_blue wizard_protocol wizard_protocol_3 wizard_prot_3 wow bounceInUp" data-wow-duration="1.4s">Активировать V3-V4</button></p>
+                          <p><button class="btn wizard_blue wizard_protocol wizard_protocol_3 wizard_prot_3 wow bounceInUp" data-wow-duration="1.4s">Активировать протокол</button></p>
                         <?php } ?>
                       </div>
                     </li>
                     <li>
-                      <a data-toggle="collapse" href="#faq4" class="collapsed">(V4—V3) Суета беспокойство и напряжение <i class="ion-android-remove"></i></a>
+                      <a data-toggle="collapse" href="#faq4" class="collapsed">ЗЛОСТЬ И РАЗДРАЖЕНИЕ <i class="ion-android-remove"></i></a>
                       <div id="faq4" class="collapse" data-parent="#faq-list">
                         <p>
                           Коррекция переживаний основанных на раздражительной злости, беспокойстве, тревожности, суеты, торопливости и заниженной самооценки. Негативных влияний сновидений и прочих насад на пуповину Рода. Проблем поведенческой наследственности с передачей по женской линии.
@@ -384,12 +384,12 @@
                         <?php if ($new_registred == 1) { ?>
                           <p><div class=" closed_protocol wow bounceInUp">Этот протокол доступен только пользователям с оплаченным доступом! Оплатите доступ к программе и откройте все протоколы "WizardMachine"</div></p>
                         <?php } else { ?>
-                          <p><button class="btn wizard_blue wizard_protocol wizard_protocol_4 wizard_prot_4 wow bounceInUp" data-wow-duration="1.4s">Активировать V4-V3</button></p>
+                          <p><button class="btn wizard_blue wizard_protocol wizard_protocol_4 wizard_prot_4 wow bounceInUp" data-wow-duration="1.4s">Активировать протокол</button></p>
                         <?php } ?>
                       </div>
                     </li>
                     <li>
-                      <a data-toggle="collapse" href="#faq5" class="collapsed">(V5—V2) Иррациональное, витальная сила <i class="ion-android-remove"></i></a>
+                      <a data-toggle="collapse" href="#faq5" class="collapsed">ВОСХОДЯЩИЙ ПОТОК СИЛЫ <i class="ion-android-remove"></i></a>
                       <div id="faq5" class="collapse" data-parent="#faq-list">
                         <p>
                           Коррекция блокировки восходящего потока жизненной Силы -  невротических переживаний нехватки воздуха, страхов закрытого пространства, высоты, навязчивого мытья рук и прочих обсессий и компульсий. Синдрома хронической усталости, отсутствия желаний, либидо и прочей хандры. Проблем поведенческой наследственности с передачей по мужской линии, последствий депривации детского возраста.
@@ -397,12 +397,12 @@
                         <?php if ($new_registred == 1) { ?>
                           <p><div class=" closed_protocol wow bounceInUp">Этот протокол доступен только пользователям с оплаченным доступом! Оплатите доступ к программе и откройте все протоколы "WizardMachine"</div></p>
                         <?php } else { ?>
-                          <p><button class="btn wizard_blue wizard_protocol wizard_protocol_5 wizard_prot_5 wow bounceInUp" data-wow-duration="1.4s">Активировать V5-V2</button></p>
+                          <p><button class="btn wizard_blue wizard_protocol wizard_protocol_5 wizard_prot_5 wow bounceInUp" data-wow-duration="1.4s">Активировать протокол</button></p>
                         <?php } ?>
                       </div>
                     </li>
                     <li>
-                      <a data-toggle="collapse" href="#faq6" class="collapsed">(ДРЕНАЖ) Реактивация ресурса <i class="ion-android-remove"></i></a>
+                      <a data-toggle="collapse" href="#faq6" class="collapsed">ДРЕНАЖ <i class="ion-android-remove"></i></a>
                       <div id="faq6" class="collapse" data-parent="#faq-list">
                         <p>
                           Реактивация ресурсов организма через устранение негативного флюида из зон DSV с последующим наполнением зон позитивным флюидом.<br>
@@ -411,12 +411,12 @@
                         <?php if ($new_registred == 1) { ?>
                           <p><div class=" closed_protocol wow bounceInUp">Этот протокол доступен только пользователям с оплаченным доступом! Оплатите доступ к программе и откройте все протоколы "WizardMachine"</div></p>
                         <?php } else { ?>
-                          <p><button class="btn wizard_blue wizard_protocol wizard_protocol_6 wizard_prot_6 wow bounceInUp" data-wow-duration="1.4s">Активировать ДРЕНАЖ</button></p>
+                          <p><button class="btn wizard_blue wizard_protocol wizard_protocol_6 wizard_prot_6 wow bounceInUp" data-wow-duration="1.4s">Активировать протокол</button></p>
                         <?php } ?>
                       </div>
                     </li>
                     <li>
-                      <a data-toggle="collapse" href="#faq7" class="collapsed">(SOLIS) Коррекция гиперресурса <i class="ion-android-remove"></i></a>
+                      <a data-toggle="collapse" href="#faq7" class="collapsed">SOLIS <i class="ion-android-remove"></i></a>
                       <div id="faq7" class="collapse" data-parent="#faq-list">
                         <p>
                           Протокол для коррекции энергетического баланса на Полнолуние. Способствует наилучшему  продольному прохождению через тело и систему  DSV восходящего потока жизненной Силы с последующим формированием порции высокопотенциированного позитивного флюида (Плода) используемого в последующем для успешной реализации наших добрых Намерений и Дел.<br>
@@ -425,12 +425,12 @@
                         <?php if ($new_registred == 1) { ?>
                           <p><div class=" closed_protocol wow bounceInUp">Этот протокол доступен только пользователям с оплаченным доступом! Оплатите доступ к программе и откройте все протоколы "WizardMachine"</div></p>
                         <?php } else { ?>
-                          <p><button class="btn wizard_blue wizard_protocol wizard_protocol_7 wizard_prot_7 wow bounceInUp" data-wow-duration="1.4s">Активировать SOLIS</button></p>
+                          <p><button class="btn wizard_blue wizard_protocol wizard_protocol_7 wizard_prot_7 wow bounceInUp" data-wow-duration="1.4s">Активировать протокол</button></p>
                         <?php } ?>
                       </div>
                     </li>
                     <li>
-                      <a data-toggle="collapse" href="#faq8" class="collapsed">(ВИСЦЕРАЛЬНЫЙ) Висцеральный протокол <i class="ion-android-remove"></i></a>
+                      <a data-toggle="collapse" href="#faq8" class="collapsed">ВИСЦЕРАЛЬНЫЙ <i class="ion-android-remove"></i></a>
                       <div id="faq8" class="collapse" data-parent="#faq-list">
                         <p>
                           Предназначен для оптимального энергетического баланса внутренних органов, включая нормализацию обмена веществ, иммунитета и гормонов! Может быть использован в комбинации с другими DSV протоколами либо самостоятельно.
@@ -438,7 +438,7 @@
                         <?php if ($new_registred == 1) { ?>
                           <p><div class=" closed_protocol wow bounceInUp">Этот протокол доступен только пользователям с оплаченным доступом! Оплатите доступ к программе и откройте все протоколы "WizardMachine"</div></p>
                         <?php } else { ?>
-                          <p><button class="btn wizard_blue wizard_protocol wizard_protocol_8 wizard_prot_8 wow bounceInUp" data-wow-duration="1.4s">Активировать ВИСЦЕРАЛЬНЫЙ</button></p>
+                          <p><button class="btn wizard_blue wizard_protocol wizard_protocol_8 wizard_prot_8 wow bounceInUp" data-wow-duration="1.4s">Активировать протокол</button></p>
                         <?php } ?>
                       </div>
                     </li>
