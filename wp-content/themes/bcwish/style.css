@@ -2169,7 +2169,7 @@ main#main
   margin-bottom: 5px;
 }
 
-.wpcf7-form-control.wpcf7-submit
+.wpcf7-form-control.wpcf7-submit, .form_triger
 {
   background: #1bb1dc;
   border: 0;
@@ -2185,6 +2185,14 @@ main.kabinet
 .grecaptcha-badge 
 {
   display: none!important;
+}
+.footer-newsletter 
+{
+  margin-top: 17px;
+}
+#footer .col-sm-4 h4
+{
+  
 }
 /*--------------------------------------------------------------
 # Responsive Media Queries

@@ -1339,32 +1339,32 @@
     <div class="footer-top">
       <div class="container">
         <div class="row">
-          <div class="col-sm-5">
+          <div class="col-sm-4">
             <div class="row">
               <div class="col-sm-12">
                 <div class="footer-info">
                   <h3><span class="acent">W</span>izard<span class="acent">M</span>achine</h3>
                   <p><b>"WizardMachine"</b> корректирует нарушения в тонком теле ума человека через фото. <br>Позитивные эффекты проявляются на уровне переживаний физического тела и событийных рядов. <br>Процессинг полностью автоматизирован и ведётся по специальным протокол</b> 2015 г.</p>
                 </div>
-                <div class="footer-newsletter">
-                  <h4>Новости школы</h4>
-                  <p>Подпишитесь на новости <b>"Школы Доктора Чикурова"</b> и <b>"WizardMachine"</b> в любой из социальных сетей. Будет интересно, гарантируем!</p>
-                  <div class="social-links">
-                    <a target="_blank" href="https://www.instagram.com/dr.chikurov/" class="instagram"><i class="fa fa-instagram"></i></a>
-                    <a target="_blank" href="https://www.youtube.com/user/ThePractik01/" class="youtube"><i class="fa fa-youtube"></i></a>
-                    <a target="_blank" href="https://www.facebook.com/profile.php?id=100012253260685&pnref" class="facebook"><i class="fa fa-facebook"></i></a>
-                    <a target="_blank" href="https://vk.com/id139677998" class="vk"><i class="fa fa-vk"></i></a>
-                    <a target="_blank" href="https://chikurov.com" class="site"><i class="fa fa-globe"></i></a>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
-          <div class="col-sm-7">
+          <div class="col-sm-4">
+            <h4>Новости школы</h4>
+            <p>Подпишитесь на новости <b>"Школы Доктора Чикурова"</b> и <b>"WizardMachine"</b> в любой из социальных сетей. Будет интересно, гарантируем!</p>
+            <div class="social-links">
+              <a target="_blank" href="https://www.instagram.com/dr.chikurov/" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a target="_blank" href="https://www.youtube.com/user/ThePractik01/" class="youtube"><i class="fa fa-youtube"></i></a>
+              <a target="_blank" href="https://www.facebook.com/profile.php?id=100012253260685&pnref" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a target="_blank" href="https://vk.com/id139677998" class="vk"><i class="fa fa-vk"></i></a>
+              <a target="_blank" href="https://chikurov.com" class="site"><i class="fa fa-globe"></i></a>
+            </div>
+          </div>
+          <div class="col-sm-4">
             <div class="form">
               <h4>Есть вопрос? Есть ответ!</h4>
               <p>У Вас остались вопросы? Нужна помощь в освоениии <b>"WizardMachine"</b>? Хотите сказать нам спасибо? Воспользуйтесь формой ниже. Вам оперативно ответят!</p>
-              <?php echo do_shortcode('[contact-form-7 id="262" title="Обратная связь"]')?>
+              <button class="form_triger" data-toggle="modal" data-target="#mail"><i class="fa fa-envelope"></i></button>
             </div>
           </div>
         </div>
@@ -1400,6 +1400,19 @@
   <script src="<?php bloginfo('template_url'); ?>/js/howler.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/protocols.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/script.js"></script>
-
+  
+  <div class="modal fade" id="mail" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title" id="myModalLabel">Обратная связь</h4>
+        </div>
+        <div class="modal-text">
+          <?php echo do_shortcode('[contact-form-7 id="262" title="Обратная связь"]')?>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
