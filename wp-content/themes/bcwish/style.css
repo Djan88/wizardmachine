@@ -2207,9 +2207,13 @@ main.kabinet
 {
   padding: 20px;
 }
-.mail h4#myModalLabel 
+.mail h4
 {
   width: 100%;
+}
+button.form_triger
+{
+  margin-top: 10px;
 }
 /*--------------------------------------------------------------
 # Responsive Media Queries
