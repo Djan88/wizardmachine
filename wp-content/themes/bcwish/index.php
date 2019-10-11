@@ -1176,7 +1176,7 @@
               <div class="row wizard_diag hidden">
                 <div class="col-sm-6 wizard_grafic">
                   <div class="row">
-                    <img src="<?php bloginfo('template_url'); ?>/img/knife.png" class="marakata" alt="">
+                    <img src="<?php bloginfo('template_url'); ?>/img/knife_alt.png" class="marakata" alt="">
                   </div>
                 </div>
                 <div class="col-sm-6 wizard_grafic_photo">
