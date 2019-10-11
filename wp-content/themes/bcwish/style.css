@@ -2197,17 +2197,17 @@ main.kabinet
   margin-top: 65px;
   margin-bottom: 10px;
 }
-.mail .close
+#mail .close
 {
   right: 10px;
   top: 10px;
   position: absolute;
 }
-.mail .modal-text
+#mail .modal-text
 {
   padding: 20px;
 }
-.mail h4
+#mail h4
 {
   width: 100%;
 }
