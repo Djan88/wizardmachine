@@ -91,7 +91,7 @@ jQuery(function() {
         jQuery(location).attr('href','/');
       } else {
         jQuery('.wizard_stop, .zone_ring').addClass('hidden');
-        jQuery('.wizard_play').fadeIn(500).removeClass('hidden');
+        jQuery('.wizard_play, .wizard_starter_alt').fadeIn(500).removeClass('hidden');
       }
     })
   }
@@ -17247,7 +17247,7 @@ jQuery(function() {
     jQuery('.wizard_returned').attr('src', returned_img);
     jQuery('.wm_start').removeClass('unopacity');
     jQuery('.wm_start').removeAttr('style');
-    jQuery('.wizard_to_protList, .wizard_play').fadeIn(500).removeClass('hidden');
+    jQuery('.wizard_to_protList, .wizard_play, .wizard_starter_alt').fadeIn(500).removeClass('hidden');
     jQuery('.wizard_main_screen').fadeIn(500).removeClass('hidden').css('display', 'flex');
     jQuery('.wizard_heading').text('Перенесите зоны на фото и можно будет продолжить работу.');
   });
@@ -17262,7 +17262,7 @@ jQuery(function() {
     });
   }
 
-  jQuery('.wizard_play').on('click', function(event) {
+  jQuery('.wizard_play, .wizard_starter_alt').on('click', function(event) {
     checkPoints();
     if(pointsStatus == false){
       swal("Не все зоны перенесены!", "Перед началом процедуры необходимо перенести на фото все зоны.", "info");

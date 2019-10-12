@@ -2233,6 +2233,12 @@ button.wizard_play.header_btn .fa
 {
   color: green!important;
 }
+button.wizard_starter_alt.btn.btn-success 
+{
+  margin: auto;
+  display: inherit;
+  margin-top: 20px;
+}
 /*--------------------------------------------------------------
 # Responsive Media Queries
 --------------------------------------------------------------*/
