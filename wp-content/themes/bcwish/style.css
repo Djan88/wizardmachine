@@ -2227,7 +2227,7 @@ button.wizard_play.header_btn
 }
 button.wizard_play.header_btn .fa
 {
-  color: green;
+  color: green!important;
 }
 /*--------------------------------------------------------------
 # Responsive Media Queries
