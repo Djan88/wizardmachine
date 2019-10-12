@@ -17276,11 +17276,11 @@ jQuery(function() {
         console.log(protocolfromMemory);
         protocolfromMemory();
         pausedStatus = false;
-        jQuery(this).addClass('hidden');
+        jQuery('.wizard_play, .wizard_starter_alt').addClass('hidden');
         jQuery('.wizard_stop, .zone_ring').fadeIn(500).removeClass('hidden');
       } else {
         pausedStatus = false;
-        jQuery(this).addClass('hidden');
+        jQuery('.wizard_play, .wizard_starter_alt').addClass('hidden');
         jQuery('.wizard_stop, .zone_ring').fadeIn(500).removeClass('hidden');
         jQuery('.wizard_stop').removeClass('wizard_stop_inProgress');
         var protocol = localStorage.getItem('cur_protocol');
