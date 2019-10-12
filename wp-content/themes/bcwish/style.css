@@ -2216,6 +2216,19 @@ button.form_triger
 {
   margin-top: 10px;
 }
+button.wizard_play.header_btn
+{
+  height: 40px;
+  width: 50px;
+  text-align: center;
+  top: -4px;
+  background: #d7edf3;
+  border-color: green;
+}
+button.wizard_play.header_btn .fa
+{
+  color: green;
+}
 /*--------------------------------------------------------------
 # Responsive Media Queries
 --------------------------------------------------------------*/
