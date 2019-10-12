@@ -1172,6 +1172,12 @@
                 <div class="col-sm-6">
                   <img src="" class="wizard_returned draggable" alt="wizard_returned">
                 </div>
+                <div class="col-sm-12">
+                  <button type="button" class="wizard_starter_alt btn btn-success">
+                    <i class="fa fa-play-circle wizard_start_icon"></i>
+                  </button>
+                  wizard_starter_alt
+                </div>
               </div>
               <div class="row wizard_diag hidden">
                 <div class="col-sm-6 wizard_grafic">

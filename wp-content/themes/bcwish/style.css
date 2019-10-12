@@ -2225,6 +2225,10 @@ button.wizard_play.header_btn
   background: #d7edf3;
   border-color: green;
 }
+button.wizard_play.header_btn:hover
+{
+  border-color: #1bb1dc;
+}
 button.wizard_play.header_btn .fa
 {
   color: green!important;
