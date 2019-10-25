@@ -342,7 +342,7 @@
                         <p>
                           «Краниальный протокол» - применяем при флюэдической нагрузке головы, а также пространства над головой и под ногами. Терапия типичных последствий магии или несовсем экологичного занятия энергетическими практиками. Последствия посещения «мест силы» в экзотических странах, а также приема внутрь всяких психоактивных гадостей, будь то грибы или айаваска.
                         </p>
-                        <?php if (current_user_can('subscriber') && $new_registred == 1)) { ?>
+                        <?php if (current_user_can('subscriber') && $new_registred == 1) { ?>
                           <p><div class=" closed_protocol wow bounceInUp">Этот протокол доступен только пользователям с оплаченным доступом! Оплатите доступ к программе и откройте все протоколы "WizardMachine"</div></p>
                         <?php } else { ?>
                           <p><button class="btn wizard_blue wizard_protocol wizard_protocol_1 wizard_prot_1 wow bounceInUp" data-wow-duration="1.4s">Активировать протокол</button></p>
@@ -355,7 +355,7 @@
                         <p>
                           Коррекция ситуации «Горе от ума» с вторичным подавлением восходящего потока Ресурса жизненной Силы. Дилемм, проблем выбора цели или предметов. Вовлечения во что-либо и вожделения. Регулярных состояний недостижения результата, событийного вектора «Потеря», особенно повторяющихся по типу «дня сурка». Отсутствие поддержки Отца.
                         </p>
-                        <?php if (current_user_can('subscriber') && $new_registred == 1)) { ?>
+                        <?php if (current_user_can('subscriber') && $new_registred == 1) { ?>
                           <p><div class=" closed_protocol wow bounceInUp">Этот протокол доступен только пользователям с оплаченным доступом! Оплатите доступ к программе и откройте все протоколы "WizardMachine"</div></p>
                         <?php } else { ?>
                           <p><button class="btn wizard_blue wizard_protocol wizard_protocol_2 wizard_prot_2 wow bounceInUp" data-wow-duration="1.4s">Активировать протокол</button></p>
@@ -368,7 +368,7 @@
                         <p>
                           Коррекция переживаний, основанных на неприятии себя, ощущении, что «живу не своей жизнью». Саморазрушительных тенденций, основанных на внешнем гиперконтроле Матери и подавлении, исходящем от нее.<br>Чувства непереносимости ситуации либо отношений. Несправедливости. Избыточного Действия по преодолению сложностей в делах.
                         </p>
-                        <?php if (current_user_can('subscriber') && $new_registred == 1)) { ?>
+                        <?php if (current_user_can('subscriber') && $new_registred == 1) { ?>
                           <p><div class=" closed_protocol wow bounceInUp">Этот протокол доступен только пользователям с оплаченным доступом! Оплатите доступ к программе и откройте все протоколы "WizardMachine"</div></p>
                         <?php } else { ?>
                           <p><button class="btn wizard_blue wizard_protocol wizard_protocol_3 wizard_prot_3 wow bounceInUp" data-wow-duration="1.4s">Активировать протокол</button></p>
@@ -381,7 +381,7 @@
                         <p>
                           Коррекция переживаний основанных на раздражительной злости, беспокойстве, тревожности, суеты, торопливости и заниженной самооценки. Негативных влияний сновидений и прочих насад на пуповину Рода. Проблем поведенческой наследственности с передачей по женской линии.
                         </p>
-                        <?php if (current_user_can('subscriber') && $new_registred == 1)) { ?>
+                        <?php if (current_user_can('subscriber') && $new_registred == 1) { ?>
                           <p><div class=" closed_protocol wow bounceInUp">Этот протокол доступен только пользователям с оплаченным доступом! Оплатите доступ к программе и откройте все протоколы "WizardMachine"</div></p>
                         <?php } else { ?>
                           <p><button class="btn wizard_blue wizard_protocol wizard_protocol_4 wizard_prot_4 wow bounceInUp" data-wow-duration="1.4s">Активировать протокол</button></p>
@@ -394,7 +394,7 @@
                         <p>
                           Коррекция блокировки восходящего потока жизненной Силы -  невротических переживаний нехватки воздуха, страхов закрытого пространства, высоты, навязчивого мытья рук и прочих обсессий и компульсий. Синдрома хронической усталости, отсутствия желаний, либидо и прочей хандры. Проблем поведенческой наследственности с передачей по мужской линии, последствий депривации детского возраста.
                         </p>
-                        <?php if (current_user_can('subscriber') && $new_registred == 1)) { ?>
+                        <?php if (current_user_can('subscriber') && $new_registred == 1) { ?>
                           <p><div class=" closed_protocol wow bounceInUp">Этот протокол доступен только пользователям с оплаченным доступом! Оплатите доступ к программе и откройте все протоколы "WizardMachine"</div></p>
                         <?php } else { ?>
                           <p><button class="btn wizard_blue wizard_protocol wizard_protocol_5 wizard_prot_5 wow bounceInUp" data-wow-duration="1.4s">Активировать протокол</button></p>
@@ -408,7 +408,7 @@
                           Реактивация ресурсов организма через устранение негативного флюида из зон DSV с последующим наполнением зон позитивным флюидом.<br>
                           Рекомендован при хронических либо кармически отягощенных, а также гипоресурсных состояниях. Можно применять сразу дополнительно после основного протокола либо самостоятельно.
                         </p>
-                        <?php if (current_user_can('subscriber') && $new_registred == 1)) { ?>
+                        <?php if (current_user_can('subscriber') && $new_registred == 1) { ?>
                           <p><div class=" closed_protocol wow bounceInUp">Этот протокол доступен только пользователям с оплаченным доступом! Оплатите доступ к программе и откройте все протоколы "WizardMachine"</div></p>
                         <?php } else { ?>
                           <p><button class="btn wizard_blue wizard_protocol wizard_protocol_6 wizard_prot_6 wow bounceInUp" data-wow-duration="1.4s">Активировать протокол</button></p>
@@ -422,7 +422,7 @@
                           Протокол для коррекции энергетического баланса на Полнолуние. Способствует наилучшему  продольному прохождению через тело и систему  DSV восходящего потока жизненной Силы с последующим формированием порции высокопотенциированного позитивного флюида (Плода) используемого в последующем для успешной реализации наших добрых Намерений и Дел.<br>
                            Работает только в дни Полнолуния!
                         </p>
-                        <?php if (current_user_can('subscriber') && $new_registred == 1)) { ?>
+                        <?php if (current_user_can('subscriber') && $new_registred == 1) { ?>
                           <p><div class=" closed_protocol wow bounceInUp">Этот протокол доступен только пользователям с оплаченным доступом! Оплатите доступ к программе и откройте все протоколы "WizardMachine"</div></p>
                         <?php } else { ?>
                           <p><button class="btn wizard_blue wizard_protocol wizard_protocol_7 wizard_prot_7 wow bounceInUp" data-wow-duration="1.4s">Активировать протокол</button></p>
@@ -435,7 +435,7 @@
                         <p>
                           Предназначен для оптимального энергетического баланса внутренних органов, включая нормализацию обмена веществ, иммунитета и гормонов! Может быть использован в комбинации с другими DSV протоколами либо самостоятельно.
                         </p>
-                        <?php if (current_user_can('subscriber') && $new_registred == 1)) { ?>
+                        <?php if (current_user_can('subscriber') && $new_registred == 1) { ?>
                           <p><div class=" closed_protocol wow bounceInUp">Этот протокол доступен только пользователям с оплаченным доступом! Оплатите доступ к программе и откройте все протоколы "WizardMachine"</div></p>
                         <?php } else { ?>
                           <p><button class="btn wizard_blue wizard_protocol wizard_protocol_8 wizard_prot_8 wow bounceInUp" data-wow-duration="1.4s">Активировать протокол</button></p>
