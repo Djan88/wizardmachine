@@ -181,7 +181,7 @@
                 <h2>
                   Программа для коррекции 
                   <br><span>личностных психосоматических проблем!</span>
-                  <?php if (current_user_can('subscriber') && $new_registred == 1)) { ?>
+                  <?php if (current_user_can('subscriber') && $new_registred == 1) { ?>
                     <br><span style=" color: red; font-size: 20px;">Благодарим за интерес к программе "WizardMachine"! Дарим Вам 3 дня доступа к протоколу "Универсальный"!</span>
                   <?php } ?> 
                 </h2>
