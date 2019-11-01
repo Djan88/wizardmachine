@@ -74,6 +74,7 @@ jQuery(function() {
     rotateVal = 0;
     count_animation = 1;
     alertSound.play();
+    jQuery('.ring').removeClass('in_progress');
 
     swal({
       title: "Приостановлено пользователем",
@@ -17330,7 +17331,6 @@ jQuery(function() {
   }
 
   jQuery('.wizard_stop') .on('click', function(event) {
-    jQuery('.ring').removeClass('in_progress');
     jQuery(this).addClass('wizard_stop_inProgress');
     jQuery('.header-title').text('Программа останавливается');
     // endStatus = true;
