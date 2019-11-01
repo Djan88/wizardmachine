@@ -2247,26 +2247,27 @@ button.wizard_starter_alt.btn.btn-success
 .ring:after, .ring:before
 {
   content: ' ';
-  width: 2px;
-  height: 2px;
-  color: green;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: green;
   font-size: 50px;
   line-height: 1px;
   position: absolute;
 }
 .ring.in_progress:after, .ring.in_progress:before
 {
-  color: transparent;
+  background: transparent;
 }
 .ring:after
 {
-  right: -3px;
-  top: 45%;
+  right: -4px;
+  top: 48%;
 }
 .ring:before
 {
-  bottom: 5px;
-  left: 49%;
+  bottom: -4px;
+  left: 50%;
 }
 /*--------------------------------------------------------------
 # Responsive Media Queries
