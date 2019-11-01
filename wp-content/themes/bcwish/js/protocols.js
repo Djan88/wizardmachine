@@ -97,6 +97,7 @@ jQuery(function() {
   }
 
   onEnd = function(){
+    jQuery('.ring').removeClass('in_progress');
     jQuery('.btn-to_endNow').addClass('hidden');
     jQuery('.btn_start').removeAttr('disabled');
     jQuery('.wizard_percent').text('100%');
@@ -17315,6 +17316,7 @@ jQuery(function() {
         }
       }
       jQuery('.wizard_to_protList').addClass('prot_in_progress');
+      jQuery('.ring').addClass('in_progress');
       localStorage.removeItem('paused');
       localStorage.removeItem('pausedPhoto');
       jQuery('.wizard_stop').removeClass('wizard_stop_inProgress');
@@ -17328,6 +17330,7 @@ jQuery(function() {
   }
 
   jQuery('.wizard_stop') .on('click', function(event) {
+    jQuery('.ring').removeClass('in_progress');
     jQuery(this).addClass('wizard_stop_inProgress');
     jQuery('.header-title').text('Программа останавливается');
     // endStatus = true;
