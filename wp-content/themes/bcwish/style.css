@@ -2244,6 +2244,21 @@ button.wizard_starter_alt.btn.btn-success
   display: inherit!important;
   margin-top: 20px;
 }
+.ring:after, .ring:before
+{
+  content: '.';
+  position: absolute;
+}
+.ring:after
+{
+  right: 0;
+  top: 50%;
+}
+.ring:before
+{
+  bottom: 0;
+  left: 50%;
+}
 /*--------------------------------------------------------------
 # Responsive Media Queries
 --------------------------------------------------------------*/
