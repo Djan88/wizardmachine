@@ -6,11 +6,13 @@
  */
 
 /**
- * This class provides data for the post metabox by return its values for localization
+ * This class provides data for the post metabox by return its values for localization.
  */
 class WPSEO_Post_Metabox_Formatter implements WPSEO_Metabox_Formatter_Interface {
 
 	/**
+	 * Holds the WordPress Post.
+	 *
 	 * @var WP_Post
 	 */
 	private $post;
@@ -45,14 +47,16 @@ class WPSEO_Post_Metabox_Formatter implements WPSEO_Metabox_Formatter_Interface 
 			'post_edit_url'       => $this->edit_url(),
 			'base_url'            => $this->base_url_for_js(),
 			'metaDescriptionDate' => '',
+
 		);
 
 		if ( $this->post instanceof WP_Post ) {
 			$values_to_set = array(
-				'keyword_usage'       => $this->get_focus_keyword_usage(),
-				'title_template'      => $this->get_title_template(),
-				'metadesc_template'   => $this->get_metadesc_template(),
-				'metaDescriptionDate' => $this->get_metadesc_date(),
+				'keyword_usage'            => $this->get_focus_keyword_usage(),
+				'title_template'           => $this->get_title_template(),
+				'metadesc_template'        => $this->get_metadesc_template(),
+				'metaDescriptionDate'      => $this->get_metadesc_date(),
+				'social_preview_image_url' => $this->get_image_url(),
 			);
 
 			$values = ( $values_to_set + $values );
@@ -62,7 +66,23 @@ class WPSEO_Post_Metabox_Formatter implements WPSEO_Metabox_Formatter_Interface 
 	}
 
 	/**
-	 * Returns the url to search for keyword for the post
+	 * Gets the image URL for the post's social preview.
+	 *
+	 * @return string|null The image URL for the social preview.
+	 */
+	protected function get_image_url() {
+		$post_id = $this->post->ID;
+
+		if ( has_post_thumbnail( $post_id ) ) {
+			$featured_image_info = wp_get_attachment_image_src( get_post_thumbnail_id( $post_id ), 'thumbnail' );
+			return $featured_image_info[0];
+		}
+
+		return WPSEO_Image_Utils::get_first_usable_content_image_for_post( $post_id );
+	}
+
+	/**
+	 * Returns the url to search for keyword for the post.
 	 *
 	 * @return string
 	 */
@@ -71,7 +91,7 @@ class WPSEO_Post_Metabox_Formatter implements WPSEO_Metabox_Formatter_Interface 
 	}
 
 	/**
-	 * Returns the url to edit the taxonomy
+	 * Returns the url to edit the taxonomy.
 	 *
 	 * @return string
 	 */
@@ -80,7 +100,7 @@ class WPSEO_Post_Metabox_Formatter implements WPSEO_Metabox_Formatter_Interface 
 	}
 
 	/**
-	 * Returns a base URL for use in the JS, takes permalink structure into account
+	 * Returns a base URL for use in the JS, takes permalink structure into account.
 	 *
 	 * @return string
 	 */
@@ -194,7 +214,7 @@ class WPSEO_Post_Metabox_Formatter implements WPSEO_Metabox_Formatter_Interface 
 	}
 
 	/**
-	 * Determines the date to be displayed in the snippet preview
+	 * Determines the date to be displayed in the snippet preview.
 	 *
 	 * @return string
 	 */

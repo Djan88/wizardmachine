@@ -21,12 +21,16 @@ class Yoast_Form {
 	public static $instance;
 
 	/**
+	 * The short name of the option to use for the current page.
+	 *
 	 * @var string
 	 * @since 2.0
 	 */
 	public $option_name;
 
 	/**
+	 * Option values for the WPSEO_Options.
+	 *
 	 * @var array
 	 * @since 2.0
 	 */
@@ -41,7 +45,7 @@ class Yoast_Form {
 	protected $option_instance = null;
 
 	/**
-	 * Get the singleton instance of this class
+	 * Get the singleton instance of this class.
 	 *
 	 * @since 2.0
 	 *
@@ -56,7 +60,7 @@ class Yoast_Form {
 	}
 
 	/**
-	 * Generates the header for admin pages
+	 * Generates the header for admin pages.
 	 *
 	 * @since 2.0
 	 *
@@ -73,8 +77,8 @@ class Yoast_Form {
 		<div class="wrap yoast wpseo-admin-page <?php echo esc_attr( 'page-' . $option ); ?>">
 		<?php
 		/**
-		 * Display the updated/error messages
-		 * Only needed as our settings page is not under options, otherwise it will automatically be included
+		 * Display the updated/error messages.
+		 * Only needed as our settings page is not under options, otherwise it will automatically be included.
 		 *
 		 * @see settings_errors()
 		 */
@@ -104,7 +108,7 @@ class Yoast_Form {
 	}
 
 	/**
-	 * Set the option used in output for form elements
+	 * Set the option used in output for form elements.
 	 *
 	 * @since 2.0
 	 *
@@ -140,7 +144,7 @@ class Yoast_Form {
 	}
 
 	/**
-	 * Generates the footer for admin pages
+	 * Generates the footer for admin pages.
 	 *
 	 * @since 2.0
 	 *
@@ -149,19 +153,32 @@ class Yoast_Form {
 	 */
 	public function admin_footer( $submit = true, $show_sidebar = true ) {
 		if ( $submit ) {
+			$settings_changed_listener = new WPSEO_Admin_Settings_Changed_Listener();
+			echo '<div id="wpseo-submit-container">';
+
+			echo '<div id="wpseo-submit-container-float" class="wpseo-admin-submit">';
 			submit_button( __( 'Save changes', 'wordpress-seo' ) );
+			$settings_changed_listener->show_success_message();
+			echo '</div>';
+
+			echo '<div id="wpseo-submit-container-fixed" class="wpseo-admin-submit wpseo-admin-submit-fixed" style="display: none;">';
+			submit_button( __( 'Save changes', 'wordpress-seo' ) );
+			$settings_changed_listener->show_success_message();
+			echo '</div>';
+
+			echo '</div>';
 
 			echo '
 			</form>';
 		}
 
 		/**
-		 * Apply general admin_footer hooks
+		 * Apply general admin_footer hooks.
 		 */
 		do_action( 'wpseo_admin_footer', $this );
 
 		/**
-		 * Run possibly set actions to add for example an i18n box
+		 * Run possibly set actions to add for example an i18n box.
 		 */
 		do_action( 'wpseo_admin_promo_footer' );
 
@@ -196,7 +213,7 @@ class Yoast_Form {
 	}
 
 	/**
-	 * Output a label element
+	 * Output a label element.
 	 *
 	 * @since 2.0
 	 *
@@ -262,9 +279,6 @@ class Yoast_Form {
 
 		$class = '';
 		if ( $label_left !== false ) {
-			if ( ! empty( $label_left ) ) {
-				$label_left .= ':';
-			}
 			$this->label( $label_left, array( 'for' => $var ) );
 		}
 		else {
@@ -290,8 +304,9 @@ class Yoast_Form {
 	 * @param array  $buttons Array of two visual labels for the buttons (defaults Disabled/Enabled).
 	 * @param bool   $reverse Reverse order of buttons (default true).
 	 * @param string $help    Inline Help that will be printed out before the visible toggles text.
+	 * @param bool   $strong  Whether the visual label is displayed in strong text. Default is false.
 	 */
-	public function light_switch( $var, $label, $buttons = array(), $reverse = true, $help = '' ) {
+	public function light_switch( $var, $label, $buttons = array(), $reverse = true, $help = '', $strong = false ) {
 
 		if ( ! isset( $this->options[ $var ] ) ) {
 			$this->options[ $var ] = false;
@@ -318,8 +333,10 @@ class Yoast_Form {
 
 		$help_class = ! empty( $help ) ? ' switch-container__has-help' : '';
 
+		$strong_class = ( $strong ) ? ' switch-light-visual-label__strong' : '';
+
 		echo '<div class="switch-container', $help_class, '">',
-		'<span class="switch-light-visual-label" id="', esc_attr( $var . '-label' ), '">', esc_html( $label ), '</span>' . $help,
+		'<span class="switch-light-visual-label' . $strong_class . '" id="', esc_attr( $var . '-label' ), '">', esc_html( $label ), '</span>' . $help,
 		'<label class="', $class, '"><b class="switch-yoast-seo-jaws-a11y">&nbsp;</b>',
 		'<input type="checkbox" aria-labelledby="', esc_attr( $var . '-label' ), '" id="', esc_attr( $var ), '" name="', esc_attr( $this->option_name ), '[', esc_attr( $var ), ']" value="on"', checked( $this->options[ $var ], 'on', false ), disabled( $this->is_control_disabled( $var ), true, false ), '/>',
 		'<span aria-hidden="true">
@@ -343,30 +360,38 @@ class Yoast_Form {
 	public function textinput( $var, $label, $attr = array() ) {
 		if ( ! is_array( $attr ) ) {
 			$attr = array(
-				'class' => $attr,
+				'class'    => $attr,
 				'disabled' => false,
 			);
 		}
 
-		$defaults     = array(
+		$defaults   = array(
 			'placeholder' => '',
 			'class'       => '',
 		);
-		$attr         = wp_parse_args( $attr, $defaults );
-		$val          = isset( $this->options[ $var ] ) ? $this->options[ $var ] : '';
+		$attr       = wp_parse_args( $attr, $defaults );
+		$val        = isset( $this->options[ $var ] ) ? $this->options[ $var ] : '';
 		$attributes = isset( $attr['autocomplete'] ) ? ' autocomplete="' . esc_attr( $attr['autocomplete'] ) . '"' : '';
 		if ( isset( $attr['disabled'] ) && $attr['disabled'] ) {
 			$attributes .= ' disabled';
 		}
 
 		$this->label(
-			$label . ':',
+			$label,
 			array(
 				'for'   => $var,
 				'class' => 'textinput',
 			)
 		);
-		echo '<input' . $attributes . ' class="textinput ' . esc_attr( $attr['class'] ) . ' " placeholder="' . esc_attr( $attr['placeholder'] ) . '" type="text" id="', esc_attr( $var ), '" name="', esc_attr( $this->option_name ), '[', esc_attr( $var ), ']" value="', esc_attr( $val ), '"', disabled( $this->is_control_disabled( $var ), true, false ), '/>', '<br class="clear" />';
+
+		$has_input_error = Yoast_Input_Validation::yoast_form_control_has_error( $var );
+		$aria_attributes = Yoast_Input_Validation::get_the_aria_invalid_attribute( $var );
+
+		Yoast_Input_Validation::set_error_descriptions();
+		$aria_attributes .= Yoast_Input_Validation::get_the_aria_describedby_attribute( $var );
+
+		echo '<input' . $attributes . $aria_attributes . ' class="textinput ' . esc_attr( $attr['class'] ) . '" placeholder="' . esc_attr( $attr['placeholder'] ) . '" type="text" id="', esc_attr( $var ), '" name="', esc_attr( $this->option_name ), '[', esc_attr( $var ), ']" value="', esc_attr( $val ), '"', disabled( $this->is_control_disabled( $var ), true, false ), '/>', '<br class="clear" />';
+		echo Yoast_Input_Validation::get_the_error_description( $var );
 	}
 
 	/**
@@ -394,7 +419,7 @@ class Yoast_Form {
 		$val      = ( isset( $this->options[ $var ] ) ) ? $this->options[ $var ] : '';
 
 		$this->label(
-			$label . ':',
+			$label,
 			array(
 				'for'   => $var,
 				'class' => 'textinput',
@@ -443,7 +468,7 @@ class Yoast_Form {
 
 		if ( $show_label ) {
 			$this->label(
-				$label . ':',
+				$label,
 				array(
 					'for'   => $var,
 					'class' => 'select',
@@ -493,7 +518,7 @@ class Yoast_Form {
 
 		$var_esc = esc_attr( $var );
 		$this->label(
-			$label . ':',
+			$label,
 			array(
 				'for'   => $var,
 				'class' => 'select',
@@ -511,7 +536,7 @@ class Yoast_Form {
 	}
 
 	/**
-	 * Media input
+	 * Media input.
 	 *
 	 * @since 2.0
 	 *
@@ -532,7 +557,7 @@ class Yoast_Form {
 		$var_esc = esc_attr( $var );
 
 		$this->label(
-			$label . ':',
+			$label,
 			array(
 				'for'   => 'wpseo_' . $var,
 				'class' => 'select',

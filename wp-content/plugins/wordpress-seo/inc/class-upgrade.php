@@ -6,12 +6,12 @@
  */
 
 /**
- * This code handles the option upgrades
+ * This code handles the option upgrades.
  */
 class WPSEO_Upgrade {
 
 	/**
-	 * Class constructor
+	 * Class constructor.
 	 */
 	public function __construct() {
 		$version = WPSEO_Options::get( 'version' );
@@ -128,12 +128,29 @@ class WPSEO_Upgrade {
 			$this->upgrade_100();
 		}
 
+		if ( version_compare( $version, '11.1-RC0', '<' ) ) {
+			$this->upgrade_111();
+		}
+
+		if ( version_compare( $version, '12.1-RC0', '<' ) ) {
+			/** Reset notifications because we removed the AMP Glue plugin notification */
+			$this->clean_all_notifications();
+		}
+
+		if ( version_compare( $version, '12.3-RC0', '<' ) ) {
+			$this->upgrade_123();
+		}
+
+		if ( version_compare( $version, '12.4-RC0', '<' ) ) {
+			$this->upgrade_124();
+		}
+
 		// Since 3.7.
 		$upsell_notice = new WPSEO_Product_Upsell_Notice();
 		$upsell_notice->set_upgrade_notice();
 
 		/**
-		 * Filter: 'wpseo_run_upgrade' - Runs the upgrade hook which are dependent on Yoast SEO
+		 * Filter: 'wpseo_run_upgrade' - Runs the upgrade hook which are dependent on Yoast SEO.
 		 *
 		 * @api        string - The current version of Yoast SEO
 		 */
@@ -170,7 +187,7 @@ class WPSEO_Upgrade {
 	}
 
 	/**
-	 * Run the Yoast SEO 1.5 upgrade routine
+	 * Run the Yoast SEO 1.5 upgrade routine.
 	 *
 	 * @param string $version Current plugin version.
 	 */
@@ -181,12 +198,12 @@ class WPSEO_Upgrade {
 	}
 
 	/**
-	 * Moves options that moved position in WPSEO 2.0
+	 * Moves options that moved position in WPSEO 2.0.
 	 */
 	private function upgrade_20() {
 		/**
 		 * Clean up stray wpseo_ms options from the options table, option should only exist in the sitemeta table.
-		 * This could have been caused in many version of Yoast SEO, so deleting it for everything below 2.0
+		 * This could have been caused in many version of Yoast SEO, so deleting it for everything below 2.0.
 		 */
 		delete_option( 'wpseo_ms' );
 
@@ -221,7 +238,7 @@ class WPSEO_Upgrade {
 	}
 
 	/**
-	 * Performs upgrade functions to Yoast SEO 2.2
+	 * Performs upgrade functions to Yoast SEO 2.2.
 	 */
 	private function upgrade_22() {
 		// Unschedule our tracking.
@@ -231,7 +248,7 @@ class WPSEO_Upgrade {
 	}
 
 	/**
-	 * Schedules upgrade function to Yoast SEO 2.3
+	 * Schedules upgrade function to Yoast SEO 2.3.
 	 */
 	private function upgrade_23() {
 		add_action( 'wp', array( $this, 'upgrade_23_query' ), 90 );
@@ -239,7 +256,7 @@ class WPSEO_Upgrade {
 	}
 
 	/**
-	 * Performs upgrade query to Yoast SEO 2.3
+	 * Performs upgrade query to Yoast SEO 2.3.
 	 */
 	public function upgrade_23_query() {
 		$wp_query = new WP_Query( 'post_type=any&meta_key=_yoast_wpseo_sitemap-include&meta_value=never&order=ASC' );
@@ -449,8 +466,8 @@ class WPSEO_Upgrade {
 	}
 
 	/**
-	 * Updates the links for the link count when there is a difference between the site and home url. We've used the
-	 * site url instead of the home url.
+	 * Updates the links for the link count when there is a difference between the site and home url.
+	 * We've used the site url instead of the home url.
 	 *
 	 * @return void
 	 */
@@ -661,6 +678,50 @@ class WPSEO_Upgrade {
 		// Removes recalibration options.
 		WPSEO_Options::clean_up( 'wpseo' );
 		delete_option( 'wpseo_recalibration_beta_mailinglist_subscription' );
+	}
+
+	/**
+	 * Performs the 11.1 upgrade.
+	 *
+	 * @return void
+	 */
+	private function upgrade_111() {
+		// Set company_or_person to company when it's an invalid value.
+		$company_or_person = WPSEO_Options::get( 'company_or_person', '' );
+
+		if ( ! in_array( $company_or_person, array( 'company', 'person' ), true ) ) {
+			WPSEO_Options::set( 'company_or_person', 'company' );
+		}
+	}
+
+	/**
+	 * Performs the 12.3 upgrade.
+	 *
+	 * Removes the about notice when its still in the database.
+	 */
+	private function upgrade_123() {
+		$plugins = array(
+			'yoast-seo-premium',
+			'video-seo-for-wordpress-seo-by-yoast',
+			'yoast-news-seo',
+			'local-seo-for-yoast-seo',
+			'yoast-woocommerce-seo',
+			'yoast-acf-analysis',
+		);
+
+		$center = Yoast_Notification_Center::get();
+		foreach ( $plugins as $plugin ) {
+			$center->remove_notification_by_id( 'wpseo-outdated-yoast-seo-plugin-' . $plugin );
+		}
+	}
+
+	/**
+	 * Performs the 12.4 upgrade.
+	 *
+	 * Removes the Google plus defaults from the database.
+	 */
+	private function upgrade_124() {
+		$this->cleanup_option_data( 'wpseo_social' );
 	}
 
 	/**
