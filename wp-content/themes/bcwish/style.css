@@ -2246,7 +2246,7 @@ button.wizard_starter_alt.btn.btn-success
 }
 .ring:after, .ring:before
 {
-  content: '.';
+  content: ' ';
   width: 2px;
   height: 2px;
   color: green;
@@ -2265,8 +2265,8 @@ button.wizard_starter_alt.btn.btn-success
 }
 .ring:before
 {
-  bottom: -3px;
-  left: 45%;
+  bottom: 5px;
+  left: 49%;
 }
 /*--------------------------------------------------------------
 # Responsive Media Queries
