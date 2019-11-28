@@ -17261,7 +17261,7 @@ jQuery(function() {
         pointsStatus = false;
         console.log('status '+' '+jQuery(this).text()+' '+jQuery(this).css('top')+' '+pointsStatus);
       }
-      if (parseFloat(jQuery('.ring').css('left') < 480) {
+      if (parseFloat(jQuery('.ring').css('left')) < 480) {
         pointsStatus = false;
       }
     });
