@@ -621,6 +621,7 @@ h6 {
 
 #services {
   padding: 60px 0 40px 0;
+  overflow: hidden;
   /*border-top: 2px solid #535175;*/
 }
 
@@ -1805,18 +1806,18 @@ h3.wizard_heading
 {
   content: '';
   position: absolute;
-  width: 500px;
+  width: 250px;
   border-top: 1px solid red;
   top: 14px;
-  left: -220px;
+  left: -115px;
 }
 .zone:hover:after
 {
   content: '';
   position: absolute;
-  height: 500px;
+  height: 250px;
   border-left: 1px solid red;
-  top: -220px;
+  top: -110px;
   left: 14px;
 }
 .wizard_main_screen 
