@@ -621,8 +621,11 @@ h6 {
 
 #services {
   padding: 60px 0 40px 0;
-  overflow: hidden;
   /*border-top: 2px solid #535175;*/
+}
+.all_content
+{
+  overflow: hidden;
 }
 
 #services .box {
