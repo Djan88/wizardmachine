@@ -17280,13 +17280,7 @@ jQuery(function() {
         protocolfromMemory = eval(localStorage.getItem('paused'));
         console.log(protocolfromMemory);
         protocolfromMemory();
-        pausedStatus = false;
-        jQuery('.wizard_play, .wizard_starter_alt').addClass('hidden');
-        jQuery('.wizard_stop, .zone_ring').fadeIn(500).removeClass('hidden');
       } else {
-        pausedStatus = false;
-        jQuery('.wizard_play, .wizard_starter_alt').addClass('hidden');
-        jQuery('.wizard_stop, .zone_ring').fadeIn(500).removeClass('hidden');
         jQuery('.wizard_stop').removeClass('wizard_stop_inProgress');
         var protocol = localStorage.getItem('cur_protocol');
         console.log(protocol);
@@ -17319,6 +17313,9 @@ jQuery(function() {
           jQuery('.status_title').text('Висцеральный протокол');
         }
       }
+      pausedStatus = false;
+      jQuery('.wizard_play, .wizard_starter_alt').addClass('hidden');
+      jQuery('.wizard_stop, .zone_ring').fadeIn(500).removeClass('hidden');
       jQuery('.wizard_to_protList').addClass('prot_in_progress');
       jQuery('.ring').addClass('in_progress');
       localStorage.removeItem('paused');
