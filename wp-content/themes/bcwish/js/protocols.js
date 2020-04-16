@@ -17259,7 +17259,7 @@ jQuery(function() {
     jQuery('.zone_movable').each(function() {
       if(parseFloat(jQuery(this).css('left')) < 480){
         pointsStatus = false;
-        console.log('status '+' '+jQuery(this).text()+' '+jQuery(this).css('top')+' '+pointsStatus);
+        // console.log('status '+' '+jQuery(this).text()+' '+jQuery(this).css('top')+' '+pointsStatus);
       }
       if (parseFloat(jQuery('.ring').css('left')) < 380) {
         pointsStatus = false;
@@ -17278,12 +17278,10 @@ jQuery(function() {
         // jQuery('.wizard_returned').attr('src', localStorage.getItem('pausedPhoto'));
         // console.log(localStorage.getItem('pausedPhoto'));
         protocolfromMemory = eval(localStorage.getItem('paused'));
-        console.log(protocolfromMemory);
         protocolfromMemory();
       } else {
         jQuery('.wizard_stop').removeClass('wizard_stop_inProgress');
         var protocol = localStorage.getItem('cur_protocol');
-        console.log(protocol);
         if (protocol == 'v1') {
           v1();
           jQuery('.status_title').text('Протокол V1');
@@ -17314,6 +17312,7 @@ jQuery(function() {
         }
       }
       pausedStatus = false;
+      console.log('ding');
       jQuery('.wizard_play, .wizard_starter_alt').addClass('hidden');
       jQuery('.wizard_stop, .zone_ring').fadeIn(500).removeClass('hidden');
       jQuery('.wizard_to_protList').addClass('prot_in_progress');
@@ -17338,7 +17337,7 @@ jQuery(function() {
     setTimeout(hideNote, 5000);
     localStorage.setItem('pausedPhoto', jQuery('.wizard_returned').attr('src'));
     pausedStatus = true;
-    console.log('pausedStatus = true');
+    // console.log('pausedStatus = true');
   });
 
 });
