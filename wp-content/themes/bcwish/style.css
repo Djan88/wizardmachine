@@ -2245,7 +2245,7 @@ button.wizard_play.header_btn .fa
 button.wizard_starter_alt.btn.btn-success 
 {
   margin: auto;
-  display: inherit!important;
+  display: inherit;
   margin-top: 20px;
 }
 .ring:after, .ring:before
