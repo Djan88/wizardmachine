@@ -1461,6 +1461,7 @@ jQuery(function() {
         }
         count_animation += 1;
         rotateVal += 1.5;
+        console.log(count_animation);
       } else {
         clearInterval(phaseOne);
         count_animation = 1;
