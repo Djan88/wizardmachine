@@ -1430,8 +1430,8 @@ jQuery(function() {
              .fromTo('.ring',{rotation: -90}, {duration: 15, ease: "none", rotation: 0})
 
     var zone_ring_gsap = gsap.timeline();
-    zone_ring_gsap.fromTo('.zone_ring',{rotation: 0}, {duration: 60, ease: "none", rotation: -360})
-             .fromTo('.zone_ring',{rotation: -360}, {duration: 30, ease: "none", rotation: -180})
+    zone_ring_gsap.fromTo('.zone_ring',{rotation: 0}, {duration: 60, ease: "none", rotation: -480})
+             .fromTo('.zone_ring',{rotation: -480}, {duration: 30, ease: "none", rotation: -240})
 
     phaseOne = setInterval(function(){
       if (count_animation <= 344){
@@ -1454,6 +1454,7 @@ jQuery(function() {
           jQuery('.zone_v2, .zone_d2_, .zone_d3, .zone_d4').css({
             background: '#fff url(/wp-content/themes/bcwish/img/povregdenie_demona.png) center center/100% no-repeat'
           });
+        } else if (count_animation > 240) {
           jQuery('.zone_ring').css({
             background: '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat'
           });
