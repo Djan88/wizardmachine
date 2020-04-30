@@ -1481,6 +1481,8 @@ jQuery(function() {
             jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.5)');
             jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat');
         }
+        console.log(cur_animation_val);
+        console.log(d12Val);
       } else {
         clearInterval(phaseOne);
         count_animation = 1;
