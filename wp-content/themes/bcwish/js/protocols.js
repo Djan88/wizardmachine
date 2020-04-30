@@ -1454,14 +1454,12 @@ jQuery(function() {
           jQuery('.zone_v2, .zone_d2_, .zone_d3, .zone_d4').css({
             background: '#fff url(/wp-content/themes/bcwish/img/povregdenie_demona.png) center center/100% no-repeat'
           });
-        } else if (count_animation > 240) {
           jQuery('.zone_ring').css({
             background: '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat'
           });
         }
         count_animation += 1;
         rotateVal += 1.5;
-        console.log(count_animation);
       } else {
         clearInterval(phaseOne);
         count_animation = 1;
