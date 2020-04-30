@@ -1424,8 +1424,8 @@ jQuery(function() {
     gsap.fromTo(".zone_cl",{scale: 1.5}, {duration: 90, ease: "none", rotation: -360, scale: 1.5});
 
     var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.ring',{rotation: 0}, {duration: 60, ease: "none", rotation: 180})
-             .fromTo('.ring',{rotation: 180}, {duration: 60, ease: "none", rotation: 0})
+    zone_gsap.fromTo('.ring',{rotation: 0}, {duration: 30, ease: "none", rotation: 180})
+             .fromTo('.ring',{rotation: 180}, {duration: 30, ease: "none", rotation: 0})
              .fromTo('.ring',{rotation: 0}, {duration: 15, ease: "none", rotation: -45})
              .fromTo('.ring',{rotation: -45}, {duration: 15, ease: "none", rotation: 0})
 
