@@ -1452,7 +1452,7 @@ jQuery(function() {
             background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat',
             zIndex: '1000'
         });
-        gsap.to(".zone_d2", {duration: 86, rotation: 5360});
+        gsap.to(".zone_d2", {duration: 86, rotation: -360});
         jQuery('.zone_ring')
           .removeClass('hidden')
           .css({
