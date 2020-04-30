@@ -1452,31 +1452,31 @@ jQuery(function() {
             transform: 'rotate(-'+d12Val+'deg) scale(1.5)'
           });
         count_animation += 1;
-        rotateVal += 1.5;
+        rotateVal += 2;
         if(count_animation <= 120){
-            cur_animation_val += 1.5;
+            cur_animation_val += 2;
             d12Val+= 3;
             jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
         } else if (count_animation >= 120 && count_animation <= 228){
-            cur_animation_val -= 1.5;
+            cur_animation_val -= 2;
             d12Val+= 3;
             jQuery('.zone_ring').css('transform', 'rotate(-'+d12Val+'deg) scale(1.5)');
             jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
         } else if (count_animation >= 228 && count_animation <= 292){
-            cur_animation_val -= 1.5;
+            cur_animation_val -= 2;
             d12Val+= 3;
             jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
             jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.5)');
             jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat');
         } else if (count_animation >= 292 && count_animation <= 344){
-            cur_animation_val += 1.5;
+            cur_animation_val += 2;
             d12Val+= 3;
             jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
             jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.5)');
             jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat');
         } else {
             d12Val+= 3;
-            cur_animation_val += 1.5;
+            cur_animation_val += 2;
             jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
             jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.5)');
             jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat');
