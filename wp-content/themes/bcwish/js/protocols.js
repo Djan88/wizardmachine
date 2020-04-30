@@ -1421,13 +1421,13 @@ jQuery(function() {
     jQuery('.zone_cl').css({
       background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat',
     });
-    gsap.fromTo(".zone_cl",{scale: 1.5}, {duration: 90, rotation: -360, scale: 1.5});
-    
+    gsap.fromTo(".zone_cl",{scale: 1.5}, {duration: 90, ease: "none", rotation: -360, scale: 1.5});
+
     var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.ring',{rotation: 0}, {duration: 60, rotation: 180})
-             .fromTo('.ring',{rotation: 180}, {duration: 60, rotation: 0})
-             .fromTo('.ring',{rotation: 0}, {duration: 15, rotation: -45})
-             .fromTo('.ring',{rotation: -45}, {duration: 15, rotation: 0})
+    zone_gsap.fromTo('.ring',{rotation: 0}, {duration: 60, ease: "none", rotation: 180})
+             .fromTo('.ring',{rotation: 180}, {duration: 60, ease: "none", rotation: 0})
+             .fromTo('.ring',{rotation: 0}, {duration: 15, ease: "none", rotation: -45})
+             .fromTo('.ring',{rotation: -45}, {duration: 15, ease: "none", rotation: 0})
 
     phaseOne = setInterval(function(){
       if (count_animation <= 344){
