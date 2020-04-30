@@ -1430,8 +1430,8 @@ jQuery(function() {
              .fromTo('.ring',{rotation: -90}, {duration: 15, ease: "none", rotation: 0})
 
     var zone_ring_gsap = gsap.timeline();
-    zone_ring_gsap.fromTo('.zone_ring',{rotation: 0}, {duration: 75, ease: "none", rotation: -450})
-             .fromTo('.zone_ring',{rotation: -450}, {duration: 15, ease: "none", rotation: -360})
+    zone_ring_gsap.fromTo('.zone_ring',{rotation: 0}, {duration: 60, ease: "none", rotation: -360})
+             .fromTo('.zone_ring',{rotation: -360}, {duration: 30, ease: "none", rotation: -180})
 
     phaseOne = setInterval(function(){
       if (count_animation <= 344){
