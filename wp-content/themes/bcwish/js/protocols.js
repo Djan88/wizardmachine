@@ -1433,17 +1433,26 @@ jQuery(function() {
             background: '#fff url(/wp-content/themes/bcwish/img/povregdenie_demona.png) center center/100% no-repeat'
           });
         }
-        // jQuery('.zone_cl').css({
-        //     color: 'transparent',
-        //     borderColor: 'transparent',
-        //     opacity: 0.8,
-        //     borderWidth: '1px',
-        //     paddingTop: '4px',
-        //     background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat',
-        //     transform: 'rotate(-'+rotateVal+'deg) scale(1.5)',
-        //     zIndex: '1000'
-        // });
-        gsap.to(".zone_cl", {duration: 3, rotation: 360});
+        jQuery('.zone_cl').css({
+            color: 'transparent',
+            borderColor: 'transparent',
+            opacity: 0.8,
+            borderWidth: '1px',
+            paddingTop: '4px',
+            background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat',
+            transform: 'rotate(-'+rotateVal+'deg) scale(1.5)',
+            zIndex: '1000'
+        });
+        jQuery('.zone_d2').css({
+            color: 'transparent',
+            borderColor: 'transparent',
+            opacity: 0.8,
+            borderWidth: '1px',
+            paddingTop: '4px',
+            background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat',
+            zIndex: '1000'
+        });
+        gsap.to(".zone_d2", {duration: 86, rotation: 5360});
         jQuery('.zone_ring')
           .removeClass('hidden')
           .css({
