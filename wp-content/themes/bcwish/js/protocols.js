@@ -1449,11 +1449,10 @@ jQuery(function() {
             opacity: 0.8,
             borderWidth: '1px',
             paddingTop: '4px',
-            transform: 'scale(1.5)',
             background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat',
             zIndex: '1000'
         });
-        gsap.to(".zone_d2", {duration: 86, rotation: -360});
+        gsap.to(".zone_d2", {duration: 86, rotation: -360, scale: 1.5});
         jQuery('.zone_ring')
           .removeClass('hidden')
           .css({
