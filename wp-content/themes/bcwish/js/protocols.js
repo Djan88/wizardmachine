@@ -1450,10 +1450,11 @@ jQuery(function() {
           jQuery('.zone_v2, .zone_d2_, .zone_d3, .zone_d4').css({
             background: '#fff url(/wp-content/themes/bcwish/img/travma.png) center center/100% no-repeat'
           });
-        } else if (count_animation > 220) {
+        } else if (count_animation > 220 && count_animation <= 240) {
           jQuery('.zone_v2, .zone_d2_, .zone_d3, .zone_d4').css({
             background: '#fff url(/wp-content/themes/bcwish/img/povregdenie_demona.png) center center/100% no-repeat'
           });
+        } else if (count_animation > 220) {
           jQuery('.zone_ring').css({
             background: '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat'
           });
