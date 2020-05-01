@@ -179,7 +179,7 @@ jQuery(function() {
   //Этап 5-2-4
     cur_animation_val = 10;
     count_animation = 1;
-    jQuery('.zone_v3').css({
+    jQuery('.zone_v2, .zone_d2_, .zone_d3, .zone_d4').css({
       background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
       transform: 'scale(1.5)',
       color: 'transparent',
@@ -191,9 +191,9 @@ jQuery(function() {
     });
 
     var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_v3',{rotation: -10, scale: 1.5}, {duration: 40, ease: "none", rotation: -60, scale: 1.5})
-             .fromTo('.zone_v3',{rotation: -60, scale: 1.5}, {duration: 17, ease: "none", rotation: -60, scale: 1.5})
-             .fromTo('.zone_v3',{rotation: -60, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    zone_gsap.fromTo('.zone_v2, .zone_d2_, .zone_d3, .zone_d4',{rotation: -10, scale: 1.5}, {duration: 40, ease: "none", rotation: -70, scale: 1.5})
+             .fromTo('.zone_v2, .zone_d2_, .zone_d3, .zone_d4',{rotation: -70, scale: 1.5}, {duration: 17, ease: "none", rotation: -70, scale: 1.5})
+             .fromTo('.zone_v2, .zone_d2_, .zone_d3, .zone_d4',{rotation: -70, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
     
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
@@ -202,17 +202,6 @@ jQuery(function() {
               reloadSound.play();
           };
           reloadTime += 1;
-          cur_animation_val += 1.5;
-          jQuery('.zone_v2, .zone_d2_, .zone_d3, .zone_d4').css({
-            background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
-            transform: 'rotate(-'+cur_animation_val+'deg) scale(1.5)',
-            color: 'transparent',
-            borderColor: 'transparent',
-            opacity: 0.8,
-            borderWidth: '1px',
-            paddingTop: '4px',
-            zIndex: '1000'
-          });
           count_animation += 1;
         } else if(count_animation <= 57) {
             count_animation += 1;
