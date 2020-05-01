@@ -11894,7 +11894,7 @@ jQuery(function() {
         } else if (count_animation > 220 && count_animation <= 440) {
           jQuery('.zone_d2_, .zone_s2').css({
             transform: 'rotate('+rotateVal+'deg) scale(1.5)',
-                        background: '#fff url(/wp-content/themes/bcwish/img/superdisfunction.png) center center/100% no-repeat',
+            background: '#fff url(/wp-content/themes/bcwish/img/superdisfunction.png) center center/100% no-repeat',
           });
         } else if (count_animation > 440 && count_animation <= 560) {
           jQuery('.zone_d2_, .zone_s2').css({
