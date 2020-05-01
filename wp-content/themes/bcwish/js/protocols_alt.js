@@ -191,8 +191,8 @@ jQuery(function() {
     });
 
     var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_v3',{rotation: 10, scale: 1.5}, {duration: 40, ease: "none", rotation: 60, scale: 1.5})
-             .fromTo('.zone_v3',{rotation: 60, scale: 1.5}, {duration: 17, ease: "none", rotation: 60, scale: 1.5})
+    zone_gsap.fromTo('.zone_v3',{rotation: -10, scale: 1.5}, {duration: 40, ease: "none", rotation: -60, scale: 1.5})
+             .fromTo('.zone_v3',{rotation: -60, scale: 1.5}, {duration: 17, ease: "none", rotation: -60, scale: 1.5})
     
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
