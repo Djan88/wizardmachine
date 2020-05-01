@@ -450,6 +450,8 @@ jQuery(function() {
     reloadTime = 0;
     cur_animation_val = 0;
     count_animation = 1;
+    jQuery('.ring').removeClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
     jQuery('.zone_v5, .zone_s6, .zone_s5, .zone_s2, .zone_v1').css({
         color: 'transparent',
         borderColor: 'transparent',
@@ -759,6 +761,8 @@ jQuery(function() {
     reloadTime = 0;
     cur_animation_val = 0;
     count_animation = 1;
+    jQuery('.ring').removeClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
     jQuery('.zone_v5, .zone_s2_, .zone_d2, .zone_d5, .zone_d6').css({
         color: 'transparent',
         borderColor: 'transparent',
@@ -1069,6 +1073,8 @@ jQuery(function() {
     reloadTime = 0;
     cur_animation_val = 0;
     count_animation = 1;
+    jQuery('.ring').removeClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
     jQuery('.zone_s3, .zone_v4').css({
         color: 'transparent',
         borderColor: 'transparent',
