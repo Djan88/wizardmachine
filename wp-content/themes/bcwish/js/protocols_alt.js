@@ -185,7 +185,7 @@ jQuery(function() {
         transform: 'scale(1.5)',
         zIndex: '1000'
     });
-    gsap.to('.zone_d2, .zone_s2_, .zone_d5, .zone_d6', {duration: 90, ease: "none", rotation: 360})
+    gsap.fromTo('.zone_d2, .zone_s2_, .zone_d5, .zone_d6',{scale: 1.5}, {duration: 90, ease: "none", rotation: 360, scale: 1.5});
     jQuery('.zone_ring')
       .removeClass('hidden')
       .css({
