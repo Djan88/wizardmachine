@@ -171,7 +171,7 @@ jQuery(function() {
 
 
 
-
+// 240   360   600
 
   mmt_codesAlt = function(){
     jQuery('.wizard_heading').text('Выполняется Универсальный протокол');
@@ -217,6 +217,10 @@ jQuery(function() {
                   .fromTo('.zone_ring',{rotation: -240}, {duration: 60, ease: "none", rotation: -720})
                   .fromTo('.zone_ring',{rotation: -720}, {duration: 30, ease: "none", rotation: -480})
 
+    var zone_superdisfunction_gsap = gsap.timeline();
+    zone_superdisfunction_gsap.fromTo('.zone_d2_, .zone_s2',{rotation: 0, scale: 1.5}, {duration: 55, ease: "none", rotation: 0, scale: 1.5})
+                  .fromTo('.zone_d2_, .zone_s2',{rotation: 0, scale: 1.5}, {duration: 55, ease: "none", rotation: 480, scale: 1.5})
+
     phaseOne = setInterval(function(){
       if (count_animation <= 720){
         if (reloadTime == 0){                                                                       //1
@@ -231,11 +235,19 @@ jQuery(function() {
         } else if (count_animation > 120 && count_animation <= 220) {
           jQuery('.zone_d2_, .zone_s2').css({background: '#fff url(/wp-content/themes/bcwish/img/vaterfall.png) center center/100% no-repeat'});
         } else if (count_animation > 220 && count_animation <= 440) {
+          if (count_animation == 240) {
+            jQuery('.zone_ring').css({background: '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat'});
+          } else if (count_animation == 360) {
+            jQuery('.zone_ring').css({background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat'});
+          }
           jQuery('.zone_d2_, .zone_s2').css({background: '#fff url(/wp-content/themes/bcwish/img/superdisfunction.png) center center/100% no-repeat'});
         }  else if (count_animation > 440 && count_animation <= 560) {
           jQuery('.zone_d2_, .zone_s2').css({background: '#fff url(/wp-content/themes/bcwish/img/travma.png) center center/100% no-repeat'});
         } else if (count_animation > 560) {
           jQuery('.zone_d2_, .zone_s2').css({background: '#fff url(/wp-content/themes/bcwish/img/povregdenie_demona.png) center center/100% no-repeat'});
+          if (count_animation == 600) {
+            jQuery('.zone_ring').css({background: '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat'});
+          }
         }
         count_animation += 1;
         console.log(count_animation);
