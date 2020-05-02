@@ -11261,7 +11261,7 @@ jQuery(function() {
         transform: 'scale(1.5)',
         zIndex: '1000'
     });
-    gsap.fromTo('.zone_s3, .zone_v4',{scale: 1.5}, {duration: 90, ease: "none", rotation: 360, scale: 1.5});
+    gsap.fromTo('.zone_s3, .zone_v4',{scale: 1.5, rotation: 0}, {duration: 90, ease: "none", rotation: 360, scale: 1.5});
     jQuery('.zone_ring')
       .removeClass('hidden')
       .css({
@@ -11274,7 +11274,7 @@ jQuery(function() {
              .fromTo('.ring',{rotation: 180}, {duration: 30, ease: "none", rotation: 0})
              .fromTo('.ring',{rotation: 0}, {duration: 15, ease: "none", rotation: -90})
              .fromTo('.ring',{rotation: -90}, {duration: 15, ease: "none", rotation: 0})
-             .to('.zone_cl', {duration: 1, ease: "none", scale: 1})
+             .to('.zone_s3, .zone_v4', {duration: 1, ease: "none", scale: 1})
 
     var zone_ring_gsap = gsap.timeline();
     zone_ring_gsap.fromTo('.zone_ring',{rotation: 0}, {duration: 60, ease: "none", rotation: -480})
@@ -11289,7 +11289,7 @@ jQuery(function() {
             sound.play();
         };
         reloadTime += 1;
-        if (count_animation > 220) {
+        if (count_animation > 240) {
           jQuery('.zone_ring').css({background: '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat'});
         }
         count_animation += 1;
@@ -11336,7 +11336,7 @@ jQuery(function() {
         transform: 'scale(1.5)',
         zIndex: '1000'
     });
-    gsap.fromTo('.zone_d2_, .zone_d3, .zone_d4, .zone_v2, .zone_v3',{scale: 1.5}, {duration: 90, ease: "none", rotation: 360, scale: 1.5});
+    gsap.fromTo('.zone_d2_, .zone_d3, .zone_d4, .zone_v2, .zone_v3',{scale: 1.5, rotation: 0}, {duration: 90, ease: "none", rotation: 360, scale: 1.5});
     jQuery('.zone_ring')
       .removeClass('hidden')
       .css({
@@ -11349,7 +11349,7 @@ jQuery(function() {
              .fromTo('.ring',{rotation: 180}, {duration: 30, ease: "none", rotation: 0})
              .fromTo('.ring',{rotation: 0}, {duration: 15, ease: "none", rotation: -90})
              .fromTo('.ring',{rotation: -90}, {duration: 15, ease: "none", rotation: 0})
-             .to('.zone_cl', {duration: 1, ease: "none", scale: 1})
+             .to('.zone_d2_, .zone_d3, .zone_d4, .zone_v2, .zone_v3', {duration: 1, ease: "none", scale: 1})
 
     var zone_ring_gsap = gsap.timeline();
     zone_ring_gsap.fromTo('.zone_ring',{rotation: 0}, {duration: 60, ease: "none", rotation: -480})
@@ -11364,7 +11364,7 @@ jQuery(function() {
             sound.play();
         };
         reloadTime += 1;
-        if (count_animation > 220) {
+        if (count_animation > 240) {
           jQuery('.zone_ring').css({background: '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat'});
         }
         count_animation += 1;
@@ -11424,7 +11424,7 @@ jQuery(function() {
              .fromTo('.ring',{rotation: 180}, {duration: 30, ease: "none", rotation: 0})
              .fromTo('.ring',{rotation: 0}, {duration: 15, ease: "none", rotation: -90})
              .fromTo('.ring',{rotation: -90}, {duration: 15, ease: "none", rotation: 0})
-             .to('.zone_cl', {duration: 1, ease: "none", scale: 1})
+             .to('.zone_d4, .zone_d2_', {duration: 1, ease: "none", scale: 1})
 
     var zone_ring_gsap = gsap.timeline();
     zone_ring_gsap.fromTo('.zone_ring',{rotation: 0}, {duration: 60, ease: "none", rotation: -480})
@@ -11439,7 +11439,7 @@ jQuery(function() {
             sound.play();
         };
         reloadTime += 1;
-        if (count_animation > 220) {
+        if (count_animation > 240) {
           jQuery('.zone_ring').css({background: '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat'});
         }
         count_animation += 1;
