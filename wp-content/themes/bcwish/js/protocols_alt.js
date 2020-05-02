@@ -1080,7 +1080,7 @@ jQuery(function() {
              .fromTo('.ring',{rotation: 180}, {duration: 30, ease: "none", rotation: 0})
              .fromTo('.ring',{rotation: 0}, {duration: 15, ease: "none", rotation: -90})
              .fromTo('.ring',{rotation: -90}, {duration: 15, ease: "none", rotation: 0})
-             .to('.zone_cl', {duration: 1, ease: "none", scale: 1})
+             .to('.zone_cl', {duration: 1, ease: "none", scale: 1, rotation: 0})
 
     var zone_ring_gsap = gsap.timeline();
     zone_ring_gsap.fromTo('.zone_ring',{rotation: 0}, {duration: 60, ease: "none", rotation: -480})
@@ -1168,7 +1168,7 @@ jQuery(function() {
              .fromTo('.ring',{rotation: 180}, {duration: 30, ease: "none", rotation: 0})
              .fromTo('.ring',{rotation: 0}, {duration: 15, ease: "none", rotation: -90})
              .fromTo('.ring',{rotation: -90}, {duration: 15, ease: "none", rotation: 0})
-             .to('.zone_cl', {duration: 1, ease: "none", scale: 1})
+             .to('.zone_cl', {duration: 1, ease: "none", scale: 1, rotation: 0})
 
     var zone_ring_gsap = gsap.timeline();
     zone_ring_gsap.fromTo('.zone_ring',{rotation: 0}, {duration: 60, ease: "none", rotation: -480})
@@ -1251,7 +1251,7 @@ jQuery(function() {
              .fromTo('.ring',{rotation: 180}, {duration: 30, ease: "none", rotation: 0})
              .fromTo('.ring',{rotation: 0}, {duration: 15, ease: "none", rotation: -90})
              .fromTo('.ring',{rotation: -90}, {duration: 15, ease: "none", rotation: 0})
-             .to('.zone_cl', {duration: 1, ease: "none", scale: 1})
+             .to('.zone_cl', {duration: 1, ease: "none", scale: 1, rotation: 0})
 
     var zone_ring_gsap = gsap.timeline();
     zone_ring_gsap.fromTo('.zone_ring',{rotation: 0}, {duration: 60, ease: "none", rotation: -480})
@@ -1333,7 +1333,7 @@ jQuery(function() {
              .fromTo('.ring',{rotation: 180}, {duration: 30, ease: "none", rotation: 0})
              .fromTo('.ring',{rotation: 0}, {duration: 15, ease: "none", rotation: -90})
              .fromTo('.ring',{rotation: -90}, {duration: 15, ease: "none", rotation: 0})
-             .to('.zone_cl', {duration: 1, ease: "none", scale: 1})
+             .to('.zone_cl', {duration: 1, ease: "none", scale: 1, rotation: 0})
 
     var zone_ring_gsap = gsap.timeline();
     zone_ring_gsap.fromTo('.zone_ring',{rotation: 0}, {duration: 60, ease: "none", rotation: -480})
@@ -2063,7 +2063,7 @@ jQuery(function() {
              .fromTo('.ring',{rotation: 180}, {duration: 30, ease: "none", rotation: 0})
              .fromTo('.ring',{rotation: 0}, {duration: 15, ease: "none", rotation: -90})
              .fromTo('.ring',{rotation: -90}, {duration: 15, ease: "none", rotation: 0})
-             .to('.zone_cl', {duration: 1, ease: "none", scale: 1})
+             .to('.zone_cl', {duration: 1, ease: "none", scale: 1, rotation: 0})
 
     var zone_ring_gsap = gsap.timeline();
     zone_ring_gsap.fromTo('.zone_ring',{rotation: 0}, {duration: 60, ease: "none", rotation: -480})
@@ -2509,7 +2509,7 @@ jQuery(function() {
              .fromTo('.ring',{rotation: 180}, {duration: 30, ease: "none", rotation: 0})
              .fromTo('.ring',{rotation: 0}, {duration: 15, ease: "none", rotation: -90})
              .fromTo('.ring',{rotation: -90}, {duration: 15, ease: "none", rotation: 0})
-             .to('.zone_cl', {duration: 1, ease: "none", scale: 1})
+             .to('.zone_cl', {duration: 1, ease: "none", scale: 1, rotation: 0})
 
     var zone_ring_gsap = gsap.timeline();
     zone_ring_gsap.fromTo('.zone_ring',{rotation: 0}, {duration: 60, ease: "none", rotation: -480})
@@ -12482,7 +12482,7 @@ mmt_2 = function(){
              .fromTo('.ring',{rotation: 180}, {duration: 30, ease: "none", rotation: 0})
              .fromTo('.ring',{rotation: 0}, {duration: 15, ease: "none", rotation: -90})
              .fromTo('.ring',{rotation: -90}, {duration: 15, ease: "none", rotation: 0})
-             .to('.zone_cl', {duration: 1, ease: "none", scale: 1})
+             .to('.zone_cl', {duration: 1, ease: "none", scale: 1, rotation: 0})
 
     var zone_ring_gsap = gsap.timeline();
     zone_ring_gsap.fromTo('.zone_ring',{rotation: 0}, {duration: 60, ease: "none", rotation: -480})
@@ -15669,7 +15669,7 @@ mmt_2 = function(){
              .fromTo('.ring',{rotation: 180}, {duration: 30, ease: "none", rotation: 0})
              .fromTo('.ring',{rotation: 0}, {duration: 15, ease: "none", rotation: -90})
              .fromTo('.ring',{rotation: -90}, {duration: 15, ease: "none", rotation: 0})
-             .to('.zone_cl', {duration: 1, ease: "none", scale: 1})
+             .to('.zone_cl', {duration: 1, ease: "none", scale: 1, rotation: 0})
 
     var zone_ring_gsap = gsap.timeline();
     zone_ring_gsap.fromTo('.zone_ring',{rotation: 0}, {duration: 60, ease: "none", rotation: -480})
@@ -15980,7 +15980,7 @@ mmt_2 = function(){
              .fromTo('.ring',{rotation: 180}, {duration: 30, ease: "none", rotation: 0})
              .fromTo('.ring',{rotation: 0}, {duration: 15, ease: "none", rotation: -90})
              .fromTo('.ring',{rotation: -90}, {duration: 15, ease: "none", rotation: 0})
-             .to('.zone_cl', {duration: 1, ease: "none", scale: 1})
+             .to('.zone_cl', {duration: 1, ease: "none", scale: 1, rotation: 0})
 
     var zone_ring_gsap = gsap.timeline();
     zone_ring_gsap.fromTo('.zone_ring',{rotation: 0}, {duration: 60, ease: "none", rotation: -480})
@@ -16292,7 +16292,7 @@ mmt_2 = function(){
              .fromTo('.ring',{rotation: 180}, {duration: 30, ease: "none", rotation: 0})
              .fromTo('.ring',{rotation: 0}, {duration: 15, ease: "none", rotation: -90})
              .fromTo('.ring',{rotation: -90}, {duration: 15, ease: "none", rotation: 0})
-             .to('.zone_cl', {duration: 1, ease: "none", scale: 1})
+             .to('.zone_cl', {duration: 1, ease: "none", scale: 1, rotation: 0})
 
     var zone_ring_gsap = gsap.timeline();
     zone_ring_gsap.fromTo('.zone_ring',{rotation: 0}, {duration: 60, ease: "none", rotation: -480})
@@ -16606,7 +16606,7 @@ mmt_2 = function(){
              .fromTo('.ring',{rotation: 180}, {duration: 30, ease: "none", rotation: 0})
              .fromTo('.ring',{rotation: 0}, {duration: 15, ease: "none", rotation: -90})
              .fromTo('.ring',{rotation: -90}, {duration: 15, ease: "none", rotation: 0})
-             .to('.zone_cl', {duration: 1, ease: "none", scale: 1})
+             .to('.zone_cl', {duration: 1, ease: "none", scale: 1, rotation: 0})
 
     var zone_ring_gsap = gsap.timeline();
     zone_ring_gsap.fromTo('.zone_ring',{rotation: 0}, {duration: 60, ease: "none", rotation: -480})
