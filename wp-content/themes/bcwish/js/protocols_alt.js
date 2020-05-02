@@ -1076,7 +1076,7 @@ jQuery(function() {
     jQuery('.zone_cl').css({
       background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat',
     });
-    gsap.fromTo(".zone_cl",{scale: 1.5}, {duration: 90, ease: "none", rotation: -360, scale: 1.5});
+    gsap.fromTo(".zone_cl",{scale: 1.5, rotation: 0}, {duration: 90, ease: "none", rotation: -360, scale: 1.5});
 
     var zone_gsap = gsap.timeline();
     zone_gsap.fromTo('.ring',{rotation: 0}, {duration: 30, ease: "none", rotation: 180})
@@ -1247,7 +1247,7 @@ jQuery(function() {
     jQuery('.zone_cl').css({
       background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat',
     });
-    gsap.fromTo(".zone_cl",{scale: 1.5}, {duration: 90, ease: "none", rotation: -360, scale: 1.5});
+    gsap.fromTo(".zone_cl",{scale: 1.5, rotation: 0}, {duration: 90, ease: "none", rotation: -360, scale: 1.5});
 
     var zone_gsap = gsap.timeline();
     zone_gsap.fromTo('.ring',{rotation: 0}, {duration: 30, ease: "none", rotation: 180})
@@ -1329,7 +1329,7 @@ jQuery(function() {
     jQuery('.zone_cl').css({
       background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat',
     });
-    gsap.fromTo(".zone_cl",{scale: 1.5}, {duration: 90, ease: "none", rotation: -360, scale: 1.5});
+    gsap.fromTo(".zone_cl",{scale: 1.5, rotation: 0}, {duration: 90, ease: "none", rotation: -360, scale: 1.5});
 
     var zone_gsap = gsap.timeline();
     zone_gsap.fromTo('.ring',{rotation: 0}, {duration: 30, ease: "none", rotation: 180})
@@ -11725,7 +11725,7 @@ jQuery(function() {
         transform: 'scale(1.5)',
         background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat'
       });
-    gsap.fromTo(".zone_cl",{scale: 1.5}, {duration: 90, ease: "none", rotation: -360, scale: 1.5});
+    gsap.fromTo(".zone_cl",{scale: 1.5, rotation: 0}, {duration: 90, ease: "none", rotation: -360, scale: 1.5});
 
     var zone_gsap = gsap.timeline();
     zone_gsap.fromTo('.ring',{rotation: 0}, {duration: 30, ease: "none", rotation: 180})
@@ -12474,7 +12474,7 @@ mmt_2 = function(){
     jQuery('.zone_cl').css({
       background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat',
     });
-    gsap.fromTo(".zone_cl",{scale: 1.5}, {duration: 180, ease: "none", rotation: -720, scale: 1.5});
+    gsap.fromTo(".zone_cl",{scale: 1.5, rotation: 0}, {duration: 180, ease: "none", rotation: -720, scale: 1.5});
 
     var zone_gsap = gsap.timeline();
     zone_gsap.fromTo('.ring',{rotation: 0}, {duration: 30, ease: "none", rotation: 180})
@@ -16602,7 +16602,7 @@ mmt_2 = function(){
     jQuery('.zone_cl').css({
       background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat',
     });
-    gsap.fromTo(".zone_cl",{scale: 1.5}, {duration: 90, ease: "none", rotation: -360, scale: 1.5});
+    gsap.fromTo(".zone_cl",{scale: 1.5, rotation: 0}, {duration: 90, ease: "none", rotation: -360, scale: 1.5});
 
     var zone_gsap = gsap.timeline();
     zone_gsap.fromTo('.ring',{rotation: 0}, {duration: 30, ease: "none", rotation: 180})
