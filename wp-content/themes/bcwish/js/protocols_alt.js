@@ -1060,7 +1060,7 @@ jQuery(function() {
         opacity: 0.8,
         borderWidth: '1px',
         paddingTop: '4px',
-        transform: 'scale(1.5)',
+        transform: 'rotate(0deg) scale(1.5)',
         zIndex: '1000'
     });
     jQuery('.zone_ring')
@@ -1148,7 +1148,7 @@ jQuery(function() {
         opacity: 0.8,
         borderWidth: '1px',
         paddingTop: '4px',
-        transform: 'scale(1.5)',
+        transform: 'rotate(0deg) scale(1.5)',
         zIndex: '1000'
     });
     jQuery('.zone_ring')
@@ -1231,7 +1231,7 @@ jQuery(function() {
         opacity: 0.8,
         borderWidth: '1px',
         paddingTop: '4px',
-        transform: 'scale(1.5)',
+        transform: 'rotate(0deg) scale(1.5)',
         zIndex: '1000'
     });
     jQuery('.zone_ring')
@@ -1313,7 +1313,7 @@ jQuery(function() {
         opacity: 0.8,
         borderWidth: '1px',
         paddingTop: '4px',
-        transform: 'scale(1.5)',
+        transform: 'rotate(0deg) scale(1.5)',
         zIndex: '1000'
     });
     jQuery('.zone_ring')
@@ -1407,7 +1407,7 @@ jQuery(function() {
             opacity: 0.8,
             borderWidth: '1px',
             paddingTop: '4px',
-            transform: 'scale(1.5)',
+            transform: 'rotate(0deg) scale(1.5)',
             background: '#fff url(/wp-content/themes/bcwish/img/plod.png) center center/110% no-repeat',
             zIndex: '1000'
         });
@@ -2048,7 +2048,7 @@ jQuery(function() {
         opacity: 0.8,
         borderWidth: '1px',
         paddingTop: '4px',
-        transform: 'scale(1.5)',
+        transform: 'rotate(0deg) scale(1.5)',
         zIndex: '1000'
     });
     jQuery('.zone_ring')
@@ -2438,7 +2438,7 @@ jQuery(function() {
     count_animation = 1;
     jQuery('.zone_v2, .zone_v5').css({
       background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
-      transform: 'scale(1.5)',
+      transform: 'rotate(0deg) scale(1.5)',
       color: 'transparent',
       borderColor: 'transparent',
       opacity: 0.8,
@@ -2494,7 +2494,7 @@ jQuery(function() {
         opacity: 0.8,
         borderWidth: '1px',
         paddingTop: '4px',
-        transform: 'scale(1.5)',
+        transform: 'rotate(0deg) scale(1.5)',
         zIndex: '1000'
     });
     jQuery('.zone_ring')
@@ -9118,7 +9118,7 @@ jQuery(function() {
             opacity: 0.8,
             borderWidth: '1px',
             paddingTop: '4px',
-            transform: 'scale(1.5)',
+            transform: 'rotate(0deg) scale(1.5)',
             background: '#fff url(/wp-content/themes/bcwish/img/plod.png) center center/110% no-repeat',
             zIndex: '1000'
         });
@@ -9293,7 +9293,7 @@ jQuery(function() {
     count_animation = 1;
     jQuery('.zone_v4').css({
       background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
-      transform: 'scale(1.5)',
+      transform: 'rotate(0deg) scale(1.5)',
       color: 'transparent',
       borderColor: 'transparent',
       opacity: 0.8,
@@ -9352,7 +9352,7 @@ jQuery(function() {
     count_animation = 1;
     jQuery('.zone_v3, .zone_s3').css({
       background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
-      transform: 'scale(1.5)',
+      transform: 'rotate(0deg) scale(1.5)',
       color: 'transparent',
       borderColor: 'transparent',
       opacity: 0.8,
@@ -9410,7 +9410,7 @@ jQuery(function() {
     count_animation = 1;
     jQuery('.zone_v4, .zone_v3').css({
       background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
-      transform: 'scale(1.5)',
+      transform: 'rotate(0deg) scale(1.5)',
       color: 'transparent',
       borderColor: 'transparent',
       opacity: 0.8,
@@ -9468,7 +9468,7 @@ jQuery(function() {
     count_animation = 1;
     jQuery('.zone_v1, .zone_v4, .zone_v5').css({
       background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
-      transform: 'scale(1.5)',
+      transform: 'rotate(0deg) scale(1.5)',
       color: 'transparent',
       borderColor: 'transparent',
       opacity: 0.8,
@@ -9527,7 +9527,7 @@ jQuery(function() {
     count_animation = 1;
     jQuery('.zone_v1, .zone_s3').css({
       background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
-      transform: 'scale(1.5)',
+      transform: 'rotate(0deg) scale(1.5)',
       color: 'transparent',
       borderColor: 'transparent',
       opacity: 0.8,
@@ -9585,7 +9585,7 @@ jQuery(function() {
     count_animation = 1;
     jQuery('.zone_v1, .zone_v4').css({
       background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
-      transform: 'scale(1.5)',
+      transform: 'rotate(0deg) scale(1.5)',
       color: 'transparent',
       borderColor: 'transparent',
       opacity: 0.8,
@@ -9643,7 +9643,7 @@ jQuery(function() {
     count_animation = 1;
     jQuery('.zone_v0, .zone_v-').css({
       background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
-      transform: 'scale(1.5)',
+      transform: 'rotate(0deg) scale(1.5)',
       color: 'transparent',
       borderColor: 'transparent',
       opacity: 0.8,
@@ -9986,7 +9986,7 @@ jQuery(function() {
         borderWidth: '1px',
         paddingTop: '4px',
         background: '#fff url(/wp-content/themes/bcwish/img/superdisfunction.png) center center/100% no-repeat',
-        transform: 'scale(1.5)',
+        transform: 'rotate(0deg) scale(1.5)',
         zIndex: '1000'
     });
     gsap.fromTo(".zone_v0, .zone_v2, .zone_d2, .zone_cl, .zone_v-",{scale: 1.5}, {duration: 90, ease: "none", rotation: 360, scale: 1.5});
@@ -10066,7 +10066,7 @@ jQuery(function() {
         borderWidth: '1px',
         paddingTop: '4px',
         background: '#fff url(/wp-content/themes/bcwish/img/superdisfunction.png) center center/100% no-repeat',
-        transform: 'scale(1.5)',
+        transform: 'rotate(0deg) scale(1.5)',
         zIndex: '1000'
     });
     jQuery('.zone_v-').css({
@@ -10153,7 +10153,7 @@ jQuery(function() {
             opacity: 0.8,
             borderWidth: '1px',
             paddingTop: '4px',
-            transform: 'scale(1.5)',
+            transform: 'rotate(0deg) scale(1.5)',
             background: '#fff url(/wp-content/themes/bcwish/img/plod.png) center center/110% no-repeat',
             zIndex: '1000'
         });
@@ -10328,7 +10328,7 @@ jQuery(function() {
     count_animation = 1;
     jQuery('.zone_s2_, .zone_d5, .zone_d6').css({
       background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
-      transform: 'scale(1.5)',
+      transform: 'rotate(0deg) scale(1.5)',
       color: 'transparent',
       borderColor: 'transparent',
       opacity: 0.8,
@@ -10387,7 +10387,7 @@ jQuery(function() {
     count_animation = 1;
     jQuery('.zone_s2_, .zone_d5, .zone_d6').css({
       background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
-      transform: 'scale(1.5)',
+      transform: 'rotate(0deg) scale(1.5)',
       color: 'transparent',
       borderColor: 'transparent',
       opacity: 0.8,
@@ -10445,7 +10445,7 @@ jQuery(function() {
     count_animation = 1;
     jQuery('.zone_s2_, .zone_d5, .zone_d6').css({
       background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
-      transform: 'scale(1.5)',
+      transform: 'rotate(0deg) scale(1.5)',
       color: 'transparent',
       borderColor: 'transparent',
       opacity: 0.8,
@@ -10503,7 +10503,7 @@ jQuery(function() {
     count_animation = 1;
     jQuery('.zone_s2_, .zone_d5, .zone_d6').css({
       background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
-      transform: 'scale(1.5)',
+      transform: 'rotate(0deg) scale(1.5)',
       color: 'transparent',
       borderColor: 'transparent',
       opacity: 0.8,
@@ -10560,7 +10560,7 @@ jQuery(function() {
     count_animation = 1;
     jQuery('.zone_v2, .zone_v3, .zone_d4').css({
       background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
-      transform: 'scale(1.5)',
+      transform: 'rotate(0deg) scale(1.5)',
       color: 'transparent',
       borderColor: 'transparent',
       opacity: 0.8,
@@ -10619,7 +10619,7 @@ jQuery(function() {
     count_animation = 1;
     jQuery('.zone_v2, .zone_v3, .zone_d4').css({
       background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
-      transform: 'scale(1.5)',
+      transform: 'rotate(0deg) scale(1.5)',
       color: 'transparent',
       borderColor: 'transparent',
       opacity: 0.8,
@@ -10677,7 +10677,7 @@ jQuery(function() {
     count_animation = 1;
     jQuery('.zone_v2, .zone_v3, .zone_d4').css({
       background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
-      transform: 'scale(1.5)',
+      transform: 'rotate(0deg) scale(1.5)',
       color: 'transparent',
       borderColor: 'transparent',
       opacity: 0.8,
@@ -10735,7 +10735,7 @@ jQuery(function() {
     count_animation = 1;
     jQuery('.zone_v2, .zone_v3, .zone_d4').css({
       background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
-      transform: 'scale(1.5)',
+      transform: 'rotate(0deg) scale(1.5)',
       color: 'transparent',
       borderColor: 'transparent',
       opacity: 0.8,
@@ -10792,7 +10792,7 @@ jQuery(function() {
     count_animation = 1;
     jQuery('.zone_s2, .zone_s4, .zone_s5').css({
       background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
-      transform: 'scale(1.5)',
+      transform: 'rotate(0deg) scale(1.5)',
       color: 'transparent',
       borderColor: 'transparent',
       opacity: 0.8,
@@ -10851,7 +10851,7 @@ jQuery(function() {
     count_animation = 1;
     jQuery('.zone_s2, .zone_s4, .zone_s5').css({
       background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
-      transform: 'scale(1.5)',
+      transform: 'rotate(0deg) scale(1.5)',
       color: 'transparent',
       borderColor: 'transparent',
       opacity: 0.8,
@@ -10909,7 +10909,7 @@ jQuery(function() {
     count_animation = 1;
     jQuery('.zone_s2, .zone_s4, .zone_s5').css({
       background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
-      transform: 'scale(1.5)',
+      transform: 'rotate(0deg) scale(1.5)',
       color: 'transparent',
       borderColor: 'transparent',
       opacity: 0.8,
@@ -10967,7 +10967,7 @@ jQuery(function() {
     count_animation = 1;
     jQuery('.zone_s2, .zone_s4, .zone_s5').css({
       background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
-      transform: 'scale(1.5)',
+      transform: 'rotate(0deg) scale(1.5)',
       color: 'transparent',
       borderColor: 'transparent',
       opacity: 0.8,
@@ -11024,7 +11024,7 @@ jQuery(function() {
     count_animation = 1;
     jQuery('.zone_v1, .zone_v4').css({
       background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
-      transform: 'scale(1.5)',
+      transform: 'rotate(0deg) scale(1.5)',
       color: 'transparent',
       borderColor: 'transparent',
       opacity: 0.8,
@@ -11083,7 +11083,7 @@ jQuery(function() {
     count_animation = 1;
     jQuery('.zone_v1, .zone_v4').css({
       background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
-      transform: 'scale(1.5)',
+      transform: 'rotate(0deg) scale(1.5)',
       color: 'transparent',
       borderColor: 'transparent',
       opacity: 0.8,
@@ -11141,7 +11141,7 @@ jQuery(function() {
     count_animation = 1;
     jQuery('.zone_v1, .zone_v4').css({
       background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
-      transform: 'scale(1.5)',
+      transform: 'rotate(0deg) scale(1.5)',
       color: 'transparent',
       borderColor: 'transparent',
       opacity: 0.8,
@@ -11199,7 +11199,7 @@ jQuery(function() {
     count_animation = 1;
     jQuery('.zone_v1, .zone_v4').css({
       background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
-      transform: 'scale(1.5)',
+      transform: 'rotate(0deg) scale(1.5)',
       color: 'transparent',
       borderColor: 'transparent',
       opacity: 0.8,
@@ -11258,7 +11258,7 @@ jQuery(function() {
         borderWidth: '1px',
         paddingTop: '4px',
         background: '#fff url(/wp-content/themes/bcwish/img/superdisfunction.png) center center/100% no-repeat',
-        transform: 'scale(1.5)',
+        transform: 'rotate(0deg) scale(1.5)',
         zIndex: '1000'
     });
     gsap.fromTo('.zone_s3, .zone_v4',{scale: 1.5, rotation: 0}, {duration: 90, ease: "none", rotation: 360, scale: 1.5});
@@ -11333,7 +11333,7 @@ jQuery(function() {
         borderWidth: '1px',
         paddingTop: '4px',
         background: '#fff url(/wp-content/themes/bcwish/img/superdisfunction.png) center center/100% no-repeat',
-        transform: 'scale(1.5)',
+        transform: 'rotate(0deg) scale(1.5)',
         zIndex: '1000'
     });
     gsap.fromTo('.zone_d2_, .zone_d3, .zone_d4, .zone_v2, .zone_v3',{scale: 1.5, rotation: 0}, {duration: 90, ease: "none", rotation: 360, scale: 1.5});
@@ -11408,7 +11408,7 @@ jQuery(function() {
         borderWidth: '1px',
         paddingTop: '4px',
         background: '#fff url(/wp-content/themes/bcwish/img/superdisfunction.png) center center/100% no-repeat',
-        transform: 'scale(1.5)',
+        transform: 'rotate(0deg) scale(1.5)',
         zIndex: '1000'
     });
     gsap.fromTo('.zone_d4, .zone_d2_',{scale: 1.5, rotation: 0}, {duration: 90, ease: "none", rotation: 360, scale: 1.5});
@@ -11483,7 +11483,7 @@ jQuery(function() {
         borderWidth: '1px',
         paddingTop: '4px',
         background: '#fff url(/wp-content/themes/bcwish/img/superdisfunction.png) center center/100% no-repeat',
-        transform: 'scale(1.5)',
+        transform: 'rotate(0deg) scale(1.5)',
         zIndex: '1000'
     });
     gsap.fromTo('.zone_d2, .zone_s2_, .zone_d5, .zone_d6',{scale: 1.5}, {duration: 90, ease: "none", rotation: 360, scale: 1.5});
@@ -11558,7 +11558,7 @@ jQuery(function() {
         borderWidth: '1px',
         paddingTop: '4px',
         background: '#fff url(/wp-content/themes/bcwish/img/superdisfunction.png) center center/100% no-repeat',
-        transform: 'scale(1.5)',
+        transform: 'rotate(0deg) scale(1.5)',
         zIndex: '1000'
     });
     gsap.fromTo('.zone_d3, .zone_v4, .zone_d4',{scale: 1.5}, {duration: 90, ease: "none", rotation: 360, scale: 1.5});
@@ -11632,7 +11632,7 @@ jQuery(function() {
         opacity: 0.8,
         borderWidth: '1px',
         paddingTop: '4px',
-        transform: 'scale(1.5)',
+        transform: 'rotate(0deg) scale(1.5)',
         zIndex: '1000'
     });
     jQuery('.zone_ring')
@@ -11712,7 +11712,7 @@ jQuery(function() {
         borderWidth: '1px',
         paddingTop: '4px',
         background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat',
-        transform: 'scale(1.5)',
+        transform: 'rotate(0deg) scale(1.5)',
         zIndex: '1000'
     });
     jQuery('.zone_ring')
@@ -11794,7 +11794,7 @@ jQuery(function() {
             opacity: 0.8,
             borderWidth: '1px',
             paddingTop: '4px',
-            transform: 'scale(1.5)',
+            transform: 'rotate(0deg) scale(1.5)',
             background: '#fff url(/wp-content/themes/bcwish/img/plod.png) center center/110% no-repeat',
             zIndex: '1000'
         });
@@ -11968,7 +11968,7 @@ jQuery(function() {
         opacity: 0.8,
         borderWidth: '1px',
         paddingTop: '4px',
-        transform: 'scale(1.5)',
+        transform: 'rotate(0deg) scale(1.5)',
         zIndex: '1000'
     });
     jQuery('.zone_ring')
@@ -12066,7 +12066,7 @@ jQuery(function() {
         opacity: 0.8,
         borderWidth: '1px',
         paddingTop: '4px',
-        transform: 'scale(1.5)',
+        transform: 'rotate(0deg) scale(1.5)',
         zIndex: '1000'
     });
     jQuery('.zone_ring')
@@ -12164,7 +12164,7 @@ jQuery(function() {
         opacity: 0.8,
         borderWidth: '1px',
         paddingTop: '4px',
-        transform: 'scale(1.5)',
+        transform: 'rotate(0deg) scale(1.5)',
         zIndex: '1000'
     });
     jQuery('.zone_ring')
@@ -12262,7 +12262,7 @@ jQuery(function() {
         opacity: 0.8,
         borderWidth: '1px',
         paddingTop: '4px',
-        transform: 'scale(1.5)',
+        transform: 'rotate(0deg) scale(1.5)',
         zIndex: '1000'
     });
     jQuery('.zone_ring')
@@ -12360,7 +12360,7 @@ mmt_2 = function(){
       opacity: 0.8,
       borderWidth: '1px',
       paddingTop: '4px',
-      transform: 'scale(1.5)',
+      transform: 'rotate(0deg) scale(1.5)',
       zIndex: '1000'
   });
   jQuery('.zone_ring')
@@ -12458,7 +12458,7 @@ mmt_2 = function(){
         opacity: 0.8,
         borderWidth: '1px',
         paddingTop: '4px',
-        transform: 'scale(1.5)',
+        transform: 'rotate(0deg) scale(1.5)',
         zIndex: '1000'
     });
     jQuery('.zone_ring')
@@ -12574,7 +12574,7 @@ mmt_2 = function(){
               opacity: 0.8,
               borderWidth: '1px',
               paddingTop: '4px',
-              transform: 'scale(1.5)',
+              transform: 'rotate(0deg) scale(1.5)',
               background: '#fff url(/wp-content/themes/bcwish/img/plod.png) center center/110% no-repeat',
               zIndex: '1000'
           });
@@ -12761,7 +12761,7 @@ mmt_2 = function(){
               opacity: 0.8,
               borderWidth: '1px',
               paddingTop: '4px',
-              transform: 'scale(1.5)',
+              transform: 'rotate(0deg) scale(1.5)',
               zIndex: '1000',
           });
           jQuery('.zone_v-').css({
@@ -12867,7 +12867,7 @@ mmt_2 = function(){
               opacity: 0.8,
               borderWidth: '1px',
               paddingTop: '4px',
-              transform: 'scale(1.5)',
+              transform: 'rotate(0deg) scale(1.5)',
               zIndex: '1000',
           });
           jQuery('.zone_v-').css({
@@ -13025,7 +13025,7 @@ mmt_2 = function(){
               opacity: 0.8,
               borderWidth: '1px',
               paddingTop: '4px',
-              transform: 'scale(1.5)',
+              transform: 'rotate(0deg) scale(1.5)',
               zIndex: '1000',
           });
           jQuery('.zone_v-').css({
@@ -13183,7 +13183,7 @@ mmt_2 = function(){
               opacity: 0.8,
               borderWidth: '1px',
               paddingTop: '4px',
-              transform: 'scale(1.5)',
+              transform: 'rotate(0deg) scale(1.5)',
               zIndex: '1000',
           });
           jQuery('.zone_v-').css({
@@ -13341,7 +13341,7 @@ mmt_2 = function(){
             opacity: 0.8,
             borderWidth: '1px',
             paddingTop: '4px',
-            transform: 'scale(1.5)',
+            transform: 'rotate(0deg) scale(1.5)',
             zIndex: '1000',
         });
         jQuery('.zone_v-').css({
@@ -13488,7 +13488,7 @@ mmt_2 = function(){
     count_animation = 1;
     jQuery('.zone_d2, .zone_s2_, .zone_d5, .zone_d6').css({
       background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
-      transform: 'scale(1.5)',
+      transform: 'rotate(0deg) scale(1.5)',
       color: 'transparent',
       borderColor: 'transparent',
       opacity: 0.8,
@@ -13548,7 +13548,7 @@ mmt_2 = function(){
     count_animation = 1;
     jQuery('.zone_d2, .zone_s2_, .zone_d5, .zone_d6').css({
       background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
-      transform: 'scale(1.5)',
+      transform: 'rotate(0deg) scale(1.5)',
       color: 'transparent',
       borderColor: 'transparent',
       opacity: 0.8,
@@ -13607,7 +13607,7 @@ mmt_2 = function(){
     count_animation = 1;
     jQuery('.zone_d2, .zone_s2_, .zone_d5, .zone_d6').css({
       background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
-      transform: 'scale(1.5)',
+      transform: 'rotate(0deg) scale(1.5)',
       color: 'transparent',
       borderColor: 'transparent',
       opacity: 0.8,
@@ -13666,7 +13666,7 @@ mmt_2 = function(){
     count_animation = 1;
     jQuery('.zone_d2, .zone_s2_, .zone_d5, .zone_d6').css({
       background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
-      transform: 'scale(1.5)',
+      transform: 'rotate(0deg) scale(1.5)',
       color: 'transparent',
       borderColor: 'transparent',
       opacity: 0.8,
@@ -13726,7 +13726,7 @@ mmt_2 = function(){
         opacity: 0.8,
         borderWidth: '1px',
         paddingTop: '4px',
-        transform: 'scale(1.5)',
+        transform: 'rotate(0deg) scale(1.5)',
         zIndex: '1000'
     });
     jQuery('.zone_v2').css({
@@ -13788,7 +13788,7 @@ mmt_2 = function(){
         opacity: 0.8,
         borderWidth: '1px',
         paddingTop: '4px',
-        transform: 'scale(1.5)',
+        transform: 'rotate(0deg) scale(1.5)',
         background: '#fff url(/wp-content/themes/bcwish/img/plod.png) center center/110% no-repeat',
         zIndex: '1000'
     });
@@ -13964,7 +13964,7 @@ mmt_2 = function(){
     count_animation = 1;
     jQuery('.zone_d2, .zone_s2_, .zone_d5, .zone_d6').css({
       background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
-      transform: 'scale(1.5)',
+      transform: 'rotate(0deg) scale(1.5)',
       color: 'transparent',
       borderColor: 'transparent',
       opacity: 0.8,
@@ -14023,7 +14023,7 @@ mmt_2 = function(){
     count_animation = 1;
     jQuery('.zone_d2, .zone_s2_, .zone_d5, .zone_d6').css({
       background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
-      transform: 'scale(1.5)',
+      transform: 'rotate(0deg) scale(1.5)',
       color: 'transparent',
       borderColor: 'transparent',
       opacity: 0.8,
@@ -14081,7 +14081,7 @@ mmt_2 = function(){
     count_animation = 1;
     jQuery('.zone_d2, .zone_s2_, .zone_d5, .zone_d6').css({
       background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
-      transform: 'scale(1.5)',
+      transform: 'rotate(0deg) scale(1.5)',
       color: 'transparent',
       borderColor: 'transparent',
       opacity: 0.8,
@@ -14139,7 +14139,7 @@ mmt_2 = function(){
     count_animation = 1;
     jQuery('.zone_d2, .zone_s2_, .zone_d5, .zone_d6').css({
       background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
-      transform: 'scale(1.5)',
+      transform: 'rotate(0deg) scale(1.5)',
       color: 'transparent',
       borderColor: 'transparent',
       opacity: 0.8,
@@ -14196,7 +14196,7 @@ mmt_2 = function(){
     count_animation = 1;
     jQuery('.zone_s2, .zone_v5, .zone_s5, .zone_s6').css({
       background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
-      transform: 'scale(1.5)',
+      transform: 'rotate(0deg) scale(1.5)',
       color: 'transparent',
       borderColor: 'transparent',
       opacity: 0.8,
@@ -14255,7 +14255,7 @@ mmt_2 = function(){
     count_animation = 1;
     jQuery('.zone_s2, .zone_v5, .zone_s5, .zone_s6').css({
       background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
-      transform: 'scale(1.5)',
+      transform: 'rotate(0deg) scale(1.5)',
       color: 'transparent',
       borderColor: 'transparent',
       opacity: 0.8,
@@ -14313,7 +14313,7 @@ mmt_2 = function(){
     count_animation = 1;
     jQuery('.zone_s2, .zone_v5, .zone_s5, .zone_s6').css({
       background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
-      transform: 'scale(1.5)',
+      transform: 'rotate(0deg) scale(1.5)',
       color: 'transparent',
       borderColor: 'transparent',
       opacity: 0.8,
@@ -14371,7 +14371,7 @@ mmt_2 = function(){
     count_animation = 1;
     jQuery('.zone_s2, .zone_v5, .zone_s5, .zone_s6').css({
       background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
-      transform: 'scale(1.5)',
+      transform: 'rotate(0deg) scale(1.5)',
       color: 'transparent',
       borderColor: 'transparent',
       opacity: 0.8,
@@ -14428,7 +14428,7 @@ mmt_2 = function(){
     count_animation = 1;
     jQuery('.zone_v1, .zone_v5, .zone_v-').css({
       background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
-      transform: 'scale(1.5)',
+      transform: 'rotate(0deg) scale(1.5)',
       color: 'transparent',
       borderColor: 'transparent',
       opacity: 0.8,
@@ -14487,7 +14487,7 @@ mmt_2 = function(){
     count_animation = 1;
     jQuery('.zone_v1, .zone_v5, .zone_v-').css({
       background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
-      transform: 'scale(1.5)',
+      transform: 'rotate(0deg) scale(1.5)',
       color: 'transparent',
       borderColor: 'transparent',
       opacity: 0.8,
@@ -14545,7 +14545,7 @@ mmt_2 = function(){
     count_animation = 1;
     jQuery('.zone_v1, .zone_v5, .zone_v-').css({
       background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
-      transform: 'scale(1.5)',
+      transform: 'rotate(0deg) scale(1.5)',
       color: 'transparent',
       borderColor: 'transparent',
       opacity: 0.8,
@@ -14603,7 +14603,7 @@ mmt_2 = function(){
     count_animation = 1;
     jQuery('.zone_v1, .zone_v5, .zone_v-').css({
       background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
-      transform: 'scale(1.5)',
+      transform: 'rotate(0deg) scale(1.5)',
       color: 'transparent',
       borderColor: 'transparent',
       opacity: 0.8,
@@ -14661,7 +14661,7 @@ mmt_2 = function(){
         opacity: 0.8,
         borderWidth: '1px',
         paddingTop: '4px',
-        transform: 'scale(1.5)',
+        transform: 'rotate(0deg) scale(1.5)',
         zIndex: '1000'
     });
     jQuery('.zone_ring')
@@ -14740,7 +14740,7 @@ mmt_2 = function(){
         opacity: 0.8,
         borderWidth: '1px',
         paddingTop: '4px',
-        transform: 'scale(1.5)',
+        transform: 'rotate(0deg) scale(1.5)',
         zIndex: '1000'
     });
     jQuery('.zone_ring')
@@ -14819,7 +14819,7 @@ mmt_2 = function(){
         opacity: 0.8,
         borderWidth: '1px',
         paddingTop: '4px',
-        transform: 'scale(1.5)',
+        transform: 'rotate(0deg) scale(1.5)',
         zIndex: '1000'
     });
     jQuery('.zone_ring')
@@ -14898,7 +14898,7 @@ mmt_2 = function(){
         opacity: 0.8,
         borderWidth: '1px',
         paddingTop: '4px',
-        transform: 'scale(1.5)',
+        transform: 'rotate(0deg) scale(1.5)',
         zIndex: '1000'
     });
     jQuery('.zone_ring')
@@ -14977,7 +14977,7 @@ mmt_2 = function(){
         opacity: 0.8,
         borderWidth: '1px',
         paddingTop: '4px',
-        transform: 'scale(1.5)',
+        transform: 'rotate(0deg) scale(1.5)',
         zIndex: '1000'
     });
     jQuery('.zone_ring')
@@ -15056,7 +15056,7 @@ mmt_2 = function(){
         opacity: 0.8,
         borderWidth: '1px',
         paddingTop: '4px',
-        transform: 'scale(1.5)',
+        transform: 'rotate(0deg) scale(1.5)',
         zIndex: '1000'
     });
     jQuery('.zone_ring')
@@ -15135,7 +15135,7 @@ mmt_2 = function(){
         opacity: 0.8,
         borderWidth: '1px',
         paddingTop: '4px',
-        transform: 'scale(1.5)',
+        transform: 'rotate(0deg) scale(1.5)',
         zIndex: '1000'
     });
     jQuery('.zone_ring')
@@ -15214,7 +15214,7 @@ mmt_2 = function(){
         opacity: 0.8,
         borderWidth: '1px',
         paddingTop: '4px',
-        transform: 'scale(1.5)',
+        transform: 'rotate(0deg) scale(1.5)',
         zIndex: '1000'
     });
     jQuery('.zone_ring')
@@ -15293,7 +15293,7 @@ mmt_2 = function(){
         borderWidth: '1px',
         background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat',
         paddingTop: '4px',
-        transform: 'scale(1.5)',
+        transform: 'rotate(0deg) scale(1.5)',
         zIndex: '1000'
     });
     jQuery('.zone_v-, .zone_v0').css({
@@ -15303,7 +15303,7 @@ mmt_2 = function(){
         borderWidth: '1px',
         paddingTop: '4px',
         background: '#fff url(/wp-content/themes/bcwish/img/vig_.png) center center/100% no-repeat',
-        transform: 'scale(1.5)',
+        transform: 'rotate(0deg) scale(1.5)',
         zIndex: '1000'
     });
     jQuery('.zone_ring')
@@ -15376,7 +15376,7 @@ mmt_2 = function(){
         opacity: 0.8,
         borderWidth: '1px',
         paddingTop: '4px',
-        transform: 'scale(1.5)',
+        transform: 'rotate(0deg) scale(1.5)',
         background: '#fff url(/wp-content/themes/bcwish/img/plod.png) center center/110% no-repeat',
         zIndex: '1000'
     });
@@ -15420,7 +15420,7 @@ mmt_2 = function(){
     count_animation = 1;
     jQuery('.zone_v5, .zone_s6, .zone_s5, .zone_s2, .zone_v1').css({
       background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
-      transform: 'scale(1.5)',
+      transform: 'rotate(0deg) scale(1.5)',
       color: 'transparent',
       borderColor: 'transparent',
       opacity: 0.8,
@@ -15479,7 +15479,7 @@ mmt_2 = function(){
     count_animation = 1;
     jQuery('.zone_v5, .zone_s6, .zone_s5, .zone_s2, .zone_v1').css({
       background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
-      transform: 'scale(1.5)',
+      transform: 'rotate(0deg) scale(1.5)',
       color: 'transparent',
       borderColor: 'transparent',
       opacity: 0.8,
@@ -15537,7 +15537,7 @@ mmt_2 = function(){
     count_animation = 1;
     jQuery('.zone_v5, .zone_s6, .zone_s5, .zone_s2, .zone_v1').css({
       background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
-      transform: 'scale(1.5)',
+      transform: 'rotate(0deg) scale(1.5)',
       color: 'transparent',
       borderColor: 'transparent',
       opacity: 0.8,
@@ -15595,7 +15595,7 @@ mmt_2 = function(){
     count_animation = 1;
     jQuery('.zone_v5, .zone_s6, .zone_s5, .zone_s2, .zone_v1').css({
       background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
-      transform: 'scale(1.5)',
+      transform: 'rotate(0deg) scale(1.5)',
       color: 'transparent',
       borderColor: 'transparent',
       opacity: 0.8,
@@ -15653,7 +15653,7 @@ mmt_2 = function(){
         opacity: 0.8,
         borderWidth: '1px',
         paddingTop: '4px',
-        transform: 'scale(1.5)',
+        transform: 'rotate(0deg) scale(1.5)',
         zIndex: '1000'
     });
     jQuery('.zone_ring')
@@ -15731,7 +15731,7 @@ mmt_2 = function(){
     count_animation = 1;
     jQuery('.zone_v5, .zone_s2_, .zone_d2, .zone_d5, .zone_d6').css({
       background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
-      transform: 'scale(1.5)',
+      transform: 'rotate(0deg) scale(1.5)',
       color: 'transparent',
       borderColor: 'transparent',
       opacity: 0.8,
@@ -15790,7 +15790,7 @@ mmt_2 = function(){
     count_animation = 1;
     jQuery('.zone_v5, .zone_s2_, .zone_d2, .zone_d5, .zone_d6').css({
       background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
-      transform: 'scale(1.5)',
+      transform: 'rotate(0deg) scale(1.5)',
       color: 'transparent',
       borderColor: 'transparent',
       opacity: 0.8,
@@ -15848,7 +15848,7 @@ mmt_2 = function(){
     count_animation = 1;
     jQuery('.zone_v5, .zone_s2_, .zone_d2, .zone_d5, .zone_d6').css({
       background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
-      transform: 'scale(1.5)',
+      transform: 'rotate(0deg) scale(1.5)',
       color: 'transparent',
       borderColor: 'transparent',
       opacity: 0.8,
@@ -15906,7 +15906,7 @@ mmt_2 = function(){
     count_animation = 1;
     jQuery('.zone_v5, .zone_s2_, .zone_d2, .zone_d5, .zone_d6').css({
       background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
-      transform: 'scale(1.5)',
+      transform: 'rotate(0deg) scale(1.5)',
       color: 'transparent',
       borderColor: 'transparent',
       opacity: 0.8,
@@ -15964,7 +15964,7 @@ mmt_2 = function(){
         opacity: 0.8,
         borderWidth: '1px',
         paddingTop: '4px',
-        transform: 'scale(1.5)',
+        transform: 'rotate(0deg) scale(1.5)',
         zIndex: '1000'
     });
     jQuery('.zone_ring')
@@ -16043,7 +16043,7 @@ mmt_2 = function(){
     count_animation = 1;
     jQuery('.zone_s3, .zone_v4').css({
       background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
-      transform: 'scale(1.5)',
+      transform: 'rotate(0deg) scale(1.5)',
       color: 'transparent',
       borderColor: 'transparent',
       opacity: 0.8,
@@ -16102,7 +16102,7 @@ mmt_2 = function(){
     count_animation = 1;
     jQuery('.zone_s3, .zone_v4').css({
       background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
-      transform: 'scale(1.5)',
+      transform: 'rotate(0deg) scale(1.5)',
       color: 'transparent',
       borderColor: 'transparent',
       opacity: 0.8,
@@ -16160,7 +16160,7 @@ mmt_2 = function(){
     count_animation = 1;
     jQuery('.zone_s3, .zone_v4').css({
       background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
-      transform: 'scale(1.5)',
+      transform: 'rotate(0deg) scale(1.5)',
       color: 'transparent',
       borderColor: 'transparent',
       opacity: 0.8,
@@ -16218,7 +16218,7 @@ mmt_2 = function(){
     count_animation = 1;
     jQuery('.zone_s3, .zone_v4').css({
       background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
-      transform: 'scale(1.5)',
+      transform: 'rotate(0deg) scale(1.5)',
       color: 'transparent',
       borderColor: 'transparent',
       opacity: 0.8,
@@ -16276,7 +16276,7 @@ mmt_2 = function(){
         opacity: 0.8,
         borderWidth: '1px',
         paddingTop: '4px',
-        transform: 'scale(1.5)',
+        transform: 'rotate(0deg) scale(1.5)',
         zIndex: '1000'
     });
     jQuery('.zone_ring')
@@ -16355,7 +16355,7 @@ mmt_2 = function(){
     count_animation = 1;
     jQuery('.zone_v2, .zone_d2_, .zone_d3, .zone_d4').css({
       background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
-      transform: 'scale(1.5)',
+      transform: 'rotate(0deg) scale(1.5)',
       color: 'transparent',
       borderColor: 'transparent',
       opacity: 0.8,
@@ -16414,7 +16414,7 @@ mmt_2 = function(){
     count_animation = 1;
     jQuery('.zone_v2, .zone_d2_, .zone_d3, .zone_d4').css({
       background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
-      transform: 'scale(1.5)',
+      transform: 'rotate(0deg) scale(1.5)',
       color: 'transparent',
       borderColor: 'transparent',
       opacity: 0.8,
@@ -16472,7 +16472,7 @@ mmt_2 = function(){
     count_animation = 1;
     jQuery('.zone_v2, .zone_d2_, .zone_d3, .zone_d4').css({
       background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
-      transform: 'scale(1.5)',
+      transform: 'rotate(0deg) scale(1.5)',
       color: 'transparent',
       borderColor: 'transparent',
       opacity: 0.8,
@@ -16530,7 +16530,7 @@ mmt_2 = function(){
     count_animation = 1;
     jQuery('.zone_v2, .zone_d2_, .zone_d3, .zone_d4').css({
       background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
-      transform: 'scale(1.5)',
+      transform: 'rotate(0deg) scale(1.5)',
       color: 'transparent',
       borderColor: 'transparent',
       opacity: 0.8,
@@ -16586,7 +16586,7 @@ mmt_2 = function(){
         opacity: 0.8,
         borderWidth: '1px',
         paddingTop: '4px',
-        transform: 'scale(1.5)',
+        transform: 'rotate(0deg) scale(1.5)',
         zIndex: '1000'
     });
     jQuery('.zone_ring')
