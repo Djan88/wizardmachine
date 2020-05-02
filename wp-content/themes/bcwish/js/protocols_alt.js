@@ -11661,6 +11661,9 @@ jQuery(function() {
         } else if (reloadTime == 2) {
             sound.play();
         };
+        if (count_animation > 240) {
+          jQuery('.zone_ring').css({background: '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat'});
+        }
         reloadTime += 1;
         if (count_animation > 0 && count_animation <= 120) {
           jQuery('.zone_s3, .zone_s4, .zone_v4').css({background: '#fff url(/wp-content/themes/bcwish/img/disfunction.png) center center/100% no-repeat', transform: 'scale(1.5)'});
@@ -11743,6 +11746,9 @@ jQuery(function() {
         } else if (reloadTime == 2) {
             sound.play();
         };
+        if (count_animation > 240) {
+          jQuery('.zone_ring').css({background: '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat'});
+        }
         reloadTime += 1;
         count_animation += 1;
       } else {
