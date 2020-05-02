@@ -11561,7 +11561,7 @@ jQuery(function() {
         transform: 'rotate(0deg) scale(1.5)',
         zIndex: '1000'
     });
-    gsap.fromTo('.zone_d3, .zone_v4, .zone_d4',{scale: 1.5}, {duration: 90, ease: "none", rotation: 360, scale: 1.5});
+    gsap.fromTo('.zone_d3, .zone_v4, .zone_d4',{scale: 1.5, rotation: 0}, {duration: 90, ease: "none", rotation: 360, scale: 1.5});
     jQuery('.zone_ring')
       .removeClass('hidden')
       .css({
