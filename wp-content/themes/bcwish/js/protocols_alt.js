@@ -165,9 +165,6 @@ jQuery(function() {
     }
   });
 
-
-
-
     v3_9 = function(){
       jQuery('.wizard_heading').text('Выполняется протокол "V 3 — V 4"');
       jQuery('.wizard_percent').text('97%');
@@ -11725,14 +11722,14 @@ jQuery(function() {
         transform: 'scale(1.5)',
         background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat'
       });
-    gsap.fromTo(".zone_cl",{scale: 1.5, rotation: 0}, {duration: 90, ease: "none", rotation: -360, scale: 1.5});
+    gsap.fromTo(".zone_cl, .zone_v1, .zone_v4",{scale: 1.5, rotation: 0}, {duration: 90, ease: "none", rotation: -360, scale: 1.5});
 
     var zone_gsap = gsap.timeline();
     zone_gsap.fromTo('.ring',{rotation: 0}, {duration: 30, ease: "none", rotation: 180})
              .fromTo('.ring',{rotation: 180}, {duration: 30, ease: "none", rotation: 0})
              .fromTo('.ring',{rotation: 0}, {duration: 15, ease: "none", rotation: -90})
              .fromTo('.ring',{rotation: -90}, {duration: 15, ease: "none", rotation: 0})
-             .to('.zone_cl', {duration: 1, ease: "none", scale: 1})
+             .to('.zone_cl, .zone_v1, .zone_v4', {duration: 1, ease: "none", scale: 1})
 
     var zone_ring_gsap = gsap.timeline();
     zone_ring_gsap.fromTo('.zone_ring',{rotation: 0}, {duration: 60, ease: "none", rotation: -480})
