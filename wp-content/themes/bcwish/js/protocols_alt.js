@@ -13750,9 +13750,7 @@ mmt_2 = function(){
         if (reloadTime == 0){                                                                       //1
             sound.stop();
             reloadSound.play();
-        } else if (reloadTime == 2) {
-            sound.play();
-        };
+        }
         reloadTime += 1;
         count_animation += 1;
       } else {
