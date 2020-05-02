@@ -1128,10 +1128,10 @@ jQuery(function() {
         jQuery('.zone_ring').css('transform', 'rotate(0deg)');
         sound.stop();
         if (pausedStatus == true) {
-          localStorage.setItem('paused', 'v3_5');
+          localStorage.setItem('paused', 'v3_5_1');
           endNow()
         } else {
-          v3_5();
+          v3_5_1();
           // console.log('continue');
         } 
       }
