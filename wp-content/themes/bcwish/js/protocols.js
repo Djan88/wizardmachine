@@ -11776,7 +11776,7 @@ jQuery(function() {
     }, 250);
   }
 
-  mmt_9 = function(){
+  mmt_8 = function(){
     jQuery('.wizard_heading').text('Выполняется "Висцеральный протокол"');
     jQuery('.wizard_percent').text('90%');
     jQuery('.ring').addClass('hidden');
