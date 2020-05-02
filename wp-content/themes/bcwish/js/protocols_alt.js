@@ -10025,7 +10025,7 @@ jQuery(function() {
             sound.play();
         };
         reloadTime += 1;
-        if (count_animation > 220) {
+        if (count_animation > 240) {
           jQuery('.zone_ring').css({background: '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat'});
         }
         count_animation += 1;
@@ -10095,7 +10095,7 @@ jQuery(function() {
                   .fromTo('.zone_ring',{rotation: -480}, {duration: 30, ease: "none", rotation: -240})
 
     phaseOne = setInterval(function(){
-      if (count_animation <= 360){
+      if (count_animation <= 361){
         if (reloadTime == 0){                                                                       //1
             sound.stop();
             reloadSound.play();
@@ -10103,7 +10103,7 @@ jQuery(function() {
             sound.play();
         };
         reloadTime += 1;
-        if (count_animation > 220) {
+        if (count_animation > 240) {
           jQuery('.zone_ring').css({background: '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat'});
         }
         count_animation += 1;
