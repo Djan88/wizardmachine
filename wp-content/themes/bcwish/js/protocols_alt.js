@@ -167,9 +167,2386 @@ jQuery(function() {
 
 
 
-  v4_codesAlt_3 = function(){
+
+
+
+  v1_codesAlt_7 = function(){
+    jQuery('.wizard_heading').text('Выполняется протокол "V 1"');
+    jQuery('.wizard_percent').text('91%');
+    jQuery('.ring').addClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    cur_animation_val = 0;
+    rotateVal = 0;
+    count_animation = 1;
+    phaseOne = setInterval(function(){
+      if (count_animation <= 344){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        };
+        reloadTime += 1;
+        jQuery('.zone_v0, .zone_v-').css({
+            color: 'transparent',
+            borderColor: 'transparent',
+            opacity: 0.8,
+            borderWidth: '1px',
+            paddingTop: '4px',
+            transform: 'scale(1.5)',
+            background: '#fff url(/wp-content/themes/bcwish/img/plod.png) center center/110% no-repeat',
+            zIndex: '1000'
+        });
+        jQuery('.zone_v-').css({
+            background: '#fff url(/wp-content/themes/bcwish/img/x.png) center center/120% no-repeat'
+        });
+        
+        count_animation += 1;
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone_v0, .zone_v-').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+        });
+        onEnd();
+      }
+    }, 250);
+  }
+
+  v1_codesAlt_6 = function(){
+    jQuery('.wizard_heading').text('Выполняется протокол "V 1"');
+    jQuery('.wizard_percent').text('78%');
+    jQuery('.ring').css('transform', 'rotate(0deg)');
+    jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    cur_animation_val = 0;
+    rotateVal = 0;
+    count_animation = 1;
+    jQuery('.ring').addClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
+// I
+    phaseOne = setInterval(function(){
+      if (count_animation <= 88){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        };
+        reloadTime += 1;
+        jQuery('.zone_v5, .zone_d2, .zone_d5, .zone_d6, .zone_s2_').css({
+            color: 'transparent',
+            borderColor: 'transparent',
+            opacity: 0.8,
+            borderWidth: '1px',
+            paddingTop: '4px',
+            transform: 'rotate(70deg) scale(1.5)',
+            background: 'url(/wp-content/themes/bcwish/img/triangle_air.png) center center/88% no-repeat',
+            zIndex: '1000'
+        });
+        count_animation += 1;
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone_v5, .zone_d2, .zone_d5, .zone_d6, .zone_s2_').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+        });
+// II
+        jQuery('.wizard_percent').text('85%');
+        phaseOne = setInterval(function(){
+          if (count_animation <= 88){
+            jQuery('.zone_v1, .zone_s2, .zone_s4, .zone_v5, .zone_s5, .zone_s6').css({
+                color: 'transparent',
+                borderColor: 'transparent',
+                opacity: 0.8,
+                borderWidth: '1px',
+                paddingTop: '4px',
+                transform: 'rotate(20deg) scale(1.5)',
+                background: 'url(/wp-content/themes/bcwish/img/triangle_fire.png) center center/88% no-repeat',
+                zIndex: '1000'
+            });
+            count_animation += 1;
+          } else {
+            clearInterval(phaseOne);
+            count_animation = 1;
+            jQuery('.zone_v1, .zone_s2, .zone_s4, .zone_v5, .zone_s5, .zone_s6').css({
+                background: '#fff',
+                color: '#413e66',
+                borderColor: '#413e66',
+                transform: 'scale(1)',
+                paddingTop: '2px',
+                zIndex: '2'
+            });
+// III
+            jQuery('.wizard_percent').text('87%');
+            phaseOne = setInterval(function(){
+              if (count_animation <= 88){
+                jQuery('.zone_s3, .zone_v4').css({
+                    color: 'transparent',
+                    borderColor: 'transparent',
+                    opacity: 0.8,
+                    borderWidth: '1px',
+                    paddingTop: '4px',
+                    transform: 'rotate(50deg) scale(1.5)',
+                    background: 'url(/wp-content/themes/bcwish/img/triangle_water.png) center center/88% no-repeat',
+                    zIndex: '1000'
+                });
+                count_animation += 1;
+              } else {
+                clearInterval(phaseOne);
+                count_animation = 1;
+                jQuery('.zone_s3, .zone_v4').css({
+                    background: '#fff',
+                    color: '#413e66',
+                    borderColor: '#413e66',
+                    transform: 'scale(1)',
+                    paddingTop: '2px',
+                    zIndex: '2'
+                });
+// IV
+                jQuery('.wizard_percent').text('89%');
+                phaseOne = setInterval(function(){
+                  if (count_animation <= 88){
+                    jQuery('.zone_d4, .zone_d3, .zone_d2_, .zone_v2, .zone_v3').css({
+                        color: 'transparent',
+                        borderColor: 'transparent',
+                        opacity: 0.8,
+                        borderWidth: '1px',
+                        paddingTop: '4px',
+                        transform: 'rotate(100deg) scale(1.5)',
+                        background: 'url(/wp-content/themes/bcwish/img/triangle_earth.png) center center/88% no-repeat',
+                        zIndex: '1000'
+                    });
+                    count_animation += 1;
+                  } else {
+                    clearInterval(phaseOne);
+                    count_animation = 1;
+                    jQuery('.zone_d4, .zone_d3, .zone_d2_, .zone_v2, .zone_v3').css({
+                        background: '#fff',
+                        color: '#413e66',
+                        borderColor: '#413e66',
+                        transform: 'scale(1)',
+                        paddingTop: '2px',
+                        zIndex: '2'
+                    });
+                    if (pausedStatus == true) {
+                      localStorage.setItem('paused', 'v1_codesAlt_7');
+                      endNow()
+                    } else {
+                      v1_codesAlt_7();
+                    } 
+                  }
+                }, 250);
+              }
+            }, 250);
+          }
+        }, 250);
+      }
+    }, 250);
+  }
+
+  v1_codesAlt_5_7 = function(){
+    jQuery('.wizard_heading').text('Выполняется протокол "V 1"');
+    jQuery('.wizard_percent').text('72%');
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    rotateVal = 0;
+    jQuery('.ring').addClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
+    cur_animation_val = 10;
+    count_animation = 1;
+    jQuery('.zone_v4').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
+      transform: 'scale(1.5)',
+      color: 'transparent',
+      borderColor: 'transparent',
+      opacity: 0.8,
+      borderWidth: '1px',
+      paddingTop: '4px',
+      zIndex: '1000'
+    });
+
+    var zone_gsap = gsap.timeline();
+    zone_gsap.fromTo('.zone_v4',{rotation: -300, scale: 1.5}, {duration: 40, ease: "none", rotation: -360, scale: 1.5})
+             .fromTo('.zone_v4',{rotation: -360, scale: 1.5}, {duration: 17, ease: "none", rotation: -360, scale: 1.5})
+             .fromTo('.zone_v4',{rotation: -360, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    
+    phaseSeven_one = setInterval(function(){
+        if (count_animation <= 40){
+          if (reloadTime == 0){
+              sound.stop();
+              reloadSound.play();
+          };
+          reloadTime += 1;
+          count_animation += 1;
+        } else if(count_animation <= 57) {
+            count_animation += 1;
+        } else {
+          clearInterval(phaseSeven_one);
+          count_animation = 1;
+          jQuery('.zone_v4').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'rotate(-'+0+'deg) scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+          });
+          if (pausedStatus == true) {
+            localStorage.setItem('paused', 'v1_codesAlt_6');
+            endNow();
+          } else {
+            v1_codesAlt_6();
+
+          } 
+        }
+    }, 1000);
+  }
+
+  v1_codesAlt_5_6 = function(){
+    jQuery('.wizard_heading').text('Выполняется протокол "V 1"');
+    jQuery('.wizard_percent').text('66%');
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    rotateVal = 0;
+    jQuery('.ring').addClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
+    cur_animation_val = 10;
+    count_animation = 1;
+    jQuery('.zone_v3, .zone_s3').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
+      transform: 'scale(1.5)',
+      color: 'transparent',
+      borderColor: 'transparent',
+      opacity: 0.8,
+      borderWidth: '1px',
+      paddingTop: '4px',
+      zIndex: '1000'
+    });
+
+    var zone_gsap = gsap.timeline();
+    zone_gsap.fromTo('.zone_v3, .zone_s3',{rotation: 270, scale: 1.5}, {duration: 40, ease: "none", rotation: 330, scale: 1.5})
+             .fromTo('.zone_v3, .zone_s3',{rotation: 330, scale: 1.5}, {duration: 17, ease: "none", rotation: 330, scale: 1.5})
+             .fromTo('.zone_v3, .zone_s3',{rotation: 330, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    
+    phaseSeven_one = setInterval(function(){
+        if (count_animation <= 40){
+          if (reloadTime == 0){                                                                       //1
+              sound.stop();
+              reloadSound.play();
+          };
+          reloadTime += 1;
+          count_animation += 1;
+        } else if(count_animation <= 57) {
+            count_animation += 1;
+        } else {
+          clearInterval(phaseSeven_one);
+          count_animation = 1;
+          jQuery('.zone_v3, .zone_s3').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'rotate(-'+0+'deg) scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+          });
+          if (pausedStatus == true) {
+            localStorage.setItem('paused', 'v1_codesAlt_5_7');
+            endNow();
+          } else {
+            v1_codesAlt_5_7();
+          } 
+        }
+    }, 1000);
+  } 
+
+  v1_codesAlt_5_5 = function(){
+    jQuery('.wizard_heading').text('Выполняется протокол "V 1"');
+    jQuery('.wizard_percent').text('60%');
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    rotateVal = 0;
+    jQuery('.ring').addClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
+    cur_animation_val = 10;
+    count_animation = 1;
+    jQuery('.zone_v4, .zone_v3').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
+      transform: 'scale(1.5)',
+      color: 'transparent',
+      borderColor: 'transparent',
+      opacity: 0.8,
+      borderWidth: '1px',
+      paddingTop: '4px',
+      zIndex: '1000'
+    });
+
+    var zone_gsap = gsap.timeline();
+    zone_gsap.fromTo('.zone_v4, .zone_v3',{rotation: 10, scale: 1.5}, {duration: 40, ease: "none", rotation: 70, scale: 1.5})
+             .fromTo('.zone_v4, .zone_v3',{rotation: 70, scale: 1.5}, {duration: 17, ease: "none", rotation: 70, scale: 1.5})
+             .fromTo('.zone_v4, .zone_v3',{rotation: 70, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    
+    phaseSeven_one = setInterval(function(){
+        if (count_animation <= 40){
+          if (reloadTime == 0){                                                                       //1
+              sound.stop();
+              reloadSound.play();
+          };
+          reloadTime += 1;
+          count_animation += 1;
+        } else if(count_animation <= 57) {
+            count_animation += 1;
+        } else {
+          clearInterval(phaseSeven_one);
+          count_animation = 1;
+          jQuery('.zone_v4, .zone_v3').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'rotate(-'+0+'deg) scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+          });
+          if (pausedStatus == true) {
+            localStorage.setItem('paused', 'v1_codesAlt_5_6');
+            endNow();
+          } else {
+            v1_codesAlt_5_6();
+          } 
+        }
+    }, 1000);
+  } 
+
+  v1_codesAlt_5_4 = function(){
+    jQuery('.wizard_heading').text('Выполняется протокол "V 1"');
+    jQuery('.wizard_percent').text('54%');
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    rotateVal = 0;
+    jQuery('.ring').addClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
+    cur_animation_val = 10;
+    count_animation = 1;
+    jQuery('.zone_v1, .zone_v4, .zone_v5').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
+      transform: 'scale(1.5)',
+      color: 'transparent',
+      borderColor: 'transparent',
+      opacity: 0.8,
+      borderWidth: '1px',
+      paddingTop: '4px',
+      zIndex: '1000'
+    });
+
+    var zone_gsap = gsap.timeline();
+    zone_gsap.fromTo('.zone_v1, .zone_v4, .zone_v5',{rotation: -300, scale: 1.5}, {duration: 40, ease: "none", rotation: -360, scale: 1.5})
+             .fromTo('.zone_v1, .zone_v4, .zone_v5',{rotation: -360, scale: 1.5}, {duration: 17, ease: "none", rotation: -360, scale: 1.5})
+             .fromTo('.zone_v1, .zone_v4, .zone_v5',{rotation: -360, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    
+    phaseSeven_one = setInterval(function(){
+        if (count_animation <= 40){
+          if (reloadTime == 0){
+              sound.stop();
+              reloadSound.play();
+          };
+          reloadTime += 1;
+          count_animation += 1;
+        } else if(count_animation <= 57) {
+            count_animation += 1;
+        } else {
+          clearInterval(phaseSeven_one);
+          count_animation = 1;
+          jQuery('.zone_v1, .zone_v4, .zone_v5').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'rotate(-'+0+'deg) scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+          });
+          if (pausedStatus == true) {
+            localStorage.setItem('paused', 'v1_codesAlt_5_5');
+            endNow();
+          } else {
+            v1_codesAlt_5_5();
+
+          } 
+        }
+    }, 1000);
+  }
+
+  v1_codesAlt_5_3 = function(){
+    jQuery('.wizard_heading').text('Выполняется протокол "V 1"');
+    jQuery('.wizard_percent').text('48%');
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    rotateVal = 0;
+    jQuery('.ring').addClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
+    cur_animation_val = 10;
+    count_animation = 1;
+    jQuery('.zone_v1, .zone_s3').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
+      transform: 'scale(1.5)',
+      color: 'transparent',
+      borderColor: 'transparent',
+      opacity: 0.8,
+      borderWidth: '1px',
+      paddingTop: '4px',
+      zIndex: '1000'
+    });
+
+    var zone_gsap = gsap.timeline();
+    zone_gsap.fromTo('.zone_v1, .zone_s3',{rotation: 60, scale: 1.5}, {duration: 40, ease: "none", rotation: 120, scale: 1.5})
+             .fromTo('.zone_v1, .zone_s3',{rotation: 120, scale: 1.5}, {duration: 17, ease: "none", rotation: 120, scale: 1.5})
+             .fromTo('.zone_v1, .zone_s3',{rotation: 120, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    
+    phaseSeven_one = setInterval(function(){
+        if (count_animation <= 40){
+          if (reloadTime == 0){                                                                       //1
+              sound.stop();
+              reloadSound.play();
+          };
+          reloadTime += 1;
+          count_animation += 1;
+        } else if(count_animation <= 57) {
+            count_animation += 1;
+        } else {
+          clearInterval(phaseSeven_one);
+          count_animation = 1;
+          jQuery('.zone_v1, .zone_s3').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'rotate(-'+0+'deg) scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+          });
+          if (pausedStatus == true) {
+            localStorage.setItem('paused', 'v1_codesAlt_5_4');
+            endNow();
+          } else {
+            v1_codesAlt_5_4();
+          } 
+        }
+    }, 1000);
+  } 
+
+  v1_codesAlt_5_2 = function(){
+    jQuery('.wizard_heading').text('Выполняется протокол "V 1"');
+    jQuery('.wizard_percent').text('42%');
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    rotateVal = 0;
+    jQuery('.ring').addClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
+    cur_animation_val = 10;
+    count_animation = 1;
+    jQuery('.zone_v1, .zone_v4').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
+      transform: 'scale(1.5)',
+      color: 'transparent',
+      borderColor: 'transparent',
+      opacity: 0.8,
+      borderWidth: '1px',
+      paddingTop: '4px',
+      zIndex: '1000'
+    });
+
+    var zone_gsap = gsap.timeline();
+    zone_gsap.fromTo('.zone_v1, .zone_v4',{rotation: 53, scale: 1.5}, {duration: 40, ease: "none", rotation: 93, scale: 1.5})
+             .fromTo('.zone_v1, .zone_v4',{rotation: 93, scale: 1.5}, {duration: 17, ease: "none", rotation: 93, scale: 1.5})
+             .fromTo('.zone_v1, .zone_v4',{rotation: 93, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    
+    phaseSeven_one = setInterval(function(){
+        if (count_animation <= 40){
+          if (reloadTime == 0){                                                                       //1
+              sound.stop();
+              reloadSound.play();
+          };
+          reloadTime += 1;
+          count_animation += 1;
+        } else if(count_animation <= 57) {
+            count_animation += 1;
+        } else {
+          clearInterval(phaseSeven_one);
+          count_animation = 1;
+          jQuery('.zone_v1, .zone_v4').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'rotate(-'+0+'deg) scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+          });
+          if (pausedStatus == true) {
+            localStorage.setItem('paused', 'v1_codesAlt_5_3');
+            endNow();
+          } else {
+            v1_codesAlt_5_3();
+          } 
+        }
+    }, 1000);
+  } 
+
+  v1_codesAlt_5_1 = function(){
+    jQuery('.wizard_heading').text('Выполняется протокол "V 1"');
+    jQuery('.wizard_percent').text('36%');
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    rotateVal = 0;
+    jQuery('.ring').addClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
+    cur_animation_val = 22;
+    count_animation = 1;
+    jQuery('.zone_v0, .zone_v-').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
+      transform: 'scale(1.5)',
+      color: 'transparent',
+      borderColor: 'transparent',
+      opacity: 0.8,
+      borderWidth: '1px',
+      paddingTop: '4px',
+      zIndex: '1000'
+    });
+    var zone_gsap = gsap.timeline();
+    zone_gsap.fromTo('.zone_v0, .zone_v-',{rotation: -22, scale: 1.5}, {duration: 40, ease: "none", rotation: -62, scale: 1.5})
+             .fromTo('.zone_v0, .zone_v-',{rotation: -62, scale: 1.5}, {duration: 17, ease: "none", rotation: -62, scale: 1.5})
+             .fromTo('.zone_v0, .zone_v-',{rotation: -62, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    phaseSeven_one = setInterval(function(){
+        if (count_animation <= 40){
+          if (reloadTime == 0){                                                                       //1
+              sound.stop();
+              reloadSound.play();
+          };
+          reloadTime += 1;
+          count_animation += 1;
+        } else if(count_animation <= 57) {
+            count_animation += 1;
+        } else {
+          clearInterval(phaseSeven_one);
+          count_animation = 1;
+          jQuery('.zone_v0, .zone_v-').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'rotate(-'+0+'deg) scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+          });
+          if (pausedStatus == true) {
+            localStorage.setItem('paused', 'v1_codesAlt_5_2');
+            endNow();
+          } else {
+            v1_codesAlt_5_2();
+            // console.log('continue');
+          } 
+        }
+    }, 1000);
+  }  
+
+  v1_codesAlt_4 = function(){
+    jQuery('.wizard_heading').text('Выполняется протокол "V 1"');
+    jQuery('.wizard_percent').text('27%');
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    cur_animation_val = 0;
+    rotateVal = 0;
+    count_animation = 1;
+    phaseOne = setInterval(function(){
+      if (count_animation <= 344){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        } else if (reloadTime == 2) {
+            sound.play();
+        };
+        reloadTime += 1;
+        if (count_animation == 1) {
+          cur_animation_val = 0;
+          count_animation = 1;
+  //анимация против часовой стрелки
+          jQuery('.triangle').css({
+              transform: 'scale(0.1) rotateY(180deg)rotateZ(120deg)',
+              left: '-190px',
+              top: '-142px'
+          });
+  //анимация первого треугольника
+          jQuery('.zone_v1').addClass('transparent');
+          firstTriangleAnimation = new Vivus('triangle_1', {type: 'delayed', duration: 600}, function(){
+  //анимация второго треугольника
+            setTimeout(function(){
+              jQuery('.zone_v2').addClass('transparent');
+              secondTriangleAnimation = new Vivus('triangle_2', {type: 'delayed', duration: 600}, function(){
+  //анимация третьего треугольника
+                setTimeout(function(){
+                  jQuery('.zone_v3').addClass('transparent');
+                  thirdTriangleAnimation = new Vivus('triangle_3', {type: 'delayed', duration: 600}, function(){
+  //анимация четвертого треугольника
+                    setTimeout(function(){
+                      jQuery('.zone_v4').addClass('transparent');
+                      fourthTriangleAnimation = new Vivus('triangle_4', {type: 'delayed', duration: 600}, function(){
+                        jQuery('.zone').removeClass('transparent');
+  //анимация по часовой стрелке
+                        jQuery('.triangle').css({
+                            transform: 'scale(0.1) rotateY(0deg)rotateZ(120deg)',
+                            left: '-184px',
+                            top: '-142px'
+                        });
+  //анимация первого треугольника
+                        jQuery('.zone_v1').addClass('transparent');                                                                    
+                        firstTriangleAnimation = new Vivus('triangle_1', {type: 'delayed', duration: 600}, function(){
+  //анимация второго треугольника
+                          setTimeout(function(){
+                            jQuery('.zone_v2').addClass('transparent');
+                            secondTriangleAnimation = new Vivus('triangle_2', {type: 'delayed', duration: 600}, function(){
+  //анимация третьего треугольника
+                              setTimeout(function(){
+                                jQuery('.zone_v3').addClass('transparent');
+                                thirdTriangleAnimation = new Vivus('triangle_3', {type: 'delayed', duration: 600}, function(){
+  //анимация четвертого треугольника
+                                  setTimeout(function(){
+                                    jQuery('.zone_v4').addClass('transparent');
+                                    fourthTriangleAnimation = new Vivus('triangle_4', {type: 'delayed', duration: 600}, function(){
+                                    });
+                                    fourthTriangleAnimation.play();
+                                  }, 250)
+                                });
+                                thirdTriangleAnimation.play();
+                              }, 250)
+                            });
+                            secondTriangleAnimation.play();
+                          }, 250)
+                        });
+                        firstTriangleAnimation.play();
+                      });
+                      fourthTriangleAnimation.play();
+                    }, 250)
+                  });
+                  thirdTriangleAnimation.play();
+                }, 250)
+              });
+              secondTriangleAnimation.play();
+            }, 250)
+          });
+          firstTriangleAnimation.play();
+        }
+        jQuery('.zone_ring')
+          .removeClass('hidden')
+          .css({
+            opacity: 0.8,
+            transform: 'scale(1.5)',
+            background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat',
+            transform: 'rotate(-'+d12Val+'deg) scale(1.5)'
+          });
+        count_animation += 1;
+        rotateVal += 1.5;
+        if(count_animation <= 120){
+            cur_animation_val += 1.5;
+            d12Val+= 3;
+            jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
+        } else if (count_animation >= 120 && count_animation <= 228){
+            cur_animation_val -= 1.5;
+            d12Val+= 3;
+            jQuery('.zone_ring').css('transform', 'rotate(-'+d12Val+'deg) scale(1.5)');
+            jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
+        } else if (count_animation >= 228 && count_animation <= 292){
+            cur_animation_val -= 1.5;
+            d12Val+= 3;
+            jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
+            jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.5)');
+            jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat');
+        } else if (count_animation >= 292 && count_animation <= 344){
+            cur_animation_val += 1.5;
+            d12Val+= 3;
+            jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
+            jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.5)');
+            jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat');
+        } else {
+            d12Val+= 3;
+            cur_animation_val += 1.5;
+            jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
+            jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.5)');
+            jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat');
+        }
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone').removeClass('transparent');
+        jQuery('.ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        sound.stop();
+        if (pausedStatus == true) {
+          localStorage.setItem('paused', 'v1_codesAlt_5_1');
+          endNow()
+        } else {
+          v1_codesAlt_5_1();
+          // console.log('continue');
+        } 
+      }
+    }, 250);
+  }
+
+  v1_codesAlt_3 = function(){
+    jQuery('.wizard_heading').text('Выполняется протокол "V 1"');
+    jQuery('.wizard_percent').text('18%');
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    cur_animation_val = 0;
+    rotateVal = 0;
+    count_animation = 1;
+    phaseOne = setInterval(function(){
+      if (count_animation <= 344){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        } else if (reloadTime == 2) {
+            sound.play();
+        };
+        reloadTime += 1;
+        if (count_animation == 1) {
+          cur_animation_val = 0;
+          count_animation = 1;
+  //анимация против часовой стрелки
+          jQuery('.triangle').css({
+              transform: 'scale(0.1) rotateY(180deg)rotateZ(120deg)',
+              left: '-190px',
+              top: '-142px'
+          });
+  //анимация первого треугольника
+          jQuery('.zone_v1').addClass('transparent');
+          firstTriangleAnimation = new Vivus('triangle_1', {type: 'delayed', duration: 600}, function(){
+  //анимация второго треугольника
+            setTimeout(function(){
+              jQuery('.zone_v2').addClass('transparent');
+              secondTriangleAnimation = new Vivus('triangle_2', {type: 'delayed', duration: 600}, function(){
+  //анимация третьего треугольника
+                setTimeout(function(){
+                  jQuery('.zone_v3').addClass('transparent');
+                  thirdTriangleAnimation = new Vivus('triangle_3', {type: 'delayed', duration: 600}, function(){
+  //анимация четвертого треугольника
+                    setTimeout(function(){
+                      jQuery('.zone_v4').addClass('transparent');
+                      fourthTriangleAnimation = new Vivus('triangle_4', {type: 'delayed', duration: 600}, function(){
+                        jQuery('.zone').removeClass('transparent');
+  //анимация по часовой стрелке
+                        jQuery('.triangle').css({
+                            transform: 'scale(0.1) rotateY(0deg)rotateZ(120deg)',
+                            left: '-184px',
+                            top: '-142px'
+                        });
+  //анимация первого треугольника
+                        jQuery('.zone_v1').addClass('transparent');                                                                    
+                        firstTriangleAnimation = new Vivus('triangle_1', {type: 'delayed', duration: 600}, function(){
+  //анимация второго треугольника
+                          setTimeout(function(){
+                            jQuery('.zone_v2').addClass('transparent');
+                            secondTriangleAnimation = new Vivus('triangle_2', {type: 'delayed', duration: 600}, function(){
+  //анимация третьего треугольника
+                              setTimeout(function(){
+                                jQuery('.zone_v3').addClass('transparent');
+                                thirdTriangleAnimation = new Vivus('triangle_3', {type: 'delayed', duration: 600}, function(){
+  //анимация четвертого треугольника
+                                  setTimeout(function(){
+                                    jQuery('.zone_v4').addClass('transparent');
+                                    fourthTriangleAnimation = new Vivus('triangle_4', {type: 'delayed', duration: 600}, function(){
+                                    });
+                                    fourthTriangleAnimation.play();
+                                  }, 250)
+                                });
+                                thirdTriangleAnimation.play();
+                              }, 250)
+                            });
+                            secondTriangleAnimation.play();
+                          }, 250)
+                        });
+                        firstTriangleAnimation.play();
+                      });
+                      fourthTriangleAnimation.play();
+                    }, 250)
+                  });
+                  thirdTriangleAnimation.play();
+                }, 250)
+              });
+              secondTriangleAnimation.play();
+            }, 250)
+          });
+          firstTriangleAnimation.play();
+        }
+        jQuery('.zone_ring')
+          .removeClass('hidden')
+          .css({
+            opacity: 0.8,
+            transform: 'scale(1.5)',
+            background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat',
+            transform: 'rotate(-'+d12Val+'deg) scale(1.5)'
+          });
+        count_animation += 1;
+        rotateVal += 1.5;
+        if(count_animation <= 120){
+            cur_animation_val += 1.5;
+            d12Val+= 3;
+            jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
+        } else if (count_animation >= 120 && count_animation <= 228){
+            cur_animation_val -= 1.5;
+            d12Val+= 3;
+            jQuery('.zone_ring').css('transform', 'rotate(-'+d12Val+'deg) scale(1.5)');
+            jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
+        } else if (count_animation >= 228 && count_animation <= 292){
+            cur_animation_val -= 1.5;
+            d12Val+= 3;
+            jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
+            jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.5)');
+            jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat');
+        } else if (count_animation >= 292 && count_animation <= 344){
+            cur_animation_val += 1.5;
+            d12Val+= 3;
+            jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
+            jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.5)');
+            jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat');
+        } else {
+            d12Val+= 3;
+            cur_animation_val += 1.5;
+            jQuery('.ring').css('transform', 'rotate('+cur_animation_val+'deg)');
+            jQuery('.zone_ring').css('transform', 'rotate('+d12Val+'deg) scale(1.5)');
+            jQuery('.zone_ring').css('background', '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat');
+        }
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone').removeClass('transparent');
+        jQuery('.ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        sound.stop();
+        if (pausedStatus == true) {
+          localStorage.setItem('paused', 'v1_codesAlt_4');
+          endNow()
+        } else {
+          v1_codesAlt_4();
+          // console.log('continue');
+        } 
+      }
+    }, 250);
+  }
+
+  v1_codesAlt_2 = function(){
+    jQuery('.wizard_heading').text('Выполняется протокол "V 1"');
+    jQuery('.wizard_percent').text('9%');
+    reloadTime = 0;
+    cur_animation_val = 0;
+    count_animation = 1;
+    jQuery('.zone_v0, .zone_v2, .zone_d2, .zone_cl, .zone_v-').css({
+        color: 'transparent',
+        borderColor: 'transparent',
+        opacity: 0.8,
+        borderWidth: '1px',
+        paddingTop: '4px',
+        background: '#fff url(/wp-content/themes/bcwish/img/superdisfunction.png) center center/100% no-repeat',
+        transform: 'scale(1.5)',
+        zIndex: '1000'
+    });
+    gsap.fromTo(".zone_v0, .zone_v2, .zone_d2, .zone_cl, .zone_v-",{scale: 1.5}, {duration: 90, ease: "none", rotation: 360, scale: 1.5});
+    jQuery('.zone_ring')
+      .removeClass('hidden')
+      .css({
+        opacity: 0.8,
+        transform: 'scale(1.5)',
+        background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat'
+      });
+    jQuery('.zone_v-').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat',
+    });
+    gsap.fromTo(".zone_v-",{scale: 1.5}, {duration: 90, ease: "none", rotation: -360, scale: 1.5});
+
+    var zone_gsap = gsap.timeline();
+    zone_gsap.fromTo('.ring',{rotation: 0}, {duration: 30, ease: "none", rotation: 180})
+             .fromTo('.ring',{rotation: 180}, {duration: 30, ease: "none", rotation: 0})
+             .fromTo('.ring',{rotation: 0}, {duration: 15, ease: "none", rotation: -90})
+             .fromTo('.ring',{rotation: -90}, {duration: 15, ease: "none", rotation: 0})
+             .to('.zone_cl', {duration: 11, ease: "none", scale: 1})
+
+    var zone_ring_gsap = gsap.timeline();
+    zone_ring_gsap.fromTo('.zone_ring',{rotation: 0}, {duration: 60, ease: "none", rotation: -480})
+                  .fromTo('.zone_ring',{rotation: -480}, {duration: 30, ease: "none", rotation: -240})
+
+    phaseOne = setInterval(function(){
+      if (count_animation <= 360){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        } else if (reloadTime == 2) {
+            sound.play();
+        };
+        reloadTime += 1;
+        if (count_animation > 220) {
+          jQuery('.zone_ring').css({background: '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat'});
+        }
+        count_animation += 1;
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone_v0, .zone_v2, .zone_d2, .zone_cl, .zone_v-').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+        });
+        jQuery('.ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        sound.stop();
+        if (pausedStatus == true) {
+          localStorage.setItem('paused', 'v1_codesAlt_3');
+          endNow()
+        } else {
+          v1_codesAlt_3();
+          // console.log('continue');
+        } 
+      }
+    }, 250);
+  }
+
+  v1_codesAlt = function(){
+    jQuery('.wizard_heading').text('Выполняется протокол "V 1"');
+    jQuery('.wizard_percent').text('0%');
+    reloadTime = 0;
+    cur_animation_val = 0;
+    count_animation = 1;
+    jQuery('.ring').removeClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
+    jQuery('.zone_v5, .zone_d5, .zone_d6, .zone_v-').css({
+        color: 'transparent',
+        borderColor: 'transparent',
+        opacity: 0.8,
+        borderWidth: '1px',
+        paddingTop: '4px',
+        background: '#fff url(/wp-content/themes/bcwish/img/superdisfunction.png) center center/100% no-repeat',
+        transform: 'scale(1.5)',
+        zIndex: '1000'
+    });
+    jQuery('.zone_v-').css({
+        background: '#fff url(/wp-content/themes/bcwish/img/vig_.png) center center/100% no-repeat'
+    });
+    gsap.fromTo('.zone_v5, .zone_d5, .zone_d6',{scale: 1.5}, {duration: 90, ease: "none", rotation: 360, scale: 1.5});
+    jQuery('.zone_ring')
+      .removeClass('hidden')
+      .css({
+        opacity: 0.8,
+        transform: 'scale(1.5)',
+        background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat'
+      });
+    var zone_gsap = gsap.timeline();
+    zone_gsap.fromTo('.ring',{rotation: 0}, {duration: 30, ease: "none", rotation: 180})
+             .fromTo('.ring',{rotation: 180}, {duration: 30, ease: "none", rotation: 0})
+             .fromTo('.ring',{rotation: 0}, {duration: 15, ease: "none", rotation: -90})
+             .fromTo('.ring',{rotation: -90}, {duration: 15, ease: "none", rotation: 0})
+             .to('.zone_cl', {duration: 11, ease: "none", scale: 1})
+
+    var zone_ring_gsap = gsap.timeline();
+    zone_ring_gsap.fromTo('.zone_ring',{rotation: 0}, {duration: 60, ease: "none", rotation: -480})
+                  .fromTo('.zone_ring',{rotation: -480}, {duration: 30, ease: "none", rotation: -240})
+
+    phaseOne = setInterval(function(){
+      if (count_animation <= 360){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        } else if (reloadTime == 2) {
+            sound.play();
+        };
+        reloadTime += 1;
+        if (count_animation > 220) {
+          jQuery('.zone_ring').css({background: '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat'});
+        }
+        count_animation += 1;
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone_v5, .zone_d5, .zone_d6, .zone_v-').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+        });
+        jQuery('.ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        sound.stop();
+        if (pausedStatus == true) {
+          localStorage.setItem('paused', 'v1_codesAlt_2');
+          endNow()
+        } else {
+          v1_codesAlt_2();
+          // console.log('continue');
+        } 
+      }
+    }, 250);
+  }
+
+  v4_codesAlt_13 = function(){
     jQuery('.wizard_heading').text('Выполняется протокол "V 4 — V 3"');
-    jQuery('.wizard_percent').text('12%');
+    jQuery('.wizard_percent').text('90%');
+    jQuery('.ring').addClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    cur_animation_val = 0;
+    rotateVal = 0;
+    count_animation = 1;
+    phaseOne = setInterval(function(){
+      if (count_animation <= 344){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        };
+        reloadTime += 1;
+        jQuery('.zone_v0, .zone_v-').css({
+            color: 'transparent',
+            borderColor: 'transparent',
+            opacity: 0.8,
+            borderWidth: '1px',
+            paddingTop: '4px',
+            transform: 'scale(1.5)',
+            background: '#fff url(/wp-content/themes/bcwish/img/plod.png) center center/110% no-repeat',
+            zIndex: '1000'
+        });
+        jQuery('.zone_v-').css({
+            background: '#fff url(/wp-content/themes/bcwish/img/x.png) center center/120% no-repeat'
+        });
+        
+        count_animation += 1;
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone_v0, .zone_v-').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+        });
+        onEnd();
+      }
+    }, 250);
+  }
+
+    v4_codesAlt_12 = function(){
+      jQuery('.wizard_heading').text('Выполняется протокол "V 4 — V 3"');
+      jQuery('.wizard_percent').text('90%');
+      jQuery('.ring').css('transform', 'rotate(0deg)');
+      jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+      reloadTime = 0;
+      reloadTime1 = 0;
+      d12Val = 0;
+      cur_animation_val = 0;
+      rotateVal = 0;
+      count_animation = 1;
+      jQuery('.ring').addClass('hidden');
+      jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
+  // I
+      phaseOne = setInterval(function(){
+        if (count_animation <= 88){
+          if (reloadTime == 0){                                                                       //1
+              sound.stop();
+              reloadSound.play();
+          };
+          reloadTime += 1;
+          jQuery('.zone_v5, .zone_d2, .zone_d5, .zone_d6, .zone_s2_').css({
+              color: 'transparent',
+              borderColor: 'transparent',
+              opacity: 0.8,
+              borderWidth: '1px',
+              paddingTop: '4px',
+              transform: 'rotate(70deg) scale(1.5)',
+              background: 'url(/wp-content/themes/bcwish/img/triangle_air.png) center center/88% no-repeat',
+              zIndex: '1000'
+          });
+          count_animation += 1;
+        } else {
+          clearInterval(phaseOne);
+          count_animation = 1;
+          jQuery('.zone_v5, .zone_d2, .zone_d5, .zone_d6, .zone_s2_').css({
+              background: '#fff',
+              color: '#413e66',
+              borderColor: '#413e66',
+              transform: 'scale(1)',
+              paddingTop: '2px',
+              zIndex: '2'
+          });
+  // II
+          jQuery('.wizard_percent').text('85%');
+          phaseOne = setInterval(function(){
+            if (count_animation <= 88){
+              jQuery('.zone_v1, .zone_s2, .zone_s4, .zone_v5, .zone_s5, .zone_s6').css({
+                  color: 'transparent',
+                  borderColor: 'transparent',
+                  opacity: 0.8,
+                  borderWidth: '1px',
+                  paddingTop: '4px',
+                  transform: 'rotate(20deg) scale(1.5)',
+                  background: 'url(/wp-content/themes/bcwish/img/triangle_fire.png) center center/88% no-repeat',
+                  zIndex: '1000'
+              });
+              count_animation += 1;
+            } else {
+              clearInterval(phaseOne);
+              count_animation = 1;
+              jQuery('.zone_v1, .zone_s2, .zone_s4, .zone_v5, .zone_s5, .zone_s6').css({
+                  background: '#fff',
+                  color: '#413e66',
+                  borderColor: '#413e66',
+                  transform: 'scale(1)',
+                  paddingTop: '2px',
+                  zIndex: '2'
+              });
+  // III
+              jQuery('.wizard_percent').text('87%');
+              phaseOne = setInterval(function(){
+                if (count_animation <= 88){
+                  jQuery('.zone_s3, .zone_v4').css({
+                      color: 'transparent',
+                      borderColor: 'transparent',
+                      opacity: 0.8,
+                      borderWidth: '1px',
+                      paddingTop: '4px',
+                      transform: 'rotate(50deg) scale(1.5)',
+                      background: 'url(/wp-content/themes/bcwish/img/triangle_water.png) center center/88% no-repeat',
+                      zIndex: '1000'
+                  });
+                  count_animation += 1;
+                } else {
+                  clearInterval(phaseOne);
+                  count_animation = 1;
+                  jQuery('.zone_s3, .zone_v4').css({
+                      background: '#fff',
+                      color: '#413e66',
+                      borderColor: '#413e66',
+                      transform: 'scale(1)',
+                      paddingTop: '2px',
+                      zIndex: '2'
+                  });
+  // IV
+                  jQuery('.wizard_percent').text('89%');
+                  phaseOne = setInterval(function(){
+                    if (count_animation <= 88){
+                      jQuery('.zone_d4, .zone_d3, .zone_d2_, .zone_v2, .zone_v3').css({
+                          color: 'transparent',
+                          borderColor: 'transparent',
+                          opacity: 0.8,
+                          borderWidth: '1px',
+                          paddingTop: '4px',
+                          transform: 'rotate(100deg) scale(1.5)',
+                          background: 'url(/wp-content/themes/bcwish/img/triangle_earth.png) center center/88% no-repeat',
+                          zIndex: '1000'
+                      });
+                      count_animation += 1;
+                    } else {
+                      clearInterval(phaseOne);
+                      count_animation = 1;
+                      jQuery('.zone_d4, .zone_d3, .zone_d2_, .zone_v2, .zone_v3').css({
+                          background: '#fff',
+                          color: '#413e66',
+                          borderColor: '#413e66',
+                          transform: 'scale(1)',
+                          paddingTop: '2px',
+                          zIndex: '2'
+                      });
+                      if (pausedStatus == true) {
+                        localStorage.setItem('paused', 'v4_codesAlt_13');
+                        endNow()
+                      } else {
+                        v4_codesAlt_13();
+                      } 
+                    }
+                  }, 250);
+                }
+              }, 250);
+            }
+          }, 250);
+        }
+      }, 250);
+    }
+
+  v4_codesAlt_11_4 = function(){
+    jQuery('.wizard_heading').text('Выполняется протокол "V 4 — V 3"');
+    jQuery('.wizard_percent').text('84%');
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    rotateVal = 0;
+    jQuery('.ring').addClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
+    cur_animation_val = 10;
+    count_animation = 1;
+    jQuery('.zone_s2_, .zone_d5, .zone_d6').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
+      transform: 'scale(1.5)',
+      color: 'transparent',
+      borderColor: 'transparent',
+      opacity: 0.8,
+      borderWidth: '1px',
+      paddingTop: '4px',
+      zIndex: '1000'
+    });
+
+    var zone_gsap = gsap.timeline();
+    zone_gsap.fromTo('.zone_s2_, .zone_d5, .zone_d6',{rotation: -320, scale: 1.5}, {duration: 40, ease: "none", rotation: -380, scale: 1.5})
+             .fromTo('.zone_s2_, .zone_d5, .zone_d6',{rotation: -380, scale: 1.5}, {duration: 17, ease: "none", rotation: -380, scale: 1.5})
+             .fromTo('.zone_s2_, .zone_d5, .zone_d6',{rotation: -380, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    
+    phaseSeven_one = setInterval(function(){
+        if (count_animation <= 40){
+          if (reloadTime == 0){
+              sound.stop();
+              reloadSound.play();
+          };
+          reloadTime += 1;
+          count_animation += 1;
+        } else if(count_animation <= 57) {
+            count_animation += 1;
+        } else {
+          clearInterval(phaseSeven_one);
+          count_animation = 1;
+          jQuery('.zone_s2_, .zone_d5, .zone_d6').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'rotate(-'+0+'deg) scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+          });
+          if (pausedStatus == true) {
+            localStorage.setItem('paused', 'v4_codesAlt_12');
+            endNow();
+          } else {
+            v4_codesAlt_12();
+
+          } 
+        }
+    }, 1000);
+  }
+
+  v4_codesAlt_11_3 = function(){
+    jQuery('.wizard_heading').text('Выполняется протокол "V 4 — V 3"');
+    jQuery('.wizard_percent').text('81%');
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    rotateVal = 0;
+    jQuery('.ring').addClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
+    cur_animation_val = 10;
+    count_animation = 1;
+    jQuery('.zone_s2_, .zone_d5, .zone_d6').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
+      transform: 'scale(1.5)',
+      color: 'transparent',
+      borderColor: 'transparent',
+      opacity: 0.8,
+      borderWidth: '1px',
+      paddingTop: '4px',
+      zIndex: '1000'
+    });
+
+    var zone_gsap = gsap.timeline();
+    zone_gsap.fromTo('.zone_s2_, .zone_d5, .zone_d6',{rotation: 270, scale: 1.5}, {duration: 40, ease: "none", rotation: 330, scale: 1.5})
+             .fromTo('.zone_s2_, .zone_d5, .zone_d6',{rotation: 330, scale: 1.5}, {duration: 17, ease: "none", rotation: 330, scale: 1.5})
+             .fromTo('.zone_s2_, .zone_d5, .zone_d6',{rotation: 330, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    
+    phaseSeven_one = setInterval(function(){
+        if (count_animation <= 40){
+          if (reloadTime == 0){                                                                       //1
+              sound.stop();
+              reloadSound.play();
+          };
+          reloadTime += 1;
+          count_animation += 1;
+        } else if(count_animation <= 57) {
+            count_animation += 1;
+        } else {
+          clearInterval(phaseSeven_one);
+          count_animation = 1;
+          jQuery('.zone_s2_, .zone_d5, .zone_d6').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'rotate(-'+0+'deg) scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+          });
+          if (pausedStatus == true) {
+            localStorage.setItem('paused', 'v4_codesAlt_11_4');
+            endNow();
+          } else {
+            v4_codesAlt_11_4();
+          } 
+        }
+    }, 1000);
+  } 
+
+  v4_codesAlt_11_2 = function(){
+    jQuery('.wizard_heading').text('Выполняется протокол "V 4 — V 3"');
+    jQuery('.wizard_percent').text('78%');
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    rotateVal = 0;
+    jQuery('.ring').addClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
+    cur_animation_val = 10;
+    count_animation = 1;
+    jQuery('.zone_s2_, .zone_d5, .zone_d6').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
+      transform: 'scale(1.5)',
+      color: 'transparent',
+      borderColor: 'transparent',
+      opacity: 0.8,
+      borderWidth: '1px',
+      paddingTop: '4px',
+      zIndex: '1000'
+    });
+
+    var zone_gsap = gsap.timeline();
+    zone_gsap.fromTo('.zone_s2_, .zone_d5, .zone_d6',{rotation: 20, scale: 1.5}, {duration: 40, ease: "none", rotation: 80, scale: 1.5})
+             .fromTo('.zone_s2_, .zone_d5, .zone_d6',{rotation: 80, scale: 1.5}, {duration: 17, ease: "none", rotation: 80, scale: 1.5})
+             .fromTo('.zone_s2_, .zone_d5, .zone_d6',{rotation: 80, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    
+    phaseSeven_one = setInterval(function(){
+        if (count_animation <= 40){
+          if (reloadTime == 0){                                                                       //1
+              sound.stop();
+              reloadSound.play();
+          };
+          reloadTime += 1;
+          count_animation += 1;
+        } else if(count_animation <= 57) {
+            count_animation += 1;
+        } else {
+          clearInterval(phaseSeven_one);
+          count_animation = 1;
+          jQuery('.zone_s2_, .zone_d5, .zone_d6').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'rotate(-'+0+'deg) scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+          });
+          if (pausedStatus == true) {
+            localStorage.setItem('paused', 'v4_codesAlt_11_3');
+            endNow();
+          } else {
+            v4_codesAlt_11_3();
+          } 
+        }
+    }, 1000);
+  } 
+
+  v4_codesAlt_11_1 = function(){
+    jQuery('.wizard_heading').text('Выполняется протокол "V 4 — V 3"');
+    jQuery('.wizard_percent').text('75%');
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    rotateVal = 0;
+    jQuery('.ring').addClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
+    cur_animation_val = 10;
+    count_animation = 1;
+    jQuery('.zone_s2_, .zone_d5, .zone_d6').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
+      transform: 'scale(1.5)',
+      color: 'transparent',
+      borderColor: 'transparent',
+      opacity: 0.8,
+      borderWidth: '1px',
+      paddingTop: '4px',
+      zIndex: '1000'
+    });
+    var zone_gsap = gsap.timeline();
+    zone_gsap.fromTo('.zone_s2_, .zone_d5, .zone_d6',{rotation: -10, scale: 1.5}, {duration: 40, ease: "none", rotation: -70, scale: 1.5})
+             .fromTo('.zone_s2_, .zone_d5, .zone_d6',{rotation: -70, scale: 1.5}, {duration: 17, ease: "none", rotation: -70, scale: 1.5})
+             .fromTo('.zone_s2_, .zone_d5, .zone_d6',{rotation: -70, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    phaseSeven_one = setInterval(function(){
+        if (count_animation <= 40){
+          if (reloadTime == 0){                                                                       //1
+              sound.stop();
+              reloadSound.play();
+          };
+          reloadTime += 1;
+          count_animation += 1;
+        } else if(count_animation <= 57) {
+            count_animation += 1;
+        } else {
+          clearInterval(phaseSeven_one);
+          count_animation = 1;
+          jQuery('.zone_s2_, .zone_d5, .zone_d6').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'rotate(-'+0+'deg) scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+          });
+          if (pausedStatus == true) {
+            localStorage.setItem('paused', 'v4_codesAlt_11_2');
+            endNow();
+          } else {
+            v4_codesAlt_11_2();
+            // console.log('continue');
+          } 
+        }
+    }, 1000);
+  }  
+
+  v4_codesAlt_10_4 = function(){
+    jQuery('.wizard_heading').text('Выполняется протокол "V 4 — V 3"');
+    jQuery('.wizard_percent').text('72%');
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    rotateVal = 0;
+    jQuery('.ring').addClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
+    cur_animation_val = 10;
+    count_animation = 1;
+    jQuery('.zone_v2, .zone_v3, .zone_d4').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
+      transform: 'scale(1.5)',
+      color: 'transparent',
+      borderColor: 'transparent',
+      opacity: 0.8,
+      borderWidth: '1px',
+      paddingTop: '4px',
+      zIndex: '1000'
+    });
+
+    var zone_gsap = gsap.timeline();
+    zone_gsap.fromTo('.zone_v2, .zone_v3, .zone_d4',{rotation: -320, scale: 1.5}, {duration: 40, ease: "none", rotation: -380, scale: 1.5})
+             .fromTo('.zone_v2, .zone_v3, .zone_d4',{rotation: -380, scale: 1.5}, {duration: 17, ease: "none", rotation: -380, scale: 1.5})
+             .fromTo('.zone_v2, .zone_v3, .zone_d4',{rotation: -380, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    
+    phaseSeven_one = setInterval(function(){
+        if (count_animation <= 40){
+          if (reloadTime == 0){
+              sound.stop();
+              reloadSound.play();
+          };
+          reloadTime += 1;
+          count_animation += 1;
+        } else if(count_animation <= 57) {
+            count_animation += 1;
+        } else {
+          clearInterval(phaseSeven_one);
+          count_animation = 1;
+          jQuery('.zone_v2, .zone_v3, .zone_d4').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'rotate(-'+0+'deg) scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+          });
+          if (pausedStatus == true) {
+            localStorage.setItem('paused', 'v4_codesAlt_11_1');
+            endNow();
+          } else {
+            v4_codesAlt_11_1();
+
+          } 
+        }
+    }, 1000);
+  }
+
+  v4_codesAlt_10_3 = function(){
+    jQuery('.wizard_heading').text('Выполняется протокол "V 4 — V 3"');
+    jQuery('.wizard_percent').text('69%');
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    rotateVal = 0;
+    jQuery('.ring').addClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
+    cur_animation_val = 10;
+    count_animation = 1;
+    jQuery('.zone_v2, .zone_v3, .zone_d4').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
+      transform: 'scale(1.5)',
+      color: 'transparent',
+      borderColor: 'transparent',
+      opacity: 0.8,
+      borderWidth: '1px',
+      paddingTop: '4px',
+      zIndex: '1000'
+    });
+
+    var zone_gsap = gsap.timeline();
+    zone_gsap.fromTo('.zone_v2, .zone_v3, .zone_d4',{rotation: 270, scale: 1.5}, {duration: 40, ease: "none", rotation: 330, scale: 1.5})
+             .fromTo('.zone_v2, .zone_v3, .zone_d4',{rotation: 330, scale: 1.5}, {duration: 17, ease: "none", rotation: 330, scale: 1.5})
+             .fromTo('.zone_v2, .zone_v3, .zone_d4',{rotation: 330, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    
+    phaseSeven_one = setInterval(function(){
+        if (count_animation <= 40){
+          if (reloadTime == 0){                                                                       //1
+              sound.stop();
+              reloadSound.play();
+          };
+          reloadTime += 1;
+          count_animation += 1;
+        } else if(count_animation <= 57) {
+            count_animation += 1;
+        } else {
+          clearInterval(phaseSeven_one);
+          count_animation = 1;
+          jQuery('.zone_v2, .zone_v3, .zone_d4').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'rotate(-'+0+'deg) scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+          });
+          if (pausedStatus == true) {
+            localStorage.setItem('paused', 'v4_codesAlt_10_4');
+            endNow();
+          } else {
+            v4_codesAlt_10_4();
+          } 
+        }
+    }, 1000);
+  } 
+
+  v4_codesAlt_10_2 = function(){
+    jQuery('.wizard_heading').text('Выполняется протокол "V 4 — V 3"');
+    jQuery('.wizard_percent').text('66%');
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    rotateVal = 0;
+    jQuery('.ring').addClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
+    cur_animation_val = 10;
+    count_animation = 1;
+    jQuery('.zone_v2, .zone_v3, .zone_d4').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
+      transform: 'scale(1.5)',
+      color: 'transparent',
+      borderColor: 'transparent',
+      opacity: 0.8,
+      borderWidth: '1px',
+      paddingTop: '4px',
+      zIndex: '1000'
+    });
+
+    var zone_gsap = gsap.timeline();
+    zone_gsap.fromTo('.zone_v2, .zone_v3, .zone_d4',{rotation: 20, scale: 1.5}, {duration: 40, ease: "none", rotation: 80, scale: 1.5})
+             .fromTo('.zone_v2, .zone_v3, .zone_d4',{rotation: 80, scale: 1.5}, {duration: 17, ease: "none", rotation: 80, scale: 1.5})
+             .fromTo('.zone_v2, .zone_v3, .zone_d4',{rotation: 80, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    
+    phaseSeven_one = setInterval(function(){
+        if (count_animation <= 40){
+          if (reloadTime == 0){                                                                       //1
+              sound.stop();
+              reloadSound.play();
+          };
+          reloadTime += 1;
+          count_animation += 1;
+        } else if(count_animation <= 57) {
+            count_animation += 1;
+        } else {
+          clearInterval(phaseSeven_one);
+          count_animation = 1;
+          jQuery('.zone_v2, .zone_v3, .zone_d4').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'rotate(-'+0+'deg) scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+          });
+          if (pausedStatus == true) {
+            localStorage.setItem('paused', 'v4_codesAlt_10_3');
+            endNow();
+          } else {
+            v4_codesAlt_10_3();
+          } 
+        }
+    }, 1000);
+  } 
+
+  v4_codesAlt_10_1 = function(){
+    jQuery('.wizard_heading').text('Выполняется протокол "V 4 — V 3"');
+    jQuery('.wizard_percent').text('63%');
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    rotateVal = 0;
+    jQuery('.ring').addClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
+    cur_animation_val = 10;
+    count_animation = 1;
+    jQuery('.zone_v2, .zone_v3, .zone_d4').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
+      transform: 'scale(1.5)',
+      color: 'transparent',
+      borderColor: 'transparent',
+      opacity: 0.8,
+      borderWidth: '1px',
+      paddingTop: '4px',
+      zIndex: '1000'
+    });
+    var zone_gsap = gsap.timeline();
+    zone_gsap.fromTo('.zone_v2, .zone_v3, .zone_d4',{rotation: -10, scale: 1.5}, {duration: 40, ease: "none", rotation: -70, scale: 1.5})
+             .fromTo('.zone_v2, .zone_v3, .zone_d4',{rotation: -70, scale: 1.5}, {duration: 17, ease: "none", rotation: -70, scale: 1.5})
+             .fromTo('.zone_v2, .zone_v3, .zone_d4',{rotation: -70, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    phaseSeven_one = setInterval(function(){
+        if (count_animation <= 40){
+          if (reloadTime == 0){                                                                       //1
+              sound.stop();
+              reloadSound.play();
+          };
+          reloadTime += 1;
+          count_animation += 1;
+        } else if(count_animation <= 57) {
+            count_animation += 1;
+        } else {
+          clearInterval(phaseSeven_one);
+          count_animation = 1;
+          jQuery('.zone_v2, .zone_v3, .zone_d4').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'rotate(-'+0+'deg) scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+          });
+          if (pausedStatus == true) {
+            localStorage.setItem('paused', 'v4_codesAlt_10_2');
+            endNow();
+          } else {
+            v4_codesAlt_10_2();
+            // console.log('continue');
+          } 
+        }
+    }, 1000);
+  }  
+
+  v4_codesAlt_9_4 = function(){
+    jQuery('.wizard_heading').text('Выполняется протокол "V 4 — V 3"');
+    jQuery('.wizard_percent').text('60%');
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    rotateVal = 0;
+    jQuery('.ring').addClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
+    cur_animation_val = 10;
+    count_animation = 1;
+    jQuery('.zone_s2, .zone_s4, .zone_s5').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
+      transform: 'scale(1.5)',
+      color: 'transparent',
+      borderColor: 'transparent',
+      opacity: 0.8,
+      borderWidth: '1px',
+      paddingTop: '4px',
+      zIndex: '1000'
+    });
+
+    var zone_gsap = gsap.timeline();
+    zone_gsap.fromTo('.zone_s2, .zone_s4, .zone_s5',{rotation: -320, scale: 1.5}, {duration: 40, ease: "none", rotation: -380, scale: 1.5})
+             .fromTo('.zone_s2, .zone_s4, .zone_s5',{rotation: -380, scale: 1.5}, {duration: 17, ease: "none", rotation: -380, scale: 1.5})
+             .fromTo('.zone_s2, .zone_s4, .zone_s5',{rotation: -380, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    
+    phaseSeven_one = setInterval(function(){
+        if (count_animation <= 40){
+          if (reloadTime == 0){
+              sound.stop();
+              reloadSound.play();
+          };
+          reloadTime += 1;
+          count_animation += 1;
+        } else if(count_animation <= 57) {
+            count_animation += 1;
+        } else {
+          clearInterval(phaseSeven_one);
+          count_animation = 1;
+          jQuery('.zone_s2, .zone_s4, .zone_s5').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'rotate(-'+0+'deg) scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+          });
+          if (pausedStatus == true) {
+            localStorage.setItem('paused', 'v4_codesAlt_10_1');
+            endNow();
+          } else {
+            v4_codesAlt_10_1();
+
+          } 
+        }
+    }, 1000);
+  }
+
+  v4_codesAlt_9_3 = function(){
+    jQuery('.wizard_heading').text('Выполняется протокол "V 4 — V 3"');
+    jQuery('.wizard_percent').text('57%');
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    rotateVal = 0;
+    jQuery('.ring').addClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
+    cur_animation_val = 10;
+    count_animation = 1;
+    jQuery('.zone_s2, .zone_s4, .zone_s5').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
+      transform: 'scale(1.5)',
+      color: 'transparent',
+      borderColor: 'transparent',
+      opacity: 0.8,
+      borderWidth: '1px',
+      paddingTop: '4px',
+      zIndex: '1000'
+    });
+
+    var zone_gsap = gsap.timeline();
+    zone_gsap.fromTo('.zone_s2, .zone_s4, .zone_s5',{rotation: 270, scale: 1.5}, {duration: 40, ease: "none", rotation: 330, scale: 1.5})
+             .fromTo('.zone_s2, .zone_s4, .zone_s5',{rotation: 330, scale: 1.5}, {duration: 17, ease: "none", rotation: 330, scale: 1.5})
+             .fromTo('.zone_s2, .zone_s4, .zone_s5',{rotation: 330, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    
+    phaseSeven_one = setInterval(function(){
+        if (count_animation <= 40){
+          if (reloadTime == 0){                                                                       //1
+              sound.stop();
+              reloadSound.play();
+          };
+          reloadTime += 1;
+          count_animation += 1;
+        } else if(count_animation <= 57) {
+            count_animation += 1;
+        } else {
+          clearInterval(phaseSeven_one);
+          count_animation = 1;
+          jQuery('.zone_s2, .zone_s4, .zone_s5').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'rotate(-'+0+'deg) scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+          });
+          if (pausedStatus == true) {
+            localStorage.setItem('paused', 'v4_codesAlt_9_4');
+            endNow();
+          } else {
+            v4_codesAlt_9_4();
+          } 
+        }
+    }, 1000);
+  } 
+
+  v4_codesAlt_9_2 = function(){
+    jQuery('.wizard_heading').text('Выполняется протокол "V 4 — V 3"');
+    jQuery('.wizard_percent').text('54%');
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    rotateVal = 0;
+    jQuery('.ring').addClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
+    cur_animation_val = 10;
+    count_animation = 1;
+    jQuery('.zone_s2, .zone_s4, .zone_s5').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
+      transform: 'scale(1.5)',
+      color: 'transparent',
+      borderColor: 'transparent',
+      opacity: 0.8,
+      borderWidth: '1px',
+      paddingTop: '4px',
+      zIndex: '1000'
+    });
+
+    var zone_gsap = gsap.timeline();
+    zone_gsap.fromTo('.zone_s2, .zone_s4, .zone_s5',{rotation: 20, scale: 1.5}, {duration: 40, ease: "none", rotation: 80, scale: 1.5})
+             .fromTo('.zone_s2, .zone_s4, .zone_s5',{rotation: 80, scale: 1.5}, {duration: 17, ease: "none", rotation: 80, scale: 1.5})
+             .fromTo('.zone_s2, .zone_s4, .zone_s5',{rotation: 80, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    
+    phaseSeven_one = setInterval(function(){
+        if (count_animation <= 40){
+          if (reloadTime == 0){                                                                       //1
+              sound.stop();
+              reloadSound.play();
+          };
+          reloadTime += 1;
+          count_animation += 1;
+        } else if(count_animation <= 57) {
+            count_animation += 1;
+        } else {
+          clearInterval(phaseSeven_one);
+          count_animation = 1;
+          jQuery('.zone_s2, .zone_s4, .zone_s5').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'rotate(-'+0+'deg) scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+          });
+          if (pausedStatus == true) {
+            localStorage.setItem('paused', 'v4_codesAlt_9_3');
+            endNow();
+          } else {
+            v4_codesAlt_9_3();
+          } 
+        }
+    }, 1000);
+  } 
+
+  v4_codesAlt_9_1 = function(){
+    jQuery('.wizard_heading').text('Выполняется протокол "V 4 — V 3"');
+    jQuery('.wizard_percent').text('51%');
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    rotateVal = 0;
+    jQuery('.ring').addClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
+    cur_animation_val = 10;
+    count_animation = 1;
+    jQuery('.zone_s2, .zone_s4, .zone_s5').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
+      transform: 'scale(1.5)',
+      color: 'transparent',
+      borderColor: 'transparent',
+      opacity: 0.8,
+      borderWidth: '1px',
+      paddingTop: '4px',
+      zIndex: '1000'
+    });
+    var zone_gsap = gsap.timeline();
+    zone_gsap.fromTo('.zone_s2, .zone_s4, .zone_s5',{rotation: -10, scale: 1.5}, {duration: 40, ease: "none", rotation: -70, scale: 1.5})
+             .fromTo('.zone_s2, .zone_s4, .zone_s5',{rotation: -70, scale: 1.5}, {duration: 17, ease: "none", rotation: -70, scale: 1.5})
+             .fromTo('.zone_s2, .zone_s4, .zone_s5',{rotation: -70, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    phaseSeven_one = setInterval(function(){
+        if (count_animation <= 40){
+          if (reloadTime == 0){                                                                       //1
+              sound.stop();
+              reloadSound.play();
+          };
+          reloadTime += 1;
+          count_animation += 1;
+        } else if(count_animation <= 57) {
+            count_animation += 1;
+        } else {
+          clearInterval(phaseSeven_one);
+          count_animation = 1;
+          jQuery('.zone_s2, .zone_s4, .zone_s5').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'rotate(-'+0+'deg) scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+          });
+          if (pausedStatus == true) {
+            localStorage.setItem('paused', 'v4_codesAlt_9_2');
+            endNow();
+          } else {
+            v4_codesAlt_9_2();
+            // console.log('continue');
+          } 
+        }
+    }, 1000);
+  }  
+
+  v4_codesAlt_8_4 = function(){
+    jQuery('.wizard_heading').text('Выполняется протокол "V 4 — V 3"');
+    jQuery('.wizard_percent').text('48%');
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    rotateVal = 0;
+    jQuery('.ring').addClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
+    cur_animation_val = 10;
+    count_animation = 1;
+    jQuery('.zone_v1, .zone_v4').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
+      transform: 'scale(1.5)',
+      color: 'transparent',
+      borderColor: 'transparent',
+      opacity: 0.8,
+      borderWidth: '1px',
+      paddingTop: '4px',
+      zIndex: '1000'
+    });
+
+    var zone_gsap = gsap.timeline();
+    zone_gsap.fromTo('.zone_v1, .zone_v4',{rotation: -320, scale: 1.5}, {duration: 40, ease: "none", rotation: -380, scale: 1.5})
+             .fromTo('.zone_v1, .zone_v4',{rotation: -380, scale: 1.5}, {duration: 17, ease: "none", rotation: -380, scale: 1.5})
+             .fromTo('.zone_v1, .zone_v4',{rotation: -380, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    
+    phaseSeven_one = setInterval(function(){
+        if (count_animation <= 40){
+          if (reloadTime == 0){
+              sound.stop();
+              reloadSound.play();
+          };
+          reloadTime += 1;
+          count_animation += 1;
+        } else if(count_animation <= 57) {
+            count_animation += 1;
+        } else {
+          clearInterval(phaseSeven_one);
+          count_animation = 1;
+          jQuery('.zone_v1, .zone_v4').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'rotate(-'+0+'deg) scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+          });
+          if (pausedStatus == true) {
+            localStorage.setItem('paused', 'v4_codesAlt_9_1');
+            endNow();
+          } else {
+            v4_codesAlt_9_1();
+
+          } 
+        }
+    }, 1000);
+  }
+
+  v4_codesAlt_8_3 = function(){
+    jQuery('.wizard_heading').text('Выполняется протокол "V 4 — V 3"');
+    jQuery('.wizard_percent').text('45%');
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    rotateVal = 0;
+    jQuery('.ring').addClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
+    cur_animation_val = 10;
+    count_animation = 1;
+    jQuery('.zone_v1, .zone_v4').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
+      transform: 'scale(1.5)',
+      color: 'transparent',
+      borderColor: 'transparent',
+      opacity: 0.8,
+      borderWidth: '1px',
+      paddingTop: '4px',
+      zIndex: '1000'
+    });
+
+    var zone_gsap = gsap.timeline();
+    zone_gsap.fromTo('.zone_v1, .zone_v4',{rotation: 270, scale: 1.5}, {duration: 40, ease: "none", rotation: 330, scale: 1.5})
+             .fromTo('.zone_v1, .zone_v4',{rotation: 330, scale: 1.5}, {duration: 17, ease: "none", rotation: 330, scale: 1.5})
+             .fromTo('.zone_v1, .zone_v4',{rotation: 330, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    
+    phaseSeven_one = setInterval(function(){
+        if (count_animation <= 40){
+          if (reloadTime == 0){                                                                       //1
+              sound.stop();
+              reloadSound.play();
+          };
+          reloadTime += 1;
+          count_animation += 1;
+        } else if(count_animation <= 57) {
+            count_animation += 1;
+        } else {
+          clearInterval(phaseSeven_one);
+          count_animation = 1;
+          jQuery('.zone_v1, .zone_v4').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'rotate(-'+0+'deg) scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+          });
+          if (pausedStatus == true) {
+            localStorage.setItem('paused', 'v4_codesAlt_8_4');
+            endNow();
+          } else {
+            v4_codesAlt_8_4();
+          } 
+        }
+    }, 1000);
+  } 
+
+  v4_codesAlt_8_2 = function(){
+    jQuery('.wizard_heading').text('Выполняется протокол "V 4 — V 3"');
+    jQuery('.wizard_percent').text('42%');
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    rotateVal = 0;
+    jQuery('.ring').addClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
+    cur_animation_val = 10;
+    count_animation = 1;
+    jQuery('.zone_v1, .zone_v4').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/mo_left.png) center center/100% no-repeat',
+      transform: 'scale(1.5)',
+      color: 'transparent',
+      borderColor: 'transparent',
+      opacity: 0.8,
+      borderWidth: '1px',
+      paddingTop: '4px',
+      zIndex: '1000'
+    });
+
+    var zone_gsap = gsap.timeline();
+    zone_gsap.fromTo('.zone_v1, .zone_v4',{rotation: 20, scale: 1.5}, {duration: 40, ease: "none", rotation: 80, scale: 1.5})
+             .fromTo('.zone_v1, .zone_v4',{rotation: 80, scale: 1.5}, {duration: 17, ease: "none", rotation: 80, scale: 1.5})
+             .fromTo('.zone_v1, .zone_v4',{rotation: 80, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    
+    phaseSeven_one = setInterval(function(){
+        if (count_animation <= 40){
+          if (reloadTime == 0){                                                                       //1
+              sound.stop();
+              reloadSound.play();
+          };
+          reloadTime += 1;
+          count_animation += 1;
+        } else if(count_animation <= 57) {
+            count_animation += 1;
+        } else {
+          clearInterval(phaseSeven_one);
+          count_animation = 1;
+          jQuery('.zone_v1, .zone_v4').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'rotate(-'+0+'deg) scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+          });
+          if (pausedStatus == true) {
+            localStorage.setItem('paused', 'v4_codesAlt_8_3');
+            endNow();
+          } else {
+            v4_codesAlt_8_3();
+          } 
+        }
+    }, 1000);
+  } 
+
+  v4_codesAlt_8_1 = function(){
+    jQuery('.wizard_heading').text('Выполняется протокол "V 4 — V 3"');
+    jQuery('.wizard_percent').text('39%');
+    reloadTime = 0;
+    reloadTime1 = 0;
+    d12Val = 0;
+    rotateVal = 0;
+    jQuery('.ring').addClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
+    cur_animation_val = 10;
+    count_animation = 1;
+    jQuery('.zone_v1, .zone_v4').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
+      transform: 'scale(1.5)',
+      color: 'transparent',
+      borderColor: 'transparent',
+      opacity: 0.8,
+      borderWidth: '1px',
+      paddingTop: '4px',
+      zIndex: '1000'
+    });
+    var zone_gsap = gsap.timeline();
+    zone_gsap.fromTo('.zone_v1, .zone_v4',{rotation: -10, scale: 1.5}, {duration: 40, ease: "none", rotation: -70, scale: 1.5})
+             .fromTo('.zone_v1, .zone_v4',{rotation: -70, scale: 1.5}, {duration: 17, ease: "none", rotation: -70, scale: 1.5})
+             .fromTo('.zone_v1, .zone_v4',{rotation: -70, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    phaseSeven_one = setInterval(function(){
+        if (count_animation <= 40){
+          if (reloadTime == 0){                                                                       //1
+              sound.stop();
+              reloadSound.play();
+          };
+          reloadTime += 1;
+          count_animation += 1;
+        } else if(count_animation <= 57) {
+            count_animation += 1;
+        } else {
+          clearInterval(phaseSeven_one);
+          count_animation = 1;
+          jQuery('.zone_v1, .zone_v4').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'rotate(-'+0+'deg) scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+          });
+          if (pausedStatus == true) {
+            localStorage.setItem('paused', 'v4_codesAlt_8_2');
+            endNow();
+          } else {
+            v4_codesAlt_8_2();
+            // console.log('continue');
+          } 
+        }
+    }, 1000);
+  }  
+
+  v4_codesAlt_7 = function(){
+    jQuery('.wizard_heading').text('Выполняется протокол "V 4 — V 3"');
+    jQuery('.wizard_percent').text('36%');
+    reloadTime = 0;
+    cur_animation_val = 0;
+    count_animation = 1;
+    jQuery('.ring').removeClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
+    jQuery('.zone_s3, .zone_v4').css({
+        color: 'transparent',
+        borderColor: 'transparent',
+        opacity: 0.8,
+        borderWidth: '1px',
+        paddingTop: '4px',
+        background: '#fff url(/wp-content/themes/bcwish/img/superdisfunction.png) center center/100% no-repeat',
+        transform: 'scale(1.5)',
+        zIndex: '1000'
+    });
+    gsap.fromTo('.zone_s3, .zone_v4',{scale: 1.5}, {duration: 90, ease: "none", rotation: 360, scale: 1.5});
+    jQuery('.zone_ring')
+      .removeClass('hidden')
+      .css({
+        opacity: 0.8,
+        transform: 'scale(1.5)',
+        background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat'
+      });
+    var zone_gsap = gsap.timeline();
+    zone_gsap.fromTo('.ring',{rotation: 0}, {duration: 30, ease: "none", rotation: 180})
+             .fromTo('.ring',{rotation: 180}, {duration: 30, ease: "none", rotation: 0})
+             .fromTo('.ring',{rotation: 0}, {duration: 15, ease: "none", rotation: -90})
+             .fromTo('.ring',{rotation: -90}, {duration: 15, ease: "none", rotation: 0})
+             .to('.zone_cl', {duration: 11, ease: "none", scale: 1})
+
+    var zone_ring_gsap = gsap.timeline();
+    zone_ring_gsap.fromTo('.zone_ring',{rotation: 0}, {duration: 60, ease: "none", rotation: -480})
+                  .fromTo('.zone_ring',{rotation: -480}, {duration: 30, ease: "none", rotation: -240})
+
+    phaseOne = setInterval(function(){
+      if (count_animation <= 360){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        } else if (reloadTime == 2) {
+            sound.play();
+        };
+        reloadTime += 1;
+        if (count_animation > 220) {
+          jQuery('.zone_ring').css({background: '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat'});
+        }
+        count_animation += 1;
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone_s3, .zone_v4').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+        });
+        jQuery('.ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        sound.stop();
+        if (pausedStatus == true) {
+          localStorage.setItem('paused', 'v4_codesAlt_8_1');
+          endNow()
+        } else {
+          v4_codesAlt_8_1();
+          // console.log('continue');
+        } 
+      }
+    }, 250);
+  }
+
+  v4_codesAlt_6 = function(){
+    jQuery('.wizard_heading').text('Выполняется протокол "V 4 — V 3"');
+    jQuery('.wizard_percent').text('30%');
+    reloadTime = 0;
+    cur_animation_val = 0;
+    count_animation = 1;
+    jQuery('.ring').removeClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
+    jQuery('.zone_d2_, .zone_d3, .zone_d4, .zone_v2, .zone_v3').css({
+        color: 'transparent',
+        borderColor: 'transparent',
+        opacity: 0.8,
+        borderWidth: '1px',
+        paddingTop: '4px',
+        background: '#fff url(/wp-content/themes/bcwish/img/superdisfunction.png) center center/100% no-repeat',
+        transform: 'scale(1.5)',
+        zIndex: '1000'
+    });
+    gsap.fromTo('.zone_d2_, .zone_d3, .zone_d4, .zone_v2, .zone_v3',{scale: 1.5}, {duration: 90, ease: "none", rotation: 360, scale: 1.5});
+    jQuery('.zone_ring')
+      .removeClass('hidden')
+      .css({
+        opacity: 0.8,
+        transform: 'scale(1.5)',
+        background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat'
+      });
+    var zone_gsap = gsap.timeline();
+    zone_gsap.fromTo('.ring',{rotation: 0}, {duration: 30, ease: "none", rotation: 180})
+             .fromTo('.ring',{rotation: 180}, {duration: 30, ease: "none", rotation: 0})
+             .fromTo('.ring',{rotation: 0}, {duration: 15, ease: "none", rotation: -90})
+             .fromTo('.ring',{rotation: -90}, {duration: 15, ease: "none", rotation: 0})
+             .to('.zone_cl', {duration: 11, ease: "none", scale: 1})
+
+    var zone_ring_gsap = gsap.timeline();
+    zone_ring_gsap.fromTo('.zone_ring',{rotation: 0}, {duration: 60, ease: "none", rotation: -480})
+                  .fromTo('.zone_ring',{rotation: -480}, {duration: 30, ease: "none", rotation: -240})
+
+    phaseOne = setInterval(function(){
+      if (count_animation <= 360){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        } else if (reloadTime == 2) {
+            sound.play();
+        };
+        reloadTime += 1;
+        if (count_animation > 220) {
+          jQuery('.zone_ring').css({background: '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat'});
+        }
+        count_animation += 1;
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone_d2_, .zone_d3, .zone_d4, .zone_v2, .zone_v3').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+        });
+        jQuery('.ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        sound.stop();
+        if (pausedStatus == true) {
+          localStorage.setItem('paused', 'v4_codesAlt_7');
+          endNow()
+        } else {
+          v4_codesAlt_7();
+          // console.log('continue');
+        } 
+      }
+    }, 250);
+  }
+
+  v4_codesAlt_5 = function(){
+    jQuery('.wizard_heading').text('Выполняется протокол "V 4 — V 3"');
+    jQuery('.wizard_percent').text('24%');
+    reloadTime = 0;
+    cur_animation_val = 0;
+    count_animation = 1;
+    jQuery('.ring').removeClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
+    jQuery('.zone_d4, .zone_d2_').css({
+        color: 'transparent',
+        borderColor: 'transparent',
+        opacity: 0.8,
+        borderWidth: '1px',
+        paddingTop: '4px',
+        background: '#fff url(/wp-content/themes/bcwish/img/superdisfunction.png) center center/100% no-repeat',
+        transform: 'scale(1.5)',
+        zIndex: '1000'
+    });
+    gsap.fromTo('.zone_d4, .zone_d2_',{scale: 1.5}, {duration: 90, ease: "none", rotation: 360, scale: 1.5});
+    jQuery('.zone_ring')
+      .removeClass('hidden')
+      .css({
+        opacity: 0.8,
+        transform: 'scale(1.5)',
+        background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat'
+      });
+    var zone_gsap = gsap.timeline();
+    zone_gsap.fromTo('.ring',{rotation: 0}, {duration: 30, ease: "none", rotation: 180})
+             .fromTo('.ring',{rotation: 180}, {duration: 30, ease: "none", rotation: 0})
+             .fromTo('.ring',{rotation: 0}, {duration: 15, ease: "none", rotation: -90})
+             .fromTo('.ring',{rotation: -90}, {duration: 15, ease: "none", rotation: 0})
+             .to('.zone_cl', {duration: 11, ease: "none", scale: 1})
+
+    var zone_ring_gsap = gsap.timeline();
+    zone_ring_gsap.fromTo('.zone_ring',{rotation: 0}, {duration: 60, ease: "none", rotation: -480})
+                  .fromTo('.zone_ring',{rotation: -480}, {duration: 30, ease: "none", rotation: -240})
+
+    phaseOne = setInterval(function(){
+      if (count_animation <= 360){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        } else if (reloadTime == 2) {
+            sound.play();
+        };
+        reloadTime += 1;
+        if (count_animation > 220) {
+          jQuery('.zone_ring').css({background: '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat'});
+        }
+        count_animation += 1;
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone_d4, .zone_d2_').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+        });
+        jQuery('.ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        sound.stop();
+        if (pausedStatus == true) {
+          localStorage.setItem('paused', 'v4_codesAlt_6');
+          endNow()
+        } else {
+          v4_codesAlt_6();
+          // console.log('continue');
+        } 
+      }
+    }, 250);
+  }
+
+  v4_codesAlt_4 = function(){
+    jQuery('.wizard_heading').text('Выполняется протокол "V 4 — V 3"');
+    jQuery('.wizard_percent').text('18%');
     reloadTime = 0;
     cur_animation_val = 0;
     count_animation = 1;
@@ -221,6 +2598,81 @@ jQuery(function() {
         clearInterval(phaseOne);
         count_animation = 1;
         jQuery('.zone_d2, .zone_s2_, .zone_d5, .zone_d6').css({
+            background: '#fff',
+            color: '#413e66',
+            borderColor: '#413e66',
+            transform: 'scale(1)',
+            paddingTop: '2px',
+            zIndex: '2'
+        });
+        jQuery('.ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        sound.stop();
+        if (pausedStatus == true) {
+          localStorage.setItem('paused', 'v4_codesAlt_5');
+          endNow()
+        } else {
+          v4_codesAlt_5();
+          // console.log('continue');
+        } 
+      }
+    }, 250);
+  }
+
+  v4_codesAlt_3 = function(){
+    jQuery('.wizard_heading').text('Выполняется протокол "V 4 — V 3"');
+    jQuery('.wizard_percent').text('12%');
+    reloadTime = 0;
+    cur_animation_val = 0;
+    count_animation = 1;
+    jQuery('.ring').removeClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
+    jQuery('.zone_d3, .zone_v4, .zone_d4').css({
+        color: 'transparent',
+        borderColor: 'transparent',
+        opacity: 0.8,
+        borderWidth: '1px',
+        paddingTop: '4px',
+        background: '#fff url(/wp-content/themes/bcwish/img/superdisfunction.png) center center/100% no-repeat',
+        transform: 'scale(1.5)',
+        zIndex: '1000'
+    });
+    gsap.fromTo('.zone_d3, .zone_v4, .zone_d4',{scale: 1.5}, {duration: 90, ease: "none", rotation: 360, scale: 1.5});
+    jQuery('.zone_ring')
+      .removeClass('hidden')
+      .css({
+        opacity: 0.8,
+        transform: 'scale(1.5)',
+        background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat'
+      });
+    var zone_gsap = gsap.timeline();
+    zone_gsap.fromTo('.ring',{rotation: 0}, {duration: 30, ease: "none", rotation: 180})
+             .fromTo('.ring',{rotation: 180}, {duration: 30, ease: "none", rotation: 0})
+             .fromTo('.ring',{rotation: 0}, {duration: 15, ease: "none", rotation: -90})
+             .fromTo('.ring',{rotation: -90}, {duration: 15, ease: "none", rotation: 0})
+             .to('.zone_cl', {duration: 11, ease: "none", scale: 1})
+
+    var zone_ring_gsap = gsap.timeline();
+    zone_ring_gsap.fromTo('.zone_ring',{rotation: 0}, {duration: 60, ease: "none", rotation: -480})
+                  .fromTo('.zone_ring',{rotation: -480}, {duration: 30, ease: "none", rotation: -240})
+
+    phaseOne = setInterval(function(){
+      if (count_animation <= 360){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        } else if (reloadTime == 2) {
+            sound.play();
+        };
+        reloadTime += 1;
+        if (count_animation > 220) {
+          jQuery('.zone_ring').css({background: '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat'});
+        }
+        count_animation += 1;
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone_d3, .zone_v4, .zone_d4').css({
             background: '#fff',
             color: '#413e66',
             borderColor: '#413e66',
