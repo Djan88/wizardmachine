@@ -14693,7 +14693,7 @@ mmt_2 = function(){
         };
         reloadTime += 1;
         if (count_animation > 0 && count_animation <= 120) {
-          jQuery('.zone_d2, .zone_s2_, .zone_v5, .zone_d5, .zone_d6').css({background: '#fff url(/wp-content/themes/bcwish/img/disfunction.png) center center/100% no-repeat'});
+          jQuery('.zone_d2, .zone_s2_, .zone_v5, .zone_d5, .zone_d6').css({background: '#fff url(/wp-content/themes/bcwish/img/disfunction.png) center center/100% no-repeat', transform: 'scale(1.5)'});
         } else if (count_animation > 120 && count_animation <= 220) {
           jQuery('.zone_d2, .zone_s2_, .zone_v5, .zone_d5, .zone_d6').css({background: '#fff url(/wp-content/themes/bcwish/img/travma.png) center center/100% no-repeat'});
         } else if (count_animation > 220 && count_animation <= 240) {
@@ -14772,7 +14772,7 @@ mmt_2 = function(){
         };
         reloadTime += 1;
         if (count_animation > 0 && count_animation <= 120) {
-          jQuery('.zone_d2, .zone_s2_, .zone_v5, .zone_d5, .zone_d6').css({background: '#fff url(/wp-content/themes/bcwish/img/disfunction.png) center center/100% no-repeat'});
+          jQuery('.zone_d2, .zone_s2_, .zone_v5, .zone_d5, .zone_d6').css({background: '#fff url(/wp-content/themes/bcwish/img/disfunction.png) center center/100% no-repeat', transform: 'scale(1.5)'});
         } else if (count_animation > 120 && count_animation <= 220) {
           jQuery('.zone_d2, .zone_s2_, .zone_v5, .zone_d5, .zone_d6').css({background: '#fff url(/wp-content/themes/bcwish/img/travma.png) center center/100% no-repeat'});
         } else if (count_animation > 220 && count_animation <= 240) {
@@ -14851,7 +14851,7 @@ mmt_2 = function(){
         };
         reloadTime += 1;
         if (count_animation > 0 && count_animation <= 120) {
-          jQuery('.zone_d2, .zone_s2_, .zone_v5, .zone_d5, .zone_d6').css({background: '#fff url(/wp-content/themes/bcwish/img/disfunction.png) center center/100% no-repeat'});
+          jQuery('.zone_d2, .zone_s2_, .zone_v5, .zone_d5, .zone_d6').css({background: '#fff url(/wp-content/themes/bcwish/img/disfunction.png) center center/100% no-repeat', transform: 'scale(1.5)'});
         } else if (count_animation > 120 && count_animation <= 220) {
           jQuery('.zone_d2, .zone_s2_, .zone_v5, .zone_d5, .zone_d6').css({background: '#fff url(/wp-content/themes/bcwish/img/travma.png) center center/100% no-repeat'});
         } else if (count_animation > 220 && count_animation <= 240) {
@@ -14930,7 +14930,7 @@ mmt_2 = function(){
         };
         reloadTime += 1;
         if (count_animation > 0 && count_animation <= 120) {
-          jQuery('.zone_d2, .zone_s2_, .zone_v5, .zone_d5, .zone_d6').css({background: '#fff url(/wp-content/themes/bcwish/img/disfunction.png) center center/100% no-repeat'});
+          jQuery('.zone_d2, .zone_s2_, .zone_v5, .zone_d5, .zone_d6').css({background: '#fff url(/wp-content/themes/bcwish/img/disfunction.png) center center/100% no-repeat', transform: 'scale(1.5)'});
         } else if (count_animation > 120 && count_animation <= 220) {
           jQuery('.zone_d2, .zone_s2_, .zone_v5, .zone_d5, .zone_d6').css({background: '#fff url(/wp-content/themes/bcwish/img/travma.png) center center/100% no-repeat'});
         } else if (count_animation > 220 && count_animation <= 240) {
@@ -15009,7 +15009,7 @@ mmt_2 = function(){
         };
         reloadTime += 1;
         if (count_animation > 0 && count_animation <= 120) {
-          jQuery('.zone_s2, .zone_v5, .zone_s5, .zone_s6').css({background: '#fff url(/wp-content/themes/bcwish/img/disfunction.png) center center/100% no-repeat'});
+          jQuery('.zone_s2, .zone_v5, .zone_s5, .zone_s6').css({background: '#fff url(/wp-content/themes/bcwish/img/disfunction.png) center center/100% no-repeat', transform: 'scale(1.5)'});
         } else if (count_animation > 120 && count_animation <= 220) {
           jQuery('.zone_s2, .zone_v5, .zone_s5, .zone_s6').css({background: '#fff url(/wp-content/themes/bcwish/img/travma.png) center center/100% no-repeat'});
         } else if (count_animation > 220 && count_animation <= 240) {
@@ -15088,7 +15088,7 @@ mmt_2 = function(){
         };
         reloadTime += 1;
         if (count_animation > 0 && count_animation <= 120) {
-          jQuery('.zone_s2, .zone_v5, .zone_s5, .zone_s6').css({background: '#fff url(/wp-content/themes/bcwish/img/disfunction.png) center center/100% no-repeat'});
+          jQuery('.zone_s2, .zone_v5, .zone_s5, .zone_s6').css({background: '#fff url(/wp-content/themes/bcwish/img/disfunction.png) center center/100% no-repeat', transform: 'scale(1.5)'});
         } else if (count_animation > 120 && count_animation <= 220) {
           jQuery('.zone_s2, .zone_v5, .zone_s5, .zone_s6').css({background: '#fff url(/wp-content/themes/bcwish/img/travma.png) center center/100% no-repeat'});
         } else if (count_animation > 220 && count_animation <= 240) {
@@ -15167,7 +15167,7 @@ mmt_2 = function(){
         };
         reloadTime += 1;
         if (count_animation > 0 && count_animation <= 120) {
-          jQuery('.zone_s2, .zone_v5, .zone_s5, .zone_s6').css({background: '#fff url(/wp-content/themes/bcwish/img/disfunction.png) center center/100% no-repeat'});
+          jQuery('.zone_s2, .zone_v5, .zone_s5, .zone_s6').css({background: '#fff url(/wp-content/themes/bcwish/img/disfunction.png) center center/100% no-repeat', transform: 'scale(1.5)'});
         } else if (count_animation > 120 && count_animation <= 220) {
           jQuery('.zone_s2, .zone_v5, .zone_s5, .zone_s6').css({background: '#fff url(/wp-content/themes/bcwish/img/travma.png) center center/100% no-repeat'});
         } else if (count_animation > 220 && count_animation <= 240) {
@@ -15246,7 +15246,7 @@ mmt_2 = function(){
         };
         reloadTime += 1;
         if (count_animation > 0 && count_animation <= 120) {
-          jQuery('.zone_s2, .zone_v5, .zone_s5, .zone_s6').css({background: '#fff url(/wp-content/themes/bcwish/img/disfunction.png) center center/100% no-repeat'});
+          jQuery('.zone_s2, .zone_v5, .zone_s5, .zone_s6').css({background: '#fff url(/wp-content/themes/bcwish/img/disfunction.png) center center/100% no-repeat', transform: 'scale(1.5)'});
         } else if (count_animation > 120 && count_animation <= 220) {
           jQuery('.zone_s2, .zone_v5, .zone_s5, .zone_s6').css({background: '#fff url(/wp-content/themes/bcwish/img/travma.png) center center/100% no-repeat'});
         } else if (count_animation > 220 && count_animation <= 240) {
