@@ -1803,7 +1803,7 @@ h3.wizard_heading
   border: 1px solid #413e66;
   z-index: 3;
   position: absolute!important;
-  transition: transform 0.250s linear;
+  transition: transform 1s linear;
 }
 .zone:hover:before 
 {
