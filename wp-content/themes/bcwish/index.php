@@ -1404,7 +1404,7 @@
     <script src="<?php bloginfo('template_url'); ?>/js/vivus.min.js"></script>
     <script src="<?php bloginfo('template_url'); ?>/js/howler.js"></script>
     <script src="<?php bloginfo('template_url'); ?>/js/gsap.min.js"></script>
-    <script src="<?php bloginfo('template_url'); ?>/js/protocols_alt.js"></script>
+    <script src="<?php bloginfo('template_url'); ?>/js/protocols.js"></script>
     <script src="<?php bloginfo('template_url'); ?>/js/script.js"></script>
     
     <div class="modal fade" id="mail" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
