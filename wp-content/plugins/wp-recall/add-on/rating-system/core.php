@@ -351,7 +351,7 @@ function rcl_get_list_votes( $args, $votes ) {
 			$user_name = (isset( $names[$vote->user_id] )) ? $names[$vote->user_id] : '';
 
 			$reps = array(
-				'<a class="" target="_blank" href="' . get_author_posts_url( $vote->user_id ) . '">' . $user_name . '</a>',
+				'<a class="" target="_blank" href="' . rcl_get_user_url( $vote->user_id ) . '">' . $user_name . '</a>',
 				rcl_format_rating( $vote->rating_value )
 			);
 
@@ -432,7 +432,7 @@ add_action( 'rcl_update_total_rating', 'rcl_post_update_user_rating' );
 add_action( 'rcl_delete_rating_with_post', 'rcl_post_update_user_rating' );
 function rcl_post_update_user_rating( $args ) {
 
-	if ( ! isset( $args['object_author'] ) || ! $args['object_author'] )
+	if ( ! isset( $args['object_author'] ) || ! $args['object_author'] || $args['rating_value'] == 0 )
 		return false;
 	if ( rcl_get_option( 'rating_user_' . $args['rating_type'] ) == 1 || $args['rating_type'] == 'edit-admin' || isset( $args['user_overall'] ) )
 		rcl_update_user_rating( $args );
