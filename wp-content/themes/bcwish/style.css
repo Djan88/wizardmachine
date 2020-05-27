@@ -2463,6 +2463,12 @@ button.wizard_starter_alt.btn.btn-success
   {
     text-align: center;
   }
+  .pay_info 
+  {
+    font-size: 20px;
+    margin: auto;
+    margin-top: 10px;
+  }
 }
 
 @media (max-width: 768px) {
