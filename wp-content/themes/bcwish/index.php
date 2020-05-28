@@ -258,7 +258,7 @@
                   </div>
                 </div>
                 <div class="row">
-                  <a href="https://drive.google.com/file/d/1IDcpMFnYnnF39kQBSSoJ3omFsoGP0RFh/view?usp=sharing" target="_blank" class="btn btn-success pay_info">Как оплатить доступ?</a>
+                  <a href="<?php echo get_template_directory_uri(); ?>/img/manual_wizard.pdf" target="_blank" class="btn btn-success pay_info">Как оплатить доступ?</a>
                 </div>
               <?php } ?>
               
