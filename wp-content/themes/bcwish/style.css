@@ -2349,7 +2349,7 @@ button.wizard_starter_alt.btn.btn-success
   0% {
     transform: rotate(180deg) scale(1.5);
   }
-  83% {
+  64% {
     transform: rotate(-90deg) scale(1.5);
   }
 }
@@ -2357,7 +2357,7 @@ button.wizard_starter_alt.btn.btn-success
   0% {
     transform: rotate(180deg) scale(1.5);
   }
-  83% {
+  64% {
     transform: rotate(-90deg) scale(1.5);
   }
 }
