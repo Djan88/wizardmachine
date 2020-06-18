@@ -226,6 +226,7 @@ jQuery(function() {
           jQuery('.zone_ring').css({background: '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat'});
         }
         count_animation += 1;
+        console.log(count_animation);
       } else {
         clearInterval(phaseOne);
         count_animation = 1;
