@@ -2311,10 +2311,13 @@ button.wizard_starter_alt.btn.btn-success
   0% {
     transform: rotate(0deg);
   }
-  33% {
+  25% {
     transform: rotate(180deg);
   }
-  66% {
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
     transform: rotate(-90deg);
   }
   100% {
@@ -2325,10 +2328,13 @@ button.wizard_starter_alt.btn.btn-success
   0% {
     transform: rotate(0deg);
   }
-  33% {
+  25% {
     transform: rotate(180deg);
   }
-  66% {
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
     transform: rotate(-90deg);
   }
   100% {
