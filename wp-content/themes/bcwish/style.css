@@ -2309,10 +2309,10 @@ button.wizard_starter_alt.btn.btn-success
 }
 @keyframes rot_ring {
   0% {
-    transform: rotate(-180deg);
+    transform: rotate(0deg);
   }
   33% {
-    transform: rotate(0deg);
+    transform: rotate(180deg);
   }
   66% {
     transform: rotate(-90deg);
@@ -2323,10 +2323,10 @@ button.wizard_starter_alt.btn.btn-success
 }
 @-webkit-keyframes rot_ring {
   0% {
-    transform: rotate(-180deg);
+    transform: rotate(0deg);
   }
   33% {
-    transform: rotate(0deg);
+    transform: rotate(180deg);
   }
   66% {
     transform: rotate(-90deg);
