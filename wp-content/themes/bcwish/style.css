@@ -2285,7 +2285,6 @@ button.wizard_starter_alt.btn.btn-success
 .rot_90_one {
   animation: 90s linear 0s normal none infinite running rot_90_one;
   -webkit-animation: 90s linear 0s normal none infinite running rot_90_one;
-  width: 100px;
 }
 @keyframes rot_90_one {
   0% {
@@ -2307,7 +2306,6 @@ button.wizard_starter_alt.btn.btn-success
 .rot_ring {
   animation: 90s linear 0s normal none infinite running rot_ring;
   -webkit-animation: 90s linear 0s normal none infinite running rot_ring;
-  width: 100px;
 }
 @keyframes rot_ring {
   0% {
@@ -2340,7 +2338,6 @@ button.wizard_starter_alt.btn.btn-success
 .rot_zone_ring {
   animation: 90s linear 0s normal none infinite running rot_ring;
   -webkit-animation: 90s linear 0s normal none infinite running rot_ring;
-  width: 100px;
 }
 @keyframes rot_ring {
   0% {
