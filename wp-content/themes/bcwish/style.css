@@ -2347,18 +2347,18 @@ button.wizard_starter_alt.btn.btn-success
 }
 @keyframes rot_zone_ring {
   0% {
-    transform: rotate(240deg) scale(1.5);
+    transform: rotate(360deg) scale(1.5);
   }
   64% {
-    transform: rotate(-120deg) scale(1.5);
+    transform: rotate(-180deg) scale(1.5);
   }
 }
 @-webkit-keyframes rot_zone_ring {
   0% {
-    transform: rotate(240deg) scale(1.5);
+    transform: rotate(360deg) scale(1.5);
   }
   64% {
-    transform: rotate(-120deg) scale(1.5);
+    transform: rotate(-180deg) scale(1.5);
   }
 }
 
