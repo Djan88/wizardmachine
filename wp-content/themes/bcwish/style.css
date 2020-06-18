@@ -2311,10 +2311,10 @@ button.wizard_starter_alt.btn.btn-success
   0% {
     transform: rotate(0deg);
   }
-  33% {
+  32% {
     transform: rotate(180deg);
   }
-  66% {
+  64% {
     transform: rotate(0deg);
   }
   83% {
@@ -2328,10 +2328,10 @@ button.wizard_starter_alt.btn.btn-success
   0% {
     transform: rotate(0deg);
   }
-  33% {
+  32% {
     transform: rotate(180deg);
   }
-  66% {
+  64% {
     transform: rotate(0deg);
   }
   83% {
@@ -2349,7 +2349,7 @@ button.wizard_starter_alt.btn.btn-success
   0% {
     transform: rotate(180deg);
   }
-  66% {
+  83% {
     transform: rotate(-90deg);
   }
 }
@@ -2357,14 +2357,8 @@ button.wizard_starter_alt.btn.btn-success
   0% {
     transform: rotate(180deg);
   }
-  33% {
-    transform: rotate(0deg);
-  }
-  66% {
+  83% {
     transform: rotate(-90deg);
-  }
-  100% {
-    transform: rotate(0deg);
   }
 }
 
