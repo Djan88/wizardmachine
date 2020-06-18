@@ -2278,6 +2278,95 @@ button.wizard_starter_alt.btn.btn-success
   font-size: 20px;
   margin-top: 10px;
 }
+
+
+/*Animation*/
+
+.rot_90_one {
+  animation: 90s linear 0s normal none infinite running rot_90_one;
+  -webkit-animation: 90s linear 0s normal none infinite running rot_90_one;
+  width: 100px;
+}
+@keyframes rot_90_one {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@-webkit-keyframes rot_90_one {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+.rot_ring {
+  animation: 90s linear 0s normal none infinite running rot_ring;
+  -webkit-animation: 90s linear 0s normal none infinite running rot_ring;
+  width: 100px;
+}
+@keyframes rot_ring {
+  0% {
+    transform: rotate(180deg);
+  }
+  33% {
+    transform: rotate(0deg);
+  }
+  66% {
+    transform: rotate(-90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes rot_ring {
+  0% {
+    transform: rotate(180deg);
+  }
+  33% {
+    transform: rotate(0deg);
+  }
+  66% {
+    transform: rotate(-90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.rot_zone_ring {
+  animation: 90s linear 0s normal none infinite running rot_ring;
+  -webkit-animation: 90s linear 0s normal none infinite running rot_ring;
+  width: 100px;
+}
+@keyframes rot_ring {
+  0% {
+    transform: rotate(180deg);
+  }
+  66% {
+    transform: rotate(-90deg);
+  }
+}
+@-webkit-keyframes rot_ring {
+  0% {
+    transform: rotate(180deg);
+  }
+  33% {
+    transform: rotate(0deg);
+  }
+  66% {
+    transform: rotate(-90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+
+
 /*--------------------------------------------------------------
 # Responsive Media Queries
 --------------------------------------------------------------*/
