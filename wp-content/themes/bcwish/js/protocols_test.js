@@ -246,6 +246,8 @@ jQuery(function() {
           endNow()
         } else {
           // universal_2_1();
+          jQuery('.zone_cl').removeClass('rot_90_one');
+          jQuery('.ring').removeClass('rot_ring');
           console.log('continue');
         } 
       }
