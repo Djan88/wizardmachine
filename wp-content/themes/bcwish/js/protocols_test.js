@@ -184,7 +184,6 @@ jQuery(function() {
       .removeClass('hidden')
       .css({
         opacity: 0.8,
-        transform: 'scale(1.5)',
         background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat'
       });
     jQuery('.zone_cl').addClass('rot_90_one').css({
