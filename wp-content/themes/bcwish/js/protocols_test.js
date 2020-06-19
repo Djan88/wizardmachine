@@ -15147,6 +15147,9 @@ mmt_2 = function(){
         } else if (reloadTime == 2) {
             sound.play();
         };
+        if (count_animation > 240) {
+          jQuery('.zone_ring').css({background: '#fff url(/wp-content/themes/bcwish/img/daemon.png) center center/100% no-repeat'});
+        }
         reloadTime += 1;
         count_animation += 1;
       } else {
