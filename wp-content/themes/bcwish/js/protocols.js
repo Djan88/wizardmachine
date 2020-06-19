@@ -16597,25 +16597,14 @@ mmt_2 = function(){
       .removeClass('hidden')
       .css({
         opacity: 0.8,
-        transform: 'scale(1.5)',
         background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat'
       });
-    jQuery('.zone_cl').css({
+    jQuery('.zone_cl').addClass('rot_90_one').css({
       background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat',
     });
-    gsap.fromTo(".zone_cl",{scale: 1.5, rotation: 0}, {duration: 90, ease: "none", rotation: -360, scale: 1.5});
-
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.ring',{rotation: 0}, {duration: 30, ease: "none", rotation: 180})
-             .fromTo('.ring',{rotation: 180}, {duration: 30, ease: "none", rotation: 0})
-             .fromTo('.ring',{rotation: 0}, {duration: 15, ease: "none", rotation: -90})
-             .fromTo('.ring',{rotation: -90}, {duration: 15, ease: "none", rotation: 0})
-             .to('.zone_cl', {duration: 1, ease: "none", scale: 1, rotation: 0})
-
-    var zone_ring_gsap = gsap.timeline();
-    zone_ring_gsap.fromTo('.zone_ring',{rotation: 0}, {duration: 60, ease: "none", rotation: -480})
-                  .fromTo('.zone_ring',{rotation: -480}, {duration: 30, ease: "none", rotation: -240})
-
+    jQuery('.ring').addClass('rot_ring');
+    jQuery('.zone_ring').addClass('rot_zone_ring');
+    
     phaseOne = setInterval(function(){
       if (count_animation <= 360){
         if (reloadTime == 0){                                                                       //1
