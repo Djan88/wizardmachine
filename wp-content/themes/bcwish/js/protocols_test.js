@@ -92,7 +92,7 @@ jQuery(function() {
         jQuery(location).attr('href','/');
       } else {
         jQuery('.wizard_stop, .zone_ring').addClass('hidden');
-        jQuery('.wizard_play, .wizard_starter_alt').fadeIn(500).removeClass('hidden');
+        jQuery('.wizard_play, .wizard_starter_alt').fadeIn(500).removeClass('hidden').removeAttr('style');
       }
     })
   }

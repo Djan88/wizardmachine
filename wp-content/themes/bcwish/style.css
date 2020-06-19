@@ -2385,11 +2385,11 @@ button.wizard_starter_alt.btn.btn-success
 }
 
 
-.rot_zone_ring_double {
-  animation: 180s linear 0s normal none infinite running rot_zone_ring_double;
-  -webkit-animation: 180s linear 0s normal none infinite running rot_zone_ring_double;
+.rot_ring_double {
+  animation: 180s linear 0s normal none infinite running rot_ring_double;
+  -webkit-animation: 180s linear 0s normal none infinite running rot_ring_double;
 }
-@keyframes rot_zone_ring_double {
+@keyframes rot_ring_double {
   0% {
     transform: rotate(0deg);
   }
@@ -2418,7 +2418,7 @@ button.wizard_starter_alt.btn.btn-success
     transform: rotate(0deg);
   }
 }
-@-webkit-keyframes rot_zone_ring_double {
+@-webkit-keyframes rot_ring_double {
   0% {
     transform: rotate(0deg);
   }
