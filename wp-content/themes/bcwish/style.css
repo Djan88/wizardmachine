@@ -2302,6 +2302,48 @@ button.wizard_starter_alt.btn.btn-success
     transform: rotate(-360deg) scale(1.5);
   }
 }
+.rot_90_one_double {
+  animation: 180s linear 0s normal none infinite running rot_90_one_double;
+  -webkit-animation: 180s linear 0s normal none infinite running rot_90_one_double;
+}
+@keyframes rot_90_one_double {
+  0% {
+    transform: rotate(0deg) scale(1.5);
+  }
+  100% {
+    transform: rotate(-360deg) scale(1.5);
+  }
+}
+@-webkit-keyframes rot_90_one_double {
+  0% {
+    transform: rotate(0deg) scale(1.5);
+  }
+  100% {
+    transform: rotate(-360deg) scale(1.5);
+  }
+}
+
+
+.rot_90_two {
+  animation: 90s linear 0s normal none infinite running rot_90_two;
+  -webkit-animation: 90s linear 0s normal none infinite running rot_90_two;
+}
+@keyframes rot_90_two {
+  0% {
+    transform: rotate(0deg) scale(1.5);
+  }
+  100% {
+    transform: rotate(360deg) scale(1.5);
+  }
+}
+@-webkit-keyframes rot_90_two {
+  0% {
+    transform: rotate(0deg) scale(1.5);
+  }
+  100% {
+    transform: rotate(360deg) scale(1.5);
+  }
+}
 
 .rot_ring {
   animation: 90s linear 0s normal none infinite running rot_ring;
@@ -2341,6 +2383,70 @@ button.wizard_starter_alt.btn.btn-success
     transform: rotate(0deg);
   }
 }
+
+
+.rot_zone_ring_double {
+  animation: 180s linear 0s normal none infinite running rot_zone_ring_double;
+  -webkit-animation: 180s linear 0s normal none infinite running rot_zone_ring_double;
+}
+@keyframes rot_zone_ring_double {
+  0% {
+    transform: rotate(0deg);
+  }
+  16% {
+    transform: rotate(180deg);
+  }
+  32% {
+    transform: rotate(0deg);
+  }
+  40% {
+    transform: rotate(-90deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  66% {
+    transform: rotate(180deg);
+  }
+  82% {
+    transform: rotate(0deg);
+  }
+  91% {
+    transform: rotate(-90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes rot_zone_ring_double {
+  0% {
+    transform: rotate(0deg);
+  }
+  16% {
+    transform: rotate(180deg);
+  }
+  32% {
+    transform: rotate(0deg);
+  }
+  40% {
+    transform: rotate(-90deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  66% {
+    transform: rotate(180deg);
+  }
+  82% {
+    transform: rotate(0deg);
+  }
+  91% {
+    transform: rotate(-90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 .rot_zone_ring {
   animation: 90s linear 0s normal none infinite running rot_zone_ring;
   -webkit-animation: 90s linear 0s normal none infinite running rot_zone_ring;
@@ -2359,6 +2465,48 @@ button.wizard_starter_alt.btn.btn-success
   }
   64% {
     transform: rotate(-180deg) scale(1.5);
+  }
+}
+
+
+.rot_zone_ring_double {
+  animation: 180 linear 0s normal none infinite running rot_zone_ring_double;
+  -webkit-animation: 180 linear 0s normal none infinite running rot_zone_ring_double;
+}
+@keyframes rot_zone_ring_double {
+  0% {
+    transform: rotate(360deg) scale(1.5);
+  }
+  64% {
+    transform: rotate(-180deg) scale(1.5);
+  }
+}
+@-webkit-keyframes rot_zone_ring_double {
+  0% {
+    transform: rotate(360deg) scale(1.5);
+  }
+  64% {
+    transform: rotate(-180deg) scale(1.5);
+  }
+}
+.rot_mmt {
+  animation: 180 linear 0s normal none infinite running rot_mmt;
+  -webkit-animation: 180 linear 0s normal none infinite running rot_mmt;
+}
+@keyframes rot_mmt {
+  0% {
+    transform: rotate(00deg) scale(1.5);
+  }
+  55% {
+    transform: rotate(360deg) scale(1.5);
+  }
+}
+@-webkit-keyframes rot_mmt {
+  0% {
+    transform: rotate(00deg) scale(1.5);
+  }
+  55% {
+    transform: rotate(360deg) scale(1.5);
   }
 }
 
