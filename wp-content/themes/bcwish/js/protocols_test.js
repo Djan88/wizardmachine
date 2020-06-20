@@ -12347,7 +12347,7 @@ mmt_2 = function(){
         zIndex: '1000'
     });
     jQuery('.zone_ring')
-      .removeClass('hidden').
+      .removeClass('hidden')
       .removeAttr('style')
       .css({
         opacity: 0.8,
