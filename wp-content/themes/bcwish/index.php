@@ -1420,10 +1420,10 @@
     <script src="<?php bloginfo('template_url'); ?>/js/sweetalert.min.js"></script>
     <script src="<?php bloginfo('template_url'); ?>/js/vivus.min.js"></script>
     <script src="<?php bloginfo('template_url'); ?>/js/howler.js"></script>
-    <script src="<?php bloginfo('template_url'); ?>/js/gsap.min.js"></script>
     <?php if(current_user_can('administrator')){ ?>
       <script src="<?php bloginfo('template_url'); ?>/js/protocols_test.js"></script>
     <?php } else { ?>
+      <script src="<?php bloginfo('template_url'); ?>/js/gsap.min.js"></script>
       <script src="<?php bloginfo('template_url'); ?>/js/protocols.js"></script>
     <?php } ?>
     <script src="<?php bloginfo('template_url'); ?>/js/script.js"></script>

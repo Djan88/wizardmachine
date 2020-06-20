@@ -12260,6 +12260,7 @@ mmt_2 = function(){
   });
   jQuery('.zone_ring')
     .removeClass('hidden')
+    .removeAttr('style')
     .css({
       opacity: 0.8,
       background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat'
@@ -12346,7 +12347,8 @@ mmt_2 = function(){
         zIndex: '1000'
     });
     jQuery('.zone_ring')
-      .removeClass('hidden')
+      .removeClass('hidden').
+      .removeAttr('style')
       .css({
         opacity: 0.8,
         background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat'
