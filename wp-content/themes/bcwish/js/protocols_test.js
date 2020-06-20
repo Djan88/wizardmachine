@@ -1065,6 +1065,7 @@ jQuery(function() {
     });
     jQuery('.zone_ring')
       .removeClass('hidden')
+      .removeAttr('style')
       .css({
         opacity: 0.8,
         background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat'
@@ -1144,6 +1145,7 @@ jQuery(function() {
     });
     jQuery('.zone_ring')
       .removeClass('hidden')
+      .removeAttr('style')
       .css({
         opacity: 0.8,
         background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat'
@@ -1219,6 +1221,7 @@ jQuery(function() {
     });
     jQuery('.zone_ring')
       .removeClass('hidden')
+      .removeAttr('style')
       .css({
         opacity: 0.8,
         background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat'
@@ -1293,6 +1296,7 @@ jQuery(function() {
     });
     jQuery('.zone_ring')
       .removeClass('hidden')
+      .removeAttr('style')
       .css({
         opacity: 0.8,
         background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat'
@@ -2020,6 +2024,7 @@ jQuery(function() {
     });
     jQuery('.zone_ring')
       .removeClass('hidden')
+      .removeAttr('style')
       .css({
         opacity: 0.8,
         background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat'
@@ -2459,6 +2464,7 @@ jQuery(function() {
     });
     jQuery('.zone_ring')
       .removeClass('hidden')
+      .removeAttr('style')
       .css({
         opacity: 0.8,
         background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat'
@@ -9944,6 +9950,7 @@ jQuery(function() {
     });
     jQuery('.zone_ring')
       .removeClass('hidden')
+      .removeAttr('style')
       .css({
         opacity: 0.8,
         background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat'
@@ -10018,6 +10025,7 @@ jQuery(function() {
     });
     jQuery('.zone_ring')
       .removeClass('hidden')
+      .removeAttr('style')
       .css({
         opacity: 0.8,
         background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat'
@@ -11202,6 +11210,7 @@ jQuery(function() {
     });
     jQuery('.zone_ring')
       .removeClass('hidden')
+      .removeAttr('style')
       .css({
         opacity: 0.8,
         background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat'
@@ -11273,6 +11282,7 @@ jQuery(function() {
     });
     jQuery('.zone_ring')
       .removeClass('hidden')
+      .removeAttr('style')
       .css({
         opacity: 0.8,
         background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat'
@@ -11344,6 +11354,7 @@ jQuery(function() {
     });
     jQuery('.zone_ring')
       .removeClass('hidden')
+      .removeAttr('style')
       .css({
         opacity: 0.8,
         background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat'
@@ -11414,6 +11425,7 @@ jQuery(function() {
     });
     jQuery('.zone_ring')
       .removeClass('hidden')
+      .removeAttr('style')
       .css({
         opacity: 0.8,
         background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat'
@@ -11484,6 +11496,7 @@ jQuery(function() {
     });
     jQuery('.zone_ring')
       .removeClass('hidden')
+      .removeAttr('style')
       .css({
         opacity: 0.8,
         background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat'
@@ -11554,6 +11567,7 @@ jQuery(function() {
     });
     jQuery('.zone_ring')
       .removeClass('hidden')
+      .removeAttr('style')
       .css({
         opacity: 0.8,
         background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat'
@@ -11630,6 +11644,7 @@ jQuery(function() {
     });
     jQuery('.zone_ring')
       .removeClass('hidden')
+      .removeAttr('style')
       .css({
         opacity: 0.8,
         background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat'
@@ -11884,13 +11899,7 @@ jQuery(function() {
     });
     jQuery('.zone_ring')
       .removeClass('hidden')
-      .css({
-        opacity: 0.8,
-        transform: 'scale(1.5)',
-        background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat'
-      });
-    jQuery('.zone_ring')
-      .removeClass('hidden')
+      .removeAttr('style')
       .css({
         opacity: 0.8,
         background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat'
@@ -11978,13 +11987,7 @@ jQuery(function() {
     });
     jQuery('.zone_ring')
       .removeClass('hidden')
-      .css({
-        opacity: 0.8,
-        transform: 'scale(1.5)',
-        background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat'
-      });
-    jQuery('.zone_ring')
-      .removeClass('hidden')
+      .removeAttr('style')
       .css({
         opacity: 0.8,
         background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat'
@@ -12072,13 +12075,7 @@ jQuery(function() {
     });
     jQuery('.zone_ring')
       .removeClass('hidden')
-      .css({
-        opacity: 0.8,
-        transform: 'scale(1.5)',
-        background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat'
-      });
-    jQuery('.zone_ring')
-      .removeClass('hidden')
+      .removeAttr('style')
       .css({
         opacity: 0.8,
         background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat'
@@ -12166,13 +12163,7 @@ jQuery(function() {
     });
     jQuery('.zone_ring')
       .removeClass('hidden')
-      .css({
-        opacity: 0.8,
-        transform: 'scale(1.5)',
-        background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat'
-      });
-    jQuery('.zone_ring')
-      .removeClass('hidden')
+      .removeAttr('style')
       .css({
         opacity: 0.8,
         background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat'
@@ -12260,7 +12251,6 @@ mmt_2 = function(){
   });
   jQuery('.zone_ring')
     .removeClass('hidden')
-    .removeAttr('style')
     .css({
       opacity: 0.8,
       background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat'
@@ -14538,6 +14528,7 @@ mmt_2 = function(){
     });
     jQuery('.zone_ring')
       .removeClass('hidden')
+      .removeAttr('style')
       .css({
         opacity: 0.8,
         background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat'
@@ -14609,6 +14600,7 @@ mmt_2 = function(){
     });
     jQuery('.zone_ring')
       .removeClass('hidden')
+      .removeAttr('style')
       .css({
         opacity: 0.8,
         background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat'
@@ -14680,6 +14672,7 @@ mmt_2 = function(){
     });
     jQuery('.zone_ring')
       .removeClass('hidden')
+      .removeAttr('style')
       .css({
         opacity: 0.8,
         background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat'
@@ -14755,6 +14748,7 @@ mmt_2 = function(){
     });
     jQuery('.zone_ring')
       .removeClass('hidden')
+      .removeAttr('style')
       .css({
         opacity: 0.8,
         background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat'
@@ -14826,6 +14820,7 @@ mmt_2 = function(){
     });
     jQuery('.zone_ring')
       .removeClass('hidden')
+      .removeAttr('style')
       .css({
         opacity: 0.8,
         background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat'
@@ -14901,6 +14896,7 @@ mmt_2 = function(){
     });
     jQuery('.zone_ring')
       .removeClass('hidden')
+      .removeAttr('style')
       .css({
         opacity: 0.8,
         background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat'
@@ -14972,6 +14968,7 @@ mmt_2 = function(){
     });
     jQuery('.zone_ring')
       .removeClass('hidden')
+      .removeAttr('style')
       .css({
         opacity: 0.8,
         background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat'
@@ -15043,6 +15040,7 @@ mmt_2 = function(){
     });
     jQuery('.zone_ring')
       .removeClass('hidden')
+      .removeAttr('style')
       .css({
         opacity: 0.8,
         background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat'
@@ -15124,6 +15122,7 @@ mmt_2 = function(){
     });
     jQuery('.zone_ring')
       .removeClass('hidden')
+      .removeAttr('style')
       .css({
         opacity: 0.8,
         background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat'
@@ -15471,6 +15470,7 @@ mmt_2 = function(){
     });
     jQuery('.zone_ring')
       .removeClass('hidden')
+      .removeAttr('style')
       .css({
         opacity: 0.8,
         transform: 'scale(1.5)',
@@ -15780,6 +15780,7 @@ mmt_2 = function(){
     });
     jQuery('.zone_ring')
       .removeClass('hidden')
+      .removeAttr('style')
       .css({
         opacity: 0.8,
         transform: 'scale(1.5)',
@@ -16091,6 +16092,7 @@ mmt_2 = function(){
     });
     jQuery('.zone_ring')
       .removeClass('hidden')
+      .removeAttr('style')
       .css({
         opacity: 0.8,
         background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat'
@@ -16393,6 +16395,7 @@ mmt_2 = function(){
     });
     jQuery('.zone_ring')
       .removeClass('hidden')
+      .removeAttr('style')
       .css({
         opacity: 0.8,
         background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat'
