@@ -16334,7 +16334,6 @@ mmt_2 = function(){
     count_animation = 1;
     jQuery('.zone_v2, .zone_d2_, .zone_d3, .zone_d4').css({
       background: '#fff url(/wp-content/themes/bcwish/img/mo_right.png) center center/100% no-repeat',
-      transform: 'rotate(0deg) scale(1.5)',
       color: 'transparent',
       borderColor: 'transparent',
       opacity: 0.8,
@@ -16364,7 +16363,7 @@ mmt_2 = function(){
             background: '#fff',
             color: '#413e66',
             borderColor: '#413e66',
-            transform: 'rotate(-'+0+'deg) scale(1)',
+            transform: 'rotate(0deg) scale(1)',
             paddingTop: '2px',
             zIndex: '2'
           });
