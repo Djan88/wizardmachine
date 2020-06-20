@@ -2480,11 +2480,14 @@ button.wizard_starter_alt.btn.btn-success
   32% {
     transform: rotate(-180deg) scale(1.5);
   }
-  72% {
+  48% {
+    transform: rotate(0deg) scale(1.5);
+  }
+  80% {
     transform: rotate(360deg) scale(1.5);
   }
-  90% {
-    transform: rotate(360deg) scale(1.5);
+  96% {
+    transform: rotate(-180deg) scale(1.5);
   }
   100% {
     transform: rotate(0deg) scale(1.5);
@@ -2497,11 +2500,14 @@ button.wizard_starter_alt.btn.btn-success
   32% {
     transform: rotate(-180deg) scale(1.5);
   }
-  72% {
+  48% {
+    transform: rotate(0deg) scale(1.5);
+  }
+  80% {
     transform: rotate(360deg) scale(1.5);
   }
-  90% {
-    transform: rotate(360deg) scale(1.5);
+  96% {
+    transform: rotate(-180deg) scale(1.5);
   }
   100% {
     transform: rotate(0deg) scale(1.5);
