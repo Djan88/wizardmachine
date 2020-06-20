@@ -2586,6 +2586,38 @@ button.wizard_starter_alt.btn.btn-success
     transform: rotate(0deg) scale(1.5);
   }
 }
+.rot_mo_2 {
+  animation: 58s linear 0s normal none infinite running rot_mo_2;
+  -webkit-animation: 58s linear 0s normal none infinite running rot_mo_2;
+}
+@keyframes rot_mo_2 {
+  0% {
+    transform: rotate(20deg) scale(1.5);
+  }
+  67% {
+    transform: rotate(80deg) scale(1.5);
+  }
+  95% {
+    transform: rotate(80deg) scale(1.5);
+  }
+  100% {
+    transform: rotate(0deg) scale(1.5);
+  }
+}
+@-webkit-keyframes rot_mo_2 {
+  0% {
+    transform: rotate(20deg) scale(1.5);
+  }
+  67% {
+    transform: rotate(80deg) scale(1.5);
+  }
+  95% {
+    transform: rotate(80deg) scale(1.5);
+  }
+  100% {
+    transform: rotate(0deg) scale(1.5);
+  }
+}
 
 
 
