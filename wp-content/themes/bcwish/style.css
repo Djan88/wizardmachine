@@ -2555,8 +2555,8 @@ button.wizard_starter_alt.btn.btn-success
   }
 }
 .rot_mo_1 {
-  animation: 58 linear 0s normal none infinite running rot_mo_1;
-  -webkit-animation: 58 linear 0s normal none infinite running rot_mo_1;
+  animation: 58s linear 0s normal none infinite running rot_mo_1;
+  -webkit-animation: 58s linear 0s normal none infinite running rot_mo_1;
 }
 @keyframes rot_mo_1 {
   0% {
