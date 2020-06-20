@@ -218,7 +218,7 @@ jQuery(function() {
       jQuery('.wizard_heading').text('Выполняется протокол "V 3 — V 4"');
       jQuery('.wizard_percent').text('92%');
       jQuery('.ring').css('transform', 'rotate(0deg)');
-      jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+      jQuery('.zone_ring').css('transform', 'rotate(0deg) scale(1.5)');
       reloadTime = 0;
       reloadTime1 = 0;
       d12Val = 0;
@@ -1113,7 +1113,7 @@ jQuery(function() {
         jQuery('.ring').removeClass('rot_ring');
         jQuery('.zone_ring').removeClass('rot_zone_ring');
         jQuery('.ring').css('transform', 'rotate(0deg)');
-        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg) scale(1.5)');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'v3_5_1');
@@ -1188,7 +1188,7 @@ jQuery(function() {
         jQuery('.ring').removeClass('rot_ring');
         jQuery('.zone_ring').removeClass('rot_zone_ring');
         jQuery('.ring').css('transform', 'rotate(0deg)');
-        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg) scale(1.5)');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'v3_4');
@@ -1263,7 +1263,7 @@ jQuery(function() {
         jQuery('.ring').removeClass('rot_ring');
         jQuery('.zone_ring').removeClass('rot_zone_ring');
         jQuery('.ring').css('transform', 'rotate(0deg)');
-        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg) scale(1.5)');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'v3_3');
@@ -1337,7 +1337,7 @@ jQuery(function() {
         jQuery('.ring').removeClass('rot_ring');
         jQuery('.zone_ring').removeClass('rot_zone_ring');
         jQuery('.ring').css('transform', 'rotate(0deg)');
-        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg) scale(1.5)');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'v3_2');
@@ -1403,7 +1403,7 @@ jQuery(function() {
     jQuery('.wizard_heading').text('Выполняется протокол "V 2 — V 5"');
     jQuery('.wizard_percent').text('83%');
     jQuery('.ring').css('transform', 'rotate(0deg)');
-    jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+    jQuery('.zone_ring').css('transform', 'rotate(0deg) scale(1.5)');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -2060,7 +2060,7 @@ jQuery(function() {
         jQuery('.ring').removeClass('rot_ring');
         jQuery('.zone_ring').removeClass('rot_zone_ring');
         jQuery('.ring').css('transform', 'rotate(0deg)');
-        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg) scale(1.5)');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'v2_5_1');
@@ -2077,7 +2077,7 @@ jQuery(function() {
     jQuery('.wizard_heading').text('Выполняется протокол "V 2 — V 5"');
     jQuery('.wizard_percent').text('28%');
     jQuery('.ring').css('transform', 'rotate(0deg)');
-    jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+    jQuery('.zone_ring').css('transform', 'rotate(0deg) scale(1.5)');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -2499,7 +2499,7 @@ jQuery(function() {
         jQuery('.ring').removeClass('rot_ring');
         jQuery('.zone_ring').removeClass('rot_zone_ring');
         jQuery('.ring').css('transform', 'rotate(0deg)');
-        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg) scale(1.5)');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'v2_2_1');
@@ -3098,7 +3098,7 @@ jQuery(function() {
         clearInterval(phaseOne);
         count_animation = 1;
         jQuery('.ring').css('transform', 'rotate(0deg)');
-        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg) scale(1.5)');
         sound.stop();
         onEnd();
       }
@@ -3530,7 +3530,7 @@ jQuery(function() {
         clearInterval(phaseOne);
         count_animation = 1;
         jQuery('.ring').css('transform', 'rotate(0deg)');
-        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg) scale(1.5)');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'drenag_12');
@@ -4129,7 +4129,7 @@ jQuery(function() {
         clearInterval(phaseOne);
         count_animation = 1;
         jQuery('.ring').css('transform', 'rotate(0deg)');
-        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg) scale(1.5)');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'drenag_11');
@@ -4727,7 +4727,7 @@ jQuery(function() {
         clearInterval(phaseOne);
         count_animation = 1;
         jQuery('.ring').css('transform', 'rotate(0deg)');
-        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg) scale(1.5)');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'drenag_10');
@@ -5165,7 +5165,7 @@ jQuery(function() {
         clearInterval(phaseOne);
         count_animation = 1;
         jQuery('.ring').css('transform', 'rotate(0deg)');
-        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg) scale(1.5)');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'drenag_9');
@@ -5764,7 +5764,7 @@ jQuery(function() {
         clearInterval(phaseOne);
         count_animation = 1;
         jQuery('.ring').css('transform', 'rotate(0deg)');
-        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg) scale(1.5)');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'drenag_8');
@@ -6362,7 +6362,7 @@ jQuery(function() {
         clearInterval(phaseOne);
         count_animation = 1;
         jQuery('.ring').css('transform', 'rotate(0deg)');
-        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg) scale(1.5)');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'drenag_7');
@@ -6800,7 +6800,7 @@ jQuery(function() {
         clearInterval(phaseOne);
         count_animation = 1;
         jQuery('.ring').css('transform', 'rotate(0deg)');
-        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg) scale(1.5)');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'drenag_6');
@@ -7399,7 +7399,7 @@ jQuery(function() {
         clearInterval(phaseOne);
         count_animation = 1;
         jQuery('.ring').css('transform', 'rotate(0deg)');
-        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg) scale(1.5)');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'drenag_5');
@@ -7997,7 +7997,7 @@ jQuery(function() {
         clearInterval(phaseOne);
         count_animation = 1;
         jQuery('.ring').css('transform', 'rotate(0deg)');
-        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg) scale(1.5)');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'drenag_4');
@@ -8435,7 +8435,7 @@ jQuery(function() {
         clearInterval(phaseOne);
         count_animation = 1;
         jQuery('.ring').css('transform', 'rotate(0deg)');
-        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg) scale(1.5)');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'drenag_3');
@@ -9034,7 +9034,7 @@ jQuery(function() {
         clearInterval(phaseOne);
         count_animation = 1;
         jQuery('.ring').css('transform', 'rotate(0deg)');
-        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg) scale(1.5)');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'drenag_2');
@@ -9100,7 +9100,7 @@ jQuery(function() {
     jQuery('.wizard_heading').text('Выполняется протокол "V 1"');
     jQuery('.wizard_percent').text('78%');
     jQuery('.ring').css('transform', 'rotate(0deg)');
-    jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+    jQuery('.zone_ring').css('transform', 'rotate(0deg) scale(1.5)');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -9770,7 +9770,7 @@ jQuery(function() {
         count_animation = 1;
         jQuery('.zone').removeClass('transparent');
         jQuery('.ring').css('transform', 'rotate(0deg)');
-        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg) scale(1.5)');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'v1_5_1');
@@ -9913,7 +9913,7 @@ jQuery(function() {
         count_animation = 1;
         jQuery('.zone').removeClass('transparent');
         jQuery('.ring').css('transform', 'rotate(0deg)');
-        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg) scale(1.5)');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'v1_4');
@@ -9982,7 +9982,7 @@ jQuery(function() {
         jQuery('.ring').removeClass('rot_ring');
         jQuery('.zone_ring').removeClass('rot_zone_ring');
         jQuery('.ring').css('transform', 'rotate(0deg)');
-        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg) scale(1.5)');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'v1_3');
@@ -10055,7 +10055,7 @@ jQuery(function() {
         jQuery('.ring').removeClass('rot_ring');
         jQuery('.zone_ring').removeClass('rot_zone_ring');
         jQuery('.ring').css('transform', 'rotate(0deg)');
-        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg) scale(1.5)');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'v1_2');
@@ -10121,7 +10121,7 @@ jQuery(function() {
       jQuery('.wizard_heading').text('Выполняется протокол "V 4 — V 3"');
       jQuery('.wizard_percent').text('90%');
       jQuery('.ring').css('transform', 'rotate(0deg)');
-      jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+      jQuery('.zone_ring').css('transform', 'rotate(0deg) scale(1.5)');
       reloadTime = 0;
       reloadTime1 = 0;
       d12Val = 0;
@@ -11240,7 +11240,7 @@ jQuery(function() {
         jQuery('.ring').removeClass('rot_ring');
         jQuery('.zone_ring').removeClass('rot_zone_ring');
         jQuery('.ring').css('transform', 'rotate(0deg)');
-        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg) scale(1.5)');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'v4_8_1');
@@ -11311,7 +11311,7 @@ jQuery(function() {
         jQuery('.ring').removeClass('rot_ring');
         jQuery('.zone_ring').removeClass('rot_zone_ring');
         jQuery('.ring').css('transform', 'rotate(0deg)');
-        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg) scale(1.5)');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'v4_7');
@@ -11381,7 +11381,7 @@ jQuery(function() {
     jQuery('.ring').removeClass('rot_ring');
     jQuery('.zone_ring').removeClass('rot_zone_ring');
         jQuery('.ring').css('transform', 'rotate(0deg)');
-        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg) scale(1.5)');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'v4_6');
@@ -11451,7 +11451,7 @@ jQuery(function() {
         jQuery('.ring').removeClass('rot_ring');
         jQuery('.zone_ring').removeClass('rot_zone_ring');
         jQuery('.ring').css('transform', 'rotate(0deg)');
-        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg) scale(1.5)');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'v4_5');
@@ -11522,7 +11522,7 @@ jQuery(function() {
         jQuery('.ring').removeClass('rot_ring');
         jQuery('.zone_ring').removeClass('rot_zone_ring');
         jQuery('.ring').css('transform', 'rotate(0deg)');
-        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg) scale(1.5)');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'v4_4');
@@ -11597,7 +11597,7 @@ jQuery(function() {
         jQuery('.ring').removeClass('rot_ring');
         jQuery('.zone_ring').removeClass('rot_zone_ring');
         jQuery('.ring').css('transform', 'rotate(0deg)');
-        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg) scale(1.5)');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'v4_3');
@@ -11668,7 +11668,7 @@ jQuery(function() {
         jQuery('.ring').removeClass('rot_ring');
         jQuery('.zone_ring').removeClass('rot_zone_ring');
         jQuery('.ring').css('transform', 'rotate(0deg)');
-        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg) scale(1.5)');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'v4_2');
@@ -11734,7 +11734,7 @@ jQuery(function() {
     jQuery('.wizard_heading').text('Выполняется "Висцеральный протокол"');
     jQuery('.wizard_percent').text('80%');
     jQuery('.ring').css('transform', 'rotate(0deg)');
-    jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+    jQuery('.zone_ring').css('transform', 'rotate(0deg) scale(1.5)');
     reloadTime = 0;
     reloadTime1 = 0;
     d12Val = 0;
@@ -11948,7 +11948,7 @@ jQuery(function() {
         jQuery('.ring').removeClass('rot_ring_double');
         jQuery('.zone_ring').removeClass('rot_zone_ring');
         jQuery('.ring').css('transform', 'rotate(0deg)');
-        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg) scale(1.5)');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'mmt_7');
@@ -12042,7 +12042,7 @@ jQuery(function() {
         jQuery('.ring').removeClass('rot_ring_double');
         jQuery('.zone_ring').removeClass('rot_zone_ring');
         jQuery('.ring').css('transform', 'rotate(0deg)');
-        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg) scale(1.5)');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'mmt_6');
@@ -12136,7 +12136,7 @@ jQuery(function() {
         jQuery('.ring').removeClass('rot_ring_double');
         jQuery('.zone_ring').removeClass('rot_zone_ring');
         jQuery('.ring').css('transform', 'rotate(0deg)');
-        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg) scale(1.5)');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'mmt_5');
@@ -12230,7 +12230,7 @@ jQuery(function() {
         jQuery('.ring').removeClass('rot_ring_double');
         jQuery('.zone_ring').removeClass('rot_zone_ring');
         jQuery('.ring').css('transform', 'rotate(0deg)');
-        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg) scale(1.5)');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'mmt_4');
@@ -12317,7 +12317,7 @@ mmt_2 = function(){
       jQuery('.ring').removeClass('rot_ring_double');
       jQuery('.zone_ring').removeClass('rot_zone_ring');
       jQuery('.ring').css('transform', 'rotate(0deg)');
-      jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+      jQuery('.zone_ring').css('transform', 'rotate(0deg) scale(1.5)');
       sound.stop();
       if (pausedStatus == true) {
         localStorage.setItem('paused', 'mmt_3');
@@ -12409,7 +12409,7 @@ mmt_2 = function(){
         jQuery('.ring').removeClass('rot_ring_double');
         jQuery('.zone_ring').removeClass('rot_zone_ring');
         jQuery('.ring').css('transform', 'rotate(0deg)');
-        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg) scale(1.5)');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'mmt_2');
@@ -12475,7 +12475,7 @@ mmt_2 = function(){
       jQuery('.wizard_heading').text('Выполняется "Solis"');
       jQuery('.wizard_percent').text('86%');
       jQuery('.ring').css('transform', 'rotate(0deg)');
-      jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+      jQuery('.zone_ring').css('transform', 'rotate(0deg) scale(1.5)');
       reloadTime = 0;
       reloadTime1 = 0;
       d12Val = 0;
@@ -12701,7 +12701,7 @@ mmt_2 = function(){
               zIndex: '2'
           });
           jQuery('.ring').css('transform', 'rotate(0deg)');
-          jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+          jQuery('.zone_ring').css('transform', 'rotate(0deg) scale(1.5)');
           sound.stop();
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'solis_8');
@@ -12859,7 +12859,7 @@ mmt_2 = function(){
               zIndex: '2'
           });
           jQuery('.ring').css('transform', 'rotate(0deg)');
-          jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+          jQuery('.zone_ring').css('transform', 'rotate(0deg) scale(1.5)');
           sound.stop();
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'solis_7');
@@ -13017,7 +13017,7 @@ mmt_2 = function(){
               zIndex: '2'
           });
           jQuery('.ring').css('transform', 'rotate(0deg)');
-          jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+          jQuery('.zone_ring').css('transform', 'rotate(0deg) scale(1.5)');
           sound.stop();
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'solis_6');
@@ -13175,7 +13175,7 @@ mmt_2 = function(){
               zIndex: '2'
           });
           jQuery('.ring').css('transform', 'rotate(0deg)');
-          jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+          jQuery('.zone_ring').css('transform', 'rotate(0deg) scale(1.5)');
           sound.stop();
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'solis_5');
@@ -13333,7 +13333,7 @@ mmt_2 = function(){
             zIndex: '2'
         });
         jQuery('.ring').css('transform', 'rotate(0deg)');
-        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg) scale(1.5)');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'solis_4');
@@ -13631,7 +13631,7 @@ mmt_2 = function(){
             zIndex: '2'
         });
         jQuery('.ring').css('transform', 'rotate(0deg)');
-        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg) scale(1.5)');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'solis_2_1');
@@ -14576,7 +14576,7 @@ mmt_2 = function(){
         jQuery('.ring').removeClass('rot_ring');
         jQuery('.zone_ring').removeClass('rot_zone_ring');
         jQuery('.ring').css('transform', 'rotate(0deg)');
-        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg) scale(1.5)');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'v5_10_1');
@@ -14647,7 +14647,7 @@ mmt_2 = function(){
         jQuery('.ring').removeClass('rot_ring');
         jQuery('.zone_ring').removeClass('rot_zone_ring');
         jQuery('.ring').css('transform', 'rotate(0deg)');
-        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg) scale(1.5)');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'v5_9');
@@ -14722,7 +14722,7 @@ mmt_2 = function(){
         jQuery('.ring').removeClass('rot_ring');
         jQuery('.zone_ring').removeClass('rot_zone_ring');
         jQuery('.ring').css('transform', 'rotate(0deg)');
-        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg) scale(1.5)');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'v5_8');
@@ -14793,7 +14793,7 @@ mmt_2 = function(){
         jQuery('.ring').removeClass('rot_ring');
         jQuery('.zone_ring').removeClass('rot_zone_ring');
         jQuery('.ring').css('transform', 'rotate(0deg)');
-        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg) scale(1.5)');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'v5_7');
@@ -14868,7 +14868,7 @@ mmt_2 = function(){
         jQuery('.ring').removeClass('rot_ring');
         jQuery('.zone_ring').removeClass('rot_zone_ring');
         jQuery('.ring').css('transform', 'rotate(0deg)');
-        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg) scale(1.5)');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'v5_6');
@@ -14939,7 +14939,7 @@ mmt_2 = function(){
         jQuery('.ring').removeClass('rot_ring');
         jQuery('.zone_ring').removeClass('rot_zone_ring');
         jQuery('.ring').css('transform', 'rotate(0deg)');
-        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg) scale(1.5)');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'v5_5');
@@ -15010,7 +15010,7 @@ mmt_2 = function(){
         jQuery('.ring').removeClass('rot_ring');
         jQuery('.zone_ring').removeClass('rot_zone_ring');
         jQuery('.ring').css('transform', 'rotate(0deg)');
-        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg) scale(1.5)');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'v5_4');
@@ -15081,7 +15081,7 @@ mmt_2 = function(){
         jQuery('.ring').removeClass('rot_ring');
         jQuery('.zone_ring').removeClass('rot_zone_ring');
         jQuery('.ring').css('transform', 'rotate(0deg)');
-        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg) scale(1.5)');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'v5_3');
@@ -15160,7 +15160,7 @@ mmt_2 = function(){
         jQuery('.ring').removeClass('rot_ring');
         jQuery('.zone_ring').removeClass('rot_zone_ring');
         jQuery('.ring').css('transform', 'rotate(0deg)');
-        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg) scale(1.5)');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'v5_2');
@@ -15515,7 +15515,7 @@ mmt_2 = function(){
         jQuery('.ring').removeClass('rot_ring');
         jQuery('.zone_ring').removeClass('rot_zone_ring');
         jQuery('.ring').css('transform', 'rotate(0deg)');
-        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg) scale(1.5)');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'universal_8_1');
@@ -15825,7 +15825,7 @@ mmt_2 = function(){
         jQuery('.ring').removeClass('rot_ring');
         jQuery('.zone_ring').removeClass('rot_zone_ring');
         jQuery('.ring').css('transform', 'rotate(0deg)');
-        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg) scale(1.5)');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'universal_6_1');
@@ -16129,7 +16129,7 @@ mmt_2 = function(){
         jQuery('.ring').removeClass('rot_ring');
         jQuery('.zone_ring').removeClass('rot_zone_ring');
         jQuery('.ring').css('transform', 'rotate(0deg)');
-        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg) scale(1.5)');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'universal_4_1');
@@ -16435,7 +16435,7 @@ mmt_2 = function(){
         jQuery('.ring').removeClass('rot_ring');
         jQuery('.zone_ring').removeClass('rot_zone_ring');
         jQuery('.ring').css('transform', 'rotate(0deg)');
-        jQuery('.zone_ring').css('transform', 'rotate(0deg)');
+        jQuery('.zone_ring').css('transform', 'rotate(0deg) scale(1.5)');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'universal_2_1');
