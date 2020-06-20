@@ -373,11 +373,8 @@ jQuery(function() {
       zIndex: '1000'
     });
 
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_d3, .zone_d4',{rotation: -320, scale: 1.5}, {duration: 40, ease: "none", rotation: -380, scale: 1.5})
-             .fromTo('.zone_d3, .zone_d4',{rotation: -380, scale: 1.5}, {duration: 17, ease: "none", rotation: -380, scale: 1.5})
-             .fromTo('.zone_d3, .zone_d4',{rotation: -380, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
-    
+    jQuery('.zone_d3, .zone_d4').addClass('rot_mo_4');
+
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
           if (reloadTime == 0){
@@ -399,6 +396,7 @@ jQuery(function() {
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_d3, .zone_d4').removeClass('rot_mo_4');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v3_8');
             endNow();
@@ -432,11 +430,8 @@ jQuery(function() {
       zIndex: '1000'
     });
 
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_d3, .zone_d4',{rotation: 270, scale: 1.5}, {duration: 40, ease: "none", rotation: 330, scale: 1.5})
-             .fromTo('.zone_d3, .zone_d4',{rotation: 330, scale: 1.5}, {duration: 17, ease: "none", rotation: 330, scale: 1.5})
-             .fromTo('.zone_d3, .zone_d4',{rotation: 330, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
-    
+    jQuery('.zone_d3, .zone_d4').addClass('rot_mo_3');
+
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
           if (reloadTime == 0){                                                                       //1
@@ -458,6 +453,7 @@ jQuery(function() {
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_d3, .zone_d4').removeClass('rot_mo_3');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v3_7_4');
             endNow();
@@ -490,11 +486,7 @@ jQuery(function() {
       zIndex: '1000'
     });
 
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_d3, .zone_d4',{rotation: 20, scale: 1.5}, {duration: 40, ease: "none", rotation: 80, scale: 1.5})
-             .fromTo('.zone_d3, .zone_d4',{rotation: 80, scale: 1.5}, {duration: 17, ease: "none", rotation: 80, scale: 1.5})
-             .fromTo('.zone_d3, .zone_d4',{rotation: 80, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
-    
+    jQuery('.zone_d3, .zone_d4').addClass('rot_mo_2');
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
           if (reloadTime == 0){                                                                       //1
@@ -516,6 +508,7 @@ jQuery(function() {
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_d3, .zone_d4').removeClass('rot_mo_2');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v3_7_3');
             endNow();
@@ -547,10 +540,9 @@ jQuery(function() {
       paddingTop: '4px',
       zIndex: '1000'
     });
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_d3, .zone_d4',{rotation: -10, scale: 1.5}, {duration: 40, ease: "none", rotation: -70, scale: 1.5})
-             .fromTo('.zone_d3, .zone_d4',{rotation: -70, scale: 1.5}, {duration: 17, ease: "none", rotation: -70, scale: 1.5})
-             .fromTo('.zone_d3, .zone_d4',{rotation: -70, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+
+    jQuery('.zone_d3, .zone_d4').addClass('rot_mo_1');
+
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
           if (reloadTime == 0){                                                                       //1
@@ -572,6 +564,7 @@ jQuery(function() {
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_d3, .zone_d4').removeClass('rot_mo_1');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v3_7_2');
             endNow();
@@ -605,11 +598,8 @@ jQuery(function() {
       zIndex: '1000'
     });
 
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_s3, .zone_s4',{rotation: -320, scale: 1.5}, {duration: 40, ease: "none", rotation: -380, scale: 1.5})
-             .fromTo('.zone_s3, .zone_s4',{rotation: -380, scale: 1.5}, {duration: 17, ease: "none", rotation: -380, scale: 1.5})
-             .fromTo('.zone_s3, .zone_s4',{rotation: -380, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
-    
+    jQuery('.zone_s3, .zone_s4').addClass('rot_mo_4');
+
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
           if (reloadTime == 0){
@@ -631,6 +621,7 @@ jQuery(function() {
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_s3, .zone_s4').removeClass('rot_mo_4');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v3_7_1');
             endNow();
@@ -664,11 +655,8 @@ jQuery(function() {
       zIndex: '1000'
     });
 
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_s3, .zone_s4',{rotation: 270, scale: 1.5}, {duration: 40, ease: "none", rotation: 330, scale: 1.5})
-             .fromTo('.zone_s3, .zone_s4',{rotation: 330, scale: 1.5}, {duration: 17, ease: "none", rotation: 330, scale: 1.5})
-             .fromTo('.zone_s3, .zone_s4',{rotation: 330, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
-    
+    jQuery('.zone_s3, .zone_s4').addClass('rot_mo_3');
+
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
           if (reloadTime == 0){                                                                       //1
@@ -690,6 +678,7 @@ jQuery(function() {
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_s3, .zone_s4').removeClass('rot_mo_3');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v3_6_4');
             endNow();
@@ -722,11 +711,7 @@ jQuery(function() {
       zIndex: '1000'
     });
 
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_s3, .zone_s4',{rotation: 20, scale: 1.5}, {duration: 40, ease: "none", rotation: 80, scale: 1.5})
-             .fromTo('.zone_s3, .zone_s4',{rotation: 80, scale: 1.5}, {duration: 17, ease: "none", rotation: 80, scale: 1.5})
-             .fromTo('.zone_s3, .zone_s4',{rotation: 80, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
-    
+    jQuery('.zone_s3, .zone_s4').addClass('rot_mo_2');
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
           if (reloadTime == 0){                                                                       //1
@@ -748,6 +733,7 @@ jQuery(function() {
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_s3, .zone_s4').removeClass('rot_mo_2');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v3_6_3');
             endNow();
@@ -780,9 +766,7 @@ jQuery(function() {
       zIndex: '1000'
     });
     var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_s3, .zone_s4',{rotation: -10, scale: 1.5}, {duration: 40, ease: "none", rotation: -70, scale: 1.5})
-             .fromTo('.zone_s3, .zone_s4',{rotation: -70, scale: 1.5}, {duration: 17, ease: "none", rotation: -70, scale: 1.5})
-             .fromTo('.zone_s3, .zone_s4',{rotation: -70, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    jQuery('.zone_s3, .zone_s4').addClass('rot_mo_1');
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
           if (reloadTime == 0){                                                                       //1
@@ -804,6 +788,7 @@ jQuery(function() {
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_s3, .zone_s4').removeClass('rot_mo_1');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v3_6_2');
             endNow();
@@ -837,11 +822,8 @@ jQuery(function() {
       zIndex: '1000'
     });
 
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_v1, .zone_v3, .zone_v4',{rotation: -320, scale: 1.5}, {duration: 40, ease: "none", rotation: -380, scale: 1.5})
-             .fromTo('.zone_v1, .zone_v3, .zone_v4',{rotation: -380, scale: 1.5}, {duration: 17, ease: "none", rotation: -380, scale: 1.5})
-             .fromTo('.zone_v1, .zone_v3, .zone_v4',{rotation: -380, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
-    
+    jQuery('.zone_v1, .zone_v3, .zone_v4').addClass('rot_mo_4');
+
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
           if (reloadTime == 0){
@@ -863,6 +845,7 @@ jQuery(function() {
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_v1, .zone_v3, .zone_v4').removeClass('rot_mo_4');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v3_6_1');
             endNow();
@@ -896,11 +879,8 @@ jQuery(function() {
       zIndex: '1000'
     });
 
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_v1, .zone_v3, .zone_v4',{rotation: 270, scale: 1.5}, {duration: 40, ease: "none", rotation: 330, scale: 1.5})
-             .fromTo('.zone_v1, .zone_v3, .zone_v4',{rotation: 330, scale: 1.5}, {duration: 17, ease: "none", rotation: 330, scale: 1.5})
-             .fromTo('.zone_v1, .zone_v3, .zone_v4',{rotation: 330, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
-    
+    jQuery('.zone_v1, .zone_v3, .zone_v4').addClass('rot_mo_3');
+
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
           if (reloadTime == 0){                                                                       //1
@@ -922,6 +902,7 @@ jQuery(function() {
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_v1, .zone_v3, .zone_v4').removeClass('rot_mo_3');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v3_5_4');
             endNow();
@@ -954,11 +935,8 @@ jQuery(function() {
       zIndex: '1000'
     });
 
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_v1, .zone_v3, .zone_v4',{rotation: 20, scale: 1.5}, {duration: 40, ease: "none", rotation: 80, scale: 1.5})
-             .fromTo('.zone_v1, .zone_v3, .zone_v4',{rotation: 80, scale: 1.5}, {duration: 17, ease: "none", rotation: 80, scale: 1.5})
-             .fromTo('.zone_v1, .zone_v3, .zone_v4',{rotation: 80, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
-    
+    jQuery('.zone_v1, .zone_v3, .zone_v4').addClass('rot_mo_2');
+
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
           if (reloadTime == 0){                                                                       //1
@@ -980,6 +958,7 @@ jQuery(function() {
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_v1, .zone_v3, .zone_v4').removeClass('rot_mo_2');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v3_5_3');
             endNow();
@@ -1011,10 +990,7 @@ jQuery(function() {
       paddingTop: '4px',
       zIndex: '1000'
     });
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_v1, .zone_v3, .zone_v4',{rotation: -10, scale: 1.5}, {duration: 40, ease: "none", rotation: -70, scale: 1.5})
-             .fromTo('.zone_v1, .zone_v3, .zone_v4',{rotation: -70, scale: 1.5}, {duration: 17, ease: "none", rotation: -70, scale: 1.5})
-             .fromTo('.zone_v1, .zone_v3, .zone_v4',{rotation: -70, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    jQuery('.zone_v1, .zone_v3, .zone_v4').addClass('rot_mo_1');
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
           if (reloadTime == 0){                                                                       //1
@@ -1036,6 +1012,7 @@ jQuery(function() {
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_v1, .zone_v3, .zone_v4').removeClass('rot_mo_1');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v3_5_2');
             endNow();
@@ -1562,11 +1539,7 @@ jQuery(function() {
       zIndex: '1000'
     });
 
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_s2_, .zone_v5',{rotation: -300, scale: 1.5}, {duration: 40, ease: "none", rotation: -360, scale: 1.5})
-             .fromTo('.zone_s2_, .zone_v5',{rotation: -360, scale: 1.5}, {duration: 17, ease: "none", rotation: -360, scale: 1.5})
-             .fromTo('.zone_s2_, .zone_v5',{rotation: -360, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
-    
+    jQuery('.zone_s2_, .zone_v5').addClass('rot_mo_5');
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
           if (reloadTime == 0){
@@ -1588,6 +1561,7 @@ jQuery(function() {
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_s2_, .zone_v5').removeClass('rot_mo_5');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v2_6');
             endNow();
@@ -1621,11 +1595,8 @@ jQuery(function() {
       zIndex: '1000'
     });
 
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_s2_, .zone_v5',{rotation: 270, scale: 1.5}, {duration: 40, ease: "none", rotation: 330, scale: 1.5})
-             .fromTo('.zone_s2_, .zone_v5',{rotation: 330, scale: 1.5}, {duration: 17, ease: "none", rotation: 330, scale: 1.5})
-             .fromTo('.zone_s2_, .zone_v5',{rotation: 330, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
-    
+    jQuery('.zone_s2_, .zone_v5').addClass('rot_mo_3');
+
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
           if (reloadTime == 0){                                                                       //1
@@ -1647,6 +1618,7 @@ jQuery(function() {
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_s2_, .zone_v5').removeClass('rot_mo_3');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v2_5_8');
             endNow();
@@ -1679,11 +1651,8 @@ jQuery(function() {
       zIndex: '1000'
     });
 
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_s2_, .zone_v5',{rotation: 10, scale: 1.5}, {duration: 40, ease: "none", rotation: 70, scale: 1.5})
-             .fromTo('.zone_s2_, .zone_v5',{rotation: 70, scale: 1.5}, {duration: 17, ease: "none", rotation: 70, scale: 1.5})
-             .fromTo('.zone_s2_, .zone_v5',{rotation: 70, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
-    
+    jQuery('.zone_s2_, .zone_v5').addClass('rot_mo_1');
+
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
           if (reloadTime == 0){                                                                       //1
@@ -1705,6 +1674,7 @@ jQuery(function() {
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_s2_, .zone_v5').removeClass('rot_mo_1');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v2_5_7');
             endNow();
@@ -1736,12 +1706,7 @@ jQuery(function() {
       paddingTop: '4px',
       zIndex: '1000'
     });
-
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_s2_, .zone_v5',{rotation: -55, scale: 1.5}, {duration: 40, ease: "none", rotation: -95, scale: 1.5})
-             .fromTo('.zone_s2_, .zone_v5',{rotation: -95, scale: 1.5}, {duration: 17, ease: "none", rotation: -95, scale: 1.5})
-             .fromTo('.zone_s2_, .zone_v5',{rotation: -95, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
-    
+    jQuery('.zone_s2_, .zone_v5').addClass('rot_mo_6');
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
           if (reloadTime == 0){
@@ -1763,6 +1728,7 @@ jQuery(function() {
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_s2_, .zone_v5').removeClass('rot_mo_6');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v2_5_6');
             endNow();
@@ -1796,11 +1762,8 @@ jQuery(function() {
       zIndex: '1000'
     });
 
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_s2_, .zone_v5',{rotation: -300, scale: 1.5}, {duration: 40, ease: "none", rotation: -360, scale: 1.5})
-             .fromTo('.zone_s2_, .zone_v5',{rotation: -360, scale: 1.5}, {duration: 17, ease: "none", rotation: -360, scale: 1.5})
-             .fromTo('.zone_s2_, .zone_v5',{rotation: -360, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
-    
+    jQuery('.zone_s2_, .zone_v5').addClass('rot_mo_4');
+
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
           if (reloadTime == 0){
@@ -1822,6 +1785,7 @@ jQuery(function() {
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_s2_, .zone_v5').removeClass('rot_mo_4');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v2_5_5');
             endNow();
@@ -1855,11 +1819,8 @@ jQuery(function() {
       zIndex: '1000'
     });
 
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_s2_, .zone_v5',{rotation: 270, scale: 1.5}, {duration: 40, ease: "none", rotation: 330, scale: 1.5})
-             .fromTo('.zone_s2_, .zone_v5',{rotation: 330, scale: 1.5}, {duration: 17, ease: "none", rotation: 330, scale: 1.5})
-             .fromTo('.zone_s2_, .zone_v5',{rotation: 330, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
-    
+    jQuery('.zone_s2_, .zone_v5').addClass('rot_mo_3');
+
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
           if (reloadTime == 0){                                                                       //1
@@ -1881,6 +1842,7 @@ jQuery(function() {
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_s2_, .zone_v5').removeClass('rot_mo_3');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v2_5_4');
             endNow();
@@ -1913,11 +1875,8 @@ jQuery(function() {
       zIndex: '1000'
     });
 
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_s2_, .zone_v5',{rotation: 10, scale: 1.5}, {duration: 40, ease: "none", rotation: 70, scale: 1.5})
-             .fromTo('.zone_s2_, .zone_v5',{rotation: 70, scale: 1.5}, {duration: 17, ease: "none", rotation: 70, scale: 1.5})
-             .fromTo('.zone_s2_, .zone_v5',{rotation: 70, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
-    
+    jQuery('.zone_s2_, .zone_v5').addClass('rot_mo_2');
+
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
           if (reloadTime == 0){                                                                       //1
@@ -1939,6 +1898,7 @@ jQuery(function() {
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_s2_, .zone_v5').removeClass('rot_mo_2');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v2_5_3');
             endNow();
@@ -1970,10 +1930,7 @@ jQuery(function() {
       paddingTop: '4px',
       zIndex: '1000'
     });
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_s2_, .zone_v5',{rotation: -40, scale: 1.5}, {duration: 40, ease: "none", rotation: -100, scale: 1.5})
-             .fromTo('.zone_s2_, .zone_v5',{rotation: -100, scale: 1.5}, {duration: 17, ease: "none", rotation: -100, scale: 1.5})
-             .fromTo('.zone_s2_, .zone_v5',{rotation: -100, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    jQuery('.zone_s2_, .zone_v5').addClass('rot_mo_1');
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
           if (reloadTime == 0){                                                                       //1
@@ -1995,6 +1952,7 @@ jQuery(function() {
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_s2_, .zone_v5').removeClass('rot_mo_1');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v2_5_2');
             endNow();
@@ -2237,11 +2195,8 @@ jQuery(function() {
       zIndex: '1000'
     });
 
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_v2, .zone_v5',{rotation: -320, scale: 1.5}, {duration: 40, ease: "none", rotation: -380, scale: 1.5})
-             .fromTo('.zone_v2, .zone_v5',{rotation: -380, scale: 1.5}, {duration: 17, ease: "none", rotation: -380, scale: 1.5})
-             .fromTo('.zone_v2, .zone_v5',{rotation: -380, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
-    
+    jQuery('.zone_v2, .zone_v5').addClass('rot_mo_4');
+
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
           if (reloadTime == 0){
@@ -2263,6 +2218,7 @@ jQuery(function() {
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_v2, .zone_v5').removeClass('rot_mo_4');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v2_3');
             endNow();
@@ -2296,11 +2252,7 @@ jQuery(function() {
       zIndex: '1000'
     });
 
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_v2, .zone_v5',{rotation: 270, scale: 1.5}, {duration: 40, ease: "none", rotation: 330, scale: 1.5})
-             .fromTo('.zone_v2, .zone_v5',{rotation: 330, scale: 1.5}, {duration: 17, ease: "none", rotation: 330, scale: 1.5})
-             .fromTo('.zone_v2, .zone_v5',{rotation: 330, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
-    
+    jQuery('.zone_v2, .zone_v5').addClass('rot_mo_3');
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
           if (reloadTime == 0){                                                                       //1
@@ -2322,6 +2274,7 @@ jQuery(function() {
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_v2, .zone_v5').removeClass('rot_mo_3');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v2_2_4');
             endNow();
@@ -2354,11 +2307,7 @@ jQuery(function() {
       zIndex: '1000'
     });
 
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_v2, .zone_v5',{rotation: 20, scale: 1.5}, {duration: 40, ease: "none", rotation: 80, scale: 1.5})
-             .fromTo('.zone_v2, .zone_v5',{rotation: 80, scale: 1.5}, {duration: 17, ease: "none", rotation: 80, scale: 1.5})
-             .fromTo('.zone_v2, .zone_v5',{rotation: 80, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
-    
+    jQuery('.zone_v2, .zone_v5').addClass('rot_mo_2');
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
           if (reloadTime == 0){                                                                       //1
@@ -2380,6 +2329,7 @@ jQuery(function() {
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_v2, .zone_v5').removeClass('rot_mo_2');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v2_2_3');
             endNow();
@@ -2411,10 +2361,7 @@ jQuery(function() {
       paddingTop: '4px',
       zIndex: '1000'
     });
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_v2, .zone_v5',{rotation: -10, scale: 1.5}, {duration: 40, ease: "none", rotation: -70, scale: 1.5})
-             .fromTo('.zone_v2, .zone_v5',{rotation: -70, scale: 1.5}, {duration: 17, ease: "none", rotation: -70, scale: 1.5})
-             .fromTo('.zone_v2, .zone_v5',{rotation: -70, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    jQuery('.zone_v2, .zone_v5').addClass('rot_mo_1');
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
           if (reloadTime == 0){                                                                       //1
@@ -2436,6 +2383,7 @@ jQuery(function() {
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_v2, .zone_v5').removeClass('rot_mo_1');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v2_2_2');
             endNow();
@@ -9261,11 +9209,8 @@ jQuery(function() {
       zIndex: '1000'
     });
 
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_v4',{rotation: -300, scale: 1.5}, {duration: 40, ease: "none", rotation: -360, scale: 1.5})
-             .fromTo('.zone_v4',{rotation: -360, scale: 1.5}, {duration: 17, ease: "none", rotation: -360, scale: 1.5})
-             .fromTo('.zone_v4',{rotation: -360, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
-    
+    jQuery('.zone_v4').addClass('rot_mo_5');
+
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
           if (reloadTime == 0){
@@ -9287,6 +9232,7 @@ jQuery(function() {
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_v4').removeClass('rot_mo_5');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v1_6');
             endNow();
@@ -9320,11 +9266,7 @@ jQuery(function() {
       zIndex: '1000'
     });
 
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_v3, .zone_s3',{rotation: 270, scale: 1.5}, {duration: 40, ease: "none", rotation: 330, scale: 1.5})
-             .fromTo('.zone_v3, .zone_s3',{rotation: 330, scale: 1.5}, {duration: 17, ease: "none", rotation: 330, scale: 1.5})
-             .fromTo('.zone_v3, .zone_s3',{rotation: 330, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
-    
+    jQuery('.zone_v3, .zone_s3').addClass('rot_mo_1');
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
           if (reloadTime == 0){                                                                       //1
@@ -9346,6 +9288,7 @@ jQuery(function() {
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_v3, .zone_s3').removeClass('rot_mo_1');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v1_5_7');
             endNow();
@@ -9377,11 +9320,7 @@ jQuery(function() {
       paddingTop: '4px',
       zIndex: '1000'
     });
-
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_v4, .zone_v3',{rotation: 10, scale: 1.5}, {duration: 40, ease: "none", rotation: 70, scale: 1.5})
-             .fromTo('.zone_v4, .zone_v3',{rotation: 70, scale: 1.5}, {duration: 17, ease: "none", rotation: 70, scale: 1.5})
-             .fromTo('.zone_v4, .zone_v3',{rotation: 70, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    jQuery('.zone_v4, .zone_v3').addClass('rot_mo_1');
     
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
@@ -9404,6 +9343,7 @@ jQuery(function() {
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_v4, .zone_v3').removeClass('rot_mo_1');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v1_5_6');
             endNow();
@@ -9436,11 +9376,8 @@ jQuery(function() {
       zIndex: '1000'
     });
 
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_v1, .zone_v4, .zone_v5',{rotation: -300, scale: 1.5}, {duration: 40, ease: "none", rotation: -360, scale: 1.5})
-             .fromTo('.zone_v1, .zone_v4, .zone_v5',{rotation: -360, scale: 1.5}, {duration: 17, ease: "none", rotation: -360, scale: 1.5})
-             .fromTo('.zone_v1, .zone_v4, .zone_v5',{rotation: -360, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
-    
+    jQuery('.zone_v0, .zone_v-').addClass('rot_mo_4');
+
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
           if (reloadTime == 0){
@@ -9462,6 +9399,7 @@ jQuery(function() {
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_v0, .zone_v-').removeClass('rot_mo_4');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v1_5_5');
             endNow();
@@ -9495,11 +9433,7 @@ jQuery(function() {
       zIndex: '1000'
     });
 
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_v1, .zone_s3',{rotation: 60, scale: 1.5}, {duration: 40, ease: "none", rotation: 120, scale: 1.5})
-             .fromTo('.zone_v1, .zone_s3',{rotation: 120, scale: 1.5}, {duration: 17, ease: "none", rotation: 120, scale: 1.5})
-             .fromTo('.zone_v1, .zone_s3',{rotation: 120, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
-    
+    jQuery('.zone_v0, .zone_v-').addClass('rot_mo_3');
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
           if (reloadTime == 0){                                                                       //1
@@ -9521,6 +9455,7 @@ jQuery(function() {
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_v0, .zone_v-').removeClass('rot_mo_3');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v1_5_4');
             endNow();
@@ -9553,11 +9488,8 @@ jQuery(function() {
       zIndex: '1000'
     });
 
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_v1, .zone_v4',{rotation: 53, scale: 1.5}, {duration: 40, ease: "none", rotation: 93, scale: 1.5})
-             .fromTo('.zone_v1, .zone_v4',{rotation: 93, scale: 1.5}, {duration: 17, ease: "none", rotation: 93, scale: 1.5})
-             .fromTo('.zone_v1, .zone_v4',{rotation: 93, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
-    
+    jQuery('.zone_v0, .zone_v-').addClass('rot_mo_2');
+
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
           if (reloadTime == 0){                                                                       //1
@@ -9579,6 +9511,7 @@ jQuery(function() {
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_v0, .zone_v-').removeClass('rot_mo_2');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v1_5_3');
             endNow();
@@ -9610,10 +9543,7 @@ jQuery(function() {
       paddingTop: '4px',
       zIndex: '1000'
     });
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_v0, .zone_v-',{rotation: -22, scale: 1.5}, {duration: 40, ease: "none", rotation: -62, scale: 1.5})
-             .fromTo('.zone_v0, .zone_v-',{rotation: -62, scale: 1.5}, {duration: 17, ease: "none", rotation: -62, scale: 1.5})
-             .fromTo('.zone_v0, .zone_v-',{rotation: -62, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    jQuery('.zone_v0, .zone_v-').addClass('rot_mo_1');
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
           if (reloadTime == 0){                                                                       //1
@@ -9635,6 +9565,7 @@ jQuery(function() {
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_v0, .zone_v-').removeClass('rot_mo_1');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v1_5_2');
             endNow();
@@ -10284,11 +10215,8 @@ jQuery(function() {
       zIndex: '1000'
     });
 
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_s2_, .zone_d5, .zone_d6',{rotation: -320, scale: 1.5}, {duration: 40, ease: "none", rotation: -380, scale: 1.5})
-             .fromTo('.zone_s2_, .zone_d5, .zone_d6',{rotation: -380, scale: 1.5}, {duration: 17, ease: "none", rotation: -380, scale: 1.5})
-             .fromTo('.zone_s2_, .zone_d5, .zone_d6',{rotation: -380, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
-    
+    jQuery('.zone_s2_, .zone_d5, .zone_d6').addClass('rot_mo_4');
+
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
           if (reloadTime == 0){
@@ -10310,6 +10238,7 @@ jQuery(function() {
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_s2_, .zone_d5, .zone_d6').removeClass('rot_mo_4');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v4_12');
             endNow();
@@ -10343,11 +10272,8 @@ jQuery(function() {
       zIndex: '1000'
     });
 
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_s2_, .zone_d5, .zone_d6',{rotation: 270, scale: 1.5}, {duration: 40, ease: "none", rotation: 330, scale: 1.5})
-             .fromTo('.zone_s2_, .zone_d5, .zone_d6',{rotation: 330, scale: 1.5}, {duration: 17, ease: "none", rotation: 330, scale: 1.5})
-             .fromTo('.zone_s2_, .zone_d5, .zone_d6',{rotation: 330, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
-    
+    jQuery('.zone_s2_, .zone_d5, .zone_d6').addClass('rot_mo_3');
+
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
           if (reloadTime == 0){                                                                       //1
@@ -10369,6 +10295,7 @@ jQuery(function() {
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_s2_, .zone_d5, .zone_d6').removeClass('rot_mo_3');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v4_11_4');
             endNow();
@@ -10401,11 +10328,8 @@ jQuery(function() {
       zIndex: '1000'
     });
 
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_s2_, .zone_d5, .zone_d6',{rotation: 20, scale: 1.5}, {duration: 40, ease: "none", rotation: 80, scale: 1.5})
-             .fromTo('.zone_s2_, .zone_d5, .zone_d6',{rotation: 80, scale: 1.5}, {duration: 17, ease: "none", rotation: 80, scale: 1.5})
-             .fromTo('.zone_s2_, .zone_d5, .zone_d6',{rotation: 80, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
-    
+    jQuery('.zone_s2_, .zone_d5, .zone_d6').addClass('rot_mo_2');
+
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
           if (reloadTime == 0){                                                                       //1
@@ -10427,6 +10351,7 @@ jQuery(function() {
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_s2_, .zone_d5, .zone_d6').removeClass('rot_mo_2');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v4_11_3');
             endNow();
@@ -10458,10 +10383,7 @@ jQuery(function() {
       paddingTop: '4px',
       zIndex: '1000'
     });
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_s2_, .zone_d5, .zone_d6',{rotation: -10, scale: 1.5}, {duration: 40, ease: "none", rotation: -70, scale: 1.5})
-             .fromTo('.zone_s2_, .zone_d5, .zone_d6',{rotation: -70, scale: 1.5}, {duration: 17, ease: "none", rotation: -70, scale: 1.5})
-             .fromTo('.zone_s2_, .zone_d5, .zone_d6',{rotation: -70, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    jQuery('.zone_s2_, .zone_d5, .zone_d6').addClass('rot_mo_1');
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
           if (reloadTime == 0){                                                                       //1
@@ -10483,6 +10405,7 @@ jQuery(function() {
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_s2_, .zone_d5, .zone_d6').removeClass('rot_mo_1');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v4_11_2');
             endNow();
@@ -10516,11 +10439,7 @@ jQuery(function() {
       zIndex: '1000'
     });
 
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_v2, .zone_v3, .zone_d4',{rotation: -320, scale: 1.5}, {duration: 40, ease: "none", rotation: -380, scale: 1.5})
-             .fromTo('.zone_v2, .zone_v3, .zone_d4',{rotation: -380, scale: 1.5}, {duration: 17, ease: "none", rotation: -380, scale: 1.5})
-             .fromTo('.zone_v2, .zone_v3, .zone_d4',{rotation: -380, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
-    
+    jQuery('.zone_v2, .zone_v3, .zone_d4').addClass('rot_mo_4');
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
           if (reloadTime == 0){
@@ -10542,6 +10461,7 @@ jQuery(function() {
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_v2, .zone_v3, .zone_d4').removeClass('rot_mo_4');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v4_11_1');
             endNow();
@@ -10575,10 +10495,7 @@ jQuery(function() {
       zIndex: '1000'
     });
 
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_v2, .zone_v3, .zone_d4',{rotation: 270, scale: 1.5}, {duration: 40, ease: "none", rotation: 330, scale: 1.5})
-             .fromTo('.zone_v2, .zone_v3, .zone_d4',{rotation: 330, scale: 1.5}, {duration: 17, ease: "none", rotation: 330, scale: 1.5})
-             .fromTo('.zone_v2, .zone_v3, .zone_d4',{rotation: 330, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    jQuery('.zone_v2, .zone_v3, .zone_d4').addClass('rot_mo_3');
     
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
@@ -10601,6 +10518,7 @@ jQuery(function() {
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_v2, .zone_v3, .zone_d4').removeClass('rot_mo_3');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v4_10_4');
             endNow();
@@ -10633,10 +10551,7 @@ jQuery(function() {
       zIndex: '1000'
     });
 
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_v2, .zone_v3, .zone_d4',{rotation: 20, scale: 1.5}, {duration: 40, ease: "none", rotation: 80, scale: 1.5})
-             .fromTo('.zone_v2, .zone_v3, .zone_d4',{rotation: 80, scale: 1.5}, {duration: 17, ease: "none", rotation: 80, scale: 1.5})
-             .fromTo('.zone_v2, .zone_v3, .zone_d4',{rotation: 80, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    jQuery('.zone_v2, .zone_v3, .zone_d4').addClass('rot_mo_2');
     
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
@@ -10659,6 +10574,7 @@ jQuery(function() {
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_v2, .zone_v3, .zone_d4').removeClass('rot_mo_2');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v4_10_3');
             endNow();
@@ -10690,10 +10606,9 @@ jQuery(function() {
       paddingTop: '4px',
       zIndex: '1000'
     });
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_v2, .zone_v3, .zone_d4',{rotation: -10, scale: 1.5}, {duration: 40, ease: "none", rotation: -70, scale: 1.5})
-             .fromTo('.zone_v2, .zone_v3, .zone_d4',{rotation: -70, scale: 1.5}, {duration: 17, ease: "none", rotation: -70, scale: 1.5})
-             .fromTo('.zone_v2, .zone_v3, .zone_d4',{rotation: -70, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    
+    jQuery('.zone_v2, .zone_v3, .zone_d4').addClass('rot_mo_1');
+    
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
           if (reloadTime == 0){                                                                       //1
@@ -10715,6 +10630,7 @@ jQuery(function() {
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_v2, .zone_v3, .zone_d4').removeClass('rot_mo_1');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v4_10_2');
             endNow();
@@ -10748,10 +10664,7 @@ jQuery(function() {
       zIndex: '1000'
     });
 
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_s2, .zone_s4, .zone_s5',{rotation: -320, scale: 1.5}, {duration: 40, ease: "none", rotation: -380, scale: 1.5})
-             .fromTo('.zone_s2, .zone_s4, .zone_s5',{rotation: -380, scale: 1.5}, {duration: 17, ease: "none", rotation: -380, scale: 1.5})
-             .fromTo('.zone_s2, .zone_s4, .zone_s5',{rotation: -380, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    jQuery('.zone_s2, .zone_s4, .zone_s5').addClass('rot_mo_4');
     
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
@@ -10774,6 +10687,7 @@ jQuery(function() {
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_s2, .zone_s4, .zone_s5').removeClass('rot_mo_4');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v4_10_1');
             endNow();
@@ -10807,10 +10721,7 @@ jQuery(function() {
       zIndex: '1000'
     });
 
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_s2, .zone_s4, .zone_s5',{rotation: 270, scale: 1.5}, {duration: 40, ease: "none", rotation: 330, scale: 1.5})
-             .fromTo('.zone_s2, .zone_s4, .zone_s5',{rotation: 330, scale: 1.5}, {duration: 17, ease: "none", rotation: 330, scale: 1.5})
-             .fromTo('.zone_s2, .zone_s4, .zone_s5',{rotation: 330, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    jQuery('.zone_s2, .zone_s4, .zone_s5').addClass('rot_mo_3');
     
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
@@ -10833,6 +10744,7 @@ jQuery(function() {
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_s2, .zone_s4, .zone_s5').removeClass('rot_mo_3');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v4_9_4');
             endNow();
@@ -10865,10 +10777,7 @@ jQuery(function() {
       zIndex: '1000'
     });
 
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_s2, .zone_s4, .zone_s5',{rotation: 20, scale: 1.5}, {duration: 40, ease: "none", rotation: 80, scale: 1.5})
-             .fromTo('.zone_s2, .zone_s4, .zone_s5',{rotation: 80, scale: 1.5}, {duration: 17, ease: "none", rotation: 80, scale: 1.5})
-             .fromTo('.zone_s2, .zone_s4, .zone_s5',{rotation: 80, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    jQuery('.zone_s2, .zone_s4, .zone_s5').addClass('rot_mo_2');
     
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
@@ -10891,6 +10800,7 @@ jQuery(function() {
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_s2, .zone_s4, .zone_s5').removeClass('rot_mo_2');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v4_9_3');
             endNow();
@@ -10922,10 +10832,8 @@ jQuery(function() {
       paddingTop: '4px',
       zIndex: '1000'
     });
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_s2, .zone_s4, .zone_s5',{rotation: -10, scale: 1.5}, {duration: 40, ease: "none", rotation: -70, scale: 1.5})
-             .fromTo('.zone_s2, .zone_s4, .zone_s5',{rotation: -70, scale: 1.5}, {duration: 17, ease: "none", rotation: -70, scale: 1.5})
-             .fromTo('.zone_s2, .zone_s4, .zone_s5',{rotation: -70, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    
+    jQuery('.zone_s2, .zone_s4, .zone_s5').addClass('rot_mo_1');
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
           if (reloadTime == 0){                                                                       //1
@@ -10947,6 +10855,7 @@ jQuery(function() {
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_s2, .zone_s4, .zone_s5').removeClass('rot_mo_1');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v4_9_2');
             endNow();
@@ -10980,10 +10889,7 @@ jQuery(function() {
       zIndex: '1000'
     });
 
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_v1, .zone_v4',{rotation: -320, scale: 1.5}, {duration: 40, ease: "none", rotation: -380, scale: 1.5})
-             .fromTo('.zone_v1, .zone_v4',{rotation: -380, scale: 1.5}, {duration: 17, ease: "none", rotation: -380, scale: 1.5})
-             .fromTo('.zone_v1, .zone_v4',{rotation: -380, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    jQuery('.zone_v1, .zone_v4').addClass('rot_mo_4');
     
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
@@ -11006,6 +10912,7 @@ jQuery(function() {
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_v1, .zone_v4').removeClass('rot_mo_4');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v4_9_1');
             endNow();
@@ -11039,10 +10946,7 @@ jQuery(function() {
       zIndex: '1000'
     });
 
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_v1, .zone_v4',{rotation: 270, scale: 1.5}, {duration: 40, ease: "none", rotation: 330, scale: 1.5})
-             .fromTo('.zone_v1, .zone_v4',{rotation: 330, scale: 1.5}, {duration: 17, ease: "none", rotation: 330, scale: 1.5})
-             .fromTo('.zone_v1, .zone_v4',{rotation: 330, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    jQuery('.zone_v1, .zone_v4').addClass('rot_mo_3');
     
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
@@ -11065,6 +10969,7 @@ jQuery(function() {
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_v1, .zone_v4').removeClass('rot_mo_3');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v4_8_4');
             endNow();
@@ -11097,10 +11002,7 @@ jQuery(function() {
       zIndex: '1000'
     });
 
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_v1, .zone_v4',{rotation: 20, scale: 1.5}, {duration: 40, ease: "none", rotation: 80, scale: 1.5})
-             .fromTo('.zone_v1, .zone_v4',{rotation: 80, scale: 1.5}, {duration: 17, ease: "none", rotation: 80, scale: 1.5})
-             .fromTo('.zone_v1, .zone_v4',{rotation: 80, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    jQuery('.zone_v1, .zone_v4').addClass('rot_mo_2');
     
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
@@ -11123,6 +11025,7 @@ jQuery(function() {
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_v1, .zone_v4').removeClass('rot_mo_2');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v4_8_3');
             endNow();
@@ -11154,10 +11057,7 @@ jQuery(function() {
       paddingTop: '4px',
       zIndex: '1000'
     });
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_v1, .zone_v4',{rotation: -10, scale: 1.5}, {duration: 40, ease: "none", rotation: -70, scale: 1.5})
-             .fromTo('.zone_v1, .zone_v4',{rotation: -70, scale: 1.5}, {duration: 17, ease: "none", rotation: -70, scale: 1.5})
-             .fromTo('.zone_v1, .zone_v4',{rotation: -70, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    jQuery('.zone_v1, .zone_v4').addClass('rot_mo_1');
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
           if (reloadTime == 0){                                                                       //1
@@ -11179,6 +11079,7 @@ jQuery(function() {
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_v1, .zone_v4').removeClass('rot_mo_1');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v4_8_2');
             endNow();
@@ -13361,10 +13262,7 @@ mmt_2 = function(){
       zIndex: '1000'
     });
 
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_d2, .zone_s2_, .zone_d5, .zone_d6',{rotation: -320, scale: 1.5}, {duration: 40, ease: "none", rotation: -380, scale: 1.5})
-             .fromTo('.zone_d2, .zone_s2_, .zone_d5, .zone_d6',{rotation: -380, scale: 1.5}, {duration: 17, ease: "none", rotation: -380, scale: 1.5})
-             .fromTo('.zone_d2, .zone_s2_, .zone_d5, .zone_d6',{rotation: -380, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    jQuery('.zone_d2, .zone_s2_, .zone_d5, .zone_d6').addClass('rot_mo_4');
     
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
@@ -13387,6 +13285,7 @@ mmt_2 = function(){
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_d2, .zone_s2_, .zone_d5, .zone_d6').removeClass('rot_mo_4');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'solis_3');
             endNow();
@@ -13421,10 +13320,7 @@ mmt_2 = function(){
       zIndex: '1000'
     });
 
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_d2, .zone_s2_, .zone_d5, .zone_d6',{rotation: 270, scale: 1.5}, {duration: 40, ease: "none", rotation: 330, scale: 1.5})
-             .fromTo('.zone_d2, .zone_s2_, .zone_d5, .zone_d6',{rotation: 330, scale: 1.5}, {duration: 17, ease: "none", rotation: 330, scale: 1.5})
-             .fromTo('.zone_d2, .zone_s2_, .zone_d5, .zone_d6',{rotation: 330, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    jQuery('.zone_d2, .zone_s2_, .zone_d5, .zone_d6').addClass('rot_mo_3');
     
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
@@ -13447,6 +13343,7 @@ mmt_2 = function(){
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_d2, .zone_s2_, .zone_d5, .zone_d6').removeClass('rot_mo_3');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'solis_2_4');
             endNow();
@@ -13480,10 +13377,7 @@ mmt_2 = function(){
       zIndex: '1000'
     });
 
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_d2, .zone_s2_, .zone_d5, .zone_d6',{rotation: 20, scale: 1.5}, {duration: 40, ease: "none", rotation: 80, scale: 1.5})
-             .fromTo('.zone_d2, .zone_s2_, .zone_d5, .zone_d6',{rotation: 80, scale: 1.5}, {duration: 17, ease: "none", rotation: 80, scale: 1.5})
-             .fromTo('.zone_d2, .zone_s2_, .zone_d5, .zone_d6',{rotation: 80, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    jQuery('.zone_d2, .zone_s2_, .zone_d5, .zone_d6').addClass('rot_mo_2');
     
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
@@ -13506,6 +13400,7 @@ mmt_2 = function(){
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_d2, .zone_s2_, .zone_d5, .zone_d6').removeClass('rot_mo_2');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'solis_2_3');
             endNow();
@@ -13538,10 +13433,9 @@ mmt_2 = function(){
       paddingTop: '4px',
       zIndex: '1000'
     });
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_d2, .zone_s2_, .zone_d5, .zone_d6',{rotation: -10, scale: 1.5}, {duration: 40, ease: "none", rotation: -70, scale: 1.5})
-             .fromTo('.zone_d2, .zone_s2_, .zone_d5, .zone_d6',{rotation: -70, scale: 1.5}, {duration: 17, ease: "none", rotation: -70, scale: 1.5})
-             .fromTo('.zone_d2, .zone_s2_, .zone_d5, .zone_d6',{rotation: -70, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    
+    jQuery('.zone_d2, .zone_s2_, .zone_d5, .zone_d6').addClass('rot_mo_1');
+
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
           if (reloadTime == 0){                                                                       //1
@@ -13563,6 +13457,7 @@ mmt_2 = function(){
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_d2, .zone_s2_, .zone_d5, .zone_d6').removeClass('rot_mo_1');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'solis_2_2');
             endNow();
@@ -13835,10 +13730,7 @@ mmt_2 = function(){
       zIndex: '1000'
     });
 
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_d2, .zone_s2_, .zone_d5, .zone_d6',{rotation: -320, scale: 1.5}, {duration: 40, ease: "none", rotation: -380, scale: 1.5})
-             .fromTo('.zone_d2, .zone_s2_, .zone_d5, .zone_d6',{rotation: -380, scale: 1.5}, {duration: 17, ease: "none", rotation: -380, scale: 1.5})
-             .fromTo('.zone_d2, .zone_s2_, .zone_d5, .zone_d6',{rotation: -380, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    jQuery('.zone_s2, .zone_v5, .zone_s5, .zone_s6').addClass('rot_mo_4');
     
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
@@ -13861,6 +13753,7 @@ mmt_2 = function(){
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_s2, .zone_v5, .zone_s5, .zone_s6').removeClass('rot_mo_4');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v5_13');
             endNow();
@@ -13894,10 +13787,7 @@ mmt_2 = function(){
       zIndex: '1000'
     });
 
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_d2, .zone_s2_, .zone_d5, .zone_d6',{rotation: 270, scale: 1.5}, {duration: 40, ease: "none", rotation: 330, scale: 1.5})
-             .fromTo('.zone_d2, .zone_s2_, .zone_d5, .zone_d6',{rotation: 330, scale: 1.5}, {duration: 17, ease: "none", rotation: 330, scale: 1.5})
-             .fromTo('.zone_d2, .zone_s2_, .zone_d5, .zone_d6',{rotation: 330, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    jQuery('.zone_s2, .zone_v5, .zone_s5, .zone_s6').addClass('rot_mo_3');
     
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
@@ -13920,6 +13810,7 @@ mmt_2 = function(){
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_s2, .zone_v5, .zone_s5, .zone_s6').removeClass('rot_mo_3');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v5_12_4');
             endNow();
@@ -13952,10 +13843,7 @@ mmt_2 = function(){
       zIndex: '1000'
     });
 
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_d2, .zone_s2_, .zone_d5, .zone_d6',{rotation: 20, scale: 1.5}, {duration: 40, ease: "none", rotation: 80, scale: 1.5})
-             .fromTo('.zone_d2, .zone_s2_, .zone_d5, .zone_d6',{rotation: 80, scale: 1.5}, {duration: 17, ease: "none", rotation: 80, scale: 1.5})
-             .fromTo('.zone_d2, .zone_s2_, .zone_d5, .zone_d6',{rotation: 80, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    jQuery('.zone_s2, .zone_v5, .zone_s5, .zone_s6').addClass('rot_mo_2');
     
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
@@ -13978,6 +13866,7 @@ mmt_2 = function(){
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_s2, .zone_v5, .zone_s5, .zone_s6').removeClass('rot_mo_2');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v5_12_3');
             endNow();
@@ -14009,10 +13898,9 @@ mmt_2 = function(){
       paddingTop: '4px',
       zIndex: '1000'
     });
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_d2, .zone_s2_, .zone_d5, .zone_d6',{rotation: -10, scale: 1.5}, {duration: 40, ease: "none", rotation: -70, scale: 1.5})
-             .fromTo('.zone_d2, .zone_s2_, .zone_d5, .zone_d6',{rotation: -70, scale: 1.5}, {duration: 17, ease: "none", rotation: -70, scale: 1.5})
-             .fromTo('.zone_d2, .zone_s2_, .zone_d5, .zone_d6',{rotation: -70, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+
+    jQuery('.zone_s2, .zone_v5, .zone_s5, .zone_s6').addClass('rot_mo_1');
+
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
           if (reloadTime == 0){                                                                       //1
@@ -14034,6 +13922,7 @@ mmt_2 = function(){
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_s2, .zone_v5, .zone_s5, .zone_s6').removeClass('rot_mo_1');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v5_12_2');
             endNow();
@@ -14067,10 +13956,7 @@ mmt_2 = function(){
       zIndex: '1000'
     });
 
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_s2, .zone_v5, .zone_s5, .zone_s6',{rotation: -320, scale: 1.5}, {duration: 40, ease: "none", rotation: -380, scale: 1.5})
-             .fromTo('.zone_s2, .zone_v5, .zone_s5, .zone_s6',{rotation: -380, scale: 1.5}, {duration: 17, ease: "none", rotation: -380, scale: 1.5})
-             .fromTo('.zone_s2, .zone_v5, .zone_s5, .zone_s6',{rotation: -380, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    jQuery('.zone_s2, .zone_v5, .zone_s5, .zone_s6').addClass('rot_mo_4');
     
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
@@ -14093,6 +13979,7 @@ mmt_2 = function(){
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_s2, .zone_v5, .zone_s5, .zone_s6').removeClass('rot_mo_4');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v5_12_1');
             endNow();
@@ -14126,10 +14013,7 @@ mmt_2 = function(){
       zIndex: '1000'
     });
 
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_s2, .zone_v5, .zone_s5, .zone_s6',{rotation: 270, scale: 1.5}, {duration: 40, ease: "none", rotation: 330, scale: 1.5})
-             .fromTo('.zone_s2, .zone_v5, .zone_s5, .zone_s6',{rotation: 330, scale: 1.5}, {duration: 17, ease: "none", rotation: 330, scale: 1.5})
-             .fromTo('.zone_s2, .zone_v5, .zone_s5, .zone_s6',{rotation: 330, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    jQuery('.zone_s2, .zone_v5, .zone_s5, .zone_s6').addClass('rot_mo_3');
     
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
@@ -14152,6 +14036,7 @@ mmt_2 = function(){
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_s2, .zone_v5, .zone_s5, .zone_s6').removeClass('rot_mo_3');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v5_11_4');
             endNow();
@@ -14184,10 +14069,7 @@ mmt_2 = function(){
       zIndex: '1000'
     });
 
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_s2, .zone_v5, .zone_s5, .zone_s6',{rotation: 20, scale: 1.5}, {duration: 40, ease: "none", rotation: 80, scale: 1.5})
-             .fromTo('.zone_s2, .zone_v5, .zone_s5, .zone_s6',{rotation: 80, scale: 1.5}, {duration: 17, ease: "none", rotation: 80, scale: 1.5})
-             .fromTo('.zone_s2, .zone_v5, .zone_s5, .zone_s6',{rotation: 80, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    jQuery('.zone_s2, .zone_v5, .zone_s5, .zone_s6').addClass('rot_mo_2');
     
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
@@ -14210,6 +14092,7 @@ mmt_2 = function(){
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_s2, .zone_v5, .zone_s5, .zone_s6').removeClass('rot_mo_2');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v5_11_3');
             endNow();
@@ -14241,10 +14124,9 @@ mmt_2 = function(){
       paddingTop: '4px',
       zIndex: '1000'
     });
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_s2, .zone_v5, .zone_s5, .zone_s6',{rotation: -10, scale: 1.5}, {duration: 40, ease: "none", rotation: -70, scale: 1.5})
-             .fromTo('.zone_s2, .zone_v5, .zone_s5, .zone_s6',{rotation: -70, scale: 1.5}, {duration: 17, ease: "none", rotation: -70, scale: 1.5})
-             .fromTo('.zone_s2, .zone_v5, .zone_s5, .zone_s6',{rotation: -70, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    
+    jQuery('.zone_s2, .zone_v5, .zone_s5, .zone_s6').addClass('rot_mo_1');
+
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
           if (reloadTime == 0){                                                                       //1
@@ -14266,6 +14148,7 @@ mmt_2 = function(){
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_s2, .zone_v5, .zone_s5, .zone_s6').removeClass('rot_mo_1');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v5_11_2');
             endNow();
@@ -14299,10 +14182,7 @@ mmt_2 = function(){
       zIndex: '1000'
     });
 
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_v1, .zone_v5, .zone_v-',{rotation: -320, scale: 1.5}, {duration: 40, ease: "none", rotation: -380, scale: 1.5})
-             .fromTo('.zone_v1, .zone_v5, .zone_v-',{rotation: -380, scale: 1.5}, {duration: 17, ease: "none", rotation: -380, scale: 1.5})
-             .fromTo('.zone_v1, .zone_v5, .zone_v-',{rotation: -380, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    jQuery('.zone_v1, .zone_v5, .zone_v-').addClass('rot_mo_4');
     
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
@@ -14325,6 +14205,7 @@ mmt_2 = function(){
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_v1, .zone_v5, .zone_v-').removeClass('rot_mo_4');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v5_11_1');
             endNow();
@@ -14358,10 +14239,7 @@ mmt_2 = function(){
       zIndex: '1000'
     });
 
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_v1, .zone_v5, .zone_v-',{rotation: 270, scale: 1.5}, {duration: 40, ease: "none", rotation: 330, scale: 1.5})
-             .fromTo('.zone_v1, .zone_v5, .zone_v-',{rotation: 330, scale: 1.5}, {duration: 17, ease: "none", rotation: 330, scale: 1.5})
-             .fromTo('.zone_v1, .zone_v5, .zone_v-',{rotation: 330, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    jQuery('.zone_v1, .zone_v5, .zone_v-').addClass('rot_mo_3');
     
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
@@ -14384,6 +14262,7 @@ mmt_2 = function(){
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_v1, .zone_v5, .zone_v-').removeClass('rot_mo_3');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v5_10_4');
             endNow();
@@ -14416,10 +14295,7 @@ mmt_2 = function(){
       zIndex: '1000'
     });
 
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_v1, .zone_v5, .zone_v-',{rotation: 20, scale: 1.5}, {duration: 40, ease: "none", rotation: 80, scale: 1.5})
-             .fromTo('.zone_v1, .zone_v5, .zone_v-',{rotation: 80, scale: 1.5}, {duration: 17, ease: "none", rotation: 80, scale: 1.5})
-             .fromTo('.zone_v1, .zone_v5, .zone_v-',{rotation: 80, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    jQuery('.zone_v1, .zone_v5, .zone_v-').addClass('rot_mo_2');
     
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
@@ -14442,6 +14318,7 @@ mmt_2 = function(){
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_v1, .zone_v5, .zone_v-').removeClass('rot_mo_2');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v5_10_3');
             endNow();
@@ -14473,10 +14350,9 @@ mmt_2 = function(){
       paddingTop: '4px',
       zIndex: '1000'
     });
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_v1, .zone_v5, .zone_v-',{rotation: -10, scale: 1.5}, {duration: 40, ease: "none", rotation: -70, scale: 1.5})
-             .fromTo('.zone_v1, .zone_v5, .zone_v-',{rotation: -70, scale: 1.5}, {duration: 17, ease: "none", rotation: -70, scale: 1.5})
-             .fromTo('.zone_v1, .zone_v5, .zone_v-',{rotation: -70, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+
+    jQuery('.zone_v1, .zone_v5, .zone_v-').addClass('rot_mo_1');
+
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
           if (reloadTime == 0){                                                                       //1
@@ -14498,6 +14374,7 @@ mmt_2 = function(){
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_v1, .zone_v5, .zone_v-').removeClass('rot_mo_1');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v5_10_2');
             endNow();
@@ -15241,10 +15118,7 @@ mmt_2 = function(){
       zIndex: '1000'
     });
 
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_v5, .zone_s6, .zone_s5, .zone_s2, .zone_v1',{rotation: -320, scale: 1.5}, {duration: 40, ease: "none", rotation: -380, scale: 1.5})
-             .fromTo('.zone_v5, .zone_s6, .zone_s5, .zone_s2, .zone_v1',{rotation: -380, scale: 1.5}, {duration: 17, ease: "none", rotation: -380, scale: 1.5})
-             .fromTo('.zone_v5, .zone_s6, .zone_s5, .zone_s2, .zone_v1',{rotation: -380, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    jQuery('.zone_v5, .zone_s6, .zone_s5, .zone_s2, .zone_v1').addClass('rot_mo_4');
     
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
@@ -15267,6 +15141,7 @@ mmt_2 = function(){
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_v5, .zone_s6, .zone_s5, .zone_s2, .zone_v1').removeClass('rot_mo_4');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'universal_9');
             endNow();
@@ -15300,10 +15175,7 @@ mmt_2 = function(){
       zIndex: '1000'
     });
 
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_v5, .zone_s6, .zone_s5, .zone_s2, .zone_v1',{rotation: 270, scale: 1.5}, {duration: 40, ease: "none", rotation: 330, scale: 1.5})
-             .fromTo('.zone_v5, .zone_s6, .zone_s5, .zone_s2, .zone_v1',{rotation: 330, scale: 1.5}, {duration: 17, ease: "none", rotation: 330, scale: 1.5})
-             .fromTo('.zone_v5, .zone_s6, .zone_s5, .zone_s2, .zone_v1',{rotation: 330, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    jQuery('.zone_v5, .zone_s6, .zone_s5, .zone_s2, .zone_v1').addClass('rot_mo_3');
     
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
@@ -15326,6 +15198,7 @@ mmt_2 = function(){
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_v5, .zone_s6, .zone_s5, .zone_s2, .zone_v1').removeClass('rot_mo_3');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'universal_8_4');
             endNow();
@@ -15358,10 +15231,7 @@ mmt_2 = function(){
       zIndex: '1000'
     });
 
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_v5, .zone_s6, .zone_s5, .zone_s2, .zone_v1',{rotation: 20, scale: 1.5}, {duration: 40, ease: "none", rotation: 80, scale: 1.5})
-             .fromTo('.zone_v5, .zone_s6, .zone_s5, .zone_s2, .zone_v1',{rotation: 80, scale: 1.5}, {duration: 17, ease: "none", rotation: 80, scale: 1.5})
-             .fromTo('.zone_v5, .zone_s6, .zone_s5, .zone_s2, .zone_v1',{rotation: 80, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    jQuery('.zone_v5, .zone_s6, .zone_s5, .zone_s2, .zone_v1').addClass('rot_mo_2');
     
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
@@ -15384,6 +15254,7 @@ mmt_2 = function(){
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_v5, .zone_s6, .zone_s5, .zone_s2, .zone_v1').removeClass('rot_mo_2');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'universal_8_3');
             endNow();
@@ -15415,10 +15286,9 @@ mmt_2 = function(){
       paddingTop: '4px',
       zIndex: '1000'
     });
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_v5, .zone_s6, .zone_s5, .zone_s2, .zone_v1',{rotation: -10, scale: 1.5}, {duration: 40, ease: "none", rotation: -70, scale: 1.5})
-             .fromTo('.zone_v5, .zone_s6, .zone_s5, .zone_s2, .zone_v1',{rotation: -70, scale: 1.5}, {duration: 17, ease: "none", rotation: -70, scale: 1.5})
-             .fromTo('.zone_v5, .zone_s6, .zone_s5, .zone_s2, .zone_v1',{rotation: -70, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    
+    jQuery('.zone_v5, .zone_s6, .zone_s5, .zone_s2, .zone_v1').addClass('rot_mo_1');
+
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
           if (reloadTime == 0){                                                                       //1
@@ -15440,6 +15310,7 @@ mmt_2 = function(){
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_v5, .zone_s6, .zone_s5, .zone_s2, .zone_v1').removeClass('rot_mo_1');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'universal_8_2');
             endNow();
@@ -15551,10 +15422,7 @@ mmt_2 = function(){
       zIndex: '1000'
     });
 
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_v5, .zone_s2_, .zone_d2, .zone_d5, .zone_d6',{rotation: -320, scale: 1.5}, {duration: 40, ease: "none", rotation: -380, scale: 1.5})
-             .fromTo('.zone_v5, .zone_s2_, .zone_d2, .zone_d5, .zone_d6',{rotation: -380, scale: 1.5}, {duration: 17, ease: "none", rotation: -380, scale: 1.5})
-             .fromTo('.zone_v5, .zone_s2_, .zone_d2, .zone_d5, .zone_d6',{rotation: -380, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    jQuery('.zone_v5, .zone_s2_, .zone_d2, .zone_d5, .zone_d6').addClass('rot_mo_4');
     
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
@@ -15577,6 +15445,7 @@ mmt_2 = function(){
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_v5, .zone_s2_, .zone_d2, .zone_d5, .zone_d6').removeClass('rot_mo_4');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'universal_7');
             endNow();
@@ -15610,10 +15479,7 @@ mmt_2 = function(){
       zIndex: '1000'
     });
 
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_v5, .zone_s2_, .zone_d2, .zone_d5, .zone_d6',{rotation: 270, scale: 1.5}, {duration: 40, ease: "none", rotation: 330, scale: 1.5})
-             .fromTo('.zone_v5, .zone_s2_, .zone_d2, .zone_d5, .zone_d6',{rotation: 330, scale: 1.5}, {duration: 17, ease: "none", rotation: 330, scale: 1.5})
-             .fromTo('.zone_v5, .zone_s2_, .zone_d2, .zone_d5, .zone_d6',{rotation: 330, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    jQuery('.zone_v5, .zone_s2_, .zone_d2, .zone_d5, .zone_d6').addClass('rot_mo_3');
     
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
@@ -15636,6 +15502,7 @@ mmt_2 = function(){
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_v5, .zone_s2_, .zone_d2, .zone_d5, .zone_d6').removeClass('rot_mo_3');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'universal_6_4');
             endNow();
@@ -15668,10 +15535,7 @@ mmt_2 = function(){
       zIndex: '1000'
     });
 
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_v5, .zone_s2_, .zone_d2, .zone_d5, .zone_d6',{rotation: 20, scale: 1.5}, {duration: 40, ease: "none", rotation: 80, scale: 1.5})
-             .fromTo('.zone_v5, .zone_s2_, .zone_d2, .zone_d5, .zone_d6',{rotation: 80, scale: 1.5}, {duration: 17, ease: "none", rotation: 80, scale: 1.5})
-             .fromTo('.zone_v5, .zone_s2_, .zone_d2, .zone_d5, .zone_d6',{rotation: 80, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    jQuery('.zone_v5, .zone_s2_, .zone_d2, .zone_d5, .zone_d6').addClass('rot_mo_2');
     
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
@@ -15694,6 +15558,7 @@ mmt_2 = function(){
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_v5, .zone_s2_, .zone_d2, .zone_d5, .zone_d6').removeClass('rot_mo_2');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'universal_6_3');
             endNow();
@@ -15725,10 +15590,9 @@ mmt_2 = function(){
       paddingTop: '4px',
       zIndex: '1000'
     });
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_v5, .zone_s2_, .zone_d2, .zone_d5, .zone_d6',{rotation: -10, scale: 1.5}, {duration: 40, ease: "none", rotation: -70, scale: 1.5})
-             .fromTo('.zone_v5, .zone_s2_, .zone_d2, .zone_d5, .zone_d6',{rotation: -70, scale: 1.5}, {duration: 17, ease: "none", rotation: -70, scale: 1.5})
-             .fromTo('.zone_v5, .zone_s2_, .zone_d2, .zone_d5, .zone_d6',{rotation: -70, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+
+    jQuery('.zone_v5, .zone_s2_, .zone_d2, .zone_d5, .zone_d6').addClass('rot_mo_1');
+
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
           if (reloadTime == 0){                                                                       //1
@@ -15750,6 +15614,7 @@ mmt_2 = function(){
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_v5, .zone_s2_, .zone_d2, .zone_d5, .zone_d6').removeClass('rot_mo_1');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'universal_6_2');
             endNow();
@@ -15863,10 +15728,7 @@ mmt_2 = function(){
       zIndex: '1000'
     });
 
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_s3, .zone_v4',{rotation: -320, scale: 1.5}, {duration: 40, ease: "none", rotation: -380, scale: 1.5})
-             .fromTo('.zone_s3, .zone_v4',{rotation: -380, scale: 1.5}, {duration: 17, ease: "none", rotation: -380, scale: 1.5})
-             .fromTo('.zone_s3, .zone_v4',{rotation: -380, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    jQuery('.zone_s3, .zone_v4').addClass('rot_mo_4');
     
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
@@ -15889,6 +15751,7 @@ mmt_2 = function(){
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_s3, .zone_v4').removeClass('rot_mo_4');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'universal_5');
             endNow();
@@ -15922,10 +15785,7 @@ mmt_2 = function(){
       zIndex: '1000'
     });
 
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_s3, .zone_v4',{rotation: 270, scale: 1.5}, {duration: 40, ease: "none", rotation: 330, scale: 1.5})
-             .fromTo('.zone_s3, .zone_v4',{rotation: 330, scale: 1.5}, {duration: 17, ease: "none", rotation: 330, scale: 1.5})
-             .fromTo('.zone_s3, .zone_v4',{rotation: 330, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    jQuery('.zone_s3, .zone_v4').addClass('rot_mo_3');
     
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
@@ -15948,6 +15808,7 @@ mmt_2 = function(){
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_s3, .zone_v4').removeClass('rot_mo_3');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'universal_4_4');
             endNow();
@@ -15980,10 +15841,7 @@ mmt_2 = function(){
       zIndex: '1000'
     });
 
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_s3, .zone_v4',{rotation: 20, scale: 1.5}, {duration: 40, ease: "none", rotation: 80, scale: 1.5})
-             .fromTo('.zone_s3, .zone_v4',{rotation: 80, scale: 1.5}, {duration: 17, ease: "none", rotation: 80, scale: 1.5})
-             .fromTo('.zone_s3, .zone_v4',{rotation: 80, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    jQuery('.zone_s3, .zone_v4').addClass('rot_mo_2');
     
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
@@ -16006,6 +15864,7 @@ mmt_2 = function(){
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_s3, .zone_v4').removeClass('rot_mo_2');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'universal_4_3');
             endNow();
@@ -16037,10 +15896,8 @@ mmt_2 = function(){
       paddingTop: '4px',
       zIndex: '1000'
     });
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_s3, .zone_v4',{rotation: -10, scale: 1.5}, {duration: 40, ease: "none", rotation: -70, scale: 1.5})
-             .fromTo('.zone_s3, .zone_v4',{rotation: -70, scale: 1.5}, {duration: 17, ease: "none", rotation: -70, scale: 1.5})
-             .fromTo('.zone_s3, .zone_v4',{rotation: -70, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    
+    jQuery('.zone_s3, .zone_v4').addClass('rot_mo_1');
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
           if (reloadTime == 0){                                                                       //1
@@ -16062,6 +15919,7 @@ mmt_2 = function(){
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_s3, .zone_v4').removeClass('rot_mo_1');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'universal_4_2');
             endNow();
@@ -16168,10 +16026,7 @@ mmt_2 = function(){
       zIndex: '1000'
     });
 
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_v2, .zone_d2_, .zone_d3, .zone_d4',{rotation: -320, scale: 1.5}, {duration: 40, ease: "none", rotation: -380, scale: 1.5})
-             .fromTo('.zone_v2, .zone_d2_, .zone_d3, .zone_d4',{rotation: -380, scale: 1.5}, {duration: 17, ease: "none", rotation: -380, scale: 1.5})
-             .fromTo('.zone_v2, .zone_d2_, .zone_d3, .zone_d4',{rotation: -380, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    jQuery('.zone_v2, .zone_d2_, .zone_d3, .zone_d4').addClass('rot_mo_4');
     
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
@@ -16194,6 +16049,7 @@ mmt_2 = function(){
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_v2, .zone_d2_, .zone_d3, .zone_d4').removeClass('rot_mo_4');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'universal_3');
             endNow();
@@ -16227,10 +16083,7 @@ mmt_2 = function(){
       zIndex: '1000'
     });
 
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_v2, .zone_d2_, .zone_d3, .zone_d4',{rotation: 270, scale: 1.5}, {duration: 40, ease: "none", rotation: 330, scale: 1.5})
-             .fromTo('.zone_v2, .zone_d2_, .zone_d3, .zone_d4',{rotation: 330, scale: 1.5}, {duration: 17, ease: "none", rotation: 330, scale: 1.5})
-             .fromTo('.zone_v2, .zone_d2_, .zone_d3, .zone_d4',{rotation: 330, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    jQuery('.zone_v2, .zone_d2_, .zone_d3, .zone_d4').addClass('rot_mo_3');
     
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
@@ -16253,6 +16106,7 @@ mmt_2 = function(){
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_v2, .zone_d2_, .zone_d3, .zone_d4').removeClass('rot_mo_3');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'universal_2_4');
             endNow();
@@ -16285,11 +16139,7 @@ mmt_2 = function(){
       zIndex: '1000'
     });
 
-    var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_v2, .zone_d2_, .zone_d3',{rotation: 20, scale: 1.5}, {duration: 40, ease: "none", rotation: 80, scale: 1.5})
-             .fromTo('.zone_v2, .zone_d2_, .zone_d3',{rotation: 80, scale: 1.5}, {duration: 17, ease: "none", rotation: 80, scale: 1.5})
-             .fromTo('.zone_v2, .zone_d2_, .zone_d3',{rotation: 80, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
-    jQuery('.zone_d4').addClass('rot_mo_2');
+    jQuery('.zone_v2, .zone_d2_, .zone_d3, .zone_d4').addClass('rot_mo_2');
     
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
@@ -16312,7 +16162,7 @@ mmt_2 = function(){
             paddingTop: '2px',
             zIndex: '2'
           });
-          jQuery('.zone_d4').removeClass('rot_mo_2');
+          jQuery('.zone_v2, .zone_d2_, .zone_d3, .zone_d4').removeClass('rot_mo_2');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'universal_2_3');
             endNow();
