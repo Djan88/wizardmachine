@@ -16343,9 +16343,10 @@ mmt_2 = function(){
       zIndex: '1000'
     });
     var zone_gsap = gsap.timeline();
-    zone_gsap.fromTo('.zone_v2, .zone_d2_, .zone_d3, .zone_d4',{rotation: -10, scale: 1.5}, {duration: 40, ease: "none", rotation: -70, scale: 1.5})
-             .fromTo('.zone_v2, .zone_d2_, .zone_d3, .zone_d4',{rotation: -70, scale: 1.5}, {duration: 17, ease: "none", rotation: -70, scale: 1.5})
-             .fromTo('.zone_v2, .zone_d2_, .zone_d3, .zone_d4',{rotation: -70, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    zone_gsap.fromTo('.zone_v2, .zone_d2_, .zone_d3',{rotation: -10, scale: 1.5}, {duration: 40, ease: "none", rotation: -70, scale: 1.5})
+             .fromTo('.zone_v2, .zone_d2_, .zone_d3',{rotation: -70, scale: 1.5}, {duration: 17, ease: "none", rotation: -70, scale: 1.5})
+             .fromTo('.zone_v2, .zone_d2_, .zone_d3',{rotation: -70, scale: 1.5}, {duration: 1, ease: "none", rotation: 0, scale: 1})
+    jQuery('.zone_d4').addClass('rot_mo_1');
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
           if (reloadTime == 0){                                                                       //1
@@ -16367,6 +16368,7 @@ mmt_2 = function(){
             paddingTop: '2px',
             zIndex: '2'
           });
+          jQuery('.zone_d4').removeClass('rot_mo_1');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'universal_2_2');
             endNow();
