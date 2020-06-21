@@ -9488,7 +9488,7 @@ jQuery(function() {
       zIndex: '1000'
     });
 
-    jQuery('.zone_v0, .zone_v-').addClass('rot_mo_2');
+    jQuery('.zone_v1, .zone_v4').addClass('rot_mo_2');
 
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
@@ -9511,7 +9511,7 @@ jQuery(function() {
             paddingTop: '2px',
             zIndex: '2'
           });
-          jQuery('.zone_v0, .zone_v-').removeClass('rot_mo_2');
+          jQuery('.zone_v1, .zone_v4').removeClass('rot_mo_2');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v1_5_3');
             endNow();
@@ -16337,11 +16337,11 @@ mmt_2 = function(){
 
   jQuery('.wizard_play, .wizard_starter_alt').on('click', function(event) {
     checkPoints();
-    // if(pointsStatus == false){
-    //   swal("Не все зоны перенесены!", "Перед началом процедуры необходимо перенести на фото калибровочное кольцо и все зоны.", "info");
-    //   alert_altSound.play();
-    //   pointsStatus = true;
-    // } else {
+    if(pointsStatus == false){
+      swal("Не все зоны перенесены!", "Перед началом процедуры необходимо перенести на фото калибровочное кольцо и все зоны.", "info");
+      alert_altSound.play();
+      pointsStatus = true;
+    } else {
       if (pausedStatus == true) {
         // jQuery('.wizard_returned').attr('src', localStorage.getItem('pausedPhoto'));
         // console.log(localStorage.getItem('pausedPhoto'));
@@ -16388,7 +16388,7 @@ mmt_2 = function(){
       localStorage.removeItem('paused');
       localStorage.removeItem('pausedPhoto');
       jQuery('.wizard_stop').removeClass('wizard_stop_inProgress');
-    // }
+    }
   });
 
 
