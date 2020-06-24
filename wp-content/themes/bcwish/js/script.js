@@ -43,23 +43,12 @@ jQuery(function() {
   jQuery('.wizard_returned').find('img:first-child').addClass('returned hidden');
   croppedImg = jQuery('.wizard_returned').children()[0];
 
-  jQuery('.wizard_returned_estete').find('img:first-child').addClass('returned hidden');
-  croppedImg_Estate = jQuery('.wizard_returned_estete').children()[0];
-
 // Если фото уже загружено
   if (croppedImg && croppedImg.hasAttribute('src')) {
     jQuery('.machine_screen, #intro').addClass('hidden');
     jQuery('.wizard_way').removeClass('hidden');
     jQuery('.wizard_returned').attr('src', croppedImg.src);
     jQuery('.wizard_heading').text('Провести диагностику или перейти к выбору протокола?');
-    jQuery('.wizard_to_start').fadeIn(500).removeClass('hidden');
-    jQuery('.wm_start').removeClass('unopacity');
-    jQuery('.wm_start').removeAttr('style');
-  } else if (croppedImg_Estate && croppedImg_Estate.hasAttribute('src')) {
-    jQuery('.machine_estate_screen, #intro').addClass('hidden');
-    jQuery('.wizard_way').removeClass('hidden');
-    jQuery('.wizard_returned').attr('src', croppedImg_Estate.src);
-    jQuery('.wizard_heading').text('Выбрать загруженное');
     jQuery('.wizard_to_start').fadeIn(500).removeClass('hidden');
     jQuery('.wm_start').removeClass('unopacity');
     jQuery('.wm_start').removeAttr('style');
