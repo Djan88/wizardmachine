@@ -1841,6 +1841,7 @@ h3.wizard_heading
 .estate_corners, .estate_doors, .estate_wcs
 {
   height: 70px;
+  position: relative;
 }
 .wizard_returned_estate 
 {
@@ -1852,6 +1853,7 @@ h3.wizard_heading
 {
   padding-top: 1px;
   left: 42%;
+  top: 40%;
 }
 .returned_estate
 {
