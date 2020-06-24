@@ -298,6 +298,14 @@
                       }
                   ?>
                 </div>
+                <div class="wizard_returned_estate">
+                  <?php
+                      if($_POST['mci_magic_estate']){
+                          $sImage = uploadImageFile();
+                          echo '<img src="'.$sImage.'" />';
+                      }
+                  ?>
+                </div>
                 <div class="machine_screen hidden clearfix">
                   <div class="bbody">
                     <!-- upload form -->
