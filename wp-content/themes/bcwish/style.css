@@ -1823,6 +1823,21 @@ h3.wizard_heading
   top: -110px;
   left: 14px;
 }
+.zone_corner 
+{
+    color: #1bb1dc;
+    border: 2px solid #1bb1dc;
+}
+.zone_door 
+{
+    color: #b5a919;
+    border: 2px solid #b5a919;
+}
+.zone_wc 
+{
+    color: #19b55f;
+    border: 2px solid #19b55f;
+}
 .wizard_main_screen 
 {
   position: relative;
