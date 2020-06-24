@@ -205,7 +205,7 @@ jQuery(function() {
   });
 
   jQuery('.zone_estate').on('dblclick', function(event) {
-    jQuery(this).detach();
+    jQuery(this).addClass('zone_default').removeAttr('style');
   });
 
 
