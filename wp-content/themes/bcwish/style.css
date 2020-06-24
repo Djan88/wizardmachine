@@ -1845,11 +1845,13 @@ h3.wizard_heading
 .wizard_returned_estate 
 {
   border: 3px solid #eee;
+  width: 70%;
+  height: auto;
 }
 .zone_estate
 {
   padding-top: 1px;
-  height: 70px;
+  left: 42%;
 }
 .returned_estate
 {
@@ -1867,6 +1869,7 @@ h3.wizard_heading
   text-align: center;
   height: 100vh;
   background: #eee;
+  padding-top: 120px;
 }
 .wizard_main_screen 
 {
