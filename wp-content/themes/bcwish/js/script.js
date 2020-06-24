@@ -58,7 +58,7 @@ jQuery(function() {
       jQuery('.wm_start').removeAttr('style');
     } else {
       jQuery('.machine_screen, #intro').addClass('hidden');
-      jQuery('.wizard_way').removeClass('hidden');
+      jQuery('.wizard_estate').removeClass('hidden');
       jQuery('.wizard_returned_estate').attr('src', croppedImg.src);
       jQuery('.wizard_heading').text('Перенесите зоны углов, дверей и сан узла на соответствующие позиции на плане.');
       jQuery('.wizard_to_start').fadeIn(500).removeClass('hidden');
