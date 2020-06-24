@@ -44,7 +44,7 @@ jQuery(function() {
   croppedImg = jQuery('.wizard_returned').children()[0];
 
   mode = localStorage.getItem('mode');
-  console.log('mode');
+  console.log(mode);
 
 // Если фото уже загружено
   if (croppedImg && croppedImg.hasAttribute('src')) {
