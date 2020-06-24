@@ -1624,7 +1624,7 @@ html.all
   left: -165px;
   top: 650px;
 }
-.machine_screen 
+.machine_screen, .machine_screen_estate 
 {
   text-align: center;
 }
