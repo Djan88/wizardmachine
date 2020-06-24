@@ -43,6 +43,9 @@ jQuery(function() {
   jQuery('.wizard_returned').find('img:first-child').addClass('returned hidden');
   croppedImg = jQuery('.wizard_returned').children()[0];
 
+  mode = localStorage.getItem('mode');
+  console.log('mode');
+
 // Если фото уже загружено
   if (croppedImg && croppedImg.hasAttribute('src')) {
     if (mode == 'foto') {
