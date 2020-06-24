@@ -1838,6 +1838,14 @@ h3.wizard_heading
     color: #19b55f;
     border: 2px solid #19b55f;
 }
+.estate_corners, .estate_doors, .estate_wcs
+{
+  height: 70px;
+}
+.wizard_returned_estate 
+{
+  border: 3px solid #eee;
+}
 .zone_estate
 {
   padding-top: 1px;
