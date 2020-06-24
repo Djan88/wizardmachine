@@ -297,14 +297,6 @@
                       }
                   ?>
                 </div>
-                <div class="wizard_returned_estate">
-                  <?php
-                      if($_POST['mci_magic_estate']){
-                          $sImage = uploadImageFile();
-                          echo '<img src="'.$sImage.'" />';
-                      }
-                  ?>
-                </div>
                 <div class="machine_screen hidden clearfix">
                   <div class="bbody">
                     <!-- upload form -->
@@ -351,7 +343,7 @@
                     <div class="error"></div>
                     <div class="step2">
                     <h3>Выделите область для обрезки</h3>
-                    <img id="preview" alt="" />
+                    <img id="preview_estate" alt="" />
                     <!--<canvas id="preview-canvas" style="border: 3px red solid;/*position: absolute; visibility: hidden; /*left: -20000px*/"></canvas>-->
                     <div class="info hidden"><label>Размер файла</label> <input id="filesize" name="mci_filesize" type="text" />
                     <label>Тип</label> <input id="filetype" name="mci_filetype" type="text" />
