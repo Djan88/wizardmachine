@@ -80,13 +80,14 @@ jQuery(function() {
     jQuery('.wm_start').removeClass('unopacity');
     jQuery('.machine_screen').removeClass('hidden');
     jQuery('.machine_screen_estate').addClass('hidden');
+    jQuery('.wizard_heading').text('Загрузите фото в полный рост по аналогии с примером ниже и отредактируйте его');
     nextSound.play();
   });
   jQuery('.wm_init_estate').on('click', function(event) {
     jQuery('.wm_start').removeClass('unopacity');
     jQuery('.machine_screen_estate').removeClass('hidden');
     jQuery('.machine_screen').addClass('hidden');
-    jQuery('.wizard_heading').text('Загрузите фото плана и выделите его на фото.')
+    jQuery('.wizard_heading').text('Загрузите фото плана и выделите его на фото');
     nextSound.play();
   });
 
