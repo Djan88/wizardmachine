@@ -334,7 +334,7 @@
                   <div class="col-md-12 wizard_estate hidden">
                     <div class="row">
                       <div class="col-sm-2 estate_items">
-                        <div class="estate_corners">
+                        <div class="estate_corners wow bounceInUp" data-wow-duration="1.4s" data-wow-delay="0.4s">
                           <div class="estate_heading">Углы</div>
                           <div class="zone_estate zone_corner zone_default">У</div>
                           <div class="zone_estate zone_corner zone_default">У</div>
@@ -387,8 +387,30 @@
                           <div class="zone_estate zone_corner zone_default">У</div>
                           <div class="zone_estate zone_corner zone_default">У</div>
                           <div class="zone_estate zone_corner zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_default">У</div>
                         </div>
-                        <div class="estate_doors">
+                        <div class="estate_doors wow bounceInUp" data-wow-duration="1.4s" data-wow-delay="0.6s">
                           <div class="estate_heading">Двери</div>
                           <div class="zone_estate zone_door zone_default">Д</div>
                           <div class="zone_estate zone_door zone_default">Д</div>
@@ -411,7 +433,7 @@
                           <div class="zone_estate zone_door zone_default">Д</div>
                           <div class="zone_estate zone_door zone_default">Д</div>
                         </div>
-                        <div class="estate_wcs">
+                        <div class="estate_wcs wow bounceInUp" data-wow-duration="1.4s" data-wow-delay="0.8s">
                           <div class="estate_heading">С/У</div>
                           <div class="zone_estate zone_wc zone_default">С</div>
                           <div class="zone_estate zone_wc zone_default">С</div>
@@ -421,7 +443,7 @@
                           <div class="zone_estate zone_wc zone_default">С</div>
                         </div>
                       </div>
-                      <div class="col-sm-10 returned_estate">
+                      <div class="col-sm-10 returned_estate wow bounceInUp" data-wow-duration="1.4s" data-wow-delay="1.0s">
                         <img src="" class="wizard_returned_estate draggable" alt="wizard_returned">
                       </div>
                     </div>
