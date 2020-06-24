@@ -41,7 +41,6 @@
     ============================-->
     <header id="header">
       <button type="button" class="wizard_crop hidden header_btn"><i class="fa fa-crop"></i></button>
-      <button type="button" class="wizard_crop_estate hidden header_btn"><i class="fa fa-crop"></i></button>
       <a href="/" class="wizard_to_start hidden header_btn"><i class="fa fa-arrow-left"></i></a>
       <button type="button" class="wizard_to_what_way hidden header_btn">
         <i class="fa fa-arrow-left"></i>
@@ -80,9 +79,6 @@
         <div class="logo float-left">
           <!-- Uncomment below if you prefer to use an image logo -->
           <h1 class="text-light"><a href="/" class="scrollto"><span><span class="acent">W</span>IZARD<span class="acent">M</span>ACHINE</span></a></h1>
-          <?php
-              print_r($_POST);
-          ?>
           <!-- <a href="#header" class="scrollto"><img src="img/logo.png" alt="" class="img-fluid"></a> -->
         </div>
 
@@ -301,7 +297,7 @@
                       }
                   ?>
                 </div>
-                <div class="machine_screen hidden clearfix">
+                <div class="machine_screen clearfix">
                   <div class="bbody">
                     <!-- upload form -->
                     <form id="upload_form" action="/wizard/" enctype="multipart/form-data" method="post"><!-- hidden crop params -->
@@ -330,39 +326,18 @@
                     </form>
                   </div>
                 </div>
-                <div class="machine_screen_estate hidden clearfix">
-                  <div class="bbody">
-                    <!-- upload form -->
-                    <form id="upload_form_estate" action="/estate/" enctype="multipart/form-data" method="post"><!-- hidden crop params -->
-                    <input id="x1" name="mci_x1" type="hidden" />
-                    <input id="y1" name="mci_y1" type="hidden" />
-                    <input id="x2" name="mci_x2" type="hidden" />
-                    <input id="y2" name="mci_y2" type="hidden" />
-                    <!-- <h2>Выберите изображение</h2> -->
-                    <div>
-                      <input id="image_file" class="hidden" name="mci_image_file" type="file" />
-                      <label class="btn btn-success photo_upload wizard_blue"  data-wow-duration="1.4s" data-wow-delay="0.4s" for="image_file">Выберите файл</label>
-                      <img src="<?php bloginfo('template_url'); ?>/img/template_.jpg" alt="template" class="template_load">
-                    </div>
-                    <div class="error"></div>
-                    <div class="step2">
-                    <h3>Выделите область для обрезки</h3>
-                    <img id="preview_estate" alt="" />
-                    <!--<canvas id="preview-canvas" style="border: 3px red solid;/*position: absolute; visibility: hidden; /*left: -20000px*/"></canvas>-->
-                    <div class="info hidden"><label>Размер файла</label> <input id="filesize" name="mci_filesize" type="text" />
-                    <label>Тип</label> <input id="filetype" name="mci_filetype" type="text" />
-                    <label>Разрешение изображения</label> <input id="filedim" name="mci_filedim" type="text" />
-                    <label>Ширина</label> <input id="w" name="mci_w" type="text" />
-                    <label>Высота</label> <input id="h" name="mci_h" type="text" /></div>
-                    <input type="submit" class="btn btn-success crop_photo_estate" value="Редактировать фото" name="mci_magic" />
-                    </div>
-                    </form>
-                  </div>
-                </div>
                 <div class="row wizard_operation">
                   <div class="col-md-12 wizard_way hidden">
                     <button class="btn btn-success btn_diag wow bounceInUp back-to-top_2" data-wow-duration="1.4s" data-wow-delay="0.4s">Диагностика</button>
                     <button class="btn btn-success btn_prot_choice wow bounceInUp back-to-top_2" data-wow-duration="1.4s" data-wow-delay="0.8s">Выбор протокола</button>
+                  </div>
+                  <div class="col-md-12 wizard_estate hidden">
+                    <div class="col-sm-3">
+                      
+                    </div>
+                    <div class="col-sm-9">
+                      <img src="" class="wizard_returned_estate draggable" alt="wizard_returned">
+                    </div>
                   </div>
                   <div id="faq" class="col-md-12 wizard_prots hidden">
                     <ul id="faq-list" class="wow fadeInUp">

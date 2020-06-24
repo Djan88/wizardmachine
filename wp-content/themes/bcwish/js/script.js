@@ -1,7 +1,7 @@
 jQuery(function() {
   var croppedImg,
-      croppedImg_Estate,
       cur_protocol,
+      mode = 'foto',
       returned_img,
       nextSound = new Howl({
           urls: ['/sounds/Cancel_2.mp3'],
@@ -45,22 +45,28 @@ jQuery(function() {
 
 // Если фото уже загружено
   if (croppedImg && croppedImg.hasAttribute('src')) {
-    jQuery('.machine_screen, #intro').addClass('hidden');
-    jQuery('.wizard_way').removeClass('hidden');
-    jQuery('.wizard_returned').attr('src', croppedImg.src);
-    jQuery('.wizard_heading').text('Провести диагностику или перейти к выбору протокола?');
-    jQuery('.wizard_to_start').fadeIn(500).removeClass('hidden');
-    jQuery('.wm_start').removeClass('unopacity');
-    jQuery('.wm_start').removeAttr('style');
+    if (mode == 'foto') {
+      jQuery('.machine_screen, #intro').addClass('hidden');
+      jQuery('.wizard_way').removeClass('hidden');
+      jQuery('.wizard_returned').attr('src', croppedImg.src);
+      jQuery('.wizard_heading').text('Провести диагностику или перейти к выбору протокола?');
+      jQuery('.wizard_to_start').fadeIn(500).removeClass('hidden');
+      jQuery('.wm_start').removeClass('unopacity');
+      jQuery('.wm_start').removeAttr('style');
+    } else {
+      jQuery('.machine_screen, #intro').addClass('hidden');
+      jQuery('.wizard_way').removeClass('hidden');
+      jQuery('.wizard_returned_estate').attr('src', croppedImg.src);
+      jQuery('.wizard_heading').text('Перенесите зоны углов, дверей и сан узла на соответствующие позиции на плане.');
+      jQuery('.wizard_to_start').fadeIn(500).removeClass('hidden');
+      jQuery('.wm_start').removeClass('unopacity');
+      jQuery('.wm_start').removeAttr('style');
+    }
   }
 
 // Вторая кнопка обрезки
   jQuery('.wizard_crop').on('click', function(event) {
     jQuery('.crop_photo').click();
-  });
-
-  jQuery('.wizard_crop_estate').on('click', function(event) {
-    jQuery('.crop_photo_estate').click();
   });
 
   jQuery('.photo_upload').on('click', function(event) {
@@ -71,22 +77,18 @@ jQuery(function() {
   // НАЧАТЬ
   jQuery('.wm_init').on('click', function(event) {
     jQuery('.wm_start').removeClass('unopacity');
-    jQuery('.machine_screen').removeClass('hidden');
-    jQuery('.machine_screen_estate').addClass('hidden');
-    jQuery('.wizard_crop').addClass('actual_second_crop_btn');
-    jQuery('.wizard_crop_estate').removeClass('actual_second_crop_btn');
-    jQuery('.wizard_heading').text('Загрузите фото в полный рост по аналогии с примером ниже и отредактируйте его');
+    localStorage.setItem('mode', 'foto');
+    mode = 'foto';
     nextSound.play();
   });
+
   jQuery('.wm_init_estate').on('click', function(event) {
     jQuery('.wm_start').removeClass('unopacity');
-    jQuery('.machine_screen_estate').removeClass('hidden');
-    jQuery('.machine_screen').addClass('hidden');
-    jQuery('.wizard_crop_estate').addClass('actual_second_crop_btn');
-    jQuery('.wizard_crop').removeClass('actual_second_crop_btn');
-    jQuery('.wizard_heading').text('Загрузите фото плана и выделите его на фото');
+    localStorage.setItem('mode', 'estate');
+    mode = 'estate';
     nextSound.play();
   });
+
 
 
   jQuery('.mobile-nav-toggle, .mobile-nav a, .photo_upload, .crop_photo, .btn_diag, .btn_prot_choice, .wizard_clean_graf, .btn_prot_choice_fromDiag, #faq-list li a, .wizard_protocol, .wizard_play, .wizard_starter_alt, .wizard_stop, body .cancel, body .confirm, .wizard_continue, .mobile-nav select, .wpcf7-submit, .btn-get-started').on('click', function(event) {
@@ -251,7 +253,6 @@ jQuery(function() {
 
       // preview element
       var oImage = document.getElementById('preview');
-      var oImageEstate = document.getElementById('preview_estate');
 
       // prepare HTML5 FileReader
       var oReader = new FileReader();
@@ -303,8 +304,8 @@ jQuery(function() {
                   // display step 2
                   jQuery('.step2').fadeIn(500);
                   jQuery('.wm_start').removeAttr('style');
-                  jQuery('.actual_second_crop_btn').fadeIn(500);
-                  jQuery('.actual_second_crop_btn').removeClass('hidden');
+                  jQuery('.wizard_crop').fadeIn(500);
+                  jQuery('.wizard_crop').removeClass('hidden');
                   // display some basic image info
                   var sResultFileSize = bytesToSize(oFile.size);
                   jQuery('#filesize').val(sResultFileSize);
@@ -319,110 +320,54 @@ jQuery(function() {
                       jQuery('#preview').height(oImage.naturalHeight);
                   }
 
-                  setTimeout(function(){
-                      // initialize Jcrop
-                      console.log(jQuery('.step2').width());
-                      jQuery('#preview').Jcrop({
-                          minSize: [32, 32],// keep aspect ratio 1:1
-                          bgFade: true, // use fade effect
-                          bgOpacity: .3, // fade opacity
-                          aspectRatio: 1/1.5,
-                          boxWidth: jQuery('.step2').width(),
-                          onChange: updateInfo,
-                          onSelect: updateInfo,
-                          onRelease: clearInfo
-                      }, function(){
+                  if (mode == 'foto') {
+                    setTimeout(function(){
+                        // initialize Jcrop
+                        console.log(jQuery('.step2').width());
+                        jQuery('#preview').Jcrop({
+                            minSize: [32, 32],// keep aspect ratio 1:1
+                            bgFade: true, // use fade effect
+                            bgOpacity: .3, // fade opacity
+                            aspectRatio: 1/1.5,
+                            boxWidth: jQuery('.step2').width(),
+                            onChange: updateInfo,
+                            onSelect: updateInfo,
+                            onRelease: clearInfo
+                        }, function(){
 
-                          // use the Jcrop API to get the real image size
-                          var bounds = this.getBounds();
-                          boundx = bounds[0];
-                          boundy = bounds[1];
+                            // use the Jcrop API to get the real image size
+                            var bounds = this.getBounds();
+                            boundx = bounds[0];
+                            boundy = bounds[1];
 
-                          // Store the Jcrop API in the jcrop_api variable
-                          jcrop_api = this;
-                      });
-                  },3000);
-              };
+                            // Store the Jcrop API in the jcrop_api variable
+                            jcrop_api = this;
+                        });
+                    },3000);
+                  } else {
+                    setTimeout(function(){
+                        // initialize Jcrop
+                        console.log(jQuery('.step2').width());
+                        jQuery('#preview').Jcrop({
+                            minSize: [32, 32],// keep aspect ratio 1:1
+                            bgFade: true, // use fade effect
+                            bgOpacity: .3, // fade opacity
+                            boxWidth: jQuery('.step2').width(),
+                            onChange: updateInfo,
+                            onSelect: updateInfo,
+                            onRelease: clearInfo
+                        }, function(){
 
-              // e.target.result contains the DataURL which we can use as a source of the image
-              oImageEstate.src = e.target.result;
-              oImageEstate.onload = function () {
+                            // use the Jcrop API to get the real image size
+                            var bounds = this.getBounds();
+                            boundx = bounds[0];
+                            boundy = bounds[1];
 
-                  var rotateImg = function(rad, rotateCanvas, cx, cy){
-                      var canvas = document.createElement('canvas'),
-//                        var canvas = document.getElementById('preview-canvas'),
-                          ctx = canvas.getContext('2d');
-
-                      if(rotateCanvas){
-                          canvas.setAttribute('width', oImageEstate.naturalHeight);
-                          canvas.setAttribute('height', oImageEstate.naturalWidth);
-                      }else{
-                          canvas.setAttribute('width', oImageEstate.naturalWidth);
-                          canvas.setAttribute('height', oImageEstate.naturalHeight);
-                      }
-
-                      ctx.rotate(rad);
-                      ctx.drawImage(oImageEstate, cx, cy);
-
-                      ort = 1;
-
-                      oImageEstate.src = canvas.toDataURL("image/png");
-                  };
-
-                  switch(ort){
-                     case 6:
-                         // rotateImg(90 * Math.PI / 180, true, 0, oImageEstate.naturalHeight * -1);
-                         break;
-                     case 3:
-                         rotateImg(180 * Math.PI / 180, false, oImageEstate.naturalWidth * -1, oImageEstate.naturalHeight * -1);
-                         break;
-                     case 8:
-                         rotateImg(-90 * Math.PI / 180, true, oImageEstate.naturalWidth * -1, 0);
-                         break;
+                            // Store the Jcrop API in the jcrop_api variable
+                            jcrop_api = this;
+                        });
+                    },3000);
                   }
-
-
-                  // display step 2
-                  jQuery('.step2').fadeIn(500);
-                  jQuery('.wm_start').removeAttr('style');
-                  jQuery('.actual_second_crop_btn').fadeIn(500);
-                  jQuery('.actual_second_crop_btn').removeClass('hidden');
-                  // display some basic image info
-                  var sResultFileSize = bytesToSize(oFile.size);
-                  jQuery('#filesize').val(sResultFileSize);
-                  jQuery('#filetype').val(oFile.type);
-                  jQuery('#filedim').val(oImageEstate.naturalWidth + ' x ' + oImageEstate.naturalHeight);
-
-                  // destroy Jcrop if it is existed
-                  if (typeof jcrop_api != 'undefined') {
-                      jcrop_api.destroy();
-                      jcrop_api = null;
-                      jQuery('#preview_estate').width(oImageEstate.naturalWidth);
-                      jQuery('#preview_estate').height(oImageEstate.naturalHeight);
-                  }
-
-                  setTimeout(function(){
-                      // initialize Jcrop
-                      console.log(jQuery('.step2').width());
-                      jQuery('#preview_estate').Jcrop({
-                          minSize: [32, 32],// keep aspect ratio 1:1
-                          bgFade: true, // use fade effect
-                          bgOpacity: .3, // fade opacity
-                          boxWidth: jQuery('.step2').width(),
-                          onChange: updateInfo,
-                          onSelect: updateInfo,
-                          onRelease: clearInfo
-                      }, function(){
-
-                          // use the Jcrop API to get the real image size
-                          var bounds = this.getBounds();
-                          boundx = bounds[0];
-                          boundy = bounds[1];
-
-                          // Store the Jcrop API in the jcrop_api variable
-                          jcrop_api = this;
-                      });
-                  },3000);
               };
           });
       };
