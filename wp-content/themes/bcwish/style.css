@@ -1790,7 +1790,7 @@ h3.wizard_heading
   position: relative;
   z-index: 1;
 }
-.zone 
+.zone, .zone_estate
 {
   width: 30px!important;
   height: 30px!important;
@@ -1805,7 +1805,7 @@ h3.wizard_heading
   position: absolute!important;
   transition: transform 0.250s linear;
 }
-.zone:hover:before 
+.zone:hover:before, .zone_estate:hover:before
 {
   content: '';
   position: absolute;
@@ -1814,7 +1814,7 @@ h3.wizard_heading
   top: 14px;
   left: -115px;
 }
-.zone:hover:after
+.zone:hover:after, .zone_estate:hover:after
 {
   content: '';
   position: absolute;

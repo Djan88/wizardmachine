@@ -332,10 +332,16 @@
                     <button class="btn btn-success btn_prot_choice wow bounceInUp back-to-top_2" data-wow-duration="1.4s" data-wow-delay="0.8s">Выбор протокола</button>
                   </div>
                   <div class="col-md-12 wizard_estate hidden">
-                    <div class="col-sm-3">
-                      
+                    <div class="col-sm-2">
+                      <div class="estate_corners">
+                        <div class="zone_estate zone_corner zone_default">У</div>
+                      </div>
+                      <div class="estate_doors">
+                        
+                      </div>
+                      <div class="estate_wc"></div>
                     </div>
-                    <div class="col-sm-9">
+                    <div class="col-sm-10">
                       <img src="" class="wizard_returned_estate draggable" alt="wizard_returned">
                     </div>
                   </div>

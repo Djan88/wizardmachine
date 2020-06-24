@@ -197,6 +197,18 @@ jQuery(function() {
   });
 
 
+  jQuery('.zone_estate').draggable({
+    containment: '#main',
+    drag: function() {
+      jQuery(this).removeClass('zone_default');
+    }
+  });
+
+  jQuery('.zone_estate').on('dblclick', function(event) {
+    jQuery(this).detach;
+  });
+
+
 
 //CROPPING SCRIPT
   // convert bytes into friendly format
