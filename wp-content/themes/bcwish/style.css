@@ -1846,7 +1846,9 @@ h3.wizard_heading
 .wizard_returned_estate 
 {
   border: 3px solid #eee;
-  width: 70%;
+  max-width: 90%;
+  width: auto;
+  max-height: 500px;
   height: auto;
 }
 .zone_estate
