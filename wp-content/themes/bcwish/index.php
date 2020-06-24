@@ -334,7 +334,7 @@
                     </form>
                   </div>
                 </div>
-                <div class="machine_estate_screen hidden clearfix">
+                <div class="machine_screen_estate hidden clearfix">
                   <div class="bbody">
                     <!-- upload form -->
                     <form id="upload_form" action="/estate/" enctype="multipart/form-data" method="post"><!-- hidden crop params -->
