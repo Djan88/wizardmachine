@@ -290,6 +290,9 @@
 
             <div class="row">
               <div class="col-md-12 wizard">
+                  <?php
+                      print_r($_POST);
+                  ?>
                 <div class="wizard_returned">
                   <?php
                       if($_POST['mci_magic']){
