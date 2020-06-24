@@ -41,6 +41,7 @@
     ============================-->
     <header id="header">
       <button type="button" class="wizard_crop hidden header_btn"><i class="fa fa-crop"></i></button>
+      <button type="button" class="wizard_crop_estate hidden header_btn"><i class="fa fa-crop"></i></button>
       <a href="/" class="wizard_to_start hidden header_btn"><i class="fa fa-arrow-left"></i></a>
       <button type="button" class="wizard_to_what_way hidden header_btn">
         <i class="fa fa-arrow-left"></i>
@@ -350,7 +351,7 @@
                     <label>Разрешение изображения</label> <input id="filedim" name="mci_filedim" type="text" />
                     <label>Ширина</label> <input id="w" name="mci_w" type="text" />
                     <label>Высота</label> <input id="h" name="mci_h" type="text" /></div>
-                    <input type="submit" class="btn btn-success crop_photo" value="Редактировать фото" name="mci_magic_estate" />
+                    <input type="submit" class="btn btn-success crop_photo_estate" value="Редактировать фото" name="mci_magic_estate" />
                     </div>
                     </form>
                   </div>

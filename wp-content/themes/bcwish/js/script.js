@@ -70,6 +70,10 @@ jQuery(function() {
     jQuery('.crop_photo').click();
   });
 
+  jQuery('.wizard_crop_estate').on('click', function(event) {
+    jQuery('.crop_photo_estate').click();
+  });
+
   jQuery('.photo_upload').on('click', function(event) {
     jQuery('.template_load').addClass('hidden');
   });
@@ -80,6 +84,8 @@ jQuery(function() {
     jQuery('.wm_start').removeClass('unopacity');
     jQuery('.machine_screen').removeClass('hidden');
     jQuery('.machine_screen_estate').addClass('hidden');
+    jQuery('.wizard_crop').addClass('actual_second_crop_btn');
+    jQuery('.wizard_crop_estate').removeClass('actual_second_crop_btn');
     jQuery('.wizard_heading').text('Загрузите фото в полный рост по аналогии с примером ниже и отредактируйте его');
     nextSound.play();
   });
@@ -87,6 +93,8 @@ jQuery(function() {
     jQuery('.wm_start').removeClass('unopacity');
     jQuery('.machine_screen_estate').removeClass('hidden');
     jQuery('.machine_screen').addClass('hidden');
+    jQuery('.wizard_crop_estate').addClass('actual_second_crop_btn');
+    jQuery('.wizard_crop').removeClass('actual_second_crop_btn');
     jQuery('.wizard_heading').text('Загрузите фото плана и выделите его на фото');
     nextSound.play();
   });
@@ -305,8 +313,8 @@ jQuery(function() {
                   // display step 2
                   jQuery('.step2').fadeIn(500);
                   jQuery('.wm_start').removeAttr('style');
-                  jQuery('.wizard_crop').fadeIn(500);
-                  jQuery('.wizard_crop').removeClass('hidden');
+                  jQuery('.actual_second_crop_btn').fadeIn(500);
+                  jQuery('.actual_second_crop_btn').removeClass('hidden');
                   // display some basic image info
                   var sResultFileSize = bytesToSize(oFile.size);
                   jQuery('#filesize').val(sResultFileSize);
