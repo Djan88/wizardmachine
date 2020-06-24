@@ -335,6 +335,10 @@
                     <div class="col-sm-2">
                       <div class="estate_corners">
                         <div class="zone_estate zone_corner zone_default">У</div>
+                        <div class="zone_estate zone_corner zone_default">У</div>
+                        <div class="zone_estate zone_corner zone_default">У</div>
+                        <div class="zone_estate zone_corner zone_default">У</div>
+                        <div class="zone_estate zone_corner zone_default">У</div>
                       </div>
                       <div class="estate_doors">
                         
