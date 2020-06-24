@@ -188,7 +188,8 @@
                     <?php } ?> 
                   </h2>
                   <div>
-                    <a href="#services" class="btn-get-started scrollto wm_init">Начать</a>
+                    <a href="#services" class="btn-get-started scrollto wm_init">Загрузить фото</a>
+                    <a href="#services" class="btn-get-started scrollto wm_init_estate">Загрузить план</a>
                     <a href="#" class="btn btn-warning wizard_continue hidden">Продолжить</a>
                     <div class="for_desktop">
                       <svg class="steps_icon main_arrow" id="Слой_2" data-name="Слой 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1233 567"><title></title><path d="M44.55,142.88c1.22-.77,2.42-1.54,3.54-2.39a33.42,33.42,0,0,0,3.17-2.75,36.55,36.55,0,0,0,5.2-6.54c1.51-2.37,2.79-4.9,4.11-7.46.65-1.28,1.32-2.56,2.06-3.82a16.17,16.17,0,0,1,2.65-3.52l.34-.32v.42h0c1.58,5.52,3.07,11,5,16.19a53.57,53.57,0,0,0,3.56,7.54,24.52,24.52,0,0,0,5.24,6.48l-.21.32a18,18,0,0,1-6.58-5.78,34.28,34.28,0,0,1-4.18-7.71A47.3,47.3,0,0,1,66,125.19a38.61,38.61,0,0,1-.79-8.64h0l.33.1a22.81,22.81,0,0,0-1.89,3.8l-1.62,4a50.58,50.58,0,0,1-3.87,7.85A27.77,27.77,0,0,1,52.43,139a21.93,21.93,0,0,1-7.73,4.2Z"/><path d="M64.19,123a144.53,144.53,0,0,0-.09,17.41c.05,1.45.18,2.89.27,4.32l.44,4.3c.18,1.43.33,2.86.55,4.27s.43,2.84.72,4.24c2.07,11.24,5.93,22.15,12.36,31.33a59.45,59.45,0,0,0,11.41,12.19l3.39,2.47c1.14.82,2.39,1.46,3.59,2.2.6.36,1.19.74,1.82,1.07l1.89.93,1.91.93a16.67,16.67,0,0,0,1.93.86c10.5,4.29,22,6.25,33.61,6.95l0,1a85.56,85.56,0,0,1-35.12-4.11,62.61,62.61,0,0,1-16-8.52,59.51,59.51,0,0,1-12.59-13.1,65.76,65.76,0,0,1-8.24-16.11,87.51,87.51,0,0,1-4-17.46c-.19-1.48-.3-3-.45-4.44s-.18-3-.28-4.44l-.05-4.44c0-1.48,0-3,.12-4.43A92.41,92.41,0,0,1,63.81,123Z"/></svg>
@@ -296,7 +297,15 @@
                       }
                   ?>
                 </div>
-                <div class="machine_screen clearfix">
+                <div class="wizard_returned_estate">
+                  <?php
+                      if($_POST['mci_magic_estate']){
+                          $sImage = uploadImageFile();
+                          echo '<img src="'.$sImage.'" />';
+                      }
+                  ?>
+                </div>
+                <div class="machine_screen hidden clearfix">
                   <div class="bbody">
                     <!-- upload form -->
                     <form id="upload_form" action="/wizard/" enctype="multipart/form-data" method="post"><!-- hidden crop params -->
@@ -321,6 +330,35 @@
                     <label>Ширина</label> <input id="w" name="mci_w" type="text" />
                     <label>Высота</label> <input id="h" name="mci_h" type="text" /></div>
                     <input type="submit" class="btn btn-success crop_photo" value="Редактировать фото" name="mci_magic" />
+                    </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="machine_estate_screen hidden clearfix">
+                  <div class="bbody">
+                    <!-- upload form -->
+                    <form id="upload_form" action="/estate/" enctype="multipart/form-data" method="post"><!-- hidden crop params -->
+                    <input id="x1" name="mci_x1" type="hidden" />
+                    <input id="y1" name="mci_y1" type="hidden" />
+                    <input id="x2" name="mci_x2" type="hidden" />
+                    <input id="y2" name="mci_y2" type="hidden" />
+                    <!-- <h2>Выберите изображение</h2> -->
+                    <div>
+                      <input id="image_file" class="hidden" name="mci_image_file" type="file" />
+                      <label class="btn btn-success photo_upload wizard_blue"  data-wow-duration="1.4s" data-wow-delay="0.4s" for="image_file">Выберите файл</label>
+                      <img src="<?php bloginfo('template_url'); ?>/img/template_.jpg" alt="template" class="template_load">
+                    </div>
+                    <div class="error"></div>
+                    <div class="step2">
+                    <h3>Выделите область для обрезки</h3>
+                    <img id="preview" alt="" />
+                    <!--<canvas id="preview-canvas" style="border: 3px red solid;/*position: absolute; visibility: hidden; /*left: -20000px*/"></canvas>-->
+                    <div class="info hidden"><label>Размер файла</label> <input id="filesize" name="mci_filesize" type="text" />
+                    <label>Тип</label> <input id="filetype" name="mci_filetype" type="text" />
+                    <label>Разрешение изображения</label> <input id="filedim" name="mci_filedim" type="text" />
+                    <label>Ширина</label> <input id="w" name="mci_w" type="text" />
+                    <label>Высота</label> <input id="h" name="mci_h" type="text" /></div>
+                    <input type="submit" class="btn btn-success crop_photo" value="Редактировать фото" name="mci_magic_estate" />
                     </div>
                     </form>
                   </div>
