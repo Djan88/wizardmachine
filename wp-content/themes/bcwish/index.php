@@ -332,7 +332,7 @@
                     <button class="btn btn-success btn_prot_choice wow bounceInUp back-to-top_2" data-wow-duration="1.4s" data-wow-delay="0.8s">Выбор протокола</button>
                   </div>
                   <div class="col-md-12 wizard_estate hidden">
-                    <div class="col-sm-2">
+                    <div class="col-sm-2 estate_items">
                       <div class="estate_corners">
                         <div class="estate_heading">Углы</div>
                         <div class="zone_estate zone_corner zone_default">У</div>
@@ -410,7 +410,7 @@
                         <div class="zone_estate zone_door zone_default">Д</div>
                         <div class="zone_estate zone_door zone_default">Д</div>
                       </div>
-                      <div class="estate_wc">
+                      <div class="estate_wcs">
                         <div class="estate_heading">С/У</div>
                         <div class="zone_estate zone_wc zone_default">С</div>
                         <div class="zone_estate zone_wc zone_default">С</div>
