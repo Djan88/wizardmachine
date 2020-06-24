@@ -304,8 +304,8 @@
                 <div class="wizard_returned_estate">
                   <?php
                       if($_POST['mci_magic_estate']){
-                          $sImage_estate = uploadImageFile();
-                          echo '<img src="'.$sImage_estate.'" />';
+                          $sImage = uploadImageFile();
+                          echo '<img src="'.$sImage.'" />';
                       }
                   ?>
                 </div>
