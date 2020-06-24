@@ -84,6 +84,7 @@ jQuery(function() {
   jQuery('.wm_init_estate').on('click', function(event) {
     jQuery('.wm_start').removeClass('unopacity');
     jQuery('.machine_screen_estate').removeClass('hidden');
+    jQuery('.wizard_heading').text('Загрузите фото плана и выделите его на фото.')
     nextSound.play();
   });
 
