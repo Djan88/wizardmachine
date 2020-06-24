@@ -1864,6 +1864,10 @@ h3.wizard_heading
   padding-bottom: 5px;
   font-weight: 600;
 }
+.zone_default
+{
+  transition: all 1s;
+}
 .estate_items
 {
   text-align: center;
