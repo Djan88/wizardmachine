@@ -262,6 +262,7 @@ jQuery(function() {
 
       // preview element
       var oImage = document.getElementById('preview');
+      var oImageEstate = document.getElementById('preview_estate');
 
       // prepare HTML5 FileReader
       var oReader = new FileReader();
@@ -337,6 +338,87 @@ jQuery(function() {
                           bgFade: true, // use fade effect
                           bgOpacity: .3, // fade opacity
                           aspectRatio: 1/1.5,
+                          boxWidth: jQuery('.step2').width(),
+                          onChange: updateInfo,
+                          onSelect: updateInfo,
+                          onRelease: clearInfo
+                      }, function(){
+
+                          // use the Jcrop API to get the real image size
+                          var bounds = this.getBounds();
+                          boundx = bounds[0];
+                          boundy = bounds[1];
+
+                          // Store the Jcrop API in the jcrop_api variable
+                          jcrop_api = this;
+                      });
+                  },3000);
+              };
+
+              // e.target.result contains the DataURL which we can use as a source of the image
+              oImageEstate.src = e.target.result;
+              oImageEstate.onload = function () {
+
+                  var rotateImg = function(rad, rotateCanvas, cx, cy){
+                      var canvas = document.createElement('canvas'),
+//                        var canvas = document.getElementById('preview-canvas'),
+                          ctx = canvas.getContext('2d');
+
+                      if(rotateCanvas){
+                          canvas.setAttribute('width', oImageEstate.naturalHeight);
+                          canvas.setAttribute('height', oImageEstate.naturalWidth);
+                      }else{
+                          canvas.setAttribute('width', oImageEstate.naturalWidth);
+                          canvas.setAttribute('height', oImageEstate.naturalHeight);
+                      }
+
+                      ctx.rotate(rad);
+                      ctx.drawImage(oImageEstate, cx, cy);
+
+                      ort = 1;
+
+                      oImageEstate.src = canvas.toDataURL("image/png");
+                  };
+
+                  switch(ort){
+                     case 6:
+                         // rotateImg(90 * Math.PI / 180, true, 0, oImageEstate.naturalHeight * -1);
+                         break;
+                     case 3:
+                         rotateImg(180 * Math.PI / 180, false, oImageEstate.naturalWidth * -1, oImageEstate.naturalHeight * -1);
+                         break;
+                     case 8:
+                         rotateImg(-90 * Math.PI / 180, true, oImageEstate.naturalWidth * -1, 0);
+                         break;
+                  }
+
+
+                  // display step 2
+                  jQuery('.step2').fadeIn(500);
+                  jQuery('.wm_start').removeAttr('style');
+                  jQuery('.actual_second_crop_btn').fadeIn(500);
+                  jQuery('.actual_second_crop_btn').removeClass('hidden');
+                  // display some basic image info
+                  var sResultFileSize = bytesToSize(oFile.size);
+                  jQuery('#filesize').val(sResultFileSize);
+                  jQuery('#filetype').val(oFile.type);
+                  jQuery('#filedim').val(oImageEstate.naturalWidth + ' x ' + oImageEstate.naturalHeight);
+
+                  // destroy Jcrop if it is existed
+                  if (typeof jcrop_api != 'undefined') {
+                      jcrop_api.destroy();
+                      jcrop_api = null;
+                      jQuery('#preview_estate').width(oImageEstate.naturalWidth);
+                      jQuery('#preview_estate').height(oImageEstate.naturalHeight);
+                  }
+
+                  setTimeout(function(){
+                      // initialize Jcrop
+                      console.log(jQuery('.step2').width());
+                      jQuery('#preview_estate').Jcrop({
+                          minSize: [32, 32],// keep aspect ratio 1:1
+                          bgFade: true, // use fade effect
+                          bgOpacity: .3, // fade opacity
                           boxWidth: jQuery('.step2').width(),
                           onChange: updateInfo,
                           onSelect: updateInfo,
