@@ -88,6 +88,7 @@ jQuery(function() {
   jQuery('.wm_init_estate').on('click', function(event) {
     jQuery('.wm_start').removeClass('unopacity');
     localStorage.setItem('mode', 'estate');
+    jQuery('.wizard_heading').text('Загрузите план помещения');
     mode = 'estate';
     nextSound.play();
   });
