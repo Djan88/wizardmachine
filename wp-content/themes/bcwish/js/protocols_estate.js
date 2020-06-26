@@ -1331,6 +1331,7 @@ jQuery(function() {
     function(isConfirm) {
       if (isConfirm) {
         // estate1();
+        swal.close()
         jQuery('.status_title').text('Протокол выполняется');
       }
     })
