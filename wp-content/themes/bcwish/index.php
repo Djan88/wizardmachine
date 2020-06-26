@@ -442,6 +442,8 @@
                           <div class="zone_estate zone_wc zone_default">С</div>
                           <div class="zone_estate zone_wc zone_default">С</div>
                         </div>
+                        <button class="btn btn-success estate_clean">Сброс</button>
+                        <button class="btn button-primary estate_start">Старт</button>
                       </div>
                       <div class="col-sm-10 returned_estate wow bounceInUp" data-wow-duration="1.4s" data-wow-delay="0.4s">
                         <img src="" class="wizard_returned_estate draggable" alt="wizard_returned">
@@ -1540,6 +1542,7 @@
     <script src="<?php bloginfo('template_url'); ?>/js/howler.js"></script>
     <script src="<?php bloginfo('template_url'); ?>/js/gsap.min.js"></script>
     <script src="<?php bloginfo('template_url'); ?>/js/protocols_test.js"></script>
+    <script src="<?php bloginfo('template_url'); ?>/js/protocols_estate.js"></script>
     <script src="<?php bloginfo('template_url'); ?>/js/script.js"></script>
     
     <div class="modal fade" id="mail" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">

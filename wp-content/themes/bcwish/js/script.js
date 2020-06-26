@@ -205,8 +205,13 @@ jQuery(function() {
     }
   });
 
+
+// Сброс зон на плане
   jQuery('.zone_estate').on('dblclick', function(event) {
     jQuery(this).addClass('zone_default').removeAttr('style');
+  });
+  jQuery('.estate_clean').on('click', function(event) {
+    jQuery('.estate_clean').addClass('zone_default').removeAttr('style');
   });
 
 
