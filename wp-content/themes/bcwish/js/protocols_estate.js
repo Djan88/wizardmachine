@@ -1330,7 +1330,7 @@ jQuery(function() {
     },
     function(isConfirm) {
       if (isConfirm) {
-        estate1();
+        // estate1();
         jQuery('.status_title').text('Протокол выполняется');
       }
     })
