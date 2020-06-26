@@ -1323,7 +1323,7 @@ jQuery(function() {
       type: "info",
       showCancelButton: true,
       confirmButtonClass: "btn-success",
-      cancelButtonClass: "btn-danger",
+      cancelButtonClass: "btn-warning",
       cancelButtonText: "Проверить",
       confirmButtonText: "Старт",
       closeOnConfirm: false
