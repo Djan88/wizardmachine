@@ -211,7 +211,7 @@ jQuery(function() {
     jQuery(this).addClass('zone_default').removeAttr('style');
   });
   jQuery('.estate_clean').on('click', function(event) {
-    jQuery('.estate_clean').addClass('zone_default').removeAttr('style');
+    jQuery('.zone_estate').addClass('zone_default').removeAttr('style');
   });
 
 
