@@ -1320,7 +1320,7 @@ jQuery(function() {
     swal({
       title: "Проверьте все ли зоны Вы отметили",
       text: "Отметьте все внутренние углы, двери и сан. узлы.",
-      type: "success",
+      type: "info",
       showCancelButton: true,
       confirmButtonClass: "btn-danger",
       cancelButtonClass: "btn-success",

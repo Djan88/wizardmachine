@@ -1845,7 +1845,7 @@ h3.wizard_heading
 }
 .estate_wcs
 {
-  padding-bottom: 50px;
+  padding-bottom: 80px;
 }
 .wizard_returned_estate 
 {
@@ -1861,6 +1861,11 @@ h3.wizard_heading
   left: 42%;
   top: 40%;
 }
+.estate_clean, .estate_start
+{
+  margin-top: 30px;
+}
+
 .returned_estate
 {
   text-align: center;
