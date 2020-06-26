@@ -1322,8 +1322,8 @@ jQuery(function() {
       text: "Отметьте все внутренние углы, двери и сан. узлы.",
       type: "info",
       showCancelButton: true,
-      confirmButtonClass: "btn-danger",
-      cancelButtonClass: "btn-success",
+      confirmButtonClass: "btn-success",
+      cancelButtonClass: "btn-danger",
       cancelButtonText: "Проверить",
       confirmButtonText: "Старт",
       closeOnConfirm: false
