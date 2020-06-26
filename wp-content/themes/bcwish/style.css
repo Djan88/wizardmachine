@@ -1843,6 +1843,10 @@ h3.wizard_heading
   height: 70px;
   position: relative;
 }
+.estate_wcs
+{
+  padding-bottom: 50px;
+}
 .wizard_returned_estate 
 {
   border: 3px solid #eee;
@@ -1875,9 +1879,9 @@ h3.wizard_heading
 .estate_items
 {
   text-align: center;
-  height: 100vh;
+  min-height: 100vh;
   background: #eee;
-  padding-top: 120px;
+  padding-top: 100px;
 }
 .wizard_main_screen 
 {

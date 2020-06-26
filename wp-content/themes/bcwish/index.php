@@ -443,7 +443,7 @@
                           <div class="zone_estate zone_wc zone_default">С</div>
                         </div>
                         <button class="btn btn-success estate_clean">Сброс</button>
-                        <button class="btn button-primary estate_start">Старт</button>
+                        <button class="btn btn-primary estate_start">Старт</button>
                       </div>
                       <div class="col-sm-10 returned_estate wow bounceInUp" data-wow-duration="1.4s" data-wow-delay="0.4s">
                         <img src="" class="wizard_returned_estate draggable" alt="wizard_returned">
