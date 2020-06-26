@@ -1332,7 +1332,7 @@ jQuery(function() {
       if (isConfirm) {
         // estate1();
         swal.close()
-        jQuery('.status_title').text('Протокол выполняется');
+        jQuery('.wizard_heading').text('Протокол выполняется');
       }
     })
 
