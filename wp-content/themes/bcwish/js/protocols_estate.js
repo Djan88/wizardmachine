@@ -1,5 +1,6 @@
 jQuery(function() {
   var onEndEstate,
+      pausedStatus = false,
       sound,
       
       sound = new Howl({
@@ -92,9 +93,9 @@ jQuery(function() {
     })
   }
 
- 
 
-  estate_1_1 = function(){
+
+  estate_1_12 = function(){
     jQuery('.wizard_percent').text('0%');
     reloadTime = 0;
     count_animation = 1;
@@ -107,7 +108,7 @@ jQuery(function() {
         transform: 'rotate(0deg) scale(1.5)',
         zIndex: '1000'
     });
-    jQuery('.zone_wc').addClass('rot_estate_super').css({
+    jQuery('.zone_wc').addClass('rot_estate_lovushka').css({
       background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat',
     });
 
@@ -128,21 +129,569 @@ jQuery(function() {
             background: '#fff',
             color: '#19b55f',
             borderColor: '#19b55f',
+            borderWidth: '2px',
             transform: 'rotate(0deg) scale(1)',
             zIndex: '3'
         });
-        jQuery('.zone_wc').removeClass('rot_estate_super');
+        jQuery('.zone_wc').removeClass('rot_estate_lovushka');
         sound.stop();
         if (pausedStatus == true) {
-          localStorage.setItem('paused', 'estate_1_2');
+          localStorage.setItem('paused', 'estate_1_13');
           endNowEstate();
         } else {
-          // estate_1_2();
+          estate_1_13();
           console.log('continue');
         } 
       }
     }, 250);
   }
+
+   estate_1_11 = function(){
+     jQuery('.wizard_percent').text('0%');
+     reloadTime = 0;
+     count_animation = 1;
+     console.log('start_estate');
+     jQuery('.zone_wc').css({
+         color: 'transparent',
+         borderColor: 'transparent',
+         opacity: 0.8,
+         borderWidth: '1px',
+         transform: 'rotate(0deg) scale(1.5)',
+         zIndex: '1000'
+     });
+     jQuery('.zone_wc').css({
+       background: '#fff url(/wp-content/themes/bcwish/img/veter.png) center center/100% no-repeat',
+     });
+
+     phaseOne = setInterval(function(){
+       if (count_animation <= 720){
+         if (reloadTime == 0){                                                                       //1
+             sound.stop();
+             reloadSound.play();
+         } else if (reloadTime == 2) {
+             sound.play();
+         };
+         reloadTime += 1;
+         count_animation += 1;
+       } else {
+         clearInterval(phaseOne);
+         count_animation = 1;
+         jQuery('.zone_wc').css({
+             background: '#fff',
+             color: '#19b55f',
+             borderColor: '#19b55f',
+             borderWidth: '2px',
+             transform: 'rotate(0deg) scale(1)',
+             zIndex: '3'
+         });
+         sound.stop();
+         if (pausedStatus == true) {
+           localStorage.setItem('paused', 'estate_1_12');
+           endNowEstate();
+         } else {
+           estate_1_12();
+           console.log('continue');
+         } 
+       }
+     }, 250);
+   }
+   estate_1_10 = function(){
+     jQuery('.wizard_percent').text('0%');
+     reloadTime = 0;
+     count_animation = 1;
+     console.log('start_estate');
+     jQuery('.zone_wc').css({
+         color: 'transparent',
+         borderColor: 'transparent',
+         opacity: 0.8,
+         borderWidth: '1px',
+         transform: 'rotate(0deg) scale(1.5)',
+         zIndex: '1000'
+     });
+     jQuery('.zone_wc').css({
+       background: '#fff url(/wp-content/themes/bcwish/img/life_vater.png) center center/100% no-repeat',
+     });
+
+     phaseOne = setInterval(function(){
+       if (count_animation <= 720){
+         if (reloadTime == 0){                                                                       //1
+             sound.stop();
+             reloadSound.play();
+         } else if (reloadTime == 2) {
+             sound.play();
+         };
+         reloadTime += 1;
+         count_animation += 1;
+       } else {
+         clearInterval(phaseOne);
+         count_animation = 1;
+         jQuery('.zone_wc').css({
+             background: '#fff',
+             color: '#19b55f',
+             borderColor: '#19b55f',
+             borderWidth: '2px',
+             transform: 'rotate(0deg) scale(1)',
+             zIndex: '3'
+         });
+         sound.stop();
+         if (pausedStatus == true) {
+           localStorage.setItem('paused', 'estate_1_11');
+           endNowEstate();
+         } else {
+           estate_1_11();
+           console.log('continue');
+         } 
+       }
+     }, 250);
+   }
+  estate_1_9 = function(){
+    jQuery('.wizard_percent').text('0%');
+    reloadTime = 0;
+    count_animation = 1;
+    console.log('start_estate');
+    jQuery('.zone_wc').css({
+        color: 'transparent',
+        borderColor: 'transparent',
+        opacity: 0.8,
+        borderWidth: '1px',
+        transform: 'rotate(0deg) scale(1.5)',
+        zIndex: '1000'
+    });
+    jQuery('.zone_wc').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/veter.png) center center/100% no-repeat',
+    });
+
+    phaseOne = setInterval(function(){
+      if (count_animation <= 720){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        } else if (reloadTime == 2) {
+            sound.play();
+        };
+        reloadTime += 1;
+        count_animation += 1;
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone_wc').css({
+            background: '#fff',
+            color: '#19b55f',
+            borderColor: '#19b55f',
+            borderWidth: '2px',
+            transform: 'rotate(0deg) scale(1)',
+            zIndex: '3'
+        });
+        sound.stop();
+        if (pausedStatus == true) {
+          localStorage.setItem('paused', 'estate_1_10');
+          endNowEstate();
+        } else {
+          estate_1_10();
+          console.log('continue');
+        } 
+      }
+    }, 250);
+  }
+  estate_1_8 = function(){
+    jQuery('.wizard_percent').text('0%');
+    reloadTime = 0;
+    count_animation = 1;
+    console.log('start_estate');
+    jQuery('.zone_wc').css({
+        color: 'transparent',
+        borderColor: 'transparent',
+        opacity: 0.8,
+        borderWidth: '1px',
+        transform: 'rotate(0deg) scale(1.5)',
+        zIndex: '1000'
+    });
+    jQuery('.zone_wc').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/life_vater.png) center center/100% no-repeat',
+    });
+
+    phaseOne = setInterval(function(){
+      if (count_animation <= 720){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        } else if (reloadTime == 2) {
+            sound.play();
+        };
+        reloadTime += 1;
+        count_animation += 1;
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone_wc').css({
+            background: '#fff',
+            color: '#19b55f',
+            borderColor: '#19b55f',
+            borderWidth: '2px',
+            transform: 'rotate(0deg) scale(1)',
+            zIndex: '3'
+        });
+        sound.stop();
+        if (pausedStatus == true) {
+          localStorage.setItem('paused', 'estate_1_9');
+          endNowEstate();
+        } else {
+          estate_1_9();
+          console.log('continue');
+        } 
+      }
+    }, 250);
+  }
+
+  estate_1_7 = function(){
+    jQuery('.wizard_percent').text('0%');
+    reloadTime = 0;
+    count_animation = 1;
+    console.log('start_estate');
+    jQuery('.zone_wc').css({
+        color: 'transparent',
+        borderColor: 'transparent',
+        opacity: 0.8,
+        borderWidth: '1px',
+        transform: 'rotate(0deg) scale(1.5)',
+        zIndex: '1000'
+    });
+    jQuery('.zone_wc').addClass('rot_estate_lovushka').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat',
+    });
+
+    phaseOne = setInterval(function(){
+      if (count_animation <= 720){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        } else if (reloadTime == 2) {
+            sound.play();
+        };
+        reloadTime += 1;
+        count_animation += 1;
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone_wc').css({
+            background: '#fff',
+            color: '#19b55f',
+            borderColor: '#19b55f',
+            borderWidth: '2px',
+            transform: 'rotate(0deg) scale(1)',
+            zIndex: '3'
+        });
+        jQuery('.zone_wc').removeClass('rot_estate_lovushka');
+        sound.stop();
+        if (pausedStatus == true) {
+          localStorage.setItem('paused', 'estate_1_8');
+          endNowEstate();
+        } else {
+          estate_1_8();
+          console.log('continue');
+        } 
+      }
+    }, 250);
+  }
+
+  estate_1_6 = function(){
+    jQuery('.wizard_percent').text('0%');
+    reloadTime = 0;
+    count_animation = 1;
+    console.log('start_estate');
+    jQuery('.zone_wc').css({
+        color: 'transparent',
+        borderColor: 'transparent',
+        opacity: 0.8,
+        borderWidth: '1px',
+        transform: 'rotate(0deg) scale(1.5)',
+        zIndex: '1000'
+    });
+    jQuery('.zone_wc').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/veter.png) center center/100% no-repeat',
+    });
+
+    phaseOne = setInterval(function(){
+      if (count_animation <= 720){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        } else if (reloadTime == 2) {
+            sound.play();
+        };
+        reloadTime += 1;
+        count_animation += 1;
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone_wc').css({
+            background: '#fff',
+            color: '#19b55f',
+            borderColor: '#19b55f',
+            borderWidth: '2px',
+            transform: 'rotate(0deg) scale(1)',
+            zIndex: '3'
+        });
+        sound.stop();
+        if (pausedStatus == true) {
+          localStorage.setItem('paused', 'estate_1_7');
+          endNowEstate();
+        } else {
+          estate_1_7();
+          console.log('continue');
+        } 
+      }
+    }, 250);
+  }
+  estate_1_5 = function(){
+    jQuery('.wizard_percent').text('0%');
+    reloadTime = 0;
+    count_animation = 1;
+    console.log('start_estate');
+    jQuery('.zone_wc').css({
+        color: 'transparent',
+        borderColor: 'transparent',
+        opacity: 0.8,
+        borderWidth: '1px',
+        transform: 'rotate(0deg) scale(1.5)',
+        zIndex: '1000'
+    });
+    jQuery('.zone_wc').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/life_vater.png) center center/100% no-repeat',
+    });
+
+    phaseOne = setInterval(function(){
+      if (count_animation <= 720){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        } else if (reloadTime == 2) {
+            sound.play();
+        };
+        reloadTime += 1;
+        count_animation += 1;
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone_wc').css({
+            background: '#fff',
+            color: '#19b55f',
+            borderColor: '#19b55f',
+            borderWidth: '2px',
+            transform: 'rotate(0deg) scale(1)',
+            zIndex: '3'
+        });
+        sound.stop();
+        if (pausedStatus == true) {
+          localStorage.setItem('paused', 'estate_1_6');
+          endNowEstate();
+        } else {
+          estate_1_6();
+          console.log('continue');
+        } 
+      }
+    }, 250);
+  }
+ estate_1_4 = function(){
+   jQuery('.wizard_percent').text('0%');
+   reloadTime = 0;
+   count_animation = 1;
+   console.log('start_estate');
+   jQuery('.zone_wc').css({
+       color: 'transparent',
+       borderColor: 'transparent',
+       opacity: 0.8,
+       borderWidth: '1px',
+       transform: 'rotate(0deg) scale(1.5)',
+       zIndex: '1000'
+   });
+   jQuery('.zone_wc').css({
+     background: '#fff url(/wp-content/themes/bcwish/img/veter.png) center center/100% no-repeat',
+   });
+
+   phaseOne = setInterval(function(){
+     if (count_animation <= 720){
+       if (reloadTime == 0){                                                                       //1
+           sound.stop();
+           reloadSound.play();
+       } else if (reloadTime == 2) {
+           sound.play();
+       };
+       reloadTime += 1;
+       count_animation += 1;
+     } else {
+       clearInterval(phaseOne);
+       count_animation = 1;
+       jQuery('.zone_wc').css({
+           background: '#fff',
+           color: '#19b55f',
+           borderColor: '#19b55f',
+           borderWidth: '2px',
+           transform: 'rotate(0deg) scale(1)',
+           zIndex: '3'
+       });
+       sound.stop();
+       if (pausedStatus == true) {
+         localStorage.setItem('paused', 'estate_1_5');
+         endNowEstate();
+       } else {
+         estate_1_5();
+         console.log('continue');
+       } 
+     }
+   }, 250);
+ }
+ estate_1_3 = function(){
+   jQuery('.wizard_percent').text('0%');
+   reloadTime = 0;
+   count_animation = 1;
+   console.log('start_estate');
+   jQuery('.zone_wc').css({
+       color: 'transparent',
+       borderColor: 'transparent',
+       opacity: 0.8,
+       borderWidth: '1px',
+       transform: 'rotate(0deg) scale(1.5)',
+       zIndex: '1000'
+   });
+   jQuery('.zone_wc').css({
+     background: '#fff url(/wp-content/themes/bcwish/img/life_vater.png) center center/100% no-repeat',
+   });
+
+   phaseOne = setInterval(function(){
+     if (count_animation <= 720){
+       if (reloadTime == 0){                                                                       //1
+           sound.stop();
+           reloadSound.play();
+       } else if (reloadTime == 2) {
+           sound.play();
+       };
+       reloadTime += 1;
+       count_animation += 1;
+     } else {
+       clearInterval(phaseOne);
+       count_animation = 1;
+       jQuery('.zone_wc').css({
+           background: '#fff',
+           color: '#19b55f',
+           borderColor: '#19b55f',
+           borderWidth: '2px',
+           transform: 'rotate(0deg) scale(1)',
+           zIndex: '3'
+       });
+       sound.stop();
+       if (pausedStatus == true) {
+         localStorage.setItem('paused', 'estate_1_4');
+         endNowEstate();
+       } else {
+         estate_1_4();
+         console.log('continue');
+       } 
+     }
+   }, 250);
+ }
+
+estate_1_2 = function(){
+  jQuery('.wizard_percent').text('0%');
+  reloadTime = 0;
+  count_animation = 1;
+  console.log('start_estate');
+  jQuery('.zone_wc').css({
+      color: 'transparent',
+      borderColor: 'transparent',
+      opacity: 0.8,
+      borderWidth: '1px',
+      transform: 'rotate(0deg) scale(1.5)',
+      zIndex: '1000'
+  });
+  jQuery('.zone_wc').addClass('rot_estate_lovushka').css({
+    background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat',
+  });
+
+  phaseOne = setInterval(function(){
+    if (count_animation <= 720){
+      if (reloadTime == 0){                                                                       //1
+          sound.stop();
+          reloadSound.play();
+      } else if (reloadTime == 2) {
+          sound.play();
+      };
+      reloadTime += 1;
+      count_animation += 1;
+    } else {
+      clearInterval(phaseOne);
+      count_animation = 1;
+      jQuery('.zone_wc').css({
+          background: '#fff',
+          color: '#19b55f',
+          borderColor: '#19b55f',
+          borderWidth: '2px',
+          transform: 'rotate(0deg) scale(1)',
+          zIndex: '3'
+      });
+      jQuery('.zone_wc').removeClass('rot_estate_lovushka');
+      sound.stop();
+      if (pausedStatus == true) {
+        localStorage.setItem('paused', 'estate_1_3');
+        endNowEstate();
+      } else {
+        estate_1_3();
+        console.log('continue');
+      } 
+    }
+  }, 250);
+}
+
+estate_1_1 = function(){
+  jQuery('.wizard_percent').text('0%');
+  reloadTime = 0;
+  count_animation = 1;
+  console.log('start_estate');
+  jQuery('.zone_wc').css({
+      color: 'transparent',
+      borderColor: 'transparent',
+      opacity: 0.8,
+      borderWidth: '1px',
+      transform: 'rotate(0deg) scale(1.5)',
+      zIndex: '1000'
+  });
+  jQuery('.zone_wc').addClass('rot_estate_super').css({
+    background: '#fff url(/wp-content/themes/bcwish/img/superdisfunction.png) center center/100% no-repeat',
+  });
+
+  phaseOne = setInterval(function(){
+    if (count_animation <= 720){
+      if (reloadTime == 0){                                                                       //1
+          sound.stop();
+          reloadSound.play();
+      } else if (reloadTime == 2) {
+          sound.play();
+      };
+      reloadTime += 1;
+      count_animation += 1;
+    } else {
+      clearInterval(phaseOne);
+      count_animation = 1;
+      jQuery('.zone_wc').css({
+          background: '#fff',
+          color: '#19b55f',
+          borderColor: '#19b55f',
+          borderWidth: '2px',
+          transform: 'rotate(0deg) scale(1)',
+          zIndex: '3'
+      });
+      jQuery('.zone_wc').removeClass('rot_estate_super');
+      sound.stop();
+      if (pausedStatus == true) {
+        localStorage.setItem('paused', 'estate_1_2');
+        endNowEstate();
+      } else {
+        estate_1_2();
+        console.log('continue');
+      } 
+    }
+  }, 250);
+}
 
 
   jQuery('.estate_start').on('click', function(event) {
