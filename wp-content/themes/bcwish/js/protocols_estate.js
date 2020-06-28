@@ -98,6 +98,7 @@ jQuery(function() {
     jQuery('.wizard_percent').text('0%');
     reloadTime = 0;
     count_animation = 1;
+    console.log('start_estate');
     jQuery('zone_wc').css({
         color: 'transparent',
         borderColor: 'transparent',
@@ -160,7 +161,6 @@ jQuery(function() {
       if (isConfirm) {
         swal.close();
         estate_1_1();
-        console.log('start_estate');
         jQuery('.estate_start').addClass('hidden');
         jQuery('.estate_pause').removeClass('hidden');
         jQuery('.zone_estate.zone_default').addClass('hidden');
