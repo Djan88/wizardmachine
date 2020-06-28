@@ -99,7 +99,7 @@ jQuery(function() {
     reloadTime = 0;
     count_animation = 1;
     console.log('start_estate');
-    jQuery('zone_wc').css({
+    jQuery('.zone_wc').css({
         color: 'transparent',
         borderColor: 'transparent',
         opacity: 0.8,
@@ -107,7 +107,7 @@ jQuery(function() {
         transform: 'rotate(0deg) scale(1.5)',
         zIndex: '1000'
     });
-    jQuery('zone_wc').addClass('rot_estate_super').css({
+    jQuery('.zone_wc').addClass('rot_estate_super').css({
       background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat',
     });
 
@@ -124,7 +124,7 @@ jQuery(function() {
       } else {
         clearInterval(phaseOne);
         count_animation = 1;
-        jQuery('zone_wc').css({
+        jQuery('.zone_wc').css({
             background: '#fff',
             color: '#19b55f',
             borderColor: '#19b55f',
