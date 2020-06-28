@@ -172,7 +172,7 @@ jQuery(function() {
         // estate1();
         swal.close();
         jQuery('.estate_start').addClass('hidden');
-        jQuery('.estate_pause').remoeClass('hidden');
+        jQuery('.estate_pause').removeClass('hidden');
         jQuery('.zone_estate.zone_default').addClass('hidden');
         jQuery('.wizard_heading').text('Протокол выполняется');
       }
