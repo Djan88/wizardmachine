@@ -39,7 +39,6 @@ jQuery(function() {
   endNowEstate = function(){
     reloadTime = 0;
     reloadTime1 = 0;
-    cur_animation_val = 0;
     rotateVal = 0;
     count_animation = 1;
     alertSound.play();
@@ -95,10 +94,9 @@ jQuery(function() {
 
  
 
-  estate = function(){
+  estate_1_1 = function(){
     jQuery('.wizard_percent').text('0%');
     reloadTime = 0;
-    cur_animation_val = 0;
     count_animation = 1;
     jQuery('zone_wc').css({
         color: 'transparent',
@@ -121,13 +119,6 @@ jQuery(function() {
             sound.play();
         };
         reloadTime += 1;
-        if (count_animation > 0 && count_animation <= 120) {
-          jQuery('zone_wc').css({background: '#fff url(/wp-content/themes/bcwish/img/disfunction.png) center center/100% no-repeat'});
-        } else if (count_animation > 120 && count_animation <= 220) {
-          jQuery('zone_wc').css({background: '#fff url(/wp-content/themes/bcwish/img/travma.png) center center/100% no-repeat'});
-        } else if (count_animation > 220 && count_animation <= 240) {
-          jQuery('zone_wc').css({background: '#fff url(/wp-content/themes/bcwish/img/povregdenie_demona.png) center center/100% no-repeat'});
-        }
         count_animation += 1;
       } else {
         clearInterval(phaseOne);
@@ -142,10 +133,10 @@ jQuery(function() {
         jQuery('.zone_wc').removeClass('rot_estate_super');
         sound.stop();
         if (pausedStatus == true) {
-          localStorage.setItem('paused', 'estate_1');
+          localStorage.setItem('paused', 'estate_1_2');
           endNowEstate();
         } else {
-          // estate_1();
+          // estate_1_2();
           console.log('continue');
         } 
       }
@@ -168,7 +159,8 @@ jQuery(function() {
     function(isConfirm) {
       if (isConfirm) {
         swal.close();
-        estate();
+        estate_1_1();
+        console.log('start_estate');
         jQuery('.estate_start').addClass('hidden');
         jQuery('.estate_pause').removeClass('hidden');
         jQuery('.zone_estate.zone_default').addClass('hidden');
