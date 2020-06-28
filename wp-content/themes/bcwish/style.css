@@ -1861,7 +1861,7 @@ h3.wizard_heading
   left: 42%;
   top: 40%;
 }
-.estate_clean, .estate_start
+.estate_clean, .estate_start, .estate_pause
 {
   margin-top: 15px;
 }
@@ -2811,6 +2811,26 @@ button.wizard_starter_alt.btn.btn-success
   }
   100% {
     transform: rotate(0deg) scale(1.5);
+  }
+}
+.rot_estate_super {
+  animation: 180s linear 0s normal none infinite running rot_estate_super;
+  -webkit-animation: 180s linear 0s normal none infinite running rot_estate_super;
+}
+@keyframes rot_estate_super {
+  0% {
+    transform: rotate(0deg) scale(1.5);
+  }
+  100% {
+    transform: rotate(720deg) scale(1.5);
+  }
+}
+@-webkit-keyframes rot_estate_super {
+  0% {
+    transform: rotate(0deg) scale(1.5);
+  }
+  100% {
+    transform: rotate(720deg) scale(1.5);
   }
 }
 
