@@ -20,7 +20,6 @@
   <link href="<?php bloginfo('template_url'); ?>/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Libraries CSS Files -->
-  <link href="<?php bloginfo('template_url'); ?>/css/font-awesome.min.css" rel="stylesheet">
   <link href="<?php bloginfo('template_url'); ?>/lib/animate/animate.min.css" rel="stylesheet">
   <link href="<?php bloginfo('template_url'); ?>/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
   <link href="<?php bloginfo('template_url'); ?>/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
@@ -32,6 +31,7 @@
   <link href="<?php bloginfo('template_url'); ?>/css/sweetalert.css" rel="stylesheet">
   <link href="<?php bloginfo('template_url'); ?>/style.css" rel="stylesheet">
   <?php wp_head(); ?>
+  <link href="<?php bloginfo('template_url'); ?>/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
 <body>
