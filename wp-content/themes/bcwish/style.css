@@ -2348,6 +2348,12 @@ button.wizard_starter_alt.btn.btn-success
 {
   opacity: 0;
 }
+.estate-percent 
+{
+  padding-top: 20px;
+  font-size: 40px;
+  color: #949292;
+}
 
 
 /*Animation*/

@@ -1841,6 +1841,7 @@ estate_1_1 = function(){
       if (isConfirm) {
         swal.close();
         estate_1_1();
+        jQuery('.estate-percent').removeClass('transparent');
         jQuery('.estate_start').addClass('hidden');
         jQuery('.estate_pause').removeClass('hidden');
         jQuery('.zone_estate.zone_default').addClass('hidden');
