@@ -336,12 +336,12 @@
                       <div class="col-sm-2 estate_items">
                         <div class="estate_els wow bounceInUp" data-wow-duration="1.4s" data-wow-delay="0.8s">
                           <div class="estate_heading">Электроточки</div>
-                          <div class="zone_estate zone_el zone_default"><i class="fas fa-bolt"></i></div>
-                          <div class="zone_estate zone_el zone_default"><i class="fas fa-bolt"></i></div>
-                          <div class="zone_estate zone_el zone_default"><i class="fas fa-bolt"></i></div>
-                          <div class="zone_estate zone_el zone_default"><i class="fas fa-bolt"></i></div>
-                          <div class="zone_estate zone_el zone_default"><i class="fas fa-bolt"></i></div>
-                          <div class="zone_estate zone_el zone_default"><i class="fas fa-bolt"></i></div>
+                          <div class="zone_estate zone_el zone_default"><i class="fa fa-bolt"></i></div>
+                          <div class="zone_estate zone_el zone_default"><i class="fa fa-bolt"></i></div>
+                          <div class="zone_estate zone_el zone_default"><i class="fa fa-bolt"></i></div>
+                          <div class="zone_estate zone_el zone_default"><i class="fa fa-bolt"></i></div>
+                          <div class="zone_estate zone_el zone_default"><i class="fa fa-bolt"></i></div>
+                          <div class="zone_estate zone_el zone_default"><i class="fa fa-bolt"></i></div>
                         </div>
                         <div class="estate_corners wow bounceInUp" data-wow-duration="1.4s" data-wow-delay="0.4s">
                           <div class="estate_heading">Углы</div>
