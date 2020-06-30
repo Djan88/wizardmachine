@@ -1843,7 +1843,7 @@ h3.wizard_heading
     color: #8e21c5;
     border: 2px solid #8e21c5;
 }
-.estate_corners, .estate_doors, .estate_wcs
+.estate_corners, .estate_doors, .estate_wcs, .estate_els
 {
   height: 70px;
   position: relative;
