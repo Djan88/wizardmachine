@@ -66,7 +66,7 @@ jQuery(function() {
   }
 
   onEndEstate = function(){
-    jQuery('.wizard_percent').text('100%');
+    jQuery('.estate-percent').text('100%');
 
     // protocolName = localStor
     alertSound.play();
@@ -95,8 +95,1127 @@ jQuery(function() {
 
 
 
+
+
+  estate_3_12 = function(){
+    jQuery('.estate-percent').text('99%');
+    reloadTime = 0;
+    count_animation = 1;
+    console.log('start_estate');
+    jQuery('.zone_corner').css({
+        color: 'transparent',
+        borderColor: 'transparent',
+        opacity: 0.8,
+        borderWidth: '1px',
+        transform: 'rotate(0deg) scale(1.5)',
+        zIndex: '1000'
+    });
+    jQuery('.zone_corner_2').addClass('rot_estate_lovushka').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/plod.png) center center/100% no-repeat',
+    });
+    jQuery('.zone_corner_1').addClass('rot_estate_super').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/x.png) center center/100% no-repeat',
+    });
+
+    phaseOne = setInterval(function(){
+      if (count_animation <= 720){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        } else if (reloadTime == 2) {
+            sound.play();
+        };
+        reloadTime += 1;
+        count_animation += 1;
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone_corner').css({
+            background: '#fff',
+            color: '#19b55f',
+            borderColor: '#19b55f',
+            borderWidth: '2px',
+            opacity: 1,
+            transform: 'rotate(0deg) scale(1)',
+            zIndex: '3'
+        });
+        jQuery('.zone_corner_2').removeClass('rot_estate_lovushka');
+        jQuery('.zone_corner_1').removeClass('rot_estate_super');
+        sound.stop();
+        onEndEstate();
+      }
+    }, 250);
+  }
+  estate_3_11 = function(){
+    jQuery('.estate-percent').text('96%');
+    reloadTime = 0;
+    count_animation = 1;
+    console.log('start_estate');
+    jQuery('.zone_corner').css({
+        color: 'transparent',
+        borderColor: 'transparent',
+        opacity: 0.8,
+        borderWidth: '1px',
+        transform: 'rotate(0deg) scale(1.5)',
+        zIndex: '1000'
+    });
+    jQuery('.zone_corner_1').addClass('rot_estate_lovushka').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/plod.png) center center/100% no-repeat',
+    });
+    jQuery('.zone_corner_2').addClass('rot_estate_super').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/x.png) center center/100% no-repeat',
+    });
+
+    phaseOne = setInterval(function(){
+      if (count_animation <= 720){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        } else if (reloadTime == 2) {
+            sound.play();
+        };
+        reloadTime += 1;
+        count_animation += 1;
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone_corner').css({
+            background: '#fff',
+            color: '#19b55f',
+            borderColor: '#19b55f',
+            borderWidth: '2px',
+            opacity: 1,
+            transform: 'rotate(0deg) scale(1)',
+            zIndex: '3'
+        });
+        jQuery('.zone_corner_1').removeClass('rot_estate_lovushka');
+        jQuery('.zone_corner_2').removeClass('rot_estate_super');
+        sound.stop();
+        if (pausedStatus == true) {
+          localStorage.setItem('paused', 'estate_3_12');
+          endNowEstate();
+        } else {
+          estate_3_12();
+          console.log('continue');
+        } 
+      }
+    }, 250);
+  }  
+  estate_3_10 = function(){
+    jQuery('.estate-percent').text('93%');
+    reloadTime = 0;
+    count_animation = 1;
+    console.log('start_estate');
+    jQuery('.zone_corner').css({
+        color: 'transparent',
+        borderColor: 'transparent',
+        opacity: 0.8,
+        borderWidth: '1px',
+        transform: 'rotate(0deg) scale(1.5)',
+        zIndex: '1000'
+    });
+    jQuery('.zone_corner').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/daemon_adventure.png) center center/100% no-repeat',
+    });
+
+    phaseOne = setInterval(function(){
+      if (count_animation <= 720){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        } else if (reloadTime == 2) {
+            sound.play();
+        };
+        reloadTime += 1;
+        count_animation += 1;
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone_corner').css({
+            background: '#fff',
+            color: '#19b55f',
+            borderColor: '#19b55f',
+            borderWidth: '2px',
+            opacity: 1,
+            transform: 'rotate(0deg) scale(1)',
+            zIndex: '3'
+        });
+        sound.stop();
+        if (pausedStatus == true) {
+          localStorage.setItem('paused', 'estate_3_11');
+          endNowEstate();
+        } else {
+          estate_3_11();
+          console.log('continue');
+        } 
+      }
+    }, 250);
+  }  
+  estate_3_9 = function(){
+    jQuery('.estate-percent').text('90%');
+    reloadTime = 0;
+    count_animation = 1;
+    console.log('start_estate');
+    jQuery('.zone_corner').css({
+        color: 'transparent',
+        borderColor: 'transparent',
+        opacity: 0.8,
+        borderWidth: '1px',
+        transform: 'rotate(0deg) scale(1.5)',
+        zIndex: '1000'
+    });
+    jQuery('.zone_corner').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/povregdenie_demona.png) center center/100% no-repeat',
+    });
+
+    phaseOne = setInterval(function(){
+      if (count_animation <= 720){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        } else if (reloadTime == 2) {
+            sound.play();
+        };
+        reloadTime += 1;
+        count_animation += 1;
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone_corner').css({
+            background: '#fff',
+            color: '#19b55f',
+            borderColor: '#19b55f',
+            borderWidth: '2px',
+            opacity: 1,
+            transform: 'rotate(0deg) scale(1)',
+            zIndex: '3'
+        });
+        sound.stop();
+        if (pausedStatus == true) {
+          localStorage.setItem('paused', 'estate_3_10');
+          endNowEstate();
+        } else {
+          estate_3_10();
+          console.log('continue');
+        } 
+      }
+    }, 250);
+  }  
+  estate_3_8 = function(){
+    jQuery('.estate-percent').text('87%');
+    reloadTime = 0;
+    count_animation = 1;
+    console.log('start_estate');
+    jQuery('.zone_corner').css({
+        color: 'transparent',
+        borderColor: 'transparent',
+        opacity: 0.8,
+        borderWidth: '1px',
+        transform: 'rotate(0deg) scale(1.5)',
+        zIndex: '1000'
+    });
+    jQuery('.zone_corner').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/daemon_adventure.png) center center/100% no-repeat',
+    });
+
+    phaseOne = setInterval(function(){
+      if (count_animation <= 720){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        } else if (reloadTime == 2) {
+            sound.play();
+        };
+        reloadTime += 1;
+        count_animation += 1;
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone_corner').css({
+            background: '#fff',
+            color: '#19b55f',
+            borderColor: '#19b55f',
+            borderWidth: '2px',
+            opacity: 1,
+            transform: 'rotate(0deg) scale(1)',
+            zIndex: '3'
+        });
+        sound.stop();
+        if (pausedStatus == true) {
+          localStorage.setItem('paused', 'estate_3_9');
+          endNowEstate();
+        } else {
+          estate_3_9();
+          console.log('continue');
+        } 
+      }
+    }, 250);
+  }  
+  estate_3_7 = function(){
+    jQuery('.estate-percent').text('84%');
+    reloadTime = 0;
+    count_animation = 1;
+    console.log('start_estate');
+    jQuery('.zone_corner').css({
+        color: 'transparent',
+        borderColor: 'transparent',
+        opacity: 0.8,
+        borderWidth: '1px',
+        transform: 'rotate(0deg) scale(1.5)',
+        zIndex: '1000'
+    });
+    jQuery('.zone_corner').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/povregdenie_demona.png) center center/100% no-repeat',
+    });
+
+    phaseOne = setInterval(function(){
+      if (count_animation <= 720){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        } else if (reloadTime == 2) {
+            sound.play();
+        };
+        reloadTime += 1;
+        count_animation += 1;
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone_corner').css({
+            background: '#fff',
+            color: '#19b55f',
+            borderColor: '#19b55f',
+            borderWidth: '2px',
+            opacity: 1,
+            transform: 'rotate(0deg) scale(1)',
+            zIndex: '3'
+        });
+        sound.stop();
+        if (pausedStatus == true) {
+          localStorage.setItem('paused', 'estate_3_8');
+          endNowEstate();
+        } else {
+          estate_3_8();
+          console.log('continue');
+        } 
+      }
+    }, 250);
+  }  
+  estate_3_6 = function(){
+    jQuery('.estate-percent').text('81%');
+    reloadTime = 0;
+    count_animation = 1;
+    console.log('start_estate');
+    jQuery('.zone_corner').css({
+        color: 'transparent',
+        borderColor: 'transparent',
+        opacity: 0.8,
+        borderWidth: '1px',
+        transform: 'rotate(0deg) scale(1.5)',
+        zIndex: '1000'
+    });
+    jQuery('.zone_corner').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/daemon_adventure.png) center center/100% no-repeat',
+    });
+
+    phaseOne = setInterval(function(){
+      if (count_animation <= 720){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        } else if (reloadTime == 2) {
+            sound.play();
+        };
+        reloadTime += 1;
+        count_animation += 1;
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone_corner').css({
+            background: '#fff',
+            color: '#19b55f',
+            borderColor: '#19b55f',
+            borderWidth: '2px',
+            opacity: 1,
+            transform: 'rotate(0deg) scale(1)',
+            zIndex: '3'
+        });
+        sound.stop();
+        if (pausedStatus == true) {
+          localStorage.setItem('paused', 'estate_3_7');
+          endNowEstate();
+        } else {
+          estate_3_7();
+          console.log('continue');
+        } 
+      }
+    }, 250);
+  }  
+  estate_3_5 = function(){
+    jQuery('.estate-percent').text('78%');
+    reloadTime = 0;
+    count_animation = 1;
+    console.log('start_estate');
+    jQuery('.zone_corner').css({
+        color: 'transparent',
+        borderColor: 'transparent',
+        opacity: 0.8,
+        borderWidth: '1px',
+        transform: 'rotate(0deg) scale(1.5)',
+        zIndex: '1000'
+    });
+    jQuery('.zone_corner').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/povregdenie_demona.png) center center/100% no-repeat',
+    });
+
+    phaseOne = setInterval(function(){
+      if (count_animation <= 720){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        } else if (reloadTime == 2) {
+            sound.play();
+        };
+        reloadTime += 1;
+        count_animation += 1;
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone_corner').css({
+            background: '#fff',
+            color: '#19b55f',
+            borderColor: '#19b55f',
+            borderWidth: '2px',
+            opacity: 1,
+            transform: 'rotate(0deg) scale(1)',
+            zIndex: '3'
+        });
+        sound.stop();
+        if (pausedStatus == true) {
+          localStorage.setItem('paused', 'estate_3_6');
+          endNowEstate();
+        } else {
+          estate_3_6();
+          console.log('continue');
+        } 
+      }
+    }, 250);
+  }  
+  estate_3_4 = function(){
+    jQuery('.estate-percent').text('75%');
+    reloadTime = 0;
+    count_animation = 1;
+    console.log('start_estate');
+    jQuery('.zone_corner').css({
+        color: 'transparent',
+        borderColor: 'transparent',
+        opacity: 0.8,
+        borderWidth: '1px',
+        transform: 'rotate(0deg) scale(1.5)',
+        zIndex: '1000'
+    });
+    jQuery('.zone_corner').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/daemon_adventure.png) center center/100% no-repeat',
+    });
+
+    phaseOne = setInterval(function(){
+      if (count_animation <= 720){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        } else if (reloadTime == 2) {
+            sound.play();
+        };
+        reloadTime += 1;
+        count_animation += 1;
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone_corner').css({
+            background: '#fff',
+            color: '#19b55f',
+            borderColor: '#19b55f',
+            borderWidth: '2px',
+            opacity: 1,
+            transform: 'rotate(0deg) scale(1)',
+            zIndex: '3'
+        });
+        sound.stop();
+        if (pausedStatus == true) {
+          localStorage.setItem('paused', 'estate_3_5');
+          endNowEstate();
+        } else {
+          estate_3_5();
+          console.log('continue');
+        } 
+      }
+    }, 250);
+  }
+  estate_3_3 = function(){
+    jQuery('.estate-percent').text('72%');
+    reloadTime = 0;
+    count_animation = 1;
+    console.log('start_estate');
+    jQuery('.zone_corner').css({
+        color: 'transparent',
+        borderColor: 'transparent',
+        opacity: 0.8,
+        borderWidth: '1px',
+        transform: 'rotate(0deg) scale(1.5)',
+        zIndex: '1000'
+    });
+    jQuery('.zone_corner').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/povregdenie_demona.png) center center/100% no-repeat',
+    });
+
+    phaseOne = setInterval(function(){
+      if (count_animation <= 720){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        } else if (reloadTime == 2) {
+            sound.play();
+        };
+        reloadTime += 1;
+        count_animation += 1;
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone_corner').css({
+            background: '#fff',
+            color: '#19b55f',
+            borderColor: '#19b55f',
+            borderWidth: '2px',
+            opacity: 1,
+            transform: 'rotate(0deg) scale(1)',
+            zIndex: '3'
+        });
+        sound.stop();
+        if (pausedStatus == true) {
+          localStorage.setItem('paused', 'estate_3_4');
+          endNowEstate();
+        } else {
+          estate_3_4();
+          console.log('continue');
+        } 
+      }
+    }, 250);
+  }
+  estate_3_2 = function(){
+    jQuery('.estate-percent').text('69%');
+    reloadTime = 0;
+    count_animation = 1;
+    console.log('start_estate');
+    jQuery('.zone_corner').css({
+        color: 'transparent',
+        borderColor: 'transparent',
+        opacity: 0.8,
+        borderWidth: '1px',
+        transform: 'rotate(0deg) scale(1.5)',
+        zIndex: '1000'
+    });
+    jQuery('.zone_corner_2').addClass('rot_estate_lovushka').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/plod.png) center center/100% no-repeat',
+    });
+    jQuery('.zone_corner_1').addClass('rot_estate_super').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/x.png) center center/100% no-repeat',
+    });
+
+    phaseOne = setInterval(function(){
+      if (count_animation <= 720){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        } else if (reloadTime == 2) {
+            sound.play();
+        };
+        reloadTime += 1;
+        count_animation += 1;
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone_corner').css({
+            background: '#fff',
+            color: '#19b55f',
+            borderColor: '#19b55f',
+            borderWidth: '2px',
+            opacity: 1,
+            transform: 'rotate(0deg) scale(1)',
+            zIndex: '3'
+        });
+        jQuery('.zone_corner_2').removeClass('rot_estate_lovushka');
+        jQuery('.zone_corner_1').removeClass('rot_estate_super');
+        sound.stop();
+        if (pausedStatus == true) {
+          localStorage.setItem('paused', 'estate_3_3');
+          endNowEstate();
+        } else {
+          estate_3_3();
+          console.log('continue');
+        } 
+      }
+    }, 250);
+  }
+  estate_3_1 = function(){
+    jQuery('.estate-percent').text('66%');
+    reloadTime = 0;
+    count_animation = 1;
+    console.log('start_estate');
+    jQuery('.zone_corner').css({
+        color: 'transparent',
+        borderColor: 'transparent',
+        opacity: 0.8,
+        borderWidth: '1px',
+        transform: 'rotate(0deg) scale(1.5)',
+        zIndex: '1000'
+    });
+    jQuery('.zone_corner_1').addClass('rot_estate_lovushka').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/plod.png) center center/100% no-repeat',
+    });
+    jQuery('.zone_corner_2').addClass('rot_estate_super').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/x.png) center center/100% no-repeat',
+    });
+
+    phaseOne = setInterval(function(){
+      if (count_animation <= 720){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        } else if (reloadTime == 2) {
+            sound.play();
+        };
+        reloadTime += 1;
+        count_animation += 1;
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone_corner').css({
+            background: '#fff',
+            color: '#19b55f',
+            borderColor: '#19b55f',
+            borderWidth: '2px',
+            opacity: 1,
+            transform: 'rotate(0deg) scale(1)',
+            zIndex: '3'
+        });
+        jQuery('.zone_corner_1').removeClass('rot_estate_lovushka');
+        jQuery('.zone_corner_2').removeClass('rot_estate_super');
+        sound.stop();
+        if (pausedStatus == true) {
+          localStorage.setItem('paused', 'estate_3_2');
+          endNowEstate();
+        } else {
+          estate_3_2();
+          console.log('continue');
+        } 
+      }
+    }, 250);
+  }  
+
+  estate_2_10 = function(){
+    jQuery('.estate-percent').text('63%');
+    reloadTime = 0;
+    count_animation = 1;
+    console.log('start_estate');
+    jQuery('.zone_door').css({
+        color: 'transparent',
+        borderColor: 'transparent',
+        opacity: 0.8,
+        borderWidth: '1px',
+        transform: 'rotate(0deg) scale(1.5)',
+        zIndex: '1000'
+    });
+    jQuery('.zone_door').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/plod.png) center center/100% no-repeat',
+    });
+
+    phaseOne = setInterval(function(){
+      if (count_animation <= 720){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        } else if (reloadTime == 2) {
+            sound.play();
+        };
+        reloadTime += 1;
+        count_animation += 1;
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone_door').css({
+            background: '#fff',
+            color: '#19b55f',
+            borderColor: '#19b55f',
+            borderWidth: '2px',
+            opacity: 1,
+            transform: 'rotate(0deg) scale(1)',
+            zIndex: '3'
+        });
+        sound.stop();
+        if (pausedStatus == true) {
+          localStorage.setItem('paused', 'estate_3_1');
+          endNowEstate();
+        } else {
+          estate_3_1();
+          console.log('continue');
+        } 
+      }
+    }, 250);
+  }  
+
+  estate_2_9 = function(){
+    jQuery('.estate-percent').text('60%');
+    reloadTime = 0;
+    count_animation = 1;
+    console.log('start_estate');
+    jQuery('.zone_door').css({
+        color: 'transparent',
+        borderColor: 'transparent',
+        opacity: 0.8,
+        borderWidth: '1px',
+        transform: 'rotate(0deg) scale(1.5)',
+        zIndex: '1000'
+    });
+    jQuery('.zone_door').addClass('rot_estate_lovushka').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat',
+    });
+
+    phaseOne = setInterval(function(){
+      if (count_animation <= 720){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        } else if (reloadTime == 2) {
+            sound.play();
+        };
+        reloadTime += 1;
+        count_animation += 1;
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone_door').css({
+            background: '#fff',
+            color: '#19b55f',
+            borderColor: '#19b55f',
+            borderWidth: '2px',
+            opacity: 1,
+            transform: 'rotate(0deg) scale(1)',
+            zIndex: '3'
+        });
+        jQuery('.zone_door').removeClass('rot_estate_lovushka');
+        sound.stop();
+        if (pausedStatus == true) {
+          localStorage.setItem('paused', 'estate_2_10');
+          endNowEstate();
+        } else {
+          estate_2_10();
+          console.log('continue');
+        } 
+      }
+    }, 250);
+  }  
+  estate_2_8 = function(){
+    jQuery('.estate-percent').text('57%');
+    reloadTime = 0;
+    count_animation = 1;
+    console.log('start_estate');
+    jQuery('.zone_door').css({
+        color: 'transparent',
+        borderColor: 'transparent',
+        opacity: 0.8,
+        borderWidth: '1px',
+        transform: 'rotate(0deg) scale(1.5)',
+        zIndex: '1000'
+    });
+    jQuery('.zone_door').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/daemon_adventure.png) center center/100% no-repeat',
+    });
+
+    phaseOne = setInterval(function(){
+      if (count_animation <= 720){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        } else if (reloadTime == 2) {
+            sound.play();
+        };
+        reloadTime += 1;
+        count_animation += 1;
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone_door').css({
+            background: '#fff',
+            color: '#19b55f',
+            borderColor: '#19b55f',
+            borderWidth: '2px',
+            opacity: 1,
+            transform: 'rotate(0deg) scale(1)',
+            zIndex: '3'
+        });
+        sound.stop();
+        if (pausedStatus == true) {
+          localStorage.setItem('paused', 'estate_2_9');
+          endNowEstate();
+        } else {
+          estate_2_9();
+          console.log('continue');
+        } 
+      }
+    }, 250);
+  }  
+  estate_2_7 = function(){
+    jQuery('.estate-percent').text('54%');
+    reloadTime = 0;
+    count_animation = 1;
+    console.log('start_estate');
+    jQuery('.zone_door').css({
+        color: 'transparent',
+        borderColor: 'transparent',
+        opacity: 0.8,
+        borderWidth: '1px',
+        transform: 'rotate(0deg) scale(1.5)',
+        zIndex: '1000'
+    });
+    jQuery('.zone_door').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/povregdenie_demona.png) center center/100% no-repeat',
+    });
+
+    phaseOne = setInterval(function(){
+      if (count_animation <= 720){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        } else if (reloadTime == 2) {
+            sound.play();
+        };
+        reloadTime += 1;
+        count_animation += 1;
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone_door').css({
+            background: '#fff',
+            color: '#19b55f',
+            borderColor: '#19b55f',
+            borderWidth: '2px',
+            opacity: 1,
+            transform: 'rotate(0deg) scale(1)',
+            zIndex: '3'
+        });
+        sound.stop();
+        if (pausedStatus == true) {
+          localStorage.setItem('paused', 'estate_2_8');
+          endNowEstate();
+        } else {
+          estate_2_8();
+          console.log('continue');
+        } 
+      }
+    }, 250);
+  }  
+  estate_2_6 = function(){
+    jQuery('.estate-percent').text('51%');
+    reloadTime = 0;
+    count_animation = 1;
+    console.log('start_estate');
+    jQuery('.zone_door').css({
+        color: 'transparent',
+        borderColor: 'transparent',
+        opacity: 0.8,
+        borderWidth: '1px',
+        transform: 'rotate(0deg) scale(1.5)',
+        zIndex: '1000'
+    });
+    jQuery('.zone_door').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/daemon_adventure.png) center center/100% no-repeat',
+    });
+
+    phaseOne = setInterval(function(){
+      if (count_animation <= 720){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        } else if (reloadTime == 2) {
+            sound.play();
+        };
+        reloadTime += 1;
+        count_animation += 1;
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone_door').css({
+            background: '#fff',
+            color: '#19b55f',
+            borderColor: '#19b55f',
+            borderWidth: '2px',
+            opacity: 1,
+            transform: 'rotate(0deg) scale(1)',
+            zIndex: '3'
+        });
+        sound.stop();
+        if (pausedStatus == true) {
+          localStorage.setItem('paused', 'estate_2_7');
+          endNowEstate();
+        } else {
+          estate_2_7();
+          console.log('continue');
+        } 
+      }
+    }, 250);
+  }  
+  estate_2_5 = function(){
+    jQuery('.estate-percent').text('48%');
+    reloadTime = 0;
+    count_animation = 1;
+    console.log('start_estate');
+    jQuery('.zone_door').css({
+        color: 'transparent',
+        borderColor: 'transparent',
+        opacity: 0.8,
+        borderWidth: '1px',
+        transform: 'rotate(0deg) scale(1.5)',
+        zIndex: '1000'
+    });
+    jQuery('.zone_door').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/povregdenie_demona.png) center center/100% no-repeat',
+    });
+
+    phaseOne = setInterval(function(){
+      if (count_animation <= 720){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        } else if (reloadTime == 2) {
+            sound.play();
+        };
+        reloadTime += 1;
+        count_animation += 1;
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone_door').css({
+            background: '#fff',
+            color: '#19b55f',
+            borderColor: '#19b55f',
+            borderWidth: '2px',
+            opacity: 1,
+            transform: 'rotate(0deg) scale(1)',
+            zIndex: '3'
+        });
+        sound.stop();
+        if (pausedStatus == true) {
+          localStorage.setItem('paused', 'estate_2_6');
+          endNowEstate();
+        } else {
+          estate_2_6();
+          console.log('continue');
+        } 
+      }
+    }, 250);
+  }  
+  estate_2_4 = function(){
+    jQuery('.estate-percent').text('45%');
+    reloadTime = 0;
+    count_animation = 1;
+    console.log('start_estate');
+    jQuery('.zone_door').css({
+        color: 'transparent',
+        borderColor: 'transparent',
+        opacity: 0.8,
+        borderWidth: '1px',
+        transform: 'rotate(0deg) scale(1.5)',
+        zIndex: '1000'
+    });
+    jQuery('.zone_door').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/daemon_adventure.png) center center/100% no-repeat',
+    });
+
+    phaseOne = setInterval(function(){
+      if (count_animation <= 720){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        } else if (reloadTime == 2) {
+            sound.play();
+        };
+        reloadTime += 1;
+        count_animation += 1;
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone_door').css({
+            background: '#fff',
+            color: '#19b55f',
+            borderColor: '#19b55f',
+            borderWidth: '2px',
+            opacity: 1,
+            transform: 'rotate(0deg) scale(1)',
+            zIndex: '3'
+        });
+        sound.stop();
+        if (pausedStatus == true) {
+          localStorage.setItem('paused', 'estate_2_5');
+          endNowEstate();
+        } else {
+          estate_2_5();
+          console.log('continue');
+        } 
+      }
+    }, 250);
+  }  
+  estate_2_3 = function(){
+    jQuery('.estate-percent').text('42%');
+    reloadTime = 0;
+    count_animation = 1;
+    console.log('start_estate');
+    jQuery('.zone_door').css({
+        color: 'transparent',
+        borderColor: 'transparent',
+        opacity: 0.8,
+        borderWidth: '1px',
+        transform: 'rotate(0deg) scale(1.5)',
+        zIndex: '1000'
+    });
+    jQuery('.zone_door').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/povregdenie_demona.png) center center/100% no-repeat',
+    });
+
+    phaseOne = setInterval(function(){
+      if (count_animation <= 720){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        } else if (reloadTime == 2) {
+            sound.play();
+        };
+        reloadTime += 1;
+        count_animation += 1;
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone_door').css({
+            background: '#fff',
+            color: '#19b55f',
+            borderColor: '#19b55f',
+            borderWidth: '2px',
+            opacity: 1,
+            transform: 'rotate(0deg) scale(1)',
+            zIndex: '3'
+        });
+        sound.stop();
+        if (pausedStatus == true) {
+          localStorage.setItem('paused', 'estate_2_4');
+          endNowEstate();
+        } else {
+          estate_2_4();
+          console.log('continue');
+        } 
+      }
+    }, 250);
+  }  
+  estate_2_2 = function(){
+    jQuery('.estate-percent').text('39%');
+    reloadTime = 0;
+    count_animation = 1;
+    console.log('start_estate');
+    jQuery('.zone_door').css({
+        color: 'transparent',
+        borderColor: 'transparent',
+        opacity: 0.8,
+        borderWidth: '1px',
+        transform: 'rotate(0deg) scale(1.5)',
+        zIndex: '1000'
+    });
+    jQuery('.zone_door').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/daemon_adventure.png) center center/100% no-repeat',
+    });
+
+    phaseOne = setInterval(function(){
+      if (count_animation <= 720){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        } else if (reloadTime == 2) {
+            sound.play();
+        };
+        reloadTime += 1;
+        count_animation += 1;
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone_door').css({
+            background: '#fff',
+            color: '#19b55f',
+            borderColor: '#19b55f',
+            borderWidth: '2px',
+            opacity: 1,
+            transform: 'rotate(0deg) scale(1)',
+            zIndex: '3'
+        });
+        sound.stop();
+        if (pausedStatus == true) {
+          localStorage.setItem('paused', 'estate_2_3');
+          endNowEstate();
+        } else {
+          estate_2_3();
+          console.log('continue');
+        } 
+      }
+    }, 250);
+  }
+  estate_2_1 = function(){
+    jQuery('.estate-percent').text('36%');
+    reloadTime = 0;
+    count_animation = 1;
+    console.log('start_estate');
+    jQuery('.zone_door').css({
+        color: 'transparent',
+        borderColor: 'transparent',
+        opacity: 0.8,
+        borderWidth: '1px',
+        transform: 'rotate(0deg) scale(1.5)',
+        zIndex: '1000'
+    });
+    jQuery('.zone_door').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/povregdenie_demona.png) center center/100% no-repeat',
+    });
+
+    phaseOne = setInterval(function(){
+      if (count_animation <= 720){
+        if (reloadTime == 0){                                                                       //1
+            sound.stop();
+            reloadSound.play();
+        } else if (reloadTime == 2) {
+            sound.play();
+        };
+        reloadTime += 1;
+        count_animation += 1;
+      } else {
+        clearInterval(phaseOne);
+        count_animation = 1;
+        jQuery('.zone_door').css({
+            background: '#fff',
+            color: '#19b55f',
+            borderColor: '#19b55f',
+            borderWidth: '2px',
+            opacity: 1,
+            transform: 'rotate(0deg) scale(1)',
+            zIndex: '3'
+        });
+        sound.stop();
+        if (pausedStatus == true) {
+          localStorage.setItem('paused', 'estate_2_2');
+          endNowEstate();
+        } else {
+          estate_2_2();
+          console.log('continue');
+        } 
+      }
+    }, 250);
+  }
   estate_1_12 = function(){
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.estate-percent').text('33%');
     reloadTime = 0;
     count_animation = 1;
     console.log('start_estate');
@@ -130,16 +1249,17 @@ jQuery(function() {
             color: '#19b55f',
             borderColor: '#19b55f',
             borderWidth: '2px',
+            opacity: 1,
             transform: 'rotate(0deg) scale(1)',
             zIndex: '3'
         });
         jQuery('.zone_wc').removeClass('rot_estate_lovushka');
         sound.stop();
         if (pausedStatus == true) {
-          localStorage.setItem('paused', 'estate_1_13');
+          localStorage.setItem('paused', 'estate_2_1');
           endNowEstate();
         } else {
-          estate_1_13();
+          estate_2_1();
           console.log('continue');
         } 
       }
@@ -147,7 +1267,7 @@ jQuery(function() {
   }
 
    estate_1_11 = function(){
-     jQuery('.wizard_percent').text('0%');
+     jQuery('.estate-percent').text('30%');
      reloadTime = 0;
      count_animation = 1;
      console.log('start_estate');
@@ -181,6 +1301,7 @@ jQuery(function() {
              color: '#19b55f',
              borderColor: '#19b55f',
              borderWidth: '2px',
+             opacity: 1,
              transform: 'rotate(0deg) scale(1)',
              zIndex: '3'
          });
@@ -196,7 +1317,7 @@ jQuery(function() {
      }, 250);
    }
    estate_1_10 = function(){
-     jQuery('.wizard_percent').text('0%');
+     jQuery('.estate-percent').text('27%');
      reloadTime = 0;
      count_animation = 1;
      console.log('start_estate');
@@ -230,6 +1351,7 @@ jQuery(function() {
              color: '#19b55f',
              borderColor: '#19b55f',
              borderWidth: '2px',
+
              transform: 'rotate(0deg) scale(1)',
              zIndex: '3'
          });
@@ -245,7 +1367,7 @@ jQuery(function() {
      }, 250);
    }
   estate_1_9 = function(){
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.estate-percent').text('24%');
     reloadTime = 0;
     count_animation = 1;
     console.log('start_estate');
@@ -279,6 +1401,7 @@ jQuery(function() {
             color: '#19b55f',
             borderColor: '#19b55f',
             borderWidth: '2px',
+            opacity: 1,
             transform: 'rotate(0deg) scale(1)',
             zIndex: '3'
         });
@@ -294,7 +1417,7 @@ jQuery(function() {
     }, 250);
   }
   estate_1_8 = function(){
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.estate-percent').text('21%');
     reloadTime = 0;
     count_animation = 1;
     console.log('start_estate');
@@ -328,6 +1451,7 @@ jQuery(function() {
             color: '#19b55f',
             borderColor: '#19b55f',
             borderWidth: '2px',
+            opacity: 1,
             transform: 'rotate(0deg) scale(1)',
             zIndex: '3'
         });
@@ -344,7 +1468,7 @@ jQuery(function() {
   }
 
   estate_1_7 = function(){
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.estate-percent').text('18%');
     reloadTime = 0;
     count_animation = 1;
     console.log('start_estate');
@@ -378,6 +1502,7 @@ jQuery(function() {
             color: '#19b55f',
             borderColor: '#19b55f',
             borderWidth: '2px',
+            opacity: 1,
             transform: 'rotate(0deg) scale(1)',
             zIndex: '3'
         });
@@ -395,7 +1520,7 @@ jQuery(function() {
   }
 
   estate_1_6 = function(){
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.estate-percent').text('15%');
     reloadTime = 0;
     count_animation = 1;
     console.log('start_estate');
@@ -428,6 +1553,7 @@ jQuery(function() {
             background: '#fff',
             color: '#19b55f',
             borderColor: '#19b55f',
+            opacity: 1,
             borderWidth: '2px',
             transform: 'rotate(0deg) scale(1)',
             zIndex: '3'
@@ -444,7 +1570,7 @@ jQuery(function() {
     }, 250);
   }
   estate_1_5 = function(){
-    jQuery('.wizard_percent').text('0%');
+    jQuery('.estate-percent').text('12%');
     reloadTime = 0;
     count_animation = 1;
     console.log('start_estate');
@@ -478,6 +1604,7 @@ jQuery(function() {
             color: '#19b55f',
             borderColor: '#19b55f',
             borderWidth: '2px',
+            opacity: 1,
             transform: 'rotate(0deg) scale(1)',
             zIndex: '3'
         });
@@ -493,7 +1620,7 @@ jQuery(function() {
     }, 250);
   }
  estate_1_4 = function(){
-   jQuery('.wizard_percent').text('0%');
+   jQuery('.estate-percent').text('9%');
    reloadTime = 0;
    count_animation = 1;
    console.log('start_estate');
@@ -527,6 +1654,7 @@ jQuery(function() {
            color: '#19b55f',
            borderColor: '#19b55f',
            borderWidth: '2px',
+           opacity: 1,
            transform: 'rotate(0deg) scale(1)',
            zIndex: '3'
        });
@@ -542,7 +1670,7 @@ jQuery(function() {
    }, 250);
  }
  estate_1_3 = function(){
-   jQuery('.wizard_percent').text('0%');
+   jQuery('.estate-percent').text('6%');
    reloadTime = 0;
    count_animation = 1;
    console.log('start_estate');
@@ -576,6 +1704,7 @@ jQuery(function() {
            color: '#19b55f',
            borderColor: '#19b55f',
            borderWidth: '2px',
+           opacity: 1,
            transform: 'rotate(0deg) scale(1)',
            zIndex: '3'
        });
@@ -592,7 +1721,7 @@ jQuery(function() {
  }
 
 estate_1_2 = function(){
-  jQuery('.wizard_percent').text('0%');
+  jQuery('.estate-percent').text('3%');
   reloadTime = 0;
   count_animation = 1;
   console.log('start_estate');
@@ -626,6 +1755,7 @@ estate_1_2 = function(){
           color: '#19b55f',
           borderColor: '#19b55f',
           borderWidth: '2px',
+          opacity: 1,
           transform: 'rotate(0deg) scale(1)',
           zIndex: '3'
       });
@@ -643,7 +1773,7 @@ estate_1_2 = function(){
 }
 
 estate_1_1 = function(){
-  jQuery('.wizard_percent').text('0%');
+  jQuery('.estate-percent').text('0%');
   reloadTime = 0;
   count_animation = 1;
   console.log('start_estate');
@@ -677,6 +1807,7 @@ estate_1_1 = function(){
           color: '#19b55f',
           borderColor: '#19b55f',
           borderWidth: '2px',
+          opacity: 1,
           transform: 'rotate(0deg) scale(1)',
           zIndex: '3'
       });

@@ -2344,6 +2344,10 @@ button.wizard_starter_alt.btn.btn-success
   font-size: 20px;
   margin-top: 10px;
 }
+.transparent
+{
+  opacity: 0;
+}
 
 
 /*Animation*/
