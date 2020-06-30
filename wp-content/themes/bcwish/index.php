@@ -345,79 +345,79 @@
                         </div>
                         <div class="estate_corners wow bounceInUp" data-wow-duration="1.4s" data-wow-delay="0.4s">
                           <div class="estate_heading" style="color: #1bb1dc;">Углы</div>
-                          <div class="zone_estate zone_corner zone_corner_1 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_2 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_1 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_2 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_1 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_2 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_1 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_2 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_1 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_2 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_1 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_2 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_1 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_2 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_1 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_2 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_1 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_2 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_1 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_2 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_1 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_2 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_1 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_2 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_1 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_2 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_1 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_2 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_1 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_2 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_1 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_2 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_1 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_2 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_1 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_2 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_1 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_2 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_1 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_2 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_1 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_2 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_1 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_2 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_1 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_2 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_1 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_2 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_1 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_2 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_1 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_2 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_1 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_2 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_1 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_2 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_1 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_2 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_1 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_2 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_1 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_2 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_1 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_2 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_1 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_2 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_1 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_2 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_1 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_2 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_1 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_2 zone_default"><i class="fa fa-arrows-alt"></i></div>
-                          <div class="zone_estate zone_corner zone_corner_1 zone_default"><i class="fa fa-arrows-alt"></i></div>
+                          <div class="zone_estate zone_corner zone_corner_1 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_2 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_1 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_2 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_1 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_2 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_1 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_2 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_1 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_2 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_1 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_2 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_1 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_2 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_1 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_2 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_1 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_2 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_1 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_2 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_1 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_2 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_1 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_2 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_1 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_2 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_1 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_2 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_1 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_2 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_1 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_2 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_1 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_2 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_1 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_2 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_1 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_2 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_1 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_2 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_1 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_2 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_1 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_2 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_1 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_2 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_1 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_2 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_1 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_2 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_1 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_2 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_1 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_2 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_1 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_2 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_1 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_2 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_1 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_2 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_1 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_2 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_1 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_2 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_1 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_2 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_1 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_2 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_1 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_2 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_1 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_2 zone_default">У</div>
+                          <div class="zone_estate zone_corner zone_corner_1 zone_default">У</div>
                         </div>
                         <div class="estate_doors wow bounceInUp" data-wow-duration="1.4s" data-wow-delay="0.6s">
                           <div class="estate_heading" style="color: #b5a919;">Двери</div>
