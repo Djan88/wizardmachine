@@ -1823,20 +1823,25 @@ h3.wizard_heading
   top: -110px;
   left: 14px;
 }
-.zone_corner 
+.zone_corner
 {
     color: #1bb1dc;
     border: 2px solid #1bb1dc;
 }
-.zone_door 
+.zone_door
 {
     color: #b5a919;
     border: 2px solid #b5a919;
 }
-.zone_wc 
+.zone_wc
 {
     color: #19b55f;
     border: 2px solid #19b55f;
+}
+.zone_el
+{
+    color: #8e21c5;
+    border: 2px solid #8e21c5;
 }
 .estate_corners, .estate_doors, .estate_wcs
 {
@@ -1886,7 +1891,7 @@ h3.wizard_heading
   text-align: center;
   min-height: 100vh;
   background: #eee;
-  padding-top: 100px;
+  padding-top: 30px;
 }
 .wizard_main_screen 
 {
@@ -2824,15 +2829,15 @@ button.wizard_starter_alt.btn.btn-success
   }
 }
 .rot_estate_lovushka {
-  animation: 180s linear 0s normal none infinite running rot_estate_lovushka;
-  -webkit-animation: 180s linear 0s normal none infinite running rot_estate_lovushka;
+  animation: 120s linear 0s normal none infinite running rot_estate_lovushka;
+  -webkit-animation: 120s linear 0s normal none infinite running rot_estate_lovushka;
 }
 @keyframes rot_estate_lovushka {
   0% {
     transform: rotate(0deg) scale(1.5);
   }
   100% {
-    transform: rotate(-720deg) scale(1.5);
+    transform: rotate(-480deg) scale(1.5);
   }
 }
 @-webkit-keyframes rot_estate_lovushka {
@@ -2840,19 +2845,19 @@ button.wizard_starter_alt.btn.btn-success
     transform: rotate(0deg) scale(1.5);
   }
   100% {
-    transform: rotate(-720deg) scale(1.5);
+    transform: rotate(-480deg) scale(1.5);
   }
 }
 .rot_estate_super {
-  animation: 180s linear 0s normal none infinite running rot_estate_super;
-  -webkit-animation: 180s linear 0s normal none infinite running rot_estate_super;
+  animation: 120s linear 0s normal none infinite running rot_estate_super;
+  -webkit-animation: 120s linear 0s normal none infinite running rot_estate_super;
 }
 @keyframes rot_estate_super {
   0% {
     transform: rotate(0deg) scale(1.5);
   }
   100% {
-    transform: rotate(720deg) scale(1.5);
+    transform: rotate(480deg) scale(1.5);
   }
 }
 @-webkit-keyframes rot_estate_super {
@@ -2860,7 +2865,7 @@ button.wizard_starter_alt.btn.btn-success
     transform: rotate(0deg) scale(1.5);
   }
   100% {
-    transform: rotate(720deg) scale(1.5);
+    transform: rotate(480deg) scale(1.5);
   }
 }
 

@@ -118,7 +118,7 @@ jQuery(function() {
     });
 
     phaseOne = setInterval(function(){
-      if (count_animation <= 720){
+      if (count_animation <= 480){
         if (reloadTime == 0){                                                                       //1
             sound.stop();
             reloadSound.play();
@@ -132,8 +132,8 @@ jQuery(function() {
         count_animation = 1;
         jQuery('.zone_corner').css({
             background: '#fff',
-            color: '#19b55f',
-            borderColor: '#19b55f',
+            color: '#1bb1dc',
+            borderColor: '#1bb1dc',
             borderWidth: '2px',
             opacity: 1,
             transform: 'rotate(0deg) scale(1)',
@@ -167,7 +167,7 @@ jQuery(function() {
     });
 
     phaseOne = setInterval(function(){
-      if (count_animation <= 720){
+      if (count_animation <= 480){
         if (reloadTime == 0){                                                                       //1
             sound.stop();
             reloadSound.play();
@@ -181,8 +181,8 @@ jQuery(function() {
         count_animation = 1;
         jQuery('.zone_corner').css({
             background: '#fff',
-            color: '#19b55f',
-            borderColor: '#19b55f',
+            color: '#1bb1dc',
+            borderColor: '#1bb1dc',
             borderWidth: '2px',
             opacity: 1,
             transform: 'rotate(0deg) scale(1)',
@@ -219,7 +219,7 @@ jQuery(function() {
     });
 
     phaseOne = setInterval(function(){
-      if (count_animation <= 720){
+      if (count_animation <= 480){
         if (reloadTime == 0){                                                                       //1
             sound.stop();
             reloadSound.play();
@@ -233,8 +233,8 @@ jQuery(function() {
         count_animation = 1;
         jQuery('.zone_corner').css({
             background: '#fff',
-            color: '#19b55f',
-            borderColor: '#19b55f',
+            color: '#1bb1dc',
+            borderColor: '#1bb1dc',
             borderWidth: '2px',
             opacity: 1,
             transform: 'rotate(0deg) scale(1)',
@@ -269,7 +269,7 @@ jQuery(function() {
     });
 
     phaseOne = setInterval(function(){
-      if (count_animation <= 720){
+      if (count_animation <= 480){
         if (reloadTime == 0){                                                                       //1
             sound.stop();
             reloadSound.play();
@@ -283,8 +283,8 @@ jQuery(function() {
         count_animation = 1;
         jQuery('.zone_corner').css({
             background: '#fff',
-            color: '#19b55f',
-            borderColor: '#19b55f',
+            color: '#1bb1dc',
+            borderColor: '#1bb1dc',
             borderWidth: '2px',
             opacity: 1,
             transform: 'rotate(0deg) scale(1)',
@@ -319,7 +319,7 @@ jQuery(function() {
     });
 
     phaseOne = setInterval(function(){
-      if (count_animation <= 720){
+      if (count_animation <= 480){
         if (reloadTime == 0){                                                                       //1
             sound.stop();
             reloadSound.play();
@@ -333,8 +333,8 @@ jQuery(function() {
         count_animation = 1;
         jQuery('.zone_corner').css({
             background: '#fff',
-            color: '#19b55f',
-            borderColor: '#19b55f',
+            color: '#1bb1dc',
+            borderColor: '#1bb1dc',
             borderWidth: '2px',
             opacity: 1,
             transform: 'rotate(0deg) scale(1)',
@@ -369,7 +369,7 @@ jQuery(function() {
     });
 
     phaseOne = setInterval(function(){
-      if (count_animation <= 720){
+      if (count_animation <= 480){
         if (reloadTime == 0){                                                                       //1
             sound.stop();
             reloadSound.play();
@@ -383,8 +383,8 @@ jQuery(function() {
         count_animation = 1;
         jQuery('.zone_corner').css({
             background: '#fff',
-            color: '#19b55f',
-            borderColor: '#19b55f',
+            color: '#1bb1dc',
+            borderColor: '#1bb1dc',
             borderWidth: '2px',
             opacity: 1,
             transform: 'rotate(0deg) scale(1)',
@@ -419,7 +419,7 @@ jQuery(function() {
     });
 
     phaseOne = setInterval(function(){
-      if (count_animation <= 720){
+      if (count_animation <= 480){
         if (reloadTime == 0){                                                                       //1
             sound.stop();
             reloadSound.play();
@@ -433,8 +433,8 @@ jQuery(function() {
         count_animation = 1;
         jQuery('.zone_corner').css({
             background: '#fff',
-            color: '#19b55f',
-            borderColor: '#19b55f',
+            color: '#1bb1dc',
+            borderColor: '#1bb1dc',
             borderWidth: '2px',
             opacity: 1,
             transform: 'rotate(0deg) scale(1)',
@@ -469,7 +469,7 @@ jQuery(function() {
     });
 
     phaseOne = setInterval(function(){
-      if (count_animation <= 720){
+      if (count_animation <= 480){
         if (reloadTime == 0){                                                                       //1
             sound.stop();
             reloadSound.play();
@@ -483,8 +483,8 @@ jQuery(function() {
         count_animation = 1;
         jQuery('.zone_corner').css({
             background: '#fff',
-            color: '#19b55f',
-            borderColor: '#19b55f',
+            color: '#1bb1dc',
+            borderColor: '#1bb1dc',
             borderWidth: '2px',
             opacity: 1,
             transform: 'rotate(0deg) scale(1)',
@@ -519,7 +519,7 @@ jQuery(function() {
     });
 
     phaseOne = setInterval(function(){
-      if (count_animation <= 720){
+      if (count_animation <= 480){
         if (reloadTime == 0){                                                                       //1
             sound.stop();
             reloadSound.play();
@@ -533,8 +533,8 @@ jQuery(function() {
         count_animation = 1;
         jQuery('.zone_corner').css({
             background: '#fff',
-            color: '#19b55f',
-            borderColor: '#19b55f',
+            color: '#1bb1dc',
+            borderColor: '#1bb1dc',
             borderWidth: '2px',
             opacity: 1,
             transform: 'rotate(0deg) scale(1)',
@@ -569,7 +569,7 @@ jQuery(function() {
     });
 
     phaseOne = setInterval(function(){
-      if (count_animation <= 720){
+      if (count_animation <= 480){
         if (reloadTime == 0){                                                                       //1
             sound.stop();
             reloadSound.play();
@@ -583,8 +583,8 @@ jQuery(function() {
         count_animation = 1;
         jQuery('.zone_corner').css({
             background: '#fff',
-            color: '#19b55f',
-            borderColor: '#19b55f',
+            color: '#1bb1dc',
+            borderColor: '#1bb1dc',
             borderWidth: '2px',
             opacity: 1,
             transform: 'rotate(0deg) scale(1)',
@@ -622,7 +622,7 @@ jQuery(function() {
     });
 
     phaseOne = setInterval(function(){
-      if (count_animation <= 720){
+      if (count_animation <= 480){
         if (reloadTime == 0){                                                                       //1
             sound.stop();
             reloadSound.play();
@@ -636,8 +636,8 @@ jQuery(function() {
         count_animation = 1;
         jQuery('.zone_corner').css({
             background: '#fff',
-            color: '#19b55f',
-            borderColor: '#19b55f',
+            color: '#1bb1dc',
+            borderColor: '#1bb1dc',
             borderWidth: '2px',
             opacity: 1,
             transform: 'rotate(0deg) scale(1)',
@@ -677,7 +677,7 @@ jQuery(function() {
     });
 
     phaseOne = setInterval(function(){
-      if (count_animation <= 720){
+      if (count_animation <= 480){
         if (reloadTime == 0){                                                                       //1
             sound.stop();
             reloadSound.play();
@@ -691,8 +691,8 @@ jQuery(function() {
         count_animation = 1;
         jQuery('.zone_corner').css({
             background: '#fff',
-            color: '#19b55f',
-            borderColor: '#19b55f',
+            color: '#1bb1dc',
+            borderColor: '#1bb1dc',
             borderWidth: '2px',
             opacity: 1,
             transform: 'rotate(0deg) scale(1)',
@@ -730,7 +730,7 @@ jQuery(function() {
     });
 
     phaseOne = setInterval(function(){
-      if (count_animation <= 720){
+      if (count_animation <= 480){
         if (reloadTime == 0){                                                                       //1
             sound.stop();
             reloadSound.play();
@@ -744,8 +744,8 @@ jQuery(function() {
         count_animation = 1;
         jQuery('.zone_door').css({
             background: '#fff',
-            color: '#19b55f',
-            borderColor: '#19b55f',
+            color: '#b5a919',
+            borderColor: '#b5a919',
             borderWidth: '2px',
             opacity: 1,
             transform: 'rotate(0deg) scale(1)',
@@ -781,7 +781,7 @@ jQuery(function() {
     });
 
     phaseOne = setInterval(function(){
-      if (count_animation <= 720){
+      if (count_animation <= 480){
         if (reloadTime == 0){                                                                       //1
             sound.stop();
             reloadSound.play();
@@ -795,8 +795,8 @@ jQuery(function() {
         count_animation = 1;
         jQuery('.zone_door').css({
             background: '#fff',
-            color: '#19b55f',
-            borderColor: '#19b55f',
+            color: '#b5a919',
+            borderColor: '#b5a919',
             borderWidth: '2px',
             opacity: 1,
             transform: 'rotate(0deg) scale(1)',
@@ -832,7 +832,7 @@ jQuery(function() {
     });
 
     phaseOne = setInterval(function(){
-      if (count_animation <= 720){
+      if (count_animation <= 480){
         if (reloadTime == 0){                                                                       //1
             sound.stop();
             reloadSound.play();
@@ -846,8 +846,8 @@ jQuery(function() {
         count_animation = 1;
         jQuery('.zone_door').css({
             background: '#fff',
-            color: '#19b55f',
-            borderColor: '#19b55f',
+            color: '#b5a919',
+            borderColor: '#b5a919',
             borderWidth: '2px',
             opacity: 1,
             transform: 'rotate(0deg) scale(1)',
@@ -882,7 +882,7 @@ jQuery(function() {
     });
 
     phaseOne = setInterval(function(){
-      if (count_animation <= 720){
+      if (count_animation <= 480){
         if (reloadTime == 0){                                                                       //1
             sound.stop();
             reloadSound.play();
@@ -896,8 +896,8 @@ jQuery(function() {
         count_animation = 1;
         jQuery('.zone_door').css({
             background: '#fff',
-            color: '#19b55f',
-            borderColor: '#19b55f',
+            color: '#b5a919',
+            borderColor: '#b5a919',
             borderWidth: '2px',
             opacity: 1,
             transform: 'rotate(0deg) scale(1)',
@@ -932,7 +932,7 @@ jQuery(function() {
     });
 
     phaseOne = setInterval(function(){
-      if (count_animation <= 720){
+      if (count_animation <= 480){
         if (reloadTime == 0){                                                                       //1
             sound.stop();
             reloadSound.play();
@@ -946,8 +946,8 @@ jQuery(function() {
         count_animation = 1;
         jQuery('.zone_door').css({
             background: '#fff',
-            color: '#19b55f',
-            borderColor: '#19b55f',
+            color: '#b5a919',
+            borderColor: '#b5a919',
             borderWidth: '2px',
             opacity: 1,
             transform: 'rotate(0deg) scale(1)',
@@ -982,7 +982,7 @@ jQuery(function() {
     });
 
     phaseOne = setInterval(function(){
-      if (count_animation <= 720){
+      if (count_animation <= 480){
         if (reloadTime == 0){                                                                       //1
             sound.stop();
             reloadSound.play();
@@ -996,8 +996,8 @@ jQuery(function() {
         count_animation = 1;
         jQuery('.zone_door').css({
             background: '#fff',
-            color: '#19b55f',
-            borderColor: '#19b55f',
+            color: '#b5a919',
+            borderColor: '#b5a919',
             borderWidth: '2px',
             opacity: 1,
             transform: 'rotate(0deg) scale(1)',
@@ -1032,7 +1032,7 @@ jQuery(function() {
     });
 
     phaseOne = setInterval(function(){
-      if (count_animation <= 720){
+      if (count_animation <= 480){
         if (reloadTime == 0){                                                                       //1
             sound.stop();
             reloadSound.play();
@@ -1046,8 +1046,8 @@ jQuery(function() {
         count_animation = 1;
         jQuery('.zone_door').css({
             background: '#fff',
-            color: '#19b55f',
-            borderColor: '#19b55f',
+            color: '#b5a919',
+            borderColor: '#b5a919',
             borderWidth: '2px',
             opacity: 1,
             transform: 'rotate(0deg) scale(1)',
@@ -1082,7 +1082,7 @@ jQuery(function() {
     });
 
     phaseOne = setInterval(function(){
-      if (count_animation <= 720){
+      if (count_animation <= 480){
         if (reloadTime == 0){                                                                       //1
             sound.stop();
             reloadSound.play();
@@ -1096,8 +1096,8 @@ jQuery(function() {
         count_animation = 1;
         jQuery('.zone_door').css({
             background: '#fff',
-            color: '#19b55f',
-            borderColor: '#19b55f',
+            color: '#b5a919',
+            borderColor: '#b5a919',
             borderWidth: '2px',
             opacity: 1,
             transform: 'rotate(0deg) scale(1)',
@@ -1132,7 +1132,7 @@ jQuery(function() {
     });
 
     phaseOne = setInterval(function(){
-      if (count_animation <= 720){
+      if (count_animation <= 480){
         if (reloadTime == 0){                                                                       //1
             sound.stop();
             reloadSound.play();
@@ -1146,8 +1146,8 @@ jQuery(function() {
         count_animation = 1;
         jQuery('.zone_door').css({
             background: '#fff',
-            color: '#19b55f',
-            borderColor: '#19b55f',
+            color: '#b5a919',
+            borderColor: '#b5a919',
             borderWidth: '2px',
             opacity: 1,
             transform: 'rotate(0deg) scale(1)',
@@ -1182,7 +1182,7 @@ jQuery(function() {
     });
 
     phaseOne = setInterval(function(){
-      if (count_animation <= 720){
+      if (count_animation <= 480){
         if (reloadTime == 0){                                                                       //1
             sound.stop();
             reloadSound.play();
@@ -1196,8 +1196,8 @@ jQuery(function() {
         count_animation = 1;
         jQuery('.zone_door').css({
             background: '#fff',
-            color: '#19b55f',
-            borderColor: '#19b55f',
+            color: '#b5a919',
+            borderColor: '#b5a919',
             borderWidth: '2px',
             opacity: 1,
             transform: 'rotate(0deg) scale(1)',
@@ -1232,7 +1232,7 @@ jQuery(function() {
     });
 
     phaseOne = setInterval(function(){
-      if (count_animation <= 720){
+      if (count_animation <= 480){
         if (reloadTime == 0){                                                                       //1
             sound.stop();
             reloadSound.play();
@@ -1284,7 +1284,7 @@ jQuery(function() {
      });
 
      phaseOne = setInterval(function(){
-       if (count_animation <= 720){
+       if (count_animation <= 480){
          if (reloadTime == 0){                                                                       //1
              sound.stop();
              reloadSound.play();
@@ -1334,7 +1334,7 @@ jQuery(function() {
      });
 
      phaseOne = setInterval(function(){
-       if (count_animation <= 720){
+       if (count_animation <= 480){
          if (reloadTime == 0){                                                                       //1
              sound.stop();
              reloadSound.play();
@@ -1384,7 +1384,7 @@ jQuery(function() {
     });
 
     phaseOne = setInterval(function(){
-      if (count_animation <= 720){
+      if (count_animation <= 480){
         if (reloadTime == 0){                                                                       //1
             sound.stop();
             reloadSound.play();
@@ -1434,7 +1434,7 @@ jQuery(function() {
     });
 
     phaseOne = setInterval(function(){
-      if (count_animation <= 720){
+      if (count_animation <= 480){
         if (reloadTime == 0){                                                                       //1
             sound.stop();
             reloadSound.play();
@@ -1485,7 +1485,7 @@ jQuery(function() {
     });
 
     phaseOne = setInterval(function(){
-      if (count_animation <= 720){
+      if (count_animation <= 480){
         if (reloadTime == 0){                                                                       //1
             sound.stop();
             reloadSound.play();
@@ -1537,7 +1537,7 @@ jQuery(function() {
     });
 
     phaseOne = setInterval(function(){
-      if (count_animation <= 720){
+      if (count_animation <= 480){
         if (reloadTime == 0){                                                                       //1
             sound.stop();
             reloadSound.play();
@@ -1587,7 +1587,7 @@ jQuery(function() {
     });
 
     phaseOne = setInterval(function(){
-      if (count_animation <= 720){
+      if (count_animation <= 480){
         if (reloadTime == 0){                                                                       //1
             sound.stop();
             reloadSound.play();
@@ -1637,7 +1637,7 @@ jQuery(function() {
    });
 
    phaseOne = setInterval(function(){
-     if (count_animation <= 720){
+     if (count_animation <= 480){
        if (reloadTime == 0){                                                                       //1
            sound.stop();
            reloadSound.play();
@@ -1687,7 +1687,7 @@ jQuery(function() {
    });
 
    phaseOne = setInterval(function(){
-     if (count_animation <= 720){
+     if (count_animation <= 480){
        if (reloadTime == 0){                                                                       //1
            sound.stop();
            reloadSound.play();
@@ -1738,7 +1738,7 @@ estate_1_2 = function(){
   });
 
   phaseOne = setInterval(function(){
-    if (count_animation <= 720){
+    if (count_animation <= 480){
       if (reloadTime == 0){                                                                       //1
           sound.stop();
           reloadSound.play();
@@ -1790,7 +1790,7 @@ estate_1_1 = function(){
   });
 
   phaseOne = setInterval(function(){
-    if (count_animation <= 720){
+    if (count_animation <= 480){
       if (reloadTime == 0){                                                                       //1
           sound.stop();
           reloadSound.play();
