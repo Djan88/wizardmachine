@@ -1843,7 +1843,12 @@ h3.wizard_heading
     color: #8e21c5;
     border: 2px solid #8e21c5;
 }
-.estate_corners, .estate_doors, .estate_wcs, .estate_els
+.zone_estate_center
+{
+    color: #636065;
+    border: 2px solid #636065;
+}
+.estate_corners, .estate_doors, .estate_wcs, .estate_els, .estate_center
 {
   height: 70px;
   position: relative;
@@ -1855,6 +1860,7 @@ h3.wizard_heading
 .wizard_returned_estate 
 {
   border: 3px solid #eee;
+  box-shadow: 0 10px 29px 0 rgba(127, 137, 161, 0.3);
   max-width: 90%;
   width: auto;
   max-height: 500px;
@@ -1890,8 +1896,10 @@ h3.wizard_heading
 {
   text-align: center;
   min-height: 100vh;
-  background: #eee;
+  background: #F5F8FD;
   padding-top: 30px;
+  box-shadow: 0 10px 29px 0 rgba(127, 137, 161, 0.3);
+  border-radius: 10px;
 }
 .wizard_main_screen 
 {

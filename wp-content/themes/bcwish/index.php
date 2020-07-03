@@ -334,6 +334,10 @@
                   <div class="col-md-12 wizard_estate hidden">
                     <div class="row">
                       <div class="col-sm-2 estate_items">
+                        <div class="estate_center wow bounceInUp" data-wow-duration="1.4s" data-wow-delay="0.8s">
+                          <div class="estate_heading" style="color: #8e21c5;">Центр</div>
+                          <div class="zone_estate zone_estate_center zone_default"><i class="fa fa-compress-arrows-alt"></i></div>
+                        </div>
                         <div class="estate_els wow bounceInUp" data-wow-duration="1.4s" data-wow-delay="0.8s">
                           <div class="estate_heading" style="color: #8e21c5;">Электро точки</div>
                           <div class="zone_estate zone_el zone_default"><i class="fa fa-bolt"></i></div>
