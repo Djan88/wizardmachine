@@ -2088,7 +2088,7 @@ estate_1_1 = function(){
       transform: 'rotate(0deg) scale(1.5)',
       zIndex: '1000'
   });
-  jQuery('.zone_wc').addClass('rot_estate_super').css({
+  jQuery('.zone_wc').addClass('rot_estate_lovushka').css({
     background: '#fff url(/wp-content/themes/bcwish/img/superdisfunction.png) center center/100% no-repeat',
   });
     jQuery('.zone_estate_center').addClass('rot_estate_super').css({
@@ -2122,7 +2122,7 @@ estate_1_1 = function(){
             borderColor: '#636065'
         });
         jQuery('.zone_estate_center').removeClass('rot_estate_super');
-      jQuery('.zone_wc').removeClass('rot_estate_super');
+      jQuery('.zone_wc').removeClass('rot_estate_lovushka');
       sound.stop();
       if (pausedStatus == true) {
         localStorage.setItem('paused', 'estate_1_2');
