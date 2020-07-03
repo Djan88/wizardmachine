@@ -336,7 +336,7 @@
                       <div class="col-sm-2 estate_items">
                         <div class="estate_center wow bounceInUp" data-wow-duration="1.4s" data-wow-delay="0.4s">
                           <div class="estate_heading" style="color: #636065;">Центр</div>
-                          <div class="zone_estate zone_estate_center zone_default"><i class="fa fa-times" style="transform: rotate(45deg);"></i></div>
+                          <div class="zone_estate zone_estate_center zone_default"><i class="fa fa-times" style="transform: rotate(45deg); margin-left: 2px;"></i></div>
                         </div>
                         <div class="estate_els wow bounceInUp" data-wow-duration="1.4s" data-wow-delay="0.6s">
                           <div class="estate_heading" style="color: #8e21c5;">Электро точки</div>
