@@ -1847,6 +1847,7 @@ h3.wizard_heading
 {
     color: #636065;
     border: 2px solid #636065;
+    transform: rotate(45deg);
 }
 .estate_corners, .estate_doors, .estate_wcs, .estate_els, .estate_center
 {
