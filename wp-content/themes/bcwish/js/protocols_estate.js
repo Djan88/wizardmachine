@@ -90,6 +90,7 @@ jQuery(function() {
         jQuery('.estate_pause').addClass('hidden');
         jQuery('.zone_estate.zone_default').removeClass('hidden');
         jQuery('.wizard_heading').text('Отметьте специальной точкой центр помещения, за тем - точки входа электричества и скопления розеток, двери, сан узлы и внутренние углы.');
+        swal.close();
       }
     })
   }
