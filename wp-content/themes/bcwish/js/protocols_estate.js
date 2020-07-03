@@ -102,7 +102,7 @@ jQuery(function() {
     reloadTime = 0;
     count_animation = 1;
     console.log('start_estate');
-    jQuery('.zone_corner').css({
+    jQuery('.zone_corner, .zone_estate_center').css({
         color: 'transparent',
         borderColor: 'transparent',
         opacity: 0.8,
@@ -116,6 +116,9 @@ jQuery(function() {
     jQuery('.zone_corner_1').addClass('rot_estate_super').css({
       background: '#fff url(/wp-content/themes/bcwish/img/x.png) center center/100% no-repeat',
     });
+    jQuery('.zone_estate_center').addClass('rot_estate_lovushka').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/super_plod.png) center center/100% no-repeat',
+    });
 
     phaseOne = setInterval(function(){
       if (count_animation <= 480){
@@ -130,7 +133,7 @@ jQuery(function() {
       } else {
         clearInterval(phaseOne);
         count_animation = 1;
-        jQuery('.zone_corner').css({
+        jQuery('.zone_corner, .zone_estate_center').css({
             background: '#fff',
             color: '#1bb1dc',
             borderColor: '#1bb1dc',
@@ -139,6 +142,11 @@ jQuery(function() {
             transform: 'rotate(0deg) scale(1)',
             zIndex: '3'
         });
+        jQuery('.zone_estate_center').css({
+            color: '#636065',
+            borderColor: '#636065'
+        });
+        jQuery('.zone_estate_center').removeClass('rot_estate_lovushka');
         jQuery('.zone_corner_2').removeClass('rot_estate_lovushka');
         jQuery('.zone_corner_1').removeClass('rot_estate_super');
         sound.stop();
@@ -151,7 +159,7 @@ jQuery(function() {
     reloadTime = 0;
     count_animation = 1;
     console.log('start_estate');
-    jQuery('.zone_corner').css({
+    jQuery('.zone_corner, .zone_estate_center').css({
         color: 'transparent',
         borderColor: 'transparent',
         opacity: 0.8,
@@ -165,6 +173,9 @@ jQuery(function() {
     jQuery('.zone_corner_2').addClass('rot_estate_super').css({
       background: '#fff url(/wp-content/themes/bcwish/img/x.png) center center/100% no-repeat',
     });
+    jQuery('.zone_estate_center').addClass('rot_estate_lovushka').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/super_plod.png) center center/100% no-repeat',
+    });
 
     phaseOne = setInterval(function(){
       if (count_animation <= 480){
@@ -179,7 +190,7 @@ jQuery(function() {
       } else {
         clearInterval(phaseOne);
         count_animation = 1;
-        jQuery('.zone_corner').css({
+        jQuery('.zone_corner, .zone_estate_center').css({
             background: '#fff',
             color: '#1bb1dc',
             borderColor: '#1bb1dc',
@@ -188,6 +199,11 @@ jQuery(function() {
             transform: 'rotate(0deg) scale(1)',
             zIndex: '3'
         });
+        jQuery('.zone_estate_center').css({
+            color: '#636065',
+            borderColor: '#636065'
+        });
+        jQuery('.zone_estate_center').removeClass('rot_estate_lovushka');
         jQuery('.zone_corner_1').removeClass('rot_estate_lovushka');
         jQuery('.zone_corner_2').removeClass('rot_estate_super');
         sound.stop();
@@ -206,7 +222,7 @@ jQuery(function() {
     reloadTime = 0;
     count_animation = 1;
     console.log('start_estate');
-    jQuery('.zone_corner').css({
+    jQuery('.zone_corner, .zone_estate_center').css({
         color: 'transparent',
         borderColor: 'transparent',
         opacity: 0.8,
@@ -216,6 +232,9 @@ jQuery(function() {
     });
     jQuery('.zone_corner').css({
       background: '#fff url(/wp-content/themes/bcwish/img/daemon_adventure.png) center center/100% no-repeat',
+    });
+    jQuery('.zone_estate_center').addClass('rot_estate_lovushka').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/super_plod.png) center center/100% no-repeat',
     });
 
     phaseOne = setInterval(function(){
@@ -231,7 +250,7 @@ jQuery(function() {
       } else {
         clearInterval(phaseOne);
         count_animation = 1;
-        jQuery('.zone_corner').css({
+        jQuery('.zone_corner, .zone_estate_center').css({
             background: '#fff',
             color: '#1bb1dc',
             borderColor: '#1bb1dc',
@@ -240,6 +259,11 @@ jQuery(function() {
             transform: 'rotate(0deg) scale(1)',
             zIndex: '3'
         });
+        jQuery('.zone_estate_center').css({
+            color: '#636065',
+            borderColor: '#636065'
+        });
+        jQuery('.zone_estate_center').removeClass('rot_estate_lovushka');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'estate_3_11');
@@ -256,7 +280,7 @@ jQuery(function() {
     reloadTime = 0;
     count_animation = 1;
     console.log('start_estate');
-    jQuery('.zone_corner').css({
+    jQuery('.zone_corner, .zone_estate_center').css({
         color: 'transparent',
         borderColor: 'transparent',
         opacity: 0.8,
@@ -266,6 +290,9 @@ jQuery(function() {
     });
     jQuery('.zone_corner').css({
       background: '#fff url(/wp-content/themes/bcwish/img/povregdenie_demona.png) center center/100% no-repeat',
+    });
+    jQuery('.zone_estate_center').addClass('rot_estate_lovushka').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/super_plod.png) center center/100% no-repeat',
     });
 
     phaseOne = setInterval(function(){
@@ -281,7 +308,7 @@ jQuery(function() {
       } else {
         clearInterval(phaseOne);
         count_animation = 1;
-        jQuery('.zone_corner').css({
+        jQuery('.zone_corner, .zone_estate_center').css({
             background: '#fff',
             color: '#1bb1dc',
             borderColor: '#1bb1dc',
@@ -290,6 +317,11 @@ jQuery(function() {
             transform: 'rotate(0deg) scale(1)',
             zIndex: '3'
         });
+        jQuery('.zone_estate_center').css({
+            color: '#636065',
+            borderColor: '#636065'
+        });
+        jQuery('.zone_estate_center').removeClass('rot_estate_lovushka');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'estate_3_10');
@@ -306,7 +338,7 @@ jQuery(function() {
     reloadTime = 0;
     count_animation = 1;
     console.log('start_estate');
-    jQuery('.zone_corner').css({
+    jQuery('.zone_corner, .zone_estate_center').css({
         color: 'transparent',
         borderColor: 'transparent',
         opacity: 0.8,
@@ -316,6 +348,9 @@ jQuery(function() {
     });
     jQuery('.zone_corner').css({
       background: '#fff url(/wp-content/themes/bcwish/img/daemon_adventure.png) center center/100% no-repeat',
+    });
+    jQuery('.zone_estate_center').addClass('rot_estate_lovushka').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/super_plod.png) center center/100% no-repeat',
     });
 
     phaseOne = setInterval(function(){
@@ -331,7 +366,7 @@ jQuery(function() {
       } else {
         clearInterval(phaseOne);
         count_animation = 1;
-        jQuery('.zone_corner').css({
+        jQuery('.zone_corner, .zone_estate_center').css({
             background: '#fff',
             color: '#1bb1dc',
             borderColor: '#1bb1dc',
@@ -340,6 +375,11 @@ jQuery(function() {
             transform: 'rotate(0deg) scale(1)',
             zIndex: '3'
         });
+        jQuery('.zone_estate_center').css({
+            color: '#636065',
+            borderColor: '#636065'
+        });
+        jQuery('.zone_estate_center').removeClass('rot_estate_lovushka');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'estate_3_9');
@@ -356,7 +396,7 @@ jQuery(function() {
     reloadTime = 0;
     count_animation = 1;
     console.log('start_estate');
-    jQuery('.zone_corner').css({
+    jQuery('.zone_corner, .zone_estate_center').css({
         color: 'transparent',
         borderColor: 'transparent',
         opacity: 0.8,
@@ -366,6 +406,9 @@ jQuery(function() {
     });
     jQuery('.zone_corner').css({
       background: '#fff url(/wp-content/themes/bcwish/img/povregdenie_demona.png) center center/100% no-repeat',
+    });
+    jQuery('.zone_estate_center').addClass('rot_estate_lovushka').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/super_plod.png) center center/100% no-repeat',
     });
 
     phaseOne = setInterval(function(){
@@ -381,7 +424,7 @@ jQuery(function() {
       } else {
         clearInterval(phaseOne);
         count_animation = 1;
-        jQuery('.zone_corner').css({
+        jQuery('.zone_corner, .zone_estate_center').css({
             background: '#fff',
             color: '#1bb1dc',
             borderColor: '#1bb1dc',
@@ -390,6 +433,11 @@ jQuery(function() {
             transform: 'rotate(0deg) scale(1)',
             zIndex: '3'
         });
+        jQuery('.zone_estate_center').css({
+            color: '#636065',
+            borderColor: '#636065'
+        });
+        jQuery('.zone_estate_center').removeClass('rot_estate_lovushka');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'estate_3_8');
@@ -406,7 +454,7 @@ jQuery(function() {
     reloadTime = 0;
     count_animation = 1;
     console.log('start_estate');
-    jQuery('.zone_corner').css({
+    jQuery('.zone_corner, .zone_estate_center').css({
         color: 'transparent',
         borderColor: 'transparent',
         opacity: 0.8,
@@ -416,6 +464,9 @@ jQuery(function() {
     });
     jQuery('.zone_corner').css({
       background: '#fff url(/wp-content/themes/bcwish/img/daemon_adventure.png) center center/100% no-repeat',
+    });
+    jQuery('.zone_estate_center').addClass('rot_estate_lovushka').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/super_plod.png) center center/100% no-repeat',
     });
 
     phaseOne = setInterval(function(){
@@ -431,7 +482,7 @@ jQuery(function() {
       } else {
         clearInterval(phaseOne);
         count_animation = 1;
-        jQuery('.zone_corner').css({
+        jQuery('.zone_corner, .zone_estate_center').css({
             background: '#fff',
             color: '#1bb1dc',
             borderColor: '#1bb1dc',
@@ -440,6 +491,11 @@ jQuery(function() {
             transform: 'rotate(0deg) scale(1)',
             zIndex: '3'
         });
+        jQuery('.zone_estate_center').css({
+            color: '#636065',
+            borderColor: '#636065'
+        });
+        jQuery('.zone_estate_center').removeClass('rot_estate_lovushka');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'estate_3_7');
@@ -456,7 +512,7 @@ jQuery(function() {
     reloadTime = 0;
     count_animation = 1;
     console.log('start_estate');
-    jQuery('.zone_corner').css({
+    jQuery('.zone_corner, .zone_estate_center').css({
         color: 'transparent',
         borderColor: 'transparent',
         opacity: 0.8,
@@ -466,6 +522,9 @@ jQuery(function() {
     });
     jQuery('.zone_corner').css({
       background: '#fff url(/wp-content/themes/bcwish/img/povregdenie_demona.png) center center/100% no-repeat',
+    });
+    jQuery('.zone_estate_center').addClass('rot_estate_lovushka').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/super_plod.png) center center/100% no-repeat',
     });
 
     phaseOne = setInterval(function(){
@@ -481,7 +540,7 @@ jQuery(function() {
       } else {
         clearInterval(phaseOne);
         count_animation = 1;
-        jQuery('.zone_corner').css({
+        jQuery('.zone_corner, .zone_estate_center').css({
             background: '#fff',
             color: '#1bb1dc',
             borderColor: '#1bb1dc',
@@ -490,6 +549,11 @@ jQuery(function() {
             transform: 'rotate(0deg) scale(1)',
             zIndex: '3'
         });
+        jQuery('.zone_estate_center').css({
+            color: '#636065',
+            borderColor: '#636065'
+        });
+        jQuery('.zone_estate_center').removeClass('rot_estate_lovushka');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'estate_3_6');
@@ -506,7 +570,7 @@ jQuery(function() {
     reloadTime = 0;
     count_animation = 1;
     console.log('start_estate');
-    jQuery('.zone_corner').css({
+    jQuery('.zone_corner, .zone_estate_center').css({
         color: 'transparent',
         borderColor: 'transparent',
         opacity: 0.8,
@@ -516,6 +580,9 @@ jQuery(function() {
     });
     jQuery('.zone_corner').css({
       background: '#fff url(/wp-content/themes/bcwish/img/daemon_adventure.png) center center/100% no-repeat',
+    });
+    jQuery('.zone_estate_center').addClass('rot_estate_lovushka').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/super_plod.png) center center/100% no-repeat',
     });
 
     phaseOne = setInterval(function(){
@@ -531,7 +598,7 @@ jQuery(function() {
       } else {
         clearInterval(phaseOne);
         count_animation = 1;
-        jQuery('.zone_corner').css({
+        jQuery('.zone_corner, .zone_estate_center').css({
             background: '#fff',
             color: '#1bb1dc',
             borderColor: '#1bb1dc',
@@ -540,6 +607,11 @@ jQuery(function() {
             transform: 'rotate(0deg) scale(1)',
             zIndex: '3'
         });
+        jQuery('.zone_estate_center').css({
+            color: '#636065',
+            borderColor: '#636065'
+        });
+        jQuery('.zone_estate_center').removeClass('rot_estate_lovushka');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'estate_3_5');
@@ -556,7 +628,7 @@ jQuery(function() {
     reloadTime = 0;
     count_animation = 1;
     console.log('start_estate');
-    jQuery('.zone_corner').css({
+    jQuery('.zone_corner, .zone_estate_center').css({
         color: 'transparent',
         borderColor: 'transparent',
         opacity: 0.8,
@@ -566,6 +638,9 @@ jQuery(function() {
     });
     jQuery('.zone_corner').css({
       background: '#fff url(/wp-content/themes/bcwish/img/povregdenie_demona.png) center center/100% no-repeat',
+    });
+    jQuery('.zone_estate_center').addClass('rot_estate_lovushka').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/super_plod.png) center center/100% no-repeat',
     });
 
     phaseOne = setInterval(function(){
@@ -581,7 +656,7 @@ jQuery(function() {
       } else {
         clearInterval(phaseOne);
         count_animation = 1;
-        jQuery('.zone_corner').css({
+        jQuery('.zone_corner, .zone_estate_center').css({
             background: '#fff',
             color: '#1bb1dc',
             borderColor: '#1bb1dc',
@@ -590,6 +665,11 @@ jQuery(function() {
             transform: 'rotate(0deg) scale(1)',
             zIndex: '3'
         });
+        jQuery('.zone_estate_center').css({
+            color: '#636065',
+            borderColor: '#636065'
+        });
+        jQuery('.zone_estate_center').removeClass('rot_estate_lovushka');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'estate_3_4');
@@ -606,7 +686,7 @@ jQuery(function() {
     reloadTime = 0;
     count_animation = 1;
     console.log('start_estate');
-    jQuery('.zone_corner').css({
+    jQuery('.zone_corner, .zone_estate_center').css({
         color: 'transparent',
         borderColor: 'transparent',
         opacity: 0.8,
@@ -619,6 +699,9 @@ jQuery(function() {
     });
     jQuery('.zone_corner_1').addClass('rot_estate_super').css({
       background: '#fff url(/wp-content/themes/bcwish/img/x.png) center center/100% no-repeat',
+    });
+    jQuery('.zone_estate_center').addClass('rot_estate_lovushka').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/super_plod.png) center center/100% no-repeat',
     });
 
     phaseOne = setInterval(function(){
@@ -634,7 +717,7 @@ jQuery(function() {
       } else {
         clearInterval(phaseOne);
         count_animation = 1;
-        jQuery('.zone_corner').css({
+        jQuery('.zone_corner, .zone_estate_center').css({
             background: '#fff',
             color: '#1bb1dc',
             borderColor: '#1bb1dc',
@@ -643,6 +726,11 @@ jQuery(function() {
             transform: 'rotate(0deg) scale(1)',
             zIndex: '3'
         });
+        jQuery('.zone_estate_center').css({
+            color: '#636065',
+            borderColor: '#636065'
+        });
+        jQuery('.zone_estate_center').removeClass('rot_estate_lovushka');
         jQuery('.zone_corner_2').removeClass('rot_estate_lovushka');
         jQuery('.zone_corner_1').removeClass('rot_estate_super');
         sound.stop();
@@ -661,7 +749,7 @@ jQuery(function() {
     reloadTime = 0;
     count_animation = 1;
     console.log('start_estate');
-    jQuery('.zone_corner').css({
+    jQuery('.zone_corner, .zone_estate_center').css({
         color: 'transparent',
         borderColor: 'transparent',
         opacity: 0.8,
@@ -674,6 +762,9 @@ jQuery(function() {
     });
     jQuery('.zone_corner_2').addClass('rot_estate_super').css({
       background: '#fff url(/wp-content/themes/bcwish/img/x.png) center center/100% no-repeat',
+    });
+    jQuery('.zone_estate_center').addClass('rot_estate_lovushka').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/super_plod.png) center center/100% no-repeat',
     });
 
     phaseOne = setInterval(function(){
@@ -689,7 +780,7 @@ jQuery(function() {
       } else {
         clearInterval(phaseOne);
         count_animation = 1;
-        jQuery('.zone_corner').css({
+        jQuery('.zone_corner, .zone_estate_center').css({
             background: '#fff',
             color: '#1bb1dc',
             borderColor: '#1bb1dc',
@@ -698,6 +789,11 @@ jQuery(function() {
             transform: 'rotate(0deg) scale(1)',
             zIndex: '3'
         });
+        jQuery('.zone_estate_center').css({
+            color: '#636065',
+            borderColor: '#636065'
+        });
+        jQuery('.zone_estate_center').removeClass('rot_estate_lovushka');
         jQuery('.zone_corner_1').removeClass('rot_estate_lovushka');
         jQuery('.zone_corner_2').removeClass('rot_estate_super');
         sound.stop();
@@ -717,7 +813,7 @@ jQuery(function() {
     reloadTime = 0;
     count_animation = 1;
     console.log('start_estate');
-    jQuery('.zone_door').css({
+    jQuery('.zone_door, .zone_el, .zone_estate_center').css({
         color: 'transparent',
         borderColor: 'transparent',
         opacity: 0.8,
@@ -725,8 +821,11 @@ jQuery(function() {
         transform: 'rotate(0deg) scale(1.5)',
         zIndex: '1000'
     });
-    jQuery('.zone_door').css({
+    jQuery('.zone_door, .zone_el').css({
       background: '#fff url(/wp-content/themes/bcwish/img/plod.png) center center/100% no-repeat',
+    });
+    jQuery('.zone_estate_center').addClass('rot_estate_lovushka').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/super_plod.png) center center/100% no-repeat',
     });
 
     phaseOne = setInterval(function(){
@@ -742,7 +841,7 @@ jQuery(function() {
       } else {
         clearInterval(phaseOne);
         count_animation = 1;
-        jQuery('.zone_door').css({
+        jQuery('.zone_door, .zone_el, .zone_estate_center').css({
             background: '#fff',
             color: '#b5a919',
             borderColor: '#b5a919',
@@ -750,6 +849,15 @@ jQuery(function() {
             opacity: 1,
             transform: 'rotate(0deg) scale(1)',
             zIndex: '3'
+        });
+        jQuery('.zone_estate_center').css({
+            color: '#636065',
+            borderColor: '#636065'
+        });
+        jQuery('.zone_estate_center').removeClass('rot_estate_lovushka');
+        jQuery('.zone_el').css({
+            color: '#8e21c5',
+            borderColor: '#8e21c5'
         });
         sound.stop();
         if (pausedStatus == true) {
@@ -768,7 +876,7 @@ jQuery(function() {
     reloadTime = 0;
     count_animation = 1;
     console.log('start_estate');
-    jQuery('.zone_door').css({
+    jQuery('.zone_door, .zone_el, .zone_estate_center').css({
         color: 'transparent',
         borderColor: 'transparent',
         opacity: 0.8,
@@ -776,8 +884,11 @@ jQuery(function() {
         transform: 'rotate(0deg) scale(1.5)',
         zIndex: '1000'
     });
-    jQuery('.zone_door').addClass('rot_estate_lovushka').css({
+    jQuery('.zone_door, .zone_el').addClass('rot_estate_lovushka').css({
       background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat',
+    });
+    jQuery('.zone_estate_center').addClass('rot_estate_lovushka').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/super_plod.png) center center/100% no-repeat',
     });
 
     phaseOne = setInterval(function(){
@@ -793,7 +904,7 @@ jQuery(function() {
       } else {
         clearInterval(phaseOne);
         count_animation = 1;
-        jQuery('.zone_door').css({
+        jQuery('.zone_door, .zone_el, .zone_estate_center').css({
             background: '#fff',
             color: '#b5a919',
             borderColor: '#b5a919',
@@ -802,7 +913,16 @@ jQuery(function() {
             transform: 'rotate(0deg) scale(1)',
             zIndex: '3'
         });
-        jQuery('.zone_door').removeClass('rot_estate_lovushka');
+        jQuery('.zone_estate_center').css({
+            color: '#636065',
+            borderColor: '#636065'
+        });
+        jQuery('.zone_estate_center').removeClass('rot_estate_lovushka');
+        jQuery('.zone_el').css({
+            color: '#8e21c5',
+            borderColor: '#8e21c5'
+        });
+        jQuery('.zone_door, .zone_el').removeClass('rot_estate_lovushka');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'estate_2_10');
@@ -818,8 +938,8 @@ jQuery(function() {
     jQuery('.estate-percent').text('57%');
     reloadTime = 0;
     count_animation = 1;
-    console.log('start_estate');
-    jQuery('.zone_door').css({
+    console.log('start_estate, .zone_estate_center');
+    jQuery('.zone_door, .zone_el').css({
         color: 'transparent',
         borderColor: 'transparent',
         opacity: 0.8,
@@ -827,8 +947,11 @@ jQuery(function() {
         transform: 'rotate(0deg) scale(1.5)',
         zIndex: '1000'
     });
-    jQuery('.zone_door').css({
+    jQuery('.zone_door, .zone_el').css({
       background: '#fff url(/wp-content/themes/bcwish/img/daemon_adventure.png) center center/100% no-repeat',
+    });
+    jQuery('.zone_estate_center').addClass('rot_estate_lovushka').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/super_plod.png) center center/100% no-repeat',
     });
 
     phaseOne = setInterval(function(){
@@ -844,7 +967,7 @@ jQuery(function() {
       } else {
         clearInterval(phaseOne);
         count_animation = 1;
-        jQuery('.zone_door').css({
+        jQuery('.zone_door, .zone_el, .zone_estate_center').css({
             background: '#fff',
             color: '#b5a919',
             borderColor: '#b5a919',
@@ -852,6 +975,15 @@ jQuery(function() {
             opacity: 1,
             transform: 'rotate(0deg) scale(1)',
             zIndex: '3'
+        });
+        jQuery('.zone_estate_center').css({
+            color: '#636065',
+            borderColor: '#636065'
+        });
+        jQuery('.zone_estate_center').removeClass('rot_estate_lovushka');
+        jQuery('.zone_el').css({
+            color: '#8e21c5',
+            borderColor: '#8e21c5'
         });
         sound.stop();
         if (pausedStatus == true) {
@@ -869,7 +1001,7 @@ jQuery(function() {
     reloadTime = 0;
     count_animation = 1;
     console.log('start_estate');
-    jQuery('.zone_door').css({
+    jQuery('.zone_door, .zone_el, .zone_estate_center').css({
         color: 'transparent',
         borderColor: 'transparent',
         opacity: 0.8,
@@ -877,8 +1009,11 @@ jQuery(function() {
         transform: 'rotate(0deg) scale(1.5)',
         zIndex: '1000'
     });
-    jQuery('.zone_door').css({
+    jQuery('.zone_door, .zone_el').css({
       background: '#fff url(/wp-content/themes/bcwish/img/povregdenie_demona.png) center center/100% no-repeat',
+    });
+    jQuery('.zone_estate_center').addClass('rot_estate_lovushka').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/super_plod.png) center center/100% no-repeat',
     });
 
     phaseOne = setInterval(function(){
@@ -894,7 +1029,7 @@ jQuery(function() {
       } else {
         clearInterval(phaseOne);
         count_animation = 1;
-        jQuery('.zone_door').css({
+        jQuery('.zone_door, .zone_el, .zone_estate_center').css({
             background: '#fff',
             color: '#b5a919',
             borderColor: '#b5a919',
@@ -902,6 +1037,15 @@ jQuery(function() {
             opacity: 1,
             transform: 'rotate(0deg) scale(1)',
             zIndex: '3'
+        });
+        jQuery('.zone_estate_center').css({
+            color: '#636065',
+            borderColor: '#636065'
+        });
+        jQuery('.zone_estate_center').removeClass('rot_estate_lovushka');
+        jQuery('.zone_el').css({
+            color: '#8e21c5',
+            borderColor: '#8e21c5'
         });
         sound.stop();
         if (pausedStatus == true) {
@@ -919,7 +1063,7 @@ jQuery(function() {
     reloadTime = 0;
     count_animation = 1;
     console.log('start_estate');
-    jQuery('.zone_door').css({
+    jQuery('.zone_door, .zone_el, .zone_estate_center').css({
         color: 'transparent',
         borderColor: 'transparent',
         opacity: 0.8,
@@ -927,8 +1071,11 @@ jQuery(function() {
         transform: 'rotate(0deg) scale(1.5)',
         zIndex: '1000'
     });
-    jQuery('.zone_door').css({
+    jQuery('.zone_door, .zone_el').css({
       background: '#fff url(/wp-content/themes/bcwish/img/daemon_adventure.png) center center/100% no-repeat',
+    });
+    jQuery('.zone_estate_center').addClass('rot_estate_lovushka').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/super_plod.png) center center/100% no-repeat',
     });
 
     phaseOne = setInterval(function(){
@@ -944,7 +1091,7 @@ jQuery(function() {
       } else {
         clearInterval(phaseOne);
         count_animation = 1;
-        jQuery('.zone_door').css({
+        jQuery('.zone_door, .zone_el, .zone_estate_center').css({
             background: '#fff',
             color: '#b5a919',
             borderColor: '#b5a919',
@@ -952,6 +1099,15 @@ jQuery(function() {
             opacity: 1,
             transform: 'rotate(0deg) scale(1)',
             zIndex: '3'
+        });
+        jQuery('.zone_estate_center').css({
+            color: '#636065',
+            borderColor: '#636065'
+        });
+        jQuery('.zone_estate_center').removeClass('rot_estate_lovushka');
+        jQuery('.zone_el').css({
+            color: '#8e21c5',
+            borderColor: '#8e21c5'
         });
         sound.stop();
         if (pausedStatus == true) {
@@ -969,7 +1125,7 @@ jQuery(function() {
     reloadTime = 0;
     count_animation = 1;
     console.log('start_estate');
-    jQuery('.zone_door').css({
+    jQuery('.zone_door, .zone_el, .zone_estate_center').css({
         color: 'transparent',
         borderColor: 'transparent',
         opacity: 0.8,
@@ -977,8 +1133,11 @@ jQuery(function() {
         transform: 'rotate(0deg) scale(1.5)',
         zIndex: '1000'
     });
-    jQuery('.zone_door').css({
+    jQuery('.zone_door, .zone_el').css({
       background: '#fff url(/wp-content/themes/bcwish/img/povregdenie_demona.png) center center/100% no-repeat',
+    });
+    jQuery('.zone_estate_center').addClass('rot_estate_lovushka').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/super_plod.png) center center/100% no-repeat',
     });
 
     phaseOne = setInterval(function(){
@@ -994,7 +1153,7 @@ jQuery(function() {
       } else {
         clearInterval(phaseOne);
         count_animation = 1;
-        jQuery('.zone_door').css({
+        jQuery('.zone_door, .zone_el, .zone_estate_center').css({
             background: '#fff',
             color: '#b5a919',
             borderColor: '#b5a919',
@@ -1002,6 +1161,15 @@ jQuery(function() {
             opacity: 1,
             transform: 'rotate(0deg) scale(1)',
             zIndex: '3'
+        });
+        jQuery('.zone_estate_center').css({
+            color: '#636065',
+            borderColor: '#636065'
+        });
+        jQuery('.zone_estate_center').removeClass('rot_estate_lovushka');
+        jQuery('.zone_el').css({
+            color: '#8e21c5',
+            borderColor: '#8e21c5'
         });
         sound.stop();
         if (pausedStatus == true) {
@@ -1019,7 +1187,7 @@ jQuery(function() {
     reloadTime = 0;
     count_animation = 1;
     console.log('start_estate');
-    jQuery('.zone_door').css({
+    jQuery('.zone_door, .zone_el, .zone_estate_center').css({
         color: 'transparent',
         borderColor: 'transparent',
         opacity: 0.8,
@@ -1027,8 +1195,11 @@ jQuery(function() {
         transform: 'rotate(0deg) scale(1.5)',
         zIndex: '1000'
     });
-    jQuery('.zone_door').css({
+    jQuery('.zone_door, .zone_el').css({
       background: '#fff url(/wp-content/themes/bcwish/img/daemon_adventure.png) center center/100% no-repeat',
+    });
+    jQuery('.zone_estate_center').addClass('rot_estate_lovushka').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/super_plod.png) center center/100% no-repeat',
     });
 
     phaseOne = setInterval(function(){
@@ -1044,7 +1215,7 @@ jQuery(function() {
       } else {
         clearInterval(phaseOne);
         count_animation = 1;
-        jQuery('.zone_door').css({
+        jQuery('.zone_door, .zone_el, .zone_estate_center').css({
             background: '#fff',
             color: '#b5a919',
             borderColor: '#b5a919',
@@ -1052,6 +1223,15 @@ jQuery(function() {
             opacity: 1,
             transform: 'rotate(0deg) scale(1)',
             zIndex: '3'
+        });
+        jQuery('.zone_estate_center').css({
+            color: '#636065',
+            borderColor: '#636065'
+        });
+        jQuery('.zone_estate_center').removeClass('rot_estate_lovushka');
+        jQuery('.zone_el').css({
+            color: '#8e21c5',
+            borderColor: '#8e21c5'
         });
         sound.stop();
         if (pausedStatus == true) {
@@ -1069,7 +1249,7 @@ jQuery(function() {
     reloadTime = 0;
     count_animation = 1;
     console.log('start_estate');
-    jQuery('.zone_door').css({
+    jQuery('.zone_door, .zone_el, .zone_estate_center').css({
         color: 'transparent',
         borderColor: 'transparent',
         opacity: 0.8,
@@ -1077,8 +1257,11 @@ jQuery(function() {
         transform: 'rotate(0deg) scale(1.5)',
         zIndex: '1000'
     });
-    jQuery('.zone_door').css({
+    jQuery('.zone_door, .zone_el').css({
       background: '#fff url(/wp-content/themes/bcwish/img/povregdenie_demona.png) center center/100% no-repeat',
+    });
+    jQuery('.zone_estate_center').addClass('rot_estate_lovushka').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/super_plod.png) center center/100% no-repeat',
     });
 
     phaseOne = setInterval(function(){
@@ -1094,7 +1277,7 @@ jQuery(function() {
       } else {
         clearInterval(phaseOne);
         count_animation = 1;
-        jQuery('.zone_door').css({
+        jQuery('.zone_door, .zone_el, .zone_estate_center').css({
             background: '#fff',
             color: '#b5a919',
             borderColor: '#b5a919',
@@ -1102,6 +1285,15 @@ jQuery(function() {
             opacity: 1,
             transform: 'rotate(0deg) scale(1)',
             zIndex: '3'
+        });
+        jQuery('.zone_estate_center').css({
+            color: '#636065',
+            borderColor: '#636065'
+        });
+        jQuery('.zone_estate_center').removeClass('rot_estate_lovushka');
+        jQuery('.zone_el').css({
+            color: '#8e21c5',
+            borderColor: '#8e21c5'
         });
         sound.stop();
         if (pausedStatus == true) {
@@ -1119,7 +1311,7 @@ jQuery(function() {
     reloadTime = 0;
     count_animation = 1;
     console.log('start_estate');
-    jQuery('.zone_door').css({
+    jQuery('.zone_door, .zone_el, .zone_estate_center').css({
         color: 'transparent',
         borderColor: 'transparent',
         opacity: 0.8,
@@ -1127,8 +1319,11 @@ jQuery(function() {
         transform: 'rotate(0deg) scale(1.5)',
         zIndex: '1000'
     });
-    jQuery('.zone_door').css({
+    jQuery('.zone_door, .zone_el').css({
       background: '#fff url(/wp-content/themes/bcwish/img/daemon_adventure.png) center center/100% no-repeat',
+    });
+    jQuery('.zone_estate_center').addClass('rot_estate_lovushka').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/super_plod.png) center center/100% no-repeat',
     });
 
     phaseOne = setInterval(function(){
@@ -1144,7 +1339,7 @@ jQuery(function() {
       } else {
         clearInterval(phaseOne);
         count_animation = 1;
-        jQuery('.zone_door').css({
+        jQuery('.zone_door, .zone_el, .zone_estate_center').css({
             background: '#fff',
             color: '#b5a919',
             borderColor: '#b5a919',
@@ -1152,6 +1347,15 @@ jQuery(function() {
             opacity: 1,
             transform: 'rotate(0deg) scale(1)',
             zIndex: '3'
+        });
+        jQuery('.zone_estate_center').css({
+            color: '#636065',
+            borderColor: '#636065'
+        });
+        jQuery('.zone_estate_center').removeClass('rot_estate_lovushka');
+        jQuery('.zone_el').css({
+            color: '#8e21c5',
+            borderColor: '#8e21c5'
         });
         sound.stop();
         if (pausedStatus == true) {
@@ -1169,7 +1373,7 @@ jQuery(function() {
     reloadTime = 0;
     count_animation = 1;
     console.log('start_estate');
-    jQuery('.zone_door').css({
+    jQuery('.zone_door, .zone_el, .zone_estate_center').css({
         color: 'transparent',
         borderColor: 'transparent',
         opacity: 0.8,
@@ -1177,8 +1381,11 @@ jQuery(function() {
         transform: 'rotate(0deg) scale(1.5)',
         zIndex: '1000'
     });
-    jQuery('.zone_door').css({
+    jQuery('.zone_door, .zone_el').css({
       background: '#fff url(/wp-content/themes/bcwish/img/povregdenie_demona.png) center center/100% no-repeat',
+    });
+    jQuery('.zone_estate_center').addClass('rot_estate_lovushka').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/super_plod.png) center center/100% no-repeat',
     });
 
     phaseOne = setInterval(function(){
@@ -1194,7 +1401,7 @@ jQuery(function() {
       } else {
         clearInterval(phaseOne);
         count_animation = 1;
-        jQuery('.zone_door').css({
+        jQuery('.zone_door, .zone_el, .zone_estate_center').css({
             background: '#fff',
             color: '#b5a919',
             borderColor: '#b5a919',
@@ -1202,6 +1409,15 @@ jQuery(function() {
             opacity: 1,
             transform: 'rotate(0deg) scale(1)',
             zIndex: '3'
+        });
+        jQuery('.zone_estate_center').css({
+            color: '#636065',
+            borderColor: '#636065'
+        });
+        jQuery('.zone_estate_center').removeClass('rot_estate_lovushka');
+        jQuery('.zone_el').css({
+            color: '#8e21c5',
+            borderColor: '#8e21c5'
         });
         sound.stop();
         if (pausedStatus == true) {
@@ -1219,7 +1435,7 @@ jQuery(function() {
     reloadTime = 0;
     count_animation = 1;
     console.log('start_estate');
-    jQuery('.zone_wc').css({
+    jQuery('.zone_wc, .zone_estate_center').css({
         color: 'transparent',
         borderColor: 'transparent',
         opacity: 0.8,
@@ -1229,6 +1445,9 @@ jQuery(function() {
     });
     jQuery('.zone_wc').addClass('rot_estate_lovushka').css({
       background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat',
+    });
+    jQuery('.zone_estate_center').addClass('rot_estate_lovushka').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/super_plod.png) center center/100% no-repeat',
     });
 
     phaseOne = setInterval(function(){
@@ -1244,7 +1463,7 @@ jQuery(function() {
       } else {
         clearInterval(phaseOne);
         count_animation = 1;
-        jQuery('.zone_wc').css({
+        jQuery('.zone_wc, .zone_estate_center').css({
             background: '#fff',
             color: '#19b55f',
             borderColor: '#19b55f',
@@ -1253,6 +1472,11 @@ jQuery(function() {
             transform: 'rotate(0deg) scale(1)',
             zIndex: '3'
         });
+        jQuery('.zone_estate_center').css({
+            color: '#636065',
+            borderColor: '#636065'
+        });
+        jQuery('.zone_estate_center').removeClass('rot_estate_lovushka');
         jQuery('.zone_wc').removeClass('rot_estate_lovushka');
         sound.stop();
         if (pausedStatus == true) {
@@ -1271,7 +1495,7 @@ jQuery(function() {
      reloadTime = 0;
      count_animation = 1;
      console.log('start_estate');
-     jQuery('.zone_wc').css({
+     jQuery('.zone_wc, .zone_estate_center').css({
          color: 'transparent',
          borderColor: 'transparent',
          opacity: 0.8,
@@ -1282,6 +1506,9 @@ jQuery(function() {
      jQuery('.zone_wc').css({
        background: '#fff url(/wp-content/themes/bcwish/img/veter.png) center center/100% no-repeat',
      });
+    jQuery('.zone_estate_center').addClass('rot_estate_lovushka').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/super_plod.png) center center/100% no-repeat',
+    });
 
      phaseOne = setInterval(function(){
        if (count_animation <= 480){
@@ -1296,7 +1523,7 @@ jQuery(function() {
        } else {
          clearInterval(phaseOne);
          count_animation = 1;
-         jQuery('.zone_wc').css({
+         jQuery('.zone_wc, .zone_estate_center').css({
              background: '#fff',
              color: '#19b55f',
              borderColor: '#19b55f',
@@ -1305,6 +1532,11 @@ jQuery(function() {
              transform: 'rotate(0deg) scale(1)',
              zIndex: '3'
          });
+        jQuery('.zone_estate_center').css({
+            color: '#636065',
+            borderColor: '#636065'
+        });
+        jQuery('.zone_estate_center').removeClass('rot_estate_lovushka');
          sound.stop();
          if (pausedStatus == true) {
            localStorage.setItem('paused', 'estate_1_12');
@@ -1321,7 +1553,7 @@ jQuery(function() {
      reloadTime = 0;
      count_animation = 1;
      console.log('start_estate');
-     jQuery('.zone_wc').css({
+     jQuery('.zone_wc, .zone_estate_center').css({
          color: 'transparent',
          borderColor: 'transparent',
          opacity: 0.8,
@@ -1332,6 +1564,9 @@ jQuery(function() {
      jQuery('.zone_wc').css({
        background: '#fff url(/wp-content/themes/bcwish/img/life_vater.png) center center/100% no-repeat',
      });
+    jQuery('.zone_estate_center').addClass('rot_estate_lovushka').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/super_plod.png) center center/100% no-repeat',
+    });
 
      phaseOne = setInterval(function(){
        if (count_animation <= 480){
@@ -1346,15 +1581,19 @@ jQuery(function() {
        } else {
          clearInterval(phaseOne);
          count_animation = 1;
-         jQuery('.zone_wc').css({
+         jQuery('.zone_wc, .zone_estate_center').css({
              background: '#fff',
              color: '#19b55f',
              borderColor: '#19b55f',
              borderWidth: '2px',
-
              transform: 'rotate(0deg) scale(1)',
              zIndex: '3'
          });
+        jQuery('.zone_estate_center').css({
+            color: '#636065',
+            borderColor: '#636065'
+        });
+        jQuery('.zone_estate_center').removeClass('rot_estate_lovushka');
          sound.stop();
          if (pausedStatus == true) {
            localStorage.setItem('paused', 'estate_1_11');
@@ -1371,7 +1610,7 @@ jQuery(function() {
     reloadTime = 0;
     count_animation = 1;
     console.log('start_estate');
-    jQuery('.zone_wc').css({
+    jQuery('.zone_wc, .zone_estate_center').css({
         color: 'transparent',
         borderColor: 'transparent',
         opacity: 0.8,
@@ -1381,6 +1620,9 @@ jQuery(function() {
     });
     jQuery('.zone_wc').css({
       background: '#fff url(/wp-content/themes/bcwish/img/veter.png) center center/100% no-repeat',
+    });
+    jQuery('.zone_estate_center').addClass('rot_estate_lovushka').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/super_plod.png) center center/100% no-repeat',
     });
 
     phaseOne = setInterval(function(){
@@ -1396,7 +1638,7 @@ jQuery(function() {
       } else {
         clearInterval(phaseOne);
         count_animation = 1;
-        jQuery('.zone_wc').css({
+        jQuery('.zone_wc, .zone_estate_center').css({
             background: '#fff',
             color: '#19b55f',
             borderColor: '#19b55f',
@@ -1405,6 +1647,11 @@ jQuery(function() {
             transform: 'rotate(0deg) scale(1)',
             zIndex: '3'
         });
+        jQuery('.zone_estate_center').css({
+            color: '#636065',
+            borderColor: '#636065'
+        });
+        jQuery('.zone_estate_center').removeClass('rot_estate_lovushka');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'estate_1_10');
@@ -1421,7 +1668,7 @@ jQuery(function() {
     reloadTime = 0;
     count_animation = 1;
     console.log('start_estate');
-    jQuery('.zone_wc').css({
+    jQuery('.zone_wc, .zone_estate_center').css({
         color: 'transparent',
         borderColor: 'transparent',
         opacity: 0.8,
@@ -1431,6 +1678,9 @@ jQuery(function() {
     });
     jQuery('.zone_wc').css({
       background: '#fff url(/wp-content/themes/bcwish/img/life_vater.png) center center/100% no-repeat',
+    });
+    jQuery('.zone_estate_center').addClass('rot_estate_lovushka').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/super_plod.png) center center/100% no-repeat',
     });
 
     phaseOne = setInterval(function(){
@@ -1446,7 +1696,7 @@ jQuery(function() {
       } else {
         clearInterval(phaseOne);
         count_animation = 1;
-        jQuery('.zone_wc').css({
+        jQuery('.zone_wc, .zone_estate_center').css({
             background: '#fff',
             color: '#19b55f',
             borderColor: '#19b55f',
@@ -1455,6 +1705,11 @@ jQuery(function() {
             transform: 'rotate(0deg) scale(1)',
             zIndex: '3'
         });
+        jQuery('.zone_estate_center').css({
+            color: '#636065',
+            borderColor: '#636065'
+        });
+        jQuery('.zone_estate_center').removeClass('rot_estate_lovushka');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'estate_1_9');
@@ -1472,7 +1727,7 @@ jQuery(function() {
     reloadTime = 0;
     count_animation = 1;
     console.log('start_estate');
-    jQuery('.zone_wc').css({
+    jQuery('.zone_wc, .zone_estate_center').css({
         color: 'transparent',
         borderColor: 'transparent',
         opacity: 0.8,
@@ -1482,6 +1737,9 @@ jQuery(function() {
     });
     jQuery('.zone_wc').addClass('rot_estate_lovushka').css({
       background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat',
+    });
+    jQuery('.zone_estate_center').addClass('rot_estate_lovushka').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/super_plod.png) center center/100% no-repeat',
     });
 
     phaseOne = setInterval(function(){
@@ -1497,7 +1755,7 @@ jQuery(function() {
       } else {
         clearInterval(phaseOne);
         count_animation = 1;
-        jQuery('.zone_wc').css({
+        jQuery('.zone_wc, .zone_estate_center').css({
             background: '#fff',
             color: '#19b55f',
             borderColor: '#19b55f',
@@ -1506,6 +1764,11 @@ jQuery(function() {
             transform: 'rotate(0deg) scale(1)',
             zIndex: '3'
         });
+        jQuery('.zone_estate_center').css({
+            color: '#636065',
+            borderColor: '#636065'
+        });
+        jQuery('.zone_estate_center').removeClass('rot_estate_lovushka');
         jQuery('.zone_wc').removeClass('rot_estate_lovushka');
         sound.stop();
         if (pausedStatus == true) {
@@ -1524,7 +1787,7 @@ jQuery(function() {
     reloadTime = 0;
     count_animation = 1;
     console.log('start_estate');
-    jQuery('.zone_wc').css({
+    jQuery('.zone_wc, .zone_estate_center').css({
         color: 'transparent',
         borderColor: 'transparent',
         opacity: 0.8,
@@ -1534,6 +1797,9 @@ jQuery(function() {
     });
     jQuery('.zone_wc').css({
       background: '#fff url(/wp-content/themes/bcwish/img/veter.png) center center/100% no-repeat',
+    });
+    jQuery('.zone_estate_center').addClass('rot_estate_lovushka').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/super_plod.png) center center/100% no-repeat',
     });
 
     phaseOne = setInterval(function(){
@@ -1549,7 +1815,7 @@ jQuery(function() {
       } else {
         clearInterval(phaseOne);
         count_animation = 1;
-        jQuery('.zone_wc').css({
+        jQuery('.zone_wc, .zone_estate_center').css({
             background: '#fff',
             color: '#19b55f',
             borderColor: '#19b55f',
@@ -1558,6 +1824,11 @@ jQuery(function() {
             transform: 'rotate(0deg) scale(1)',
             zIndex: '3'
         });
+        jQuery('.zone_estate_center').css({
+            color: '#636065',
+            borderColor: '#636065'
+        });
+        jQuery('.zone_estate_center').removeClass('rot_estate_lovushka');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'estate_1_7');
@@ -1574,7 +1845,7 @@ jQuery(function() {
     reloadTime = 0;
     count_animation = 1;
     console.log('start_estate');
-    jQuery('.zone_wc').css({
+    jQuery('.zone_wc, .zone_estate_center').css({
         color: 'transparent',
         borderColor: 'transparent',
         opacity: 0.8,
@@ -1584,6 +1855,9 @@ jQuery(function() {
     });
     jQuery('.zone_wc').css({
       background: '#fff url(/wp-content/themes/bcwish/img/life_vater.png) center center/100% no-repeat',
+    });
+    jQuery('.zone_estate_center').addClass('rot_estate_lovushka').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/super_plod.png) center center/100% no-repeat',
     });
 
     phaseOne = setInterval(function(){
@@ -1599,7 +1873,7 @@ jQuery(function() {
       } else {
         clearInterval(phaseOne);
         count_animation = 1;
-        jQuery('.zone_wc').css({
+        jQuery('.zone_wc, .zone_estate_center').css({
             background: '#fff',
             color: '#19b55f',
             borderColor: '#19b55f',
@@ -1608,6 +1882,11 @@ jQuery(function() {
             transform: 'rotate(0deg) scale(1)',
             zIndex: '3'
         });
+        jQuery('.zone_estate_center').css({
+            color: '#636065',
+            borderColor: '#636065'
+        });
+        jQuery('.zone_estate_center').removeClass('rot_estate_lovushka');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'estate_1_6');
@@ -1624,7 +1903,7 @@ jQuery(function() {
    reloadTime = 0;
    count_animation = 1;
    console.log('start_estate');
-   jQuery('.zone_wc').css({
+   jQuery('.zone_wc, .zone_estate_center').css({
        color: 'transparent',
        borderColor: 'transparent',
        opacity: 0.8,
@@ -1635,6 +1914,9 @@ jQuery(function() {
    jQuery('.zone_wc').css({
      background: '#fff url(/wp-content/themes/bcwish/img/veter.png) center center/100% no-repeat',
    });
+    jQuery('.zone_estate_center').addClass('rot_estate_lovushka').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/super_plod.png) center center/100% no-repeat',
+    });
 
    phaseOne = setInterval(function(){
      if (count_animation <= 480){
@@ -1649,7 +1931,7 @@ jQuery(function() {
      } else {
        clearInterval(phaseOne);
        count_animation = 1;
-       jQuery('.zone_wc').css({
+       jQuery('.zone_wc, .zone_estate_center').css({
            background: '#fff',
            color: '#19b55f',
            borderColor: '#19b55f',
@@ -1658,6 +1940,11 @@ jQuery(function() {
            transform: 'rotate(0deg) scale(1)',
            zIndex: '3'
        });
+        jQuery('.zone_estate_center').css({
+            color: '#636065',
+            borderColor: '#636065'
+        });
+        jQuery('.zone_estate_center').removeClass('rot_estate_lovushka');
        sound.stop();
        if (pausedStatus == true) {
          localStorage.setItem('paused', 'estate_1_5');
@@ -1674,7 +1961,7 @@ jQuery(function() {
    reloadTime = 0;
    count_animation = 1;
    console.log('start_estate');
-   jQuery('.zone_wc').css({
+   jQuery('.zone_wc, .zone_estate_center').css({
        color: 'transparent',
        borderColor: 'transparent',
        opacity: 0.8,
@@ -1685,6 +1972,9 @@ jQuery(function() {
    jQuery('.zone_wc').css({
      background: '#fff url(/wp-content/themes/bcwish/img/life_vater.png) center center/100% no-repeat',
    });
+    jQuery('.zone_estate_center').addClass('rot_estate_lovushka').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/super_plod.png) center center/100% no-repeat',
+    });
 
    phaseOne = setInterval(function(){
      if (count_animation <= 480){
@@ -1699,7 +1989,7 @@ jQuery(function() {
      } else {
        clearInterval(phaseOne);
        count_animation = 1;
-       jQuery('.zone_wc').css({
+       jQuery('.zone_wc, .zone_estate_center').css({
            background: '#fff',
            color: '#19b55f',
            borderColor: '#19b55f',
@@ -1708,6 +1998,11 @@ jQuery(function() {
            transform: 'rotate(0deg) scale(1)',
            zIndex: '3'
        });
+        jQuery('.zone_estate_center').css({
+            color: '#636065',
+            borderColor: '#636065'
+        });
+        jQuery('.zone_estate_center').removeClass('rot_estate_lovushka');
        sound.stop();
        if (pausedStatus == true) {
          localStorage.setItem('paused', 'estate_1_4');
@@ -1725,7 +2020,7 @@ estate_1_2 = function(){
   reloadTime = 0;
   count_animation = 1;
   console.log('start_estate');
-  jQuery('.zone_wc').css({
+  jQuery('.zone_wc, .zone_estate_center').css({
       color: 'transparent',
       borderColor: 'transparent',
       opacity: 0.8,
@@ -1736,6 +2031,9 @@ estate_1_2 = function(){
   jQuery('.zone_wc').addClass('rot_estate_lovushka').css({
     background: '#fff url(/wp-content/themes/bcwish/img/lovushka.png) center center/100% no-repeat',
   });
+    jQuery('.zone_estate_center').addClass('rot_estate_lovushka').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/super_plod.png) center center/100% no-repeat',
+    });
 
   phaseOne = setInterval(function(){
     if (count_animation <= 480){
@@ -1750,7 +2048,7 @@ estate_1_2 = function(){
     } else {
       clearInterval(phaseOne);
       count_animation = 1;
-      jQuery('.zone_wc').css({
+      jQuery('.zone_wc, .zone_estate_center').css({
           background: '#fff',
           color: '#19b55f',
           borderColor: '#19b55f',
@@ -1759,6 +2057,11 @@ estate_1_2 = function(){
           transform: 'rotate(0deg) scale(1)',
           zIndex: '3'
       });
+        jQuery('.zone_estate_center').css({
+            color: '#636065',
+            borderColor: '#636065'
+        });
+        jQuery('.zone_estate_center').removeClass('rot_estate_lovushka');
       jQuery('.zone_wc').removeClass('rot_estate_lovushka');
       sound.stop();
       if (pausedStatus == true) {
@@ -1777,7 +2080,7 @@ estate_1_1 = function(){
   reloadTime = 0;
   count_animation = 1;
   console.log('start_estate');
-  jQuery('.zone_wc').css({
+  jQuery('.zone_wc, .zone_estate_center').css({
       color: 'transparent',
       borderColor: 'transparent',
       opacity: 0.8,
@@ -1788,6 +2091,9 @@ estate_1_1 = function(){
   jQuery('.zone_wc').addClass('rot_estate_super').css({
     background: '#fff url(/wp-content/themes/bcwish/img/superdisfunction.png) center center/100% no-repeat',
   });
+    jQuery('.zone_estate_center').addClass('rot_estate_lovushka').css({
+      background: '#fff url(/wp-content/themes/bcwish/img/super_plod.png) center center/100% no-repeat',
+    });
 
   phaseOne = setInterval(function(){
     if (count_animation <= 480){
@@ -1802,7 +2108,7 @@ estate_1_1 = function(){
     } else {
       clearInterval(phaseOne);
       count_animation = 1;
-      jQuery('.zone_wc').css({
+      jQuery('.zone_wc, .zone_estate_center').css({
           background: '#fff',
           color: '#19b55f',
           borderColor: '#19b55f',
@@ -1811,6 +2117,11 @@ estate_1_1 = function(){
           transform: 'rotate(0deg) scale(1)',
           zIndex: '3'
       });
+        jQuery('.zone_estate_center').css({
+            color: '#636065',
+            borderColor: '#636065'
+        });
+        jQuery('.zone_estate_center').removeClass('rot_estate_lovushka');
       jQuery('.zone_wc').removeClass('rot_estate_super');
       sound.stop();
       if (pausedStatus == true) {
