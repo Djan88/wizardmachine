@@ -112,10 +112,10 @@ jQuery(function() {
         transform: 'rotate(0deg) scale(1.5)',
         zIndex: '1000'
     });
-    jQuery('.zone_corner_2').addClass('rot_estate_lovushka').css({
+    jQuery('.zone_corner_2').addClass('rot_estate_super').css({
       background: '#fff url(/wp-content/themes/bcwish/img/plod.png) center center/100% no-repeat',
     });
-    jQuery('.zone_corner_1').addClass('rot_estate_super').css({
+    jQuery('.zone_corner_1').addClass('rot_estate_lovushka').css({
       background: '#fff url(/wp-content/themes/bcwish/img/x.png) center center/100% no-repeat',
     });
     jQuery('.zone_estate_center').addClass('rot_estate_super').css({
@@ -149,8 +149,8 @@ jQuery(function() {
             borderColor: '#636065'
         });
         jQuery('.zone_estate_center').removeClass('rot_estate_super');
-        jQuery('.zone_corner_2').removeClass('rot_estate_lovushka');
-        jQuery('.zone_corner_1').removeClass('rot_estate_super');
+        jQuery('.zone_corner_2').removeClass('rot_estate_super');
+        jQuery('.zone_corner_1').removeClass('rot_estate_lovushka');
         sound.stop();
         onEndEstate();
       }
@@ -169,10 +169,10 @@ jQuery(function() {
         transform: 'rotate(0deg) scale(1.5)',
         zIndex: '1000'
     });
-    jQuery('.zone_corner_1').addClass('rot_estate_lovushka').css({
+    jQuery('.zone_corner_1').addClass('rot_estate_super').css({
       background: '#fff url(/wp-content/themes/bcwish/img/plod.png) center center/100% no-repeat',
     });
-    jQuery('.zone_corner_2').addClass('rot_estate_super').css({
+    jQuery('.zone_corner_2').addClass('rot_estate_lovushka').css({
       background: '#fff url(/wp-content/themes/bcwish/img/x.png) center center/100% no-repeat',
     });
     jQuery('.zone_estate_center').addClass('rot_estate_super').css({
@@ -206,8 +206,8 @@ jQuery(function() {
             borderColor: '#636065'
         });
         jQuery('.zone_estate_center').removeClass('rot_estate_super');
-        jQuery('.zone_corner_1').removeClass('rot_estate_lovushka');
-        jQuery('.zone_corner_2').removeClass('rot_estate_super');
+        jQuery('.zone_corner_1').removeClass('rot_estate_super');
+        jQuery('.zone_corner_2').removeClass('rot_estate_lovushka');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'estate_3_12');
