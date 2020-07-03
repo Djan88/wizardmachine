@@ -85,10 +85,11 @@ jQuery(function() {
       if (isConfirm) {
         jQuery(location).attr('href','/');
       } else {
-        jQuery('.wizard_main_screen, .wizard_to_protList').addClass('hidden');
-        jQuery('.wizard_stop').addClass('hidden');
-        jQuery('.wizard_prots, .wizard_operation, .wizard_to_what_way').fadeIn(500).removeClass('hidden');
-        jQuery('.wizard_heading').text('Выберите протокол');
+        jQuery('.estate-percent').addClass('transparent').text('0%');
+        jQuery('.estate_start').removeClass('hidden');
+        jQuery('.estate_pause').addClass('hidden');
+        jQuery('.zone_estate.zone_default').removeClass('hidden');
+        jQuery('.wizard_heading').text('Отметьте специальной точкой центр помещения, за тем - точки входа электричества и скопления розеток, двери, сан узлы и внутренние углы.');
       }
     })
   }

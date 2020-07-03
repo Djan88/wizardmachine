@@ -60,7 +60,7 @@ jQuery(function() {
       jQuery('.machine_screen, #intro').addClass('hidden');
       jQuery('.wizard_estate').removeClass('hidden');
       jQuery('.wizard_returned_estate').attr('src', croppedImg.src);
-      jQuery('.wizard_heading').text('Перенесите зоны углов, дверей и сан узла на соответствующие позиции на плане.');
+      jQuery('.wizard_heading').text('Отметьте специальной точкой центр помещения, за тем - точки входа электричества и скопления розеток, двери, сан узлы и внутренние углы.');
       jQuery('.wizard_to_start').fadeIn(500).removeClass('hidden');
       jQuery('.wm_start').removeClass('unopacity');
       jQuery('.wm_start').removeAttr('style');
