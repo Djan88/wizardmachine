@@ -77,7 +77,7 @@ jQuery(function() {
       showCancelButton: true,
       confirmButtonClass: "btn-danger",
       cancelButtonClass: "btn-success",
-      cancelButtonText: "Другой протокол",
+      cancelButtonText: "Повторить протокол",
       confirmButtonText: "Новый клиент",
       closeOnConfirm: false
     },
@@ -148,7 +148,7 @@ jQuery(function() {
             color: '#636065',
             borderColor: '#636065'
         });
-        jQuery('.zone_estate_center').removeClass('rot_estate_super');
+        jQuery('.zone_estate_center').removeClass('rot_estate_super').css('transform', 'rotate(45deg)');
         jQuery('.zone_corner_2').removeClass('rot_estate_super');
         jQuery('.zone_corner_1').removeClass('rot_estate_lovushka');
         sound.stop();
@@ -205,7 +205,7 @@ jQuery(function() {
             color: '#636065',
             borderColor: '#636065'
         });
-        jQuery('.zone_estate_center').removeClass('rot_estate_super');
+        jQuery('.zone_estate_center').removeClass('rot_estate_super').css('transform', 'rotate(45deg)');
         jQuery('.zone_corner_1').removeClass('rot_estate_super');
         jQuery('.zone_corner_2').removeClass('rot_estate_lovushka');
         sound.stop();
@@ -265,7 +265,7 @@ jQuery(function() {
             color: '#636065',
             borderColor: '#636065'
         });
-        jQuery('.zone_estate_center').removeClass('rot_estate_super');
+        jQuery('.zone_estate_center').removeClass('rot_estate_super').css('transform', 'rotate(45deg)');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'estate_3_11');
@@ -323,7 +323,7 @@ jQuery(function() {
             color: '#636065',
             borderColor: '#636065'
         });
-        jQuery('.zone_estate_center').removeClass('rot_estate_super');
+        jQuery('.zone_estate_center').removeClass('rot_estate_super').css('transform', 'rotate(45deg)');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'estate_3_10');
@@ -381,7 +381,7 @@ jQuery(function() {
             color: '#636065',
             borderColor: '#636065'
         });
-        jQuery('.zone_estate_center').removeClass('rot_estate_super');
+        jQuery('.zone_estate_center').removeClass('rot_estate_super').css('transform', 'rotate(45deg)');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'estate_3_9');
@@ -439,7 +439,7 @@ jQuery(function() {
             color: '#636065',
             borderColor: '#636065'
         });
-        jQuery('.zone_estate_center').removeClass('rot_estate_super');
+        jQuery('.zone_estate_center').removeClass('rot_estate_super').css('transform', 'rotate(45deg)');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'estate_3_8');
@@ -497,7 +497,7 @@ jQuery(function() {
             color: '#636065',
             borderColor: '#636065'
         });
-        jQuery('.zone_estate_center').removeClass('rot_estate_super');
+        jQuery('.zone_estate_center').removeClass('rot_estate_super').css('transform', 'rotate(45deg)');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'estate_3_7');
@@ -555,7 +555,7 @@ jQuery(function() {
             color: '#636065',
             borderColor: '#636065'
         });
-        jQuery('.zone_estate_center').removeClass('rot_estate_super');
+        jQuery('.zone_estate_center').removeClass('rot_estate_super').css('transform', 'rotate(45deg)');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'estate_3_6');
@@ -613,7 +613,7 @@ jQuery(function() {
             color: '#636065',
             borderColor: '#636065'
         });
-        jQuery('.zone_estate_center').removeClass('rot_estate_super');
+        jQuery('.zone_estate_center').removeClass('rot_estate_super').css('transform', 'rotate(45deg)');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'estate_3_5');
@@ -671,7 +671,7 @@ jQuery(function() {
             color: '#636065',
             borderColor: '#636065'
         });
-        jQuery('.zone_estate_center').removeClass('rot_estate_super');
+        jQuery('.zone_estate_center').removeClass('rot_estate_super').css('transform', 'rotate(45deg)');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'estate_3_4');
@@ -732,7 +732,7 @@ jQuery(function() {
             color: '#636065',
             borderColor: '#636065'
         });
-        jQuery('.zone_estate_center').removeClass('rot_estate_super');
+        jQuery('.zone_estate_center').removeClass('rot_estate_super').css('transform', 'rotate(45deg)');
         jQuery('.zone_corner_2').removeClass('rot_estate_lovushka');
         jQuery('.zone_corner_1').removeClass('rot_estate_super');
         sound.stop();
@@ -795,7 +795,7 @@ jQuery(function() {
             color: '#636065',
             borderColor: '#636065'
         });
-        jQuery('.zone_estate_center').removeClass('rot_estate_super');
+        jQuery('.zone_estate_center').removeClass('rot_estate_super').css('transform', 'rotate(45deg)');
         jQuery('.zone_corner_1').removeClass('rot_estate_lovushka');
         jQuery('.zone_corner_2').removeClass('rot_estate_super');
         sound.stop();
@@ -856,7 +856,7 @@ jQuery(function() {
             color: '#636065',
             borderColor: '#636065'
         });
-        jQuery('.zone_estate_center').removeClass('rot_estate_super');
+        jQuery('.zone_estate_center').removeClass('rot_estate_super').css('transform', 'rotate(45deg)');
         jQuery('.zone_el').css({
             color: '#8e21c5',
             borderColor: '#8e21c5'
@@ -919,7 +919,7 @@ jQuery(function() {
             color: '#636065',
             borderColor: '#636065'
         });
-        jQuery('.zone_estate_center').removeClass('rot_estate_super');
+        jQuery('.zone_estate_center').removeClass('rot_estate_super').css('transform', 'rotate(45deg)');
         jQuery('.zone_el').css({
             color: '#8e21c5',
             borderColor: '#8e21c5'
@@ -982,7 +982,7 @@ jQuery(function() {
             color: '#636065',
             borderColor: '#636065'
         });
-        jQuery('.zone_estate_center').removeClass('rot_estate_super');
+        jQuery('.zone_estate_center').removeClass('rot_estate_super').css('transform', 'rotate(45deg)');
         jQuery('.zone_el').css({
             color: '#8e21c5',
             borderColor: '#8e21c5'
@@ -1044,7 +1044,7 @@ jQuery(function() {
             color: '#636065',
             borderColor: '#636065'
         });
-        jQuery('.zone_estate_center').removeClass('rot_estate_super');
+        jQuery('.zone_estate_center').removeClass('rot_estate_super').css('transform', 'rotate(45deg)');
         jQuery('.zone_el').css({
             color: '#8e21c5',
             borderColor: '#8e21c5'
@@ -1106,7 +1106,7 @@ jQuery(function() {
             color: '#636065',
             borderColor: '#636065'
         });
-        jQuery('.zone_estate_center').removeClass('rot_estate_super');
+        jQuery('.zone_estate_center').removeClass('rot_estate_super').css('transform', 'rotate(45deg)');
         jQuery('.zone_el').css({
             color: '#8e21c5',
             borderColor: '#8e21c5'
@@ -1168,7 +1168,7 @@ jQuery(function() {
             color: '#636065',
             borderColor: '#636065'
         });
-        jQuery('.zone_estate_center').removeClass('rot_estate_super');
+        jQuery('.zone_estate_center').removeClass('rot_estate_super').css('transform', 'rotate(45deg)');
         jQuery('.zone_el').css({
             color: '#8e21c5',
             borderColor: '#8e21c5'
@@ -1230,7 +1230,7 @@ jQuery(function() {
             color: '#636065',
             borderColor: '#636065'
         });
-        jQuery('.zone_estate_center').removeClass('rot_estate_super');
+        jQuery('.zone_estate_center').removeClass('rot_estate_super').css('transform', 'rotate(45deg)');
         jQuery('.zone_el').css({
             color: '#8e21c5',
             borderColor: '#8e21c5'
@@ -1292,7 +1292,7 @@ jQuery(function() {
             color: '#636065',
             borderColor: '#636065'
         });
-        jQuery('.zone_estate_center').removeClass('rot_estate_super');
+        jQuery('.zone_estate_center').removeClass('rot_estate_super').css('transform', 'rotate(45deg)');
         jQuery('.zone_el').css({
             color: '#8e21c5',
             borderColor: '#8e21c5'
@@ -1354,7 +1354,7 @@ jQuery(function() {
             color: '#636065',
             borderColor: '#636065'
         });
-        jQuery('.zone_estate_center').removeClass('rot_estate_super');
+        jQuery('.zone_estate_center').removeClass('rot_estate_super').css('transform', 'rotate(45deg)');
         jQuery('.zone_el').css({
             color: '#8e21c5',
             borderColor: '#8e21c5'
@@ -1416,7 +1416,7 @@ jQuery(function() {
             color: '#636065',
             borderColor: '#636065'
         });
-        jQuery('.zone_estate_center').removeClass('rot_estate_super');
+        jQuery('.zone_estate_center').removeClass('rot_estate_super').css('transform', 'rotate(45deg)');
         jQuery('.zone_el').css({
             color: '#8e21c5',
             borderColor: '#8e21c5'
@@ -1478,7 +1478,7 @@ jQuery(function() {
             color: '#636065',
             borderColor: '#636065'
         });
-        jQuery('.zone_estate_center').removeClass('rot_estate_super');
+        jQuery('.zone_estate_center').removeClass('rot_estate_super').css('transform', 'rotate(45deg)');
         jQuery('.zone_wc').removeClass('rot_estate_lovushka');
         sound.stop();
         if (pausedStatus == true) {
@@ -1538,7 +1538,7 @@ jQuery(function() {
             color: '#636065',
             borderColor: '#636065'
         });
-        jQuery('.zone_estate_center').removeClass('rot_estate_super');
+        jQuery('.zone_estate_center').removeClass('rot_estate_super').css('transform', 'rotate(45deg)');
          sound.stop();
          if (pausedStatus == true) {
            localStorage.setItem('paused', 'estate_1_12');
@@ -1595,7 +1595,7 @@ jQuery(function() {
             color: '#636065',
             borderColor: '#636065'
         });
-        jQuery('.zone_estate_center').removeClass('rot_estate_super');
+        jQuery('.zone_estate_center').removeClass('rot_estate_super').css('transform', 'rotate(45deg)');
          sound.stop();
          if (pausedStatus == true) {
            localStorage.setItem('paused', 'estate_1_11');
@@ -1653,7 +1653,7 @@ jQuery(function() {
             color: '#636065',
             borderColor: '#636065'
         });
-        jQuery('.zone_estate_center').removeClass('rot_estate_super');
+        jQuery('.zone_estate_center').removeClass('rot_estate_super').css('transform', 'rotate(45deg)');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'estate_1_10');
@@ -1711,7 +1711,7 @@ jQuery(function() {
             color: '#636065',
             borderColor: '#636065'
         });
-        jQuery('.zone_estate_center').removeClass('rot_estate_super');
+        jQuery('.zone_estate_center').removeClass('rot_estate_super').css('transform', 'rotate(45deg)');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'estate_1_9');
@@ -1770,7 +1770,7 @@ jQuery(function() {
             color: '#636065',
             borderColor: '#636065'
         });
-        jQuery('.zone_estate_center').removeClass('rot_estate_super');
+        jQuery('.zone_estate_center').removeClass('rot_estate_super').css('transform', 'rotate(45deg)');
         jQuery('.zone_wc').removeClass('rot_estate_lovushka');
         sound.stop();
         if (pausedStatus == true) {
@@ -1830,7 +1830,7 @@ jQuery(function() {
             color: '#636065',
             borderColor: '#636065'
         });
-        jQuery('.zone_estate_center').removeClass('rot_estate_super');
+        jQuery('.zone_estate_center').removeClass('rot_estate_super').css('transform', 'rotate(45deg)');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'estate_1_7');
@@ -1888,7 +1888,7 @@ jQuery(function() {
             color: '#636065',
             borderColor: '#636065'
         });
-        jQuery('.zone_estate_center').removeClass('rot_estate_super');
+        jQuery('.zone_estate_center').removeClass('rot_estate_super').css('transform', 'rotate(45deg)');
         sound.stop();
         if (pausedStatus == true) {
           localStorage.setItem('paused', 'estate_1_6');
@@ -1946,7 +1946,7 @@ jQuery(function() {
             color: '#636065',
             borderColor: '#636065'
         });
-        jQuery('.zone_estate_center').removeClass('rot_estate_super');
+        jQuery('.zone_estate_center').removeClass('rot_estate_super').css('transform', 'rotate(45deg)');
        sound.stop();
        if (pausedStatus == true) {
          localStorage.setItem('paused', 'estate_1_5');
@@ -2004,7 +2004,7 @@ jQuery(function() {
             color: '#636065',
             borderColor: '#636065'
         });
-        jQuery('.zone_estate_center').removeClass('rot_estate_super');
+        jQuery('.zone_estate_center').removeClass('rot_estate_super').css('transform', 'rotate(45deg)');
        sound.stop();
        if (pausedStatus == true) {
          localStorage.setItem('paused', 'estate_1_4');
@@ -2063,7 +2063,7 @@ estate_1_2 = function(){
             color: '#636065',
             borderColor: '#636065'
         });
-        jQuery('.zone_estate_center').removeClass('rot_estate_super');
+        jQuery('.zone_estate_center').removeClass('rot_estate_super').css('transform', 'rotate(45deg)');
       jQuery('.zone_wc').removeClass('rot_estate_lovushka');
       sound.stop();
       if (pausedStatus == true) {
@@ -2123,7 +2123,7 @@ estate_1_1 = function(){
             color: '#636065',
             borderColor: '#636065'
         });
-        jQuery('.zone_estate_center').removeClass('rot_estate_super');
+        jQuery('.zone_estate_center').removeClass('rot_estate_super').css('transform', 'rotate(45deg)');
       jQuery('.zone_wc').removeClass('rot_estate_lovushka');
       sound.stop();
       if (pausedStatus == true) {
