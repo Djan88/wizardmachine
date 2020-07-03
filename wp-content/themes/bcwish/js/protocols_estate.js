@@ -940,8 +940,8 @@ jQuery(function() {
     jQuery('.estate-percent').text('57%');
     reloadTime = 0;
     count_animation = 1;
-    console.log('start_estate, .zone_estate_center');
-    jQuery('.zone_door, .zone_el').css({
+    console.log('start_estate');
+    jQuery('.zone_door, .zone_el, .zone_estate_center').css({
         color: 'transparent',
         borderColor: 'transparent',
         opacity: 0.8,
