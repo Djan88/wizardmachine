@@ -93,8 +93,6 @@ jQuery(function() {
     nextSound.play();
   });
 
-
-
   jQuery('.mobile-nav-toggle, .mobile-nav a, .photo_upload, .crop_photo, .btn_diag, .btn_prot_choice, .wizard_clean_graf, .btn_prot_choice_fromDiag, #faq-list li a, .wizard_protocol, .wizard_play, .wizard_starter_alt, .wizard_stop, body .cancel, body .confirm, .wizard_continue, .mobile-nav select, .wpcf7-submit, .btn-get-started').on('click', function(event) {
     nextSound.play();
   });
@@ -207,9 +205,10 @@ jQuery(function() {
 
 
 // Сброс зон на плане
-  jQuery('.zone_estate').on('dblclick', function(event) {
+  jQuery('.zone_estate').on('dblclick, doubletap', function(event) {
     jQuery(this).addClass('zone_default').removeAttr('style');
   });
+
   jQuery('.estate_clean').on('click', function(event) {
     jQuery('.zone_estate').addClass('zone_default').removeAttr('style');
   });

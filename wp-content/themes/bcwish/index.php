@@ -1557,6 +1557,7 @@
     <script src="<?php bloginfo('template_url'); ?>/js/howler.js"></script>
     <script src="<?php bloginfo('template_url'); ?>/js/gsap.min.js"></script>
     <script src="<?php bloginfo('template_url'); ?>/js/protocols_test.js"></script>
+    <script src="<?php bloginfo('template_url'); ?>/js/doubletap.js"></script>
     <script src="<?php bloginfo('template_url'); ?>/js/protocols_estate.js"></script>
     <script src="<?php bloginfo('template_url'); ?>/js/script.js"></script>
     
