@@ -461,7 +461,7 @@
                         <div class="estate-percent transparent">0%</div>
                       </div>
                       <div class="col-sm-10 returned_estate wow bounceInUp" data-wow-duration="1.4s" data-wow-delay="0.4s">
-                        <img src="" class="wizard_returned_estate draggable" alt="wizard_returned">
+                        <img src="" class="wizard_returned_estate" alt="wizard_returned">
                       </div>
                     </div>
                   </div>
