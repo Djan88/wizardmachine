@@ -44,6 +44,7 @@ jQuery(function() {
     count_animation = 1;
     localStorage.setItem('protocol_type', 'estate');
     alertSound.play();
+    jQuery('.estate_start').text('Продолжить');
 
     swal({
       title: "Приостановлено пользователем",
@@ -2181,7 +2182,7 @@ estate_1_1 = function(){
   }
 
   jQuery('.estate_pause') .on('click', function(event) {
-    jQuery('.header-title').text('Программа останавливается');
+    jQuery('.wizard_heading').text('Программа останавливается');
     // endStatus = true;
     jQuery('.estate_pause').popover('show');
     setTimeout(hideNoteEstate, 5000);

@@ -12,6 +12,7 @@ jQuery(function() {
       reloadTime1 = 0,
       d12Val = 0,
       cur_animation_val = 0,
+      protocol_type,
       rotateVal = 0,
       count_animation = 1,
       pausedStatus = false,
@@ -16308,19 +16309,27 @@ mmt_2 = function(){
   if (localStorage.getItem('paused')) {
     jQuery('.wizard_continue').removeClass('hidden');
     returned_img = localStorage.getItem('pausedPhoto');
+    protocol_type = localStorage.getItem('protocol_type');
     pausedStatus = true;
     jQuery('.main_arrow').addClass('main_arrow_combine');
     jQuery('.main_arrow_title').addClass('main_arrow_title_combine');
   }
 
   jQuery('.wizard_continue.btn-warning').on('click', function(event) {
-    jQuery('.machine_screen, #intro').addClass('hidden');
-    jQuery('.wizard_returned').attr('src', returned_img);
-    jQuery('.wm_start').removeClass('unopacity');
-    jQuery('.wm_start').removeAttr('style');
-    jQuery('.wizard_to_protList, .wizard_play, .wizard_starter_alt').fadeIn(500).removeClass('hidden');
-    jQuery('.wizard_main_screen').fadeIn(500).removeClass('hidden').css('display', 'flex');
-    jQuery('.wizard_heading').text('Перенесите зоны на фото и можно будет продолжить работу.');
+    if (protocol_type == 'human') {
+      jQuery('.machine_screen, #intro').addClass('hidden');
+      jQuery('.wizard_returned').attr('src', returned_img);
+      jQuery('.wm_start').removeClass('unopacity');
+      jQuery('.wm_start').removeAttr('style');
+      jQuery('.wizard_to_protList, .wizard_play, .wizard_starter_alt').fadeIn(500).removeClass('hidden');
+      jQuery('.wizard_main_screen').fadeIn(500).removeClass('hidden').css('display', 'flex');
+      jQuery('.wizard_heading').text('Перенесите зоны на фото и можно будет продолжить работу.');
+    } else if (protocol_type == 'estate') {
+      jQuery('.machine_screen, #intro').addClass('hidden');
+      jQuery('.wizard_returned_estate').attr('src', returned_img);
+      jQuery('.wizard_heading').text('Отметьте специальной точкой центр помещения, за тем - точки входа электричества и скопления розеток, двери, сан узлы и внутренние углы.');
+      jQuery('.estate_start').text('Продолжить');
+    }
   });
 
   
