@@ -16327,6 +16327,8 @@ mmt_2 = function(){
       jQuery('.wizard_heading').text('Перенесите зоны на фото и можно будет продолжить работу.');
     } else if (protocol_type == 'estate') {
       jQuery('.machine_screen, #intro').addClass('hidden');
+      jQuery('.wm_start').removeClass('unopacity');
+      jQuery('.wm_start').removeAttr('style');
       jQuery('.wizard_returned_estate').attr('src', returned_img);
       jQuery('.wizard_estate').fadeIn(500).removeClass('hidden').css('display', 'flex');
       jQuery('.wizard_heading').text('Отметьте специальной точкой центр помещения, за тем - точки входа электричества и скопления розеток, двери, сан узлы и внутренние углы.');
