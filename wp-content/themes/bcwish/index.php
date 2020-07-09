@@ -309,8 +309,8 @@
                     <div>
                       <input id="image_file" class="hidden" name="mci_image_file" type="file" />
                       <label class="btn btn-success photo_upload wizard_blue"  data-wow-duration="1.4s" data-wow-delay="0.4s" for="image_file">Выберите файл</label>
-                      <img src="<?php bloginfo('template_url'); ?>/img/template_.png" alt="template" class="template_load">
-                      <img src="<?php bloginfo('template_url'); ?>/img/plan.png" alt="template" class="template_load_estate hidden">
+                      <img src="<?php bloginfo('template_url'); ?>/img/template_.png" alt="template" class="template_load template_load_human">
+                      <img src="<?php bloginfo('template_url'); ?>/img/plan.png" alt="template" class="template_load template_load_estate hidden">
                     </div>
                     <div class="error"></div>
                     <div class="step2">

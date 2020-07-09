@@ -88,7 +88,7 @@ jQuery(function() {
   jQuery('.wm_init_estate').on('click', function(event) {
     jQuery('.wm_start').removeClass('unopacity');
     localStorage.setItem('mode', 'estate');
-    jQuery('.template_load').addClass('hidden');
+    jQuery('.template_load_human').addClass('hidden');
     jQuery('.template_load_estate').removeClass('hidden');
     jQuery('.wizard_heading').text('Загрузите план помещения');
     mode = 'estate';
