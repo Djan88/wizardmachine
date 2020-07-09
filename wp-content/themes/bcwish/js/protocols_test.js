@@ -16328,6 +16328,7 @@ mmt_2 = function(){
     } else if (protocol_type == 'estate') {
       jQuery('.machine_screen, #intro').addClass('hidden');
       jQuery('.wizard_returned_estate').attr('src', returned_img);
+      jQuery('.wizard_estate').fadeIn(500).removeClass('hidden').css('display', 'flex');
       jQuery('.wizard_heading').text('Отметьте специальной точкой центр помещения, за тем - точки входа электричества и скопления розеток, двери, сан узлы и внутренние углы.');
       jQuery('.estate_start').text('Продолжить');
     }
