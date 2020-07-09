@@ -2171,4 +2171,22 @@ estate_1_1 = function(){
       }
     }) 
   });
+
+
+  // STOP
+  function hideNoteEstate() {
+    jQuery('.estate_pause').popover('hide');
+  }
+
+  jQuery('.estate_pause') .on('click', function(event) {
+    jQuery('.wizard_stop').addClass('wizard_stop_inProgress');
+    jQuery('.header-title').text('Программа останавливается');
+    // endStatus = true;
+    jQuery('.estate_pause').popover('show');
+    setTimeout(hideNoteEstate, 5000);
+    localStorage.setItem('pausedPhoto', jQuery('.wizard_returned_estate').attr('src'));
+    pausedStatus = true;
+    // console.log('pausedStatus = true');
+  });
+  
 });
