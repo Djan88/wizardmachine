@@ -2160,6 +2160,8 @@ estate_1_1 = function(){
         swal.close();
         if (pausedStatus == true) {
           protocolfromMemory = eval(localStorage.getItem('paused'));
+          console.log(protocolfromMemory);
+          console.log(pausedStatus);
           protocolfromMemory();
           pausedStatus = false;
         } else {
