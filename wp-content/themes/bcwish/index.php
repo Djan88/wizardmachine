@@ -457,7 +457,7 @@
                         </div>
                         <button class="btn btn-success estate_clean">Сброс</button>
                         <button class="btn btn-primary estate_start">Старт</button>
-                        <button class="btn btn-warning estate_pause hidden">Пауза</button>
+                        <button class="btn btn-warning estate_pause hidden"  data-toggle="popover" data-placement="bottom" title="Протокол остановлен!" data-content="Выполнение протокола будет приостановлено по окончании текущей фазы. Все данные будут сохранены">Пауза</button>
                         <div class="estate-percent transparent">0%</div>
                       </div>
                       <div class="col-sm-10 returned_estate wow bounceInUp" data-wow-duration="1.4s" data-wow-delay="0.4s">

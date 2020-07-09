@@ -74,6 +74,7 @@ jQuery(function() {
     rotateVal = 0;
     count_animation = 1;
     alertSound.play();
+    localStorage.setItem('protocol_type', 'human');
     jQuery('.ring').removeClass('in_progress');
 
     swal({
@@ -16394,14 +16395,14 @@ mmt_2 = function(){
 
   // STOP
   function hideNote() {
-    jQuery('.wizard_stop').popover('hide');
+    jQuery('.wizard_stop, .estate_pause').popover('hide');
   }
 
-  jQuery('.wizard_stop') .on('click', function(event) {
-    jQuery(this).addClass('wizard_stop_inProgress');
+  jQuery('.wizard_stop, .estate_pause') .on('click', function(event) {
+    jQuery('.wizard_stop').addClass('wizard_stop_inProgress');
     jQuery('.header-title').text('Программа останавливается');
     // endStatus = true;
-    jQuery('.wizard_stop').popover('show');
+    jQuery('.wizard_stop, .estate_pause').popover('show');
     setTimeout(hideNote, 5000);
     localStorage.setItem('pausedPhoto', jQuery('.wizard_returned').attr('src'));
     pausedStatus = true;

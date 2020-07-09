@@ -42,6 +42,7 @@ jQuery(function() {
     reloadTime1 = 0;
     rotateVal = 0;
     count_animation = 1;
+    localStorage.setItem('protocol_type', 'estate');
     alertSound.play();
 
     swal({
@@ -59,8 +60,11 @@ jQuery(function() {
       if (isConfirm) {
         jQuery(location).attr('href','/');
       } else {
+        jQuery('.estate-percent').addClass('transparent').text('0%');
         jQuery('.estate_start').removeClass('hidden');
         jQuery('.estate_pause').addClass('hidden');
+        jQuery('.zone_estate.zone_default').removeClass('hidden');
+        jQuery('.wizard_heading').text('Отметьте специальной точкой центр помещения, за тем - точки входа электричества и скопления розеток, двери, сан узлы и внутренние углы.');
       }
     })
   }
@@ -2153,7 +2157,12 @@ estate_1_1 = function(){
     function(isConfirm) {
       if (isConfirm) {
         swal.close();
-        estate_1_1();
+        if (pausedStatus == true) {
+          protocolfromMemory = eval(localStorage.getItem('paused'));
+          protocolfromMemory();
+        } else {
+          estate_1_1();
+        }
         jQuery('.estate-percent').removeClass('transparent');
         jQuery('.estate_start').addClass('hidden');
         jQuery('.estate_pause').removeClass('hidden');
