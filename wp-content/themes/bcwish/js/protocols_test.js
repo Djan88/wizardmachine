@@ -16316,6 +16316,7 @@ mmt_2 = function(){
   }
 
   jQuery('.wizard_continue.btn-warning').on('click', function(event) {
+    console.log(protocol_type);
     if (protocol_type == 'human') {
       jQuery('.machine_screen, #intro').addClass('hidden');
       jQuery('.wizard_returned').attr('src', returned_img);
