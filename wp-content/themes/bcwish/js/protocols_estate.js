@@ -2142,7 +2142,9 @@ estate_1_1 = function(){
   }, 250);
 }
 
-
+  jQuery('.wizard_continue.btn-warning').on('click', function(event) {
+    pausedStatus = true;
+  });
   jQuery('.estate_start').on('click', function(event) {
     swal({
       title: "Проверьте все ли зоны Вы отметили",
@@ -2158,10 +2160,8 @@ estate_1_1 = function(){
     function(isConfirm) {
       if (isConfirm) {
         swal.close();
-        console.log(pausedStatus);
         if (pausedStatus == true) {
           protocolfromMemory = eval(localStorage.getItem('paused'));
-          console.log(protocolfromMemory);
           protocolfromMemory();
           pausedStatus = false;
         } else {
