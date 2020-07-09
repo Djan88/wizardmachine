@@ -2158,10 +2158,10 @@ estate_1_1 = function(){
     function(isConfirm) {
       if (isConfirm) {
         swal.close();
+        console.log(pausedStatus);
         if (pausedStatus == true) {
           protocolfromMemory = eval(localStorage.getItem('paused'));
           console.log(protocolfromMemory);
-          console.log(pausedStatus);
           protocolfromMemory();
           pausedStatus = false;
         } else {
