@@ -2160,7 +2160,9 @@ estate_1_1 = function(){
         if (pausedStatus == true) {
           protocolfromMemory = eval(localStorage.getItem('paused'));
           protocolfromMemory();
+          pausedStatus = false;
         } else {
+          pausedStatus = false;
           estate_1_1();
         }
         jQuery('.estate-percent').removeClass('transparent');
@@ -2179,7 +2181,6 @@ estate_1_1 = function(){
   }
 
   jQuery('.estate_pause') .on('click', function(event) {
-    jQuery('.wizard_stop').addClass('wizard_stop_inProgress');
     jQuery('.header-title').text('Программа останавливается');
     // endStatus = true;
     jQuery('.estate_pause').popover('show');
@@ -2188,5 +2189,5 @@ estate_1_1 = function(){
     pausedStatus = true;
     // console.log('pausedStatus = true');
   });
-  
+
 });
