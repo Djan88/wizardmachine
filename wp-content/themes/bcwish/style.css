@@ -2137,7 +2137,7 @@ h3.wizard_heading
 {
   position: absolute;
   top: -160px;
-  left: 291px;
+  left: 620px;
   width: 900px;
 }
 .arrow_title 
@@ -2156,7 +2156,7 @@ h3.wizard_heading
 }
 .second_arrow_title 
 {
-  left: 395px;
+  left: 640px;
   top: 20px;
 }
 .btn.wizard_continue
@@ -3120,7 +3120,7 @@ button.wizard_starter_alt.btn.btn-success
   .second_arrow
   {
     top: -160px;
-    left: 620px;
+    left: 773px;
   }
   .main_arrow_title
   {
@@ -3134,7 +3134,7 @@ button.wizard_starter_alt.btn.btn-success
   }
   .second_arrow_title
   {
-    left: 655px;
+    left: 680px;
     top: 20px;
   }
 
