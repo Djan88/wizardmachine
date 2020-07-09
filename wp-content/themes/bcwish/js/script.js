@@ -90,7 +90,7 @@ jQuery(function() {
     localStorage.setItem('mode', 'estate');
     jQuery('.template_load_human').addClass('hidden');
     jQuery('.template_load_estate').removeClass('hidden');
-    jQuery('.wizard_heading').text('Загрузите план помещения');
+    jQuery('.wizard_heading').text('Загрузите план помещения или рисунок по аналогии с примером.');
     mode = 'estate';
     nextSound.play();
   });
