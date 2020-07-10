@@ -467,7 +467,9 @@
                     </div>
                   </div>
                   <div id="faq" class="col-md-12 wizard_prots hidden">
-                    <div class="btn btn-success diag_btn_alt">Диагностика</div>
+                    <div class="to_diag_auto">
+                      <div class="btn btn-success diag_btn_alt">Диагностика</div>
+                    </div>
                     <ul id="faq-list" class="wow fadeInUp">
                       <li>
                         <a data-toggle="collapse" href="#faq9" class="collapsed">УНИВЕРСАЛЬНЫЙ <i class="ion-android-remove"></i></a>

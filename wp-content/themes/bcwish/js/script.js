@@ -137,7 +137,7 @@ jQuery(function() {
     jQuery('.wizard_heading').text('Провести диагностику или перейти к выбору протокола?');
   });
   //Назад. К диагностике
-  jQuery('.wizard_to_protDiag, diag_btn_alt').on('click', function(event) {
+  jQuery('.wizard_to_protDiag, .diag_btn_alt').on('click', function(event) {
     jQuery('.wizard_prots').addClass('hidden');
     jQuery('.wizard_to_protDiag').addClass('hidden');
     jQuery('.wizard_to_what_way, .wizard_clean_graf').fadeIn(500).removeClass('hidden');
