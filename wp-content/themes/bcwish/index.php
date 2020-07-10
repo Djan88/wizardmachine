@@ -181,8 +181,8 @@
                   </div>
                 <?php } else if (current_user_can('contributor') || current_user_can('administrator') || (current_user_can('subscriber') && $new_registred == 1)) { ?>
                   <h2>
-                    Программа для коррекции 
-                    <br><span>личностных психосоматических проблем!</span>
+                    Биологическое центрирование
+                    <br><span>Корректирующая программа</span>
                     <?php if (current_user_can('subscriber') && $new_registred == 1) { ?>
                       <br><span style=" color: red; font-size: 20px;">Благодарим за интерес к программе "WizardMachine"! Дарим Вам 3 дня доступа к протоколу "Универсальный"!</span>
                     <?php } ?> 
