@@ -141,7 +141,7 @@ jQuery(function() {
     jQuery('.wizard_prots').addClass('hidden');
     jQuery('.wizard_to_protDiag').addClass('hidden');
     jQuery('.wizard_to_what_way, .wizard_clean_graf').fadeIn(500).removeClass('hidden');
-    jQuery('.wizard_diag').fadeIn(500).removeClass('hidden');
+    jQuery('.wizard_diag').fadeIn(500).removeClass('hidden').css('display', 'flex');
     jQuery('.wizard_heading').text('Определите актуальную зону.');
   });
 
