@@ -467,6 +467,7 @@
                     </div>
                   </div>
                   <div id="faq" class="col-md-12 wizard_prots hidden">
+                    <div class="btn btn-success diag_btn_alt">Диагностика</div>
                     <ul id="faq-list" class="wow fadeInUp">
                       <li>
                         <a data-toggle="collapse" href="#faq9" class="collapsed">УНИВЕРСАЛЬНЫЙ <i class="ion-android-remove"></i></a>
@@ -1322,7 +1323,7 @@
                 <div class="row wizard_diag hidden">
                   <div class="col-sm-6 wizard_grafic">
                     <div class="row">
-                      <img src="<?php bloginfo('template_url'); ?>/img/knife_alt.png" class="marakata" alt="">
+                      <img src="<?php bloginfo('template_url'); ?>/img/marakata.png" class="marakata" alt="">
                     </div>
                   </div>
                   <div class="col-sm-6 wizard_grafic_photo">
