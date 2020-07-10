@@ -207,7 +207,10 @@ jQuery(function() {
 
 
 // Сброс зон на плане
-  jQuery('.zone_estate').on('dblclick, doubletap', function(event) {
+  jQuery('.zone_estate').on('dblclick', function(event) {
+    jQuery(this).addClass('zone_default').removeAttr('style');
+  });
+  jQuery('.zone_estate').on('doubletap', function(event) {
     jQuery(this).addClass('zone_default').removeAttr('style');
   });
 
