@@ -72,7 +72,9 @@ jQuery(function() {
 
   onEndEstate = function(){
     jQuery('.estate-percent').text('100%');
-
+    localStorage.removeItem('paused');
+    localStorage.removeItem('pausedPhoto');
+    pausedStatus = false;
     // protocolName = localStor
     alertSound.play();
     swal({
