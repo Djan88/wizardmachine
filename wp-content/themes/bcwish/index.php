@@ -211,8 +211,8 @@
                 <?php } ?>
               <?php } else { ?>
                 <h2>
-                  Программа для коррекции 
-                  <br><span>личностных психосоматических проблем!</span>
+                  Биологическое центрирование
+                  <br><span>Корректирующая программа</span>
                 </h2>
                 <div class="row">
                   <div class="col-md-12 login_form bounceInUp wow" data-wow-duration="1.4s">

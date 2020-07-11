@@ -504,6 +504,10 @@ h6 {
   color: #fff;
 }
 
+.mobile-nav a.link-warning
+{
+  color: #ffc107;
+}
 /*--------------------------------------------------------------
 # Sections
 --------------------------------------------------------------*/
@@ -2372,10 +2376,6 @@ button.wizard_starter_alt.btn.btn-success
 {
   margin-bottom: 10px;
   text-align: center;
-}
-.mobile-nav a.link-warning
-{
-  color: #ffc107;
 }
 
 
