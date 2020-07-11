@@ -16330,7 +16330,7 @@ mmt_2 = function(){
       jQuery('.wm_start').removeClass('unopacity');
       jQuery('.wm_start').removeAttr('style');
       jQuery('.wizard_returned_estate').attr('src', returned_img);
-      jQuery('.wizard_estate').fadeIn(500).removeClass('hidden').css('display', 'flex');
+      jQuery('.wizard_estate').fadeIn(500).removeClass('hidden');
       jQuery('.wizard_heading').text('Отметьте специальной точкой центр помещения, за тем - точки входа электричества и скопления розеток, двери, сан узлы и внутренние углы.');
       jQuery('.estate_start').text('Продолжить');
     }
