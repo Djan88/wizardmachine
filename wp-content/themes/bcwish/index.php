@@ -369,6 +369,21 @@
                           <div class="zone_estate zone_el zone_default"><i class="fa fa-bolt"></i></div>
                           <div class="zone_estate zone_el zone_default"><i class="fa fa-bolt"></i></div>
                           <div class="zone_estate zone_el zone_default"><i class="fa fa-bolt"></i></div>
+                          <div class="zone_estate zone_el zone_default"><i class="fa fa-bolt"></i></div>
+                          <div class="zone_estate zone_el zone_default"><i class="fa fa-bolt"></i></div>
+                          <div class="zone_estate zone_el zone_default"><i class="fa fa-bolt"></i></div>
+                          <div class="zone_estate zone_el zone_default"><i class="fa fa-bolt"></i></div>
+                          <div class="zone_estate zone_el zone_default"><i class="fa fa-bolt"></i></div>
+                          <div class="zone_estate zone_el zone_default"><i class="fa fa-bolt"></i></div>
+                          <div class="zone_estate zone_el zone_default"><i class="fa fa-bolt"></i></div>
+                          <div class="zone_estate zone_el zone_default"><i class="fa fa-bolt"></i></div>
+                          <div class="zone_estate zone_el zone_default"><i class="fa fa-bolt"></i></div>
+                          <div class="zone_estate zone_el zone_default"><i class="fa fa-bolt"></i></div>
+                          <div class="zone_estate zone_el zone_default"><i class="fa fa-bolt"></i></div>
+                          <div class="zone_estate zone_el zone_default"><i class="fa fa-bolt"></i></div>
+                          <div class="zone_estate zone_el zone_default"><i class="fa fa-bolt"></i></div>
+                          <div class="zone_estate zone_el zone_default"><i class="fa fa-bolt"></i></div>
+                          <div class="zone_estate zone_el zone_default"><i class="fa fa-bolt"></i></div>
                         </div>
                         <div class="estate_corners wow bounceInUp" data-wow-duration="1.4s" data-wow-delay="0.8s">
                           <div class="estate_heading" style="color: #1bb1dc;">Углы</div>
