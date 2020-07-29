@@ -62,6 +62,9 @@
       <button type="button" class="wizard_to_protList hidden header_btn">
         <i class="fa fa-arrow-left"></i>
       </button>
+      <button type="button" class="wizard_back_on_air hidden header_btn">
+        <i class="fa fa-arrow-left"></i> Другой протокол
+      </button>
       <button type="button" class="wizard_to_protDiag hidden header_btn">
         <i class="fa fa-arrow-left"></i>
       </button>
