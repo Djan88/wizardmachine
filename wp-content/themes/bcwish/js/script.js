@@ -186,7 +186,7 @@ jQuery(function() {
     } else {
       jQuery('.wizard_main_screen').addClass('hidden');
       jQuery('.wizard_to_protList, .wizard_play, .wizard_starter_alt').addClass('hidden');
-      jQuery('.wizard_to_what_way').fadeIn(500).removeClass('hidden');
+      jQuery('.wizard_prots').fadeIn(500).removeClass('hidden');
       jQuery('.wizard_operation').fadeIn(500).removeClass('hidden');
       jQuery('.wizard_heading').text('Выберите протокол');
     }
