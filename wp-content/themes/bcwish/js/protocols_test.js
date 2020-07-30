@@ -77,6 +77,7 @@ jQuery(function() {
     alertSound.play();
     localStorage.setItem('protocol_type', 'human');
     jQuery('.ring').removeClass('in_progress');
+    jQuery('.wizard_to_protList').removeClass('prot_in_progress');
 
     swal({
       title: "Приостановлено пользователем",
@@ -16336,6 +16337,10 @@ mmt_2 = function(){
     }
   });
 
+  jQuery('.wizard_protocol').on('click', function(event) {
+    pausedStatus = false;
+    protocolfromMemory = undefined;
+  }
   
   checkPoints = function(){
     jQuery('.zone_movable').each(function() {
@@ -16416,7 +16421,7 @@ mmt_2 = function(){
     jQuery('.header-title').text('Программа останавливается');
     // endStatus = true;
     jQuery('.wizard_stop').popover('show');
-    setTimeout(hideNote, 5000);
+    setTimeout(hideNote, 10000);
     localStorage.setItem('pausedPhoto', jQuery('.wizard_returned').attr('src'));
     pausedStatus = true;
     // console.log('pausedStatus = true');
