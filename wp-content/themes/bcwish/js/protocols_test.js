@@ -16337,10 +16337,10 @@ mmt_2 = function(){
     }
   });
 
-  jQuery('.wizard_protocol').on('click', function(event)) {
+  jQuery('.wizard_protocol').on('click', function(event) {
     pausedStatus = false;
     protocolfromMemory = undefined;
-  }
+  });
   
   checkPoints = function(){
     jQuery('.zone_movable').each(function() {
