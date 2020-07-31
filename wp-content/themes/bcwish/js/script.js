@@ -175,8 +175,6 @@ jQuery(function() {
       function(isConfirm) {
         if (isConfirm) {
           set_protocol();
-          pausedStatus = false;
-          protocolfromMemory = undefined;
           if (jQuery(this).hasClass('wizard_protocol_1')) {
             cur_protocol = 'v1';
           } else if (jQuery(this).hasClass('wizard_protocol_2')) {
@@ -196,6 +194,7 @@ jQuery(function() {
           } else if (jQuery(this).hasClass('wizard_protocol_9')) {
             cur_protocol = 'universal';
           }
+          console.log(cur_protocol);
           localStorage.setItem('cur_protocol', cur_protocol);
           swal.close()
         }
