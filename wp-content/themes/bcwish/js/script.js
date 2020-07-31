@@ -2,7 +2,7 @@ jQuery(function() {
   var croppedImg,
       cur_protocol,
       set_protocol,
-      not_ended = localStorage.getItem('paused'),
+      not_ended,
       mode = 'foto',
       returned_img,
       nextSound = new Howl({
@@ -148,6 +148,7 @@ jQuery(function() {
   });
 
   //К переносу зон
+  not_ended = localStorage.getItem('paused');
   set_protocol = function () {
     jQuery('.zone_ring').addClass('hidden');
     jQuery('.wizard_operation').addClass('hidden');
@@ -177,6 +178,7 @@ jQuery(function() {
       cur_protocol = 'universal';
     }
     localStorage.setItem('cur_protocol', cur_protocol);
+    console.log('test');
   }
   jQuery('.wizard_protocol').on('click', function(event) {
     if (not_ended) {
