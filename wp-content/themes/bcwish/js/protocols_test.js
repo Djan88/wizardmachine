@@ -16378,13 +16378,13 @@ mmt_2 = function(){
     if (not_ended) {
       swal({
         title: "Есть незавершенный протокол",
-        text: "Нажмите 'Вернуться' для завершения начатого протокола или 'Далее' для запуска нового (сохраненные данные, при этом, будут удалены).",
+        text: "Нажмите 'Продолжить' для завершения начатого протокола или 'Новый' для запуска выбранного протокола (сохраненные данные, при этом, будут удалены).",
         type: "info",
         showCancelButton: true,
         confirmButtonClass: "btn-success",
         cancelButtonClass: "btn-info",
-        cancelButtonText: "Вернуться",
-        confirmButtonText: "Далее",
+        cancelButtonText: "Продолжить",
+        confirmButtonText: "Новый протокол",
         closeOnConfirm: false
       },
       function(isConfirm) {
