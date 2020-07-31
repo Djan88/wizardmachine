@@ -7,6 +7,7 @@ jQuery(function() {
       knife_rate_class_dotted,
       protocol,
       checkPoints,
+      that,
       pointsStatus = true,
       reloadTime = 0,
       reloadTime1 = 0,
@@ -16342,7 +16343,7 @@ mmt_2 = function(){
 
   //К переносу зон
   not_ended = localStorage.getItem('paused');
-  set_protocol = function () {
+  set_protocol = function (that) {
     jQuery('.zone_ring').addClass('hidden');
     jQuery('.wizard_operation').addClass('hidden');
     jQuery('.ring').removeClass('hidden');
@@ -16351,8 +16352,29 @@ mmt_2 = function(){
     jQuery('.wizard_to_protList, .wizard_play, .wizard_starter_alt').fadeIn(500).removeClass('hidden');
     jQuery('.wizard_main_screen').fadeIn(500).removeClass('hidden').css('display', 'flex');
     jQuery('.wizard_heading').text('Осталось перенести зоны на фото и можно начинать!');
+    if (that.hasClass('wizard_protocol_1')) {
+      cur_protocol = 'v1';
+    } else if (that.hasClass('wizard_protocol_2')) {
+      cur_protocol = 'v2';
+    } else if (that.hasClass('wizard_protocol_3')) {
+      cur_protocol = 'v3';
+    } else if (that.hasClass('wizard_protocol_4')) {
+      cur_protocol = 'v4';
+    } else if (that.hasClass('wizard_protocol_5')) {
+      cur_protocol = 'v5';
+    } else if (that.hasClass('wizard_protocol_6')) {
+      cur_protocol = 'drenag';
+    } else if (that.hasClass('wizard_protocol_7')) {
+      cur_protocol = 'solis';
+    } else if (that.hasClass('wizard_protocol_8')) {
+      cur_protocol = 'visceral';
+    } else if (that.hasClass('wizard_protocol_9')) {
+      cur_protocol = 'universal';
+    }
+    localStorage.setItem('cur_protocol', cur_protocol);
   }
   jQuery('.wizard_protocol').on('click', function(event) {
+    that = jQuery(this);
     if (not_ended) {
       swal({
         title: "Есть незавершенный протокол",
@@ -16369,53 +16391,13 @@ mmt_2 = function(){
         if (isConfirm) {
           pausedStatus = false;
           protocolfromMemory = undefined;
-          set_protocol();
-          if (jQuery(this).hasClass('wizard_protocol_1')) {
-            cur_protocol = 'v1';
-          } else if (jQuery(this).hasClass('wizard_protocol_2')) {
-            cur_protocol = 'v2';
-          } else if (jQuery(this).hasClass('wizard_protocol_3')) {
-            cur_protocol = 'v3';
-          } else if (jQuery(this).hasClass('wizard_protocol_4')) {
-            cur_protocol = 'v4';
-          } else if (jQuery(this).hasClass('wizard_protocol_5')) {
-            cur_protocol = 'v5';
-          } else if (jQuery(this).hasClass('wizard_protocol_6')) {
-            cur_protocol = 'drenag';
-          } else if (jQuery(this).hasClass('wizard_protocol_7')) {
-            cur_protocol = 'solis';
-          } else if (jQuery(this).hasClass('wizard_protocol_8')) {
-            cur_protocol = 'visceral';
-          } else if (jQuery(this).hasClass('wizard_protocol_9')) {
-            cur_protocol = 'universal';
-          }
+          set_protocol(that);
           console.log(cur_protocol);
-          localStorage.setItem('cur_protocol', cur_protocol);
           swal.close()
         }
       })
     } else {
-      set_protocol();
-      if (jQuery(this).hasClass('wizard_protocol_1')) {
-        cur_protocol = 'v1';
-      } else if (jQuery(this).hasClass('wizard_protocol_2')) {
-        cur_protocol = 'v2';
-      } else if (jQuery(this).hasClass('wizard_protocol_3')) {
-        cur_protocol = 'v3';
-      } else if (jQuery(this).hasClass('wizard_protocol_4')) {
-        cur_protocol = 'v4';
-      } else if (jQuery(this).hasClass('wizard_protocol_5')) {
-        cur_protocol = 'v5';
-      } else if (jQuery(this).hasClass('wizard_protocol_6')) {
-        cur_protocol = 'drenag';
-      } else if (jQuery(this).hasClass('wizard_protocol_7')) {
-        cur_protocol = 'solis';
-      } else if (jQuery(this).hasClass('wizard_protocol_8')) {
-        cur_protocol = 'visceral';
-      } else if (jQuery(this).hasClass('wizard_protocol_9')) {
-        cur_protocol = 'universal';
-      }
-      localStorage.setItem('cur_protocol', cur_protocol);
+      set_protocol(that);
     }
   });
   
