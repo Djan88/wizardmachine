@@ -158,26 +158,6 @@ jQuery(function() {
     jQuery('.wizard_to_protList, .wizard_play, .wizard_starter_alt').fadeIn(500).removeClass('hidden');
     jQuery('.wizard_main_screen').fadeIn(500).removeClass('hidden').css('display', 'flex');
     jQuery('.wizard_heading').text('Осталось перенести зоны на фото и можно начинать!');
-    if (jQuery(this).hasClass('wizard_protocol_1')) {
-      cur_protocol = 'v1';
-    } else if (jQuery(this).hasClass('wizard_protocol_2')) {
-      cur_protocol = 'v2';
-    } else if (jQuery(this).hasClass('wizard_protocol_3')) {
-      cur_protocol = 'v3';
-    } else if (jQuery(this).hasClass('wizard_protocol_4')) {
-      cur_protocol = 'v4';
-    } else if (jQuery(this).hasClass('wizard_protocol_5')) {
-      cur_protocol = 'v5';
-    } else if (jQuery(this).hasClass('wizard_protocol_6')) {
-      cur_protocol = 'drenag';
-    } else if (jQuery(this).hasClass('wizard_protocol_7')) {
-      cur_protocol = 'solis';
-    } else if (jQuery(this).hasClass('wizard_protocol_8')) {
-      cur_protocol = 'visceral';
-    } else if (jQuery(this).hasClass('wizard_protocol_9')) {
-      cur_protocol = 'universal';
-    }
-    localStorage.setItem('cur_protocol', cur_protocol);
   }
   jQuery('.wizard_protocol').on('click', function(event) {
     if (not_ended) {
@@ -195,13 +175,51 @@ jQuery(function() {
       function(isConfirm) {
         if (isConfirm) {
           set_protocol();
+          if (jQuery(this).hasClass('wizard_protocol_1')) {
+            cur_protocol = 'v1';
+          } else if (jQuery(this).hasClass('wizard_protocol_2')) {
+            cur_protocol = 'v2';
+          } else if (jQuery(this).hasClass('wizard_protocol_3')) {
+            cur_protocol = 'v3';
+          } else if (jQuery(this).hasClass('wizard_protocol_4')) {
+            cur_protocol = 'v4';
+          } else if (jQuery(this).hasClass('wizard_protocol_5')) {
+            cur_protocol = 'v5';
+          } else if (jQuery(this).hasClass('wizard_protocol_6')) {
+            cur_protocol = 'drenag';
+          } else if (jQuery(this).hasClass('wizard_protocol_7')) {
+            cur_protocol = 'solis';
+          } else if (jQuery(this).hasClass('wizard_protocol_8')) {
+            cur_protocol = 'visceral';
+          } else if (jQuery(this).hasClass('wizard_protocol_9')) {
+            cur_protocol = 'universal';
+          }
+          localStorage.setItem('cur_protocol', cur_protocol);
           swal.close()
-        } else {
-          
         }
       })
     } else {
       set_protocol();
+      if (jQuery(this).hasClass('wizard_protocol_1')) {
+        cur_protocol = 'v1';
+      } else if (jQuery(this).hasClass('wizard_protocol_2')) {
+        cur_protocol = 'v2';
+      } else if (jQuery(this).hasClass('wizard_protocol_3')) {
+        cur_protocol = 'v3';
+      } else if (jQuery(this).hasClass('wizard_protocol_4')) {
+        cur_protocol = 'v4';
+      } else if (jQuery(this).hasClass('wizard_protocol_5')) {
+        cur_protocol = 'v5';
+      } else if (jQuery(this).hasClass('wizard_protocol_6')) {
+        cur_protocol = 'drenag';
+      } else if (jQuery(this).hasClass('wizard_protocol_7')) {
+        cur_protocol = 'solis';
+      } else if (jQuery(this).hasClass('wizard_protocol_8')) {
+        cur_protocol = 'visceral';
+      } else if (jQuery(this).hasClass('wizard_protocol_9')) {
+        cur_protocol = 'universal';
+      }
+      localStorage.setItem('cur_protocol', cur_protocol);
     }
   });
 

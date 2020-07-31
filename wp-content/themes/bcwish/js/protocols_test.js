@@ -16369,7 +16369,6 @@ mmt_2 = function(){
       } else {
         jQuery('.wizard_stop').removeClass('wizard_stop_inProgress');
         var protocol = localStorage.getItem('cur_protocol');
-        console.log(protocol);
         if (protocol == 'v1') {
           v1();
           jQuery('.status_title').text('Протокол V1');
