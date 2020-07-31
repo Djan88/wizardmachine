@@ -175,6 +175,8 @@ jQuery(function() {
       function(isConfirm) {
         if (isConfirm) {
           set_protocol();
+          pausedStatus = false;
+          protocolfromMemory = undefined;
           if (jQuery(this).hasClass('wizard_protocol_1')) {
             cur_protocol = 'v1';
           } else if (jQuery(this).hasClass('wizard_protocol_2')) {

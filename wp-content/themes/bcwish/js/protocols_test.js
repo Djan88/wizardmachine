@@ -16336,11 +16336,6 @@ mmt_2 = function(){
       jQuery('.estate_start').text('Продолжить');
     }
   });
-
-  jQuery('.wizard_protocol').on('click', function(event) {
-    pausedStatus = false;
-    protocolfromMemory = undefined;
-  });
   
   checkPoints = function(){
     jQuery('.zone_movable').each(function() {
