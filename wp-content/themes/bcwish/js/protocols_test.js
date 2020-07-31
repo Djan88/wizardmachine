@@ -14,10 +14,13 @@ jQuery(function() {
       cur_animation_val = 0,
       protocol_type,
       rotateVal = 0,
+      cur_protocol,
+      set_protocol,
       count_animation = 1,
       pausedStatus = false,
       endNow,
       onEnd,
+      not_ended,
       protocolfromMemory,
       firstTriangleAnimation,
       secondTriangleAnimation,
@@ -16337,9 +16340,83 @@ mmt_2 = function(){
     }
   });
 
+  //К переносу зон
+  not_ended = localStorage.getItem('paused');
+  set_protocol = function () {
+    jQuery('.zone_ring').addClass('hidden');
+    jQuery('.wizard_operation').addClass('hidden');
+    jQuery('.ring').removeClass('hidden');
+    jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
+    jQuery('.wizard_to_what_way, .wizard_to_protDiag').addClass('hidden');
+    jQuery('.wizard_to_protList, .wizard_play, .wizard_starter_alt').fadeIn(500).removeClass('hidden');
+    jQuery('.wizard_main_screen').fadeIn(500).removeClass('hidden').css('display', 'flex');
+    jQuery('.wizard_heading').text('Осталось перенести зоны на фото и можно начинать!');
+  }
   jQuery('.wizard_protocol').on('click', function(event) {
-    pausedStatus = false;
-    protocolfromMemory = undefined;
+    if (not_ended) {
+      swal({
+        title: "Есть незавершенный протокол",
+        text: "Нажмите 'Вернуться' для завершения начатого протокола или 'Далее' для запуска нового (сохраненные данные, при этом, будут удалены).",
+        type: "info",
+        showCancelButton: true,
+        confirmButtonClass: "btn-success",
+        cancelButtonClass: "btn-info",
+        cancelButtonText: "Вернуться",
+        confirmButtonText: "Далее",
+        closeOnConfirm: false
+      },
+      function(isConfirm) {
+        if (isConfirm) {
+          pausedStatus = false;
+          protocolfromMemory = undefined;
+          set_protocol();
+          if (jQuery(this).hasClass('wizard_protocol_1')) {
+            cur_protocol = 'v1';
+          } else if (jQuery(this).hasClass('wizard_protocol_2')) {
+            cur_protocol = 'v2';
+          } else if (jQuery(this).hasClass('wizard_protocol_3')) {
+            cur_protocol = 'v3';
+          } else if (jQuery(this).hasClass('wizard_protocol_4')) {
+            cur_protocol = 'v4';
+          } else if (jQuery(this).hasClass('wizard_protocol_5')) {
+            cur_protocol = 'v5';
+          } else if (jQuery(this).hasClass('wizard_protocol_6')) {
+            cur_protocol = 'drenag';
+          } else if (jQuery(this).hasClass('wizard_protocol_7')) {
+            cur_protocol = 'solis';
+          } else if (jQuery(this).hasClass('wizard_protocol_8')) {
+            cur_protocol = 'visceral';
+          } else if (jQuery(this).hasClass('wizard_protocol_9')) {
+            cur_protocol = 'universal';
+          }
+          console.log(cur_protocol);
+          localStorage.setItem('cur_protocol', cur_protocol);
+          swal.close()
+        }
+      })
+    } else {
+      set_protocol();
+      if (jQuery(this).hasClass('wizard_protocol_1')) {
+        cur_protocol = 'v1';
+      } else if (jQuery(this).hasClass('wizard_protocol_2')) {
+        cur_protocol = 'v2';
+      } else if (jQuery(this).hasClass('wizard_protocol_3')) {
+        cur_protocol = 'v3';
+      } else if (jQuery(this).hasClass('wizard_protocol_4')) {
+        cur_protocol = 'v4';
+      } else if (jQuery(this).hasClass('wizard_protocol_5')) {
+        cur_protocol = 'v5';
+      } else if (jQuery(this).hasClass('wizard_protocol_6')) {
+        cur_protocol = 'drenag';
+      } else if (jQuery(this).hasClass('wizard_protocol_7')) {
+        cur_protocol = 'solis';
+      } else if (jQuery(this).hasClass('wizard_protocol_8')) {
+        cur_protocol = 'visceral';
+      } else if (jQuery(this).hasClass('wizard_protocol_9')) {
+        cur_protocol = 'universal';
+      }
+      localStorage.setItem('cur_protocol', cur_protocol);
+    }
   });
   
   checkPoints = function(){
