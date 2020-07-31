@@ -194,6 +194,7 @@ jQuery(function() {
       function(isConfirm) {
         if (isConfirm) {
           set_protocol();
+          swal.close()
         } else {
           
         }
