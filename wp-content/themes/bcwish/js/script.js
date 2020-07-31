@@ -1,6 +1,8 @@
 jQuery(function() {
   var croppedImg,
       cur_protocol,
+      set_protocol,
+      not_ended = localStorage.getItem('paused'),
       mode = 'foto',
       returned_img,
       nextSound = new Howl({
@@ -146,7 +148,7 @@ jQuery(function() {
   });
 
   //К переносу зон
-  jQuery('.wizard_protocol').on('click', function(event) {
+  set_protocol = function (argument) {
     jQuery('.zone_ring').addClass('hidden');
     jQuery('.wizard_operation').addClass('hidden');
     jQuery('.ring').removeClass('hidden');
@@ -175,7 +177,30 @@ jQuery(function() {
       cur_protocol = 'universal';
     }
     localStorage.setItem('cur_protocol', cur_protocol);
-
+  }
+  jQuery('.wizard_protocol').on('click', function(event) {
+    if (not_ended) {
+      swal({
+        title: "Есть незавершенный протокол",
+        text: "Нажмите 'Вернуться' для завершения начатого протокола или 'Далее' для запуска нового (сохраненные данные, при этом, будут удалены).",
+        type: "info",
+        showCancelButton: true,
+        confirmButtonClass: "btn-success",
+        cancelButtonClass: "btn-info",
+        cancelButtonText: "Вернуться",
+        confirmButtonText: "Далее",
+        closeOnConfirm: false
+      },
+      function(isConfirm) {
+        if (isConfirm) {
+          set_protocol();
+        } else {
+          
+        }
+      })
+    } else {
+      set_protocol();
+    }
   });
 
 
