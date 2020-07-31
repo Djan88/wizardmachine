@@ -148,7 +148,7 @@ jQuery(function() {
   });
 
   //К переносу зон
-  set_protocol = function (argument) {
+  set_protocol = function () {
     jQuery('.zone_ring').addClass('hidden');
     jQuery('.wizard_operation').addClass('hidden');
     jQuery('.ring').removeClass('hidden');
