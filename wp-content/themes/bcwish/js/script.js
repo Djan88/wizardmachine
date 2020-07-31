@@ -178,7 +178,6 @@ jQuery(function() {
       cur_protocol = 'universal';
     }
     localStorage.setItem('cur_protocol', cur_protocol);
-    console.log('test');
   }
   jQuery('.wizard_protocol').on('click', function(event) {
     if (not_ended) {
