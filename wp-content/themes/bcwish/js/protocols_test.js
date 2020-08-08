@@ -81,7 +81,8 @@ jQuery(function() {
     alertSound.play();
     localStorage.setItem('protocol_type', 'human');
     jQuery('.ring').removeClass('in_progress');
-    jQuery('.wizard_to_protList').removeClass('prot_in_progress');
+    jQuery('.wizard_to_protList').removeClass('hidden');
+    jQuery('.wizard_disbledMove').addClass('hidden');
 
     swal({
       title: "Приостановлено пользователем",
@@ -16470,7 +16471,8 @@ mmt_2 = function(){
       console.log('ding');
       jQuery('.wizard_play, .wizard_starter_alt').addClass('hidden');
       jQuery('.wizard_stop, .zone_ring').fadeIn(500).removeClass('hidden');
-      jQuery('.wizard_to_protList').addClass('prot_in_progress');
+      jQuery('.wizard_to_protList').addClass('hidden');
+      jQuery('.wizard_disbledMove').removeClass('hidden');
       jQuery('.ring').addClass('in_progress');
       localStorage.removeItem('paused');
       localStorage.removeItem('pausedPhoto');
