@@ -16484,6 +16484,8 @@ mmt_2 = function(){
   // STOP
   function hideNote() {
     jQuery('.wizard_stop').popover('hide');
+  }
+  function hideNoteTwo() {
     jQuery('.wizard_disbledMove').popover('hide');
   }
 
@@ -16500,6 +16502,6 @@ mmt_2 = function(){
 
   jQuery('.wizard_disbledMove').on('click', function(event) {
     jQuery('.wizard_disbledMove').popover('show');
-    setTimeout(hideNote, 10000);
+    setTimeout(hideNoteTwo, 10000);
   });
 });
