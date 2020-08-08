@@ -74,7 +74,7 @@
       <button type="button" class="wizard_play header_btn hidden">
         <i class="fa fa-play-circle wizard_start_icon"></i>
       </button>
-      <button type="button" class="wizard_stop hidden header_btn" data-toggle="popover" data-placement="bottom" title="Протокол остановлен!" data-content="Выполнение протокола будет приостановлено по окончании текущей фазы. Все данные будут сохранены. Нажав на кноку со стрелкой (правый верхний угол) можно будет сменить протокол">
+      <button type="button" class="wizard_stop hidden header_btn" data-toggle="popover" data-placement="bottom" title="Протокол остановлен!" data-content="Выполнение протокола будет приостановлено по окончании текущей фазы. Все данные будут сохранены. Нажав на кноку со стрелкой (правее от этой) можно будет сменить протокол">
         <span class="wizard_percent">0%</span>
         <i class="fa fa-stop-circle wizard_stop_icon"></i>
       </button>
