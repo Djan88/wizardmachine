@@ -63,7 +63,7 @@
         <i class="fa fa-arrow-left"></i>
       </button>
       <button type="button" class="wizard_disbledMove hidden header_btn">
-        <i class="fa fa-arrow-left" data-toggle="popover" data-placement="bottom" title="Протокол остановлен!" data-content="Выполнение протокола будет приостановлено по окончании текущей фазы. Все данные будут сохранены. Нажав на кноку со стрелкой (правый верхний угол) можно будет сменить протокол"></i>
+        <i class="fa fa-arrow-left" data-toggle="popover" data-placement="bottom" title="Программа еще в ходу!" data-content="Для смены проткола нажмите на кнопку 'Пауза'. После остановки программы нажмите 'Продолжить', и на эту кнопку."></i>
       </button>
       <button type="button" class="wizard_to_protDiag hidden header_btn">
         <i class="fa fa-arrow-left"></i>
