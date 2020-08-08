@@ -2087,7 +2087,7 @@ jQuery(function() {
             zIndex: '2'
         });
 // II
-        jQuery('.wizard_percent').text('85%');
+        jQuery('.wizard_percent').text('30%');
         phaseOne = setInterval(function(){
           if (count_animation <= 88){
             jQuery('.zone_v1, .zone_s2, .zone_s4, .zone_v5, .zone_s5, .zone_s6').css({
@@ -2113,7 +2113,7 @@ jQuery(function() {
                 zIndex: '2'
             });
 // III
-            jQuery('.wizard_percent').text('87%');
+            jQuery('.wizard_percent').text('32%');
             phaseOne = setInterval(function(){
               if (count_animation <= 88){
                 jQuery('.zone_s3, .zone_v4').css({
@@ -2139,7 +2139,7 @@ jQuery(function() {
                     zIndex: '2'
                 });
 // IV
-                jQuery('.wizard_percent').text('89%');
+                jQuery('.wizard_percent').text('34%');
                 phaseOne = setInterval(function(){
                   if (count_animation <= 88){
                     jQuery('.zone_d4, .zone_d3, .zone_d2_, .zone_v2, .zone_v3').css({
@@ -16424,11 +16424,11 @@ mmt_2 = function(){
 
   jQuery('.wizard_play, .wizard_starter_alt').on('click', function(event) {
     checkPoints();
-    // if(pointsStatus == false){
-    //   swal("Не все зоны перенесены!", "Перед началом процедуры необходимо перенести на фото калибровочное кольцо и все зоны.", "info");
-    //   alert_altSound.play();
-    //   pointsStatus = true;
-    // } else {
+    if(pointsStatus == false){
+      swal("Не все зоны перенесены!", "Перед началом процедуры необходимо перенести на фото калибровочное кольцо и все зоны.", "info");
+      alert_altSound.play();
+      pointsStatus = true;
+    } else {
       if (pausedStatus == true) {
         // jQuery('.wizard_returned').attr('src', localStorage.getItem('pausedPhoto'));
         // console.log(localStorage.getItem('pausedPhoto'));
@@ -16475,7 +16475,7 @@ mmt_2 = function(){
       localStorage.removeItem('paused');
       localStorage.removeItem('pausedPhoto');
       jQuery('.wizard_stop').removeClass('wizard_stop_inProgress');
-    // }
+    }
   });
 
 
