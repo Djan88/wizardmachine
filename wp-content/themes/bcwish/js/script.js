@@ -34,7 +34,7 @@ jQuery(function() {
   // Контроль ширины экрана
   console.log(device_w);
   jQuery('.w_width').text(device_w);
-  if (device_w < 700) {
+  if (device_w < 600) {
     jQuery('#w_error').modal('show');
   }
 
