@@ -1634,16 +1634,18 @@
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
             <h4 class="modal-title" id="myModalLabel">Предупреждение</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
           </div>
           <div class="modal-text">
-            <div class="row">
-              <div class="col-sm-12">
-                Ширина экрана Вашего устройства <span class="w_width"></span> пикселей.<br>Для работы на небольших планшетах и смартфонах предусмотрена "Мобильная версия". Для переключения на Мобильную версию программы выберите ее из списка ниже.
-              </div>
-              <div class="col-sm-12">
-                <?php echo do_shortcode( '[theme_switcha_select text="Выберите версию"]' ); ?>
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-12">
+                  Ширина экрана Вашего устройства <span class="w_width"></span> пикселей.<br>Для работы на небольших планшетах и смартфонах предусмотрена "Мобильная версия". Для переключения на Мобильную версию программы выберите ее из списка ниже.
+                </div>
+                <div class="col-sm-12">
+                  <?php echo do_shortcode( '[theme_switcha_select text="Выберите версию"]' ); ?>
+                </div>
               </div>
             </div>
           </div>
