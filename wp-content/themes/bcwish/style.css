@@ -2378,6 +2378,11 @@ button.wizard_starter_alt.btn.btn-success
   margin-bottom: 10px;
   text-align: center;
 }
+#w_error .modal-header
+{
+  background: #1bb1dc;
+  color: #fff;
+}
 
 
 /*Animation*/
