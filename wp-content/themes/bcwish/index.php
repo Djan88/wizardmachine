@@ -1638,7 +1638,7 @@
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
           </div>
           <div class="modal-text">
-            <div class="row">
+            <div class="row" style="text-align: center;padding: 20px;font-size: 18px;">
               <div class="col-sm-12">
                 Ширина экрана Вашего устройства <span class="w_width"></span> пикселей.<br>Для работы на небольших планшетах и смартфонах предусмотрена "Мобильная версия". Для переключения на Мобильную версию программы выберите ее из списка ниже.
               </div>
