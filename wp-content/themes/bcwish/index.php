@@ -1638,14 +1638,12 @@
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
           </div>
           <div class="modal-text">
-            <div class="container">
-              <div class="row">
-                <div class="col-sm-12">
-                  Ширина экрана Вашего устройства <span class="w_width"></span> пикселей.<br>Для работы на небольших планшетах и смартфонах предусмотрена "Мобильная версия". Для переключения на Мобильную версию программы выберите ее из списка ниже.
-                </div>
-                <div class="col-sm-12">
-                  <?php echo do_shortcode( '[theme_switcha_select text="Выберите версию"]' ); ?>
-                </div>
+            <div class="row">
+              <div class="col-sm-12">
+                Ширина экрана Вашего устройства <span class="w_width"></span> пикселей.<br>Для работы на небольших планшетах и смартфонах предусмотрена "Мобильная версия". Для переключения на Мобильную версию программы выберите ее из списка ниже.
+              </div>
+              <div class="col-sm-12">
+                <?php echo do_shortcode( '[theme_switcha_select text="Выберите версию"]' ); ?>
               </div>
             </div>
           </div>
