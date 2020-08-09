@@ -31,7 +31,10 @@ jQuery(function() {
     jQuery('.register_form').removeClass('hidden').addClass('bounceInUp');
   });
 
+  // Контроль ширины экрана
   console.log(device_w);
+  jQuery('.w_width').text(device_w);
+  jQuery('#w_error').modal(show);
 
   jQuery('.btn-get-started').on('click', function(event) {
     localStorage.removeItem('paused');
