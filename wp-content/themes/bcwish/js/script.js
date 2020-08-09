@@ -1,6 +1,6 @@
 jQuery(function() {
   var croppedImg,
-      device_w = document.body.clientWidth,
+      device_w = jQuery('html').width(),
       mode = 'foto',
       returned_img,
       nextSound = new Howl({
