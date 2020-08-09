@@ -1,5 +1,6 @@
 jQuery(function() {
   var croppedImg,
+      device_w = window.innerWidth(),
       mode = 'foto',
       returned_img,
       nextSound = new Howl({
@@ -30,6 +31,7 @@ jQuery(function() {
     jQuery('.register_form').removeClass('hidden').addClass('bounceInUp');
   });
 
+  console.log(device_w);
 
   jQuery('.btn-get-started').on('click', function(event) {
     localStorage.removeItem('paused');

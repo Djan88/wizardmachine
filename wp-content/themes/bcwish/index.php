@@ -1630,6 +1630,22 @@
         </div>
       </div>
     </div>
+    <div class="modal fade" id="w_error" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel">Предупреждение</h4>
+          </div>
+          <div class="modal-text">
+            Ширина экрана Вашего устройства <span class="w_width"></span>.<br>Для работы на небольших планшетах и смартфонах предусмотрена "Мобильная версия". Для переключения на Мобильную версию программы выберите ее из списка ниже.
+            <div>
+              <?php echo do_shortcode( '[theme_switcha_select text="Выберите версию"]' ); ?>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 </html>
