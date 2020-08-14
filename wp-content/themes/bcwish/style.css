@@ -2383,6 +2383,14 @@ button.wizard_starter_alt.btn.btn-success
   background: #1bb1dc;
   color: #fff;
 }
+.arrow_in_popup 
+{
+  text-align: center;
+}
+.arrow_in_popup svg
+{
+  width: 50%;
+}
 
 
 /*Animation*/
