@@ -2400,6 +2400,7 @@ button.wizard_starter_alt.btn.btn-success
 {
   padding: 0;
   font-size: 30px;
+  line-height: 25vh;
 }
 .arrow_w_wrap
 {
@@ -3111,23 +3112,10 @@ button.wizard_starter_alt.btn.btn-success
     margin: auto;
     margin-top: 10px;
   }
-}
-
-@media (max-width: 768px) {
-  .back-to-top {
-    bottom: 15px;
+  .arrow_in_popup svg 
+  {
+    width: 90%;
   }
-
-  #faq #faq-list a {
-    font-size: 18px;
-  }
-
-  #faq #faq-list i {
-    top: 13px;
-  }
-}
-
-@media (max-width: 991px) {
   #intro {
     height: auto;
     padding: 80px 0 60px 0;
@@ -3203,6 +3191,25 @@ button.wizard_starter_alt.btn.btn-success
     margin-left: 0;
   }
 }
+
+@media (max-width: 768px) {
+  .back-to-top {
+    bottom: 15px;
+  }
+
+  #faq #faq-list a {
+    font-size: 18px;
+  }
+
+  #faq #faq-list i {
+    top: 13px;
+  }
+  .arrow_in_popup svg 
+  {
+    width: 90%;
+  }
+}
+
 
 @media (max-width: 574px) {
   #footer .footer-top .social-links a {
