@@ -1639,7 +1639,7 @@
           </div>
           <div class="modal-text">
             <div class="row" style="text-align: center;padding: 20px;font-size: 22px;">
-              <div class="col-xs-12 arrow_w_wrap">
+              <div class="col-sm-12 arrow_w_wrap">
                 <div class="row">
                   <div class="col-sm-4 col-xs-4 arrow_in_popup">
                     <svg class="steps_icon" version="1.1" id="Слой_2_1_" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"><title>arrow_horizontal</title><path d="M391.6,190.8c-14.7-0.2-29.5,0.3-44.2,0.5c-7.4,0.1-14.8,0.2-22.1,0.3l-22.1,0.2c-29.5,0.2-59,0.1-88.6-0.3
@@ -1658,10 +1658,10 @@
                   </div>
                 </div>
               </div>
-              <div class="col-xs-12">
+              <div class="col-sm-12">
                 Ширина экрана устройства не должна быть меньше 600px. Для работы на небольших планшетах и смартфонах предусмотрена "Мобильная версия". Переключиться на Мобильную версию программы можно выберав ее из списка ниже.
               </div>
-              <div class="col-xs-12" style="margin-top: 10px;">
+              <div class="col-sm-12" style="margin-top: 10px;">
                 <?php echo do_shortcode( '[theme_switcha_select text="Выберите версию"]' ); ?>
               </div>
             </div>
