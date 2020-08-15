@@ -1,5 +1,6 @@
 jQuery(function() {
   var croppedImg,
+      w_block_wrap,
       device_w = screen.width,
       mode = 'foto',
       returned_img,
@@ -37,6 +38,8 @@ jQuery(function() {
   if (device_w < 600) {
     jQuery('#w_error').modal('show');
   }
+  w_block_wrap = jQuery('.arrow_in_popup').css('height');
+  jQuery('.screen_value').css('lineHeight', w_block_wrap);
 
 
 

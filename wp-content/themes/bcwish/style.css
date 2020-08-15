@@ -2400,7 +2400,6 @@ button.wizard_starter_alt.btn.btn-success
 {
   padding: 0;
   font-size: 30px;
-  line-height: 25vh;
 }
 .arrow_w_wrap
 {
@@ -3214,9 +3213,6 @@ button.wizard_starter_alt.btn.btn-success
 @media (max-width: 576px) {
   #footer .footer-top .social-links a {
     margin-bottom: 25px;
-  }
-  .screen_value {
-    line-height: 6vh;
   }
   .arrow_in_popup, .screen_value
   {
