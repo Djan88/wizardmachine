@@ -3218,4 +3218,9 @@ button.wizard_starter_alt.btn.btn-success
   .screen_value {
     line-height: 6vh;
   }
+  .arrow_in_popup, .screen_value
+  {
+    display: inline-block;
+    width: 33,3%;
+  }
 }
