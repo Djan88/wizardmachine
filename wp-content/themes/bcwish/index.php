@@ -1664,6 +1664,9 @@
               <div class="col-sm-12" style="margin-top: 10px;">
                 <?php echo do_shortcode( '[theme_switcha_select text="Выберите версию"]' ); ?>
               </div>
+              <div class="col-sm-12">
+                Если Вы все же хотите продолжить работу в Полной версии, то просто закройте это сообщение.
+              </div>
             </div>
           </div>
         </div>
