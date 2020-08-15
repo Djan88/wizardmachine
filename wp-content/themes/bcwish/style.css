@@ -3215,6 +3215,9 @@ button.wizard_starter_alt.btn.btn-success
   #footer .footer-top .social-links a {
     margin-bottom: 25px;
   }
+  .screen_value {
+    line-height: 6vh;
+  }
   .arrow_in_popup, .screen_value
   {
     display: inline-block;
