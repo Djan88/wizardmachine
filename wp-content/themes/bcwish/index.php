@@ -1638,7 +1638,7 @@
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
           </div>
           <div class="modal-text">
-            <div class="row" style="text-align: center;padding: 20px;font-size: 22px;">
+            <div class="row" style="text-align: center;padding: 20px;font-size: 23px;">
               <div class="col-sm-12 arrow_w_wrap">
                 <div class="row">
                   <div class="col-sm-4 col-xs-4 arrow_in_popup">
@@ -1665,7 +1665,7 @@
                 <?php echo do_shortcode( '[theme_switcha_select text="Выберите версию"]' ); ?>
               </div>
               <div class="col-sm-12">
-                Если Вы все же хотите продолжить работу в Полной версии, то просто закройте это сообщение.
+                Если Вы хотите продолжить работу в Полной версии, то просто закройте это сообщение.
               </div>
             </div>
           </div>
