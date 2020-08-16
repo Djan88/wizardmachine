@@ -2410,6 +2410,11 @@ button.wizard_starter_alt.btn.btn-success
 {
   margin-top: -50px;
 }
+#w_error #theme-switcha
+{
+  padding: 5px;
+  padding-bottom: 7px;
+}
 
 /*Animation*/
 
