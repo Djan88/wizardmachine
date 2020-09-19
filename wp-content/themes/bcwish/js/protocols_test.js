@@ -13738,7 +13738,7 @@ mmt_2 = function(){
       zIndex: '1000'
     });
 
-    jQuery('.zone_s2, .zone_v5, .zone_s5, .zone_s6').addClass('rot_mo_4');
+    jQuery('.zone_d2, .zone_s2_, .zone_d5, .zone_d6').addClass('rot_mo_4');
     
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
@@ -13761,7 +13761,7 @@ mmt_2 = function(){
             paddingTop: '2px',
             zIndex: '2'
           });
-          jQuery('.zone_s2, .zone_v5, .zone_s5, .zone_s6').removeClass('rot_mo_4');
+          jQuery('.zone_d2, .zone_s2_, .zone_d5, .zone_d6').removeClass('rot_mo_4');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v5_13');
             endNow();
@@ -13795,7 +13795,7 @@ mmt_2 = function(){
       zIndex: '1000'
     });
 
-    jQuery('.zone_s2, .zone_v5, .zone_s5, .zone_s6').addClass('rot_mo_3');
+    jQuery('.zone_d2, .zone_s2_, .zone_d5, .zone_d6').addClass('rot_mo_3');
     
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
@@ -13818,7 +13818,7 @@ mmt_2 = function(){
             paddingTop: '2px',
             zIndex: '2'
           });
-          jQuery('.zone_s2, .zone_v5, .zone_s5, .zone_s6').removeClass('rot_mo_3');
+          jQuery('.zone_d2, .zone_s2_, .zone_d5, .zone_d6').removeClass('rot_mo_3');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v5_12_4');
             endNow();
@@ -13851,7 +13851,7 @@ mmt_2 = function(){
       zIndex: '1000'
     });
 
-    jQuery('.zone_s2, .zone_v5, .zone_s5, .zone_s6').addClass('rot_mo_2');
+    jQuery('.zone_d2, .zone_s2_, .zone_d5, .zone_d6').addClass('rot_mo_2');
     
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
@@ -13874,7 +13874,7 @@ mmt_2 = function(){
             paddingTop: '2px',
             zIndex: '2'
           });
-          jQuery('.zone_s2, .zone_v5, .zone_s5, .zone_s6').removeClass('rot_mo_2');
+          jQuery('.zone_d2, .zone_s2_, .zone_d5, .zone_d6').removeClass('rot_mo_2');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v5_12_3');
             endNow();
@@ -13907,7 +13907,7 @@ mmt_2 = function(){
       zIndex: '1000'
     });
 
-    jQuery('.zone_s2, .zone_v5, .zone_s5, .zone_s6').addClass('rot_mo_1');
+    jQuery('.zone_d2, .zone_s2_, .zone_d5, .zone_d6').addClass('rot_mo_1');
 
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
@@ -13930,7 +13930,7 @@ mmt_2 = function(){
             paddingTop: '2px',
             zIndex: '2'
           });
-          jQuery('.zone_s2, .zone_v5, .zone_s5, .zone_s6').removeClass('rot_mo_1');
+          jQuery('.zone_d2, .zone_s2_, .zone_d5, .zone_d6').removeClass('rot_mo_1');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v5_12_2');
             endNow();
@@ -14546,7 +14546,7 @@ mmt_2 = function(){
     count_animation = 1;
     jQuery('.ring').removeClass('hidden');
     jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
-    jQuery('.zone_d2, .zone_s2_, .zone_v5, .zone_d5, .zone_d6').css({
+    jQuery('.zone_d2, .zone_s2_, .zone_v5, .zone_d5, .zone_d6, .zone_cl').css({
         color: 'transparent',
         borderColor: 'transparent',
         opacity: 0.8,
@@ -14590,7 +14590,7 @@ mmt_2 = function(){
       } else {
         clearInterval(phaseOne);
         count_animation = 1;
-        jQuery('.zone_d2, .zone_s2_, .zone_v5, .zone_d5, .zone_d6').css({
+        jQuery('.zone_d2, .zone_s2_, .zone_v5, .zone_d5, .zone_d6, .zone_cl').css({
             background: '#fff',
             color: '#413e66',
             borderColor: '#413e66',
@@ -14694,7 +14694,7 @@ mmt_2 = function(){
     count_animation = 1;
     jQuery('.ring').removeClass('hidden');
     jQuery('.ring, .zone_ring').css('transform', 'rotate(0deg)');
-    jQuery('.zone_s2, .zone_v5, .zone_s5, .zone_s6').css({
+    jQuery('.zone_s2, .zone_v5, .zone_s5, .zone_s6, .zone_cl').css({
         color: 'transparent',
         borderColor: 'transparent',
         opacity: 0.8,
@@ -14738,7 +14738,7 @@ mmt_2 = function(){
       } else {
         clearInterval(phaseOne);
         count_animation = 1;
-        jQuery('.zone_s2, .zone_v5, .zone_s5, .zone_s6').css({
+        jQuery('.zone_s2, .zone_v5, .zone_s5, .zone_s6, .zone_cl').css({
             background: '#fff',
             color: '#413e66',
             borderColor: '#413e66',
