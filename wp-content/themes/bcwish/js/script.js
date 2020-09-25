@@ -118,7 +118,7 @@ jQuery(function() {
         setTimeout(function(){
           const el = document.getElementById('services');
           el.scrollIntoView();
-        },500);
+        },100);
       } else {
         jQuery('.wm_start').removeClass('unopacity');
         jQuery('.wizard_heading').text('Загрузите фото в полный рост по аналогии с примером ниже и отредактируйте его');
@@ -130,7 +130,7 @@ jQuery(function() {
         setTimeout(function(){
           const el = document.getElementById('services');
           el.scrollIntoView();
-        },500);
+        },100);
       }
     });
     jQuery('.wm_start').removeClass('unopacity');
