@@ -115,6 +115,10 @@ jQuery(function() {
     function(isConfirm) {
       if (isConfirm) {
         swal.close();
+        setTimeout(function(){
+          const el = document.getElementById('services');
+          el.scrollIntoView();
+        },500);
       } else {
         jQuery('.wm_start').removeClass('unopacity');
         jQuery('.wizard_heading').text('Загрузите фото в полный рост по аналогии с примером ниже и отредактируйте его');
@@ -123,6 +127,10 @@ jQuery(function() {
         jQuery('.template_load_estate').addClass('hidden');
         mode = 'foto';
         nextSound.play();
+        setTimeout(function(){
+          const el = document.getElementById('services');
+          el.scrollIntoView();
+        },500);
       }
     });
     jQuery('.wm_start').removeClass('unopacity');
@@ -131,10 +139,6 @@ jQuery(function() {
     jQuery('.template_load_estate').removeClass('hidden');
     jQuery('.wizard_heading').text('Загрузите план помещения или рисунок по аналогии с примером.');
     mode = 'estate';
-    setTimeout(function(){
-      const el = document.getElementById('services');
-      el.scrollIntoView();
-    },500);
   });
 
   jQuery('.mobile-nav-toggle, .mobile-nav a, .photo_upload, .crop_photo, .btn_diag, .btn_prot_choice, .wizard_clean_graf, .btn_prot_choice_fromDiag, #faq-list li a, .wizard_protocol, .wizard_play, .wizard_starter_alt, .wizard_stop, body .cancel, body .confirm, .wizard_continue, .mobile-nav select, .wpcf7-submit, .btn-get-started').on('click', function(event) {
