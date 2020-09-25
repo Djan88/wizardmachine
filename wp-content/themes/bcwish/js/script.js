@@ -109,12 +109,12 @@ jQuery(function() {
     nextSound.play();
     swal({
       title: "Перед началом чистки помещения необходимо проработать владельца.",
-      text: 'для этого нажмите "Загурзить фото", или "Продолжить", если это уже сделано.',
+      text: 'для этого нажмите "Загрузить фото", или "Продолжить", если это уже сделано.',
       type: "success",
       showCancelButton: true,
       confirmButtonClass: "btn-success",
       cancelButtonClass: "btn-warning",
-      cancelButtonText: "Другой протокол",
+      cancelButtonText: "Загрузить фото",
       confirmButtonText: "Продолжить",
       closeOnConfirm: false
     },
@@ -129,6 +129,8 @@ jQuery(function() {
         jQuery('.template_load_estate').addClass('hidden');
         mode = 'foto';
         nextSound.play();
+        const el = document.getElementById('services');
+        el.scrollIntoView();
       }
     })
   });
