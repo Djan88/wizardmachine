@@ -91,7 +91,10 @@ jQuery(function() {
   // НАЧАТЬ
   jQuery('.wm_init').on('click', function(event) {
     jQuery('.wm_start').removeClass('unopacity');
+    jQuery('.wizard_heading').text('Загрузите фото в полный рост по аналогии с примером ниже и отредактируйте его');
     localStorage.setItem('mode', 'foto');
+    jQuery('.template_load_human').removeClass('hidden');
+    jQuery('.template_load_estate').addClass('hidden');
     mode = 'foto';
     nextSound.play();
   });
@@ -104,6 +107,30 @@ jQuery(function() {
     jQuery('.wizard_heading').text('Загрузите план помещения или рисунок по аналогии с примером.');
     mode = 'estate';
     nextSound.play();
+    swal({
+      title: "Перед началом чистки помещения необходимо проработать владельца.",
+      text: 'для этого нажмите "Загурзить фото", или "Продолжить", если это уже сделано.',
+      type: "success",
+      showCancelButton: true,
+      confirmButtonClass: "btn-success",
+      cancelButtonClass: "btn-warning",
+      cancelButtonText: "Другой протокол",
+      confirmButtonText: "Продолжить",
+      closeOnConfirm: false
+    },
+    function(isConfirm) {
+      if (isConfirm) {
+        swal.close();
+      } else {
+        jQuery('.wm_start').removeClass('unopacity');
+        jQuery('.wizard_heading').text('Загрузите фото в полный рост по аналогии с примером ниже и отредактируйте его');
+        localStorage.setItem('mode', 'foto');
+        jQuery('.template_load_human').removeClass('hidden');
+        jQuery('.template_load_estate').addClass('hidden');
+        mode = 'foto';
+        nextSound.play();
+      }
+    })
   });
 
   jQuery('.mobile-nav-toggle, .mobile-nav a, .photo_upload, .crop_photo, .btn_diag, .btn_prot_choice, .wizard_clean_graf, .btn_prot_choice_fromDiag, #faq-list li a, .wizard_protocol, .wizard_play, .wizard_starter_alt, .wizard_stop, body .cancel, body .confirm, .wizard_continue, .mobile-nav select, .wpcf7-submit, .btn-get-started').on('click', function(event) {
