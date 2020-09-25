@@ -100,12 +100,6 @@ jQuery(function() {
   });
 
   jQuery('.wm_init_estate').on('click', function(event) {
-    jQuery('.wm_start').removeClass('unopacity');
-    localStorage.setItem('mode', 'estate');
-    jQuery('.template_load_human').addClass('hidden');
-    jQuery('.template_load_estate').removeClass('hidden');
-    jQuery('.wizard_heading').text('Загрузите план помещения или рисунок по аналогии с примером.');
-    mode = 'estate';
     nextSound.play();
     swal({
       title: "Перед началом чистки помещения необходимо проработать владельца.",
@@ -133,6 +127,12 @@ jQuery(function() {
         el.scrollIntoView();
       }
     })
+    jQuery('.wm_start').removeClass('unopacity');
+    localStorage.setItem('mode', 'estate');
+    jQuery('.template_load_human').addClass('hidden');
+    jQuery('.template_load_estate').removeClass('hidden');
+    jQuery('.wizard_heading').text('Загрузите план помещения или рисунок по аналогии с примером.');
+    mode = 'estate';
   });
 
   jQuery('.mobile-nav-toggle, .mobile-nav a, .photo_upload, .crop_photo, .btn_diag, .btn_prot_choice, .wizard_clean_graf, .btn_prot_choice_fromDiag, #faq-list li a, .wizard_protocol, .wizard_play, .wizard_starter_alt, .wizard_stop, body .cancel, body .confirm, .wizard_continue, .mobile-nav select, .wpcf7-submit, .btn-get-started').on('click', function(event) {
