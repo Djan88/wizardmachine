@@ -9384,7 +9384,7 @@ jQuery(function() {
       zIndex: '1000'
     });
 
-    jQuery('.zone_v0, .zone_v-').addClass('rot_mo_4');
+    jQuery('.zone_v1, .zone_v4, .zone_v5').addClass('rot_mo_4');
 
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
@@ -9407,7 +9407,7 @@ jQuery(function() {
             paddingTop: '2px',
             zIndex: '2'
           });
-          jQuery('.zone_v0, .zone_v-').removeClass('rot_mo_4');
+          jQuery('.zone_v1, .zone_v4, .zone_v5').removeClass('rot_mo_4');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v1_5_5');
             endNow();
@@ -9441,7 +9441,7 @@ jQuery(function() {
       zIndex: '1000'
     });
 
-    jQuery('.zone_v0, .zone_v-').addClass('rot_mo_3');
+    jQuery('.zone_v1, .zone_s3').addClass('rot_mo_3');
     phaseSeven_one = setInterval(function(){
         if (count_animation <= 40){
           if (reloadTime == 0){                                                                       //1
@@ -9463,7 +9463,7 @@ jQuery(function() {
             paddingTop: '2px',
             zIndex: '2'
           });
-          jQuery('.zone_v0, .zone_v-').removeClass('rot_mo_3');
+          jQuery('.zone_v1, .zone_s3').removeClass('rot_mo_3');
           if (pausedStatus == true) {
             localStorage.setItem('paused', 'v1_5_4');
             endNow();
