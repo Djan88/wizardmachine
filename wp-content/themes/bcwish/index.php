@@ -1492,7 +1492,7 @@
             </header>
             <div class="row flex-items-xs-middle flex-items-xs-center">
               <!-- Basic Plan  -->
-              <div class="col-sm-4">
+              <div class="col-sm-6">
                 <div class="card">
                   <div class="card-header">
                     <h3><span class="currency"></span>35 тыс<span class="period">₽/год</span></h3>
@@ -1508,7 +1508,7 @@
                 </div>
               </div>
               <!-- Regular Plan  -->
-              <div class="col-sm-4">
+              <div class="col-sm-6">
                 <div class="card">
                   <div class="card-header">
                     <h3><span class="currency"></span>25 тыс<span class="period">₽/год</span></h3>
@@ -1523,7 +1523,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-sm-4">
+              <!-- <div class="col-sm-4">
                 <div class="card">
                   <div class="card-header">
                     <h3><span class="currency"></span>2990<span class="period">₽/месяц</span></h3>
@@ -1537,7 +1537,7 @@
                     </ul>
                   </div>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
         </section><!-- #pricing -->
