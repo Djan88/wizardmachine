@@ -2416,11 +2416,7 @@ button.wizard_starter_alt.btn.btn-success
   padding-bottom: 7px;
 }
 }
-.wau-account-box p
-{
-  display: none;
-}
-.cab_sidebar
+.cab_sidebar, .rcl-subtab-content p
 {
   display: none;
 }
