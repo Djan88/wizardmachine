@@ -286,7 +286,7 @@
                   </div>
                 </div>
                 <div class="row">
-                  <a href="<?php echo get_template_directory_uri(); ?>/img/manual_wizard.pdf" target="_blank" data-wow-duration="2.4s" class="bounceInUp wow btn btn-success pay_info">Как оплатить доступ?</a>
+                  <a href="<?php echo get_template_directory_uri(); ?>/img/wm_manual_y.pdf" target="_blank" data-wow-duration="2.4s" class="bounceInUp wow btn btn-success pay_info">Как оплатить доступ?</a>
                 </div>
               <?php } ?>
               
