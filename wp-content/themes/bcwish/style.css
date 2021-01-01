@@ -1941,7 +1941,6 @@ h3.wizard_heading
   transform: scale(1.5);
   transition: transform 0.250s linear;
 }
-
 .d-lg-none.mobile-nav-toggle_open
 {
   display: none!important;
